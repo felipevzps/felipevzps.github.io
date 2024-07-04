@@ -1,0 +1,35 @@
+body {
+    /* Body styling adapted from http://bettermotherfuckingwebsite.com/,
+     * by Drew McConville and Gabe Hammersmith. */
+    margin: 2em auto;
+    max-width: 40em;
+    line-height: 1.4;
+    color: #333;
+    /* gentler default, closer to the middle of our rand color range */
+    background-color: rgb(240, 240, 240);
+    /* Prevent FOUC: https://stackoverflow.com/a/66010659 */
+    opacity: 0;
+    /* Accompanies the above, and removes background color flickering on
+     * when repeatedly refreshing the page. Interestingly, this doesn't
+     * always show a fade-in (at least on Chromium?); I think this is because
+     * of the "async" attributes of the randcolor.js <script> tags. Wack.
+     * https://stackoverflow.com/questions/3221561#comment129519385_66010659
+     */
+    transition: all 0.5s;
+    padding: 0 1em;
+    font-family: "Times New Roman", Times, serif;
+}
+.monotext {
+    font-size: medium;
+    font-family: monospace;
+}
+.desc {
+    margin-left: 2em;
+}
+.sb {
+    font-weight: bold;
+}
+/* Based on https://stackoverflow.com/questions/11903773/add-space-between-li-elements/11903886#comment88753789_11903886. */
+li:not(:last-child) {
+    margin-bottom: 1em;
+}
