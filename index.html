@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D804VLN5C0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-D804VLN5C0');
+        </script>
+        
         <meta charset="utf-8" />
         <meta name="author" content="Felipe Vaz Peres" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +31,9 @@
 
         <p>
             I'm a M.Sc. student in bioinformatics at the
-            <a href="http://www.cena.usp.br/">Center for Nuclear Energy in Agriculture - University of São Paulo</a>,
+            <a href="http://www.cena.usp.br/" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'CENA Website'});">Center for Nuclear Energy in Agriculture - University of São Paulo</a>,
             working in the
-            <a href="https://labbces.netlify.app/">LabBCES</a>.
+            <a href="https://labbces.netlify.app/" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'LabBCES Website'});">LabBCES</a>.
         </p>
 
         <p>
@@ -31,7 +42,7 @@
         </p>
 
         <p>
-            Below are some of my contributions. Additional work can be seen on my <a href="https://github.com/felipevzps">GitHub profile</a>.
+            Below are some of my contributions. Additional work can be seen on my <a href="https://github.com/felipevzps" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'GitHub Profile Main Text'});">GitHub profile</a>.
         </p>
 
         <p>
@@ -211,110 +222,110 @@
     
             setupTooltip('darwin', `
                 <div class="description">
-                    Inspired by Charles Darwin's 1837 sketch, his first diagram of an evolutionary tree
+                    Design inspired by Charles Darwin's 1837 sketch, his first diagram of an evolutionary tree
                 </div>
                 <div class="darwin-container">
                     <img src="docs/darwin.png" alt="evolutionary tree sketch" width="250" height="auto">
                 </div>
                 <div class="links">
-                    <a href="http://darwin-online.org.uk/content/frameset?itemID=CUL-DAR121.-&amp;viewtype=image&amp;pageseq=1">Page 36 of Notebook B: Transmutation of species (1837)</a>    
+                    <a href="http://darwin-online.org.uk/content/frameset?itemID=CUL-DAR121.-&amp;viewtype=image&amp;pageseq=1" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'Darwin Tree'});">Page 36 of Notebook B: Transmutation of species (1837)</a>
                 </div>
             `);
 
             setupTooltip('sugarcane_RNAome', `
                 <div class="links">
-                    <a href="https://github.com/labbces/sugarcane_RNAome" target="_blank">Code</a>
+                    <a href="https://github.com/labbces/sugarcane_RNAome" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'sugarcane_RNAome Code'});">Code</a>
                 </div>
                 <div class="description">
                     Multi-genotype analyses of long non-coding RNAs in Sugarcane.
                 </div>
             `);
-    
+
             setupTooltip('SCPT', `
                 <div class="links">
-                    <a href="https://github.com/labbces/SCPT" target="_blank">Code</a> / 
-                    <a href="docs/ISMB2022_FVP_Presentation.pdf" target="_blank">Presentation</a> / 
-                    <a href="docs/SPGCENA2022_FVP_Poster.pdf" target="_blank">Poster</a>
+                    <a href="https://github.com/labbces/SCPT" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'SCPT Code'});">Code</a> / 
+                    <a href="docs/ISMB2022_FVP_Presentation.pdf" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'SCPT Presentation'});">Presentation</a> / 
+                    <a href="docs/SPGCENA2022_FVP_Poster.pdf" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'SCPT Poster'});">Poster</a>
                 </div>
                 <div class="description">
                     Inference of the sugarcane pan-transcriptome.
                 </div>
             `);
-    
+
             setupTooltip('ContFree-NGS', `
                 <div class="links">
-                    <a href="https://github.com/labbces/ContFree-NGS" target="_blank">Code</a> / 
-                    <a href="docs/BSB2021_FVP_Presentation.pdf" target="_blank">Presentation</a> / 
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-91814-9_6" target="_blank">Paper</a>
+                    <a href="https://github.com/labbces/ContFree-NGS" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'ContFree-NGS Code'});">Code</a> / 
+                    <a href="docs/BSB2021_FVP_Presentation.pdf" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'ContFree-NGS Presentation'});">Presentation</a> / 
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-91814-9_6" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'ContFree-NGS Paper'});">Paper</a>
                 </div>
                 <div class="description">
                     Open source software that removes sequences from contaminating organisms in NGS datasets.
                 </div>
             `);
-    
+
             setupTooltip('YAATAP', `
                 <div class="links">
-                    <a href="https://github.com/labbces/YAATAP" target="_blank">Code</a> 
+                    <a href="https://github.com/labbces/YAATAP" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'YAATAP Code'});">Code</a> 
                 </div>
                 <div class="description">
                     Snakemake pipeline for downloading raw RNA-seq datasets and performing transcriptome assemblies.
                 </div>
             `);
-    
+
             setupTooltip('seabed-symphony', `
                 <div class="links">
-                    <a href="https://github.com/felipevzps/seabed-symphony" target="_blank">Code</a>  
+                    <a href="https://github.com/felipevzps/seabed-symphony" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'seabed-symphony Code'});">Code</a>  
                 </div>
                 <div class="description">
                     Pipeline for biosynthetic gene cluster identification in microbial community of marine sediments.
                 </div>
             `);
-    
+
             setupTooltip('cavebot-fiesta', `
                 <div class="links">
-                    <a href="https://github.com/felipevzps/cavebot-fiesta" target="_blank">Code</a> / 
-                    <a href="docs/cavebot-fiesta.gif" target="_blank">Demo</a>
+                    <a href="https://github.com/felipevzps/cavebot-fiesta" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'cavebot-fiesta Code'});">Code</a> / 
+                    <a href="docs/cavebot-fiesta.gif" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'cavebot-fiesta Demo'});">Demo</a>
                 </div>
                 <div class="description">
                     Automates repetitive actions in the game Tibia using real-time computer vision.
                 </div>
             `);
-    
+
             setupTooltip('pesca-a-dor', `
                 <div class="links">
-                    <a href="https://github.com/felipevzps/pesca-a-dor" target="_blank">Code</a> / 
-                    <a href="docs/pesca-a-dor.gif" target="_blank">Demo</a>
+                    <a href="https://github.com/felipevzps/pesca-a-dor" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'pesca-a-dor Code'});">Code</a> / 
+                    <a href="docs/pesca-a-dor.gif" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'pesca-a-dor Demo'});">Demo</a>
                 </div>
                 <div class="description">
                     Automated robot to play PokeXGames using OpenCV and PyAutoGUI.
                 </div>
             `);
-    
+
             setupTooltip('indeed_jobs', `
                 <div class="links">
-                    <a href="https://github.com/felipevzps/indeed_jobs" target="_blank">Code</a> / 
-                    <a href="docs/indeed.gif" target="_blank">Demo</a> 
+                    <a href="https://github.com/felipevzps/indeed_jobs" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'indeed_jobs Code'});">Code</a> / 
+                    <a href="docs/indeed.gif" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'indeed_jobs Demo'});">Demo</a> 
                 </div>
                 <div class="description">
                     Automated web scraping using Selenium and BeautifulSoup to extract job listings from Indeed.
                 </div>
             `);
-    
+
             setupTooltip('CV', `
                 <div class="links">
-                    <a href="docs/fvp_cv.pdf" target="_blank">View my full CV</a>
+                    <a href="docs/fvp_cv.pdf" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'CV'});">View my full CV</a>
                 </div>
             `);
-    
+
             setupTooltip('github', `
                 <div class="links">
-                    <a href="https://github.com/felipevzps" target="_blank">Check out my code on GitHub</a>
+                    <a href="https://github.com/felipevzps" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'GitHub Profile in the Tree'});">Check out my code on GitHub</a>
                 </div>
             `);
-    
+
             setupTooltip('google-scholar', `
                 <div class="links">
-                    <a href="https://scholar.google.com/citations?user=jLu_yMIAAAAJ&hl=en" target="_blank">View my research publications</a>
+                    <a href="https://scholar.google.com/citations?user=jLu_yMIAAAAJ&hl=en" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'Google Scholar'});">View my research publications</a>
                 </div>
             `);
     
