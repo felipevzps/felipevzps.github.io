@@ -1,156 +1,162 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Felipe Vaz Peres" />
-        <title>Felipe Vaz Peres</title>
-        <link rel="shortcut icon" href="docs/photo_51.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="adequate.css" />
-    </head>
-    
-    <body>
-        
-        <h1>Felipe Vaz Peres</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Felipe Vaz Peres" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Vaz Peres - Bioinformatics Scientist</title>
+    <link rel="shortcut icon" href="docs/photo_51.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="webpage.css" />    
+</head>
 
-        <p>
-            I'm a M.Sc. student in bioinformatics at the
-            <a href="http://www.cena.usp.br/" target="_blank">Center for Nuclear Energy in Agriculture - University of São Paulo</a>,
-            working in the
-            <a href="https://labbces.netlify.app/" target="_blank">LabBCES</a>.
-        </p>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Felipe Vaz Peres</a>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <p>
-            My research focuses on understanding the variability of ncRNAs 
-            in sugarcane and their functional roles.
-        </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Felipe Vaz Peres</h1>
+                    <p class="hero-subtitle">Bioinformatics Scientist</p>
+                    <p class="hero-description">
+                    I’m a bioinformatics scientist with a <strong>Master’s degree in Bioinformatics</strong> and <strong>6 years of experience</strong> in computational biology and large-scale data analysis. I am particularly interested in computational approaches to <strong>genomics, metagenomics, transcriptomics, non-coding RNA</strong>, and developing <strong>efficient & reproducible workflows</strong> in bioinformatics. 
+                    </p>
+                    <p class="hero-description">
+                         My work involves applying computational methods to address complex biological problems.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#research" class="btn btn-primary">View Research</a>
+                        <a href="docs/fvp_cv.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            Before grad school, I was an undergraduate student in biotechnology at the
-            <a href="https://www.araras.ufscar.br/" target="_blank">University of São Carlos</a>.
-        </p>
+        <div class="container">
+            <div class="newsletter-banner">
+                <h3>Latest Bioinformatics Papers</h3>
+                <p>I maintain a daily feed of new publications in <strong>bioinformatics</strong> and <strong>computational biology</strong>, take a look!</p>
+                <a href="newsletter/paper-trackr_newsletter.html" class="btn" target="_blank">View Newsletter →</a>
+            </div>
+        </div>
 
-        <p>
-            I can be reached via email at&nbsp;
-            <span class="monotext">felipe.vzps (at) gmail (dot) com</span>
-        </p>
+        <section id="research" class="section">
+            <div class="container">
+                <h2 class="section-title">Research Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>pan-RNAome</h3>
+                        <p>This study focuses on characterizing ncRNAs and lncRNAs in sugarcane, addressing gaps in understanding their variability, conservation, co-expression patterns, and functional roles.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/labbces/sugarcane_RNAome" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
 
-        <div style="border-left: 4px solid #ccc; padding-left: 12px; margin-top: 20px; color: gray; font-size: 16px; font-style: italic;">
-    	    Curious about what dropped in bioinformatics yesterday?<br>
-            I maintain a daily updated feed of new papers!
-            <a href="newsletter/paper-trackr_newsletter.html" target="_blank">Take a look →</a>
-        </div></p>
+                    <div class="project-card">
+                        <h3>pan-Transcriptome</h3>
+                        <p>Inference and annotation of the sugarcane pan-transcriptome. This study provide a robust framework for pan-transcriptome analysis in complex polyploid crops and resources to enhance sugarcane breeding programs.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/labbces/SCPT" class="project-link" target="_blank">GitHub</a>
+                            <a href="docs/ISMB2022_FVP_Presentation.pdf" class="project-link" target="_blank">ISMB Talk</a>
+                            <a href="docs/SPGCENA2022_FVP_Poster.pdf" class="project-link" target="_blank">Poster</a>
+                        </div>
+                    </div>
 
-        <h2>Research projects</h2>
-        
-        (Additional work can be seen on my GitHub profile: <a href="https://github.com/felipevzps" target="_blank">felipevzps</a>)
-        
-        <ul>
-        
-            <li>
-                <b>Sugarcane pan-RNAome</b>
-                <div class="desc">
-                    <a href="https://github.com/labbces/sugarcane_RNAome" target="_blank">Code</a>
+                    <div class="project-card">
+                        <h3>ContFree-NGS</h3>
+                        <p>A lightweight, open-source tool designed to remove contaminant sequences from NGS datasets.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/labbces/ContFree-NGS" class="project-link" target="_blank">GitHub</a>
+                            <a href="docs/BSB2021_FVP_Presentation.pdf" class="project-link" target="_blank">BSB Talk</a>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-91814-9_6" class="project-link" target="_blank">Paper</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="desc">
-                    Multi-genotype analyses of long-ncRNAs in Sugarcane.
-                </div>
-            </li>
+            </div>
+        </section>
 
-            <li>
-                <b>Sugarcane pan-transcriptome</b>
-                <div class="desc">
-                    <a href="https://github.com/labbces/SCPT" target="_blank">Code</a>
-                    /
-                    <a href="docs/ISMB2022_FVP_Presentation.pdf" target="_blank">Presentation</a>
-                    / 
-                    <a href="docs/SPGCENA2022_FVP_Poster.pdf" target="_blank">Poster</a>
-                </div>
-                <div class="desc">
-                    Inference and annotation of the sugarcane pan-transcriptome.
-                </div>
-            </li>
-                        
-            <li>
-                <b>ContFree-NGS</b>
-                <div class="desc">
-                    <a href="https://github.com/labbces/ContFree-NGS" target="_blank">Code</a>
-                    /
-                    <a href="docs/BSB2021_FVP_Presentation.pdf" target="_blank">Presentation</a>
-                    / 
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-91814-9_6" target="_blank">Paper</a>
-                </div>
-                <div class="desc">
-                    Tool designed to remove contaminant sequences from NGS datasets.
-                </div>
-            </li>
-   
-        </ul>
+        <section id="software" class="section">
+            <div class="container">
+                <h2 class="section-title">Software & Development</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>KAPT</h3>
+                        <p>Nextflow pipeline for automated inference of the Kappaphycus alvarezii pan-transcriptome through de novo assembly and comprehensive functional annotation.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/felipevzps/KAPT" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
 
-        <h2>Software & Development</h2>
-        
-        <ul>
-            <li>
-                <b>Co-expression Network Pipeline</b>
-                <div class="desc">
-                    <a href="https://github.com/SantosRAC/nextflow_practice/tree/main/nextflow" target="_blank">Code</a>
-                </div>
-                <div class="desc">
-                    Nextflow pipeline to generate co-expression networks.
-                </div>
-            </li> 
-            
-            <li>
-                <b>seabed-symphony</b>
-                <div class="desc">
-                    <a href="https://github.com/felipevzps/seabed-symphony" target="_blank">Code</a>
-                    /
-                    <a href ="https://github.com/felipevzps/seabed-symphony/blob/main/documentation/documentation.pdf" target="_blank">Documentation</a>
-                </div>
-                <div class="desc">
-                    Metagenomics pipeline designed for BGCs identification.
-                </div>
-            </li>
-             
-            <li>
-                <b>Yet Another Auto Transcript Assembly Pipeline</b>
-                <div class="desc">
-                    <a href="https://github.com/labbces/YAATAP" target="_blank">Code</a>
-                </div>
-                <div class="desc">
-                    Snakemake pipeline for <i>de novo</i> transcriptome assembly.
-                </div>
-            </li> 
+                    <div class="project-card">
+                        <h3>R2C</h3>
+                        <p>Nextflow pipeline for scalable gene co-expression network analysis. It automates the process from data download, quantification and network construction.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/SantosRAC/nextflow_practice/tree/main" class="project-link" target="_blank">GitHub</a>                            
+                        </div>
+                    </div>
 
-            <li>
-                <b>paper-trackr</b>
-                <div class="desc">
-                    <a href="https://github.com/felipevzps/paper-trackr" target="_blank">Code</a>
-                    /
-                    <a href="https://pypi.org/project/paper-trackr/" target="_blank">Package</a>
-                    /
-                    <a href="newsletter/paper-trackr_newsletter.html" target="_blank">Demo</a>
+                    <div class="project-card">
+                        <h3>seabed symphony</h3>  
+                        <p>Metagenomics pipeline for biosynthetic gene cluster discovery. Designed for identification of novel BGCs in microbiome of marine sediment datasets.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/felipevzps/seabed-symphony" class="project-link" target="_blank">GitHub</a>
+                            <a href="https://github.com/felipevzps/seabed-symphony/blob/main/documentation/documentation.pdf" class="project-link" target="_blank">Docs</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>YAATAP</h3>
+                        <p>Snakemake pipeline for de novo transcriptome assembly. It performs every step from raw RNA-seq data download to the final transcriptome assembly and quality assessment.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/labbces/YAATAP" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>paper-trackr</h3>
+                        <p>Tired of missing out on cool papers? stay up to date with paper-trackr!</p>
+                        <div class="project-links">
+                            <a href="https://github.com/felipevzps/paper-trackr" class="project-link" target="_blank">GitHub</a>
+                            <a href="https://pypi.org/project/paper-trackr/" class="project-link" target="_blank">PyPI</a>
+                            <a href="newsletter/paper-trackr_newsletter.html" class="project-link" target="_blank">Demo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="desc">
-                    Tired of missing out on cool papers? stay up to date with paper-trackr!
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact">
+                    <h2>Get In Touch</h2>
+                    <p>Interested in collaboration or have questions about my research? Feel free to reach out!</p>
+                    <div class="contact-email">felipe.vzps@gmail.com</div>
+                    <div class="social-links">
+                        <a href="https://github.com/felipevzps" class="social-link" target="_blank">GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=jLu_yMIAAAAJ" class="social-link" target="_blank">Google Scholar</a>
+                        <a href="docs/fvp_cv.pdf" class="social-link" target="_blank">Curriculum Vitae</a>
+                    </div>
                 </div>
-            </li>
-        
-        </ul>
+            </div>
+        </section>
+    </main>
 
-        <h2>Miscellany</h2>
-        
-        <ul>
-            <li><a href="docs/fvp_cv.pdf" target="_blank">Curriculum Vitae</a></li>
-            <li><a href="http://github.com/felipevzps" target="_blank">GitHub profile</a></li>
-            <li><a href="https://scholar.google.com/citations?user=jLu_yMIAAAAJ" target="_blank">Google Scholar profile</a></li>
-        </ul>
-        
-        <!-- make body visible (undo FOUC prevention effects): from
-             https://stackoverflow.com/a/66010659 -->
-        <style>body { opacity: 1 !important; }</style>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Felipe Vaz Peres. All rights reserved.</p>
+        </div>
+    </footer>
 
-    </body>
-
+</body>
 </html>
