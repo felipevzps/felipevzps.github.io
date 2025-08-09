@@ -14,6 +14,11 @@
     <header class="header">
         <nav class="nav container">
             <a href="#" class="logo">felipevzps</a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
             <ul class="nav-links">
                 <li><a href="#">About</a></li>
                 <li><a href="#research">Research</a></li>
@@ -166,6 +171,33 @@
             <p>&copy; 2025 Felipe Vaz Peres. All rights reserved.</p>
         </div>
     </footer>
+
+<script>
+    // hamburger menu
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinks.classList.toggle('show');
+    });
+
+    // close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('show');
+    });
+});
+
+    // close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('show');
+    }
+});
+</script>
 
 </body>
 </html>
