@@ -9,7 +9,7 @@
   <h1 style="font-size: 28px; margin: 0;">paper-trackr newsletter</h1>
   <a href="https://felipevzps.github.io/" style="font-size: 16px; text-decoration: none; color: #1a0dab;">← back to my website</a>
 </div>
-        <p style="color: gray; font-size: 16px;"><strong>Thursday, 04 September 2025</strong></p>
+        <p style="color: gray; font-size: 16px;"><strong>Friday, 05 September 2025</strong></p>
         <p style="font-size: 16px;">Hello science reader,</p>
         <p style="font-size: 16px;">Welcome to your daily dose of research. Dive into the latest discoveries from the world of science!<div style="border-left: 4px solid #ccc; padding-left: 12px; margin-top: 20px; color: gray; font-size: 15px; font-style: italic;">
     This newsletter was built with 
@@ -19,338 +19,8 @@
         <hr style="margin: 20px 0;">
         
             <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">GWAS SVatalog: a visualization tool to aid fine-mapping of GWAS loci with structural variations</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Chirmade, S., Wang, Z., Mastromatteo, S., Sanders, E., Thiruvahindrapuram, B., Nalpathamkalam, T., Pellecchia, G., Lin, F., Keenan, K., Patel, R. V., Sung, W. W., Roshandel, D., Whitney, J., Allana, S., Avolio, J., Eckford, P., Ratjen, F., Strug, L. J.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;">Background: Genome-wide association studies (GWAS) have been successful in identifying single nucleotide polymorphisms (SNPs) associated with phenotypic traits. However, SNPs form an incomplete set of variation across the genome and since a large percentage of GWAS-significant SNPs lie in non-coding regions, their impact on a given trait is difficult to decipher. Recognizing whether these SNPs are tagging other polymorphisms, like structural variations (SV), is an important step towards understanding the putative causal variation at GWAS loci. Results: Here, we develop GWAS SVatalog (https://svatalog.research.sickkids.ca/), a novel open-source web tool that computes and visualizes linkage disequilibrium (LD) between SVs and GWAS-associated SNPs throughout the human genome. The tool combines GWAS Catalog's SNP-trait association data across 14,479 phenotypes with LD statistics calculated between 35,732 SVs and 116,870 SNPs identified in 101 whole-genome long-read sequences. We use GWAS SVatalog to identify SVs that may explain GWAS loci for iron levels, refractive error, and Alzheimer's disease, where previously SNPs were unable to provide a causal explanation. Conclusions: GWAS SVatalog advances the fine-mapping of GWAS loci with structural variations, enabling researchers to associate 35,732 common SVs with 14,479 phenotypes, accelerating the understanding of disease etiology.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.03.674075v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Capturing the Mutational Dynamics of SARS-CoV-2 with Graphs</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Das, B., Heath, L. S.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> The rapid evolution of SARS-CoV-2 presents significant challenges for modeling viral dynamics, driven by lineage diversification and region-specific mutation patterns. While phylogenetic trees are traditionally used for evolutionary inference, the massive volume of SARS-CoV-2 genomic data, with many similar sequences and few distinguishing mutations, poses computational and methodological limitations. The quasispecies theory instead models viral evolution as a cloud of mutants, motivating a graph-based representation that better captures the complexity of mutational events. Geographic variation adds another critical layer to this complexity. Mutation trends often differ across regions due to local transmission dynamics, host population structures, and selective pressures. In this study, we present the Mutation Learning Graph (MLG), a directed graph framework that organizes SARS-CoV-2 variants based on their cumulative mutation profiles relative to the reference genome (NC_045512.2), thereby capturing the dynamics of mutation propagation. This structure captures fine-grained mutational transitions and encodes plausible evolutionary relationships among variants. To construct these graphs, we introduce an alignment-aware mutation profiling method and a novel ANCESTOR JOINING algorithm, which incorporates ancestral variants as inferred intermediate nodes to connect observed genomes through biologically coherent mutational paths. We generate MLG datasets for ten geographically and epidemiologically diverse regions and benchmark them on two graph-based tasks: node-level lineage classification and edge-level mutational transition prediction. Using baseline graph neural network architectures (GCN, GraphSAGE, GAT, GGNN, VGAE), we demonstrate how mutation-centric graph structures expose key biological challenges, such as lineage imbalance and location-specific mutation spectra. For node classification, GraphSAGE and GGNN consistently achieved high accuracy (up to 0.96) and AUROC (up to 0.98). In contrast, VGAE and GraphSAGE led the way in link prediction, with AUPRCs of up to 0.96. These results highlight the effectiveness of MLG for capturing biologically meaningful mutation patterns and underscore the importance of localized, mutation-aware modeling for predicting viral mutations and future variant emergence.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.02.673804v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Accurate and scalable genome-wide ancestry estimation using haplotype clusters</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Meisner, J.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Unsupervised genome-wide ancestry estimation has been a staple in population and medical genetics for decades, and its importance continues to grow with the increasing number of large genetic cohorts of mixed ancestries. We propose an extension to the hapla framework that scales model-based ancestry estimation to unprecedented sample sizes by leveraging inferred haplotype clusters from phased genotype data. Our haplotype cluster-based approach is approximately 5x faster than the fastest model-free SNP-based approach on the harmonized Human Genome Diversity Project and 1000 Genomes Project dataset, while we further demonstrate it to be the most accurate method to date in an extensive simulation study. Our accurate ancestry estimates can help reduce health disparities and accelerate precision medicine efforts in the growing number of biobanks globally.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.02.673718v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">User-friendly scheduler Using a hybrid architecture and supercomputing for big data processing</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> McKeever, P., Mittal, V., Fukuda, B., Yeung, K. Y., Hung, L.-H.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> The exponential growth of omics data requires novel strategies for storage, transfer, and processing of said data. We present a scheduler based on the Temporal.io workflow framework which enables two key optimizations of bioinformatics workflows. Firstly, we enable users to transparently map workflow steps to diverse execution environments, including high-performance computing (HPC) resources managed by the SLURM resource manager through an easy-to-use graphical user interface. Secondly, we enable asynchronous execution of workflows, a feature which guarantees that workflows will achieve reasonable resource utilization even when the scheduler cannot make use of a system's full RAM and CPU resources. Thirdly, we propose a universal, platform agnostic JSON representation of workflows that allows platform-specific execution details to be abstracted away from the core scientific logic. Our work includes a custom executor plugin that supports translation of workflows from an external language, such as Nextflow, to our universal JSON format. Finally, we develop a graphical user interface to make our scheduler easy-to-use for non-technical users. When benchmarked on a bulk RNA sequencing workflow, these features reduced the cost and time requirements. We illustrated the merits of our cross-platform method using credit allocations from federally funded supercomputers.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.01.673517v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">CMDdemux: an efficient single cell demultiplexing method</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Wang, J., Chen, L., Brown, D. V., Chiu, C., Speed, T. P.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Multiplexing technologies label cells with molecular tags, allowing cells from different donors to be pooled together for sequencing. Although this approach enhances cell throughput, eliminates batch effects, and enables doublet detection, limitations of hashtag-based labelling can still lead to low-quality data. Existing demultiplexing methods can accurately assign donor identities in high-quality datasets, but they often fail on low-quality data. To address this, we developed CMDdemux, a method comprising three key steps: within-cell centered log-ratio (CLR) normalization of hashtag count data, K-medoids clustering, and classification of cells based on Mahalanobis distance. By integrating both hashing and mRNA data, CMDdemux achieves high accuracy in distinguishing singlets, doublets, and negatives. It also provides visualization tools to help users inspect potentially misclassified droplets. We benchmarked CMDdemux against existing methods using a range of high- and low-quality datasets. Results show that CMDdemux consistently outperforms other approaches, demonstrating robust performance on both high- and low-quality data where other methods fail. CMDdemux is particularly effective in handling diverse types of low-quality multiplexing data across different multiplexing technologies.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.28.672983v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Generation of a global freshwater algal taxonomic database by application of PCR-free rbcL gene detection and machine-learning-based taxonomic classification to public metagenome datasets</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Murdoch, R. W.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> While it has become increasingly evident that microalgae are critical components of aquatic ecosystems, comprehensive taxonomic analysis of the microalgal component of microbial communities has lagged behind recent innovations in prokaryotic sequencing and bioinformatics. Microalgae are sequenced alongside prokaryotes in metagenomic whole genome shotgun (WGS) sequencing efforts but remain overlooked. In this study, an analytic pipeline for detecting a key algal taxonomic barcode, rbcL, from WGS datasets. This approach allowed for near-perfect detection of rbcL sequences from eight major algal phyla, whereas in silico PCR utilizing popular phyla-specific rbcL primer sets for four algal phyla suggests that such approaches may miss much algal diversity. Further, a machine learning classification model was built and validated to allow for taxonomic classification of rbcL sequences of eight algal phyla to genus or species level with high accuracy and recall values (>90%). Benchmarking of this approach against microscopic algal identifications showed accurate identifications for algae with higher relative abundance values and may offer additional detections of algae not readily identified by microscopy. This pipeline was applied against over 4,000 freshwater WGS metagenomes to generate a global taxonomic occurrence and relative abundance database of freshwater algae composed of over 14,000 accessions. WGS-based algal detection offers broad, unbiased taxon-agnostic algal detection in a single sample analysis. Furthermore, it allows for simultaneous identification of the prokaryotic community, offering new opportunities for studying inter-domain relationships as evidenced by a case-study presented herein. The rbcL taxonomic classifier and metagenome-derived algal detection database are available for download and use at https://doi.org/10.6084/m9.figshare.29996962.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.28.672922v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">EnrichMET: R Package for Integrated Pathway and Network Analysis for Metabolomics</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Mekonnen, Y. A., Dhake, N., Jaiswal, S., Rubio, V., Narvaez-Bandera, I., Ackerman, H., Flore, E., Stewart, P.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Advances in metabolomics have significantly improved our understanding of cellular processes by enabling the identification of hundreds of metabolites in a single experiment. These developments provide valuable insights into complex metabolic networks. Pathway Enrichment Analysis (PEA) is essential for connecting identified metabolites with biological pathways, uncovering meaningful relationships, and revealing underlying metabolic mechanisms. However, existing tools, often require multiple steps, rely on web-based interfaces, and require R packages that can be challenging to install due to outdated or missing dependencies. This hampers both reproducibility and efficiency. To overcome these limitations, we introduce EnrichMet, an R package designed for efficient and reproducible pathway, metabolite set enrichment analysis (MetSEA). The package integrates fgsea for rapid MetSEA and igraph for topology-based metrics, enabling comprehensive integration of metabolomics data. EnrichMet utilizes curated pathway data from the Kyoto Encyclopedia of Genes and Genomes (KEGG) and employs Fisher Exact Test to identify significantly enriched pathways. Through a case study on experimental metabolomics datasets, we demonstrate the robustness and efficiency of EnrichMet, benchmarking it against existing tools. The results show that EnrichMet provides accurate and comprehensive pathway enrichment outcomes while reducing computational time and user effort. Moreover, its flexible framework allows EnrichMet to be adaptable to a broad range of data types and applications beyond KEGG. By streamlining the pathway analysis process, EnrichMet enables researchers to derive deeper insights from metabolomics data, promoting reproducible and efficient research practices.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.28.672951v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Hierarchical Analysis of RNA Secondary Structures with Pseudoknots Based on Sections</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Masuki, R., Liew, D., Yong, E. H.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Predicting RNA structures containing pseudoknots remains computationally challenging due to high processing costs and complexity. While standard methods for pseudoknot prediction require O(N6) time complexity, we present a hierarchical approach that significantly reduces computational cost while maintaining prediction accuracy. Our method analyzes RNA structures by dividing them into contiguous regions of unpaired bases derived from known secondary structures ("sections"). We examine pseudoknot interactions between sections using a nearest-neighbor energy model and dynamic programming. The algorithm scales as O(n2{ell}4), offering substantial computational advantages over existing global prediction methods. Our analysis of 726 transfer messenger RNA and 455 Ribonuclease P RNA sequences reveals that biologically relevant pseudoknots are highly concentrated among section pairs with large minimum free energy gains. Over 90% of connected section pairs appear within just the top 3% of section pairs ranked by MFE gain. For 2-clusters, our method achieves high prediction accuracy with sensitivity exceeding 0.90 and positive predictive value above 0.80. For 3-clusters, we discovered asymmetric behavior where "former" section pairs (formed early in the sequence) predict accurately, while "latter" section pairs show different formation patterns. The hierarchical section-based approach demonstrates that local energy considerations can effectively predict pseudoknot formations between unpaired regions. Our work provides strong evidence for the effectiveness of local energy calculations in pseudoknot prediction and offers insights into the dynamic processes governing RNA structure formation.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.29.672997v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">scAgeClock: a single-cell transcriptome based human aging clock model using gated multi-head attention neural networks</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Xie, G.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Aging Clock models have emerged as a crucial tool for measuring biological age, with significant implications for anti-aging interventions and disease risk assessment. However, human aging clock models that offer single-cell resolution and account for cell and tissue heterogeneities remain underdeveloped. This study introduces scAgeClock, a novel gated multi-head attention (GMA) neural network-based single-cell aging clock model. Leveraging a large-scale dataset of over 16 million single-cell transcriptome profiles from more than 40 human tissues and 400 cell types, scAgeClock demonstrates improved age prediction accuracy compared to baseline methods. Notably, the mean absolute error for the best-performing cell type is remarkably low at 2 years. Feature importance analysis reveals enrichment of aging clock genes related to ribosome, translation, defense response, viral life cycle, programmed cell death, and COVID-19 disease. A novel metric, the Aging Deviation Index (ADI) proposed by this study, revealed deceleration of ages in cells with higher differentiation potencies and tumor cells in higher phases or under metastasis, while acceleration of ages was observed in skin cells. Furthermore, scAgeClock is publicly available to facilitate future research and potential implementations.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.29.673183v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">BRD2 Upregulation as a Pan-Cancer Adaptive Resistance Mechanism to BET Inhibition</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Archasappawat, S., Jacques, J., Lee, E., Hwang, C.-I.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Bromodomain and extraterminal motif (BET) inhibitors, such as JQ1, are promising cancer therapeutics that target epigenetic regulators, particularly BRD4. However, resistance to BET inhibitors (BETi) limits their clinical utility, necessitating a better understanding of adaptive mechanisms. We identified BRD2 upregulation as a conserved response to BET inhibition across multiple cancer types and hypothesized that BRD2 compensates for BRD4 loss, sustaining essential transcriptional programs upon treatment. Consistent with this, BRD2 knockdown sensitized cancer cells to BETi in vitro, and combining BRD2 depletion and JQ1 treatment significantly impaired tumor growth in vivo. At the chromatin level, BRD2 and BRD4 ChIP-seq analysis of pancreatic cancer cells showed consistent BRD4 loss from chromatin after JQ1 treatment, while BRD2 displacement differed by sensitivity. Resistant cells maintained higher BRD2 occupancy than sensitive cells, suggesting a link between BRD2 retention and drug response. Mechanistically, NFYA mediates BRD2 up-regulation as NFYA depletion abrogated BRD2 upregulation upon BETi treatment. Collectively, our findings establish BRD2 as a critical mediator of adaptive resistance to BETi in pan-cancer and identify NFYA as a novel transcriptional regulator of this process. Co-targeting BRD2 or its regulatory network offers a rational strategy to enhance the durability and efficacy of BET-based therapies.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.30.673282v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Upregulation of GREB1 in colorectal cancer ovarian metastases may be a potential therapeutic target</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Ruff, S. M., La Ferlita, A., Palavalli, M., Beane, J., Tsai, S., Eng, O., Kim, A. C., Esnakula, A.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Introduction: Classification of ovarian metastases (OM) in colorectal cancer (CRC) as peritoneal metastasis (PM) remains controversial. OM demonstrate resistance to systemic therapy, suggesting distinct molecular tumorigenesis. Gene expression profiling and transcriptomic analysis were performed to distinguish OM, PM, and primary CRC (pCRC) and identify potential therapeutic targets. Methods: RNA sequencing data were obtained from the Total Cancer Care database. After filtering out low-expressed genes, raw counts of retained genes were normalized in trimmed mean of M-values and then log2-transformed. Genes with a |Log2FC|>0.58 and adjusted p-value <0.05 were considered dysregulated. In silico motif enrichment analysis of estrogen receptor 1 (ESR1) on growth regulating estrogen receptor binding 1 (GREB1) was conducted. Results: There were 115 patients with tissue from OM (n=6), PM (n=4), and pCRC (n=105). Among upregulated genes, LAMC3, SCUBE1, and GREB1 had the highest differential expression in OM compared to PM, and PEG3, C7, and GREB1 had the highest differential expression in OM compared to pCRC (all p<0.001). GREB1 was upregulated in OM compared to PM and pCRC. There are two estrogen response element (ERE) sites within the promoter region of GREB1. ESR1 transcription factor was shown to bind to these ERE (p<0.001). Conclusions: Transcriptomic analysis demonstrated clear molecular distinction between OM, PM and pCRC. We identified upregulation of GREB1 in OM compared to PM and pCRC. GREB1 contains both ERE and ESR1 in the upstream promoter regions implying potential upstream transcription regulation mediated by ESR1. GREB1 may represent a novel, hormonal target in treatment of OM in CRC.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.31.673371v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Mitochondrial ACSS1 Links Acetate Metabolism to Pyrimidine Biosynthesis in Nutrient-Stressed B-Cell Lymphomas</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Basappa, J., Goldman, A., Lobello, C., Wang, S., Rushmore, D., Melnikov, O., Neil V. Sen, N., Mallikarjuna, V., Jain, P., Edalati, M., Cai, K., Lu, P., Nejati, R., Borghaei, H., Wellen, K., Wasik, M.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Acetate acts as an alternative carbon source in nutrient-scarce tumors, but its role in supporting nucleotide biosynthesis is still not well understood. Here, we identify the mitochondrial enzyme ACSS1 as a crucial metabolic driver in mantle cell lymphoma, diffuse large B-cell lymphoma, and chronic lymphocytic leukemia.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.29.673065v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">High-resolution spatial analysis reveals pregnenolone metabolism as a potential target for immuno-suppressive microenvironment of BRAF mutant colorectal cancer</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Wang, X., Zhao, Z., Liu, L., Cheng, J., Ba, Y.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> BRAF mutant colorectal cancer (CRC) is highly aggressive and often resistant to traditional therapies, presenting a significant challenge in cancer immunotherapy. Understanding the tumor microenvironment (TME) and identifying novel immune checkpoints are crucial for improving treatment outcomes. Here, we employed high-resolution spatial analysis and single-cell RNA sequencing to map the TME of BRAF mutant CRC at single-cell resolution, focusing on the interactions between exhausted CD8+ T cells and C1QC+ macrophages. Mechanistically, we discovered that C1QC+ macrophages drive CD8+ T cell exhaustion through pregnenolone synthesis via the steroidogenic enzyme CYP11A1. Our findings identify pregnenolone metabolism as a previously unrecognized immunosuppressive pathway in BRAF mutant CRC, and suggest that steroid biosynthesis is a generalizable mechanism of immune evasion beyond endocrine-related malignancies. Targeting this pathway offers a promising therapeutic strategy for enhancing anti-tumor immunity in BRAF mutant CRC and potentially other cancers.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.01.673435v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Revealing the Paper Mill Iceberg: AI-Based Screening of Cancer Research Publications.</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Scancar, B., Byrne, J. A., Causeur, D., Barnett, A. G.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Paper mills are fraudulent organisations that publish fake manuscripts for profit. Paper mill-supported papers have been identified in the cancer research literature, where some papers show features of template use, with seemingly pre-formulated sentences. We trained a machine learning model to distinguish between paper mill papers and genuine cancer research papers published between 1999 and 2024. Using titles and abstracts, the model achieved a prediction accuracy of 0.91. When applied to the cancer research literature, it flagged 9.87% (95% CI 9.83 to 9.90) of papers and revealed a large increase in flagged papers from 1999 to 2024, both across the entire corpus and in the top 10% of journals by impact factor. Most publishers had substantial numbers of flagged papers. Over 170,000 papers by authors from Chinese institutions were flagged. These results indicate that paper mills are a large and growing problem in the cancer literature and are not restricted to low-impact journals.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.29.673016v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">The Ubiquitin-Proteasome System is an Important Driver of EBV-Associated Nasopharyngeal Carcinoma Progression: A Meta-Analysis of Transcriptomics Data</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Ratnawati, H., Sanjaya, A., Christiandy, A., Young, L. S., Ott, S.</p>
-         
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
-                    <tr>
-                        <td align="left" style="font-style: italic;">
-                            Source: bioRxiv
-                        </td>
-                        <td align="right" style="font-style: italic;">
-                            Published: 2025-09-03
-                        </td>
-                    </tr>
-                </table>
-            
-                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;">Background: Epstein-Barr virus (EBV)-associated nasopharyngeal carcinoma (NPC) is characterized by extensive immune infiltration, yet immune evasion remains a hallmark of the disease. In this study, we aimed to leverage publicly available datasets to identify EBV-host gene interactions and re-map their expression at single-cell resolution. Methods: We conducted a meta-analysis of transcriptomic datasets to identify differentially expressed genes in NPC, mapped these genes to EBV-host interaction data, and constructed a network. Network clustering and pathway enrichment were performed, and single-cell RNA sequencing datasets were used to map these genes at cellular resolution. We analysed differences in cell cycle, immune signaling, cell-cell interactions, and assessed prognostic associations of a 12-gene UPS signature using the GEPIA2 platform. Results: We identified 85 EBV-interacting DEGs, most regulated by lytic-phase proteins. MCODE clustering highlighted genes related to the ubiquitin-proteasome system (UPS). Single-cell analyses confirmed elevated UPS-related gene expression in NPC compared to EBV-negative oropharyngeal cancer. UPS-High cells exhibited lower proliferative activity, enriched stemness signaling, and reduced antigen presentation and immune activation, whereas UPS-Low cells showed marked upregulation of growth-promoting pathways. Survival analysis revealed that high UPS expression was associated with poorer outcomes in both pan-cancer and head and neck squamous cell carcinoma datasets. The proportion of UPS-High cells varied widely across patients. Conclusion: UPS activity, influenced by EBV lytic proteins, is linked to immune evasion, stemness, proliferation, and adverse prognosis. These findings support UPS as a potential biomarker and therapeutic target in EBV-associated NPC, warranting NPC-specific validation and functional studies.</p>
-                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.30.673297v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc;">
-        
-
-            <div style="margin-bottom: 30px;">
-                <h2 style="color: #000000; font-size: 22px;">Metabolic Adaptation Study of Tumor Cells during Lung Cancer Bone Metastasis in Mice Based on Single-Cell Metabolome Analysis.</h2>
-                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Xuesen Hu, Tianrun Xu, Shengkai Xia, Yang Xu, Yao Chen, Liliang Wen, Wangshu Qin, Xianzhe Shi, Xinyu Liu, Qi Wang, Chunxiu Hu, Guowang Xu</p>
+                <h2 style="color: #000000; font-size: 22px;">Flashzoi: An enhanced Borzoi for accelerated genomic analysis.</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Johannes C Hingerl, Alexander Karollus, Julien Gagneur</p>
          
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
                     <tr>
@@ -358,14 +28,388 @@
                             Source: PubMed
                         </td>
                         <td align="right" style="font-style: italic;">
-                            Published: 2025-08-06
+                            Published: 2025-09-04
                         </td>
                     </tr>
                 </table>
             
-                <p><span style="background-color: #e8fef1; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">machine learning, cancer biology</span></p>
-                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Lung cancer metastasis, the leading cause of patient mortality, is driven by circulating tumor cells (CTCs), which act as direct mediators of metastatic spread. To elucidate the metabolic heterogeneity across lung cancer metastatic stages, a panoramic single-cell metabolomics study in a mouse lung cancer bone metastasis model was performed using a concentric hybrid nanoelectrospray ionization-atmospheric pressure chemical ionization source. This platform enables high-coverage detection of polar and nonpolar metabolites, overcoming limitations in sensitivity and metabolite diversity. Unsupervised clustering and dimensionality reduction (t-SNE) of single-cell metabolic profiles distinguished primary tumor cells, CTCs, and bone metastatic cells, revealing stage-specific metabolic reprogramming. Machine learning identified key metabolites (e.g., aminobenzoic acid, 2-methyl-3-ketovaleric acid, pantothenic acid) that robustly discriminated metastatic stages with high accuracy (AUC > 0.96). CTCs exhibited dynamic metabolic adaptions at different stages: during blood circulation, amino acid and glutamine metabolism dominated to counteract nutrient deprivation, while during bone colonization, the tricarboxylic acid cycle and one-carbon metabolism were upregulated to support proliferation. This study provides important data to shed light on the metabolic heterogeneity of tumor cells and the metastasis mechanism of lung cancer.</p>
-                <p><a href="https://pubmed.ncbi.nlm.nih.gov/40768566/" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+                <p><span style="background-color: #84d69a; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">machine learning, bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Accurately predicting how DNA sequence drives gene regulation and how genetic variants alter gene expression is a central challenge in genomics. Borzoi, which models over ten thousand genomic assays including RNA-seq coverage from over half a megabase of sequence context alone promises to become an important foundation model in regulatory genomics, both for massively annotating variants and for further model development. However, the currently used relative positional encodings limit Borzoi's computational efficiency.</p>
+                <p><a href="https://pubmed.ncbi.nlm.nih.gov/40905959/" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">A novel deep learning method using contrastive learning enables interpretable outputs from relationships between gene expression and histone modification</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Munif, A., Datta, A., Li, Z., Ward, M.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Current methods for predicting gene expression from histone modifications rely on arbitrary binary classification thresholds such as the median to distinguish between high and low expression for genes. This approach lacks biological justification, creates dataset-dependent classifications, and ignores the relative regulatory relationships between genes that are often more biologically meaningful than absolute cutoffs. We introduce a novel pairwise ranking approach that compares relative expression levels between gene pairs based on their histone modification patterns, eliminating arbitrary threshold selection. Evaluation using the REMC E066 and GSE76344 datasets showed that our pairwise classification framework demonstrated consistent ranking performance in both datasets. The ablation study found that only a subset of histone modification types is necessary, giving evidence of redundancy in the biological code.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.04.674139v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Seasonal neurogenomic changes provide genetic links between male song and testosterone-mediated neurogenesis in a wild songbird</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Mendiwelso, M. E., Liddle, T. A., Prior, N. H., Magnaterra, A. K., Haakenson, C., Stennette, K. A., Palacios, C., Krieg, C. A., Ball, G. F., Stevenson, T. J., Odom, K. J.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Seasonal changes in testosterone mediate the transition from reduced singing in the non-breeding season to high song rates in the early breeding season in male temperate songbirds, a process accompanied by marked neurogenesis in song control regions of the brain. However, the resulting genetic changes and their association with the subsequent behavioral, neuroanatomical and reproductive changes remain poorly understood. Here, we compared gene expression in HVC, a major song control nucleus, between the non-breeding and breeding season in male northern house wrens (Troglodytes aedon) and we examined associations with HVC volume, plasma testosterone concentrations, and testes size. Differential gene expression analysis identified three genes (CLIP4, FAM169A, and TTR) consistently linked to seasonal transitions from non-breeding to three breeding stages (pre-laying, egg-laying and incubation). Notably, TTR, which transports thyroid hormone (TH), was highly expressed in the nonbreeding season, consistent with a possible role of TH in regulating seasonal shifts in song output and structure. We also identified seasonal changes in networks of genes related to neural connectivity, cellular restructuring, and cell migration. Weighted gene co-expression network analysis (WGCNA) revealed gene clusters specifically correlated with testosterone and HVC volume. Testosterone-associated genes included genes involved in neural circuit remodeling, chromatin organization, and cytoskeletal dynamics, consistent with testosterone-mediated regulation of these neuroanatomical changes. Genes linked to seasonal increases in HVC volume were involved in neuronal restructuring and neuron migration, implicating these genes in seasonal neurogenesis. Together, our findings link novel gene expression patterns to hormone regulation and neurogenesis underlying seasonal transitions in birdsong.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.03.674109v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Tractor Workflow Pipeline: A Scalable Nextflow Framework for Local Ancestry-Aware Genome-Wide Association Studies</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Shah, N. N., Tan, T., Honorato-Mauer, J., Lin, Y.-S., Maihofer, A. X., Zai, C. C., PGC-PTSD Ancestry Working Group,, Santoro, M. L., Nievergelt, C. M., Atkinson, E. G.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> The routine exclusion of admixed individuals from traditional Genome-Wide Association Studies (GWAS) due to concerns about spurious associations has hindered genetic analyses involving multiple ancestries. Tractor GWAS addresses this issue by incorporating local ancestry into its analysis, empowering identification of ancestry-enriched hits and generating ancestry-specific summary statistics. However, Tractor requires accurate genomic phasing and local ancestry inference as prerequisite steps, which requires additional bioinformatics expertise and decision points regarding reference panel setup. To streamline, harmonize, and automate this process, we present a scalable Nextflow workflow that integrates all necessary steps, minimizing the need for manual intervention while remaining modular and customizable. The workflow supports multiple commonly used tools and offers flexibility in how Tractor is implemented. To demonstrate its utility, we applied this pipeline to analyze 32 blood biomarkers in 6,245 two-way AFR-EUR admixed individuals from the UK Biobank. This pipeline ran efficiently at scale, replicated known associations, and identified novel ancestry-specific loci. These novel associations were largely driven by variants present on African ancestral tracts but absent from European tracts, underscoring the value of local ancestry-aware methods in uncovering previously missed genetic signals. By enabling the efficient analysis of admixed individuals, our workflow facilitates Tractor use, paving the way for more broader genetic discovery.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.02.673402v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Population dynamics of ribozymes during in vitro selection</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Brooks, E. M., Kotlin, N. R., Weiss, Z., DasGupta, S.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Ribozymes are central to models of RNA-based primordial life. Understanding how ribozymes emerge from RNA populations under changing selection pressures is essential for reconstructing early biochemical systems. In vitro selection has been instrumental in isolating ribozymes from combinatorial populations; however, their population dynamics during selection remains poorly characterized. By analyzing high-throughput sequencing data from all eight rounds of an in vitro selection experiment, consisting of over 5 million unique sequences, we were able to track how sequences rise and fall in abundance during selection. We found that the most abundant sequences emerged early and maintained their dominance, suggesting that only a few cycles of selection-amplification may be sufficient to isolate well-adapted ribozymes. Nucleotide conservation analysis of the dominant ribozyme family and experimental characterization of rare variants indicated that abundance did not always predict activity. Our analyses show that sequence complementarity with the substrate emerged as a common feature in as early as the first round, highlighting early convergence of diverse sequence populations on a beneficial catalytic strategy. Our work presents the most detailed description of ribozyme population dynamics during an in vitro selection experiment and provides a high-resolution view of how RNA sequences compete for survival and propagation.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.31.673163v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Evolutionary Tree in Chemical Space of Natural Products</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Yang, B., Xiang, C., Li, T., Liu, B., Sinitskiy, A., Li, J.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Natural products (NPs) are key to biological function and adaptation, with their distribution shaped by complex evolutionary and ecological forces. While it may seem reasonable to assume that closely related species produce chemically similar NPs, this assumption has not been systematically tested at a broad taxonomic scale. Here, we evaluate whether evolutionary (taxonomic) proximity correlates with chemical similarity in large-scale data from the Lotus database of NPs. We use five deep learning-based encoders, including Chemformer and SMILES Transformer, to embed NPs into a high-dimensional "chemical space." Our results demonstrate that, for flowering plants (Magnoliopsida) and conifers (Pinopsida), species separated by shorter taxonomic distances tend to produce significantly more similar NPs. Similar trends are observed for Fungi and Metazoa, albeit with some complications, possibly due to horizontal gene transfer, convergent evolution, and/or incomplete coverage in the dataset used for NPs. Our findings suggest that the evolutionary tree can be statistically recovered in a chemical space of NPs, provided that this space is constructed with appropriate deep learning techniques, and provide a new computational framework to investigate the evolutionary dynamics of secondary metabolism. These results can inform drug design strategies, for example by enabling the reconstruction of NPs from poorly studied or extinct species.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.31.673394v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Flippable Siamese Differential Neural Network for Differential Graph Inference</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Leng, J., Yu, J., Wu, L.-Y.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Differential graph inference is a critical analytical technique that enables researchers to accurately identify the variables and their interactions that change under different conditions. By comparing two conditions, researchers can gain a deeper understanding of the differences between them. Currently, the mainstream methods in differential graph inference are mathematical optimization algorithms, including sparse optimization based on Gaussian graphical models or sparse Bayesian regression. These methods can eliminate many false positives in graphs, but at the cost of heavy reliance on the prior distributions of data or parameters, and they suffer from the curse of dimensionality. To address these challenges, we introduce a new architecture called the Flippable Siamese Differential Neural Network (FSDiffNet). We originally established the concept of flippability and the theoretical foundation of flippable neural networks, laying the groundwork for building a flippable neural network. This theoretical framework guided the design of architecture and components, including the SoftSparse activation function and high-dilation circular padding diagonal convolution. FSDiffNet uses large-scale pre-training techniques to acquire differential features and perform differential graph inference. Through experiments with simulated and real datasets, FSDiffNet outperforms existing state-of-the-art methods on multiple metrics, effectively inferring key differential factors related to conditions such as autism and breast cancer. This proves the effectiveness of FSDiffNet as a solution for differential graph inference challenges.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.31.673390v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Impact of Vitamin D on Gene Expression in Atlantic Salmon Skin and Potential Immunomodulation Against Salmon Louse Infection</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Taylor, L. D., Gorman, C. E., Egan, F., Ruane, N. M., McGinnity, P. D., Hulsey, C. D.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Vitamin D is a key micronutrient in vertebrate health that influences musculoskeletal function and likely modulates immune responses in tissues such as the skin. In aquaculture, Atlantic salmon (Salmo salar) are particularly vulnerable to skin pathogens, notably the ectoparasitic salmon louse (Lepeophtheirus salmonis). As the skin represents the first line of immunological defence, its capacity to mediate host-pathogen interactions may be influenced by dietary vitamin D. This study investigated the transcriptomic response of salmon skin following six months of dietary vitamin D supplementation, with a focus on immune-related gene expression. A total of 113 differentially expressed genes (DEGs) were identified, 46 of which are implicated in inflammation, immune signalling, and both innate and adaptive immunity. These DEGs were further compared to published RNA-seq data of salmon skin challenged with L. salmonis. Notably, while pro-inflammatory genes were regulated in opposing directions, heat shock proteins, lysozyme and antimicrobial peptides were consistently upregulated under both conditions. These findings suggest that vitamin D may modulate cutaneous immune responses by dampening inflammation and enhancing innate defences, potentially improving resistance to skin-associated pathogens such as salmon lice.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.01.673453v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Accurate and robust classification of Mycobacterium bovis-infected cattle using peripheral blood RNA-seq data</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> O'Grady, J. F., Ivich, A., McHugo, G. P., Khan, A., Hall, T. J., O'Donnell, S. L. F., Correia, C. N., Browne, J. A., Riggio, V., Prendergast, J. G. D., Clark, E. L., Pausch, H., Meade, K. G., Gormley, I. C., Gormley, E., Gordon, S. V., Greene, C. S., MacHugh, D. E.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> The zoonotic bacterium, Mycobacterium bovis, causes bovine tuberculosis (bTB) and is closely related to Mycobacterium tuberculosis, the primary cause of human tuberculosis (hTB). Bovine TB remains recalcitrant to eradication in endemic countries where current diagnostics fail to identify all infected animals. While blood-based RNA biomarkers identified through machine learning have shown accurate discrimination of hTB-positive and hTB-negative individuals, similar approaches have not been explored for bTB. Here, we use RNA-seq and machine learning to investigate the utility of peripheral blood mRNA as a host-response biomarker for bTB using data from Ireland, the UK and the US. We identify a 30-gene signature and a 273-gene elastic net classifier that differentiate bTB-positive from bTB-negative cattle, achieving area under the curve (AUC) values of 0.986/0.900 for the former and 0.968/0.938 for the latter in training and testing, respectively. These two classifiers produced high sensitivity and specificity values ([≥] 0.853 for both metrics) in the testing set. Additionally, we show that they robustly distinguish bTB+ animals from those infected with other bacterial or viral pathogens (AUC [≥] 0.819). These RNA-based classifiers accurately diagnose bTB and differentiate bTB from other diseases, representing a promising tool for augmenting current diagnostics to advance bTB eradication efforts in endemic regions.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.01.673540v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Fast Fourier Transform is a training-free, ultrafast, highly efficient, and fully interpretable approach for epigenomic data compression</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Ward, M., Dao, N., Datta, A., Li, Z.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Improving the efficiency of data compression remains essential for feature selection and data modelling. Current approaches for compressing epigenomic/genomic data highly rely on autoencoder that requires substantial computing resources, parameter fine-tuning, training, and time. Here, we developed a training-free, Fast Fourier Transform (FFT)-based method, for data compression with high efficiency and full interpretability. Our FFT method compresses epigenomic data of histone modification up to 1,000-fold while still maintaining high reconstruction fidelity (cosine similarity, 99.7%), does not require any training and completes ultrafast within 70 milliseconds on GPU or 20 seconds on CPU opposite to extensive training in hours/days for autoencoder on GPU/CPU, and offers full interpretability of compressed features from frequency components of original signals in contrast to the uninterpretable ''black box'' from autoencoder. This enables high accuracy in the classification model prediction (AUC, 0.960). Thus, our novel FFT method represents a major paradigm shift in data compression.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.03.669431v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">STADiffuser: high-fidelity simulation and full-view 3D modeling of spatial transcriptomics</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Zhang, C., Zhang, S.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #c59cf3; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Spatial transcriptomics technologies have provided invaluable insights by profiling gene expression alongside precise spatial information. However, they encounter high costs, data sparsity, and limited resolution, hindering their broader adoption and utility. Moreover, the lack of flexible simulators capable of generating high-fidelity simulated data has impeded the development of computational tools for spatial transcriptomic data analysis. To this end, we introduce STADiffuser, a versatile deep generative model that leverages diffusion modeling for accurate simulation of spatial transcriptomic data. STADiffuser employs a two-stage architecture: an autoencoder with a graph attention mechanism for learning spot embeddings, followed by a latent diffusion model integrated with a spatial denoising network for data generation. STADiffuser is the first simulator designed for spatial transcriptomic data, capable of handling multiple samples and 3D coordinates while supporting user-defined conditions. STADiffuser facilitates various downstream analyses, including accurate imputation, super-resolution, and full-slice generation. Furthermore, its generative scheme enables in silico experiments, thereby enhancing the statistical power in detecting differentially expressed genes and identifying cell-type-specific genes while effectively controlling confounding factors. Notably, STADiffuser scales to millions of spots and supports the full-view 3D modeling of a marmoset cerebellum atlas with over 20 million spots, enabling detailed investigations from arbitrary viewing angles.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.30.673245v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Exodermis lignification impacts lateral root emergence in Brachypodium distachyon</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Bellande, K., Vieira Teixeira, C. D. J., D'orlando, A., Perez, L., Sibout, R., Roulin, A. C., Vermeer, J. E. M., Badet, T.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #97beca; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, genomics, plant biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Rationale: The mechanisms controlling lateral root emergence in monocots, particularly the role of the exodermis, are poorly understood. We investigated how natural variation in the Brachypodium distachyon stress response shapes root system architecture by modulating cell wall dynamics. Methods: We used root tip excision to synchronize lateral root development across natural accessions. The resulting phenotypes were analysed using comparative transcriptomics, biochemical lignin quantification, confocal Raman spectroscopy, and chemical inhibition of lignin biosynthesis. Key Results: Two distinct root system architectures, 'pine tree' and 'fishbone', were identified. The 'fishbone' phenotype results from an emergence-specific defect caused by the premature and intense lignification of the exodermis. This was driven by the transcriptional upregulation of lignin biosynthesis genes and was rescued by a lignin inhibitor. Main Conclusion: Stress-induced exodermal lignification acts as a mechanical 'brake' on lateral root emergence. This positions the exodermis as a key regulatory hub that integrates environmental cues with developmental programs to control RSA plasticity in grasses.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.02.673693v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">RNA-based communication in heterogeneous populations of cell mimics</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Lehr, F.-X., Banlaki, I., Bumueller, E., Mercier, T., Niederholtmeyer, H.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #ded59b; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, synthetic biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> RNA regulators offer a promising path for building complex, orthogonal circuits due to their low resource demands and design flexibility. In this study we explore their potential as signaling molecules in communication between synthetic cells. Specifically, we engineer porous polymer cell mimics to produce, emit and receive two types of small synthetic RNA regulators that are required to activate expression of a reporter at the level of transcription and translation. We distribute this AND gate circuit in receiver and two types of sender cell mimics to compare the distributed logic computation to the behavior of the circuit in well-mixed, bulk cell-free expression reactions. Analyzing different densities and spatial arrangements of senders and receivers, we reveal spatiotemporal gradients in RNA signals and identify configurations that increase specific activation. With small regulatory RNAs, the engineering toolbox for communication between synthetic cells expands to include a programmable class of signalling molecules. The rapid turnover of RNA suggests applications in establishing dynamic signaling gradients in communities of synthetic cells.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.03.673985v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Tri-Functional CRISPR Screen Reveals Overexpression of QDR2 and QDR3 Transporters Increase Fumaric Acid Production in Kluyveromyces marxianus</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Thornbury, M., Omran, R., Kumar, L., Knoops, A., Abushahin, R., Whiteway, M., Martin, V.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #ded59b; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, synthetic biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Organic acids such as fumaric acid are widely used in the food and beverage industry as acidulants and preservatives, while also serving as versatile precursors for industrially relevant compounds. Fumaric acid is still predominantly produced through petroleum-derived processes. To enhance production efficiency and diversify supply, we are engineering Kluyveromyces marxianus as a biosynthetic platform from renewable feedstocks. In previous work, we have established K. marxianus Y-1190 as a host for lactose valorization based on its high growth rate on lactose and its tolerance for acid conditions. Here, we establish a trifunctional genome-wide library for K. marxianus using CRISPR activation, interference, and deletion to allow identification of gene expression perturbations that enhance tolerance to fumaric acid. We determined that deletion of ATP7, encoding a subunit of the mitochondrial F1F0 ATP synthase, and overexpression of QDR2 and QDR3, two previously uncharacterized members of the 12-spanner H antiporter (DHA1) family in K. marxianus, can enhance fumaric acid tolerance. We also found that integrated overexpression of both QDR2 and QDR3 in a {Delta}FUM1 background strain improved titers of fumaric acid production from 0.26 g L-1 to 2.16 g L-1. Together, these results highlight roles for membrane transport and mitochondrial function in enabling fumaric acid tolerance and production in K. marxianus.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.03.674080v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">A {surd}t-Warped Wave Transform Reveals Multi-Scale Electrical Rhythms in Fungal Networks</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Knowles, J.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #ded59b; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, synthetic biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Fungal electrical activity exhibits spikes and slow oscillatory modulations over seconds to hours. We introduce a {surd}t-warped wave transform that concentrates long-time structure into compact spectral peaks, improving time-frequency localization for sublinear temporal dynamics. On open fungal datasets (fs{approx}1 Hz) the method yields sharper spectra than STFT, stable {tau}-band trajectories, and species-specific multi-scale "signatures". Coupled with spike statistics and a lightweight ML pipeline, we obtain reproducible diagnostics under leave-one-file-out validation. All analyses are timestamped, audited, and designed for low-RAM devices.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.08.31.673362v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">BioML-bench: Evaluation of AI Agents for End-to-End Biomedical ML</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Miller, H. E., Greenig, M., Tenmann, B., Wang, B.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #ded59b; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, synthetic biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Large language model (LLM) agents hold promise for accelerating biomedical research and development (R&D). Several biomedical agents have recently been proposed, but their evaluation has largely been restricted to question answering (e.g., LAB-Bench) or narrow bioinformatics tasks. Presently, there remains a lack of benchmarks evaluating agent capability in multi-step data analysis workflows or in solving the machine learning (ML) challenges central to AI-driven therapeutics development, such as perturbation response modeling or drug toxicity prediction. We introduce BioML-bench, the first benchmarking suite for evaluating AI agents on end-to-end biomedical ML tasks. BioML-bench spans four domains (protein engineering, single-cell omics, biomedical imaging, and drug discovery) with tasks that require agents to parse a task description, build a pipeline, implement models, and submit predictions graded by established metrics (e.g., AUROC, Spearman). We evaluate four open-source agents: two biomedical specialists (STELLA, Biomni) and two generalists (AIDE, MLAgentBench). On average, agents underperform relative to human baselines, and biomedical specialization does not confer a consistent advantage. We also found that agents which attempted more diverse ML strategies more often tended to score highest, suggesting that architecture and scaffolding may be stronger determinants of performance. These findings underscore both the potential and current limits of agentic systems for biomedical ML, and highlight the need for systematic, reproducible evaluation. BioML-bench is provided open-source at https://github.com/science-machine/biomlbench.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.01.673319v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">Profiling histone post-translational modifications to identify signatures of epigenetic drug response in T-cell acute lymphoblastic leukemia</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Corveleyn, L., Provez, L., Satilmis, O., Refhagen, N., Landfors, M., Sleeckx, W., Lintermans, B., De Maesschalck, A., Kotecha, R. S., De Moerloose, B., Lammens, T., Deforce, D., Degerman, S., Goossens, S., Van Vlierberghe, P., Dhaenens, M.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> Epigenetic modifications are dynamic and reversible, making them attractive targets for therapeutic intervention in cancer. Although several epigenetic drugs (epidrugs) have been clinically approved, their application in T-cell acute lymphoblastic leukemia (T-ALL) remains limited, and predictive biomarkers of response are lacking. Here, we present a mass spectrometry (MS)-based pharmacoepigenetic approach to profile histone post-translational modifications (hPTMs) to identify signatures associated with epidrug sensitivity in T-ALL. Baseline hPTM landscapes were previously established by our group for 21 T-ALL cell lines using liquid chromatography tandem mass spectrometry (LC-MS/MS). Here, we treated these cell lines with a panel of nine epidrugs including anthracyclines, histone deacetylase inhibitors, and DNA methyltransferase inhibitors. Correlation of cell viability data with hPTM levels revealed distinct hPTM signatures linked to sensitivity for each drug class. These signatures were subsequently evaluated in T-ALL patient-derived xenograft (PDX) models. However, we our analysis revealed substantial discepancies in hPTM sensitivity signatures compared to those observed in vitro. Co-variation network analysis highlighted divergence in hPTM-hPTM correlation between the two models, underscoring limitations of cell lines for modeling dynamic epigenetic regulation in vivo. Our findings establish a framework for MS-based hPTM profiling in T-ALL and emphasize the importance of model selection in developing predictive epigenetic biomarkers.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.01.673463v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc;">
+        
+
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #000000; font-size: 22px;">ACTL6A regulates the Warburg effect through coordinated activation of AP-1 signaling in head and neck squamous cell carcinoma</h2>
+                <p style="font-size: 14px; text-align: justify; margin-top: -10px; margin-bottom: 10px;"> Monavarian, M., Sherman, A. R., Mohammad, I. A., Maddineni, S., Zhang, M., Wu, J. C., Chua, K. F., Sunwoo, J., Finegersh, A.</p>
+         
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size:16px; margin-bottom: 12px;">
+                    <tr>
+                        <td align="left" style="font-style: italic;">
+                            Source: bioRxiv
+                        </td>
+                        <td align="right" style="font-style: italic;">
+                            Published: 2025-09-04
+                        </td>
+                    </tr>
+                </table>
+            
+                <p><span style="background-color: #caac84; color: #000000; padding: 4px 8px; border-radius: 12px; font-size: 14px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);">bioinformatics, cancer biology</span></p>
+                <p style="font-size: 16px; text-align: justify;"><span style="font-weight: bold; font-size: 16px;">Abstract:</span> ACTL6a is an essential component of SWI/SNF and expressed on the chromosome 3q26 cytoband, which is amplified in head and neck squamous cell carcinomas (HNSCC). While ACTL6A is emerging as an oncogene, its role as a treatment target and mechanisms of transcription factor induction remain unknown. Here, we show that ACTL6A expression is a mediator of the Warburg effect, with ACTL6A knockdown inducing mitochondrial dependency and significantly decreasing levels of aerobic glycolysis. These effects lead to near complete attenuation of hypoxic cell growth by blunting induction of HIF1 and HIF2 protein expression. They also sensitize treatment resistant HNSCC cells to the tumor killing effects of the complex I inhibitor IACS-010759 in vivo. Using ATAC-seq, we identify ACTL6A as a mediator of chromatin accessibility of AP-1 transcription factor sites and find that it regulates upstream MAPK signaling through induction Ras and Galectin-1. These effects sensitize ACTL6A over-expressing cells to inhibition of glycolysis by MEK inhibitors. Our results link SWI/SNF subunit amplification with potentiation of MAPK signaling in HNSCC and provide a novel mechanism by which cancer cells drive aerobic glycolysis and reduce mitochondrial dependency. We leverage these findings to propose treatment strategies for hypoxic tumors with SWI/SNF subunit amplifications.</p>
+                <p><a href="https://www.biorxiv.org/content/10.1101/2025.09.02.671886v1?rss=1" style="color: #1a0dab; font-size: 16px;">Read full paper</a></p>
             </div>
             <hr style="border: none; border-top: 1px solid #ccc;">
         
