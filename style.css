@@ -9,8 +9,7 @@
   --btn-text-dark: #fff;
   --btn-text-light: #000;
   --card-radius: 8px;
-  --sidebar-width: 220px;
-  --bold-font: 600px;
+  --bold-font: 500px;
 }
 
 * {
@@ -31,30 +30,31 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: var(--sidebar-width);
-  height: 43vh; 
+  width: 100%;
   background-color: var(--sidebar-bg);
   display: flex;
-  flex-direction: column;
-  padding: 1.5rem 1rem; 
-  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+  z-index: 100;
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: var(--bold-font);
   color: var(--text-light);
-  letter-spacing: 0.5px;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
 }
 
 .nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.4rem;
   margin-top: auto; 
-  margin-bottom: 3rem; 
 }
 
 .nav a {
@@ -74,10 +74,10 @@ body {
 .content {
   margin-left: var(--sidebar-width);
   padding: 0 3rem;
-  padding-right: var(--sidebar-width);
+  padding-right: 3rem;
   justify-content: center;
   display: flex;
-  flex-direction: column;  /* stack vertically instead of side-by-side */
+  flex-direction: column;
   flex: 1;
   align-items: center;
 }
@@ -89,9 +89,9 @@ body {
 
 .hero {
   padding: 7.5rem 0 4rem 0;
-  min-height: 70vh; /* Ocupa 70% da altura da tela */
+  min-height: 60vh;
   display: flex;
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center;
   justify-content: center;
 }
 
@@ -101,7 +101,7 @@ body {
 
 .hero h1 {
   font-size: 2.4rem;
-  font-weight:  var(--bold-font);
+  font-weight: var(--bold-font);
   margin-bottom: 0.4rem;
   display: flex;
   justify-content: center;
@@ -114,7 +114,6 @@ body {
   margin-bottom: 3rem;
   display: flex;
   justify-content: center;
-
 }
 
 .hero p {
@@ -124,8 +123,8 @@ body {
   margin-bottom: 2rem; 
   text-wrap: balance;
   text-align: center;
-
 }
+
 .banner {
   margin: 0;
   align-items: center;
@@ -134,22 +133,13 @@ body {
   position: relative;
   overflow: hidden;
   margin-bottom: 3rem;
-  aspect-ratio: 16 / 3; /* Keeps proportion stable */
-}
-
-.banner-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  /*background-color: var(--card-bg);
-  padding: 8px;
-  border-radius: 6px;*/
+  aspect-ratio: 16 / 4;
 }
 
 .banner-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -161,18 +151,19 @@ body {
   position: relative; 
   color: var(--text-light); 
   text-align: center;
-  max-width: 800px;
+  max-width: 720px;
+  padding: 0 2rem;
 }
 
 .banner-content h1 {
-  font-size: 1.5em; 
-  margin-bottom: 0.5em;
+  font-size: 1.3em; 
+  margin-bottom: 0.7em;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .banner-content p {
   font-size: 1em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
@@ -200,10 +191,8 @@ body {
   text-align: center;
 }
 
-
 .card-grid {
   display: grid;
-  /* Força o grid a ter 3 colunas de largura igual (1fr) */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   justify-items: center;
@@ -211,7 +200,6 @@ body {
 
 /* Special note card */
 .note-card {
-  /* Inherit common project card styles */
   background: var(--card-bg);
   border-radius: var(--card-radius);
   overflow: hidden;
@@ -243,7 +231,7 @@ body {
 
 .note-card-body h3 {
   font-size: 1.05rem;
-  font-weight:  600px;
+  font-weight: 600;
   color: var(--text-light);
   margin-bottom: 0.6rem;
 }
@@ -260,7 +248,7 @@ body {
   background-color: var(--card-bg);
   border: 8px solid var(--card-bg);
   border-radius: 12px;
-  background-size: 200% 100%; /* Torna a imagem 2x mais larga que o container */
+  background-size: 200% 100%;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
@@ -275,26 +263,19 @@ body {
   border-radius: 6px;
 }
 
-/* Fatiamento de Imagem para a seção #research */
-
-/* CARD 1 (O primeiro 33% da imagem) */
+/* Image slicing for #research section */
 #research .oa-card:nth-child(1) .composition-card-image {
   background-image: url('docs/pale-blue-dot.jpg');
-  /* Posição 0% mostra o lado esquerdo da imagem */
   background-position: 0% 0; 
 }
 
-/* CARD 2 (O 33% do meio da imagem) */
 #research .oa-card:nth-child(2) .composition-card-image {
   background-image: url('docs/pale-blue-dot.jpg');
-  /* Posição 50% desloca a imagem para mostrar o centro */
   background-position: 50% 0;
 }
 
-/* CARD 3 (O último 33% da imagem) */
 #research .oa-card:nth-child(3) .composition-card-image {
   background-image: url('docs/pale-blue-dot.jpg');
-  /* Posição 100% mostra o lado direito da imagem */
   background-position: 100% 0;
 }
 
@@ -331,7 +312,7 @@ body {
 
 .card-body h3 {
   font-size: 1.05rem;
-  font-weight:  600px;
+  font-weight: 600;
   color: var(--text-light);
   margin-bottom: 0.6rem;
 }
@@ -353,12 +334,13 @@ body {
 .btn {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
   flex: 1;
   padding: 0.65rem 0.8rem;
   border-radius: 999px;
   font-size: 0.85rem;
-  font-weight:  var(--bold-font);
+  font-weight: var(--bold-font);
   cursor: pointer;
   border: none;
   transition: all 0.2s ease;
@@ -414,12 +396,12 @@ body {
   line-height: 1.6;
 }
 
-/* Classe para agrupar e espaçar os botões */
 .contact-buttons-group {
-    display: flex;
-    justify-content: center; 
-    gap: 1.5rem; 
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center; 
+  gap: 1.5rem; 
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .contact-button {
@@ -432,7 +414,7 @@ body {
   padding: 0.65rem 0.8rem;
   border-radius: 999px;
   font-size: 0.85rem;
-  font-weight:  var(--bold-font);
+  font-weight: var(--bold-font);
   cursor: pointer;
   border: none;
   transition: all 0.2s ease;
@@ -461,10 +443,253 @@ body {
   background: #e5e5e5;
 }
 
-/* Alinha o SVG dentro dos botões (incluindo .btn e .contact-button) */
 .btn svg, 
 .contact-button svg {
-  /* Move o ícone 2 pixels para cima para alinhamento */
   transform: translateY(-2px); 
   vertical-align: middle; 
+}
+
+/* Tablets (768px ou menos) */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.8rem;
+    border-bottom: 1px solid #222;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .nav a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+    border-bottom: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav a:hover {
+    border-bottom: 2px solid var(--sidebar-text);
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 70px;
+    padding: 0 1.5rem;
+  }
+
+  .hero {
+    padding: 3rem 0 2rem 0;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .banner {
+    aspect-ratio: 16 / 6;
+    margin-bottom: 2rem;
+  }
+
+  .banner-content h1 {
+    font-size: 1.2em;
+  }
+
+  .banner-content p {
+    font-size: 0.9em;
+    margin-bottom: 1.5rem;
+  }
+
+  .section {
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .note-card {
+    grid-column: span 1;
+  }
+
+  .contact-buttons-group {
+    gap: 1rem;
+  }
+
+  .contact-button {
+    width: 160px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile pequeno (480px ou menos) */
+@media (max-width: 480px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.8rem;
+    border-bottom: 1px solid #222;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    gap: 0.2rem;
+    margin: 0;
+  }
+
+  .nav a {
+    padding: 0 0.6rem;
+    font-size: 0.85rem;
+    border-bottom: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav a:hover {
+    border-bottom: 2px solid var(--sidebar-text);
+  }
+
+  .content {
+    margin-top: 120px;
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner {
+    aspect-ratio: 16 / 6;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-content {
+    padding: 0 0.5rem;
+  }
+
+  .banner-content h1 {
+    font-size: 1rem;
+  }
+
+  .banner-content p {
+    font-size: 0.85em;
+    margin-bottom: 1rem;
+  }
+
+  .section {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-grid {
+    gap: 1rem;
+  }
+
+  .card-body,
+  .note-card-body {
+    padding: 1rem;
+  }
+
+  .card-body h3,
+  .note-card-body h3 {
+    font-size: 0.95rem;
+  }
+
+  .card-body p,
+  .note-card-body p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-buttons {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-buttons-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .contact-desc {
+    font-size: 0.9rem;
+  }
 }
