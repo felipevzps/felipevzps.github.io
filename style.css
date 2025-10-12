@@ -273,6 +273,84 @@ body {
   background-position: 100% 0;
 }
 
+/* FLIP CARD EFFECT - Easter Egg for Card 3 */
+.flip-container {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 6px;
+}
+
+.flip-front {
+  background-image: url('docs/pale-blue-dot.jpg');
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+
+.flip-back {
+  background-image: url('docs/pale-blue-dot.jpg');
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+
+  transform: rotateY(180deg);
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  overflow: hidden;
+
+}
+
+.flip-back img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.flip-back-text {
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.flip-back-text p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 5rem;
+  font-style: italic;
+}
+
+.flip-back-text .context-text {
+  font-size: 0.75rem;
+  color: #aaa;
+  font-style: normal;
+  padding-bottom: 3rem;
+}
+
 /* CARDS */
 .oa-card {
   background: var(--card-bg);
