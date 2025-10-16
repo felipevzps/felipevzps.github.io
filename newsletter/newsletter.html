@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>paper-trackr newsletter</title> <link href="../docs/photo_51.ico" rel="shortcut icon"/>
+<link href="../style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      background-color: #000;
+      color: #f5f5f5;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .newsletter-container {
+      max-width: 80rem;
+      margin: 7rem auto;
+      padding: 0 2rem;
+    }
+
+    .newsletter-intro {
+      text-align: center;
+      margin-bottom: 5rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .newsletter-intro h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 7.5rem 0 4rem 0;
+    }
+
+    .newsletter-intro p {
+      color: #ccc;
+      line-height: 1.5;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+      text-wrap: balance;
+      text-align: center;
+    }
+
+
+    /* ===== FILTER BAR ===== */
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: none;
+      border: none;
+      color: #aaa;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .filter-btn:hover {
+      color: #fff;
+    }
+
+    .filter-btn.active {
+      color: #fff;
+    }
+
+    /* Lista dos papers */
+    .papers-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .paper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid #222;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    .paper:hover {
+      background-color: #0a0a0a;
+    }
+
+    /* Coluna esquerda */
+    .paper-meta {
+      font-size: 0.9rem;
+      color: #999;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0.3rem;
+      padding: 0 0 0 2rem;
+    }
+
+    .paper-meta .keyword {
+      color: #bbb;
+      font-weight: 500;
+    }
+
+    .paper-meta .date {
+      color: #888;
+    }
+
+    .paper-meta .journal {
+      color: #777;
+      font-style: italic;
+    }
+
+    /* Coluna direita */
+    .paper-content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem 0 0;
+    }
+
+    .paper-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+
+    .paper-authors {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-bottom: 0.8rem;
+    }
+
+    .paper-tldr {
+      color: #ddd;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .paper-abstract {
+      display: none;
+      margin-top: 1rem;
+      color: #aaa;
+      line-height: 1.6;
+      font-size: 0.9rem;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .paper.expanded .paper-abstract {
+      display: block;
+    }
+
+    .btn {
+    display: inline-flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex: 1;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: var(--bold-font);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    gap: 0.4rem;
+    }
+    
+    .btn.dark {
+    background: var(--btn-bg-dark);
+    color: var(--btn-text-dark);
+    }
+
+    .btn.dark:hover {
+    background: #2a2a2a;
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<aside class="sidebar">
+<div class="sidebar-inner">
+<a class="logo" href="../index.html">felipevzps</a>
+<nav class="nav">
+<a href="../index.html#about">About</a>
+<a href="../index.html#research">Research</a>
+<a href="../index.html#software">Software</a>
+<a href="../index.html#hackathon">Hackathon</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+</div>
+</aside>
+<main class="newsletter-container">
+<section class="newsletter-intro">
+<h1>Latest in Science</h1>
+<p>
+      Hello, welcome to your daily dose of research!<br/> 
+      Here you'll find the most recent papers published yesterday, filtered for the topics I follow.
+      </p>
+<p>
+      The curation is done automatically by my open-source project, <a href="https://github.com/felipevzps/paper-trackr" target="_blank">paper-trackr</a>.<br/>
+      Want your own results? Install it via PyPI, create your filters, and get personalized updates!
+      </p>
+</section>
+<!-- Filtro de keywords -->
+<div class="filter-bar" id="filterBar"></div>
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">LipidQMap - An Open-Source Tool for Quantitative Mass Spectrometry Imaging of Lipids</h2>
+<p class="paper-authors">Dehairs, J., Idkowiak, J., +16 authors, Swinnen, J. V.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We introduce LipidQMap, the first open-source platform for processing omics-scale qMSI lipidomics data, which resolves Na/H adduct isobaric overlaps by leveraging sodiated-to-protonated adduct ratios of standards, validated across several MSI platforms</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Mass spectrometry imaging (MSI) is a powerful tool in both basic and clinical research, enabling spatial visualization of biomolecules and drugs in tissue sections. However, factors influencing mass spectrometric response during imaging are increasingly recognized for their impact on apparent molecular distribution. Quantitative mass spectrometry imaging (qMSI) addresses this variability by incorporating analytical standards that undergo the same processes as analytes. While qMSI sample preparation protocols for omics-scale quantitative lipidomics are actively evolving, software solutions for downstream data processing remain scarce. Here, we introduce LipidQMap, the first open-source platform for processing omics-scale qMSI lipidomics data. LipidQMap applies one-point calibration, normalizing annotated lipid signals against class-specific standards on a pixel-by-pixel basis, and generates concentration heat maps in pmol/mm2. The software supports centroided data import, recalibration, and lipid identification using a built-in, user-modifiable lipid database. LipidQMap resolves Na/H adduct isobaric overlaps by leveraging sodiated-to-protonated adduct ratios of standards, validated across several MSI platforms using mouse brain sections. Type II isobaric overlaps are corrected using predicted isotopic patterns. Extensive validation demonstrates that LipidQMap is robust across MSI platforms and harmonizes qMSI data, paving the way for more accurate and reproducible spatial lipid quantification.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682422v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Hybrid Deep Learning and Lee-Carter Model for Mortality Forecasting: A Study of US Adults Aged 35-80</h2>
+<p class="paper-authors">Abaitey, C., Abakah, E., +3 authors, Appiah, E.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> This study introduces a hybrid approach that enhances mortality forecasts by integrating machine learning techniques specifically Long Short-Term Memory (LSTM), Bidirectional LSTM, and Neural Networks (NN) with the traditional Lee-Carter model.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> This study introduces a hybrid approach that enhances mortality forecasts by integrating machine learning techniques specifically Long Short-Term Memory (LSTM), Bidirectional LSTM (BiLSTM), and Neural Networks (NN) with the traditional Lee-Carter model. After deriving the time index k_t from the Lee-Carter model, these deep learning models were employed to capture complex temporal patterns, which were then incorporated into the Lee-Carter framework to improve forecasting accuracy. The hybrid models were evaluated using historical mortality data from the United States, covering ages 35 to 80 years from 1975 to 2020. Among the models tested, the LSTM model outperformed all others, demonstrating superior capability in capturing time dependencies and producing more accurate mortality forecasts. The integration of LSTM with the Lee-Carter framework led to significant improvements in predictive accuracy. This research demonstrates that combining traditional statistical approaches with modern deep learning techniques, particularly LSTM, offers a powerful method for enhancing mortality forecasting by effectively modeling time-dependent patterns. These findings provide valuable insights and tools for policymakers, actuaries, and healthcare professionals to improve planning and decision-making.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.13.682203v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Odyssey: reconstructing evolution through emergent consensus in the global proteome</h2>
+<p class="paper-authors">Singhal, A., Venkatasubramanian, S., +3 authors, Lee, C.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We present Odyssey, a family of multimodal protein language models for sequence and structure generation, protein editing and design.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> We present Odyssey, a family of multimodal protein language models for sequence and structure generation, protein editing and design. We scale Odyssey to more than 102 billion parameters, trained over 1.1e23 FLOPs. The Odyssey architecture uses context modalities, categorized as structural cues, semantic descriptions, and orthologous group metadata, and comprises two main components: a finite scalar quantizer for tokenizing continuous atomic coordinates, and a transformer stack for multimodal representation learning. Odyssey is trained via discrete diffusion, and characterizes the generative process as a time-dependent unmasking procedure. The finite scalar quantizer and transformer stack leverage the consensus mechanism, a replacement for attention that uses an iterative propagation scheme informed by local agreements between residues. Across various benchmarks, Odyssey achieves landmark performance for protein generation and protein structure discretization. Our empirical findings are supported by theoretical analysis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682677v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Herding cats: predicting immunogenicity from heterogeneous clinical trials data</h2>
+<p class="paper-authors">Dudzic, P., NaturalAntibody and friends, Krawczyk, K.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We present the Therapeutic Antibody Database, a comprehensive and curated resource that links therapeutic antibodies to clinical trial outcomes, with a dedicated focus on immunogenicity.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Antibodies represent the largest and fastest growing class of biologic therapeutics, yet forecasting their clinical performance, particularly immunogenicity, remains a major hurdle in drug development. Despite hundreds of antibody-based drugs progressing through clinical pipelines, systematic integration of their clinical outcomes has been limited by fragmented and heterogeneous data. Here, we present the Therapeutic Antibody Database, a comprehensive and curated resource that links therapeutic antibodies to clinical trial outcomes, with a dedicated focus on immunogenicity. Our dataset is sourced from approximately 11,500 anti-drug antibody (ADA) measurements across diverse molecules and indications, offering an unprecedented view into the clinical manifestation of immune responses to biologics. In order to evaluate the main drivers of ADA, we evaluate gathered immunogenicity incidence and prevalence data against various therapeutic descriptors which includes sequence, structure and contextual features related to therapeutics. We find that most tools have very poor performance, and we pinpoint the causes of it, demonstrating the need for systems immunology approaches incorporating clinical metadata beyond biochemical properties of the molecules alone.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.14.682375v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Perturbation-aware representation learning for in vivo genetic screens</h2>
+<p class="paper-authors">Hugi, F., Tanna, T., +1 author, Raetsch, G.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We train an autoencoder with a quantile-hurdle reconstruction loss and feature-weighted emphasis on perturbation-affected genes to obtain a low-dimensional representation that allows for the accurate reconstruction of gene-level marginals for counterfactual decoding.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> CRISPR-based genetic perturbation screens paired with single-cell transcriptomic readouts (Perturb-seq) offer a powerful tool for interrogating biological systems. Yet the resulting datasets are heterogeneous - particularly in vivo - and currently used cell-level perturbation labels reflect only CRISPR guide RNA exposure rather than perturbation state; further, many perturbations have a minimal effect on gene expression. For perturbations that do alter the transcriptomic state of cells, intracellular guide RNA abundance exhibits a dose-response association with perturbation efficacy. We combine (i) per-perturbation, expression-only classifiers trained with non-negative negative-unlabeled (nnNU) risk to yield calibrated scores reflecting the perturbation state of single cells and (ii) a monotone guide abundance prior to yield a per-cell pseudo-posterior that supports both assignment of perturbation probability and selection of affected gene features. To obtain a low-dimensional representation that allows for the accurate reconstruction of gene-level marginals for counterfactual decoding, we train an autoencoder with a quantile-hurdle reconstruction loss and feature-weighted emphasis on perturbation-affected genes. The result is a perturbation-aware latent embedding amenable to downstream trajectory modeling (e.g., optimal transport or flow matching) and a principled probability of perturbation for each non-control cell derived jointly from its guide counts and transcriptome.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682661v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">SLOGEN: A Structure-based Lead Optimization Model Unifying Fragment Generation and Screening</h2>
+<p class="paper-authors">Yang, B., Xu, Y., +4 authors, Li, J.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We introduce Slogen, a structure-based Lead Optimization algorithm unifying fragment Generation and screENing.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Lead optimization plays an important role in preclinical drug discovery. While deep learning has accelerated this process, structure-based approaches that leverage 3D protein-ligand information remain underexplored. Existing models could improve predicted affinity but often yield synthetically inaccessible compounds, whereas screening-based methods limit chemical novelty by relying on fixed fragment libraries. To bridge the gap, we introduce Slogen, a Structure-based Lead Optimization algorithm unifying fragment Generation and screENing. To achieve this, Slogen integrates a transformer-based variational autoencoder, pretrained on the BindingNet v2 dataset, with an E(3)-equivariant graph neural network that models 3D protein-fragment interactions. This unified framework enables both fragment generation and similarity-based screening, simultaneously addressing synthetic tractability and structural diversity. The benchmarking study shows that Slogen matches or surpasses state-of-the-art methods while exploring broader chemical space. Case studies on the Smoothened and D1 dopamine receptors demonstrate its capacity to design high-affinity, drug-like molecules, providing a practical method for structure-guided lead optimization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.14.682343v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Decoding protein-membrane binding interfaces from surface-fingerprint-based geometric deep learning and molecular dynamics simulations</h2>
+<p class="paper-authors">Park, B., Van Lehn, R. C.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We present MaSIF-PMP, a geometric deep learning model that leverages molecular surface fingerprints to predict interfacial binding sites (IBSs) of peripheral membrane proteins.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Predicting protein-membrane interactions is a formidable challenge due to the subtle physicochemical features that distinguish membrane-binding regions of a protein surface, as well as the scarcity of experimentally resolved membrane-bound protein conformations. Here, we present MaSIF-PMP, a geometric deep learning model that leverages molecular surface fingerprints to predict interfacial binding sites (IBSs) of peripheral membrane proteins (PMPs). MaSIF-PMP integrates geometric and chemical surface features to produce spatially resolved IBS predictions. Compared to existing models, MaSIF-PMP achieves superior performance for IBS classification, while feature ablation studies and transfer learning analyses reveal distinct determinants governing protein-membrane versus protein-protein interactions. We further show that molecular dynamics (MD) simulations can validate model predictions, refine IBS labels, and capture composition-dependent membrane binding patterns. These results establish MaSIF-PMP as an effective framework for IBS prediction and highlight the potential of incorporating conformational dynamics from MD to improve both model accuracy and biological interpretability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.14.682447v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Mucinolysome in gut microbiomes of farm animals and humans</h2>
+<p class="paper-authors">Akresi, J. E., Do, T. V. T., +5 authors, Yin, Y.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> Mucin degradation in the gut can be mediated by mucinolysomes, defined as extracellular multi-enzyme complexes specializing in mucin degradation.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Mucins are glycoproteins located on the cell surfaces of animal gastrointestinal tracts. Mucins separate host tissues from microbial pathogens and are instrumental for host gut health. Here, we provide evidence that mucin degradation in the gut can be mediated by mucinolysomes, defined as extracellular multi-enzyme complexes specializing in mucin degradation. We computationally predict the presence of mucinolysomes across 63 metagenome-assembled genomes (MAGs) and two isolated genomes of anaerobic Limousia bacteria, including seven MAGs from human samples of six countries. All 65 genomes were found to display core mucinolysome components, consisting of 3~6 scaffoldins (containing up to 12 cohesin modules) and up to 22 dockerin-containing mucin-degrading CAZymes (carbohydrate active enzymes). The organization of mucinolysomes allows the assembly of up to 24 CAZymes in the same complex. We validated that a cultivated Limousia strain ET540 from chicken cecum can support growth on mucins as its sole carbon source, triggering the expression of most mucinolysome-related genes, including both scaffoldins and CAZymes. We also confirmed their assembly into a multi-enzyme complex by validating the cohesin-dockerin interactions among most of the mucinolysome proteins, using AlphaFold3. While mucinolysome-encoding Limousia have low abundance in different animal hosts, their abundance and prevalence are higher in farm animals than in humans, highlighting their important role in livestock gut ecosystems. Our findings reveal a novel mechanism of mucin degradation and provide a framework to explore microbial contributions to gut health and host-microbe interactions across species.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.14.682383v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A tailored variant filtering procedure for multi-breed and multi-species unbalanced animal SNP collections</h2>
+<p class="paper-authors">Lazzari, B., Milanesi, M., +7 authors, Colli, L.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We propose a novel variant filtering method based on within-population subsampling, Minor Allele Count (MAC) and marker spacing (bp-space), specifically designed to avoid biases introduced by standard filtering procedures and to adequately represent continental and species-specific variation.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Technological advancements and decrease of costs of whole-genome sequencing approaches has made available a huge and ever increasing amount of resequencing data for many species. It is thus now possible to assemble large sized datasets encompassing the molecular variation of several species and/or populations or breeds. Nonetheless, these datasets can be extremely variable in terms of geographical provenance and sample sizes, with taxonomic groups varying from hundreds to just a few or even one single entry. In such circumstances, the application of standard filtering approaches may lead to the introduction of biases and to the under/over representation of some groups or gene pools. Commonly adopted variant filtering approaches relying on Minor Allele Frequency (MAF) and Linkage Disequilibrium (LD) may not be suitable to treat datasets representing broadscale diversity of multiple species, due to remarkable differences in LD structure and in the frequency of variants at the local vs. global scale. Thus, by exploiting the VarGoats 1000 goat genome project data as an optimal case study, we devised a novel approach based on within-population subsampling, Minor Allele Count (MAC) and marker spacing (bp-space), specifically designed to avoid biases introduced by standard filtering procedures and to adequately represent continental and species-specific variation. Starting from a quality-filtered dataset of &gt;28M SNPs from 1372 animals, we obtained a dataset of &lt;14M markers and 750 individuals, complying with the initial requirements and more handy for further computational steps. The dataset was validated by PCA, Neighbor Joining and Admixture analyses.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.14.682050v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">AniMarkerDB: a comprehensive database for exploring cell types and marker genes in livestock and poultry at single-cell resolution</h2>
+<p class="paper-authors">Li, Z., Zhang, T., +7 authors, Liao, M.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We developed AniMarkerDB, a comprehensive and curated database dedicated to marker genes and immune-related epitopes in livestock and poultry, including chicken, pig, and duck.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Single-cell RNA sequencing (scRNA-seq) has dramatically advanced the understanding of cellular heterogeneity. While numerous marker gene databases are available for humans and mice, a lack of systematic resources for livestock and poultry species remains, limiting progress in functional genomics, immunology, and breeding.. To address this challenge, we developed AniMarkerDB (https://animarkerdb.bio), a comprehensive and curated database dedicated to marker genes and immune-related epitopes in economically animals, including chicken, pig, and duck. AniMarkerDB integrates 7,010 marker gene across 37 tissues and 846 cell types, together with 71,442 immune epitope records from IEDB. All entries undergo rigorous literature curation, manual validation, and multi-level quality control, with standardized nomenclature and annotation to ensure data consistency and reusability. The platform supports flexible queries by species, tissue, cell type, or gene. It offers analytical tools for cross-species comparison model organisms such as human and mouse, interactive single-cell atlas visualization, and user-defined cell type annotation. Additionally, AniMarkerDB provides dynamic visualizations and export options, enabling researchers to efficiently obtain large-scale marker and epitope data for downstream applications such as infectious disease research, vaccine target design, and comparative immunology. Looking ahead, AniMarkerDB will expand species coverage and incorporate additional modalities, including single-cell atlases from healthy and disease models, establishing itself as a comprehensive and authoritative platform for animal cell biology, disease modeling, and translational research.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.14.682327v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">EGR1 Mediates Riluzole-Induced Apoptosis in Osteosarcoma via the Yap/p73-Bax Signaling Axis</h2>
+<p class="paper-authors">Azeem, S. M., ChandThakuri, S., +7 authors, Mahajan, S. S.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> A novel mechanism where Riluzole promotes apoptosis through upregulation of EGR1, which then cooperates with YAP/p73 to activate Bax expression and inducing apoptosis.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Osteosarcoma (OS), although rare, is the most common primary bone cancer, primarily affecting individuals aged 10-30 years. Despite therapeutic advances, survival rates have remained stagnant for decades. Recent studies show that Riluzole, a glutamate receptor antagonist, induces apoptosis in OS cells both in vitro and in vivo. Our previous work demonstrated that Riluzole increases reactive oxygen species (ROS), activating c-Abl kinase, which phosphorylates Yes-associated protein (Yap) at tyrosine 357. This modification promotes nuclear translocation of Yap and interaction with p73, enhancing Bax expression and inducing apoptosis. Early Growth Response 1 (EGR1), a zinc finger transcription factor often linked to apoptosis in other cancers, is significantly downregulated in OS. Here, we investigated the role of EGR1 in Riluzole-mediated apoptosis across OS cell lines and patient-derived xenografts (PDX). In this study, we show that Riluzole upregulates EGR1 expression in all OS cell lines. Chromatin immunoprecipitation followed by qPCR confirmed that EGR1 directly binds to the Bax promoter along with Yap/p73, enhancing Bax expression. Immunohistochemistry of in vivo xenograft tumors from Riluzole-treated mice revealed increased EGR1 and cleaved caspase-3 levels, indicating elevated apoptosis, while reduced NUMA expression suggested diminished tumor proliferation. Together, these findings reveal a novel mechanism where Riluzole promotes apoptosis through upregulation of EGR1, which then cooperates with YAP/p73 to activate Bax expression. These insights establish Riluzole as a promising therapeutic intervention for OS treatment through modulation of the EGR1/Yap/p73/Bax signaling axis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682608v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Loss of PIMREG impairs double-strand break signaling and repair</h2>
+<p class="paper-authors">Gasparini, M. V. d. R., do Carmo, L., de Almeida, G. G., Mamede, M. S. L., +7 authors, Archangelo, L. F.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We explored the role of PIMREG in DNA damage repair and signaling in GBM cells exposed to genotoxic agents and found that its function in the repair of double-strand breaks via homologous recombination is important.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Glioblastoma (GBM) is the most common primary brain tumor in adults. It is an aggressive type of tumor with an average overall survival of 12-15 months post-diagnosis. Standard treatment involves surgical resection, followed by radiotherapy and chemotherapy with temozolomide (TMZ). However, resistance to treatment is frequently observed. PIMREG is a marker of proliferation highly expressed across different tumor types, with particularly elevated levels in GBM. Our previous study revealed that PIMREG silencing sensitizes GBM cells to TMZ treatment and affects ATM activation, a key apical kinase involved in DNA damage signaling. Given the emerging significance of PIMREG in DNA damage response, we sought to explore its role in DNA damage repair and signaling in GBM cells exposed to genotoxic agents. Here we assessed the functionally enriched pathways associated with high PIMREG expression in GBM patient samples, analyzed the interactome of PIMREG upon treatment of GBM cells with TMZ and evaluated the impact of PIMREG on DNA damage signaling alongside its function in the repair of double-strand breaks. Our findings reveal that PIMREG functions as a direct substrate for ATM/ATR kinases, interacts with key DNA repair proteins upon TMZ treatment and actively facilitates the cellular response to chemotherapy- and radiotherapy-induced DNA damage. Taken together, PIMREG may function during DNA damage signaling, specifically during the repair of double strand breaks via homologous recombination in GBM cells. In all, our data suggested high PIMREG expression may contribute to the resistance of GBM cells to treatment.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682590v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Invadopodia-Mediated Remodeling of the Lymphatic Endothelium Drives Cancer Cell Lymphatic Dissemination and is Regulated by a CCR7-Vav2-Rac3 Signaling axis.</h2>
+<p class="paper-authors">Javed, S., Emmanuel, M., +6 authors, Williams, K. C.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We show that Tks5-positive structures, termed invadopodia, remodel lymphatic endothelial junctions, and CCR7, a chemokine receptor, promotes cancer cell invasion across lymphatic vascular barrier, and establish a mechanism by which cancer cells breach a lymphatic</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cancer cell invasion across a lymphatic endothelial barrier and subsequent colonization of regional lymph nodes often marks the first stage of metastatic dissemination. Lymphatic vessels facilitate the escape of cancer cells and can support further metastatic dissemination. Although the clinical and experimental evidence supports a role for lymph node metastases in promoting metastatic spread, the mechanism employed by cancer cells to navigate a lymphatic endothelium and enter lymphatic vessels is poorly characterized. To investigate this, we assessed the interactions between cancer cells and lymphatic endothelial cells and found that Tks5-positive structures, termed invadopodia, remodel lymphatic endothelial junctions. Loss of Tks5 impaired cancer cell invasion across a lymphatic endothelium and significantly reduced lymph node and lung metastasis in a mouse model of breast cancer progression. Surgical removal of the axillary and brachial lymph nodes prior to orthotopic cancer cell injection resulted in a significant reduction in lung tumor burden, further demonstrating the significance of lymph node metastases to metastatic tumor burden. Next, using breast cancer patient primary tumors we found that elevated expression of CCR7, a chemokine receptor, significantly associated with lymph node metastasis. CCR7 localized to invadopodia and promoted cancer cell invasion across lymphatic endothelium, both in the presence and absence of its canonical ligand CCL19. Tyrosine phosphorylation of CCR7 directed the recruitment of Vav2 and activation of Rac3. Our findings highlight a role for lymphatic metastases in promoting distant metastasis and establish a mechanism by which cancer cells breach a lymphatic endothelium.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682688v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">CK2α phosphorylates CHIP for oncogenesis: A novel post-translational switch in cancer</h2>
+<p class="paper-authors">Karmakar, S., Chatterjee, M., +1 author, Ghosh, M. K.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We identified the E3 ubiquitin ligase CHIP (C-terminus of Hsc70-Interacting Protein) as a direct and functionally relevant substrate of the serine/threonine kinase CK2 alpha, which is frequently overexpressed in solid tumors.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The post-translational regulation of tumor suppressors by oncogenic kinases remains a critical yet underexplored determinant of proteostasis reprogramming in cancer. Here, we identified the E3 ubiquitin ligase CHIP (C-terminus of Hsc70-Interacting Protein) as a direct and functionally relevant substrate of the serine/threonine kinase CK2 alpha, which is frequently overexpressed in solid tumors. Using LC/MS analysis, in silico kinase prediction, and molecular interaction mapping, we demonstrated that CK2 alpha phosphorylates CHIP at serine 19 (represented as S19), a conserved residue within its TPR domain, thereby promoting ubiquitination and subsequent proteasomal degradation of CHIP. This phosphorylation-dependent destabilization of CHIP impairs its ability to target oncogenic substrates, such as AKT, resulting in sustained AKT phosphorylation and activation, required for oncogenesis. Clinically, we observed a robust inverse correlation between CK2 alpha and CHIP expressions across colorectal and breast cancer patient datasets, which was validated by immunofluorescence (IF) analyses in tumor samples. Multiple functional assays revealed that CK2 alpha suppression, either by genetic ablation or pharmacological inhibition by TBCA, restores CHIP stability, reactivates apoptotic signalling cascades, and attenuates tumor cell proliferation, migration, and 3D spheroid integrity. Moreover, CK2 alpha blockade in syngeneic murine models diminishes primary tumor burden and metastatic dissemination, concomitant with increased CHIP accumulation and reduced AKT signalling. Mechanistically, a phosphorylation-resistant mutant of CHIP at S19 (CHIP-S19A), is refractory to CK2 alpha-mediated degradation and preserves anti-tumor functions, delineating a phosphorylation-dependent proteolytic switch as a central node in the CK2 alpha-CHIP-AKT regulatory axis. These findings establish a novel paradigm wherein an oncogenic kinase hijacks protein quality control pathway to suppress tumor suppressive activity and facilitate malignancy. Our study positions CK2 alpha; as a druggable modulator of CHIP turnover, offering a translational framework for restoring proteostatic checkpoints and constraining oncogenic signalling in aggressive cancers.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682604v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">YAP/TEAD4-reagulated placental alkaline phosphatases ALPP and ALPPL2 are immunosuppressive ectonucleotidases modulated by MAPK inhibitors</h2>
+<p class="paper-authors">Bauche, D., Martin, J. L., +18 authors, Sadekova, S.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We identify the YAP/TEAD4 signaling axis as the primary regulator of ALPP/L2 expression in tumor cells and show that inhibitors targeting KRAS, MEK, and ERK upregulate ALPP and enhance the efficacy of antibody-drug conjugates (ADCs).</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Placental alkaline phosphatases ALPP and ALPPL2 (ALPP/L2) are promising clinical targets for therapies such as antibody-drug conjugates (ADCs). However, their regulation and biological functions remain unclear. Here, we identify the YAP/TEAD4 signaling axis as the primary regulator of ALPP/L2 expression in tumor cells. Importantly, we demonstrate that inhibitors targeting KRAS, MEK, and ERK upregulate ALPP/L2 expression in vitro and in vivo, thereby enhancing the efficacy of antibody-drug conjugates (ADCs) when used in combination. Moreover, our work reveals a novel immunomodulatory function of ALPP/L2 as cell surface ectonucleotidases that hydrolyze extracellular ATP, ADP, and AMP to adenosine, promoting regulatory T cell infiltration into the tumor microenvironment. Together, these findings reveal a biological function of ALPP/L2 and identify druggable regulators to enhance ALPP/L2-targeted therapies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682438v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">E2 displacement of CIP2A from TOPBP1 activates the DNA damage response during papillomavirus life cycles</h2>
+<p class="paper-authors">Prabhakar, A. T., James, C. D., +16 authors, Morgan, I. M.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> We demonstrate that the papillomavirus transcription/replication/segregation factor E2 activates the DNA damage response (DDR) which promotes viral replication via homologous recombination, and cell proliferation via inhibition of ATR.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The papillomavirus life cycle is intricately linked to epithelial differentiation, and the virus manipulates the differentiation process to facilitate viral production. One such manipulation is activation of the DNA damage response (DDR) which promotes viral replication via homologous recombination. This report demonstrates that the papillomavirus transcription/replication/segregation factor E2 activates the DNA damage response (DDR). During differentiation, E2 displacement of CIP2A from TOPBP1 causes CIP2A to bind and inhibit PP2A resulting in DDR activation via ATM phosphorylation. The DDR promotes inhibitory interaction of DBC1 with the class III deacetylase SIRT1, which further boosts the DDR via increased acetylation and stability of viral and host proteins. E2 forms a complex with TOPBP1 and ATM, while preventing ATR activation by blocking TOPBP1-ATR interaction. This ATM up ATR down phenotype promotes viral replication via ATM promotion of homologous recombination, and cell proliferation via inhibition of ATR. We demonstrate this mechanism of DDR activation in multiple systems: keratinocytes expressing only E2, in foreskin keratinocytes immortalized by HPV16, in HPV16 positive keratinocytes derived from a cervical lesion, in pre-neoplastic lesions induced by mouse papillomavirus MmuPV1, in head and neck cancer cell lines that retain E2 expression, and in HPV16 positive oropharyngeal patient derived xenografts that retain E2 expression. ATM inhibition preferentially killed cells expressing E2, presenting a novel strategy for treating HPV early preneoplasia and a large subset of HPV+ oropharyngeal cancers retaining E2 expression and episomal genomes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682653v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 15, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Propionate metabolism dysregulation promotes drug-tolerant persister cell survival in non-small cell lung cancer</h2>
+<p class="paper-authors">Parang, B., Yoffe, L., +8 authors, Blenis, J.</p>
+<p class="paper-tldr"><strong>tl;dr:</strong> Propionate metabolism dysregulation is a non-genetic mechanism of drug resistance in non-small cell lung cancer and a potential therapeutic target for targeted therapy.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Recent studies show that genetic sequencing can not fully explain drug resistance in non-small cell lung cancer (NSCLC), suggesting undiscovered non-genetic mechanisms that can enable cancer cell survival. Propionate metabolism is the pathway by which odd-chain fatty acids, branched chain amino acids, and cholesterol are metabolized. We have previously shown that methylmalonic acid (MMA), a byproduct of propionate metabolism that accumulates when the pathway is disrupted, can activate epithelial-to-mesenchymal transition (EMT) in cell lines. But the clinical significance of propionate metabolism in cancer patients is not known. Here we show, for the first time, that propionate metabolism is dysregulated in patients with non-small cell lung cancer. MMA is elevated in lung tumors and in the serum of patients with metastatic NSCLC. Metabolism of cobalamin associated B (MMAB), a key regulatory gene of propionate metabolism, is downregulated in NSCLC and drug-tolerant persister cells, leading to MMA accumulation and EMT activation. We show that restoring expression of MMAB in NSCLC enhances targeted therapy and suppresses TGFB signaling. These findings reveal propionate metabolism dysregulation as a non-genetic mechanism of drug resistance and highlight propionate metabolism as a potential therapeutic target.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.15.682658v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div></section>
+</main>
+<script>
+    // === EXPAND / COLLAPSE PAPERS ===
+    document.querySelectorAll('.paper').forEach(paper => {
+      paper.addEventListener('click', e => {
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        paper.classList.toggle('expanded');
+      });
+    });
+
+    // === FILTER SYSTEM ===
+    const papers = document.querySelectorAll('.paper');
+    const filterBar = document.getElementById('filterBar');
+
+    // Extrai keywords
+    const allKeywords = new Set();
+    papers.forEach(paper => {
+      paper.dataset.keywords.split(',').forEach(k => allKeywords.add(k.trim()));
+    });
+
+    // Cria botões dinamicamente
+    const filters = ['all', ...Array.from(allKeywords)];
+    filters.forEach(keyword => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.textContent = keyword;
+      if (keyword === 'all') btn.classList.add('active');
+      filterBar.appendChild(btn);
+    });
+
+    // Filtro de papers
+    filterBar.addEventListener('click', e => {
+      if (!e.target.classList.contains('filter-btn')) return;
+
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+
+      const keyword = e.target.textContent;
+      papers.forEach(paper => {
+        if (keyword === 'all') {
+          paper.style.display = 'grid';
+        } else {
+          const hasKeyword = paper.dataset.keywords.toLowerCase().includes(keyword.toLowerCase());
+          paper.style.display = hasKeyword ? 'grid' : 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
