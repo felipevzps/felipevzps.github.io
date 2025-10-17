@@ -25,7 +25,7 @@
     .newsletter-intro {
       text-align: center;
       margin-bottom: 5rem;
-      max-width: 720px;
+      max-width: 700px;
       margin: 0 auto;
     }
 
@@ -44,7 +44,25 @@
       text-wrap: balance;
       text-align: center;
     }
+    
+    .newsletter-intro .note {
+      color: #999;
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-top: 1rem;
+    }
 
+    .newsletter-intro a {
+      color: #9ae6b4;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .newsletter-intro a:hover {
+      border-bottom: 1px solid #9ae6b4;
+    }
 
     /* ===== FILTER BAR ===== */
     .filter-bar {
@@ -52,7 +70,7 @@
       justify-content: center;
       gap: 1.5rem;
       padding-bottom: 1rem;
-      margin-top: 5rem;
+      margin-top: 7rem;
       margin-bottom: 3rem;
       flex-wrap: wrap;
     }
@@ -185,7 +203,6 @@
     background: #2a2a2a;
     }
 
-
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -212,10 +229,12 @@
       Hello, welcome to your daily dose of research!<br/> 
       Here you'll find the most recent papers published yesterday, filtered for the topics I follow.
       </p>
-<p>
-      The curation is done automatically by my open-source project, <a href="https://github.com/felipevzps/paper-trackr" target="_blank">paper-trackr</a>.<br/>
-      Want your own results? Install it via PyPI, create your filters, and get personalized updates!
-      </p>
+<p class="note">
+<small>
+        * The curation is done automatically by my open-source project, <a href="https://github.com/felipevzps/paper-trackr" target="_blank">paper-trackr</a>.<br/>
+        Want your own results? Install it via PyPI and get personalized updates!
+        </small>
+</p>
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
