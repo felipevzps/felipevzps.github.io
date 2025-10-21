@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>paper-trackr newsletter</title> <link rel="shortcut icon" href="../docs/photo_51.ico"/>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: #f5f5f5;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .newsletter-container {
+      max-width: 80rem;
+      margin: 7rem auto;
+      padding: 0 2rem;
+      width: calc(100% - 4rem);
+    }
+
+    .newsletter-intro {
+      text-align: center;
+      margin-bottom: 5rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .newsletter-intro h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 7.5rem 0 4rem 0;
+    }
+
+    .newsletter-intro p {
+      color: #ccc;
+      line-height: 1.5;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+      text-wrap: balance;
+      text-align: center;
+    }
+    
+    .newsletter-intro .note {
+      color: #999;
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-top: 1rem;
+    }
+
+    .newsletter-intro a {
+      color: #9ae6b4;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .newsletter-intro a:hover {
+      border-bottom: 1px solid #9ae6b4;
+    }
+
+    /* ===== FILTER BAR ===== */
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+      margin-top: 7rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: none;
+      border: none;
+      color: #aaa;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .filter-btn:hover {
+      color: #fff;
+    }
+
+    .filter-btn.active {
+      color: #fff;
+    }
+
+    /* Lista dos papers */
+    .papers-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .paper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid #222;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    .paper:hover {
+      background-color: #0a0a0a;
+    }
+
+    /* Coluna esquerda */
+    .paper-meta {
+      font-size: 0.9rem;
+      color: #999;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0.3rem;
+      padding: 0 0 0 2rem;
+    }
+
+    .paper-meta .keyword {
+      color: #bbb;
+      font-weight: 500;
+    }
+
+    .paper-meta .date {
+      color: #888;
+    }
+
+    .paper-meta .journal {
+      color: #777;
+      font-style: italic;
+    }
+
+    /* Coluna direita */
+    .paper-content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem 0 0;
+    }
+
+    .paper-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+
+    .paper-authors {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-bottom: 0.8rem;
+    }
+
+    .paper-tldr {
+      color: #ddd;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .paper-abstract {
+      display: none;
+      margin-top: 1rem;
+      color: #aaa;
+      line-height: 1.6;
+      font-size: 0.9rem;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .paper.expanded .paper-abstract {
+      display: block;
+    }
+
+    .btn {
+    display: inline-flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex: 1;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: var(--bold-font);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    gap: 0.4rem;
+    }
+    
+    .btn.dark {
+    background: var(--btn-bg-dark);
+    color: var(--btn-text-dark);
+    }
+
+    .btn.dark:hover {
+    background: #2a2a2a;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <a href="../index.html" class="logo">felipevzps</a>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#software">Software</a>
+        <a href="../index.html#hackathon">Hackathon</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="newsletter-container">
+    <section class="newsletter-intro">
+      <h1>Latest in Science</h1>
+      <p>
+      Hello, welcome to your daily dose of research!<br> 
+      Here you'll find the most recent papers published yesterday, filtered for the topics I follow.
+      </p>
+      <p class="note">
+        <small>
+        * The curation is done automatically by my open-source project, <a href="https://github.com/felipevzps/paper-trackr" target="_blank">paper-trackr</a>.<br>
+        Want your own results? Install it via PyPI and get personalized updates!
+        </small>
+      </p> 
+
+    </section>
+
+    <!-- Filtro de keywords -->
+    <div class="filter-bar" id="filterBar"></div>
+
+    <section class="papers-list" id="papersList">
+    </section>
+
+  </main>
+
+  <script>
+    // === EXPAND / COLLAPSE PAPERS ===
+    document.querySelectorAll('.paper').forEach(paper => {
+      paper.addEventListener('click', e => {
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        paper.classList.toggle('expanded');
+      });
+    });
+
+    // === FILTER SYSTEM ===
+    const papers = document.querySelectorAll('.paper');
+    const filterBar = document.getElementById('filterBar');
+
+    // Extrai keywords
+    const allKeywords = new Set();
+    papers.forEach(paper => {
+      paper.dataset.keywords.split(',').forEach(k => allKeywords.add(k.trim()));
+    });
+
+    // Cria botões dinamicamente
+    const filters = ['all', ...Array.from(allKeywords)];
+    filters.forEach(keyword => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.textContent = keyword;
+      if (keyword === 'all') btn.classList.add('active');
+      filterBar.appendChild(btn);
+    });
+
+    // Filtro de papers
+    filterBar.addEventListener('click', e => {
+      if (!e.target.classList.contains('filter-btn')) return;
+
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+
+      const keyword = e.target.textContent;
+      papers.forEach(paper => {
+        if (keyword === 'all') {
+          paper.style.display = 'grid';
+        } else {
+          const hasKeyword = paper.dataset.keywords.toLowerCase().includes(keyword.toLowerCase());
+          paper.style.display = hasKeyword ? 'grid' : 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
