@@ -242,15 +242,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Analyzing long-read CRISPR experiments with CRISPRLungo</h2>
-<p class="paper-authors">Hwang, G.-h., Vyshedskiy, B., +4 authors, Bauer, D. E., pinello, l.</p>
+<h2 class="paper-title">PyMOL plugin for Protein Circuit Topology</h2>
+<p class="paper-authors">Dimins, M., Bazba, A., +6 authors, Mashaghi, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Long-read sequencing can characterize complex genome editing-induced DNA sequence changes such as large deletions, insertions, and inversions that are difficult to detect using short-read sequencing. However, PCR amplification and sequencing errors complicate accurate variant detection, and existing analysis tools are not optimized for gene editing specific allelic outcomes. Here we present CRISPRLungo, a computational pipeline specifically designed for long-read amplicon sequencing of gene edited samples. CRISPRLungo incorporates unique molecular identifier (UMI)-based error correction and statistical filtering to distinguish true editing events from background noise, enabling robust detection of small indels and structural variants. Through systematic benchmarking using simulated datasets, we demonstrate that CRISPRLungo outperforms existing approaches in both accuracy and read recovery. CRISPRLungo supports both Oxford Nanopore and PacBio platforms and identify previously undetected structural variant edits such as inversions in published CRISPR datasets. To demonstrate allele-specific edit quantification, we applied CRISPRLungo to analyze edited primary cells from a patient with harboring compound heterozygous SBDS mutations, accurately quantifying SBDS editing outcomes despite contaminating reads from the homologous SBDSP1 pseudogene. To maximize accessibility, we developed a fully client-side web application requiring no installation, making advanced long-read analysis accessible to researchers regardless of computational expertise. CRISPRLungo is freely available at https://github.com/pinellolab/CRISPRLungo with a user-friendly web interface available at https://pinellolab.github.io/CRISPRLungo.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683786v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Circuit Topology (CT) is a fundamental property of folded polymer chains and provides a unique and powerful topological framework for protein analysis, with applications in functional annotation, disease marker identification, protein engineering, and drug development. An open-source Python-based implementation of CT, called ProteinCT, provides access to circuit topology analysis through a scripting environment. Here, we present the ProteinCT tool as a plugin for the molecular visualization platform PyMOL, packaged with a graphical user interface (GUI), easy automatic installation, and novel features developed through strong integration with PyMOL's application programming interface (API). In addition to ProteinCT tools, the plugin includes CT tools for studying the dynamics of disordered proteins. Analysis of a representative protein trajectory confirms that the original functionality of ProteinCT is retained, the GUI is functional, easy to use, and visually clear, and the additional features are seamlessly integrated with PyMOL, making protein circuit topology widely accessible to researchers in structural biology and related fields.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683762v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -261,15 +261,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning guided engineering of conditional split inteins for regulated protein splicing in mammalian cells</h2>
-<p class="paper-authors">Di Ventura, B., Liang, J.</p>
+<h2 class="paper-title">Integrative holo-omic data analysis predicts interactions across the host-microbiome axis</h2>
+<p class="paper-authors">Merkesvik, J., Langa, J., +9 authors, Hvidsten, T. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Inteins are proteins that excise themselves from precursor proteins and connect the flanking polypeptides with a peptide bond. Split inteins consist of two independently translated fragments that must associate to become splice competent. They can be used for diverse posttranslational protein modifications. Using the ML Int∈ algorithm, we predicted unnatural split sites in two of the fastest and most efficient split inteins, gp41-1 and NrdJ-1, to generate functional variants with fragments of reduced mutual affinity. We harness this feature to create conditional versions of these inteins by controlling the physical proximity of the intein fragments with a light-inducible heterodimerization system. The resulting light-activatable gp41-1 and NrdJ-1 inteins enabled blue light dependent control of Cre recombinase activity in mammalian cells, which we exploited to spatially control apoptosis via localized expression of truncated BID (tBID) and caspase-8. This work highlights the versatility of Int∈ for designing conditional inteins for precise spatiotemporal protein regulation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683710v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Understanding the interplay between host organisms and their microbiomes is central to the development of sustainable food systems. However, high dimensionality and spurious associations remain major obstacles to extracting meaningful biological insight from multi-omic host-associated microbiome data; a challenge further exacerbated when "holo-omic" analyses across the host-microbiome boundary is considered. Here, we show that a computational method designed for multi-omic analysis in eukaryotes can be leveraged to integrate and analyse five layers of holo-omic data from porcine hosts and their gut microbiomes. We collected caecal tissue and digesta samples during a feeding trial that tested the impact of microbiota-directed fibres (acetylated galactoglucomannan) at critical developmental stages. From 800,000 features including microbial and host genes, metagenome-assembled genomes, and metabolites from caecal tissue and digesta, we used multiset correlation and factor analysis to select the most relevant features for capturing coordinated patterns across omic layers. From these features, we predicted over 2,000 putative host-microbiome interactions based on co-occurrence. Some of them reflected previously known relationships between animal and microbiome features, such as microbial genes for carbohydrate metabolism being linked to glycoside abundances in host tissue. Other predicted co-occurrences included features that were not detected in single-omic analysis and offer new hypotheses of host-microbiome interactions that warrant future investigation. Hence, we showcase an application of holo-omic analysis that avoids common pitfalls in high-dimensional data analysis; identifies known interactions as a form of validation; and most importantly, predicts new leads for understanding host-microbiome symbiosis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683681v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -280,15 +280,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Vesicle-templated self-assembly of freestanding multi-μm DNA shells</h2>
-<p class="paper-authors">Yang, H. Y., Karfusehr, C., Simmel, F. C.</p>
+<h2 class="paper-title">Multi-omics integration and batch correction using a modality-agnostic deep learning framework</h2>
+<p class="paper-authors">Alvira Larizgoitia, J. I., Partel, G., +21 authors, Sifrim, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> In the quest to create increasingly complex synthetic cell-mimicking systems, a wide range of DNA nanostructures have been developed to coat, permeabilize, sculpt, or otherwise functionalize lipid vesicles. In a complementary strategy, DNA architectures have been used as scaffolds to direct the growth of lipid membrane vesicles. However, no systematic attempts have yet been made to invert this strategy and use lipid vesicles as scaffolds for extended DNA super-assemblies, thereby realizing freestanding, membrane-mimicking DNA shells. Here we introduce a simple and broadly applicable method to implement this concept: DNA shells are first assembled on giant unilamellar vesicles and then liberated by surfactant-mediated liposome removal. We demonstrate the approach with two distinct classes of DNA tectons: a complex barrel-shaped DNA origami with programmable inter-subunit interactions, and a simple nanostar-inspired motif composed of only eleven oligonucleotides. The success of both strategies underscores the generality of our approach and the feasibility of creating shell-like compartments from different DNA architectures. This method enables the construction of tunable, DNA-only containers spanning the size range of eukaryotic cells, offering a fundamentally new type of compartmentalization for bottom-up synthetic biology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683722v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> State-of-the-art biotechnologies allow the detection of different molecular species on the same biological sample, generating complex highly-dimensional multi-modal datasets. Gaining a holistic understanding of biological phenomena, such as oncogenesis or aging, requires integrating these diverse modalities into low-dimensional data representations while correcting for technical artifacts. Here we present MIMA, a modular, unsupervised AI framework for multi-omics data integration and batch correction. Applied to complex spatial and single-cell datasets, MIMA effectively removes batch effects, while preserving biologically relevant information, and learns representations predictive of expert pathologist annotations. Additionally, it enables cross-modal translation, uncovers molecular patterns not captured by manual annotations, and performs on par with specialized state-of-the-art tools, despite being modality-agnostic. MIMA's flexibility and scalability make it a powerful tool for multimodal data analysis. MIMA provides a foundation for AI-based, multi-omics augmented digital pathology frameworks, offering new opportunities for improved patient stratification and precision medicine through the comprehensive integration of high-dimensional molecular data and histopathological imaging.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683449v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -299,110 +299,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Automatic Classification of Circulating Blood Cell Clusters based on Multi-channel Flow Cytometry Imaging</h2>
-<p class="paper-authors">Ma, S., Sengupta, S., +7 authors, Li, H.</p>
+<h2 class="paper-title">Tracing the origins of molecular signals in food through integrative metabolomics and chemical databases</h2>
+<p class="paper-authors">Mendoza Cantu, A., Gauglitz, J., Bittremieux, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Circulating blood cell clusters (CCCs) containing red blood cells (RBCs), white blood cells(WBCs), and platelets are significant biomarkers linked to conditions like thrombosis, infection, and inflammation. Flow cytometry, paired with fluorescence staining, is commonly used to analyze these cell clusters, revealing cell morphology and protein profiles. While computational approaches based on machine learning have advanced the automatic analysis of single-cell flow cytometry images, there is a lack of effort to build tools to automatically analyze images containing CCCs. Unlike single cells, cell clusters often exhibit irregular shapes and sizes. In addition, these cell clusters often consist of heterogeneous cell types, which require multi-channel staining to identify the specific cell types within the clusters. This study introduces a new computational framework for analyzing CCC images and identifying cell types within clusters. Our framework uses a two-step analysis strategy. First, it categorizes images into cell cluster and non-cluster groups by fine-tuning the You Only Look Once(YOLOv11) model, which outperforms traditional convolutional neural networks (CNNs), Vision Transformers (ViT). Then, it identifies cell types by overlaying cluster contours with regions from multi-channel fluorescence stains, enhancing accuracy despite cell debris and staining artifacts. This approach achieved over 95% accuracy in both cluster classification and phenotype identification. In summary, our automated framework effectively analyzes CCC images from flow cytometry, leveraging both bright-field and fluorescence data. Initially tested on blood cells, it holds potential for broader applications, such as analyzing immune and tumor cell clusters, supporting cellular research across various diseases.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.683505v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">The promise of AlphaFold for gene structure annotation</h2>
-<p class="paper-authors">Davison, H. R., Boehme, U., +4 authors, Rigden, D. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683479v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Rapid De Novo Antibody Design with GeoFlow-V3</h2>
-<p class="paper-authors">Team, B., Tang, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Recent years have witnessed striking advances in miniprotein design, yet de novo antibody discovery remains challenging, marked by low binding rates and the need for extensive, labor-intensive experimental screening of millions of candidates. This technical report introduces GeoFlow-V3, a unified atomic generative model for structure prediction and protein design. GeoFlow-V3 delivers improved accuracy on antibody-antigen complex structure prediction relative to our previous version, and its performance is further enhanced when experimental constraints or prior knowledge are provided, enabling precise control over both folding and design. The model also demonstrates reliable ability to discriminate binders from non-binders based on its confidence scores. Leveraging this capability, we build a GeoFlow-V3 in silico pipeline to design no more than 50 nanobodies per therapeutically relevant target de novo, completing a single round of wet-lab characterization in under three weeks. GeoFlow-V3 identifies at least one binder for 8 tested epitopes and achieves an average hit rate of 15.5%, representing a two-orders-of-magnitude improvement over prior computational pipelines. These results position GeoFlow-V3 as an appealing platform for rapid, AI-driven therapeutic antibody discovery, significantly reducing experimental screening demands and offering a powerful avenue to tackle previously undruggable targets. A demo of GeoFlow-V3 can be accessed via prot.design for non-commercial use.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.682964v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">StoPred: Accurate Stoichiometry Prediction for ProteinComplexes Using Protein Language Models and GraphAttention</h2>
-<p class="paper-authors">Liu, Q., Peng, C., +2 authors, Freddolino, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteins often function as part of complexes, and the specific stoichiometry of these assemblies is critical for their biological roles, but experimental determination of assembly composition remains challenging and existing computational methods for stoichiometry prediction are limited. Existing approaches rely on template-based searches or require predefined stoichiometry for structure prediction, hampering their applicability to proteins without close homologs or known assembly states. Recent advances using protein language models (pLM) have enabled sequence-based prediction of homo-oligomer stoichiometry, but these methods are not applicable to hetero-oligomeric complexes and do not fully leverage inter-subunit relationships. Here, we present StoPred, a method that predicts the stoichiometry of protein complexes by integrating pLM embeddings with a graph attention network to model subunit-level interactions. StoPred infers stoichiometry directly from sequence or structure features for both homo- and hetero-oligomers, without requiring template assemblies or predefined composition. We benchmark StoPred against deep learning-based and template-based methods, and show that it achieves improved accuracy and efficiency across curated and blind datasets, with up to 16% and 41% higher top-1 accuracy for homomeric and heteromeric complexes, respectively, compared to the strongest prior method on our held-out test dataset. More importantly, StoPred is the first deep learning-based method capable of accurately predicting the stoichiometry of hetero-oligomeric complexes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.683515v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Gene library deep sequencing for protein super-family profiling</h2>
-<p class="paper-authors">T Sabapathy, R., Henry-Cocks, K., +3 authors, Janovjak, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Unravelling protein function at scale remains challenging. Gain-of-function (GOF) screens harnessing large open reading frame (ORF) libraries enable systematic functional annotations of cell behavior drivers and drug targets. Currently, few sequencing methods are established to analyze existing ORF libraries and facilitate future library generation. Here, we developed a barcode-free deep sequencing method termed pooled plasmid library sequencing (PPLseq). PPLseq achieved high efficiency and single nucleotide accuracy, including the detection of previously undocumented variants, on a prototypical super-family ORF library (&gt;300 human G-protein-coupled receptors (GPCRs)). We next combined PPLseq with high-throughput gene engineering to generate a new library of 246 GPCR-fluorescent protein (FP) fusions. We quantified expression of all members of this library and identified robustly expressed yet understudied receptors. Collectively, we demonstrate accessible, scalable, and sensitive ORF library sequencing towards a deeper understanding of proteome function.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.682913v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Comparative genomics of the lipid droplet-associated protein Seipin across eukaryotic diversity illuminates an ancient origin and conserved structural diversity.</h2>
-<p class="paper-authors">Kingdon, E. M., Kainth, M., +2 authors, Richardson, E. H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Lipid droplets (LDs) are ubiquitous across living organisms. Characterised in eukaryotes by their lipid monolayer and essential for lipid storage and metabolism in animals, plants, and yeast, little is known about the evolutionary diversity of extant LDs across the eukaryotic tree of life. LDs facilitate an impressive variety of cellular functions outside of just lipid storage; in Metazoa, these include stress responses, cellular signaling, and membrane remodeling. Likewise, the distribution of these functions across eukaryotic diversity is unknown. We have examined the evolutionary trajectory of seipin, a protein associated with LD biogenesis, across eukaryotic diversity. We have identified a pan-eukaryotic distribution of seipin, with an evolutionary pattern that indicates presence in the Last Eukaryotic Common Ancestor. Ancient conservation of multiple variants of seipin suggests that seipin may multiple conserved functional roles within the cell. Finally, we identify a lack of sequence homology between BSCL2/seipin in Homo sapiens and the sei-1 gene previously identified as a functional homologue of BSCL2 in Saccharomyces cerevisiae. Though our results suggest that sei-1 may be a highly divergent homologue of BSCL2 / seipin rather than an unrelated protein, the divergence suggests that researchers may need to be cautious applying results obtained in Saccharomyces spp..</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.683490v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Foods contain thousands of chemical constituents beyond macronutrients, including bioactive metabolites, processing by-products, and contaminants that remain poorly characterized. The Periodic Table of Food Initiative (PTFI) is establishing a standardized global reference for food composition using untargeted mass spectrometry. We analyzed the first PTFI release (~24,000 molecular features across 500 foods) by linking annotated and unannotated signals to curated databases of pharmaceuticals, agrochemicals, food contact chemicals, and natural products. Annotated compounds revealed characteristic chemical patterns across food groups, while unannotated features exposed xenobiotic signatures and potential contamination pathways. A taxonomy-aware search identified unexpected natural products, such as biochanin A and phlorizin produced by Canada thistle. Together, these analyses show how agricultural practices, environmental exposures, and processing shape food chemistry and highlight the value of food metabolomics for advancing a One Health understanding of the molecular connections between the environment, food systems, and human health.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683649v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -413,15 +318,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CAR T-cells dysfunction in the central nervous system is mediated by BBB-induced activation-induced cell death</h2>
-<p class="paper-authors">Aharony Tevet, Y., Ravid, O., +8 authors, Jacoby, E.</p>
+<h2 class="paper-title">YAP1 defines an emergent, plastic population of relapsed small cell lung cancer</h2>
+<p class="paper-authors">Stewart, C. A., Ramkumar, K., +21 authors, Gay, C. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Chimeric Antigen Receptor (CAR) T-cells can eliminate leukemia and lymphoma within the central nervous system (CNS). Following a case with CD19+ relapse in the CNS in the presence of persisting Tisagenlecleucel, we generated several models to study CAR T-cells in the CNS. In both immunocompetent and humanized leukemia-bearing mice, CNS-residing CAR T-cells were shown to have inferior ex-vivo killing capacities compared to CAR T-cells harvested from the spleen or bone marrow of receptive mice. In a mechanistic work-up, we identified two contributing factors: First, CAR T-cells cultured in cerebrospinal fluid showed impaired cytotoxic and proliferative function compared to those in serum or other media. Second, using a unique in vitro human blood-brain barrier (BBB) model composed of endothelial cells and brain pericytes, we demonstrated that CAR T-cells that crossed the BBB exhibited antigen-independent activation and diminished cytolytic capacity. This led to increased activation-induced cell death of the BBB-migrating CAR T-cells and was confirmed to be independent of the CAR target and the costimulatory domain. Our findings add possible mechanisms of CAR T-cell resistance in the CNS, relevant for CNS hematologic and non-hematologic tumors.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683607v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Small cell lung cancer (SCLC) is an aggressive neuroendocrine malignancy characterized by rapid onset of chemoresistance and poor clinical outcomes. Transcriptional heterogeneity among treatment-naive SCLC tumors underlies four transcriptional subtypes, each with distinct clinical vulnerabilities. Though previously hypothesized to delineate a distinct subtype, expression of YAP1 is largely absent from treatment-naive, pure SCLC. To characterize relapsed SCLC, circulating tumor DNA, circulating tumor cells, and core needle biopsies from SCLC patients and preclinical models following resistance to standard-of-care therapies were analyzed. In contrast to treatment-naive SCLC, these analyses reveal an emergent YAP1-positive cell population that coincides with treatment resistance. These YAP1-positive cells exhibit characteristics of drug tolerant persister cells, including senescence, stemness, and plasticity, as YAP1 positive cells largely abandon features characteristic of SCLC to adopt those of large-cell neuroendocrine carcinoma (LCNEC). As a result of this SCLC-like to LCNEC-like evolution, YAP1-positive cells lack several clinically relevant SCLC surface targets (i.e., DLL3, SEZ6), but are enriched for others (i.e., B7-H3, TROP2). We propose a model where YAP1 expressing cells emerge with SCLC treatment resistance and characterize a tenacious subpopulation capable of diverging from the treatment naive lineage and adopting features to evade therapeutic response.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683746v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -432,15 +337,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">NEURO-IMMUNE CRYPT-ASSOCIATED CELLS DRIVE COLORECTAL CARCINOGENESIS VIA REST-MEDIATED PHENOTYPIC REPROGRAMMING: IMPLICATIONS FOR TUMORIGENESIS AND VIRAL SUSCEPTIBILITY</h2>
-<p class="paper-authors">Diaz-Carballo, D., Noa Bolano, A., +18 authors, Strumberg, D.</p>
+<h2 class="paper-title">BMAL2 is a druggable target for ARID1A-wildtype ovarian clear cell carcinoma (OCCC)</h2>
+<p class="paper-authors">Tan, G. Y. T., Lin, P.-Y., +6 authors, Hwang-Verslues, W. W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Colorectal cancer (CRC) incidence correlates anatomically with a shared gradient of lymphoid follicles and previously defined neuroendocrine cells. We now define the cellular basis for this observation by identifying a resident cell in the colonic crypts, the Neuro-Immune Crypt-Associated (NICA) cell, characterized by a unique triple phenotype: neuronal (ChgA, TH, peripherin, somatostatin, NSE), robust stemness markers (LGR5, CD133, Glut3, ASCL2, {beta}-catenin), and a diverse array of innate immune molecules (TLR4, CD80, SDF-1). These markers (excluding ChgA) are retained in malignant CRC sections, demonstrating lineage persistence. Functioning as a pathogen gateway, NICA cells express viral entry receptors and the CXCR4 ligand SDF-1, rendering them susceptible to Epstein-Barr Virus (EBV) infection and subsequent immune cell recruitment. Crucially, we define a novel oncogenic intermediate: the BLEICS (B-Lymphocyte, EBV-Infected, Calamari-Shaped) cell, which exhibits a B cell-myeloid hybrid signature and high CXCR4. The fusion between BLEICS and crypt cells, facilitated by fusogenic Human Endogenous Retrovirus (HERV) envelope proteins, generates the malignant, hybrid CRC lineage. Furthermore, BLEICS cells actively engage cancer-associated fibroblasts (CAFs) via the CXCR4-SDF-1 axis to drive stromal expansion and crypt enlargement. In the resulting CRC cells, the overexpression of the transcription factor REST actively suppresses the neuronal identity (e.g., TH, ChgA), thereby maintaining the proliferative stemness phenotype (LGR5). The specific loss of ChgA in CRC is attributable to REST activity. We show that REST ablation restores ChgA expression and reinstates neuronal differentiation and induces growth arrest, an effect mirrored by pharmacological REST inhibition using valproic acid. This study establishes a new pathogenesis model where the increasing density of lymphoid follicles and NICA precursor cells toward the rectum creates an ideal niche for viral-driven, immune-cell fusion, providing mechanistic targets for REST-driven differentiation therapy and EBV vaccination strategies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.682573v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Ovarian clear cell carcinoma (OCCC) is highly chemoresistant and has worse clinical outcome at advanced stages than other ovarian cancer subtypes. The most frequent (~50%) alterations in OCCC are AT-rich interactive domain 1A gene (ARID1A) mutations which lead to ARID1A deficiency. However, OCCC that retains ARID1A function differs substantially from ARID1A mutated OCCC. Particularly, targeted therapies that sensitize ARID1A-deficient OCCC to DNA damage are largely ineffective against OCCC with wild-type (wt) ARID1A. Thus, it is important to identify druggable targets and develop targeted therapies specifically for ARID1A-wt OCCC. We identified BMAL2 as a critical OCCC oncogene that promotes tumorigenesis by preventing DNA damage from endogenous origins. BMAL2 depletion altered expression of genes in DNA damage repair pathways, including RAD51, a core enzyme of the homologous recombination (HR) pathway. This led to double-stranded break accumulation, decreased cell viability and reduced tumor growth. This dependence on BMAL2 to maintain DNA integrity and cell viability can be a new route to suppress ARID1A-wt OCCC. Consistent with this idea, we found that GW833972A, a cannabinoid receptor agonist, bound BMAL2 with high affinity and facilitated its degradation. This in turn reduced RAD51 expression, leading to an accumulation of DNA damage and decreased cell viability. Xenograft models further demonstrated that GW833972A treatment alone inhibited ARID1A-wt OCCC tumor growth. Together, our findings reveal an essential oncogenic role of BMAL2 and demonstrate that it is an appealing therapeutic target, especially for ARID1A-wt OCCC.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683700v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -451,15 +356,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Stromal subsets modulate T-cell infiltration in early breast cancer</h2>
-<p class="paper-authors">Chen, J., Zhang, H., +8 authors, Swarbrick, A.</p>
+<h2 class="paper-title">Dietary Serine Restriction Impacts H3K27 and H3K4 Methyl Epigenomes to Impede Head and Neck Cancer Cell Plasticity and Tumor Growth</h2>
+<p class="paper-authors">Jankowski, S. A., Kroehling, L., +4 authors, Kukuruzinska, M. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Recent studies of the tumour microenvironment have elucidated the heterogeneity of stromal cells, with increasing evidence suggesting that stromal subsets play an important role in regulating anti-tumour immunity in breast cancer. However, the functional diversity of these cells within the tumour immune microenvironment and how they interact with immune cells in a spatial and clinical context remain poorly understood. We performed multiplex immunofluorescence on tumour microarrays from two cohorts consisting of 591 breast cancer patients to assess the abundance and spatial co-localisation of stromal and immune subsets and their correlation with clinicopathological features and patient outcomes. We found that stromal subsets are spatially distinct. We found that stromal cells were spatially distinct. A perivascular-like subset that was disseminated throughout the stroma rather than restricted to vessel-adjacent regions was enriched in an immune cold environment and associated with T-cell exclusion. Enrichment for PVLs was prognostic of poorer survival, independent of their role in T cell exclusion. An inflammatory-like cancer-associated fibroblast subset was associated with the stromal segregation of T cells and T cell exhaustion. Our findings highlight the differential impact of stromal subsets on immune infiltration and activation within the breast cancer TME with implications for patient outcomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.683407v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Head and neck cancer with its major subsite, oral squamous cell carcinoma (OSCC), is a devastating malignancy with limited treatment options. Given that recent advances in nutritional interventions have been recognized as potential strategies for targeting cancer, we investigated the role of dietary serine restriction in OSCC cell plasticity. Utilizing multiple human OSCC-derived cell lines and an orthotopic syngeneic mouse model of OSCC, we interrogated the impact of serine deprivation on this malignancy through biochemical assays, transcriptomic analyses, and CUT&amp;RUN sequencing, as well as impact on tumor growth and its immune environment. We report that human OSCC cells behaved like serine auxotrophs, depending on exogenous serine for growth and maintenance of plastic cell states. We show that dietary restriction of serine induced endogenous serine synthesis and generated alpha-ketoglutarate (KG), a co-substrate for JMJD3 nuclear dioxygenase, which demethylates H3K27me3 and de-represses differentiation genes. This was accompanied by the reduction of H3K4me3 at stemness and epithelial-to-mesenchymal transition (EMT) genes caused. Likewise, dietary serine restriction inhibited orthotopic OSCC isograft growth in mice concomitant with downregulation of H3K27me3 and increased immune infiltration in the tumor periphery. Collectively, our study provides new insights into the epigenetic etiology of OSCC that reveals the interplay between serine metabolism and epigenetic molecular mechanisms driving OSCC cell plasticity and tumorigenesis. The dependence of OSCC cells on exogenous serine to maintain plastic cell states offers a unique opportunity to utilize a non-toxic dietary serine restriction as an intervention treatment either alone or in combination with other therapies for OSCC patients.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683420v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -470,15 +375,91 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Knowledge-informed multimodal cfDNA analysis improves sensitivity and generalization in cancer detection</h2>
-<p class="paper-authors">De Falco, A., Grisolia, P., +37 authors, Ceccarelli, M.</p>
+<h2 class="paper-title">JAK1/2 Inhibition Delays Cachexia and Improves Survival through Increased Food Intake</h2>
+<p class="paper-authors">Dantas, E. C., Murthy, A., +23 authors, Goncalves, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Liquid biopsy offers a minimally invasive opportunity to detect and monitor cancers through analysis of cell-free DNA (cfDNA). Still, current approaches face challenges of limited sensitivity at low tumor fractions, technical variability, and poor generalization across cohorts. Tumor-informed targeted approaches can have high specificity but low sensitivity due to random sampling, tumor adaptation and evolution (including the development of resistance mechanisms), and other sources of heterogeneity; on the contrary, genome-wide tumor-naive approaches can increase sensitivity but tend to have a lower specificity, especially at low tumor fraction. We developed Fragmentomics Analysis for Tumor Evaluation with AI (Fate-AI), a multimodal framework that integrates fragmentomic and methylation-derived features from low-pass whole-genome sequencing (LPWGS) and cell-free methylated DNA immunoprecipitation and high-throughput sequencing (cfMeDIP-seq). It leverages a knowledge-informed strategy to select recurrently altered genomic regions and tissue-specific methylation loci to combine the advantages of tumor-naive approaches with the specificity of tumor-informed approaches. This approach derives robust per-sample normalized features that mitigate batch effects and enhance cross-cohort reproducibility. We evaluated Fate-AI on a total of 1,219 plasma samples spanning ten cancer types and healthy controls from multiple laboratories and sequencing centers, including 432 newly profiled cases (280 with both cfMeDIP-seq and LPWGS) together with 787 samples from four independent public datasets. Fate-AI achieved superior sensitivity and specificity compared to state-of-the-art methods, detecting tumor-derived signals at fractions as low as 10-5 in experimental dilutions. Fate-AI scores correlated with disease stage and tracked longitudinal progression, anticipating relapse months before clinical progression. Furthermore, Fate-AI enabled tissue-of-origin classification, with AUCs ranging from 0.84 to 0.97 across six cancer types. Collectively, our results demonstrate that Fate-AI provides a sensitive, generalizable, and clinically actionable platform for early detection, minimal residual disease monitoring, and tissue-of-origin classification, supporting its potential as a liquid biopsy framework in precision oncology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.20.683167v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Lung cancer is the leading cause of cancer-related death and is frequently accompanied by reduced food intake and cachexia, a debilitating syndrome characterized by weight loss and skeletal muscle wasting. We sought to identify contributors to cachexia using a murine model of lung cancer that reproduces key features of this syndrome. A multiplex cytokine screening approach, integrated with western blot and transcriptomic analyses, identified tumor-derived inflammatory mediators and downstream signaling pathways associated with cachexia. Notably, IL-6 superfamily members were elevated in the tumor and plasma of mice and patients with cachexia. The JAK-STAT3 signaling was upregulated in liver and skeletal muscle, driving the acute phase response and impairing lipid metabolism. Pharmacologic inhibition of JAK1/2 with ruxolitinib improved body weight, fat mass, and overall survival without altering tumor burden. These effects were driven primarily by blunted hypothalamic leptin receptor signaling, which increased food intake early in the disease course. In the liver, JAK inhibition reduced STAT3 activity, restored fatty acid oxidation, and decreased the production of acute-phase proteins. These findings support JAK inhibition as a therapeutic strategy for lung cancer-associated cachexia.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683287v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 22, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Tumor-associated macrophages protect glioblastoma cells from ferroptosis by inducing the release of ferritin-bound iron via exosomes.</h2>
+<p class="paper-authors">Sahu, A. P., Palsa, K., +2 authors, Connor, J. R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Tumor-associated macrophages (TAMs) are the most abundant non-tumor cell type in glioblastoma (GBM) and act as the pivotal cell type in regulating iron metabolism in the GBM tumor microenvironment. High TAM infiltration into the TME is also associated with increased resistance to ferroptosis, an iron-dependent cell death. However, the exact mechanism by which TAMs make the cancer cells resistant to ferroptosis remains relatively unexplored. Here, we have investigated how TAMs modify iron metabolism in GBM cells to make them more resistant to ferroptotic stress. We utilized GL261 cells, a GBM cell line derived from C57BL6 mice, and syngeneic primary murine bone marrow-derived macrophages (BMDM) to study GBM-TAM interactions in vitro. We found that male macrophages exhibited higher iron uptake, greater iron storage, and a larger labile iron pool compared to female macrophages, indicating intrinsic sex biases in macrophage iron metabolism. Subsequently, we used co-culture experiments to study how macrophages regulate the iron and ferroptotic status of GL261 cells. We discovered that GL261 cells cocultured with BMDMs showed higher resistance to RSL3-induced ferroptotic stress. Mechanistically, BMDMs caused a decrease in total cellular iron in GL261 cells by inducing increased H-ferritin-bound iron release via CD63-positive exosomes; thus, limiting the amount of iron that is available for lipid peroxidation during ferroptosis. This process was moderately sex biased in favor of male macrophages. Finally, we show that this mechanism of BMDM-induced resistance to ferroptosis is independent of Hepcidin regulation and can act as a possible pathway by which GBM cells escape ferroptotic stress during proinflammatory conditions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683804v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 22, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Tumor-intrinsic MHC-II activation in pancreatic ductal adenocarcinoma enhances immune response and treatment efficacy</h2>
+<p class="paper-authors">Chen, C., Gribbin, K., +17 authors, Xia, Z.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Pancreatic ductal adenocarcinoma (PDAC) is characterized by an immunosuppressive tumor microenvironment (TME) and poor prognosis. While major histocompatibility complex class II (MHC-II) expression is traditionally associated with professional antigen-presenting cells, its role in PDAC malignant cells remains underexplored. Herein, we utilized single-cell RNA sequencing (scRNA-seq), spatial transcriptomics, bulk RNA sequencing, multiplex immunohistochemistry (mIHC) and ex vivo studies in culture with both human and murine models to investigate the prognostic relevance of MHC-II expression in malignant PDAC cells. Elevated MHC-II expression in malignant cells was strongly associated with increased infiltration of CD4+ T and CD8+ T cells in human PDAC, and pronounced co-localization with plasma cells, indicative of an antigen-activated immune microenvironment. In the KPC mouse model of PDAC, pharmacologic induction of MHC-II expression by cobimetinib treatment in malignant epithelial cells significantly enhanced the therapeutic response to immune checkpoint blockade (ICB). These findings highlight the role of malignant cell-intrinsic MHC-II expression in promoting antigen presentation and fostering an anti-tumor immune microenvironment. Our results position MHC-II as a promising prognostic biomarker and therapeutic target in PDAC, paving the way for novel immunomodulatory strategies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683745v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 22, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Drosophila Sociality Influences Immune Peptide Load and Apoptosis-induced Tumor Suppression independently of the Antitumor Peptide Defensin</h2>
+<p class="paper-authors">Delamotte, P., Akiki, P., +5 authors, Montagne, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Patients social environment might influence cancer outcome. This potentially happens in Drosophila, as we previously reported that the social context influences the growth of intestinal tumors. To uncover the underlying social-induced physiological mechanisms, we performed RNA-seq of isogenized beheaded tumorous Drosophila. Importantly, expression of several immune peptides varied according to the social-induced tumor growth effect. Furthermore, ectopic expression in tumors of the apoptotic-inhibitor p35 suppressed the social-induced effect. Next, we challenged the immune peptide Defensin, previously reported to suppress imaginal disc tumor growth through a cell-death/JNK-dependent network. Nonetheless, the social-induced tumor suppression was maintained upon Defensin overexpression or JNKK-knockdown in tumors, and in defensin mutants. Surprisingly, tumor growth was reduced in the latter, indicating that Defensin sustains the growth of these intestinal tumors. In summary, our study indicates that the social context affects the immune response and that a given immune peptide may have opposite effects depending on tumor type.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683679v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 22, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Human cortico-vascular assembloids reveal a CELF2-AHNAK-dependent switch from neuronal to endothelial tropism in glioblastoma cells</h2>
+<p class="paper-authors">Bertacchi, M., Ladoux, A., +11 authors, Virolle, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Glioblastoma (GB) remains one of the most aggressive human cancers, driven by profound cellular plasticity and dynamic interactions with the neurovascular niche. Yet, existing preclinical models fail to reproduce the human brain-vascular interface, limiting studies of tumor-host crosstalk and invasion. To overcome this gap, we developed a human induced pluripotent stem cell (hiPSC)-derived cortico-endothelial (CO+EO) assembloid model by fusing cortical and endothelial organoids from the same genetic background. These assembloids spontaneously form branched vascular networks enriched in tight junction proteins (CLDN5, OCLN, ZO-1), thereby recapitulating a key blood-brain barrier (BBB)-like property and providing a physiologically relevant human platform for exploring glioblastoma-neurovascular interactions. Using this system, we uncover a previously unrecognized CELF2-dependent glioblastoma stem cell (GSC) tropism. CELF2-expressing GSCs preferentially infiltrate neural regions, where they trigger neuronal apoptosis and disrupt endothelial tight junction integrity, supporting an aggressive phenotype. Conversely, CELF2-deficient GSCs lose neurotropism, acquire mesenchymal features, and are redirected toward vascular compartments. This endothelial affinity requires the scaffold protein AHNAK, strongly expressed at the plasma membrane of CELF2-deficient cells and enriched at tumor-endothelial interfaces. AHNAK knockdown abolished endothelial infiltration, demonstrating its critical role in vascular tropism. Analysis of patient GB samples confirmed that CELF2-positive tumor cells are enriched in poorly vascularized, mitotically active areas and excluded from vessel-rich zones, closely paralleling assembloid findings. Transcriptomic profiling further revealed that CELF2 promotes a neuronal progenitor-like program while repressing mesenchymal and vascular-associated gene expression, thereby shaping tumor identity, invasive behavior, and tissue preference. Collectively, our study introduces CO+EO assembloids as an original human model of glioblastoma plasticity at the neurovascular interface. We identify CELF2 as a master regulator of GSC tropism and AHNAK as a mediator of vascular affinity, unveiling a novel molecular axis that governs glioblastoma invasion and highlighting new therapeutic opportunities.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.10.21.683634v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -489,15 +470,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Multimodal prediction of metastatic relapse using federated deep learning in soft-tissue sarcoma with a complex genomic profile.</h2>
-<p class="paper-authors">Charles Maussion, Jean-Michel Coindre, +15 authors, Marie Karanian</p>
+<h2 class="paper-title">Global DNA methylation signatures associated with chemoresistance and poor prognosis of high grade serous ovarian cancer.</h2>
+<p class="paper-authors">Hafiza Bushra Manzoor, Melisa Acun, +4 authors, Meshach Asare-Werehene</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Soft Tissue sarcomas (STS) are a group of heterogeneous and complex diseases where being able to predict the appearance of metastases is key to inform clinical decisions, especially the prescription of adjuvant chemotherapy. We developed SarcNet: a multimodal deep-learning algorithm based on histological whole-slides and clinical variables to predict metastatic relapse in patients affected with limbs and trunk wall STS. Two independent series were investigated simultaneously in a privacy-enhanced multicentric setup using Federated Learning: Centre Léon Bérard (n = 221) and Institut Bergonié (n = 390). We then collected two additional validation cohorts from Centre Léon Bérard (n = 93) and Institut Bergonié (n = 124) to validate the performance of the trained algorithm. Evaluated in cross-validation setting on the first two cohorts, SarcNet achieved a performance of 0.797 AUC (Area Under the Receiver-operating characteristic Curve, 0.762-0.833) to predict 5-year MFS comparable to the Sarculator, current state-of-the-art nomogram (0.778 (0.743-0.814)), and outperforming the FNCLCC grading, widely used in practice (0.706 (0.670-0.743), P-value &lt; 0.001). On validation cohorts, SarcNet performance is still on-par to the Sarculator and FNCLCC rating. Interpretability investigations of SarcNet highlighted histological patterns driving the prediction of metastatic relapse such as atypia, tumor cellularity and anisokaryosis. This model may assist clinical decisions by identifying high-risk patients that could benefit from neoadjuvant or adjuvant treatment.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41120524/" target="_blank">
+<p><strong>Abstract:</strong> Ovarian cancer (OVCA) is third most lethal gynecologic cancers and acquired chemoresistance is the key link in the high mortality rate of OVCA patients. Currently, there are no reliable methods to predict chemoresistance in OVCA. In our study, we identify genes, pathways and networks altered by DNA methylation in high-grade serous ovarian carcinoma (HGSC) cells that are associated with chemoresistance and prognosis of HGSC patients. We performed methylome-wide profiling using Illumina Infinium MethylationEPIC BeadChip (HM850K) methylation array on a set of HGSC chemoresistant and chemosensitive cell lines. Differentially Methylated CpG Probes (DMPs) were identified between the resistant and sensitive groups in HGSC. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) over-representation analyses were conducted to identify both common and unique pathways between resistant and sensitive cells. While the HM850K array was used for the discovery phase to identify differentially methylated probes and regions in HGSC cell lines, the publicly available The Cancer Genome Atlas ovarian cancer (TCGA-OV) dataset generated using the Illumina Infinium HumanMethylation27 BeadChip (27 K array) methylation array served as an independent validation cohort for downstream survival and drug sensitivity analyses. Machine learning methods were applied to our dataset to predict drug sensitivity in the TCGA-OV cohort and to investigate associations with overall survival and progression-free survival. Kaplan-Meier analysis was performed to assess the relationship between differentially methylated genes and patient survival outcomes. The overlapping CpG probes shared between the two Illumina platforms were used for machine learning and survival analyses. Data visualization was performed using various R/Bioconductor packages. Our analysis identified a total of 3,641 DMPs spanning 1,617 differentially methylated genes between chemoresistant and sensitive HGSC cells, whereas 80% of them were hypermethylated CpG sites associated with HGSC resistant cells. Approximately half of the DMPs were distributed on chromosomes 1-3, 6, 11-12 and 17 and top identified hypermethylated CpGs were cg21226224 (SOX17, ∆β = 79%, adj.P = 7.73E-03), cg02538901 (ATP1A1, ∆β = 75%, adj.P = 7.6E-03), and cg17032184 (CD58, ∆β = 64%, adj.P = 4.39E-02). Machine learning analysis identified significant association of global hypermethylation in the HGSC chemoresistant cells with poor overall and progression-free survival of HGSC patients. Further analysis identified four differentially methylated genes (CD58, SOX17, FOXA1, ETV1) that were also positively associated with poor prognosis of HGSC OC patients. Functional enrichment analysis showed enrichment of several cancer-related pathways, including phosphatidylinositol signaling, homologous recombination and ECM-receptor interaction pathways. This study supplements the current knowledge of the underlying mechanism behind acquired chemoresistance in OVCA. Four differentially methylated genes identified in this study may have the potential to serve as promising epigenetic clinical biomarkers for HGSC chemotherapy resistance.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41125735/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -508,15 +489,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Oct 21, 2025</span>
+<span class="date">Oct 22, 2025</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">GraphComm predicts cell cell communication using a graph based deep learning method in single cell RNA sequencing data.</h2>
+<p class="paper-authors">Emily So, Sikander Hayat, +2 authors, Benjamin Haibe-Kains</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Interactions between cells coordinate various functions across cell-types in health and disease states. Novel single-cell techniques enable deep investigation of cellular crosstalk at single-cell resolution. Cell-cell communication (CCC) is mediated by underlying gene-gene networks, however most current methods are unable to account for complex interactions within the cell as well as incorporate the effect of pathway and protein complexes on interactions. This results in the inability to infer overarching signalling patterns within a dataset as well as limit the ability to successfully explore other data types such as spatial cell dimension. Therefore, to represent transcriptomic data as intricate networks, complementing gene expression with information from cells to ligands and receptors for relevant CCC inference, we present GraphComm-a new graph-based deep learning method for predicting CCC in single-cell RNAseq datasets. GraphComm improves CCC inference by capturing detailed information such as cell location and intracellular signalling patterns from a database of more than 30,000 protein interaction pairs. With this framework, GraphComm is able to predict biologically relevant results in datasets previously validated for CCC, datasets that have undergone chemical or genetic perturbations and datasets with spatial cell information.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41125721/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 22, 2025</span>
 <span class="journal">MED</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning-enhanced normal tissue complication probability modeling for late sciatic nerve toxicity prediction in carbon-ion radiotherapy: model development and clinical validation.</h2>
-<p class="paper-authors">Li Y, Li P, +3 authors, Zhang Q.</p>
+<h2 class="paper-title">Decoding Cervical Cancer Biomarkers: An Integrated Framework of Bioinformatics, Machine Learning, and Experimental Confirmation.</h2>
+<p class="paper-authors">Kamble P, Dubey K, +4 authors, Garg P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective.To develop a machine learning-enhanced normal tissue complication probability (NTCP) model for predicting late sciatic nerve toxicity (LSNT) in sacrococcygeal chordoma (SC) and locally recurrent rectal cancer (LRRC) patients undergoing carbon-ion radiotherapy (CIRT).Methods.This dual-modeling study analyzed 106 CIRT-treated SC/LRRC patients. Notice that the unit of Gy is the relative biological effectiveness -weighted dose with local effect model version I in this study for the prescription of our CIRT treatments. The hybrid framework integrated the Lyman-Kutcher-Burman model with generalized machine learning. Radiation dosimetry (the equivalent uniform dose (EUD), the uniform dose over the sciatic nerve for a 50% complication probability [TD50], the parameter for the volume effect of the organ [n], the slop steepness of the dose response curve [m]) and biological parameters were analyzed through univariate/multivariate regression. Model performance was validated using the area under the receiver operating characteristic area under the curve, sensitivity, and specificity metrics.Results.16.9% (18/106) over all patients developed grade ⩾1 LSNT with no grade ⩾4 toxicity. Stratified outcome analysis across various subgroups revealed significant variations, especially that pathological subtype of re-irradiated rectal cancer exhibited manifested 15.6% G2 toxicity. We first successfully obtained coefficients for the NTCP models with univariate analysis by utilizing the correlation between significant variations of stratified outcome and TD50. We then establish an NTCP model by machine learning-enhanced multivariate analysis that allow identifying the critical dose-volume thresholds ofV62,V64, andD3ccto correlate dose-dependent progression of G1, G2, ad G3 toxicities, respectively.Significance.EUD &gt; 61.1 Gy significantly elevates G1 LSNT risk. Our center recommends:V62⩽ 6.2%,V64⩽ 4.69%,D3cc⩽ 32.3 Gy to balance tumor control and neuroprotection in CIRT planning. The n/m parameters provide critical insights into individual radiation sensitivity gradients across toxicity grades with machine learning-enhanced NTCP modeling for LSNT prediction in CIRT.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41061729/" target="_blank">
+<p><strong>Abstract:</strong> Cervical cancer is the fourth most frequent cancer in females, with a high mortality rate globally. Persistent infection with high-risk, oncogenic human papillomavirus (HPV) types is a critical etiologic factor in the progression of the disease. Unfortunately, cervical cancer often remains undiagnosed until advanced stages, hence limiting treatment effectiveness. Therefore, identifying precise and significant biomarkers is crucial. High-throughput sequencing technologies have revolutionized targeted cancer therapy research by generating extensive data for analysis. This study employed bioinformatics and machine learning (ML) approaches to identify dysregulated genes with significant diagnostic value in cervical cancer, utilizing transcriptomics datasets. Seven potential diagnostic biomarker genes (APOD, SPARCL1, AR, MCM2, NUSAP1, PLK1, and STIL) were validated by a real-time polymerase chain reaction (RT-PCR) experiment. The ML models were developed using significantly differentially expressed genes (DEGs) involved in important pathways for cervical cancer. ML prediction models are available at https://github.com/PGlab-NIPER/CC_Pred.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41123057/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
