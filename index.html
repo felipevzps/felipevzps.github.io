@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-inner"> 
       <a href="#about" class="logo">felipevzps</a>
-
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#software">Software</a>
+        <a href="#publications">Publications</a>
         <a href="#hackathon">Hackathon</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -31,240 +31,270 @@
         <h1>Felipe Vaz Peres</h1>
         <h2>Data Scientist | Bioinformatician</h2>
         <p>
-          I am a data scientist with a M.Sc. in bioinformatics and over six years of experience in computational biology and large scale data analysis.<br>
+          I am a data scientist with a M.Sc. in bioinformatics and over six years of experience in computational biology and large-scale data analysis.
         </p>
         <p>
-          I am particularly interested in computational approaches to cancer research, omics, non-coding RNA and developing efficient & reproducible workflows.
+          I am particularly interested in computational approaches to cancer research, omics, non-coding RNA, and developing efficient & reproducible workflows.
         </p>
       </div>
     </section>
 
     <!-- PAPER TRACKER BANNER -->
     <section class="banner">
-        <div class="banner-content">
+      <div class="banner-content">
         <h1>Latest in Science</h1>
-        <p>An app I built to track what’s shaping the field.</p>
-        <a href="newsletter/newsletter.html" class="btn white">
-          View Recent Papers
-          <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-            <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
+        <p>An app I built to track what's shaping the field.</p>
+        <a href="newsletter/newsletter.html" class="btn white">View Recent Papers</a>
       </div>
     </section>
 
-    <!-- RESEARCH SECTION -->
+    <!-- ====================== -->
+    <!-- RESEARCH SECTION CLEAN -->
+    <!-- ====================== -->
     <section id="research" class="section">
       <h2 class="section-title">Research</h2>
-      
-      <p class="section-description">Below are my research contributions as first author, with exciting new projects in progress!</p>
-      
-      <div class="card-grid">
-        <div class="oa-card">
-          <div class="composition-card-image">
-            <!-- <img src="docs/C.png"/> !-->
-          </div>
-          <div class="card-body">
-            <h3>Sugarcane Pan-RNAome</h3>
-            <p>This work focuses on characterizing ncRNAs and lncRNAs in sugarcane, addressing gaps in understanding their variability, conservation, co-expression patterns, and functional roles.</p> 
-            <div class="card-buttons">
-              <a href="https://www.teses.usp.br/teses/disponiveis/64/64133/tde-22052025-110836/en.php" class="btn white" target="_blank">Thesis</a>
-              <a href="https://github.com/labbces/sugarcane_RNAome" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
+      <p class="section-description">
+        Explore my research areas and projects. Filter by topic to see specific work in each domain.
+      </p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="researchFilterBar"></div>
+
+      <!-- === AI IN MEDICINE === -->
+      <div class="research-category" data-category="ai-medicine">
+        <div class="card-grid">
+          <div class="note-card">
+            <div class="note-card-image">
+              <img src="docs/F.png" alt="AI in Medicine"/>
+            </div>
+            <div class="note-card-body">
+              <h3>AI in Medicine</h3>
+              <p>Over the past few years, machine learning has shown extraordinary potential in capturing the complex, non-linear relationships underlying various cancers. Yet, achieving real clinical impact requires more than high accuracy, it demands <i>interpretability</i> and <i>external validation</i>.</p>
+              <p>I am particularly interested in how we can design transparent and explainable models that allow us to understand not only <i>what</i> a model predicts, but also <i>how</i> it arrives at its decisions, ensuring they can be trusted and meaningfully interpreted by clinicians.</p>
+              <p>Moreover, cancer data are heterogeneous by nature, shaped by differences in populations. Ensuring that models perform reliably beyond their training environments is essential for both scientific rigor and patient safety. As a community, embracing external validation as a standard practice is key to advancing from promising prototypes to clinically deployable tools that can truly save lives.</p>
+              <p>My current work builds on this philosophy. This section highlights ongoing efforts toward developing transparent, validated, and clinically meaningful models for cancer research.</p>
+
             </div>
           </div>
-        </div>
 
-        <div class="oa-card">
-          <div class="composition-card-image">
-              <!-- <img src="docs/C.png"/> !-->
-          </div>
-          <div class="card-body">
-            <h3>Sugarcane Pan-transcriptome</h3>
-            <p>This work provide a robust framework for pan-transcriptome analysis in complex polyploid crops and resources to enhance sugarcane breeding programs.</p>
-            <div class="card-buttons">
-              <a href="docs/ISMB2022_FVP_Presentation.pdf" class="btn white" target="_blank">ISMB Talk</a>
-              <a href="https://github.com/labbces/SCPT" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="oa-card">
-          <div class="composition-card-image flip-container">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <!-- Front: pale blue dot composition -->
-              </div>
-              <div class="flip-back">
-                <!-- Back: flipback pale blue dot description -->
-                <div class="flip-back-text">
-                  <p>"Look again at that dot. That's here. That's home. That's us." - Carl Sagan</p>
-                  <p class="context-text">The Pale Blue Dot, captured by Voyager 1 in 1990, showing Earth as a tiny speck in the vastness of space, a humbling reminder of our place in the cosmos.</p>
+          <div class="oa-card">
+            <div class="composition-card-image flip-container">
+              <div class="flip-inner">
+                <div class="flip-front"></div>
+                <div class="flip-back">
+                  <div class="flip-back-text">
+                    <p>"Look again at that dot. That's here. That's home. That's us." - Carl Sagan</p>
+                    <p class="context-text">The Pale Blue Dot, captured by Voyager 1 in 1990, showing Earth as a tiny speck in the vastness of space, a humbling reminder of our place in the cosmos.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-body">
-            <h3>ContFree-NGS</h3>
-            <p>A lightweight, open-source tool designed to remove contaminant sequences from NGS datasets.</p>
-            <div class="card-buttons">
-              <a href="https://link.springer.com/chapter/10.1007/978-3-030-91814-9_6" class="btn white" target="_blank">Paper</a>
-              <a href="https://github.com/labbces/ContFree-NGS" class="btn dark" target="_blank">
-                 Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
+
+            <div class="card-body">
+              <h3>Huna AI</h3>
+              <p>AI-powered diagnostic platform for medical imaging analysis and clinical decision support.</p>
+              <div class="card-buttons">
+                <a href="https://huna.ai/en/about/#" class="btn white" target="_blank">About</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- SOFTWARE SECTION -->
-    <section id="software" class="section">
-      <h2 class="section-title">Software</h2>
-
-      <div class="card-grid">
-        <div class="note-card">
-          <div class="note-card-image">
-            <img src="docs/F.png"/>
+      <!-- === SUGARCANE PAN-OMICS === -->
+      <div class="research-category" data-category="sugarcane-panomics">
+        <div class="card-grid">
+          <div class="note-card">
+            <div class="note-card-image">
+              <img src="docs/F.png"/>
+            </div>
+            <div class="note-card-body">
+              <h3>Sugarcane Pan-omics</h3> 
+              <p>In the last decade, the rise of massively parallel sequencing technologies in genomics and transcriptomics has revealed that the concepts of pan-genome and pan-transcriptome, once thought to be restricted to prokaryotes, are also applicable to eukaryotes. This discovery reshaped our understanding of genetic diversity, showing that not all individuals within a species share the same set of genes.</p>
+              <p>This section highlights my two contributions to sugarcane omics research, conducted at the <a href="https://labbces.cena.usp.br/" target="_blank">Computational, Evolutionary, and Systems Biology Laboratory</a>. In our first study, we built the <i>sugarcane pan-transcriptome</i> and revealed the variability in protein-coding transcripts across 50 genotypes. 
+              
+              <p>Interestingly, many sugarcane transcripts were found to be <i>non-coding</i>, which led us to a new question: <i>what are their functions?</i> During my master’s, I explored a multi-genotype catalog of <i>long non-coding RNAs (lncRNAs)</i>, investigating their expression and co-expression networks. These studies aim to fill the knowledge gaps between <i>coding and non-coding RNAs in sugarcane</i>, providing a broader view of transcript variability and potential functional roles across diverse genetic backgrounds.</p>
+            </div>
           </div>
-          <div class="note-card-body">
-            <h3>Computational Reproducibility</h3>
 
-            <p>Ensuring reproducibility remains one of the major challenges in computational biology and data science. Despite the growing availability of large-scale biological and experimental datasets, many published results cannot be easily replicated due to issues such as incomplete documentation, non-standardized workflows, missing metadata, or dependence on specific computing environments. Whether in the context of gene expression studies or predictive modeling, transparent and reproducible computational practices are essential for building confidence in scientific results.
-            </p>
-
-            <p>In my work I focus on developing robust, efficient, and reproducible workflows that adhere to the FAIR (Findable, Accessible, Interoperable, and Reusable) and open science principles.
-            </p>
-
-            <p>
-            This section highlights my contributions to reproducible computational research, showcasing the tools, pipelines, and projects I have been involved in, each developed to enhance reproducibility and transparency in large-scale biological data analysis.
-            </p>
-
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/A.png"/></div>
+            <div class="card-body">
+              <h3>Sugarcane Pan-RNAome</h3>
+              <p>This work focuses on characterizing ncRNAs and lncRNAs in sugarcane, addressing gaps in understanding their variability, conservation, co-expression patterns, and functional roles.</p>
+              <div class="card-buttons">
+                <a href="https://www.teses.usp.br/teses/disponiveis/64/64133/tde-22052025-110836/en.php" class="btn white" target="_blank">Thesis</a>
+                <a href="https://github.com/labbces/sugarcane_RNAome" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/A.png"/>
-          </div>
-          <div class="card-body">
-            <h3>KAPT</h3>
-            <p>Nextflow pipeline for automated inference of the <i>Kappaphycus alvarezii</i> proteome through de novo transcriptome assembly and comprehensive functional annotation.</p> 
-            <div class="card-buttons">
-              <a href="https://github.com/felipevzps/KAPT" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/B.png"/></div>
+            <div class="card-body">
+              <h3>Sugarcane Pan-transcriptome</h3>
+              <p>This work provide a robust framework for pan-transcriptome analysis in complex polyploid crops and resources to enhance sugarcane breeding programs.</p>
+              <div class="card-buttons">
+                <a href="docs/ISMB2022_FVP_Presentation.pdf" class="btn white" target="_blank">ISMB Talk</a>
+                <a href="https://github.com/labbces/SCPT" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/B.png"/>
+      <!-- === COMPUTATIONAL REPRODUCIBILITY === -->
+      <div class="research-category" data-category="computational-reproducibility">
+        <div class="card-grid">
+          <div class="note-card">
+            <div class="note-card-image"><img src="docs/F.png" alt="Computational Reproducibility"/></div>
+            <div class="note-card-body">
+              <h3>Computational Reproducibility</h3>
+              <p>Ensuring reproducibility remains one of the major challenges in computational biology and data science. Despite the growing availability of large-scale biological and experimental datasets, many published results cannot be easily replicated due to issues such as incomplete documentation, non-standardized workflows, missing metadata, or dependence on specific computing environments. Whether in the context of gene expression studies or predictive modeling, transparent and reproducible computational practices are essential for building confidence in scientific results.</p>
+
+              <p>In my work I focus on developing robust, efficient, and reproducible workflows that adhere to the FAIR (Findable, Accessible, Interoperable, and Reusable) and open science principles.</p>
+              
+              <p>This section highlights my contributions to reproducible computational research, showcasing the tools, pipelines, and projects I have been involved in, each developed to enhance reproducibility and transparency in large-scale biological data analysis.</p>
+            </div>
           </div>
-          <div class="card-body">
-            <h3>T-M Integration</h3>
-            <p>Nextflow pipeline for automated integration of transcriptomic and microbiome data, performing cross-correlation analysis to uncover potential host transcriptome-microbiome associations.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/SantosRAC/transcriptome_microbiome_integration" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
+
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/D.png"/></div>
+            <div class="card-body">
+              <h3>KAPT</h3>
+              <p>Nextflow pipeline for automated inference of the <i>Kappaphycus alvarezii</i> proteome through de novo transcriptome assembly and comprehensive functional annotation.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/felipevzps/KAPT" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/E.png"/></div>
+            <div class="card-body">
+              <h3>T-M Integration</h3>
+              <p>Nextflow pipeline for automated integration of transcriptomic and microbiome data, performing cross-correlation analysis to uncover potential host transcriptome-microbiome associations.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/SantosRAC/transcriptome_microbiome_integration" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/G.png"/></div>
+            <div class="card-body">
+              <h3>R2C</h3>
+              <p>Nextflow pipeline for scalable gene co-expression network analysis. It automates the process from data download, quantification and network construction.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/SantosRAC/transcriptome_microbiome_integration" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/I.png"/></div>
+            <div class="card-body">
+              <h3>seabed symphony</h3>
+              <p>Metagenomics pipeline for Biosynthetic Gene Cluster discovery. Designed for identification of novel BGCs in microbiome of marine sediments.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/SantosRAC/transcriptome_microbiome_integration" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/J.png"/></div>
+            <div class="card-body">
+              <h3>YAATAP</h3>
+              <p>Snakemake pipeline for de novo transcriptome assembly. It performs every step from raw RNA-seq data download to the final transcriptome assembly and quality assessment.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/labbces/YAATAP" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/D.png"/>
+      <!-- === SOFTWARE DEVELOPMENT === -->
+      <div class="research-category" data-category="software-development">
+        <div class="card-grid">
+          <div class="note-card">
+            <div class="note-card-image"><img src="docs/F.png" alt="Software Development"/></div>
+            <div class="note-card-body">
+              <h3>Software Development</h3>
+              <p>Creating open-source tools and applications that solve real-world problems in computational biology and bioinformatics. Designed for accessibility, scientific rigor, and user experience.</p>
+            </div>
           </div>
-          <div class="card-body">
-            <h3>R2C</h3>
-            <p>Nextflow pipeline for scalable gene co-expression network analysis. It automates the process from data download, quantification and network construction.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/SantosRAC/R2C" class="btn dark" target="_blank">
-                Code 
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
+
+            <div class="oa-card">
+              <div class="card-image"><img src="docs/N.png"/></div>
+            <div class="card-body">
+              <h3>ContFree-NGS</h3>
+              <p>A lightweight, open-source tool designed to remove contaminant sequences from NGS datasets.</p>
+              <div class="card-buttons">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-91814-9_6" class="btn white" target="_blank">Paper</a>
+                <a href="https://github.com/labbces/ContFree-NGS" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="oa-card">
+            <div class="card-image"><img src="docs/K.png"/></div>
+            <div class="card-body">
+              <h3>paper-trackr</h3>
+              <p>Tired of missing out on cool papers? stay up to date with paper-trackr!</p>
+              <div class="card-buttons">
+                <a href="newsletter/newsletter.html" class="btn white" target="_blank">Demo</a>
+                <a href="https://github.com/felipevzps/paper-trackr" class="btn dark" target="_blank">
+                  Code
+                  <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
+                    <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/I.png"/>
-          </div>
-          <div class="card-body">
-            <h3>seabed symphony</h3>
-            <p>Metagenomics pipeline for Biosynthetic Gene Cluster discovery. Designed for identification of novel BGCs in microbiome of marine sediments.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/felipevzps/seabed-symphony" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/G.png"/>
-          </div>
-          <div class="card-body">
-            <h3>YAATAP</h3>
-            <p>Snakemake pipeline for de novo transcriptome assembly. It performs every step from raw RNA-seq data download to the final transcriptome assembly and quality assessment.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/labbces/YAATAP" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/E.png"/>
-          </div>
-          <div class="card-body">
-            <h3>paper-trackr</h3>
-            <p>Tired of missing out on cool papers? stay up to date with paper-trackr!</p>
-            <div class="card-buttons">
-              <a href="newsletter/newsletter.html" class="btn white" target="_blank">Demo</a>
-              <a href="https://github.com/felipevzps/paper-trackr" class="btn dark" target="_blank">
-                Code
-                <svg width="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 0.85rem; height: 0.85rem;">
-                  <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -276,9 +306,7 @@
 
       <div class="card-grid">
         <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/lbb_2025.png"/>
-          </div>
+          <div class="card-image"><img src="docs/lbb_2025.png"/></div>
           <div class="card-body">
             <h3>LBB 2025</h3>
             <p>3rd place at the "Liga Brasileira de Bioinformática 2025", the largest bioinformatics competition in Latin America, focused on solving computational biology challenges.</p> 
@@ -295,9 +323,7 @@
         </div>
 
         <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/mendelics_2021.png"/>
-          </div>
+          <div class="card-image"><img src="docs/mendelics_2021.png"/></div>
           <div class="card-body">
             <h3>Mendelics 2021</h3>
             <p>3rd place at the "Mendelics Challenge". Developed a fully automated variant calling pipeline in less than 48 hours using real genomic data.</p>
@@ -314,9 +340,7 @@
         </div>
 
         <div class="oa-card">
-          <div class="card-image">
-            <img src="docs/biohack_2018.png"/>
-          </div>
+          <div class="card-image"><img src="docs/biohack_2018.png"/></div>
           <div class="card-body">
             <h3>BIOHACK 2018</h3>
             <p>2nd place at the "Synthetic Biology Hackathon (BIOHACK)". Designed <b>BIOREMEDYATOR</b>, a bioremediation project presented at Brazil’s largest biotechnology conference.</p>
@@ -373,5 +397,48 @@
       </div>
     </section>
   </main>
+
+  <!-- FILTER SCRIPT -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const researchCategories = document.querySelectorAll('.research-category');
+    const researchFilterBar = document.getElementById('researchFilterBar');
+
+    const categoryLabels = {
+      'ai-medicine': 'AI in Medicine',
+      'sugarcane-panomics': 'Sugarcane Pan-omics',
+      'computational-reproducibility': 'Computational Reproducibility',
+      'software-development': 'Software Development'
+    };
+
+    // cria os botões dinamicamente
+    Array.from(researchCategories).forEach((cat, index) => {
+      const category = cat.dataset.category;
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.category = category;
+      btn.textContent = categoryLabels[category] || category;
+      if (index === 0) btn.classList.add('active');
+      researchFilterBar.appendChild(btn);
+    });
+
+    // mostra só a primeira área por padrão
+    researchCategories.forEach((cat, i) => {
+      cat.style.display = i === 0 ? 'block' : 'none';
+    });
+
+    // troca de área
+    researchFilterBar.addEventListener('click', e => {
+      if (!e.target.classList.contains('filter-btn')) return;
+      const selected = e.target.dataset.category;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      researchCategories.forEach(cat => {
+        cat.style.display = (cat.dataset.category === selected) ? 'block' : 'none';
+      });
+    });
+  });
+  </script>
 </body>
 </html>
+

@@ -333,6 +333,18 @@ body {
   line-height: 1.4;
 }
 
+.note-card-body a {
+  color: var(--color-link);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  border-bottom: var(--border-width) var(--border-style) transparent;
+  transition: all var(--transition-fast);
+}
+
+.note-card-body a:hover {
+  border-bottom: var(--border-width) var(--border-style) var(--color-link);
+}
+
 /* === COMPOSITION CARDS === */
 .composition-card-image {
   background-color: var(--card-bg);
@@ -503,7 +515,6 @@ body {
   align-items: center;
   text-decoration: none;
   flex: 1;
-  margin-top: var(--spacing-lg);
   padding: 0.65rem 0.8rem;
   border-radius: var(--border-radius-full);
   font-size: var(--font-size-sm);
@@ -617,7 +628,7 @@ body {
 }
 
 /* ==================== */
-/* ==== NEWSLETTER ==== */
+/* === NEWSLETTER === */
 /* ==================== */
 
 .newsletter-container {
@@ -704,6 +715,17 @@ body {
   flex-direction: column;
 }
 
+/* === RESEARCH CATEGORIES (for filtered content) === */
+.research-category {
+  display: block;
+  margin-bottom: var(--spacing-4xl);
+  animation: fadeIn var(--transition-slow);
+}
+
+.research-category[style*="display: none"] {
+  display: none !important;
+}
+
 .paper {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -783,12 +805,18 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 /* ==================== */
-/* ==== RESPONSIVE ==== */
+/* === RESPONSIVE === */
 /* ==================== */
 
 /* Tablets (768px ou menos) */
