@@ -53,25 +53,28 @@
     <section id="research" class="section">
       <h2 class="section-title">Research</h2>
       <p class="section-description">
-        Explore my research areas and projects. Filter by topic to see specific work in each domain.
+        Here you can find the main topics that have shaped my scientific work over the years. Each project represents a different stage in this journey, sometimes exploring biological questions through data, and other times developing the computational tools required to answer them.
       </p>
+
+      <p class="section-description">Use the filters below to explore specific areas of interest.</p>
 
       <!-- Filter Bar -->
       <div class="filter-bar" id="researchFilterBar"></div>
 
-      <!-- === AI IN MEDICINE === -->
-      <div class="research-category" data-category="ai-medicine">
+      <!-- === SUGARCANE PAN-OMICS === -->
+      <div class="research-category" data-category="sugarcane-panomics">
         <div class="card-grid">
           <div class="note-card">
             <div class="note-card-image">
-              <img src="docs/F.png" alt="AI in Medicine"/>
+              <img src="docs/F.png"/>
             </div>
             <div class="note-card-body">
-              <h3>AI in Medicine</h3>
-              <p>Over the past few years, machine learning has shown extraordinary potential in capturing the complex, non-linear relationships underlying various cancers. Yet, achieving real clinical impact requires more than high accuracy, it demands <i>interpretability</i> and <i>external validation</i>.</p>
-              <p>I am particularly interested in how we can design transparent and explainable models that allow us to understand not only <i>what</i> a model predicts, but also <i>how</i> it arrives at its decisions, ensuring they can be trusted and meaningfully interpreted by clinicians.</p>
-              <p>Moreover, cancer data are heterogeneous by nature, shaped by differences in populations. Ensuring that models perform reliably beyond their training environments is fundamental for both scientific rigor and patient safety.</p>
-              <p>My current work at <a href="huna-ai.com">Huna</a> builds on this philosophy. This section highlights ongoing efforts toward developing transparent, validated, and clinically meaningful models for cancer research.</p>
+              <h3>Sugarcane Pan-omics</h3>
+              <p>This section highlights my two contributions to sugarcane pan-omics research, conducted at the <a href="https://labbces.cena.usp.br/" target="_blank">Computational, Evolutionary, and Systems Biology Laboratory</a>. In our first study, we built the sugarcane pan-transcriptome and revealed the variability in protein-coding transcripts across 50 genotypes. 
+
+              <p>Interestingly, many sugarcane transcripts were found to be non-coding RNAs (ncRNAs), raising fundamental questions: <i>How many ncRNAs are present in the sugarcane? What is the landscape of their diversity? What roles might they play in gene regulation, development, or stress responses?</i></p>
+
+              <p>During my master’s, I explored a multi-genotype catalog of ncRNAs, investigating their expression and co-expression networks. Together, these studies aim to fill the knowledge gaps between coding and ncRNAs in sugarcane, providing a broader view of transcript variability and potential functional roles across diverse genetic backgrounds.</p>
             </div>
           </div>
 
@@ -87,36 +90,8 @@
                 </div>
               </div>
             </div>
-
-            <div class="card-body">
-              <h3>Huna AI</h3>
-              <p>AI-powered diagnostic platform for medical imaging analysis and clinical decision support.</p>
-              <div class="card-buttons">
-                <a href="https://huna.ai/en/about/#" class="btn white" target="_blank">About</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- === SUGARCANE PAN-OMICS === -->
-      <div class="research-category" data-category="sugarcane-panomics">
-        <div class="card-grid">
-          <div class="note-card">
-            <div class="note-card-image">
-              <img src="docs/F.png"/>
-            </div>
-            <div class="note-card-body">
-              <h3>Sugarcane Pan-omics</h3> 
-              <p>In the last decade, the rise of massively parallel sequencing technologies in genomics and transcriptomics has revealed that the concepts of pan-genome and pan-transcriptome, once thought to be restricted to prokaryotes, are also applicable to eukaryotes. This discovery reshaped our understanding of genetic diversity, showing that not all individuals within a species share the same set of genes.</p>
-              <p>This section highlights my two contributions to sugarcane pan-omics research, conducted at the <a href="https://labbces.cena.usp.br/" target="_blank">Computational, Evolutionary, and Systems Biology Laboratory</a>. In our first study, we built the <i>sugarcane pan-transcriptome</i> and revealed the variability in protein-coding transcripts across 50 genotypes. 
-              <p>Interestingly, many sugarcane transcripts were found to be non-coding RNAs (ncRNAs), raising fundamental questions about this complex polyploid crop: <i>How many ncRNAs are present in the sugarcane? What is the extent of their diversity? What roles might they play in gene regulation, development, or stress responses?</i></p>
-              <p>During my master’s, I explored a multi-genotype catalog of ncRNAs, investigating their expression and co-expression networks. Together, these studies aim to fill the knowledge gaps between coding and non-coding RNAs in sugarcane, providing a broader view of transcript variability and potential functional roles across diverse genetic backgrounds.</p>
-            </div>
-          </div>
-
-          <div class="oa-card">
-            <div class="card-image"><img src="docs/A.png"/></div>
+          <!-- <div class="oa-card"> -->
+              <!-- <div class="card-image"><img src="docs/A.png"/></div> -->
             <div class="card-body">
               <h3>Sugarcane Pan-RNAome</h3>
               <p>This work focuses on characterizing ncRNAs and lncRNAs in sugarcane, addressing gaps in understanding their variability, conservation, co-expression patterns, and functional roles.</p>
@@ -160,7 +135,7 @@
               <h3>Computational Reproducibility</h3>
               <p>Ensuring reproducibility remains one of the major challenges in computational biology and data science. Despite the growing availability of large-scale biological and experimental datasets, many published results cannot be easily replicated due to issues such as incomplete documentation, non-standardized workflows, missing metadata, or dependence on specific computing environments. Whether in the context of gene expression studies or predictive modeling, transparent and reproducible computational practices are essential for building confidence in scientific results.</p>
 
-              <p>In my work I focus on developing robust, efficient, and reproducible workflows that adhere to the FAIR (Findable, Accessible, Interoperable, and Reusable) and open science principles.</p>
+              <p>In my work I focus on developing robust, efficient, and reproducible workflows that adhere to the open science and FAIR principles <i>(Findable, Accessible, Interoperable, and Reusable)</i>.</p>
               
               <p>This section highlights my contributions to reproducible computational research, showcasing the tools, pipelines, and projects I have been involved in, each developed to enhance reproducibility and transparency in large-scale biological data analysis.</p>
             </div>
@@ -256,9 +231,10 @@
             <div class="note-card-body">
               <h3>Software Development</h3>
               <p>My path into software development began in the biological sciences. Working with the massive datasets produced by modern sequencing technologies, I quickly realized that understanding biology in the twenty-first century requires far more than laboratory skills, it demands the ability to design, automate, and scale analyses across terabytes of information. What began as a necessity soon became a passion.</p>
+
               <p>I am deeply committed to the principles of <i>Free and Open Source Software (FOSS)</i> and enjoy contributing to and learning from open-source communities. Several of my projects and tools are freely available online, reflecting my belief that scientific progress is best achieved through transparency and collaboration.</p>
-              <p>My daily work environment revolves around Linux systems, I currently use Arch Linux as my daily driver distribution (<i>yes, I use Arch, btw</i> - <a href="https://github.com/felipevzps/dotfiles/wiki/Arch-Linux-(Hyprland)" target="_blank">feel free to take a look at my rice!</a>).</p>
-              <p>This section showcases my ongoing dedication to building free and open source software.</p>
+              
+              <p>This section highlights a selection of projects I’ve built, including tools and applications developed beyond the scope of computational biology.</p>
             </div>
           </div>
 
