@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 15, 2025</span>
+<span class="date">Nov 16, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Multimodal AI Decodes Extreme Environment Functional Dark Matter Beyond Homology</h2>
-<p class="paper-authors">Xu, M., Wang, D., +37 authors, Mao, X.</p>
+<h2 class="paper-title">SpaTranslator: A deep generative framework for universal spatial multi-omics cross-modality translation</h2>
+<p class="paper-authors">Dong, H., Mao, S., +9 authors, Li, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Functional annotation of proteins from extreme environments represents a major bottleneck for bioresource discovery, as a vast reservoir of functional dark matter defies existing homology-based methods. We demonstrate that environmental pressures impart conserved physicochemical energy signatures that co-determine protein function with sequence and structure. Here we developed ACCESS, a multimodal graph neural network employing hierarchical contrastive learning with a tailored label-sample co-embedding to fuse energy, sequence, and structural information and overcome homology scarcity. ACCESS surpasses state-of-the-art methods including BLASTp and CLEAN in annotating low-identity enzymes. Applied to extreme environmental metagenomics, we constructed a function map of extremophile enzymes to expand the biocatalyst library, pinpointed functionally critical residues to guide rational design, and enabled large-scale, function-based macro-evolutionary analyses. This paradigm transcends the limitations of homology, illuminating protein dark matter and accelerating the exploration of the biosphere's functional diversity for applications in biotechnology and therapeutic development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688615v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Recent advances in spatial omics technologies have enabled the simultaneous analysis of multiple molecular patterns in tissue sections, offering unprecedented insights into cellular microenvironments. However, the high cost of measurements and the sparsity of data restrict the availability of paired spatial multi-omics datasets. Here, we present SpaTranslator, a deep generative framework that integrates graph neural networks with an adversarial variational generative model to fully capture spatial characteristics and enable effective cross-modality translation of spatial omics data, enabling simulation of paired spatial multi-omics data from single-omics measurements. Extensive experiments demonstrate that SpaTranslator consistently outperforms baseline methods in both clustering accuracy and biological coherence across various real-world scenarios, including spatial transcriptomics-epigenomics and spatial transcriptomics-proteomics translation tasks. Furthermore, SpaTranslator provides biologically meaningful insights through marker genes and proteins recovery, motif enrichment analysis, and gene regulation inference. Our work offers an effective and adaptable solution for spatial multi-omics cross-modality translation, supporting a broad range of biological and biomedical research.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688644v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,186 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 15, 2025</span>
+<span class="date">Nov 16, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Reprogrammed SimCells for Antimicrobial Therapy</h2>
-<p class="paper-authors">Dong, Y., Ji, X., +4 authors, Huang, W. E.</p>
+<h2 class="paper-title">Accelerated and High-Accuracy Variant Calling on Oxford Nanopore Technologies Sequencing Data with the Sentieon DNAscope LongRead and Hybrid Pipelines</h2>
+<p class="paper-authors">Hu, J., Freed, D. N., +3 authors, Chen, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Antimicrobial resistance (AMR) is a critical global health challenge. In this study, we developed a novel platform based on chromosome-free and non-replicating simple cells (SimCells, size 1-2 m) and mini-SimCells (size 100-400 nm) for targeted pathogen elimination. Engineered with surface-displayed nanobodies, SimCells and mini-SimCells selectively bind bacteria expressing specific antigens (e.g., OmpA in E. coli). The selective interactions facilitate close SimCell-pathogen proximity, enabling two antimicrobial mechanisms: direct injection of toxic effectors into bacterial cytoplasm via a heterologous expression of type VI secretion system (T6SS), and enzymatic conversion of aspirin into catechol by engineered salicylate hydroxylase, leading to sustained local production of hydrogen peroxide (H2O2). Our results demonstrate that both reprogrammed SimCells and mini-SimCells can eliminate target E. coli with high specificity and efficiency. Multi-dose reprogrammed mini-SimCell treatment led to a 10^3-fold selective reduction of targeted bacteria in mixed microbial communities, with minimal disruption to non-target bacteria. We demonstrate that reprogrammed mini-SimCells, engineered with nanobody targeting outer membrane protein OmpA of the clinically relevant multidrug resistant pathogen E. coli ST131, achieved elimination efficiencies over 97% at 24 and 48 hrs. This modularised plug-and-play antimicrobial platform provides a highly specific, efficient and adaptable solution for combating diverse AMR pathogens.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688600v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Oxford Nanopore Technologies (ONT) has emerged as a clinically meaningful long-read sequencing platform, enabled by recent improvements in read accuracy and throughput. However, variant calling on ONT data remains challenging due to platform-specific error profiles, particularly indels in homopolymer regions. Here, we introduce description and comprehensive benchmarks of the Sentieon DNAscope LongRead and DNAscope Hybrid pipelines on ONT whole-genome datasets, demonstrating high accuracy and substantially reduced computational requirements across SNP, Indel, and Structural Variant detection. Benchmarked against multiple truth sets including GIAB v4.2.1, CMRG, and T2T-Q100, DNAscope LongRead reduced SNP errors by ~50% relative to Clair3 across five reference samples and showed consistently higher accuracy in all non-long-homopolymer stratifications. Integration of ONT and Illumina short reads via DNAscope Hybrid further improved variant detection: with low depth ONT + Illumina datas, the pipeline achieved F1 scores of 0.9992 (SNPs) and 0.9979 (Indels), outperforming alternative pipelines. In challenging benchmarks such as T2T-Q100 and CMRG genes, DS-Hybrid reduced SNP and Indel errors significantly, compared to next-best methods. For structural variants, DNAscope pipelines outperformed alternative (e.g. Sniffles2), highlighting the advantages of haplotype-resolved SV detection method. Despite its accuracy, the Sentieon software suite remains computationally efficient: complete ONT long read FASTQ-to-VCF analysis completed within ~190 minutes on a 120-vCPU Azure instance, at costs less than $5 USD. Overall, the DNAscope LongRead and Hybrid pipelines deliver fast, accurate, and scalable germline variant calling for ONT datasets, providing a practical solution for comprehensive whole-genome analysis in both research and clinical genomics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.14.688541v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">mIDEA: An Interpretable Structure-Sequence Model for Methylation-Dependent Protein-DNA Binding Sensitivity</h2>
+<p class="paper-authors">Zhang, Y., Li, R., +1 author, Lin, X.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> DNA methylation dynamically reshapes protein-DNA interaction landscapes, yet the mechanistic principles governing methylation-dependent recognition remain incompletely understood. Currently, there is no predictive framework that integrates methylation-aware binding specificity with 3D structure-based residue interactions for quantitatively assessing the impact of DNA methylation on protein-DNA interactions. To bridge this gap, we introduce mIDEA (Methylation-informed Interpretable protein-DNA Energy Associative model), a structure-aware, residue-level biophysical framework that predicts and interprets protein-methylated-DNA interactions by optimizing an amino acid-nucleotide energy matrix explicitly accounting for the modulatory effect of 5-methylcytosine. We validate mIDEA across diverse human transcription factors with distinct CpG methylation preferences. Using only structural templates and prior biochemical knowledge, mIDEA accurately recapitulates both "methyl-plus" and "methyl-minus" effects of DNA methylation on protein-DNA binding. Incorporating quantitative methylation-sensitive binding data further enables mIDEA to capture position-specific methylation effects. When integrated with whole-genome methylation profiles, the model enhances in vivo binding-site prediction by reducing false positives while preserving sensitivity compared to models trained on unmethylated sequences. Overall, mIDEA provides a principled framework for elucidating the molecular mechanisms underlying methylation-modulated protein-DNA recognition. The mIDEA source code is available at: https://github.com/LinResearchGroup-NCSU/IDEA_DNA_Methylation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.14.688575v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Sequence-aware Prediction of Point Mutation-induced Effects on Protein-Protein Binding Affinity using Deep Learning</h2>
+<p class="paper-authors">Zhuang, J., Li, Z., +2 authors, Zhang, G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Amino acid mutations may lead to significant changes in the binding affinity of protein complexes, thereby causing a series of cellular dysfunctions. Therefore, accurate prediction of protein-protein binding affinity changes ({Delta}{Delta}G) induced by amino acid mutations is of great importance for understanding protein-protein interactions (PPIs). In this study, we propose SAMAffinity, a protein sequence-aware deep learning architecture for predicting changes in protein-protein binding affinity caused by amino acid mutations. SAMAffinity predicts mutation-induced {Delta}{Delta}G by integrating multi-source sequence features, leveraging a Mutation-Site Identification (MSI) module to highlight local semantic shifts and a Binding-Interface Awareness (BIA) module to capture interaction changes. Benchmark evaluations on public datasets show that under the mutation-level data splitting strategy, SAMAffinity outperforms the state-of-the-art sequence-based method AttABseq by 33.3%, 72.3%, 31.8%, and 30.5% on S1131, S4169, S645, and M1101 datasets, respectively. Moreover, under the complex-level data splitting strategy, SAMAffinity surpasses the structure-based method MpbPPI by 22.9%, 22.7%, 5.0%, and 11.4% on the corresponding datasets. Beyond predictive accuracy, the strong consistency between the model's predicted distribution and natural amino-acid mutation tendencies indicates that SAMAffinity effectively captures the underlying mutational landscape shaped by intrinsic biochemical and evolutionary factors. Based on this capability, SAMAffinity demonstrated strong generalization in a study of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) cases, suggesting its potential for optimizing therapeutic antibody design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688659v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">pH-responsive synthetic cells for controlled protein synthesis and release</h2>
+<p class="paper-authors">Hwang, S.-W., Li, Y., +1 author, Liu, A. P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> pH is a critical parameter in biological systems, with acidic environments often serving as hallmarks of pathological conditions such as cancer, infection, and metabolic disorders. Here, we developed a pH-responsive synthetic cell capable of protein synthesis and release under acidic conditions. The system was constructed by integrating three molecular modules: a proton channel for pH sensing, a pH-responsive single-stranded DNA (ssDNA) that releases a trigger ssDNA upon acidification, and a toehold switch RNA that activates translation in response to the trigger ssDNA. During integration, we discovered that adjusting the annealing length between the pH-responsive and trigger strands was critical for enabling the acid-triggered protein synthesis. Using this strategy, we successfully demonstrated acid-responsive protein expression within synthetic cells. To further explore applications, we embedded the synthetic cells in a hydrogel to endow pH-responsive behavior to materials and coupled pH-responsive protein translation with a cell-penetrating peptide technology for selective release of proteins.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.16.688650v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Using Large Language Models to Assemble, Audit, and Prioritize the Therapeutic Landscape</h2>
+<p class="paper-authors">Thyagatur Kidigannappa, A., Sonti, N., +2 authors, Faller, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> We present an AI-assisted pipeline for disease-specific drug landscape analysis. Given a disease name, the system assembles a comprehensive, evidence-based view of therapeutic assets by integrating structured sources (such as ClinicalTrials.gov and ChEMBL) and unstructured sources (such as publications, press releases, and patents). Large language models are used in a constrained, auditable mode to normalize drug aliases, resolve drug target/mechanism of action annotations, and harmonize program status across records. The output is a disease-centric map that spans preclinical assets, not-yet-approved assets (both active and discontinued/shelved), and FDA-approved drugs suitable for re-purposing. Assets are ranked using interpretable, evidence-based scoring heuristics that combine trial volume and clinical phase, endpoint outcomes, biomarker support, recency of activity, and regulatory designations, along with penalties for safety signals and non-pharmaceutical interventions, as well as proportional adjustments for operational versus scientific discontinuations. Case studies in Alzheimers disease, pancreatic cancer, and cystic fibrosis demonstrate generality, coverage, and discrimination across mechanisms and stages. This framework provides a transparent method to assemble and prioritize the therapeutic landscape for any disease, unifying disparate data into a coherent and analyzable representation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.14.688562v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Contrastive modelling of transcription and transcript abundance in legumes using PlanTT</h2>
+<p class="paper-authors">Raymond, N., Zhang, X., +9 authors, Konkin, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Predicting the impacts of sequence variation on gene expression remains a challenging task. Further, in plants, we have a limited understanding of the relative contributions of different gene expression regulatory mechanisms. To address these limitations we generated a comparative multiomic dataset comprising matched 3-RNA-seq and PRO-seq data from matched tissues of reference genotypes of four legumes of the invert repeat lacking clade (Pisum sativum, Vicia faba, Lathyrus sativa and Medicago truncatula). Focused on the challenging task of predicting expression differences between ortholog pairs from unseen orthogroups, we used this dataset and a novel prediction framework to build contrastive models that predict quantitative differences (effect size differences) in transcription and transcript abundance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.685414v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Cell-Type-Resolved Isoform Atlas of Human Tissues Reveals Age and Alzheimer's Disease-Associated Splicing Changes</h2>
+<p class="paper-authors">Yamamoto, R., Fu, T., +4 authors, Zaitlen, N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Alternative splicing is a key mechanism for transcriptomic diversity, but how isoforms map to specific cell types in bulk tissues remains unclear. We present Sciege, a multimodal method that integrates bulk short-read RNA-seq with single-cell and long-read data to estimate cell type-specific isoform distributions. Through simulations, we demonstrate that Sciege accurately estimates isoform abundances and identifies differentially abundant transcripts through statistical tests. Applied to seven tissues in GTEx and brain tissue in ROSMAP datasets, Sciege generates a first-to-date multi-tissue isoform atlas and reveals isoform changes linked to cell types, aging, and Alzheimer's disease. Validation with external cohorts and experimental data confirms our findings. Notably, we identify upregulation of the MAPT-010 isoform in AD inhibitory neurons, consistent with known methylation signatures. Our approach demonstrates the value of integrating RNA-seq data to study cell type-specific splicing and provides a foundation for further genetic and functional studies of alternative splicing across biological contexts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.14.688520v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">SCAPE: An AI-Driven Platform for Comprehensive Single-Cell Data Analysis</h2>
+<p class="paper-authors">Wu, M., Wu, H., +1 author, CHENG, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Single-cell RNA sequencing (scRNA-seq) has transformed the study of cellular heterogeneity, but downstream analysis remains fragmented and technically demanding. Current pipelines often lack analytical diversity, require programming expertise, and offer limited integration of advanced methods. To address these challenges, we developed SCAPE, an AI-driven automated and interactive platform that unifies multi-omics, multi-resource, and multi-modal single-cell data analysis. SCAPE provides platform-independent installation, customizable workflows, and integration of R- and Python-based tools. Beyond Seurat and Scanpy, it incorporates modules for transcription factor and pathway inference, pseudotime trajectory reconstruction, spatial transcriptomics deconvolution, and cell-cell communication analysis. To demonstrate SCAPE, we curated a unified atlas of lung cancer progression in human patients and mouse models, spanning primary tumors and metastatic sites. The platform enabled harmonized integration, regulatory program inference, and spatial mapping, revealing conserved epithelial programs that promote metastatic seeding and organ-specific adaptations driven by microenvironments. Collectively, SCAPE offers an accessible and comprehensive framework for single-cell analysis, providing new insights into cancer progression and broad utility across biological systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688526v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">ecDNA-driven oncogene super-expressors shape immunoevasive tumor microenvironment</h2>
+<p class="paper-authors">Qiao, K., Yang, Q.-L., +12 authors, Wu, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> ecDNA contributes to cancer genetic heterogeneity through random segregation during mitosis. Emerging evidence links ecDNA to immune evasion, but the mechanism remains elusive. Using genetically engineered mouse models of pancreatic ductal adenocarcinoma (PDAC), we show that Kras and Myc oncogenes are amplified either on ecDNAs or as homogeneously staining regions (HSRs) on chromosomes. ecDNA-driven tumors are more aggressive in immunocompetent mice. Single-cell transcriptomic and histological analyses reveal that ecDNA-driven tumors rapidly establish an immunoevasive tumor microenvironment (TME), marked by increased myofibroblastic cancer-associated fibroblasts (myCAFs) and reduced T cell infiltration. Mechanistically, ecDNA heterogeneity generates a subset of cancer cells with extremely high Kras expression, termed super-expressors, which secrete amphiregulin to promote myCAF expansion and suppress T cell infiltration. Clonally organized super-expressors establish an immunoevasive niche in the TME from patients with PDAC. Our findings demonstrate a causal role of ecDNA in TME remodeling, offering insights into cancer heterogeneity and immune evasion.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688565v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 16, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Colorectal cancer relies on an immunosuppressive cellular topography and genomic adaptations for establishing brain metastases</h2>
+<p class="paper-authors">Sathe, A., Zhang, M., +15 authors, Ji, H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Colorectal cancer (CRC) brain metastases have a poor prognosis and limited treatment options, including resistance to radiation therapy. Little is known about the molecular and cellular mechanisms that enable CRC tumor cells to adapt to the brain and establish a supportive tumor microenvironment. To address this gap we used spatial transcriptomics to analyze 51 CRC brain metastases. A subset had matched primary colon tumors and longitudinally paired metastatic resections before and after radiation treatment. We identified the critical spatial cellular features of the tumor epithelium and the surrounding tumor microenvironment that support metastatic growth in the brain. CRC brain metastases developed a stromal microenvironment with abundant fibroblasts and tumor-associated macrophages. A fibroblast-macrophage cellular neighborhood promoted angiogenesis, extracellular matrix remodeling, and immune suppression. Tumor cells showed local adaptations. In endothelial-rich regions, they were proliferative whereas in macrophage-rich regions, they were more differentiated and immune evasive. Compared with paired primary tumors, CRC brain metastases showed increased chromosomal instability, with activation of RNA-processing, stress response, and junctional remodeling pathways. After radiation treatment, resistant clones had increased epithelial-mesenchymal transition, while the immunosuppressive stroma remained intact. We identified tumor-derived MIF, GDF15, PRSS3 and SEMA3C ligands and macrophage-derived SPP1 that have the potential to affect multiple cell types in the metastatic niche. These ligand-receptor interactions drive angiogenesis, stromal activation and immune suppression. In a macrophage-tumor-fibroblast co-culture model, knockout of SPP1 in macrophages led to reduced expression of lipid-metabolism related genes and disrupted tumor-promoting interactions. Together, these results indicate that CRC growth in the brain is sustained by a specific cellular organization with immunosuppressive multicellular interactions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.14.688538v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
