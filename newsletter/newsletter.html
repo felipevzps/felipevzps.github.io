@@ -37,18 +37,265 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="machine learning, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Minimizer Density revisited: Models and Multiminimizers</h2>
+<p class="paper-authors">Ingels, F., Robidou, L., +2 authors, Limasset, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> High-throughput sequence analysis commonly relies on k-mers (words of fixed length k) to remain tractable at modern scales. These k-mer-based pipelines can employ a sampling step, which in turn allows grouping consecutive k-mers into larger strings to improve data locality. Although other sampling strategies exist, local schemes have become standard: such schemes map each k-mer to the position of one of its characters. A key performance measure of these schemes is their density, defined as the expected fraction of selected positions. The most widely used local scheme is the minimizer scheme: given an integer m [≤] k, a minimizer scheme associates each k-mer to the starting position of one of its m-mers, called its minimizer. Being a local scheme, the minimizer scheme guarantees covering all k-mers of a sequence, with a maximal gap between selected positions of w = k - m + 1. Recent works have established near-tight lower bounds on achievable density under standard assumptions for local schemes, and state-of-the-art schemes now operate close to these limits, suggesting that further improvements under the classical notion of density will face diminishing returns. Hence, in this work, we aim to revisit the notion of density and broaden its scope. As a first contribution, we draw a link between density and the gap between consecutive selected positions. We propose a probabilistic model allowing us to establish that the density of a local scheme is exactly the inverse of the expected gap between the positions it selects, under the minimal and only assumption that said gaps are somehow equally distributed. We emphasize here that our model makes no assumptions about how positions are selected, unlike the classical models in the literature. Our result introduces a novel method for computing the density of a local scheme, extending beyond classical settings. Based on this analysis, we introduce a novel technique, named multiminizers, by associating each k-mer with a bounded set of candidate minimizers rather than a single one. The candidate furthest away (in a precise sense defined in the article) is selected. Since the decision is made by taking advantage of a context beyond a single k-mer, this technique is not a local scheme - as a result, we propose the concept of semi-local schemes, which provide a broader framework within which our method fits. Using the multiminimizer trick on a local scheme reduces its density at the expense of a controlled increase in computation time. We show that this method, when applied to random (hash-based) minimizers and to open-closed mod-minimizers, achieves asymptotically optimal density representing, to our knowledge, the first construction converging to this limit. Our third contribution is the introduction of the deduplicated density, which measures the fraction of distinct minimizers used to cover all k-mers of a set of sequences. While this problem has gained traction in applications such as assembly, filtering, and pattern matching, standard minimizer schemes are often used as a proxy, blurring the distinction between the two objectives (minimizing the number of selected positions or the number of selected minimizers). Although related to the classical notion of density, deduplicated density differs in both definition and suitable constructions, and must be analyzed in its own right, together with its precise connections to standard density. We show that multiminimizers can also improve this metric, but that globally minimizing deduplicated density in this setting is NP-complete, and we instead propose a local heuristic with strong empirical behavior. Finally, we show that multiminimizers can be computed efficiently, and provide a SIMD-accelerated Rust implementation together with proofs of concept demonstrating reduced memory footprints on core sequence-analysis tasks. We conclude with open theoretical and practical questions that remain to be addressed in the area of density.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689688v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Compressed inverted indexes for scalable sequence similarity</h2>
+<p class="paper-authors">Ingels, F., Vandamme, L., +3 authors, Limasset, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Modern sequencing continues to drive explosive growth of nucleotide sequence archives, pushing MinHash-derived sketching methods to their practical scalability limits. State-of-the-art tools such as Mash, Dashing2, and Bindash2 provide compact sketches and accurate similarity estimates for large collections, yet ultimately rely on forward indexes that materialize sketches as explicit fingerprint vectors. As a result, large-scale similarity search and exhaustive collection-versus-collection comparison still incur quadratic resource usage. In this work, we revisit the architecture of sketch-based indexes and provide a novel framework for scalable similarity search over massive sketch collections. Our first contribution is a formal cost model for sketch comparison, within which we prove that inverted indexes on sketch fingerprints, equipped with suitably compressed posting lists, achieve the same asymptotic space complexity as standard forward indexes, thereby eliminating the perceived memory penalty traditionally associated with inverted indexes. Building on this model, we design algorithms for all-vs-all comparison between two inverted indexes whose running times are proportional to the total number of matching sketch positions, leading to output-sensitive optimality and enabling efficient large-scale similarity comparisons. Our second contribution leverages the prevalence of similarity thresholds in downstream applications such as clustering, redundancy filtering, and database search. We introduce two early-pruning schemes: an exact criterion that safely eliminates pairs guaranteed not to reach a target Jaccard similarity, and a probabilistic strategy that exploits partial match statistics to discard pairs unlikely to exceed this threshold. Together, these schemes address both time and memory bottlenecks while maintaining rigorous guarantees on retained high-similarity pairs and providing explicit control of the false-rejection probability for the probabilistic variant. Finally, we instantiate these ideas in Onika, an open-source Rust implementation based on compressed inverted posting lists available at github.com/Malfoy/Onika. Onika incorporates a similarity-aware document reordering strategy that restructures sketch identifiers to further shrink index size and improve locality, particularly for redundant collections. Experiments on large bacterial genome repositories, synthetic low-redundancy benchmarks, and long-read HiFi sequencing datasets demonstrate that Onika matches or improves upon the sketch sizes of leading tools while accelerating large-scale search and collection-versus-collection comparisons by up to several orders of magnitude in low-redundancy regimes, without compromising sensitivity at practically relevant similarity thresholds.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689685v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">ASVNet: Inferring microbes from 16S rRNA amplicon sequencing data</h2>
+<p class="paper-authors">Sanchez-Gil, J. J., de Jonge, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Amplicon sequencing of the variable regions of the 16S rRNA gene is one of the most common techniques in microbiome research. A crucial step in analysing this data is to cluster raw sequences into biologically interpretable groups that approximate the actual organisms in a community, which reduces data complexity, facilitates diversity analyses, and enables clearer ecological and functional interpretations. Most approaches rely on fixed sequence similarity thresholds, typically operational taxonomic units (OTUs) at 97% or amplicon sequence variants (ASVs) at 99-100%. However, finding the correct correspondence between amplicons and the original organisms in a complex community remains challenging, primarily due to the presence of varying copy numbers within genomes and the high similarity of amplicon sequences among species. While the stringent threshold in ASVs prevents merging sequences from different species, it often splits sequences from the same genome into multiple ASVs, inflating species counts. Conversely, the 97% similarity threshold in OTUs tends to frequently collapse multiple distinct organisms into a single unit regardless of their functional or ecological (dis)similarity, and thereby underestimating true diversity. To address these limitations, we introduce ASVNet, an algorithmic framework that leverages amplicon sequence similarity and co-abundance networks to better reflect the underlying organisms in a community. ASVNet builds on the principle that amplicon counts from the same organism co-vary across samples and it thus attempts to cluster these co-occurring, similar sequences as empirical OTUs (eOTUs). Comparative analyses in synthetic and natural root-associated microbial communities with genome-sequenced isolates show that ASVNet-derived eOTUs more accurately represent the original microbes and possess greater biological relevance than OTUs defined at any fixed threshold. By providing a biologically grounded framework to amplicon sequence data interpretation, ASVNet extends our ability to extract meaningful insights from complex microbiome datasets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689717v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">The Human-In-the-Loop Drug Design Framework with Equivariant Rectified Flow</h2>
+<p class="paper-authors">Zhao, Y., Huang, Y., +8 authors, Ma, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Advancements in AI-based drug design often face obstacles due to incomplete datasets, hindering progress to clinical trials. Human experts bring invaluable expertise and nuanced contextual understanding to drug design. There are two main difficulties in integrating human knowledge into the drug development process. First, human annotations are costly, and traditional machine learning algorithms require a large number of samples to be effective. Second, human experts are unable to accurately describe their expertise using natural language, nor can they precisely specify what kind of molecule is needed before seeing the generated molecules. To address these problems, we propose a new platform, called HIL-DD, for experts to infuse their experience by selecting molecules generated by AI that meet their criteria, or discarding those that do not. The core generative technology utilizes an Equivariant Rectified Flow Model (ERFM), which offers faster generation speeds than conventional diffusion models, enabling efficient human-AI collaboration. More importantly, we provide a user-friendly interface to ensure smooth and effective collaboration between human experts and AI systems. Rigorous experiments demonstrate that our system can produce 3D molecules that align with expert expectations in minimal interactive sessions. These generated molecules maintain drug-like qualities comparable to those created by current state-of-the-art models.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689585v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Snail plots are badges of genome assembly quality</h2>
+<p class="paper-authors">Challis, R. J., Blaxter, M. L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Assembly quality is frequently assessed using independent measures of assembly span, contiguity, sequence composition and completeness. Among contiguity metrics, contig and scaffold N50 have perhaps gained the most traction, despite well known limitations. Several authors have suggested considering the complete Nx curve rather than just the N50 value, but while using N90 values or considering the area under the Nx curve with auN statistics provide more complete measures of contiguity, they share the limitation of being unsuited to direct comparison across a range of genome sizes. We introduced snail plots to provide a genome-size independent way to summarise a range of commonly used assembly metrics. Here we demonstrate that easily-learnt visual differences between snail plots allow simultaneous consideration of metrics across several key areas of assembly quality to rapidly identify high- and low-quality assemblies. We show that prominent features in snail plots of high-quality assemblies effectively highlight N50, N90 and auN contiguity statistics, but since the presentation is scaled to the longest scaffold, plots can be compared effectively across a wide range of taxa and assembly sizes. We use the core features of a snail plot to derive a proportional measure of assembly quality based on auN, adjusted for ambiguous, N, bases and scaled to the length of the longest scaffold. We show that this snail score value corresponds closely to a qualitative assessment of overall assembly quality from visual interpretation of a snail plot.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689594v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Transforming Biological Foundation Model Representations for Out-of-Distribution Data</h2>
+<p class="paper-authors">Pratapa, A., Tata, P. R., Singh, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Foundation models pre-trained on certain biological data modalities exhibit systematic representational biases when encountering out-of-distribution (OOD) data from new assays. The embedding drift largely arises from instrumentation and protocol-related artifacts rather than true biological variation in cell states or tissue morphology. These drifts are distinct from conventional batch effects and cannot be remedied by retraining as sample sizes are often insufficient, and modifying existing embeddings breaks downstream tools that depend on stable representations. We introduce USHER, an adaptable framework to learn simple transforms that return OOD embeddings to a foundation model's reference space. USHER enables embedding transformation via an expectation maximization-style procedure. Given a reference in-distribution sample, USHER first estimates a Fused Gromov-Wasserstein coupling that aligns unpaired OOD (source) and reference (target) embeddings by minimizing transport distance while preserving local structure. To make optimal transport couplings more useful for downstream tasks, we introduce the concept of entropic filtering to retain only high-confidence correspondences. In the second step, USHER learns a low-complexity transformation that reliably restores the model's representation space for OOD data. We demonstrate this learned transformation generalizes to other OOD data from similar experimental conditions. We applied USHER to correct platform-specific biases seen when running scGPT on Xenium transcript counts: USHER maps Xenium embeddings back to the native scRNA-seq representation space, improving cell type clustering and cross-platform integration. Histopathology foundation models trained on H&amp;E images fail on MALDI metabolite-profiled tissue images due to data-acquisition artifacts. USHER corrects these, enabling cell-type classification and protein abundance imputation. USHER offers a generalizable framework to make biological foundation models portable across a rapidly-evolving experimental landscape.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689462v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Continuous Motility Fingerprints from Gaussian Mixture Models Reveal Hidden Sperm Heterogeneity</h2>
+<p class="paper-authors">Lamm, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Computer-assisted sperm analysis (CASA) collapses sperm motility into coarse categorical bins, masking the heterogeneity that influences fertilization potential. Analyzing 33,500 trajectories from 340 individuals, we introduce a probabilistic fingerprinting framework that treats Gaussian mixture model (GMM) posteriors as soft supervision to construct continuous motility axes that capture forward progression, erratic movement, and uncertainty. This semi-supervised, posterior-guided approach condenses high-dimensional CASA features into interpretable, uncertainty-aware descriptors that capture both canonical and transitionary sperm behaviors. GMM consistently identified five reproducible subtypes, including an "erratic" group characterized by vigorous, asymmetric motion associated with fertilization readiness. Patient-level fingerprints revealed robust associations with semen quality markers (debris, round cells, concentration), demonstrating potential utility for fertility evaluation and clinical decision-making. Together, our results provide the first large-scale evidence that probabilistic fingerprints capture biologically meaningful and clinically anchored sperm heterogeneity, establishing a generalizable framework for outcome-linked studies in reproductive medicine.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689493v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Development and characterisation of a promoter library for Sulfolobus acidocaldarius</h2>
+<p class="paper-authors">Peeters, A. I., Xu, Y., +4 authors, De Mey, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The hyperthermoacidophilic archaeon Sulfolobus acidocaldarius is a promising production host for industrial biotechnology applications due to its ability to thrive in extreme conditions. However, the lack of well-characterised genetic parts and tools, particularly promoters, limits its potential for metabolic engineering. In this study, we developed the first promoter library for S. acidocaldarius by randomising specific regions of the core promoter sequence of PSaci_2137, a promoter known to function in both S. acidocaldarius and Escherichia coli . The library was initially screened in E. coli using mKate2, a red fluorescent reporter protein, and seven promoters were selected for characterisation in S. acidocaldarius using the thermostable {beta}-galactosidase reporter LacS. The resulting promoter collection exhibited a 5-fold range of expression levels in S. acidocaldarius, spanning from low to high constitutive expression when compared to S. acidocaldarius promoters Psac7d and PmalE. This study demonstrates a successful workflow for generating and characterising S. acidocaldarius promoters, providing a valuable toolkit for fine-tuning gene expression and optimising metabolic pathways in this extremophilic archaeon. The design principles established here can be extended to other archaeal systems with similar promoter architectures.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689296v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Causality-oriented regulatory inference and rational transcriptomic reprogramming design with CASCADE</h2>
+<p class="paper-authors">Cao, Z.-J., Guo, T., +5 authors, Gao, G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Systematically elucidating the causal structure of gene expression regulation is the foundation for identifying key regulators of cellular function and designing rational interventions thereof. While advances in high-content perturbation screens enables experimental probing of causal regulatory effects, the massive genomic scale, measurement noise and confounding factors pose significant challenges for existing causal discovery and inference algorithms. Here, we present CASCADE, an end-to-end framework that integrates de novo causal discovery with prior regulatory knowledge for genome-wide causal discovery and inference. In addition to its superior performance on causal regulatory structure discovery and counterfactual inference for unseen perturbation effects, CASCADE enables, for the first time, causality-oriented rational intervention design for transcriptomic programming towards various targeted cells within a unified framework.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689377v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Theoretical estimates on the expected number of mutations for reconstructing clonal lineage trees</h2>
+<p class="paper-authors">Bristy, N. A., Schwartz, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Phylogenetics, like many subdisciplines of computational biology, faces a growing challenge of dealing with increasingly large and complicated data sets that have been enabled by ever-improving technologies for sequencing. The issue is particularly acute for studies of somatic evolution, such as of single-cell populations in cancers, where vast single-cell data sets may now identify hundreds of thousands of genetically distinct cells with similar scales of mutations distinguishing them. At the same time, the complexity of the biology of somatic evolution has led to complex phylogeny methods that struggle to scale to even modest data sizes. In this paper, we explore the theoretical and empirical basis for one strategy for managing these large data sets: subsampling mutations to solve the computationally challenging phylogeny problem followed by faster solutions for placement of mutations on a putatively known guide tree. We specifically focus on the fundamental question of determining the number of mutations sufficient to recover the true phylogenetic tree at some level of resolution with high probability. We theoretically analyze variants of several common models that underlie popular tools for building clonal lineage trees. We further evaluate the robustness of these theoretical bounds through simulations of these models, extensions of them, and real biological datasets. The results suggest that modest numbers of mutations suffice to reconstruct clonal trees for typical numbers of clones, supporting the subsampling approach as a general strategy for managing the challenges of ever-growing data sets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689642v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">TP53 and RB1 are predictive genetic biomarkers for sensitivity to cytarabine in gliomas</h2>
+<p class="paper-authors">Laaniste, L., Luginbuehl, J., +13 authors, Muhammed, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Therapeutic progress in glioma, one of the most lethal human cancers, has been limited by molecular heterogeneity and lack of biomarker-driven drug deployment. Here we used a proprietary large-scale CRISPRi screening in primary patient-derived glioma tumorspheres to identify genetic vulnerabilities and nominate pharmacologically tractable targets. DNA polymerase-linked dependencies emerged as top-ranked hits, which we validated through orthogonal viability assays. Network-based integration of dependency data with drug-target relationships nominated cytarabine, a nucleoside analogue already approved for intrathecal use, as a candidate agent targeting this axis. Dose-response profiling across molecularly diverse glioma models revealed substantial heterogeneity in cytarabine sensitivity (IC range: 0.04-9.8 uM). Machine learning analysis of whole-genome sequencing data identified TP53 wild-type and RB1-wild-type status as dominant predictors of response, with double wild-type lines showing three standard deviations (3 s.d.) increased sensitivity compared to altered models. Prospective validation in an independent cohort confirmed that TP53/RB1 genotype stratifies cytarabine activity. These findings establish a mechanistically anchored, biomarker-restricted repurposing opportunity for cytarabine in leptomeningeal glioma, enabling rational prioritisation of an accessible therapy in a molecularly defined patient subset.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.688938v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Identification of sialic acid linkage profiles in primary liver cancers</h2>
+<p class="paper-authors">Ochoa-Rios, S., Dressman, J. W., +2 authors, Mehta, A. S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cholangiocarcinoma (CCA), also known as bile duct cancer, is the second most common form of primary liver cancer after hepatocellular carcinoma (HCC). Subtypes of CCA are diagnosed according to the anatomic location within the biliary tree, such as intrahepatic (iCCA) or extrahepatic (eCCA). Early diagnosis remains difficult due to the low sensitivity and specificity of current biomarkers. There has been significant interest in finding new biomarkers of CCA and much work has been performed to both discover and validate these new markers. In our previous work, we identified specific alterations in N-linked glycosylation that were associated with iCCA, which differed from non-malignant cholestasis disease and HCC. However, that analysis focused only on N-glycan structures devoid of sialic acid, as these N-glycan residues are not stable and were intentionally removed to minimize variability. Here, we explore the specificity of sialic acid residues in liver cancers, since sialic acid residues have been heavily linked to roles in tumor progression and metastasis by helping evade immunological surveillance. To circumvent the instability of sialic acid, we utilize a novel sialic acid stabilization method coupled with Matrix-Assisted Laser Desorption Ionization (MALDI) Imaging Mass Spectrometry (IMS) for detailed analysis of sialic acid linkages in iCCA tissue. We report a clear association between the linkages type of sialic acid residues with a HCC or CCA, including differentiation between CCA subtypes. Overall, we stabilize N-glycans with sialic acid residues to determine their linkages and elucidate their importance in different types of primary liver cancers and their subtypes by MALDI-IMS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689542v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Progesterone receptors drive advanced breast cancer phenotypes including circulating tumor- and stem-like cell expansion in the context of ESR1 mutation</h2>
+<p class="paper-authors">Truong, T., Gillis, N. E., +9 authors, Lange, C. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Endocrine therapy resistance remains a major challenge in the treatment of advanced estrogen receptor positive (ER+) breast cancer. This can be driven by acquired mutations in the estrogen receptor gene (ESR1), such as Y537S or D538G, that primarily emerge in patients with prior aromatase inhibitor therapy and results in constitutive estrogen-independent ER activity. Progesterone receptors (PR) are important modifiers of ER activity, in part via direct binding. We previously showed that PR mediates expansion of cancer stem-like cell (CSC) populations and promotes tamoxifen resistance in nuclear ER/PR transcriptional complexes. In this study, we sought to define whether PR function changes in the context of ESR1 mutations. PR readily interacted with wild type (WT), but not Y537S or D538G ERs. RNA-seq and ChIP-seq studies demonstrated that ER+ breast cancer models expressing Y537S ER exhibited a distinct response to progesterone. CSC populations were enhanced in Y537S ER+ cells compared to WT ER+ cells. PR knockdown demonstrated that this property required PR expression but was unresponsive to antiprogestins. Moreover, we identified PR-dependent transcriptional programs such as the unfolded protein response (UPR) that can be leveraged to target CSC populations in Y537S ESR1-mutant breast cancer. The UPR activator ErSO, but not UPR inhibitors, blocked expansion of CSCs in WT as well as Y537S ER+ models. Together, our findings demonstrate a critical interplay between PR and mutant ER function and provide insight into PR-driven pathways including hyperactivation of the stress-sensing UPR that can be exploited as potential therapeutic avenues in advanced ER+ breast cancer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689560v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
 <span class="date">Nov 21, 2025</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions.</h2>
-<p class="paper-authors">Chou-Yi Hsu, Shavan Askar, +5 authors, Hamed Soleimani Samarkhazan</p>
+<h2 class="paper-title">MarkerPredict: predicting clinically relevant predictive biomarkers with machine learning.</h2>
+<p class="paper-authors">Daniel V Veres, Peter Csermely, Klára Schulc</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cancer's staggering molecular heterogeneity demands innovative approaches beyond traditional single-omics methods. The integration of multi-omics data, spanning genomics, transcriptomics, proteomics, metabolomics and radiomics, can improve diagnostic and prognostic accuracy when accompanied by rigorous preprocessing and external validation; for example, recent integrated classifiers report AUCs around 0.81-0.87 for difficult early-detection tasks. This review synthesizes how artificial intelligence (AI), particularly deep learning and machine learning, bridges this gap by enabling scalable, non-linear integration of disparate omics layers into clinically actionable insights. We explore cutting-edge AI methodologies, including graph neural networks for biological network modeling, transformers for cross-modal fusion, and explainable AI (XAI) for transparent clinical decision support. Critical applications are highlighted, such as AI-driven therapy selection (e.g., predicting targeted therapy resistance), proteogenomic early detection, and radiogenomic non-invasive diagnostics. We further address translational challenges: data harmonization, batch correction, missing data imputation, and computational scalability. Emerging trends, federated learning for privacy-preserving collaboration, spatial/single-cell omics for microenvironment decoding, quantum computing, and patient-centric "N-of-1" models, signal a paradigm shift toward dynamic, personalized cancer management. Despite persistent hurdles in model generalizability, ethical equity, and regulatory alignment, AI-powered multi-omics integration promises to transform precision oncology from reactive population-based approaches to proactive, individualized care.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41266662/" target="_blank">
+<p><strong>Abstract:</strong> Precision oncology relies on predictive biomarkers for selecting targeted cancer therapies. Network-based properties of proteins, together with structural features such as intrinsic disorder, are likely to shape their potential as biomarkers. We therefore designed a hypothesis-generating framework that integrates network motifs and protein disorder to explore their contribution to predictive biomarker discovery. This encouraged us to develop MarkerPredict by using literature evidence-based positive and negative training sets of 880 target-interacting protein pairs total with Random Forest and XGBoost machine learning models on three signalling networks. MarkerPredict classified 3670 target-neighbour pairs with 32 different models achieving a 0.7-0.96 LOOCV accuracy. We defined a Biomarker Probability Score (BPS) as a normalised summative rank of the models. The scores identified 2084 potential predictive biomarkers to targeted cancer therapeutics, 426 was classified as a biomarker by all 4 calculations. We detailed the biomarker potential of LCK and ERK1. This study encourages further validation of the high-ranked predictive biomarkers. The development of the MarkerPredict tool (which is available on GitHub) for predictive biomarker identification may have a significant impact on clinical decision-making in oncology.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41271784/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -56,246 +303,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Nov 21, 2025</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">STAMPS: Signal-peptide Transformer for Augmenting Mammalian Protein Secretion</h2>
-<p class="paper-authors">Gabrielli, J., Esposito, M., +4 authors, Ceroni, F.</p>
+<h2 class="paper-title">Multi-omics strategies for biomarker discovery and application in personalized oncology.</h2>
+<p class="paper-authors">Ziming Jiang, Haoxuan Zhang, +1 author, Yingli Sun</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> While secretion plays a key role in the diverse applications of cell engineering, to date only a handful of mammalian signal peptides have been characterised in depth and systematic efforts to build novel variants remain sporadic. We present STAMPS (Signal peptide Transformer for Augmenting Mammalian Protein Secretion), a generative, autoregressive transformer fine-tuned on ~6,000 mammalian signal peptides to design de novo sequences that modulate and enhance secretion across proteins and hosts. We show that STAMPS can be used to identify candidate signal peptides that outperform the widely used IgG {kappa} light-chain leader (IgKL) when used to secrete EGFP in HEK293T and CHO cells, and hEPO in HEK293T cells. When incorporated in an industrial cell line development framework, STAMPS leads to the generation of signal peptides that yield ~2.3-fold gain in secretion of a VHH-Fc compared to the internal industrial benchmark in CHO G22 cells, with the same candidates ranking highly in both CHO and HEK293T hosts. Sequence-to-function analysis highlights a longer, strongly hydrophobic core and a tightly positioned cleavage site as drivers of this strong performance. Together, these results establish data-driven, generative design of mammalian signal peptides as a practical route to tune and improve secretion for bioproduction and cell engineering applications.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689577v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Inferring and Evaluating Network Medicine-Based Disease Modules with Nextflow</h2>
-<p class="paper-authors">Kersting, J., Spindler, L. M., +12 authors, List, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Most human diseases result from complex molecular interactions of genes and proteins. Various network-based computational methods characterize these mechanisms by expanding seed genes into disease-associated subnetworks, or disease modules. Evaluating these diverse methods is tedious due to unique installation and data preparation requirements. Moreover, the underlying algorithmic strategies differ, making it difficult to determine which of the created modules are most useful or biologically plausible. To address this challenge, we developed an all-in-one Nextflow pipeline that enables automated and reproducible analyses. It handles installation, input preparation, execution, and systematic evaluation of six widely used module detection tools, considering module topology, functional coherence, robustness, and the capacity to recover seeds. In addition, it annotates the resulting disease modules with biological context information, prioritizes potential drug candidates, and generates visualizations and a comprehensive summary report. To showcase the value of our pipeline and offer guidance to potential users, we performed a comprehensive evaluation across 50 different disease-network combinations, revealing substantial variability among the derived disease modules. We show that this variability is driven by differences in modeling approach, input network, and seed composition. While most methods are robust to minor perturbations, they struggle to recover omitted seeds, and none consistently outperforms others, underscoring the need for careful method selection. Our work enables the research community to systematically compare approaches for disease module discovery, promoting reproducible network medicine research. Integrated into the nf-core project (https://nf-co.re/diseasemodulediscovery), it is intended as an extendable, long-term resource for tracking progress in the field.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.687681v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Analyzing the Performance of Deep Learning Splice Prediction Algorithms</h2>
-<p class="paper-authors">Fortier, N., Rudy, G., Scherer, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> SpliceAI has become the leading computational tool for predicting splice-altering variants, but restrictive licensing has limited its adoption by commercial clinical laboratories. While open-source reimplementations have emerged with author-reported comparisons, independent benchmarking across diverse datasets is needed to establish their practical equivalence. We compared the original SpliceAI algorithm against two open-source alternatives (OpenSpliceAI and CI-SpliceAI) across three independent benchmarks: a curated dataset of 1,316 functionally validated variants, 213 variants with experimental splice assay data, and 58,064 clinically classified variants from ClinVar. All deep-learning methods were also compared with a legacy ensemble of four traditional splice prediction algorithms (MaxEntScan, NNSplice, GeneSplicer, and PWM), enabling direct comparison between modern and conventional approaches. Across all benchmarks, the deep-learning models consistently outperformed the ensemble of traditional algorithms. We evaluated sensitivity, specificity, and balanced accuracy for each algorithm, and performed statistical testing to assess significance of performance differences. Additionally, we conducted a correlation analysis on 100,000 variants to quantify the concordance of splice-scores and the agreement on splice site positions between implementations. All three deep learning algorithms demonstrated comparable performance on the literature-curated benchmark (balanced accuracies: 89.5-90.7%) and the ClinVar dataset (88.9-89.5%). While both open-source solutions achieved a statistically significantly higher accuracy than SpliceAI on the ClinVar dataset, the magnitude of this improvement was small and unlikely to be of practical significance. On the functional splice assay dataset, the original SpliceAI achieved the highest accuracy (83.6%), while OpenSpliceAI showed significantly lower performance (74.6%, p = 0.019). Correlation analysis revealed that CI-SpliceAI maintained balanced concordance across splice event types ({rho} = 0.786-0.883), whereas OpenSpliceAI exhibited asymmetric performance with stronger correlation for loss events ({rho} = 0.924-0.940) than gain events ({rho} = 0.668-0.677). Both implementations demonstrated high spatial agreement with SpliceAI, with exact splice site position match rates exceeding 90% for all event types. Together, these results demonstrate that both open-source reimplementations of SpliceAI successfully reproduce the predictive behavior of the original algorithm across multiple evaluation contexts, while consistently outperforming traditional splice prediction methods.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689501v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A frameshift mutation in the methyltransferase rlmN is associated with increased linezolid resistance in Mycobacterium tuberculosis</h2>
-<p class="paper-authors">Reimer, B. M., Green, A. G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Linezolid is a key component of treatment regimens for multidrug-resistant and extensively drug-resistant tuberculosis, which is caused by the pathogen Mycobacterium tuberculosis (MTB). Resistance to linezolid in MTB has traditionally been attributed to mutations in the 23S rRNA (rrl) and ribosomal protein L3 (rplC), but only a fraction of clinically observed linezolid resistance is explained by mutations in these two genes. We report that an analysis of strains with paired whole-genome sequencing and linezolid minimum inhibitory concentration (MIC) phenotyping from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC) reveals that a relatively common frameshift mutation in MTB methyltransferase rlmN (5.3% of assessed isolates) is significantly associated with increased linezolid MIC. In additional to statistical associations, we provide evolutionary evidence of homology to an established linezolid resistance mechanism in Staphylococcus aureus, and structural evidence that the frameshift mutation likely ablates rlmN methyltransferase functionality.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689544v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">CAcnesDB: A database of Cutibacterium acnes with Integrated Functional Insights derived from Multi-modal Genome Annotation</h2>
-<p class="paper-authors">Pandia, B., Regati, D., +3 authors, Chandra, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cutibacterium acnes is a predominant member of the human skin microbiome, generally as a beneficial or a benign inhabitant, which under specific conditions transforms into a pathogen, causing acne and associated inflammatory responses. While there is a wealth of data on the microbiology and genomics of the microbe, there is a lack of comprehensive annotation of the proteins coded by the genome, slowing progress in understanding its unique metabolic versatility and survival in host hypoxic sebaceous niches. We configured an integrated pipeline for functional annotation of the C. acnes genome, combining gene calling, domain and ontology mapping, KEGG pathways assignment, proteome-scale structural modeling, predicting Pockets and associating the small-molecule metabolites based on binding site similarity to facilitate structure-to-function annotation. Structural predictions using ColabFold covered nearly the full proteome, with 67.4% of models showing high confidence. To infer protein function, ligand-binding sites in the C. acnes modeled proteome were predicted using a consensus of three independent algorithms, PocketDepth, SiteHound, and FPocket. The resulting pockets were matched with known small-molecule binding sites in PDB to map potential ligands, resulting in the C. acnes predicted metabolome (CApM) comprising 1,954 ligands across 1,865 proteins. CAcnesDB is a comprehensive up-to-date database of the C. acnes genome, hosting functional annotation from multiple levels of input and analyses, covering 2297 protein-coding genes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689451v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Generating Hybrid Proteins with the MSA-Transformer</h2>
-<p class="paper-authors">Tule, S., Davis, S., +2 authors, Boden, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein superfamilies display extensive sequence and functional divergence, providing a rich landscape for engineering hybrid or functionally enhanced proteins.ergence, providing a rich landscape for engineering hybrid or functionally enhanced proteins. We present a stochastic, iterative framework that leverages the MSA-Transformer to generate intermediate sequences that define a pathway between a user-defined homologous 'source' and 'target' protein in sequence space. Targeted site selection for masking is guided either by embedding-based dissimilarity or by row-attention information, while beam search concurrently explores multiple mutational pathways. Pretrained sparse autoencoders combined with sequence and structural analyses are used to trace the inheritance and exchange of features across the mutational pathways, revealing hybrid sequences that integrate properties of both source and target proteins. Applied across diverse protein families, the framework produces sequences that occupy biologically meaningful regions of sequence space and achieve higher consistency and plausibility scores than random baselines according to in-silico metrics. In the B1/B2 metallo-beta-lactamase family, the generated hybrids largely retain their core fold recombining structural and active-site motifs from both subclasses, demonstrating the model's capacity to preserve catalytic features while exploring novel structural permutations. Code availability: The implementation is available via GitHub at https://github.com/santule/protmixy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689447v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A Global Discovery of Antimicrobial Peptides in Deep-Sea Microbiomes Driven by an ESM-2 and Transformer-based Dual-Engine Framework</h2>
-<p class="paper-authors">Chen, B., Mou, X., +3 authors, Li, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The escalating global threat of multidrug-resistant pathogens underscores the urgent demand for innovative strategies in antimicrobial peptide (AMP) discovery. Notably, deep-sea-related data resources remain underexplored, despite their potential as valuable sources of novel AMPs. Current AMP prediction methods, however, are limited by dataset biases such as sequence length imbalance between AMPs and non-AMPs, N-terminal methionine artifacts in non-AMPs, and microbial origin specificity. To overcome these constraints, we developed a dual-engine predictor named XAMP, which integrates two complementary architectures: XAMP-E, built on ESM-2 for high-accuracy feature representation, and XAMP-T, built on one-layer Transformer for accelerating large-scale screening. This dual-engine design ensures both robust feature learning and enhanced generalization capability. By constructing length-balanced datasets, removing N-terminal methionine from non-AMPs, and training microbial-specific variants, XAMP achieved a median area under the receiver-operating characteristic curve (AUC) of 0.972, representing an approximately 10% improvement over state-of-the-art predictors. Using an integrated AMP mining pipeline incorporating these models, we screened large-scale deep-sea metagenomic data and identified 2,355 promising AMP candidates. This study establishes a robust deep-learning framework that facilitates targeted discovery of bioactive peptides from extremophile microbiomes through systematic multi-omics validation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689422v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">IRCAS: a novel end-to-end approach to identify, rectify and classify comprehensive alternative splicing events in a transcriptome without genome reference</h2>
-<p class="paper-authors">Shen, C., Zhang, Q., +4 authors, Zhang, R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Alternative splicing (AS) is a fundamental post-transcriptional mechanism that amplifies proteomic diversity and enables adaptive responses across eukaryotes. Current AS detection methods rely heavily on reference genomes, limiting their applicability to non-model organisms. Existing reference-free approaches suffer from inaccurate splice site prediction and treat detection and classification as separate processes, resulting in cascading errors. We present IRCAS, an integrated end-to-end framework for reference-free AS analysis, comprising three modules: identification, rectification, and classification. IRCAS employs colored de Bruijn graphs for AS detection, an attention-based CNN for splice site rectification, and a hybrid Graph Neural Network combining GAT and Transformer layers for classification. Evaluation across four species demonstrates substantial improvements: splice site accuracy increased to 92-96% versus 50-55% for existing methods, and end-to-end accuracy reached 83.4% compared to 41.2% for the previous best method. IRCAS establishes a new benchmark for reference-free AS detection in non-model organisms.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689457v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">ybyra: Y-chromosome haplogroup calling using a tree-based scoring method</h2>
-<p class="paper-authors">Pinotti, T., McColl, H., +1 author, Czech, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> We present ybyra, a Snakemake workflow for automated Y-chromosome haplogroup assignment using a tree-based scoring method with robust and transparent heuristics. The pipeline supports both human reference genome builds 37 and 38, makes use of three diGerent well-curated Y-SNP tree topologies and features an optional ancient DNA damage filter to accommodate low-coverage degraded samples. ybyra produces reproducible, scalable haplogroup calls with detailed scoring outputs to facilitate quality assessment and reporting. We further showcase its versatility by applying it to horse Y-chromosome data, highlighting its applicability beyond humans.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689455v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Zygosity-Aware DNA Language Modeling Improves Ancestry and Gene Expression Prediction</h2>
-<p class="paper-authors">El Rashidy, H., Varnosfaderanii, A. S., Fellay, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> DNA language models (DNA-LMs) are transforming how genomic sequence information is represented and interpreted. Yet most current approaches treat DNA as a single sequence, overlooking the diploid structure and zygosity information that distinguish the two parental copies of the genome. Here, we systematically evaluate explicit diploid, zygosity-aware representations in DNA-LMs for two downstream tasks: ancestry classification and gene expression prediction. For ancestry, we use HyenaDNA embeddings of the extended MHC region and show that concatenating maternal and paternal haplotype embeddings consistently improves predictive performance across five superpopulations compared to single-haplotype inputs. For gene expression, we compare convolutional neural networks (CNNs) trained from scratch with Nucleotide Transformer models using reference-only, single-copy, and two-copy (zygosity-aware) sequence encodings. CNNs showed increased performance by incorporating genetic variation and zygosity via simple additive genotype encoding, whereas naively injecting variation into pretrained Nucleotide Transformer models yields mixed effects, highlighting a mismatch between current pretraining objectives and variation-sensitive prediction. Together, our results demonstrate that zygosity-aware representations can capture biologically meaningful information beyond reference-only views and underscore the need for diploid- and population-aware pretraining strategies in future DNA-LMs for variant interpretation and precision medicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.19.689326v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Hidden-driver inference reveals synergistic brain-penetrant therapies for medulloblastoma</h2>
-<p class="paper-authors">Liu, J., Yang, X., +16 authors, Yu, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Effective therapies for high-risk medulloblastoma (MB), particularly MYC-driven Group 3 (G3) MB, remain elusive due to limited druggable mutations, poor blood brain barrier (BBB) penetration, and rapid resistance. We developed SINBA (Synergy Inference by Data-driven Network-Based Bayesian Analysis), a systems biology framework that predicts synergistic, BBB-permeable drug combinations by identifying hidden drivers that sustain oncogenic programs without detectable genetic or transcriptional alterations. Integrating MB specific gene networks, transcriptomic data, and drug gene interactions, SINBA prioritized 32 candidate combinations, of which 19 were experimentally validated as synergistic. The MEK inhibitor mirdametinib and p38 inhibitor regorafenib emerged as the top brain-penetrant pair, suppressing G3 MB progression and extending survival in human xenograft and immunocompetent mouse models, with efficacy enhanced by low-dose radiation. Single cell analysis revealed selective targeting of the developmental origins of G3 MB, accompanied by immune microenvironment reprogramming. These findings establish hidden-driver inference as a generalizable framework for rational drug combination discovery.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689490v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">E3 ubiquitin-ligase Hakai induces LRP4 degradation and regulates Wnt/beta-catenin signalling in colorectal cancer cells</h2>
-<p class="paper-authors">Rodriguez-Alonso, A., Jove, L., +4 authors, Figueroa, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The epithelial-mesenchymal transition (EMT) is closely linked to the acquisition of cancer stem cell (CSC) properties, which contribute to treatment resistance and metastasis. This study investigates the role of the E3 ubiquitin-ligase Hakai, the first identified post-translational regulator of E-cadherin stability, in promoting CSC traits in colorectal cancer (CRC). To examine Hakai's involvement in CSC regulation, we used an inducible shRNA in a HT29 cells. Under conditions that promote CSC characteristics, we silenced Hakai and evaluated tumoursphere formation and CSC marker expression. Proteomic and bioinformatic analyses were performed to identify Hakai-regulated proteins in tumoursphere cultures. Additionally, Western blot, RT-qPCR, co-immunoprecipitation, immunofluorescence and TOPFlash assays were employed to study CSC-related protein regulation in response to Hakai expression. Furthermore, we assessed the impact of Hakin-1, the pharmacological inhibitor specifically targeting Hakai's HYB domain responsible for its E3 ubiquitin-ligase activity, on tumoursphere properties. Hakai silencing significantly reduced tumoursphere size and number accompanied by decreased expression of CSC markers and Wnt target genes. CSC-related proteins regulated by Hakai were identified, including LRP4, a negative regulator of Wnt/{beta}-catenin pathway. Hakai interacts with LRP4, promoting its ubiquitination and degradation. Moreover, Hakai overexpression induces hyperactivation of Wnt/{beta}-catenin sand disrupts LRP4's inhibitory effect. Treatment with Hakin-1 effectively inhibited self-renewal and promoted differentiation within tumourspheres. These findings suggest that Hakai promotes CSCs properties by hyperactivation of the Wnt/{beta}-catenin pathway via LRP4-mediated modulation. Additionally, Hakin-1 emerges as a promising therapeutic agent targeting CSCs by enhancing differentiation and attenuating Wnt/{beta}-catenin activity, highlighting Hakai as a potential target for improving CSC treatment.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689197v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 20, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Mevalonate pathway activation in Ewing sarcoma reveals a 3D-specific synergy between statins and BCL-xL inhibition</h2>
-<p class="paper-authors">Radic-Sarikas, B., Markovic, M., +8 authors, Kovar, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Bone sarcomas are rare and aggressive pediatric cancers with limited progress in targeted therapy development, in part due to the poor physiological relevance of conventional two-dimensional (2D) culture systems used for preclinical testing. To address this gap, we developed a standardized three-dimensional (3D) culture and drug-testing platform for Ewing sarcoma (ES) and osteosarcoma (OS) that more accurately recapitulates in vivo tumor biology. Across 3D spheroids, bioprinted constructs, and patient-derived xenograft (PDX) cultures, we observed a consistent activation and dependency on the mevalonate pathway in ES. Leveraging this platform, we identified a selective therapeutic synergy between statins, which inhibit mevalonate pathway flux, and BCL-xL inhibitors, a vulnerability that was not detectable in 2D cultures. These findings highlight the mevalonate pathway as a targetable metabolic dependency in ES and demonstrate how physiologically grounded 3D models can uncover clinically actionable treatment strategies that remain hidden in traditional 2D systems. Our findings show that 3D tumor models can expose actionable metabolic vulnerabilities obscured by traditional approaches, supporting their use in rational combination therapy discovery for aggressive pediatric sarcomas.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689456v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Multi-omics strategies, integrating genomics, transcriptomics, proteomics, and metabolomics, have revolutionized biomarker discovery and enabled novel applications in personalized oncology. Despite rapid technological developments, a comprehensive synthesis addressing integration strategies, analytical workflows, and translational applications has been lacking. This review presents a comprehensive framework of multi-omics integration, encompassing workflows, analytical techniques, and computational tools for both horizontal and vertical integration strategies, with particular emphasis on machine learning and deep learning approaches for data interpretation. Recent applications of multi-omics have yielded promising biomarker panels at the single-molecule, multi-molecule, and cross-omics levels, supporting cancer diagnosis, prognosis, and therapeutic decision-making. However, major challenges persist, particularly in data heterogeneity, reproducibility, and the clinical validation of biomarkers across diverse patient populations. This review also highlights cutting-edge advances in single-cell multi-omics and spatial multi-omics technologies, which are expanding the scope of biomarker discovery and deepening our understanding of tumor heterogeneity. Finally, we discuss the integral role of multi-omics in personalized oncology, with a particular focus on predicting drug responses and optimizing individualized treatment strategies, supported by real-world clinical practice cases. By bridging technological innovations with translational applications, this review aims to provide a valuable resource for researchers and clinicians, offering insights into both current methodologies and future directions for implementing multi-omics data in biomarker discovery and personalized cancer care.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41269529/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
