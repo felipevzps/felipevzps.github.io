@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Minimizer Density revisited: Models and Multiminimizers</h2>
-<p class="paper-authors">Ingels, F., Robidou, L., +2 authors, Limasset, A.</p>
+<h2 class="paper-title">Selector: A General Python Library for Diverse Subset Selection</h2>
+<p class="paper-authors">Meng, F., Martinez Gonzalez, M., +8 authors, Heidar-Zadeh, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High-throughput sequence analysis commonly relies on k-mers (words of fixed length k) to remain tractable at modern scales. These k-mer-based pipelines can employ a sampling step, which in turn allows grouping consecutive k-mers into larger strings to improve data locality. Although other sampling strategies exist, local schemes have become standard: such schemes map each k-mer to the position of one of its characters. A key performance measure of these schemes is their density, defined as the expected fraction of selected positions. The most widely used local scheme is the minimizer scheme: given an integer m [≤] k, a minimizer scheme associates each k-mer to the starting position of one of its m-mers, called its minimizer. Being a local scheme, the minimizer scheme guarantees covering all k-mers of a sequence, with a maximal gap between selected positions of w = k - m + 1. Recent works have established near-tight lower bounds on achievable density under standard assumptions for local schemes, and state-of-the-art schemes now operate close to these limits, suggesting that further improvements under the classical notion of density will face diminishing returns. Hence, in this work, we aim to revisit the notion of density and broaden its scope. As a first contribution, we draw a link between density and the gap between consecutive selected positions. We propose a probabilistic model allowing us to establish that the density of a local scheme is exactly the inverse of the expected gap between the positions it selects, under the minimal and only assumption that said gaps are somehow equally distributed. We emphasize here that our model makes no assumptions about how positions are selected, unlike the classical models in the literature. Our result introduces a novel method for computing the density of a local scheme, extending beyond classical settings. Based on this analysis, we introduce a novel technique, named multiminizers, by associating each k-mer with a bounded set of candidate minimizers rather than a single one. The candidate furthest away (in a precise sense defined in the article) is selected. Since the decision is made by taking advantage of a context beyond a single k-mer, this technique is not a local scheme - as a result, we propose the concept of semi-local schemes, which provide a broader framework within which our method fits. Using the multiminimizer trick on a local scheme reduces its density at the expense of a controlled increase in computation time. We show that this method, when applied to random (hash-based) minimizers and to open-closed mod-minimizers, achieves asymptotically optimal density representing, to our knowledge, the first construction converging to this limit. Our third contribution is the introduction of the deduplicated density, which measures the fraction of distinct minimizers used to cover all k-mers of a set of sequences. While this problem has gained traction in applications such as assembly, filtering, and pattern matching, standard minimizer schemes are often used as a proxy, blurring the distinction between the two objectives (minimizing the number of selected positions or the number of selected minimizers). Although related to the classical notion of density, deduplicated density differs in both definition and suitable constructions, and must be analyzed in its own right, together with its precise connections to standard density. We show that multiminimizers can also improve this metric, but that globally minimizing deduplicated density in this setting is NP-complete, and we instead propose a local heuristic with strong empirical behavior. Finally, we show that multiminimizers can be computed efficiently, and provide a SIMD-accelerated Rust implementation together with proofs of concept demonstrating reduced memory footprints on core sequence-analysis tasks. We conclude with open theoretical and practical questions that remain to be addressed in the area of density.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689688v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Selector is a free, open-source Python library for selecting diverse subsets from any dataset, making it a versatile tool across a wide range of application domains. Selector implements different subset sampling algorithms based on sample distance, similarity, and spatial partitioning, along with metrics to quantify subset diversity. It is flexible and integrates seamlessly with popular Python libraries like Scikit-Learn, demonstrating the interoperability of the implemented algorithms with data analysis workflows. Selector is an operating-system agnostic, accessible, and easily extensible package designed with modern software development practices, including version control, unit testing, and continuous integration. Interactive quick-start notebooks, which are also web-accessible, provide user-friendly tutorials for all skill levels, showcasing applications in computational chemistry, drug discovery, and chemical library design. Additionally, a web interface has been developed that allows users to easily upload datasets, configure sampling settings, and run subset selection algorithms, with no programming required. This paper serves as the official release note for the Selector package, offering a technical overview of its features, use cases, and development practices that ensure its quality and maintainability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689756v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Compressed inverted indexes for scalable sequence similarity</h2>
-<p class="paper-authors">Ingels, F., Vandamme, L., +3 authors, Limasset, A.</p>
+<h2 class="paper-title">AlterNet: Alternative splicing-aware gene regulatory networkinference</h2>
+<p class="paper-authors">Hoffmann, J., Wallnig, J., +3 authors, Hartebrodt, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Modern sequencing continues to drive explosive growth of nucleotide sequence archives, pushing MinHash-derived sketching methods to their practical scalability limits. State-of-the-art tools such as Mash, Dashing2, and Bindash2 provide compact sketches and accurate similarity estimates for large collections, yet ultimately rely on forward indexes that materialize sketches as explicit fingerprint vectors. As a result, large-scale similarity search and exhaustive collection-versus-collection comparison still incur quadratic resource usage. In this work, we revisit the architecture of sketch-based indexes and provide a novel framework for scalable similarity search over massive sketch collections. Our first contribution is a formal cost model for sketch comparison, within which we prove that inverted indexes on sketch fingerprints, equipped with suitably compressed posting lists, achieve the same asymptotic space complexity as standard forward indexes, thereby eliminating the perceived memory penalty traditionally associated with inverted indexes. Building on this model, we design algorithms for all-vs-all comparison between two inverted indexes whose running times are proportional to the total number of matching sketch positions, leading to output-sensitive optimality and enabling efficient large-scale similarity comparisons. Our second contribution leverages the prevalence of similarity thresholds in downstream applications such as clustering, redundancy filtering, and database search. We introduce two early-pruning schemes: an exact criterion that safely eliminates pairs guaranteed not to reach a target Jaccard similarity, and a probabilistic strategy that exploits partial match statistics to discard pairs unlikely to exceed this threshold. Together, these schemes address both time and memory bottlenecks while maintaining rigorous guarantees on retained high-similarity pairs and providing explicit control of the false-rejection probability for the probabilistic variant. Finally, we instantiate these ideas in Onika, an open-source Rust implementation based on compressed inverted posting lists available at github.com/Malfoy/Onika. Onika incorporates a similarity-aware document reordering strategy that restructures sketch identifiers to further shrink index size and improve locality, particularly for redundant collections. Experiments on large bacterial genome repositories, synthetic low-redundancy benchmarks, and long-read HiFi sequencing datasets demonstrate that Onika matches or improves upon the sketch sizes of leading tools while accelerating large-scale search and collection-versus-collection comparisons by up to several orders of magnitude in low-redundancy regimes, without compromising sensitivity at practically relevant similarity thresholds.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689685v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Abstract. Gene regulatory networks (GRNs) help decode biological systems by identifying how genes interact and regulate cellular processes. However, conventional GRN inference methods operate at the gene-level, overlooking transcript-level variability introduced by alternative splicing (AS). In this work, we present AlterNet, the first GRN inference and annotation pipeline which produces transcript-resolved and AS-aware GRNs. AlterNet builds on the GRNBoost2 inference algorithm, and includes a transcript plausibility and annotation workflow. We applied AlterNet to expression data from heart tissue, including samples from donors with normal heart function and from patients with different types of cardiomyopathy. The resulting isoform-level GRNs uncovered highly relevant regulatory interactions not detectable at the gene-level. Overall, AlterNet infers transcript-level regulatory network which enable the discovery of novel, biologically relevant regulatory interactions that remain hidden in gene-level GRNs. The source code of AlterNet is available on GitHub https://github.com/bionetslab/AlterNet, and can be installed as a Python package.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689745v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ASVNet: Inferring microbes from 16S rRNA amplicon sequencing data</h2>
-<p class="paper-authors">Sanchez-Gil, J. J., de Jonge, R.</p>
+<h2 class="paper-title">Billi: Provably Accurate and Scalable Bubble Detection in Pangenome Graphs</h2>
+<p class="paper-authors">Bhat, S. G., Mahajan, D., Jain, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Amplicon sequencing of the variable regions of the 16S rRNA gene is one of the most common techniques in microbiome research. A crucial step in analysing this data is to cluster raw sequences into biologically interpretable groups that approximate the actual organisms in a community, which reduces data complexity, facilitates diversity analyses, and enables clearer ecological and functional interpretations. Most approaches rely on fixed sequence similarity thresholds, typically operational taxonomic units (OTUs) at 97% or amplicon sequence variants (ASVs) at 99-100%. However, finding the correct correspondence between amplicons and the original organisms in a complex community remains challenging, primarily due to the presence of varying copy numbers within genomes and the high similarity of amplicon sequences among species. While the stringent threshold in ASVs prevents merging sequences from different species, it often splits sequences from the same genome into multiple ASVs, inflating species counts. Conversely, the 97% similarity threshold in OTUs tends to frequently collapse multiple distinct organisms into a single unit regardless of their functional or ecological (dis)similarity, and thereby underestimating true diversity. To address these limitations, we introduce ASVNet, an algorithmic framework that leverages amplicon sequence similarity and co-abundance networks to better reflect the underlying organisms in a community. ASVNet builds on the principle that amplicon counts from the same organism co-vary across samples and it thus attempts to cluster these co-occurring, similar sequences as empirical OTUs (eOTUs). Comparative analyses in synthetic and natural root-associated microbial communities with genome-sequenced isolates show that ASVNet-derived eOTUs more accurately represent the original microbes and possess greater biological relevance than OTUs defined at any fixed threshold. By providing a biologically grounded framework to amplicon sequence data interpretation, ASVNet extends our ability to extract meaningful insights from complex microbiome datasets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689717v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> A key application of pangenome graphs is the characterization of small and large genomic variants represented as bubbles within the graph. Although bubbles have been extensively studied in directed graphs in the context of genome assembly, there remains a need for a rigorous definition and systematic analysis of bubbles in bidirected graphs, which is the predominant data structure used to represent pangenomes. We show that existing bubble definitions for bidirected graphs do not fully meet the requirements for representing genetic sites and alleles; in particular, overlapping bubbles may not exhibit strict nesting. To address this, we introduce a new subgraph abstraction called panbubble and prove that it satisfies the desired structural properties for variant characterization. We then present an exact algorithm with runtime O(V^2(V + E)) for detecting all panbubbles in a bidirected graph G = (V, E). In addition, we propose a heuristic algorithm that produces identical output as the exact algorithm in practice and scales to large graphs, including both the first and second releases of the Human Pangenome Reference Consortium (HPRC). We implemented our algorithms in the tool Billi (github.com/at-cg/billi). On our largest dataset, Billi is more than 15x faster and uses over 5x less memory than VG.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689636v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">The Human-In-the-Loop Drug Design Framework with Equivariant Rectified Flow</h2>
-<p class="paper-authors">Zhao, Y., Huang, Y., +8 authors, Ma, J.</p>
+<h2 class="paper-title">CCK* (Convex Closure K*): A Suite of Algorithms for the De Novo Design of L- and D-peptide Binders</h2>
+<p class="paper-authors">Childs, H., McBride, A. C., Donald, B. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Advancements in AI-based drug design often face obstacles due to incomplete datasets, hindering progress to clinical trials. Human experts bring invaluable expertise and nuanced contextual understanding to drug design. There are two main difficulties in integrating human knowledge into the drug development process. First, human annotations are costly, and traditional machine learning algorithms require a large number of samples to be effective. Second, human experts are unable to accurately describe their expertise using natural language, nor can they precisely specify what kind of molecule is needed before seeing the generated molecules. To address these problems, we propose a new platform, called HIL-DD, for experts to infuse their experience by selecting molecules generated by AI that meet their criteria, or discarding those that do not. The core generative technology utilizes an Equivariant Rectified Flow Model (ERFM), which offers faster generation speeds than conventional diffusion models, enabling efficient human-AI collaboration. More importantly, we provide a user-friendly interface to ensure smooth and effective collaboration between human experts and AI systems. Rigorous experiments demonstrate that our system can produce 3D molecules that align with expert expectations in minimal interactive sessions. These generated molecules maintain drug-like qualities comparable to those created by current state-of-the-art models.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689585v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The computational design of L-peptides and their mirror-image counterparts, D-peptides, is a valuable area in drug design. L- and D-peptides offer exceptional structural diversity and high binding specificity, while D-peptides additionally confer critical advantages such as proteolytic resistance. Progress in de novo D-peptide design has been hindered by the absence of evolutionary context and limited structural data, both of which are essential for the deep learning methods that dominate L-peptide design. Consequently, any framework capable of designing both L- and D-peptides must not only be grounded in data-driven inference but also first-principles, physics-based modeling. Here, we introduce a unified computational framework that supports de novo design of both L- and D-peptides, thereby expanding the accessible design space across the full mirrored proteome. Convex Closure K* (CCK*) is a suite of chiral-invariant algorithms: SCOPE, MONTAGE, and ARISE. SCOPE, using geometry as a proxy for chemical energetics, computes convex hull representations of rotameric states to rapidly generate multi-sequence protein contacts maps. MONTAGE employs geometric hashing in conjunction with the K* algorithm to generate and rank backbone scaffolds by their suitability for sequence design. ARISE is a sequence design algorithm that uses an iterative residue search approach in an undirected graph to discover high-affinity peptide sequences. We apply the full CCK* suite to six de novo design tasks, benchmarking both homochiral and heterochiral binding on chirality-preserving and chirality-inverting designs.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689740v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,15 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Snail plots are badges of genome assembly quality</h2>
-<p class="paper-authors">Challis, R. J., Blaxter, M. L.</p>
+<h2 class="paper-title">Comparative genomics and interactions of vector thysanopterans and transmitted viruses</h2>
+<p class="paper-authors">Catto, M. A., Labadie, P. E., +3 authors, Srinivasan, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Assembly quality is frequently assessed using independent measures of assembly span, contiguity, sequence composition and completeness. Among contiguity metrics, contig and scaffold N50 have perhaps gained the most traction, despite well known limitations. Several authors have suggested considering the complete Nx curve rather than just the N50 value, but while using N90 values or considering the area under the Nx curve with auN statistics provide more complete measures of contiguity, they share the limitation of being unsuited to direct comparison across a range of genome sizes. We introduced snail plots to provide a genome-size independent way to summarise a range of commonly used assembly metrics. Here we demonstrate that easily-learnt visual differences between snail plots allow simultaneous consideration of metrics across several key areas of assembly quality to rapidly identify high- and low-quality assemblies. We show that prominent features in snail plots of high-quality assemblies effectively highlight N50, N90 and auN contiguity statistics, but since the presentation is scaled to the longest scaffold, plots can be compared effectively across a wide range of taxa and assembly sizes. We use the core features of a snail plot to derive a proportional measure of assembly quality based on auN, adjusted for ambiguous, N, bases and scaled to the length of the longest scaffold. We show that this snail score value corresponds closely to a qualitative assessment of overall assembly quality from visual interpretation of a snail plot.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689594v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> We analyzed the genomes of nine thysanopteran (thrips) species, with one newly generated, and examined their relationships with 23 representative orthotospoviruses from the family Tospoviridae (order Bunyavirales). Thrips can be agricultural pests, contributing to measurable yield reductions in economically valuable crops and ornamentals. Some thrips species are confirmed orthotospovirus vectors, while most of the ~7,000 identified species are unknown in their vector status. We conducted in silico protein-protein interaction predictions for several thrips proteins, including an endocuticle protein previously reported to bind to orthotospovirus glycoproteins. In most ecologically observed vector-virus pairs, the predicted protein-protein interactions were confirmed, and additional plausible vector-virus transmission interactions emerged from our analyses. These results expand our understanding of vector-virus co-evolution and highlight candidate molecular interfaces that could be targeted to disrupt virus transmission in agricultural systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689785v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -135,15 +135,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Transforming Biological Foundation Model Representations for Out-of-Distribution Data</h2>
-<p class="paper-authors">Pratapa, A., Tata, P. R., Singh, R.</p>
+<h2 class="paper-title">Bias in genome-wide association test statistics due to omitted interactions</h2>
+<p class="paper-authors">Yelmen, B., Güler, M. N., +4 authors, Jay, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Foundation models pre-trained on certain biological data modalities exhibit systematic representational biases when encountering out-of-distribution (OOD) data from new assays. The embedding drift largely arises from instrumentation and protocol-related artifacts rather than true biological variation in cell states or tissue morphology. These drifts are distinct from conventional batch effects and cannot be remedied by retraining as sample sizes are often insufficient, and modifying existing embeddings breaks downstream tools that depend on stable representations. We introduce USHER, an adaptable framework to learn simple transforms that return OOD embeddings to a foundation model's reference space. USHER enables embedding transformation via an expectation maximization-style procedure. Given a reference in-distribution sample, USHER first estimates a Fused Gromov-Wasserstein coupling that aligns unpaired OOD (source) and reference (target) embeddings by minimizing transport distance while preserving local structure. To make optimal transport couplings more useful for downstream tasks, we introduce the concept of entropic filtering to retain only high-confidence correspondences. In the second step, USHER learns a low-complexity transformation that reliably restores the model's representation space for OOD data. We demonstrate this learned transformation generalizes to other OOD data from similar experimental conditions. We applied USHER to correct platform-specific biases seen when running scGPT on Xenium transcript counts: USHER maps Xenium embeddings back to the native scRNA-seq representation space, improving cell type clustering and cross-platform integration. Histopathology foundation models trained on H&amp;E images fail on MALDI metabolite-profiled tissue images due to data-acquisition artifacts. USHER corrects these, enabling cell-type classification and protein abundance imputation. USHER offers a generalizable framework to make biological foundation models portable across a rapidly-evolving experimental landscape.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689462v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Over the past two decades, genome-wide association studies (GWAS) enabled the discovery of thousands of variants associated with many complex human traits. However, conventional GWAS are still widely performed with linear models with the assumption that the genetic effects are predominantly additive. In this work, we investigate the test statistic behavior when linear models are used to obtain significant genotype-phenotype associations without accounting for epistasis. We first algebraically derive mean and variance shift in the null statistic due to the omitted interaction term, and define the boundary between conservative (i.e., deflated statistic tail) and anti-conservative (i.e., inflated statistic tail) regimes for the common GWAS significance threshold. We then perform phenotype simulation analyses using the Estonian Biobank genotypes and validate the mathematical model. We demonstrate that the anti-conservative regime is plausible under realistic parameter settings and models omitting interaction terms can produce spurious significance. Our findings suggest caution when interpreting statistically significant signals reported in the literature based on linear models, especially for large-scale GWAS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689603v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -154,15 +154,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Continuous Motility Fingerprints from Gaussian Mixture Models Reveal Hidden Sperm Heterogeneity</h2>
-<p class="paper-authors">Lamm, J.</p>
+<h2 class="paper-title">GBoost-CTL: A novel method in multi-tissue transcriptome-wide associations studies in cross-tissue learner incorporating GWAS information</h2>
+<p class="paper-authors">Billah, M. M., Wei, H., +1 author, Zhang, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Computer-assisted sperm analysis (CASA) collapses sperm motility into coarse categorical bins, masking the heterogeneity that influences fertilization potential. Analyzing 33,500 trajectories from 340 individuals, we introduce a probabilistic fingerprinting framework that treats Gaussian mixture model (GMM) posteriors as soft supervision to construct continuous motility axes that capture forward progression, erratic movement, and uncertainty. This semi-supervised, posterior-guided approach condenses high-dimensional CASA features into interpretable, uncertainty-aware descriptors that capture both canonical and transitionary sperm behaviors. GMM consistently identified five reproducible subtypes, including an "erratic" group characterized by vigorous, asymmetric motion associated with fertilization readiness. Patient-level fingerprints revealed robust associations with semen quality markers (debris, round cells, concentration), demonstrating potential utility for fertility evaluation and clinical decision-making. Together, our results provide the first large-scale evidence that probabilistic fingerprints capture biologically meaningful and clinically anchored sperm heterogeneity, establishing a generalizable framework for outcome-linked studies in reproductive medicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689493v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Genome-wide association studies (GWAS) have uncovered numerous genetic variants linked to complex human diseases, yet linking these variants to transcripts and tissues that drive pathology remains difficult. Multi-tissue transcriptome-wide association studies (TWAS) offer a powerful bridge, but existing analytical methods have some limitations, either by discarding important signals by separately analyzing and then aggregating results across tissues, implying imputation models in individual tissues, or fusing them with weights that ignore how much GWAS signal each tissue actually carries. Therefore, most of the existing methods do not work uniformly across different GWAS cohorts. Here, we propose GBoost-CTL - a GWAS boosted cross tissue learner that can overcome those aforementioned limitations. The method starts with any collection of single-tissue learners (STLs), allowing investigators to choose the most suitable imputation engine for each tissue. It then (i) allocates weights according to each STLs out of sample predictive accuracy and (ii) refines those weights incorporating the GWAS derived information, so that informative tissues are automatically up weighted while uninformative tissues are down weighted. This dual weighting strategy lets GBoost-CTL adapt to fully shared, partially shared, or highly tissue specific regulatory architectures while preserving nominal type I error control and delivering substantially higher power than existing linear or covariance based methods. Through extensive simulation, we have found that this dual weighting strategy lets GBoost-CTL adapt to fully shared, partially shared, or highly tissue specific regulatory architectures while preserving nominal type I error control and delivering substantially higher power than existing linear or covariance based methods. When applied to real data, GBoost-CTL consistently outperformed some existing multi-tissue TWAS methods (e.g., TWAS-CTL, UTMOST and PrediXcan) by identifying a greater number of disease-associated genes with more stringent p-values. Given its modular design, computational scalability, and demonstrable gains in discovery power, we believe that GBoost-CTL offers a practical tool for the analysis of multi tissue TWAS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.22.689782v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -173,34 +173,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Development and characterisation of a promoter library for Sulfolobus acidocaldarius</h2>
-<p class="paper-authors">Peeters, A. I., Xu, Y., +4 authors, De Mey, M.</p>
+<h2 class="paper-title">Quantum and Classical Graph Convolutional Neural Networks for Protein Ligand Dissociation Constant Prediction</h2>
+<p class="paper-authors">Salamatov, A., Atluri, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The hyperthermoacidophilic archaeon Sulfolobus acidocaldarius is a promising production host for industrial biotechnology applications due to its ability to thrive in extreme conditions. However, the lack of well-characterised genetic parts and tools, particularly promoters, limits its potential for metabolic engineering. In this study, we developed the first promoter library for S. acidocaldarius by randomising specific regions of the core promoter sequence of PSaci_2137, a promoter known to function in both S. acidocaldarius and Escherichia coli . The library was initially screened in E. coli using mKate2, a red fluorescent reporter protein, and seven promoters were selected for characterisation in S. acidocaldarius using the thermostable {beta}-galactosidase reporter LacS. The resulting promoter collection exhibited a 5-fold range of expression levels in S. acidocaldarius, spanning from low to high constitutive expression when compared to S. acidocaldarius promoters Psac7d and PmalE. This study demonstrates a successful workflow for generating and characterising S. acidocaldarius promoters, providing a valuable toolkit for fine-tuning gene expression and optimising metabolic pathways in this extremophilic archaeon. The design principles established here can be extended to other archaeal systems with similar promoter architectures.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689296v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Causality-oriented regulatory inference and rational transcriptomic reprogramming design with CASCADE</h2>
-<p class="paper-authors">Cao, Z.-J., Guo, T., +5 authors, Gao, G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Systematically elucidating the causal structure of gene expression regulation is the foundation for identifying key regulators of cellular function and designing rational interventions thereof. While advances in high-content perturbation screens enables experimental probing of causal regulatory effects, the massive genomic scale, measurement noise and confounding factors pose significant challenges for existing causal discovery and inference algorithms. Here, we present CASCADE, an end-to-end framework that integrates de novo causal discovery with prior regulatory knowledge for genome-wide causal discovery and inference. In addition to its superior performance on causal regulatory structure discovery and counterfactual inference for unseen perturbation effects, CASCADE enables, for the first time, causality-oriented rational intervention design for transcriptomic programming towards various targeted cells within a unified framework.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689377v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> How long a drug stays bound to its target - the residence time - is now recognized as a stronger in vivo efficacy driver than binding affinity alone. Yet current ML models for dissociation kinetics (koff) ignore two critical sources of structure information: (1) the change in protein-ligand geometry across time, and (2) the ability to represent complex spatial interactions with fewer parameters. We extend a state-of-the-art spatial GNN for protein-ligand complexes with two innovations. First, we introduce a 2-timestep GCN+GRU model that learns structure changes before and after short MD simulations. Second, we compress the model head using variational quantum circuits, preserving expressivity while removing ~66% of parameters. On the full PDBbind-koff-2020 benchmark, temporal integration improves predictive accuracy, and quantum compression matches the full classical model's accuracy at a fraction of its size. Our results show that time and quantum structure are underexplored, high-leverage axes for advancing kinetic ML models used in drug design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689635v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -211,15 +192,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Theoretical estimates on the expected number of mutations for reconstructing clonal lineage trees</h2>
-<p class="paper-authors">Bristy, N. A., Schwartz, R.</p>
+<h2 class="paper-title">MIR17HG Expression Is Transcriptionally Regulated by PAX3::FOXO1 and MYCN 1 and is Necessary for Oncogenic Activity in Fusion-Positive Rhabdomyosarcoma</h2>
+<p class="paper-authors">Zargar, S. A., Raut, P. K., +3 authors, Barr, F. G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Phylogenetics, like many subdisciplines of computational biology, faces a growing challenge of dealing with increasingly large and complicated data sets that have been enabled by ever-improving technologies for sequencing. The issue is particularly acute for studies of somatic evolution, such as of single-cell populations in cancers, where vast single-cell data sets may now identify hundreds of thousands of genetically distinct cells with similar scales of mutations distinguishing them. At the same time, the complexity of the biology of somatic evolution has led to complex phylogeny methods that struggle to scale to even modest data sizes. In this paper, we explore the theoretical and empirical basis for one strategy for managing these large data sets: subsampling mutations to solve the computationally challenging phylogeny problem followed by faster solutions for placement of mutations on a putatively known guide tree. We specifically focus on the fundamental question of determining the number of mutations sufficient to recover the true phylogenetic tree at some level of resolution with high probability. We theoretically analyze variants of several common models that underlie popular tools for building clonal lineage trees. We further evaluate the robustness of these theoretical bounds through simulations of these models, extensions of them, and real biological datasets. The results suggest that modest numbers of mutations suffice to reconstruct clonal trees for typical numbers of clones, supporting the subsampling approach as a general strategy for managing the challenges of ever-growing data sets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689642v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Alveolar rhabdomyosarcoma (RMS), an aggressive pediatric soft tissue cancer, is driven by the oncogenic fusion transcription factor PAX3::FOXO1 (P3F) or PAX7::FOXO1. In a subset of fusion-positive (FP)-RMS cases, amplification of the MIR17HG locus leads to overexpression of the miR-17-92 cluster of microRNAs (miRNAs). However, miR-17-92 is also highly expressed in FP-RMS tumors lacking this amplification, suggesting alternative regulatory mechanisms. Here, we show that P3F and MYCN cooperatively drive miR-17-92 expression in FP-RMS. CRISPR/Cas9-mediated knockout of P3F or MYCN in FP-RMS cell lines substantially reduced miR-17-92 expression. Using a human myoblast line or low P3F FP-RMS variant with inducible P3F or MYCN expression, P3F or MYCN alone induces minimal to low miR-17-92 expression whereas introduction of both MYCN and P3F leads to robust activation of the miR-17-92 cluster and acquisition of oncogenic phenotypes. Chromatin immunoprecipitation sequencing (ChIP-seq) revealed a P3F binding motif located 1.84 Mb upstream of the MIR17HG promoter. CRISPR-mediated deletion of this region in the myoblast system resulted in marked reduction of miR-17-92 expression and impaired oncogenic transformation. Functional inhibition of mature miRNAs of this cluster in FP-RMS cells using miRNA-sponge constructs suppressed proliferation and transformation. In the myoblast model system, transduction studies with exogenous miR-17-92 or miRNA-sponge expression constructs indicated that miR-17-92 is necessary but not sufficient for oncogenic transformation. Together, these findings establish a cooperative transcriptional axis in FP-RMS involving P3F and MYCN that activates MIR17HG through a distal regulatory element, thereby contributing to oncogenic behavior and uncovering a novel mechanistic vulnerability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689335v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -230,91 +211,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 21, 2025</span>
+<span class="date">Nov 22, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">TP53 and RB1 are predictive genetic biomarkers for sensitivity to cytarabine in gliomas</h2>
-<p class="paper-authors">Laaniste, L., Luginbuehl, J., +13 authors, Muhammed, L.</p>
+<h2 class="paper-title">A neoantigen-microbead platform for personalized T cell cancer vaccination</h2>
+<p class="paper-authors">Jiang, L., Akpinar, B., +15 authors, Gronlund, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Therapeutic progress in glioma, one of the most lethal human cancers, has been limited by molecular heterogeneity and lack of biomarker-driven drug deployment. Here we used a proprietary large-scale CRISPRi screening in primary patient-derived glioma tumorspheres to identify genetic vulnerabilities and nominate pharmacologically tractable targets. DNA polymerase-linked dependencies emerged as top-ranked hits, which we validated through orthogonal viability assays. Network-based integration of dependency data with drug-target relationships nominated cytarabine, a nucleoside analogue already approved for intrathecal use, as a candidate agent targeting this axis. Dose-response profiling across molecularly diverse glioma models revealed substantial heterogeneity in cytarabine sensitivity (IC range: 0.04-9.8 uM). Machine learning analysis of whole-genome sequencing data identified TP53 wild-type and RB1-wild-type status as dominant predictors of response, with double wild-type lines showing three standard deviations (3 s.d.) increased sensitivity compared to altered models. Prospective validation in an independent cohort confirmed that TP53/RB1 genotype stratifies cytarabine activity. These findings establish a mechanistically anchored, biomarker-restricted repurposing opportunity for cytarabine in leptomeningeal glioma, enabling rational prioritisation of an accessible therapy in a molecularly defined patient subset.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.688938v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Identification of sialic acid linkage profiles in primary liver cancers</h2>
-<p class="paper-authors">Ochoa-Rios, S., Dressman, J. W., +2 authors, Mehta, A. S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cholangiocarcinoma (CCA), also known as bile duct cancer, is the second most common form of primary liver cancer after hepatocellular carcinoma (HCC). Subtypes of CCA are diagnosed according to the anatomic location within the biliary tree, such as intrahepatic (iCCA) or extrahepatic (eCCA). Early diagnosis remains difficult due to the low sensitivity and specificity of current biomarkers. There has been significant interest in finding new biomarkers of CCA and much work has been performed to both discover and validate these new markers. In our previous work, we identified specific alterations in N-linked glycosylation that were associated with iCCA, which differed from non-malignant cholestasis disease and HCC. However, that analysis focused only on N-glycan structures devoid of sialic acid, as these N-glycan residues are not stable and were intentionally removed to minimize variability. Here, we explore the specificity of sialic acid residues in liver cancers, since sialic acid residues have been heavily linked to roles in tumor progression and metastasis by helping evade immunological surveillance. To circumvent the instability of sialic acid, we utilize a novel sialic acid stabilization method coupled with Matrix-Assisted Laser Desorption Ionization (MALDI) Imaging Mass Spectrometry (IMS) for detailed analysis of sialic acid linkages in iCCA tissue. We report a clear association between the linkages type of sialic acid residues with a HCC or CCA, including differentiation between CCA subtypes. Overall, we stabilize N-glycans with sialic acid residues to determine their linkages and elucidate their importance in different types of primary liver cancers and their subtypes by MALDI-IMS.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689542v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 21, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Progesterone receptors drive advanced breast cancer phenotypes including circulating tumor- and stem-like cell expansion in the context of ESR1 mutation</h2>
-<p class="paper-authors">Truong, T., Gillis, N. E., +9 authors, Lange, C. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Endocrine therapy resistance remains a major challenge in the treatment of advanced estrogen receptor positive (ER+) breast cancer. This can be driven by acquired mutations in the estrogen receptor gene (ESR1), such as Y537S or D538G, that primarily emerge in patients with prior aromatase inhibitor therapy and results in constitutive estrogen-independent ER activity. Progesterone receptors (PR) are important modifiers of ER activity, in part via direct binding. We previously showed that PR mediates expansion of cancer stem-like cell (CSC) populations and promotes tamoxifen resistance in nuclear ER/PR transcriptional complexes. In this study, we sought to define whether PR function changes in the context of ESR1 mutations. PR readily interacted with wild type (WT), but not Y537S or D538G ERs. RNA-seq and ChIP-seq studies demonstrated that ER+ breast cancer models expressing Y537S ER exhibited a distinct response to progesterone. CSC populations were enhanced in Y537S ER+ cells compared to WT ER+ cells. PR knockdown demonstrated that this property required PR expression but was unresponsive to antiprogestins. Moreover, we identified PR-dependent transcriptional programs such as the unfolded protein response (UPR) that can be leveraged to target CSC populations in Y537S ESR1-mutant breast cancer. The UPR activator ErSO, but not UPR inhibitors, blocked expansion of CSCs in WT as well as Y537S ER+ models. Together, our findings demonstrate a critical interplay between PR and mutant ER function and provide insight into PR-driven pathways including hyperactivation of the stress-sensing UPR that can be exploited as potential therapeutic avenues in advanced ER+ breast cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.20.689560v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Nov 21, 2025</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MarkerPredict: predicting clinically relevant predictive biomarkers with machine learning.</h2>
-<p class="paper-authors">Daniel V Veres, Peter Csermely, Klára Schulc</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Precision oncology relies on predictive biomarkers for selecting targeted cancer therapies. Network-based properties of proteins, together with structural features such as intrinsic disorder, are likely to shape their potential as biomarkers. We therefore designed a hypothesis-generating framework that integrates network motifs and protein disorder to explore their contribution to predictive biomarker discovery. This encouraged us to develop MarkerPredict by using literature evidence-based positive and negative training sets of 880 target-interacting protein pairs total with Random Forest and XGBoost machine learning models on three signalling networks. MarkerPredict classified 3670 target-neighbour pairs with 32 different models achieving a 0.7-0.96 LOOCV accuracy. We defined a Biomarker Probability Score (BPS) as a normalised summative rank of the models. The scores identified 2084 potential predictive biomarkers to targeted cancer therapeutics, 426 was classified as a biomarker by all 4 calculations. We detailed the biomarker potential of LCK and ERK1. This study encourages further validation of the high-ranked predictive biomarkers. The development of the MarkerPredict tool (which is available on GitHub) for predictive biomarker identification may have a significant impact on clinical decision-making in oncology.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41271784/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Nov 21, 2025</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Multi-omics strategies for biomarker discovery and application in personalized oncology.</h2>
-<p class="paper-authors">Ziming Jiang, Haoxuan Zhang, +1 author, Yingli Sun</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Multi-omics strategies, integrating genomics, transcriptomics, proteomics, and metabolomics, have revolutionized biomarker discovery and enabled novel applications in personalized oncology. Despite rapid technological developments, a comprehensive synthesis addressing integration strategies, analytical workflows, and translational applications has been lacking. This review presents a comprehensive framework of multi-omics integration, encompassing workflows, analytical techniques, and computational tools for both horizontal and vertical integration strategies, with particular emphasis on machine learning and deep learning approaches for data interpretation. Recent applications of multi-omics have yielded promising biomarker panels at the single-molecule, multi-molecule, and cross-omics levels, supporting cancer diagnosis, prognosis, and therapeutic decision-making. However, major challenges persist, particularly in data heterogeneity, reproducibility, and the clinical validation of biomarkers across diverse patient populations. This review also highlights cutting-edge advances in single-cell multi-omics and spatial multi-omics technologies, which are expanding the scope of biomarker discovery and deepening our understanding of tumor heterogeneity. Finally, we discuss the integral role of multi-omics in personalized oncology, with a particular focus on predicting drug responses and optimizing individualized treatment strategies, supported by real-world clinical practice cases. By bridging technological innovations with translational applications, this review aims to provide a valuable resource for researchers and clinicians, offering insights into both current methodologies and future directions for implementing multi-omics data in biomarker discovery and personalized cancer care.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41269529/" target="_blank">
+<p><strong>Abstract:</strong> Colorectal cancer (CRC) is a leading cause of cancer mortality and is characterized by a high tumor mutational burden, making it responsive to immunotherapy. We developed a bioinformatic and manufacturing pipeline for personalized cancer vaccines and evaluated it in the MC38 colon adenocarcinoma mouse model. Thirty-six high-scoring neoantigens (NAGs) were identified by exome and transcriptome analysis, produced as six purified polypeptides, and coupled to paramagnetic beads. Intralymphatic vaccination of C57BL/6 mice with NAG beads induced robust NAG-specific T cell and antibody responses, resulting in significant inhibition of MC38 tumor growth. Treated tumors displayed increased necrosis and CD8+ T cell infiltration. Compared with soluble peptides, bead-coupled antigens elicited superior protection. Studies in T cell-deficient and antibody-depleted mice confirmed that both CD4+ and CD8+ T cells mediated the antitumor effect. These findings highlight the potential of NAG bead vaccination as an effective immunotherapy for CRC.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.1101/2025.11.21.689667v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
