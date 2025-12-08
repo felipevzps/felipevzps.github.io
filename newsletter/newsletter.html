@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">XC-ID: De novo identification of the active X chromosome in single-cell RNA-seq</h2>
-<p class="paper-authors">Jiang, J. L. H., Gillis, J.</p>
+<h2 class="paper-title">Rethinking Molecular Beauty in the Deep Learning Era</h2>
+<p class="paper-authors">Daina, A., Zoete, V.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: X chromosome inactivation (XCI) is an epigenetic process that equalizes X-linked gene dosage between females (XX) and males (XY). During early development, one X chromosome in each cell is randomly silenced and clonally inherited, producing a stable mosaic of two epigenetically distinct cell lineages. This mosaicism provides a natural internal control for studying cell-intrinsic regulatory differences between X lineages. However, identifying the active X chromosome in single cells remains difficult due to sparse allelic coverage, dependence on pre-phased references, and biological variability from XCI escape and skew. Results: We present XC-ID (X Chromosome inactivation IDentifier), a scalable computational framework for de novo identification of the active X chromosome from single-cell RNA-seq data. XC-ID employs a simulated-annealing algorithm to infer X-linked haplotype structure directly from allelic counts, followed by bootstrap-based confidence estimation to filter uncertain cell assignments. Applied to single-nucleus RNA-seq data from a female Mus musculus hybrid with known genotype, XC-ID achieved &gt;99% accuracy in predicting the active X chromosome. The method remains robust to allelic noise, sequencing errors, and sparsity, and differential expression between inferred X lineages reveals biologically coherent dosage-compensation patterns. Availability: XC-ID is available as a Python package with both API and command-line support at https://github.com/jlhjiang/XC-ID.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.05.692676v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> As (deep) generative chemistry rapidly enters the landscape of drug discovery, evaluating the models and their structural output relevance, tractability, and innovation potential becomes both a scientific and practical challenge. Existing metrics such as QED and SA Score, though widely adopted, are rooted in biased historical datasets and often fail to capture what medicinal chemists truly seek: compounds with meaningful pharmacological potential and realistic tractability. In this work, we introduce the OiiSTER-map - a simple, intuitive, and interpretable two-dimensional heatmap that classifies molecules based on bioactivity-informed usuality and structural elaboration derived from molecular fingerprints. Unlike traditional filters, the OiiSTER-map helps identify not only the drug discovery chemical 'sweet spot'. (Regular/Balanced), but also underappreciated territories such as Minimal/Unusual or Over-elaborated/Trivial regions, offering actionable insights into compound quality, relevance, and diversity. We hope that a bioactivity-informed, structurally aware, and easily interpretable tool like the OiiSTER-map, employed in combination with other well implemented metrics, can be decisive to go beyond current limitations of assessing (deep) generative models and to ensure a more mechanistically relevant, nuanced and useful evaluation of the thus designed virtual molecules.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.692079v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Uniform pre-processing of bacterial single-cell RNA-seq</h2>
-<p class="paper-authors">Oakes, C. G., Beilinson, V., +1 author, Pachter, L. G.</p>
+<h2 class="paper-title">GatorSC: Multi-Scale Cell and Gene Graphs with Mixture-of-Experts Fusion for Single-Cell Transcriptomics</h2>
+<p class="paper-authors">Liu, Y., Zhang, Z., +6 authors, Bian, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bacteria are highly heterogeneous, even under controlled conditions, making single-cell RNA sequencing (scRNA-seq) essential for studying microbial diversity and symbiosis. Since its first application in 2015, bacterial scRNA-seq has expanded, but different assays depend on distinct, custom, in-house pre-processing making it difficult to jointly analyze data. The kallisto-bustools suite of tools has enabled uniform pre- processing of eukaryotic scRNA-seq while also reducing time and resource demands for pre-processing, but is not optimized for bacterial scRNA-seq. We adapt kallisto-bustools to be suitable for reads generated from operons, as well as for a much shorter gene length distribution, and show that it can efficiently and accurately quantify bacterial scRNA-seq. Our work provides a scalable foundation for uniform pre-processing of microbial single-cell transcriptomics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.04.692398v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell RNA sequencing (scRNA-seq) enables high-resolution characterization of cellular heterogeneity, but its rich, complementary structure across cells and genes remains underexploited, especially in the presence of technical noise and sparsity. Effectively leveraging this multi-scale structure is essentially an information fusion problem that requires integrating heterogeneous graph-based views of cells and genes into robust low-dimensional representations. In this paper, we introduce GatorSC, a unified representation learning framework that models scRNA-seq data through multi-scale cell and gene graphs and fuses them with a Mixture-of-Experts architecture. GatorSC constructs a global cell-cell graph, a global gene-gene graph, and a local gene-gene graph derived from neighborhood-specific subgraphs, and learns graph neural network embeddings that are adaptively fused by a gating network. To learn noise-robust and structure-preserving embeddings without labels, we couple graph reconstruction and graph contrastive learning in a unified self-supervised objective applied to both cell- and gene-level graphs. We evaluate GatorSC on 19 publicly available scRNA-seq datasets covering diverse tissues, species, and sequencing platforms. Across 14 benchmark datasets, GatorSC consistently outperforms state-of-the-art deep generative, graph-based, and contrastive methods for cell clustering, gene expression imputation, and cell-type annotation. The learned embeddings are used for accurate trajectory inference, recovery of canonical marker gene programs, and cell-type-specific pathway signatures in an Alzheimer's disease single-nucleus dataset. GatorSC provides a flexible foundation for comprehensive single-cell transcriptomic analysis and can be readily extended to multi-omic and spatial modalities.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.691688v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A genetic platform for a biocementation bacterium</h2>
-<p class="paper-authors">Ortiz, L., Esmurria, A., +10 authors, Ostrov, N.</p>
+<h2 class="paper-title">Unified Probabilistic Analysis of CyTOF: A Deep Generative Approach using CytoOne</h2>
+<p class="paper-authors">Yang, Y., Wang, K., +3 authors, Wang, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Sporosarcina pasteurii is the most widely studied bacterium for microbially-induced calcium carbonate precipitation (MICP), a process of intense interest for materials and construction applications. Despite two decades of investigation, S. pasteurii has remained genetically intractable, limiting our mechanistic understanding of biomineralization pathways and constraining efforts to engineer scalable solutions. Here, we present the first genetic toolkit for S. pasteurii, including a stable replicating plasmid, a conjugation-based DNA delivery protocol, engineered inducible promoters, and methods for genome modification. Using homologous recombination, we precisely deleted 5.7 kb of the genome spanning two operons encoding urease activity and demonstrated complete loss of biocementation. We also screened a library of engineered transposon constructs for activity in S. pasteurii and generated a genome-wide mutant library with &gt;15,000 unique insertion sites. Using this library, we identified putative genes affecting ureolytic growth, revealing previously inaccessible aspects of S. pasteurii genetics. This work establishes S. pasteurii as a genetically tractable platform for rational engineering of MICP and constitutes the first genetic modification capability within the Sporosarcina genus.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.05.692644v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Extracting meaningful biological signals from Cytometry by time-of-flight (CyTOF) data remains challenging due to heterogeneity, data characteristics, and the presence of various technical artifacts. Current analysis workflows typically rely on task-specific tools assembled into pipelines, which often make inconsistent distributional assumptions and fail to fully leverage the structure of the data. We present CytoOne, a unified probabilistic framework tailored for CyTOF data that integrates batch correction, differential analysis, and visualization within a single model. CytoOne is built upon a Bayesian hierarchical architecture inspired by Nouveau Variational Autoencoders (NVAE) and employs a novel quasi zero-inflated softplus-normal (QZIPN) likelihood to flexibly model the sparse and noisy nature of CyTOF measurements. We demonstrate via qualitative and quantitative evaluations that CytoOne effectively approximates both marginal and joint distributions of CyTOF data, removes batch-specific artifacts, enables fine-grained differential expression analysis, and facilitates interpretable embeddings for exploratory analysis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.692122v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,129 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">predPPI-GReMLIN: prediction of protein-protein interactions through mining of conserved bipartite graphs</h2>
-<p class="paper-authors">Adeagbo, M. A., Goncalves de Almeida, V. M., +1 author, Silveira, S. d. A.</p>
+<h2 class="paper-title">Generative design and construction of functional plasmids with a DNA language model</h2>
+<p class="paper-authors">Cunningham, A. G., Dekker, L., +1 author, Barnes, C. P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein-protein interactions (PPIs) play a central role in elucidating cellular mechanisms. However, a substantial gap remains in current prediction models, as they frequently overlook the structural and physicochemical context governing molecular binding, thereby limiting predictive accuracy. To address this limitation, we introduce predPPI-GReMLIN, a graph-based framework that represents protein-protein interfaces as bipartite graphs, integrating atomic level physicochemical descriptors, spatial distance constraints, and conserved substructure mining to perform PPI prediction. The method employs a graph-search strategy to detect interface interaction patterns and conducts ligand swapping with complexes that share the same patterns as the query, enabling the prediction of novel interaction partners. Evaluations across multiple datasets--including CAMP (protein-peptide), Yeast (binary PPI), and TAGPPI (multi-class PPI)--demonstrate consistently strong predictive performance, achieving precision, recall, accuracy, and F1 scores exceeding 97% on binary classification benchmarks and surpassing state-of-the-art sequence- and structure-based approaches. Furthermore, incorporating solvent-accessible surface area (SASA)-derived features improved multi-class interaction-type classification accuracy to 57.74%. A case study on the SARS-CoV-2 spike--ACE2 complex further validated the approach: docking simulations using ligands predicted by our method reproduced native-like binding energetics comparable to redocking results. Additionally, a comparison between docking using a predPPI-GReMLIN predicted ligand and docking using ligands selected at random from the PDB yielded a highly significant p-value, indicating a robust statistical difference in binding performance. Collectively, these findings demonstrate predPPI-GReMLINs ability to capture conserved structural determinants of PPIs, providing a robust and interpretable framework for protein interaction prediction and ligand discovery.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.692055v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Design of post-translational, ligand-controlled inverters and switches</h2>
-<p class="paper-authors">Swift, S. D., McCarthy, K. S., +3 authors, Whitehead, T. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Rational control over diverse, ligand-responsive output networks is a foundational challenge in synthetic biology, particularly for systems based on post-translational signaling. Here, we present the design and engineering of minimal, modular protein architectures for chemically responsive molecular inverters and digital switches. Our inverter design modifies the plant-derived PYR1-HAB1 chemically inducible dimerization module by incorporating a constitutive activator, which is then competitively displaced by the ligand-bound PYR1 receptor, converting the native 'dimerization-on' mechanism into a 'signal-off' inverter. We establish key design features and demonstrate predictable tuning of the inverter's transfer function, including its maximum output, half-maximal inhibitory concentration, and minimum output, solely by adjusting protein stoichiometry. The architecture is modular, enabling plug-and-play response to diverse, user-defined drug-like small molecules. We show that an inverter biosensor for an environmental contaminant functions in engineered living cells with a low nanomolar sensitivity. Additionally, we convert the PYR1-HAB1 sensor into a digital switch by adding an engineered molecular titrant to the system. Overall, this work provides a generalizable, minimal, and tunable protein scaffold for programming complex, post-translational signaling logic, significantly expanding the toolkit for sophisticated biological circuit design.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.05.692672v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Genomic foundation models reveal RNA-binding proteins regulating translation and mRNA degradation during Drosophila development</h2>
-<p class="paper-authors">Brase, L., Creamer, D. R., +3 authors, Rattray, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.04.692303v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Metax: A Coverage-Informed Probabilistic Framework for Accurate Cross-Domain Taxon Profiling</h2>
-<p class="paper-authors">Deng, Z.- L., Safaei, N., McHardy, A. C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Metagenomic taxonomic profiling is essential for characterizing microbial community composition in both environmental and clinical contexts. Existing profilers have greatly advanced community characterization; however, achieving accurate profiling across all domains of life - especially for archaea, fungi, and viruses - and for low-biomass, host-dominated samples, remains challenging. We describe Metax, a cross-domain taxonomic profiler that employs probabilistic modeling of genome coverage to distinguish true community members from artifactual signals arising from reference contamination, local genomic similarity, or reagent-derived DNA fragments. In comprehensive benchmarks across more than 500 samples, Metax demonstrated accurate species-level profiling, with consistent performance for bacteria, archaea, eukaryotes and viruses, and robustness to shallow sequencing. Applied to an oral microbiome cohort, Metax identified differentially abundant viral taxa distinguishing peri-implantitis from healthy sites, while analyses of tumor microbiome data revealed reagent-borne contaminants and potential reference misassemblies. By integrating coverage-informed statistics, Metax delivers accurate, robust, and interpretable cross-domain taxonomic profiles, maintaining stable performance across diverse sequencing depths and sample types.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.04.692287v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DeepRank-Ab: a dedicated scoring function for antibody-antigen complexes based on geometric deep learning</h2>
-<p class="paper-authors">Xu, X., Coratella, I., Bonvin, A. M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Gaining structural insights into the interactions between antibodies and their corresponding antigens is essential for understanding immune recognition and for guiding therapeutic antibody design. However, accurately modelling these complexes remains a significant challenge for both physics-based docking approaches and AI-based, co-folding methods such as AlphaFold3. These methods not only struggle to generate near native conformations, but, more critically, they often fail to score and rank such conformations correctly, revealing fundamental limitations when applied to antibody-antigen systems. To address these limitations, we present DeepRank-Ab, a geometric deep learning-based scoring function tailored to the unique characteristics of antibody-antigen interfaces. Its development was enabled by a rigorously curated benchmark comprising more than 2.3 million decoys generated from 1,442 complexes, providing the diversity required for robust training and unbiased evaluation. Leveraging this resource, we systematically assessed multiple levels of graph representation, structural and energetic feature sets, and sampling strategies. Building on our previous DeepRank-GNN-esm work, our analysis identified that atom-level graph representation coupled with Voronoi-based surface decomposition and antibody-specific descriptors is the most effective formulation for accurate scoring. Across multiple independent test sets, including models from unbound unbound docking and structures generated by AlphaFold, DeepRank-Ab consistently outperforms all evaluated methods, including AF3, HADDOCK and state of the art scoring approach such as FTDMP. It increases the AF3 Top 1 success rate by 35.5% and improves the mean Top 1 DockQ by more than a factor of two. DeepRank-Ab further generalizes robustly beyond its training distribution, achieving 100% Top 5 success rate on external antibody-antigen CAPRI targets, surpassing all tested methods. Together, these results demonstrate that DeepRank-Ab is a highly effective scoring method that substantially improves the identification of near-native antibody-antigen conformations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.691974v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">FungiGutDB: Curated database for taxonomic assignment of the gut mycobiome by whole genome sequencing</h2>
-<p class="paper-authors">Coleto-Checa, D., Lacruz-Pleguezuelos, B., +5 authors, Marcos-Zambrano, L. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Fungi represent less than 1% of the gut microbiota; However, their importance in host homeostasis and disease is increasingly recognized. Accurate characterization of the gut mycobiome from metagenomic data remains a significant challenge due to the low abundance of fungal DNA, the performance of bacteria-oriented classifiers, and the limited availability of curated fungal reference databases. To overcome these issues, we developed FungiGutDB v1.0, a curated database containing 304 taxa previously identified in culture-dependent human studies, and we integrated the database in a reproducible workflow to ease its application (FungiGut). Benchmarking analyses demonstrated that FungiGut achieved a substantially lower false positive rate in mock communities compared to standard non-gut-specific fungi databases. When applied to real metagenomic datasets, FungiGut successfully characterized the gut mycobiome, identifying Saccharomyces cerevisiae as the predominant species in healthy individuals, along with common dietary fungi found in fermented dairy products (Penicillium camemberti, Debaryomyces hansenii, Kluyveromyces lactis, Pichia kudriavzevii). In contrast, samples from patients with non-responsive celiac disease showed a higher relative abundance of opportunistic pathogens and a lower number of diet-associated taxa, suggesting a trend toward a dysbiotic mycobiome profile. By limiting classification to fungal species previously isolated from the human gut, FungiGut minimizes misclassifications derived from environmental or plant-associated taxa, which often lead to mistaken interpretation of the results. Overall, FungiGut offers a biologically consistent and reproducible approach to gut mycobiome profiling, improving taxonomic accuracy and strengthening confidence in the interpretation of fungal metagenomic data in human microbiome research.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.691829v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 06, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Phenotype-driven parallel embedding for microbiome multi-omic data integration</h2>
-<p class="paper-authors">Bamberger, T., consortium, D., Borenstein, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The human microbiome is widely recognized as a key determinant of health and disease, yet most reported links between observed microbial features and clinical outcomes remain descriptive and lack an integrated system-level perspective. Multi-omic studies of the microbiome, which jointly profile and analyze multiple molecular aspects of the microbiome via metagenomics, metabolomics, proteomics, and transcriptomics assays, offers a more comprehensive view of this system, with the potential to uncover how microbial communities and functions influence host physiology. However, integration of such multi-omic data remains challenging due to high dimensionality, major differences in data properties across omics, and the need to utilize and preserve omic-specific information. Embedding omic data in low-dimensional spaces offer a promising avenue to capture complex patterns, reduce noise, and improve downstream analysis, yet most embedding-based microbiome studies to date exhibited limited predictive power or relied on a single joint embedding of all omics thus failing to preserve omic-species properties. To address this, we introduce PAPRICA (Phenotype-Aware Parallel Representation for Integrative omiC Analysis), an encoder-decoder framework for microbiome multi-omic integration that embeds each omic into its own latent space while jointly modeling their relationships. The model consists of parallel autoencoders trained with a loss function that promotes three objectives: (1) accurate reconstruction of each omic, (2) alignment of samples across omics such that proximity in one latent space reflects proximity in the others, and (3) alignment with a phenotype space to capture variation associated with continuous outcomes, such as fecal calprotectin levels in IBD. The resulting models support cross-omic inference and phenotype prediction from the learned latent representations, and enables integration without collapsing data into a single space. This modeling approach thus preserves omic-specific signals while capturing phenotype-associated variation. We compared PAPRICA to four alternative models that represent successive advances in multi-omic integration architectures. We found that across two complementary tasks, predicting one omic profile from another and predicting a continuous phenotype from an input omic profile, our parallel autoencoder approach, and particularly the PAPRICA model, demonstrated better performance across three multi-omic datasets (the Franzosa IBD cohort, Lifelines DEEP and the Dog Aging Project Precision Cohort). Combined, these findings suggest that our embedding strategy effectively captures and balances omic-specific structure, cross-omic relationships, and phenotype-relevant signals across diverse datasets, offering a flexible, scalable framework for embedding complex multi-omic microbiome data and advancing our ability to gain new insights into host-microbiome interactions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.05.692119v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> DNA language models offer a new paradigm for sequence design, yet their ability to generate functional genomic sequences remains underexplored. Plasmids act as a good testbed for evaluating DNA language model generation potential due to their simplicity and ease of construction. Here, we develop an end-to-end pipeline for generative design of Escherichia coli plasmid backbones, from large-scale data curation through fine-tuning, sampling, bioinformatic assessment, and candidate selection. A curated plasmid library was assembled from PlasmidScope and Addgene, and PlasmidGPT, a GPT-2-style DNA model, was fine-tuned on these corpora using circular-aware batching and random crops. Generations (1,000 per model) were produced under two prompting strategies: a minimal ATG seed to expose default tendencies, and a GFP cassette to enforce functional context. From 1000 generated synthetic plasmids, 16 candidates survived strict filtering and these were prioritised for wet-lab validation. Three shortlisted plasmids were synthesised and found to be functional, supporting growth, antibiotic resistance, and GFP expression in E. coli. These represent, to our knowledge, the first full AI-generated plasmids to be synthesised and validated in vivo. This work demonstrates that curated fine-tuning and prompt-aware generation enable DNA language models to progress from raw sequence sampling to experimentally testable plasmid designs. The approach offers a foundation for extending DNA design optimisation beyond E. coli, toward broader applications across engineering biology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.06.692736v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -230,15 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Guidance receptor-mediated mechanocompliance of GBM cells facilitates immune-silent invasion</h2>
-<p class="paper-authors">Kang, S., Alves, C. J., +10 authors, Zou, H.</p>
+<h2 class="paper-title">PDLIM2 in Lung Adenocarcinoma Metastasis</h2>
+<p class="paper-authors">Gao, F., Xiao, Y., +3 authors, Xiao, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The lethality of glioblastoma (GBM) stems from diffuse infiltration and immune evasion, two hallmarks traditionally studied separately. Here, we identify as unifying mechanism how GBM cells utilize guidance receptors Plexin-D1 and Plexin-B2 to gain mechanocompliance, i.e., the ability to deform and remodel membrane/cytoskeleton during confined migration without triggering immune activation. We show that PLXND1 upregulation marks invasive fronts and predicts poor survival of glioma patients. Through live-cell imaging in microchannels, intracranial xenografts, single-nucleus transcriptomics, and lipidomics we demonstrate that Plexin-D1/B2 enable GBM cells to retract tumor microtubes (TMs), traverse constrictions, and escape microglial surveillance. Single and especially double deletion of PLXND1 and B2 resulted in TM overgrowth, membrane instability, and susceptibility to cell fragment shedding, leading to impaired migration and a shift to activation of tumor-associated myeloid cells. Our findings thus reveal a molecular strategy used by GBM cells to penetrate through interstitial space while escaping immune surveillance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.692092v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Human and mouse studies have established the unique PDZ-LIM domain-containing protein PDLIM2 as a common tumor suppressor that is especially vital for suppressing the tumorigenesis and therapeutic resistance of lung cancer, the leading cause of cancer-related deaths among both men and women. However, the role of PDLIM2 in tumor metastasis, the predominant cause of cancer morbidity and mortality, is yet to be determined. Here, we report that PDLIM2 repression was positively associated with the metastasis of human lung adenocarcinoma, the major type of non-small cell lung cancer that accounts for more than 40% of all cases of human lung cancer. Interestingly, PDLIM2 repression was also correlated with oncogenic KRAS and/or TP53 mutations, two common drivers of human lung adenocarcinoma that often co-occur. In mice, in comparison to concurrently inducing mutant KRAS expression and TP53 deletion, additional co-ablation of PDLIM2 significantly increased the number and size of lung adenocarcinomas in the lung, and more importantly, the distant metastasis of lung tumor cells. The increased metastasis was accompanied by decreased anti-tumor immunity and increased pro-tumor inflammation. These data demonstrate the role of PDLIM2 in suppressing lung adenocarcinoma metastasis, thereby improving our understanding of this crucial tumor suppressor and lung cancer. They also provide a useful model for studying metastasis and testing new lung cancer treatments in vivo.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.692242v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -249,15 +135,34 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Bispecific T cell engagers control solid tumors through clonal replacement and IL2-driven effector differentiation of CD8 T-cells</h2>
-<p class="paper-authors">Obenaus, M., Poupault, C. L., +14 authors, Garcia, K. C.</p>
+<h2 class="paper-title">IGFBPs define distinct pro-tumorigenic CAF subtypes in lung cancer tumour-microenvironment</h2>
+<p class="paper-authors">Yengkhom, G. D., Nandgaonkar, K. K., +7 authors, Arandkar, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bispecific T cell engagers (TCEs) often exhibit limited efficacy in solid tumors, in part due to immunosuppressive cues in the tumor microenvironment and low expression of targetable tumor antigens. Therapeutic strategies to improve TCE target sensitivity and enhance T cell effector functions therefore have significant translational potential. Here, we engineered TCEs that induce T cell activation in vitro against the low-abundance target antigens, TRP2/Kb and DLL3. Despite in vitro activity in these models, TCE monotherapy showed limited control of tumor growth in immunocompetent mice. Leveraging this in vivo model of TCE treatment failure, we discovered that co-treatment with TCE and a CD25-biased Interleukin-2 (IL2) rescues anti-tumor activity. Further, multimodal single-cell transcriptomic and immune repertoire analyses revealed that TCE-IL2 combination therapy controlled tumors by recruiting and activating new CD8+ T cells into the tumor microenvironment. These findings demonstrate that TCE-mediated anti-tumor responses function through a CD8+ T cell clonal replacement mechanism that can be augmented by cytokine therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.04.692214v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Cancer-associated fibroblasts (CAFs) play a significant role in influencing tumour outcomes; however, their heterogeneity and context-sensitive nature present a therapeutically challenging target. Here, we identify a group of Insulin-like growth factor binding proteins (IGFBPs), specifically IGFBP5, 6 and 7, as key regulators of CAF heterogeneity in lung cancer. Notably, these binding proteins are highly expressed in lung CAFs and independently modulate CAF phenotype. We demonstrate that tumour-derived cues, particularly TGF{beta}1 and IL6, affect IGFBP expression in CAFs. Transcriptome studies indicate that selectively knocking down these proteins directs CAFs towards different CAF subtypes. Functionally, CAFs with high levels of IGFBP5, 6, or 7 promote tumour growth in both ex vivo and in vivo settings and, critically, confer cisplatin resistance to tumour cells. Furthermore, the gene signatures associated with these proteins correlate with unfavourable prognosis. In conclusion, our study highlights the phenotypic plasticity of CAFs driven by these three distinct IGFBPs from the same family, consequently influencing the tumour microenvironment landscape.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.03.692056v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 07, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">RBM15 promotes lung adenocarcinoma progression and palbociclib sensitivity via m6A-mediated STIL activation and downstream cyclin D1/CDK4 signaling</h2>
+<p class="paper-authors">Chen, Y., Zhang, J., +8 authors, Wang, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> RNA-binding motif protein 15 (RBM15), an N6-methyladenosine (m6A) methyltransferase, plays a crucial role in the progression of lung adenocarcinoma (LUAD); however, the underlying mechanisms remain insufficiently defined. In this study, we investigated the contribution of RBM15-mediated m6A modification to LUAD pathogenesis. Our data showed that RBM15 was highly expressed in LUAD tissues and cell lines. Notably, its expression levels were positively correlated with tumor TNM staging and negatively correlated with differentiation status. The overexpression of RBM15 enhanced cell proliferation, migration, invasion, and cell cycle progression, while simultaneously inhibiting apoptosis. Conversely, RBM15 knockdown reversed these phenotypes and induced G2/M-phase arrest. In vivo experiments further confirmed that RBM15 knockdown led to the suppression of tumor growth. RNA sequencing, MeRIP sequencing, and bioinformatics analyses identified STIL as a gene directly regulated by RBM15 through m6A modification, a finding subsequently validated by luciferase reporter assays. Western blot and rescue experiments demonstrated that RBM15 and STIL cooperatively activate the cyclin D1/CDK4 signaling pathway, thereby promoting LUAD progression. However, this effect was markedly attenuated by CDK4/6 inhibitor application. Collectively, these findings indicated that the RBM15-STIL-cyclin D1/CDK4 axis represents a promising therapeutic target for LUAD.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.04.692261v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -268,15 +173,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Dec 06, 2025</span>
+<span class="date">Dec 07, 2025</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">EnsembleAge clock: a reliable and robust epigenetic age clock service reveals epigenetic age acceleration in opioid-overdosed brains.</h2>
-<p class="paper-authors">Akshay Anand, Yash Agarwal, +4 authors, Hayan Lee</p>
+<h2 class="paper-title">Integrative machine learning identifies lactylation-related gene signature prognostic for chemotherapeutic efficacy in colorectal carcinoma.</h2>
+<p class="paper-authors">Hui Hu, Fang Peng, +2 authors, Yanjun Lu</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Age is a major risk factor for various diseases, such as cancer, cardiovascular conditions, and neurodegenerative diseases. However, chronological age, the simple number of years one has lived, does not capture individual health differences, prompting the development of methods to accurately estimate biological age instead of relying on chronological age. One of the major molecular approaches exploits DNA methylation (DNAm), which is an essential epigenetic modifier for regulating gene expression, cell differentiation, and aging. DNAm-based aging clocks have been developed to predict biological age, but the prediction is highly dependent on training data, including organs and assay technologies. To address these clocks' high variance, we present two EnsembleAge clocks, leveraging eight previously developed DNAm clocks, harnessing the strengths of each methylome age clock, smoothing out individual variances, and providing a more robust estimation of biological age. We trained our EnsembleAge clock models using DNA methylation data from nine organs in the Genotype-Tissue Expression (GTEx) dataset. Our EnsembleNaive clock model achieved the lowest median absolute error (MeAE) of 4.04 years in whole blood. The EnsembleLR model demonstrated the lowest MeAE of 6.35 years across multiple tissues, including breast, lung, muscle, ovary, prostate, testis, and colon. The significant reduction in MeAE underscores its high practical value in clinical and forensic applications, especially in contexts where epigenetic changes are subtle. We further applied our models to four public datasets representing diverse biological applications, including administered short-term medical opioid use (GSE151485) and long-term opioid overdose (GSE164822). Our model reveals over 10 years of age acceleration in opioid-overdosed brains but no significant epigenetic age acceleration when opioid usage was well administered. Our EnsembleAge clock models are also implemented as a web service, allowing users to conveniently upload their DNA methylation data and receive predictions of their biological age. This empowers individuals to track their biological/epigenetic age over time, mitigating the effect of variance and promoting healthy aging and a beneficial lifestyle. Our EnsembleAge clock service is available at https://ensemble.epiclock.app/.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41351063/" target="_blank">
+<p><strong>Abstract:</strong> Lactylation, a recently discovered post-translational modification, has emerged as a critical regulator in cancer biology. Although chemotherapy remains the first-line treatment for metastatic colorectal cancer (CRC), only a subset of patients responds to it. This study aimed to identify key lactylation-related genes in CRC and evaluate their potential as predictive biomarkers for chemotherapy response.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41353668/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
