@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CryoDDM: CryoEM denoising diffusion model for heterogeneous conformational reconstruction</h2>
-<p class="paper-authors">Li, F., Chen, Y., +7 authors, Wan, X.</p>
+<h2 class="paper-title">Vir2vec: A Genome-Wide Viral Embedding</h2>
+<p class="paper-authors">Rancati, S., Arozarena Donelli, P., +10 authors, Marini, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Heterogeneous protein reconstruction can reveal the relationship between protein dynamics and function, which represents one of the foremost challenges in cryogenic electron microscopy (cryo-EM) single-particle analysis (SPA). However, high-intensity noise results in inaccurate parameter estimation during classification and reconstruction, making it difficult to capture the subtle motions of proteins. Here, we present the Cryo-EM denoising diffusion model (CryoDDM), which denoises images while preserving high-frequency structural information, benefiting conformational heterogeneity classification and reconstruction. The image denoised by CryoDDM can be used to improve downstream analysis, enhance reconstruction resolution, discover new protein conformations, and map out conformational variations. Validated against tree diverse experimental datasets, spanning a proteasome, a membrane protein and a spike protein, our results consistently demonstrate the accuracy and superiority of CryoDDM. By guiding reconstruction with denoised images, CryoDDM enables high-resolution reconstruction of heterogeneous conformations, paving the way to illuminate fundamental questions in structural biology. The CryoDDM project are published at https://github.com/BIT-FuweiLi/CryoDDM.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693455v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Genomic language models (gLMs) have recently emerged as powerful numerical surrogates for DNA, but existing architectures are largely focused on human DNA or trained on limited viral references, and no dedicated benchmark currently exists for viral genome understanding. Here we introduce Vir2vec, a 422-million-parameter, decoder-only gLM obtained by continual pretraining of Mistral-DNA on a rigorously curated pan-viral corpus of 565,747 complete genomes spanning 295 viral species. Vir2vec operates on byte pair encoded DNA subwords and exposes fixed-length genome-level embeddings that are reused across tasks. Additionally, we present vGUE, a unified benchmark for viral representation learning. In vGUE, we precompute Vir2vec embeddings and feed them to simple classifiers (logistic regression, support vector machines, random forests) trained under nested cross-validation, to quantify how well they capture biologically motivated axes of viral variation. Using this framework, vGUE assesses genomic viral prediction tasks across: (i) organism-level discrimination (virus vs non-virus genomes and reads), (ii) genome-wide evolutionary fingerprints (DNA vs RNA viruses, host-range prediction), (iii) intra-genus species separation (HIV-1 vs HIV-2), (iv) fine-grained variant and subtype typing (SARS-CoV-2 lineages), and (v) phenotypic context signal detection (HIV-1 brain vs plasma tropism). Vir2vec attains the highest balanced accuracy across seven out of eight heterogenous classification tasks consistently outperforming both a human-trained genomic foundation model and a viral-specific one. By coupling a pan-viral gLM with a standardized evaluation suite, Vir2vec and vGUE provide an open foundation for future viral genomic models, surveillance tools, and discovery pipelines.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.693901v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Fast Loading and Transformation of Large-Volume Bioimaging Data Consistently Approaching the I/O Peak Speed</h2>
-<p class="paper-authors">Cai, L., Qu, X., +9 authors, Zeng, S.</p>
+<h2 class="paper-title">Aligning gene trees with family trees</h2>
+<p class="paper-authors">Serdiuk, A., Moreau, C., +4 authors, Gravel, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High-resolution large-volume biological imaging techniques are now widely used in biological research, but inefficiencies in data processing and visualization persist due to bottlenecks in loading/saving pipelines and limitations of conventional pyramid formats. To address these issues, we have decoupled data loading process into reading from disk and in-memory decompression, while data saving has been separated into in-memory compression and writing to disk. This approach allows us to dedicate more CPU cores to decompression and compression tasks, optimizing resource allocation and maximizing disk I/O throughput. As a result, both loading and saving processes operate near the disk's peak data transfer capacity. Further, we integrated a video stream-inspired format into the pyramid structure, allowing direct access to regions of interest (ROIs) without loading extraneous data into RAM, reducing memory overhead. Compared to the latest methods, our approach improves pyramid data transformation efficiency by at least 6 x and dramatically accelerates downstream tasks like visualization and deep learning inference.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693603v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Relatedness between individuals can be measured at the genealogical level (by describing shared ancestors in a pedigree) or at a genetic level (by describing shared haplotypes across the genome). The shared haplotype structure can be conveniently summarized as a sequence of trees along the genome, where each tree describes the last shared genetic ancestors between individuals at a locus. While many tools exist to infer tree sequences from genetic data, and many large pedigree datasets are available, few tools exist to identify the relationship between the two - finding which genetic ancestor corresponds to which pedigree ancestor, and conversely. In this paper, we propose an algorithm to solve this problem by providing, for each genetic tree, the list of all consistent ancestry paths within a genealogical tree. We also provide variants of the algorithm with moderate robustness to both tree sequence and pedigree errors. We demonstrate the scalability of our approach on the BALSAC genealogical dataset, which includes millions of individuals in Quebec, Canada. We find that 20 carriers usually provide enough information to reliably identify a common ancestor 15 generations ago or find the parent of origin of alleles among probands, but the number of possible ancestry paths within the pedigree can remain large. We apply the method to reconstruct the inheritance of a causal allele for type 1 myotonic dystrophy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.693727v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SynPROTAC: synthesizable PROTACs design through synthesis constrained generative model and reinforcement learning</h2>
-<p class="paper-authors">Xu, M., Deng, Q., +4 authors, Chen, H., lei, j.</p>
+<h2 class="paper-title">Engineered AAV Capsids with Enhanced Extracellular Vesicle Loading via Rational Design and Directed Evolution</h2>
+<p class="paper-authors">Vorobieva, I., Luchner, M., friedrichsen, H., +7 authors, Gupta, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein hydrolysis targeting chimeric (PROTAC) has emerged as a promising technology in degrading disease-related proteins for drug design. Recent deep generative models can accelerate PROTAC design, but the generated molecules are often difficult to synthesize. Here we develop SynPROTAC model, which employs Graphormer encoded warhead or E3 ligand as input, and autoregressively samples reaction templates and building blocks through transformer based decoder for PROTAC construction. The model is also fine-tuned via reinforcement learning for generating PROTACs with favorable binding properties. The comprehensive evaluations indicated that SynPROTAC is capable of generating novel PROTACs with feasible synthetic routes, reasonable physico-chemical and binding related properties.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693572v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Overcoming immune responses and ensuring efficient delivery remain key obstacles to advancing adeno-associated virus (AAV)-based genetic medicines into the clinic. Encapsulating AAVs within naturally secreted extracellular vesicles (EV-AAV) can shield them from neutralising antibodies and increase transduction efficiency; however, wild-type AAV capsids are incorporated into EVs inefficiently, with the percentage of total AAV genomes in the EV-AAV fraction ranging from 0.5% to 12%, depending on AAV serotype. Here, we establish a high-throughput screening platform that links AAV capsid genotype to EV encapsulation phenotype to improve encapsulation efficiency. We combined rational design with directed evolution to engineer AAV9 variants that preferentially sort into EVs. A library of 392,550 AAV9 capsid mutants was generated by inserting Late (L) domains, established EV-sorting motifs, and fully random amino acid inserts in a surface-exposed region of the AAV9 capsid protein. Screening data were analysed using a statistical model-assisted protein selection (SMAPS) workflow, developed as a novel quantitative modelling and selection strategy for protein engineering challenges of this kind. SMAPS functions as a digital twin of the protein variants in our high-throughput screen, allowing us to monitor uncertainty in copy numbers over multiple steps in the experimental workflow. Using SMAPS, we identified five lead hits, which showed up to threefold increased EV-AAV yield compared to wild-type, without altering particle size. Moreover, in vitro transduction experiments demonstrated that the lead AAV9 capsid exhibits substantially higher transduction efficiency compared to wild-type AAV9 and retained functional activity in the presence of neutralising anti-AAV9 antibodies. Collectively, our study: (i) delivers a scalable high-throughput screen for EV-AAV engineering, (ii) introduces the field first statistical model-guided quality-control framework for directed evolution, and (iii) provides best-in-class capsids for EV encapsulation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.693981v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Global changes in unproductive splicing and the NMD system efficiency in tumors</h2>
-<p class="paper-authors">Zavileyskiy, L., Mironov, A. A., Pervouchine, D. D.</p>
+<h2 class="paper-title">Mechanisms of soil carbon preservation illuminated by model mineral-associated organic matter</h2>
+<p class="paper-authors">Sridhar, S., Gao, X., +2 authors, Ajo-Franklin, C. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The Nonsense-Mediated Decay (NMD) pathway is a mRNA quality control mechanism, which not only degrades deleterious transcripts but also orchestrates a large number of post-transcriptional regulatory programs through unproductive splicing. Here, we developed a robust metric derived from the quantification of splicing in the RNA-seq data to measure NMD efficiency at a sample level. We demonstrate that NMD efficiency varies substantially both between and within tissues, with the magnitude of variation comparable to that observed upon knockdown of the core NMD factor UPF1. By analyzing TCGA cancer cohorts, we further show that, in many tumors, unproductive splicing events exhibit coordinated changes towards either collective suppression or collective activation of NMD isoforms, which is indicative of a global deregulation of the NMD pathway activity. Consistently, we observed a striking divergence of NMD efficiency in cancers from the tissue-specific baseline level suggesting that tumors partially erase the NMD signature of their tissue of origin. The application of the developed metric to RNA-binding protein knockdowns allowed identification of several novel potential regulators of NMD efficiency. In sum, this study provides a solid framework for NMD efficiency quantification, describes its biological and clinical relevance, and opens new avenues for dissecting mechanisms of post-transcriptional gene expression regulation by the NMD pathway.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.692474v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> A central control on atmospheric CO2 is the stabilization of organic carbon in soils. While there are well-described properties associated with stable soil carbon, such as interactions with minerals and conserved chemical features, determining the mechanisms underlying these properties is challenged by soil complexity and heterogeneity. Here we synthesize a naturally complex, tunable model form of mineral-associated organic matter (LabMAOM) to explore mechanisms of stable soil carbon formation and persistence. We show that mineral association and ambient organic matter synergistically stabilize LabMAOM against microbial decomposition. Moreover, different starting compositions of organic matter yield a conserved final LabMAOM chemical composition consistent with natural soils. Our findings open new mechanistic understanding of stable soil carbon and will be of utility to climate modeling and soil health management.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.694042v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -113,18 +113,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Mastodon: the Command Center for Large-Scale Lineage-Tracing Microscopy Datasets</h2>
-<p class="paper-authors">Girstmair, J., Pietzsch, T., +8 authors, Tomancak, P.</p>
+<h2 class="paper-title">Spatial dissection of ADC/RPT targets defines therapeutic opportunities inrhabdoid tumors</h2>
+<p class="paper-authors">Reitsam, N. G., Fincke, V. E., +10 authors, Johann, P. D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Understanding development in living organisms requires following the divisions, movements, and fates of cells across developing systems. While advances in microscopy have enabled whole-embryo imaging at the cellular level, extracting and analyzing cell lineages from these massive datasets remains a significant computational challenge. We present Mastodon, a scalable, extensible software platform for manual, semi-automated, and automated cell tracking in large images. A purpose-built graph model supports responsive performance for datasets with millions of annotations, making Mastodon a future-proof platform for cell lineage analysis. Built as a Fiji plugin, Mastodon enables interactive visualization, editing, and analysis of complex lineage trees, seamlessly integrated with the raw image data. Comprehension of cell lineages in complex three-dimensional geometries is facilitated by interoperability with the powerful open-source render engine Blender. In three distinct developmental contexts, we demonstrate how Mastodon will accelerate biological insights by providing user-friendly navigation and explorative analysis in complex lineage datasets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693416v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Rhabdoid tumors (RT) are among the most aggressive pediatric malignancies, characterized by early onset, loss of SWI/SNF complex members (SMARCB1 or SMARCA4), and dismal outcomes despite multimodal therapy. Refractory and relapsing RT remain almost uniformly fatal, and targeted or immune-based approaches have yet to demonstrate clinical benefit. To explore novel therapeutic vulnerabilities, we systematically investigated the expression of clinically actionable surface proteins that could serve as targets for antibody-drug conjugates (ADCs), radiopharmaceutical therapy (RPT), or cellular immunotherapies. Based on large-scale transcriptomic analyses, we prioritized FAP, CXCR4, and IL13RA2 and performed comprehensive protein-level validation by immunohistochemistry in an unprecedented cohort of 60 rhabdoid tumors spanning all molecular subgroups (ATRT-TYR, ATRT-SHH, ATRT-MYC, and eMRT). Integrating these data with spatial and single-nucleus transcriptomic profiling, we identified subgroup- and celltype-specific expression patterns, including heterogeneous FAP distribution between stromal and tumor compartments and a distinct IL13RA2-positive rhabdoid cell population with melanosomal and stem-like features. These findings define a set of biologically and clinically relevant surface targets in RT and provide a translational blueprint for rational ADC and RPT target discovery in pediatric cancer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.692900v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -132,18 +132,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Orthogonal Modes of Gene Expression Evolution Shape Human Neocortical Development and Disease Vulnerability</h2>
-<p class="paper-authors">Sheu, X. D., Yamauchi, Y. Y., Suzuki, I. K.</p>
+<h2 class="paper-title">Single-cell transcriptomics reveals a conserved embryonic progenitor in different human cancers</h2>
+<p class="paper-authors">Khozyainova, A., Subrakova, V., +12 authors, Denisov, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The neocortex is responsible for higher-order cognitive abilities such as language, abstract reasoning, and executive function - capacities that are particularly advanced in humans. To elucidate the molecular foundations of neocortical evolution in the human lineage, it is essential to examine how conserved gene repertoires have undergone expression changes relative to other mammals. The expression changes in conserved genes are widely regarded as key drivers of the phenotypic evolution of human-specific traits. In this study, we performed a comprehensive comparative single-cell transcriptomic analysis of fetal neocortical development across four mammalian species: human, macaque, mouse, and ferret. To validate human-specific expression changes, we further analyzed brain organoids derived from both human and chimpanzee stem cells. Genes exhibiting human-specific expression shifts were systematically classified along three orthogonal dimensions: overall expression level (Human Level Distinctive; HLD), temporal expression trend (Human Trend Distinctive; HTD), and differentiation lineage specificity (Human Differentiation trajectory Distinctive; HDD). HLD genes were frequently enriched for long introns and located near Human Accelerated Regions (HARs), and showed pronounced upregulation in humans. These genes were strongly associated with neurodevelopmental disorders such as autism spectrum disorder and developmental delay, as well as with megalencephaly and glioblastoma. HTD genes, in contrast, exhibited a unique pattern in humans, peaking early in development and subsequently declining - opposite to the steadily increasing trends observed in other species. These genes were significantly enriched for oxidative phosphorylation and ribosomal functions, pointing to a temporally restricted elevation in biosynthetic activity in early human corticogenesis. HDD genes displayed a marked shift in lineage-specific expression: cilia-related genes that are typically expressed in apical progenitors in non-human species were instead highly expressed in outer radial glia (oRGs) in humans. This spatial reorganization of ciliary gene activity suggests an oRG-specific adaptation in signaling architecture. Together, these results highlight the diversity of regulatory changes that have shaped human cortical development. Distinct classes of gene expression evolution - mediated in part by HARs - appear to have contributed not only to the expansion and increased complexity of the human neocortex, but also to its heightened vulnerability to neurodevelopmental and oncogenic pathologies. The identified human distinctive genes will be the target of future experimental verification to elucidate the precise molecular mechanisms regulating human-specific aspects of cortical development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.693619v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Cellular plasticity, a critical feature of embryonic development, is often reactivated in cancer, enabling tumor cells to acquire stem-like properties and facilitate uncontrolled growth. Here, we explore the molecular parallels between oncogenesis and early human development by integrating single-cell RNA sequencing data from three distinct cancers (lung adenocarcinoma, melanoma, and medulloblastoma) and embryoid bodies (EBs). By leveraging this integrative approach, we identify conserved progenitor-like cell states shared between oncogenesis and embryogenesis. These clusters exhibit high proliferative potential, enriched for key cell-cycle regulators such as UBE2C, TOP2A, BIRC5, and NUSAP1, and are driven by an E2F-TFDP transcriptional axis. Functional enrichment analyses highlight these clusters' involvement in cell-cycle progression, DNA repair, and mitotic regulation. Trajectory inference via Slingshot further confirms that these proliferative states represent a progenitor-like hub, from which diverse tumor lineages arise. Notably, these clusters are enriched in lung adenocarcinoma and in lung tissue with basal cell hyperplasia, a potential precursor to squamous cell carcinoma. Our findings suggest that the E2F-TFDP-driven proliferative program is a conserved feature of tumor cell plasticity across distinct cancer types, with prospective implications for early detection or therapeutic targeting.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.693590v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -151,18 +151,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">EpiTox: A Multi-Modular Framework for Population-Aware Off-Target Prediction Highlighting MAGE-A3 Cross-Reactivity</h2>
-<p class="paper-authors">Al-Hasani, H., Ali, M., +9 authors, Schuster, S.</p>
+<h2 class="paper-title">From in silico prediction to experimental validation: Identification of drugs and novel synergistic combinations that inhibit growth of inflammatory breast cancer cells</h2>
+<p class="paper-authors">Salim, E. A., Ji, X., +4 authors, Williams, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Targeting intracellular tumor antigens presented by peptide human leukocyte antigen (pHLA) complexes offers a promising immunotherapeutic strategy for patients with limited treatment options. However, development of pHLA-targeted drugs such as T-cell receptor (TCR) mimic antibodies (TCRm) and TCR-based therapeutics remains challenging due to severe offtumor and off-target toxicities arising from incomplete pHLA off-target profiling. The fatal neurological toxicities observed in the MAGE-A3 TCR-T cell trial, potentially linked to unanticipated cross-reactivity with EPS8L2- and MAGEA12-derived peptides, underscore the urgent need for more comprehensive safety assessment. Current preclinical de-risking methods rely on peptide-centric similarity searches performed in isolation, failing to capture the complex landscape of peptide cross-reactivity and leaving safety gaps unaddressed. To address these limitations, we developed EpiTox, a computational multi-modular platform that systematically identifies and evaluates pHLA off-targets. EpiTox integrates proteome-wide sequence similarity, genetic context, HLA binding profiles, and layered risk assessment to provide a holistic evaluation of potential cross-reactive peptides. Using MAGE-A3 as a model, EpiTox identified known toxic off-targets and predicted novel epitopes. Notably, an anti-MAGE-A3 therapeutic TCRm antibody bound several newly predicted off-targets, including three SNP-derived peptides. By enabling comprehensive and predictive preclinical safety screening, EpiTox supports safer TCRm drug development and may help prevent future clinical failures.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693357v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Drug repurposing offers a promising approach for identifying novel treatments, especially for rare cancers like inflammatory breast cancer (IBC), an aggressive type with limited therapeutic options. Here, we present a comprehensive validation and verification study of compounds identified through two computational approaches: Literature Wide Association Studies (LWAS) and Gene Reversal Rate (GRR), using orthogonal cell viability assays in 2D models across IBC and non-IBC cell lines. In the SUM149 IBC cell line, repurposed compounds predicted from LWAS achieved a 70% success rate, with several showing nanomolar potency, while those predicted from GRR showed a 38% success rate. Through systematic combination screening in both 2D and 3D-spheroid models, we identified novel synergistic compound pairs targeting crosstalk between IGF1-R, EGFR and PI3K/Akt/mTOR pathways, with high synergy scores across multiple reference models. Using these combinations, western blotting analysis revealed significant suppression in the phosphorylation of key signaling proteins and downstream effectors, while wound healing assays demonstrated reduced cell migration for some combinations, suggesting effective pathway inhibition. To further validate these findings at the transcriptional level, RNA-Seq analysis in SUM149 cells confirmed that the GRR drug combinations significantly reversed the IBC gene expression signature (IBC-GES). These findings not only validated our computational predictions but also identified promising combination strategies that could potentially overcome drug resistance in IBC. Our integrated computational-experimental approach establishes a framework for systematic drug repurposing and highlights novel therapeutic combinations warranting further investigation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693562v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -170,18 +170,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 12, 2025</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Evaluation of the Ultima Genomics UG 100™ sequencing platform for clinical services</h2>
-<p class="paper-authors">Santuari, L., Kolpakov, I., +2 authors, Howald, C.</p>
+<h2 class="paper-title">Low-order assemblies drive oncogenic RTK fusion signaling without condensation</h2>
+<p class="paper-authors">Gonzalez-Martinez, D., Mumford, T. R., +6 authors, Bugaj, L. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The steep reduction in the cost of genome sequencing started with the introduction of Solexa Sequencing-By-Synthesis technology in 2006 has plateaued recently due to technical limitations in the use of closed flowcells and to the cost of reagents. The Ultima Genomics UG 100 is the first sequencing machine to lower the cost of human genome sequencing to 80$. However, technical limitations in resolving long homopolymer regions undermine the application of this technology to short variant calling in clinical settings. Here, we evaluate the ability of UG 100 to identify short variants in relation to its suitability for clinical accreditation, by comparing it with the Illumina NovaSeq 6000 Systems platform. We focus specifically on the small variant calling performance in long homopolymer regions, both genome-wide and in relation to a set of medically-relevant genes that are challenging to sequence. Our analysis aims at supporting clinicians in determining whether the UG 100 platform is well-suited for their studies, and to guide clinical sequencing centers in evaluating the adoption of this emerging technology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.693628v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Receptor tyrosine kinase (RTK) fusions are a large class of oncoproteins found in ~5% of cancers. Key questions remain, however, about how RTK fusions transmit oncogenic signals, including how these largely cytoplasmic proteins activate downstream pathways that originate at the plasma membrane. Fusions are multimeric and can form mesoscale condensates in cancer cells, and condensation has been implicated as an essential mechanism to enable signal transmission from the cytoplasm. However, whether condensates play a causal role, or whether smaller "diffuse" assemblies are sufficient to transduce signals, has been challenging to establish. Here we apply advanced microscopy, single-cell analysis, and synthetic fusions to determine the principles by which multimerization and condensation drive signaling from cytoplasmic RTK fusions. For EML4-ALK, a prominent fusion that forms condensates, we found poor correlation between condensation and signaling. By contrast, EML4-ALK activity was abundant in the diffuse phase, and the kinetics of diffuse-phase activity aligned more closely with downstream Erk signaling than did kinetics of signaling within condensates. Synthetic RTK fusions showed that cytoplasmic ALK or RET fusion dimers, and even constitutively active monomers, were sufficient to induce strong Ras-Erk signaling despite the absence of condensates, and diffuse fusions were sufficient to transform cells in vitro and in subcutaneous tumor models. A panel of various other cancer-driving RTK fusions showed that low-order multimerization was universal across fusions, whereas mesoscale condensation was rare and did not correlate with signaling. Our results suggest that low-order fusion multimerization is sufficient to drive its phosphorylation, which is necessary and sufficient to trigger downstream oncogenic signaling.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693466v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -189,18 +189,75 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Dec 12, 2025</span>
-<span class="journal">PPR</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Multi-omics Reveals Metabolic-Inflammatory Drivers of Lung Cancer: An Integrated Mendelian Randomization and Machine Learning Study</h2>
-<p class="paper-authors">Li X, Zhang F, +3 authors, Wang X.</p>
+<h2 class="paper-title">Transcriptomic profiling of epigenetic regulators and metabolic reprogramming in human cholangiocarcinoma</h2>
+<p class="paper-authors">Lopez-Pascual, A., Elurbide, J., +20 authors, Avila, M. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Background: Metabolic dysregulation and chronic inflammation are implicated in the tumorigenesis of lung cancer; however, the causal relationships and translational potential of these associations remain poorly understood. This study aims to delineate the "metabolic-inflammatory-cancer" axis in order to identify high-confidence therapeutic targets and to develop a clinical prognostic tool. Methods: We employed a comprehensive systems biology framework that integrates univariate and multivariate analyses, bidirectional Mendelian Randomization (MR), Bayesian colocalization, and multi-omics validation, encompassing transcriptomics, proteomics, and methylomics. Utilizing extensive datasets from GWAS, TCGA, and CPTAC cohorts, we systematically evaluated 30 metabolic and inflammatory exposures. Subsequently, a machine learning-based LASSO-Cox regression model was developed to translate epigenetic findings into a prognostic risk score. Results: MR analysis revealed smoking initiation (\((OR=1.64--1.86)\)) and Body Mass Index (BMI) as predominant causal risk factors. Exploratory mediation analysis suggested a nominally significant role for C-reactive protein (CRP), which mediates approximately 20.15% of the BMI-driven risk for Lung Squamous Cell Carcinoma (LUSC) (nominal \((P CDK11A , a novel cell-cycle regulator, and MFAP2 . Notably, MFAP2 exhibited a dissociation between transcript and protein expression, suggesting complex post-transcriptional regulation within the tumor microenvironment. Clinically, our machine-learning derived DNA methylation risk score achieved a C-index of 0.782 within the training cohort, significantly surpassing traditional TNM staging. Importantly, the prognostic signature was successfully validated for Recurrence-Free Survival (RFS) in an independent external cohort (GSE39279, \((n=122)\)), where the continuous risk score was confirmed as a significant prognostic factor by univariate Cox regression (\((\text{HR} = 0.9972, P = 0.0142)\)). Although the association with Overall Survival (OS) was not significant (Log-rank \((P = 0.92)\)), the model demonstrated robust clinical utility for recurrence risk. Conclusions: This study elucidates the causal architecture underlying metabolic-driven lung cancer, highlighting the inflammation-coagulation axis as a pivotal therapeutic target. The developed methylation-based risk score provides a robust, actionable tool for precision recurrence risk stratification, effectively bridging the gap between genomic discoveries and clinical implementation.</p>
-<a class="btn dark" href="https://doi.org/10.21203/rs.3.rs-8289015/v1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693445v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Ephrin inhibition disrupts stromal-cancer crosstalk and reduces metastasis in pancreatic cancer</h2>
+<p class="paper-authors">Bolton, C. L., O'Sullivan, R., Fuertes-Marin, G., +9 authors, Grose, R. P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cancer associated fibroblasts (CAFs) are critical drivers of disease progression and metastasis within the pancreatic tumour microenvironment. Using a 3D spheroid model of CAF-led invasion, we identified complementary expression of ephrin family receptors (EPHB2) and ligands (EPHRINB2) between cancer cells and CAFs, implicating this bidirectional signalling family in tumour progression. Through pancreatic stellate cell-derived CAFs isolated from genetically modified mouse models, where EphrinB was either lacking or modified by a gain-of-function mutation, we identified both forward and reverse signalling to be required for invasion. In a syngeneic murine orthotopic model of pancreatic cancer, we show that first-in-class tetramerisation inhibitors of Eph/Ephrin interactions can reduce local invasion in primary tumours, and significantly decrease metastatic tumour spread across multiple organ sites. Our data highlight Ephrin signalling as a critical nexus for CAF-cancer crosstalk and establish a foundation for the clinical development of targeted EPH-EPHRIN inhibitors to counter metastatic invasion.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693406v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Modification of Death receptor-mediated cell death in osteosarcoma cell lines using epigenetic modifiers</h2>
+<p class="paper-authors">Prabhakaran, H. S., Cross, N. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Osteosarcoma is a bone malignancy most prevalent in adolescent populations. Despite advances in multi-agent chemotherapies and surgical procedures, the survival rate remains &lt;30% for patients with metastasis. Tumour necrosis factor-related apoptosis inducing ligand (TRAIL) is a promising anti-cancer agent, but when used as a single-agent, TRAIL-resistance occurs. Anti-Death receptor-4 and -5 agonistic mAbs are TRAIL mimetics proven to have higher specificity towards DR4 and DR5 receptor thus avoiding decoy receptors. However, their efficacy is also limited due to rapid development of resistance. In this study, the epigenetic modifiers Trichostatin A, GSK343 and BIX-01294 were explored in combination with an anti-DR5 agonistic mAb (DR5 mAb) to evaluate their anti-cancer efficacy in osteosarcoma cell lines Saos-2 and MG63. These cell lines are known to be insensitive TRAIL-induced apoptosis due to overexpression of membrane-bound and soluble decoy receptors to TRAIL, but are more sensitive to DR5 mAbs. Trichostatin A, a Histone deacetylase inhibitor (HDACi) demonstrated a synergistic effect in sensitising osteosarcoma cells to DR5 mAb. Conversely, inhibitors of the Histone methyltransferase GSK343 (EZH2i) and BIX-01294 (G9ai) in combination with DR5 mAb had an antagonistic effect on apoptosis induction. The drug combinations were also evaluated in 3D alginate tumour spheroids, and both GSK343 and BIX-01294 inhibited DR5 mAb-mediated apoptosis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693227v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 13, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Microenvironment-Inferred Genotyping: An Exclusionary Classifier for EGFR Amplification When DNA Testing Fails</h2>
+<p class="paper-authors">Baker, E. A., Mehaffy, N. S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> EGFR amplification occurs in approximately 40-50% of glioblastoma (GBM) cases and is critical for treatment selection. However, GBM tissue samples frequently yield insufficient material for comprehensive molecular testing due to extensive necrosis and tissue quality limitations. This affects thousands of patients annually in the United States. We developed a microenvironment-inferred genotyping approach, enabling molecular classification by measuring the "oligodendrocyte desert" effect when direct genetic testing is impossible. Using single-cell RNA-seq data from 102 GBM patients (1.47M cells), we identified oligodendrocyte exclusion patterns associated with EGFR amplification. We developed a 13-feature machine learning classifier and computationally validated it across 540 patients from four independent bulk RNA-sequencing datasets. EGFR-amplified tumors created detectable oligodendrocyte deserts (60-70% depletion, p&lt;0.001). Our exclusionary classifier achieved AUC 0.845 in discovery cohorts and 0.756 average across validation datasets (n=540 patients). With a positive predictive value of 94%, this tool identifies high-confidence candidates for EGFR targeted therapies who would otherwise be excluded from treatment. To our knowledge, this is the first algorithm enabling microenvironment-inferred genotyping from routine RNA-seq data, providing rescue diagnosis for EGFR classification when DNA testing fails.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693431v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
