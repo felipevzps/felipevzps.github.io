@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 13, 2025</span>
+<span class="date">Dec 14, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Vir2vec: A Genome-Wide Viral Embedding</h2>
-<p class="paper-authors">Rancati, S., Arozarena Donelli, P., +10 authors, Marini, S.</p>
+<h2 class="paper-title">Cross-Platform Calibration of Epigenetic Age Between the EPICv2 and MSA Arrays</h2>
+<p class="paper-authors">Tomo, Y., Shoji, T., Nakaki, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Genomic language models (gLMs) have recently emerged as powerful numerical surrogates for DNA, but existing architectures are largely focused on human DNA or trained on limited viral references, and no dedicated benchmark currently exists for viral genome understanding. Here we introduce Vir2vec, a 422-million-parameter, decoder-only gLM obtained by continual pretraining of Mistral-DNA on a rigorously curated pan-viral corpus of 565,747 complete genomes spanning 295 viral species. Vir2vec operates on byte pair encoded DNA subwords and exposes fixed-length genome-level embeddings that are reused across tasks. Additionally, we present vGUE, a unified benchmark for viral representation learning. In vGUE, we precompute Vir2vec embeddings and feed them to simple classifiers (logistic regression, support vector machines, random forests) trained under nested cross-validation, to quantify how well they capture biologically motivated axes of viral variation. Using this framework, vGUE assesses genomic viral prediction tasks across: (i) organism-level discrimination (virus vs non-virus genomes and reads), (ii) genome-wide evolutionary fingerprints (DNA vs RNA viruses, host-range prediction), (iii) intra-genus species separation (HIV-1 vs HIV-2), (iv) fine-grained variant and subtype typing (SARS-CoV-2 lineages), and (v) phenotypic context signal detection (HIV-1 brain vs plasma tropism). Vir2vec attains the highest balanced accuracy across seven out of eight heterogenous classification tasks consistently outperforming both a human-trained genomic foundation model and a viral-specific one. By coupling a pan-viral gLM with a standardized evaluation suite, Vir2vec and vGUE provide an open foundation for future viral genomic models, surveillance tools, and discovery pipelines.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.693901v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Epigenetic clocks are regression models that predict biological age based on the DNA methylation patterns. They are developed using DNA methylation array data; however, systematic differences in the predicted values between the Infinium Methylation Screening Array (MSA) and Infinium MethylationEPIC v2.0 BeadChip (EPICv2) platforms have not been evaluated. We quantified the systematic differences between the MSA and EPICv2 arrays for six major epigenetic clocks (Horvath, Hannum, PhenoAge, GrimAge, GrimAge v2, and DunedinPACE) using $166$ identical human blood samples measured on both platforms. The mean differences (MSA $-$ EPICv2) ranged from $-7.99$ years for PhenoAge to $21.8$ years for the Hannum clock, despite strong correlations between platforms ($r = 0.854$ -- $0.991$). Based on these training data, we developed three linear regression models to correct the MSA-based epigenetic clocks: Model 1 (offset location correction), Model 2 (slope and location correction), and Model 3 (slope and location correction with covariates). Validation on $48$ independent samples measured at a different institution showed that all models reduced cross-platform bias. Although Model 3 tended to achieve the lowest bias; $0.204$ years for PhenoAge and $0.383$ years for GrimAge v2, Model 1, which was the simplest, provided a sufficient correction: $-0.541$ years of bias for PhenoAge and $0.516$ for GrimAge v2. These methods are expected to enable reliable comparisons of epigenetic age across platforms and facilitate large-scale epigenetic studies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693592v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 13, 2025</span>
+<span class="date">Dec 14, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Aligning gene trees with family trees</h2>
-<p class="paper-authors">Serdiuk, A., Moreau, C., +4 authors, Gravel, S.</p>
+<h2 class="paper-title">Rigorous Quantitative Analysis of Nonlinear Uncertain Biomolecular Systems using Validated Methods</h2>
+<p class="paper-authors">PRAKASH, R., Sen, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Relatedness between individuals can be measured at the genealogical level (by describing shared ancestors in a pedigree) or at a genetic level (by describing shared haplotypes across the genome). The shared haplotype structure can be conveniently summarized as a sequence of trees along the genome, where each tree describes the last shared genetic ancestors between individuals at a locus. While many tools exist to infer tree sequences from genetic data, and many large pedigree datasets are available, few tools exist to identify the relationship between the two - finding which genetic ancestor corresponds to which pedigree ancestor, and conversely. In this paper, we propose an algorithm to solve this problem by providing, for each genetic tree, the list of all consistent ancestry paths within a genealogical tree. We also provide variants of the algorithm with moderate robustness to both tree sequence and pedigree errors. We demonstrate the scalability of our approach on the BALSAC genealogical dataset, which includes millions of individuals in Quebec, Canada. We find that 20 carriers usually provide enough information to reliably identify a common ancestor 15 generations ago or find the parent of origin of alleles among probands, but the number of possible ancestry paths within the pedigree can remain large. We apply the method to reconstruct the inheritance of a causal allele for type 1 myotonic dystrophy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.693727v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The paper addresses the critical challenge of accurately characterising steady states in biomolecular systems, which are often complex, nonlinear, multistable and subject to significant uncertainties. Traditional numerical methods often fail to provide complete or guaranteed solutions under these conditions. To overcome these limitations, the research proposes and evaluates the application of interval analysis methodologies. We provided algorithms for interval Newton and interval Krawczyk methods for rigorously bounding all possible steady states (both stable and unstable) in multistable, multidimensional nonlinear systems. This study involves a comparative analysis of these two methods in conjunction with interval bisection and interval constraint propagation. We addressed numerical examples for an array of biologically plausible models, involving both feedback and feedforward gene networks. The work recommends the choice of the most suitable method for various types of biomolecular systems, ultimately offering a robust computational framework to understand cellular functions and design synthetic biological circuits.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.13.693835v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 13, 2025</span>
+<span class="date">Dec 14, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Engineered AAV Capsids with Enhanced Extracellular Vesicle Loading via Rational Design and Directed Evolution</h2>
-<p class="paper-authors">Vorobieva, I., Luchner, M., friedrichsen, H., +7 authors, Gupta, D.</p>
+<h2 class="paper-title">evo3D: a generalised framework for structure-informed evolutionary analysis, implemented in R</h2>
+<p class="paper-authors">Broyles, B. K., He, Q.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Overcoming immune responses and ensuring efficient delivery remain key obstacles to advancing adeno-associated virus (AAV)-based genetic medicines into the clinic. Encapsulating AAVs within naturally secreted extracellular vesicles (EV-AAV) can shield them from neutralising antibodies and increase transduction efficiency; however, wild-type AAV capsids are incorporated into EVs inefficiently, with the percentage of total AAV genomes in the EV-AAV fraction ranging from 0.5% to 12%, depending on AAV serotype. Here, we establish a high-throughput screening platform that links AAV capsid genotype to EV encapsulation phenotype to improve encapsulation efficiency. We combined rational design with directed evolution to engineer AAV9 variants that preferentially sort into EVs. A library of 392,550 AAV9 capsid mutants was generated by inserting Late (L) domains, established EV-sorting motifs, and fully random amino acid inserts in a surface-exposed region of the AAV9 capsid protein. Screening data were analysed using a statistical model-assisted protein selection (SMAPS) workflow, developed as a novel quantitative modelling and selection strategy for protein engineering challenges of this kind. SMAPS functions as a digital twin of the protein variants in our high-throughput screen, allowing us to monitor uncertainty in copy numbers over multiple steps in the experimental workflow. Using SMAPS, we identified five lead hits, which showed up to threefold increased EV-AAV yield compared to wild-type, without altering particle size. Moreover, in vitro transduction experiments demonstrated that the lead AAV9 capsid exhibits substantially higher transduction efficiency compared to wild-type AAV9 and retained functional activity in the presence of neutralising anti-AAV9 antibodies. Collectively, our study: (i) delivers a scalable high-throughput screen for EV-AAV engineering, (ii) introduces the field first statistical model-guided quality-control framework for directed evolution, and (iii) provides best-in-class capsids for EV encapsulation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.693981v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Selection pressures often act at the level of protein structure, yet most evolutionary analyses remain confined to linear sequences. Early structure-informed approaches improved interpretation by mapping single-site metrics onto protein structures, and later methods introduced 3D sliding windows to capture spatial neighbourhoods missed by linear analyses. These frameworks, however, are restricted to predefined statistics and narrowly defined 3D window types, limiting the scope of questions that can be addressed. We developed an R package, evo3D, a generalised framework for structure-informed evolutionary analysis that supports any downstream statistic and scales from simple to complex structures. evo3D extracts structure-informed multiple sequence alignment subsets (spatial haplotypes), making the structure-informed unit of analysis directly available to users. The framework provides fixed-count and fixed-distance spatial windows, supports residue and codon analysis modes, and extends across multimers, interfaces, and multiple structural models through a single wrapper, run_evo3d(). We demonstrate evo3D's utility by performing an epitope-level diversity scan of Hepatitis C virus E1/E2 complex, identifying conserved spatial neighbourhoods missed by linear sliding windows, and by evaluating evo3D's scalability on the octameric Chikungunya virus E1/E2 assembly. By formalising the core components of structure-informed genetic analysis and removing the technical barriers, evo3D streamlines the evaluation of evolutionary patterns directly within 3D structural contexts and we anticipate its wide application in molecular evolution studies. The package is available at github.com/bbroyle/evo3D.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.694041v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 13, 2025</span>
+<span class="date">Dec 14, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Mechanisms of soil carbon preservation illuminated by model mineral-associated organic matter</h2>
-<p class="paper-authors">Sridhar, S., Gao, X., +2 authors, Ajo-Franklin, C. M.</p>
+<h2 class="paper-title">SEEK-VEC: Robust Latent Structure Discovery via Ensemble Topic Modeling</h2>
+<p class="paper-authors">Danning, R., Ke, Z. T., +1 author, Lin, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> A central control on atmospheric CO2 is the stabilization of organic carbon in soils. While there are well-described properties associated with stable soil carbon, such as interactions with minerals and conserved chemical features, determining the mechanisms underlying these properties is challenged by soil complexity and heterogeneity. Here we synthesize a naturally complex, tunable model form of mineral-associated organic matter (LabMAOM) to explore mechanisms of stable soil carbon formation and persistence. We show that mineral association and ambient organic matter synergistically stabilize LabMAOM against microbial decomposition. Moreover, different starting compositions of organic matter yield a conserved final LabMAOM chemical composition consistent with natural soils. Our findings open new mechanistic understanding of stable soil carbon and will be of utility to climate modeling and soil health management.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.694042v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Count data are ubiquitous across many applications in which understanding hidden patterns, or latent structure, is of interest. Topic modeling is a powerful tool for detecting latent structure in count data. However, standard topic modeling methods are often constrained by their restrictive assumptions, susceptible to noise, and sensitive to misspecification of the number of topics, which is particularly of concern when analyzing non-text data. Here, we introduce SEEK-VEC (Spectral Ensembling of topic models with Eigenscore for K-agnostic Vocabulary Embedding and Classification), an ensemble framework for count data that integrates insights from multiple candidate topic models through a spectral ensembling procedure. This approach automatically reinforces signal and mitigates noise to generate a consensus low-dimensional embedding of the data. SEEK-VEC produces prioritization scores and grouping scores that enable variable classification, interactive pattern discovery, and model diagnostics. Through simulations, we demonstrate that SEEK-VEC is robust under realistic settings and outperforms state-of-the-art oracle methods, particularly when signal strength is weak. Applied to diverse real-world datasets, including self-reported psychopathology symptom data, food preference questionnaires, and single-cell transcriptomics, SEEK-VEC reveals latent structures that provide scientifically meaningful insights.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.693799v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,148 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
+<span class="date">Dec 14, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Spatial dissection of ADC/RPT targets defines therapeutic opportunities inrhabdoid tumors</h2>
-<p class="paper-authors">Reitsam, N. G., Fincke, V. E., +10 authors, Johann, P. D.</p>
+<h2 class="paper-title">Single-cell whole-genome sequencing reveals convergent evolution in Burkitt lymphoma</h2>
+<p class="paper-authors">Steemers, A. S., van Roosmalen, M. J., Hagelaar, R., +3 authors, Meyer-Wentrup, F., van Boxtel, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Rhabdoid tumors (RT) are among the most aggressive pediatric malignancies, characterized by early onset, loss of SWI/SNF complex members (SMARCB1 or SMARCA4), and dismal outcomes despite multimodal therapy. Refractory and relapsing RT remain almost uniformly fatal, and targeted or immune-based approaches have yet to demonstrate clinical benefit. To explore novel therapeutic vulnerabilities, we systematically investigated the expression of clinically actionable surface proteins that could serve as targets for antibody-drug conjugates (ADCs), radiopharmaceutical therapy (RPT), or cellular immunotherapies. Based on large-scale transcriptomic analyses, we prioritized FAP, CXCR4, and IL13RA2 and performed comprehensive protein-level validation by immunohistochemistry in an unprecedented cohort of 60 rhabdoid tumors spanning all molecular subgroups (ATRT-TYR, ATRT-SHH, ATRT-MYC, and eMRT). Integrating these data with spatial and single-nucleus transcriptomic profiling, we identified subgroup- and celltype-specific expression patterns, including heterogeneous FAP distribution between stromal and tumor compartments and a distinct IL13RA2-positive rhabdoid cell population with melanosomal and stem-like features. These findings define a set of biologically and clinically relevant surface targets in RT and provide a translational blueprint for rational ADC and RPT target discovery in pediatric cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.692900v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Single-cell transcriptomics reveals a conserved embryonic progenitor in different human cancers</h2>
-<p class="paper-authors">Khozyainova, A., Subrakova, V., +12 authors, Denisov, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cellular plasticity, a critical feature of embryonic development, is often reactivated in cancer, enabling tumor cells to acquire stem-like properties and facilitate uncontrolled growth. Here, we explore the molecular parallels between oncogenesis and early human development by integrating single-cell RNA sequencing data from three distinct cancers (lung adenocarcinoma, melanoma, and medulloblastoma) and embryoid bodies (EBs). By leveraging this integrative approach, we identify conserved progenitor-like cell states shared between oncogenesis and embryogenesis. These clusters exhibit high proliferative potential, enriched for key cell-cycle regulators such as UBE2C, TOP2A, BIRC5, and NUSAP1, and are driven by an E2F-TFDP transcriptional axis. Functional enrichment analyses highlight these clusters' involvement in cell-cycle progression, DNA repair, and mitotic regulation. Trajectory inference via Slingshot further confirms that these proliferative states represent a progenitor-like hub, from which diverse tumor lineages arise. Notably, these clusters are enriched in lung adenocarcinoma and in lung tissue with basal cell hyperplasia, a potential precursor to squamous cell carcinoma. Our findings suggest that the E2F-TFDP-driven proliferative program is a conserved feature of tumor cell plasticity across distinct cancer types, with prospective implications for early detection or therapeutic targeting.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.11.693590v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">From in silico prediction to experimental validation: Identification of drugs and novel synergistic combinations that inhibit growth of inflammatory breast cancer cells</h2>
-<p class="paper-authors">Salim, E. A., Ji, X., +4 authors, Williams, K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Drug repurposing offers a promising approach for identifying novel treatments, especially for rare cancers like inflammatory breast cancer (IBC), an aggressive type with limited therapeutic options. Here, we present a comprehensive validation and verification study of compounds identified through two computational approaches: Literature Wide Association Studies (LWAS) and Gene Reversal Rate (GRR), using orthogonal cell viability assays in 2D models across IBC and non-IBC cell lines. In the SUM149 IBC cell line, repurposed compounds predicted from LWAS achieved a 70% success rate, with several showing nanomolar potency, while those predicted from GRR showed a 38% success rate. Through systematic combination screening in both 2D and 3D-spheroid models, we identified novel synergistic compound pairs targeting crosstalk between IGF1-R, EGFR and PI3K/Akt/mTOR pathways, with high synergy scores across multiple reference models. Using these combinations, western blotting analysis revealed significant suppression in the phosphorylation of key signaling proteins and downstream effectors, while wound healing assays demonstrated reduced cell migration for some combinations, suggesting effective pathway inhibition. To further validate these findings at the transcriptional level, RNA-Seq analysis in SUM149 cells confirmed that the GRR drug combinations significantly reversed the IBC gene expression signature (IBC-GES). These findings not only validated our computational predictions but also identified promising combination strategies that could potentially overcome drug resistance in IBC. Our integrated computational-experimental approach establishes a framework for systematic drug repurposing and highlights novel therapeutic combinations warranting further investigation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693562v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Low-order assemblies drive oncogenic RTK fusion signaling without condensation</h2>
-<p class="paper-authors">Gonzalez-Martinez, D., Mumford, T. R., +6 authors, Bugaj, L. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Receptor tyrosine kinase (RTK) fusions are a large class of oncoproteins found in ~5% of cancers. Key questions remain, however, about how RTK fusions transmit oncogenic signals, including how these largely cytoplasmic proteins activate downstream pathways that originate at the plasma membrane. Fusions are multimeric and can form mesoscale condensates in cancer cells, and condensation has been implicated as an essential mechanism to enable signal transmission from the cytoplasm. However, whether condensates play a causal role, or whether smaller "diffuse" assemblies are sufficient to transduce signals, has been challenging to establish. Here we apply advanced microscopy, single-cell analysis, and synthetic fusions to determine the principles by which multimerization and condensation drive signaling from cytoplasmic RTK fusions. For EML4-ALK, a prominent fusion that forms condensates, we found poor correlation between condensation and signaling. By contrast, EML4-ALK activity was abundant in the diffuse phase, and the kinetics of diffuse-phase activity aligned more closely with downstream Erk signaling than did kinetics of signaling within condensates. Synthetic RTK fusions showed that cytoplasmic ALK or RET fusion dimers, and even constitutively active monomers, were sufficient to induce strong Ras-Erk signaling despite the absence of condensates, and diffuse fusions were sufficient to transform cells in vitro and in subcutaneous tumor models. A panel of various other cancer-driving RTK fusions showed that low-order multimerization was universal across fusions, whereas mesoscale condensation was rare and did not correlate with signaling. Our results suggest that low-order fusion multimerization is sufficient to drive its phosphorylation, which is necessary and sufficient to trigger downstream oncogenic signaling.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693466v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Transcriptomic profiling of epigenetic regulators and metabolic reprogramming in human cholangiocarcinoma</h2>
-<p class="paper-authors">Lopez-Pascual, A., Elurbide, J., +20 authors, Avila, M. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693445v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Ephrin inhibition disrupts stromal-cancer crosstalk and reduces metastasis in pancreatic cancer</h2>
-<p class="paper-authors">Bolton, C. L., O'Sullivan, R., Fuertes-Marin, G., +9 authors, Grose, R. P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cancer associated fibroblasts (CAFs) are critical drivers of disease progression and metastasis within the pancreatic tumour microenvironment. Using a 3D spheroid model of CAF-led invasion, we identified complementary expression of ephrin family receptors (EPHB2) and ligands (EPHRINB2) between cancer cells and CAFs, implicating this bidirectional signalling family in tumour progression. Through pancreatic stellate cell-derived CAFs isolated from genetically modified mouse models, where EphrinB was either lacking or modified by a gain-of-function mutation, we identified both forward and reverse signalling to be required for invasion. In a syngeneic murine orthotopic model of pancreatic cancer, we show that first-in-class tetramerisation inhibitors of Eph/Ephrin interactions can reduce local invasion in primary tumours, and significantly decrease metastatic tumour spread across multiple organ sites. Our data highlight Ephrin signalling as a critical nexus for CAF-cancer crosstalk and establish a foundation for the clinical development of targeted EPH-EPHRIN inhibitors to counter metastatic invasion.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693406v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Modification of Death receptor-mediated cell death in osteosarcoma cell lines using epigenetic modifiers</h2>
-<p class="paper-authors">Prabhakaran, H. S., Cross, N. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Osteosarcoma is a bone malignancy most prevalent in adolescent populations. Despite advances in multi-agent chemotherapies and surgical procedures, the survival rate remains &lt;30% for patients with metastasis. Tumour necrosis factor-related apoptosis inducing ligand (TRAIL) is a promising anti-cancer agent, but when used as a single-agent, TRAIL-resistance occurs. Anti-Death receptor-4 and -5 agonistic mAbs are TRAIL mimetics proven to have higher specificity towards DR4 and DR5 receptor thus avoiding decoy receptors. However, their efficacy is also limited due to rapid development of resistance. In this study, the epigenetic modifiers Trichostatin A, GSK343 and BIX-01294 were explored in combination with an anti-DR5 agonistic mAb (DR5 mAb) to evaluate their anti-cancer efficacy in osteosarcoma cell lines Saos-2 and MG63. These cell lines are known to be insensitive TRAIL-induced apoptosis due to overexpression of membrane-bound and soluble decoy receptors to TRAIL, but are more sensitive to DR5 mAbs. Trichostatin A, a Histone deacetylase inhibitor (HDACi) demonstrated a synergistic effect in sensitising osteosarcoma cells to DR5 mAb. Conversely, inhibitors of the Histone methyltransferase GSK343 (EZH2i) and BIX-01294 (G9ai) in combination with DR5 mAb had an antagonistic effect on apoptosis induction. The drug combinations were also evaluated in 3D alginate tumour spheroids, and both GSK343 and BIX-01294 inhibited DR5 mAb-mediated apoptosis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693227v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 13, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Microenvironment-Inferred Genotyping: An Exclusionary Classifier for EGFR Amplification When DNA Testing Fails</h2>
-<p class="paper-authors">Baker, E. A., Mehaffy, N. S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> EGFR amplification occurs in approximately 40-50% of glioblastoma (GBM) cases and is critical for treatment selection. However, GBM tissue samples frequently yield insufficient material for comprehensive molecular testing due to extensive necrosis and tissue quality limitations. This affects thousands of patients annually in the United States. We developed a microenvironment-inferred genotyping approach, enabling molecular classification by measuring the "oligodendrocyte desert" effect when direct genetic testing is impossible. Using single-cell RNA-seq data from 102 GBM patients (1.47M cells), we identified oligodendrocyte exclusion patterns associated with EGFR amplification. We developed a 13-feature machine learning classifier and computationally validated it across 540 patients from four independent bulk RNA-sequencing datasets. EGFR-amplified tumors created detectable oligodendrocyte deserts (60-70% depletion, p&lt;0.001). Our exclusionary classifier achieved AUC 0.845 in discovery cohorts and 0.756 average across validation datasets (n=540 patients). With a positive predictive value of 94%, this tool identifies high-confidence candidates for EGFR targeted therapies who would otherwise be excluded from treatment. To our knowledge, this is the first algorithm enabling microenvironment-inferred genotyping from routine RNA-seq data, providing rescue diagnosis for EGFR classification when DNA testing fails.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.10.693431v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Burkitt lymphoma (BL) carries multiple oncogenic drivers yet arises predominantly in children, whose normal cells harbour few age-related mutations. To investigate this paradox, we sought to define the sequence and timing of mutational drivers underlying BL development. Here, we analysed single-cell whole-genome sequencing (WGS) data of 250 paired normal and malignant B-cells from BL patients and integrated this data with 21 bulk WGS samples and an existing dataset of 157 clonally expanded B-cells from healthy individuals. Phylogenetic reconstruction revealed an accelerated accumulation of mutations following the emergence of the most recent common ancestor, leading to the early establishment of extensive genetic intra-tumoral heterogeneity. We further provide evidence that convergent evolution shapes this diversity at both the point mutation- and copy number variation-levels. This in-depth characterisation further establishes BL as a paradigmatic model of tumorigenesis with implications for therapeutic intervention.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.12.692552v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
