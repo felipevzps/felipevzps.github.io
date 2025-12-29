@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 27, 2025</span>
+<span class="date">Dec 28, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Decoupling Central Metabolism from Catabolite Repression Enables Robust Cellulosic Sugar Co-consumption in E. coli</h2>
-<p class="paper-authors">Yano, U., Sarkar, P., Lynch, M. D.</p>
+<h2 class="paper-title">PocketX: Preference Alignment for Protein Pockets Design through Group Relative Policy Optimization</h2>
+<p class="paper-authors">Fan, Y., He, Z., +4 authors, Zhang, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Lignocellulosic biomass is the most abundant and sustainable carbon source for bioproduction, but its efficient utilization is hampered by the heterogeneous mixture of sugars released upon hydrolysis. Most industrial strains consume these mixed sugars sequentially due to strong regulation and cross-inhibition, leading to complex processes and reduced carbon efficiency. To address this, we leverage a novel central metabolism that decouples central carbon flux from native regulatory feedback by employing a Gluconate-Bypass of glycolysis. We demonstrate that the Gluconate-Bypass effectively alleviates feedback regulation in E. coli, enabling co-consumption of glucose and xylose. Further strain engineering leads to the first robust co-utilization of four major lignocellulosic sugars: glucose, xylose, arabinose, and galactose. By decoupling central carbon flux from native regulatory feedback, this architecture provides a feedstock-agnostic platform that maintains high and robust consumption regardless of extreme fluctuations in sugar composition.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696699v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Designing protein pockets that target specific ligands is crucial for drug discovery and enzyme engineering. Although deep generative models show promise in proposing high-quality pockets, they are usually trained purely to match the data distribution and therefore overlook key biophysical properties, such as binding affinity, expression, and solubility, that ultimately determine developability and success. We introduce PocketX, an online reinforcement learning framework that explicitly aligns a generative model with desired biophysical properties. The framework first trains a base model that co-designs pocket structures and sequences conditioned on a target ligand, and then fine-tunes this model with Group Relative Policy Optimization (GRPO) to reward the desired attributes. Because GRPO employs group-relative rewards, it produces lower-variance policy updates, resulting in more stable and efficient learning than competing alignment strategies. Evaluated on the CrossDocked2020 benchmark, PocketX surpasses existing methods in metrics such as binding energy and evolutionary plausibility. Ablation studies further show that GRPO outperforms alternative alignment strategies, including Direct Preference Optimization (DPO), confirming GRPO's effectiveness for biophysical property alignment.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696754v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,186 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 27, 2025</span>
+<span class="date">Dec 28, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Fitness Landscape for Antibodies 2: Benchmarking Reveals That Protein AI Models Cannot Yet Consistently Predict Developability Properties</h2>
-<p class="paper-authors">Chungyoun, M., Gray, J. J.</p>
+<h2 class="paper-title">GenoME: a MoE-based generative model for individualized, multimodal prediction and perturbation of genomic profiles</h2>
+<p class="paper-authors">Wei, J., Xue, Y., +1 author, Gao, Y. Q.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> A prominent application of machine learning in therapeutic antibody design is the development of models that can generate or screen antibody candidates with a high probability of success in manufacturing and clinical trials. These models must accurately represent sequence-structure-function relationships, also known as the fitness landscape. Previous protein function benchmarks examine fitness landscapes across diverse protein families, but they exclude antibody data. Here, we introduce the second iteration of the Fitness Landscape for Antibodies (FLAb2), the largest public therapeutic antibody design benchmark to date. The datasets collected in FLAb2 contain developability assay data for over 4M antibodies across 32 studies, encompassing seven properties of therapeutic antibodies: thermostability, expression, aggregation, binding affinity, pharmacokinetics, polyreactivity, and immunogenicity. Using the curated data, we evaluate the performance of 30 artificial intelligence (AI) and biophysical models in learning these properties. Protein AI models on average do not produce statistically significant correlations for most (80%) of developability datasets. No models correlate with all properties or across multiple datasets of similar properties. Zero-shot predictions from pretrained models are incapable of accurately predicting all developability properties, although several models (IgLM, ProGen2, Chai-1, ESM2, ISM, IgFold) produce statistically significant correlations for multiple datasets for thermostability, expression, binding, or immunogenicity. Fine-tuning with at least 10^2 points improves performance on thermostability, aggregation, and binding, but polyreactivity and pharmacokinetics lack enough data for significance. Yet it is humbling to observe that given enough developability data (10^3 points), a fine-tuned one-hot encoding model can match the performance of fine-tuned billion-parameter pretrained models. Training data composition influences performance more than model architecture, and intrinsic biophysical properties (thermostability) are more readily learned than extrinsic properties (immunogenicity, pharmacokinetics). Controlling for germline distance with partial correlation reveals that protein language models draw substantially on evolutionary signal; on average, germline edit distance accounts for 40% of their apparent predictive power. FLAb2 data are accessible at https://github.com/Graylab/FLAb, together with scripts that allow researchers to benchmark, compare, and iteratively improve new AI-based developability prediction models.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696706v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DEEPGEOSEARCH: LLM-POWERED SCHEMALESS RETRIEVALFOR BIOMEDICAL DATA DISCOVERY</h2>
-<p class="paper-authors">Singh, D., Jatav, S., +2 authors, Luthra, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Public biomedical repositories contain extensive, valuable datasets, yet identifying datasets that precisely match specific study requirements remains inefficient. Conventional keyword- and schema-based systems frequently fall short when queries encompass multiple biological and experimental facets. To address this, we developed DeepGEOSearch, an LLM-powered, schema-less retrieval system that interprets dataset text directly rather than relying solely on predefined metadata fields. The system extracts key study attributes, harmonizes terminology across sources, and ranks datasets by contextual alignment with natural-language queries while providing verifiable evidence for each match. In this work, we applied DeepGEOSearch for the Gene Expression Omnibus (GEO). The framework is repository-agnostic and can integrate new metadata sources without manual relabeling. This design enables complex compositional queries that existing tools cannot support. In evaluations against strong baselines using a curated evaluation benchmark comprising a mix of query complexities, DeepGEOSearch achieved more than 90% precision and best recall, with the largest performance gains observed on complex, real-world queries. DeepGEOSearch consistently identifies relevant datasets overlooked by conventional search tools, accelerating dataset discovery and improving reuse of public biomedical data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696662v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Gray bats spatially segregate when navigating flight with conspecifics in complex environments</h2>
-<p class="paper-authors">Aung, E., Abaid, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Bats are fast fliers with great maneuverability. Many species sense and communicate through echolocation, relying on acoustic signals in the environment. Bats also form large colonies, which necessitates that they fly in groups. When the group size increases or obstacles are in their flight paths, the acoustic space can become cluttered, posing a non-trivial challenge for navigation. How do they interact with their environment and conspecifics, and how do they balance social and environmental cues? Recent research has uncovered individual adaptations to calling and flight patterns when flying in the groups or avoiding obstacles. Studies also suggest coordination when foraging, as well as strategies used by the group to mitigate acoustic clutter. However, there has yet to be a study on how bats weigh different navigational tasks when flying in spatially complex environments. Here, we collected stereoscopic video data on a wild colony of gray bats, textit{Mytotis grisescens}, navigating their usual foraging flight paths in the presence of novel obstacles. We find that bats tend to stay close to a wall, but space out when flying in groups. We developed a data-informed agent-based model which revealed that their social repulsive behavior is strengthened when challenged to navigate novel obstacles.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.26.696615v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Moving from Association to Causation: Instrumental factor models for causal inference in high-dimensional multi-omics data</h2>
-<p class="paper-authors">Mishra, A. K., Badri, M., +4 authors, Aksenov, A. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Distinguishing true causal relationships from mere association is a core challenge in bioinformatics and science in general. Causal inference, in particular in ''-omics" studies, is hindered by high dimensionality, correlated measurements, and pervasive endogeneity arising from unmeasured confounding and complex interventions. We introduce Factor~IV, a supervised instrumental variable (IV) framework for identifying causal effects in high-dimensional biological systems. FactorIV constructs low-dimensional instrumental factors via a sparse low-rank decomposition of the instrument-exposure map, yielding an identifiable first stage even when either/both endogenous and instrumental variables are high-dimensional. Under standard IV assumptions, these factors remain orthogonal to outcome noise while capturing coordinated, perturbation-driven biological variation. The framework supports generalized first-stage models, including Gaussian, Bernoulli and negative binomial likelihoods. Simulation studies demonstrate accurate recovery of factor-level and feature-level causal effects under linear and generalized settings, with robustness to correlated errors and hidden confounding. To illustrate biological discovery, we applied FactorIV to a mouse hepatocellular carcinoma model and the DIABIMMUNE infant cohort. We demonstrate how FactorIV uncovers mechanistically interpretable causal structure beyond association-based analyses.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.26.696613v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">SuperFocus enables whole-slide cell-level spatial omics from spot-based measurements and histology across modalities</h2>
-<p class="paper-authors">Lu, Y., Enninful, A., +5 authors, Ma, Z.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial omics data acquisition is constrained by an inherent trilemma: balancing experimental cost, spatial resolution, and profiling scope (in terms of both plexity and field of view). Currently, spot-based technologies coupled with histological images represent one of the most scalable solutions, yet they lack single-cell precision and are often limited in field of view for omics. Here, we introduce SuperFocus, an AI-powered framework that predicts omics features with high fidelity for individual cells across whole-slide images from spot-level omics data acquired on the same or adjacent slides. It substantially relaxes the trilemma by achieving single-cell resolution and whole-slide field of view without increasing experimental cost or sacrificing plexity. SuperFocus implements a novel constrained cascading imputation scheme to minimize hallucination and outputs two per-feature quality-control scores that flag potentially unreliable predictions for each feature. When predicting for cells outside the profiled field of view, SuperFocus additionally provides a prediction-credibility score for each cell that prevents overconfidence when relevant histological patterns are undersampled or absent from the training data. We validate the fidelity of SuperFocus by benchmarking against multiple ground-truth single-cell and subcellular resolution spatial datasets across different platforms, demonstrating highly concordant cell-level feature recovery. We evaluate SuperFocus on both spatial transcriptomics and spatial epigenomics modalities and observe consistent performance over diverse platforms, tissues, and conditions. We demonstrate its utility by resolving the MALT lymphoma microenvironment at single-cell resolution using spot-level Patho-DBiT data, and by performing single-cell resolution motif analysis of the human hippocampus using spot-level spatial ATAC-seq. Overall, SuperFocus provides an effective in silico solution to the spatial omics trilemma, empowering single-cell-resolved spatial analysis from standard spot-level inputs and histological images.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.26.696575v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Spontaneous cancer regression as inversion of spontaneous cancer progression: Malignant melanoma remission as a case-study towards clinical applicability</h2>
-<p class="paper-authors">Kumari, B., Misra, A., +3 authors, Roy, P. K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The spontaneous cancer regression process (SCR) a rather rare paradoxical natural phenomenon, shows that malignant tumors can episodically undergo complete permanent elimination without treatment, and thus may be used for gaining clues to incisive therapeutic innovations. SCR of malignant breast tumors occurs subclinically across human populations (~22% rate), according to Scandinavian and Wisconsin Screening Registries (monitoring 0.33million and 2.95million population respectively). SCR occurs in discoid melanomas (~12% rate). SCR process has high novelty with no toxicity nor recurrence, and duplicating SCR process is indeed clinically desirable. We aim to probe SCR using melanoma as illustrative pilot-study, and identify candidate leads that may mimic SCR on the tumor. We investigated molecular biological of melanoma, finding two reciprocal phases: spontaneous-progression and spontaneous-regression, and showed driver genes for melanoma SCR. Then, we pursued network pharmaco-informatics analysis. We found that spontaneous melanoma eradication shows an unexpected finding, in distinct contrast to the prevalent view that immunological processes and immunotherapy are critical for melanoma regression, than targeting DNA. We found that in contradistinction, it is DNA interference process that is primary route for melanoma regression, while anti-tumor immune activation is only secondarily needed. We observed that targeting two pathways (kinase-system, inositide-system) by inhibiting two genes, arrested melanoma-progression phase, and activated the reverse phase, melanoma-regression. We investigated the interactions of possible candidate leads, indicating significant therapeutic potency. Our findings underscore the high impact possibility for leveraging the anomalous phenomenon of spontaneous cancer regression as a general oncological principle for probing targeted therapeutic interventions, with substantial clinical potentials.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696663v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Phenotypic Plasticity and Competition Shape Therapy Sequencing in HER2+/HER2 Breast Cancer: A Mathematical Framework</h2>
-<p class="paper-authors">Gavrilova, A., Jackson, T. L., Rahman, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Tumour heterogeneity and phenotypic plasticity are major drivers of treatment failure in cancer, enabling rapid adaptation under therapeutic pressure. In HER2-positive (HER2+) breast cancer, tumours often contain both HER2+and HER2-negative (HER2-) cells whose interactions complicate schedule design. We develop a compact ordinary differential equation framework for intratumoral HER2+/- dynamics that integrates phenotypic plasticity with density-dependent growth and inter-phenotype competition. Phenotype-specific therapies are incorporated through simple pharmacodynamic surrogates: Paclitaxel chemotherapy acting primarily on HER2+ cells and Notch-pathway inhibition targeting HER2- cells. We use the model to compare staggered and simultaneous treatment schedules. The results show that treatment order and relative intensity critically shape long-term tumour composition. Targeted-first schedules can exhibit competitive release, whereby subsequent aggressive chemotherapy unintentionally favours HER2- expansion. In contrast, simultaneous initiation suppresses both phenotypes more effectively and avoids strong rebound. These findings highlight the importance of ecological structure in therapy design and support simultaneous combination therapy followed by targeted maintenance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696676v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Pan-cancer tumor classification by a holistic tumor microenvironment atlas</h2>
-<p class="paper-authors">Qin, S., Xiao, D., +16 authors, Zhang, Z.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The tumor microenvironment (TME) heterogeneity presents a major bottleneck to effective cancer immunotherapies. We address this by establishing a pan-cancer tumor classification system based on the holistic TME cellular components. First, using single-cell transcriptomes from 1,271 patients across 26 cancer types, we compile a TME cellular atlas, leading to the identification of recurrent cell states and multicellular modules across cancer types. Among these, we highlight a type I interferon (IFN-I)-related multicellular module, including IFIT1+ tumor-associated macrophages, as a critical contributor to immune-activation TMEs. From a holistic perspective, pan-cancer TMEs exhibit trichotomous patterns predominantly driven by T, myeloid, and stromal compartments. Leveraging fine-grained TME cellular composition, we further stratify all tumors into 10 stable groups. These groups display varying responses to immune checkpoint blockade (ICB), and each rationally selected therapeutic strategy specifically perturbs the corresponding expression signature. Our pan-cancer tumor classification scheme reveals the underlying patterns of TME heterogeneity and provides a framework for stratifying patients, guiding treatment selection, and developing novel therapeutic options.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696641v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A gastric microbial chromatin remodeler drives gastric cancer progression and immune evasion by reprogramming the host epigenome</h2>
-<p class="paper-authors">Xie, X., Wei, Y., +16 authors, Lee, M.-H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Emerging evidence highlights the crucial role of microbial communities in modulating cancer development and progression. In gastric cancer (GC), we identify Streptococcus anginosus (SA) as a tumor-resident oncobacterium that drives both tumor progression and immune evasion. We define a novel mechanism in which SA secretes extracellular vesicles (saEVs) that translocate the bacterial chromatin remodeler saSNF2 into host cell. There, saSNF2 partners with host transcription factor TEAD1--through its ATPase activity and participation in BAF complex assembly--to coordinately activate oncogenic transcription. This transkingdom interaction upregulates the palmitoyltransferase ZDHHC11, which in turn stabilizes PD-L1 via palmitoylation to establish an immunosuppressive niche, while also amplifying other TEAD1 target genes to fuel tumor progression. Functionally, saEVs promote tumor growth and limit CD8+ T-cell infiltration in vivo. Strikingly, pharmacological inhibition of ZDHHC11 reverses immune evasion and synergizes with anti-PD-1 checkpoint blockade. Our results establish SA as a multifaceted driver of GC and reveal the saSNF2-ZDHHC11 axis as a promising target to potentiate immunotherapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.26.696631v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Dec 27, 2025</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">STEAP4+ neutrophils: a promising circulating biomarker for lung metastasis</h2>
-<p class="paper-authors">Ai, C., Wu, H., +13 authors, Zhang, Z.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> As the leading contributor to cancer-related mortality, metastasis often evades detection until advanced stages, underscoring the critical need for early predictive biomarkers. Neutrophils are naturally circulating sentinels that have been implicated in pioneering pre-metastatic niche formation in distant organs. Nevertheless, their heterogeneity within evolving metastatic microenvironments remains poorly characterized. Here, through dynamically delineating neutrophil subsets via single-cell transcriptomics, we identified a conserved feature of lung metastasis in breast cancer and other cancer models. Among the core genes, a cell surface marker, STEAP4, was selected and validated to indicate lung metastases at both RNA and protein levels. In both humans and mice, these STEAP4+ neutrophils were detectable not only in lung metastatases but also in the circulation. Clinically, the abundance of circulating STEAP4+ neutrophils robustly discriminates patients with lung metastasis from those with localized primary tumor. Our findings uncover STEAP4+ neutrophils as a promising biomarker and lay the groundwork for a non-invasive, blood-based diagnostic strategy for metastatic disease.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.27.696660v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The non-coding genome operates through a complex, multiscale regulatory system where regulated gene expressions are closely associated with cell-type-specific histone modifications, transcription factor binding and 3D conformation. Developing computational models that can integrate these patterns to predict and interpret the regulatory system remains challenging. Here, we present GenoME, a Mixture of Experts (MoE)-based generative model that uses DNA sequence and cell-type-specific ATAC-seq signals to predict a unified genomic profile encompassing epigenomics, transcriptomics, and chromatin architecture at base-pair to kilobase resolutions. GenoME enables multiscale predictions for held-out genomic regions and, critically, generalizes to predict the full regulatory landscape of unseen or individualized cell types from a single ATAC-seq input. We equip GenoME with an in silico perturbation framework that accurately forecasts the multimodal consequences of genetic perturbations and identifies functional enhancer-promoter connections, outperforming specialized models like Activity-by-Contact. These predictions can also be used to decipher the transcription factor grammar of cell-type-specific enhancers. GenoME thus provides a versatile, all-in-one platform for generative modeling, cross-cell-type generalization, and causal mechanistic investigation of the multiscale regulatory genome.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696482v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
