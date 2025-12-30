@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 28, 2025</span>
+<span class="date">Dec 29, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PocketX: Preference Alignment for Protein Pockets Design through Group Relative Policy Optimization</h2>
-<p class="paper-authors">Fan, Y., He, Z., +4 authors, Zhang, H.</p>
+<h2 class="paper-title">MetaPaCS: A novel meta-learning framework for pancreatic cancer subtype identification</h2>
+<p class="paper-authors">Peterson, N. B., Sun, M., +2 authors, Wan, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Designing protein pockets that target specific ligands is crucial for drug discovery and enzyme engineering. Although deep generative models show promise in proposing high-quality pockets, they are usually trained purely to match the data distribution and therefore overlook key biophysical properties, such as binding affinity, expression, and solubility, that ultimately determine developability and success. We introduce PocketX, an online reinforcement learning framework that explicitly aligns a generative model with desired biophysical properties. The framework first trains a base model that co-designs pocket structures and sequences conditioned on a target ligand, and then fine-tunes this model with Group Relative Policy Optimization (GRPO) to reward the desired attributes. Because GRPO employs group-relative rewards, it produces lower-variance policy updates, resulting in more stable and efficient learning than competing alignment strategies. Evaluated on the CrossDocked2020 benchmark, PocketX surpasses existing methods in metrics such as binding energy and evolutionary plausibility. Ablation studies further show that GRPO outperforms alternative alignment strategies, including Direct Preference Optimization (DPO), confirming GRPO's effectiveness for biophysical property alignment.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696754v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> As the third leading cause of cancer related deaths in the United States, pancreatic cancer (PaC) is a highly heterogenous malignancy that can be divided into a multitude of potential subtypes, with the main 4 consisting of aberrantly differentiated endocrine exocrine (ADEX), immunogenic, progenitor, and squamous. Each PaC subtype is characterized by their unique molecular pathways and therapeutic characteristics. Identifying PaC molecular subtypes is essential for downstream patient risk stratification and tailored treatment design. Conventional wet-lab approaches for PaC subtyping like microdissection, histopathological studies or molecular profiling are often laborious, costly and time-consuming. To address these concerns, we present MetaPaCS, a novel meta-learning framework to accurately identify PaC subtypes based on transcriptomics data only. Specifically, after preprocessing, the transcriptome-based feature vectors were classified by 10 base machine learning (ML) classifiers, whose prediction outputs were then combined with the initial preprocessed feature vectors to constitute a new set of ensemble feature vectors for a meta-learning model. Our meta-learning model could learn and leverage the diversity of different base classifiers to boost the prediction performance beyond any single ML model. Results based on 100 times ten-fold cross validation tests on benchmarking datasets demonstrated that MetaPaCS performed significantly better than existing state-of-the-art methods for PaC subtyping. In addition, our meta-learning model remarkably outperformed each individual base classifier, demonstrating that MetaPaCS could combine diverse results from multiple base classifiers to boost the ensemble performance. We believe that MetaPaCS is a promising tool for characterizing PaC subtypes and will have positive impacts on downstream risk stratification and personalized treatment design for PaC patients.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696875v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,262 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Dec 28, 2025</span>
+<span class="date">Dec 29, 2025</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">GenoME: a MoE-based generative model for individualized, multimodal prediction and perturbation of genomic profiles</h2>
-<p class="paper-authors">Wei, J., Xue, Y., +1 author, Gao, Y. Q.</p>
+<h2 class="paper-title">LinearCapR: Linear-time computation of per-nucleotide structural-context probabilities of RNA without base-pair span limits</h2>
+<p class="paper-authors">Otagaki, T., Hosokawa, H., +3 authors, Asai, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The non-coding genome operates through a complex, multiscale regulatory system where regulated gene expressions are closely associated with cell-type-specific histone modifications, transcription factor binding and 3D conformation. Developing computational models that can integrate these patterns to predict and interpret the regulatory system remains challenging. Here, we present GenoME, a Mixture of Experts (MoE)-based generative model that uses DNA sequence and cell-type-specific ATAC-seq signals to predict a unified genomic profile encompassing epigenomics, transcriptomics, and chromatin architecture at base-pair to kilobase resolutions. GenoME enables multiscale predictions for held-out genomic regions and, critically, generalizes to predict the full regulatory landscape of unseen or individualized cell types from a single ATAC-seq input. We equip GenoME with an in silico perturbation framework that accurately forecasts the multimodal consequences of genetic perturbations and identifies functional enhancer-promoter connections, outperforming specialized models like Activity-by-Contact. These predictions can also be used to decipher the transcription factor grammar of cell-type-specific enhancers. GenoME thus provides a versatile, all-in-one platform for generative modeling, cross-cell-type generalization, and causal mechanistic investigation of the multiscale regulatory genome.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696482v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: RNA molecules adopt dynamic ensembles of secondary structures, where the local structural context of each nucleotide--such as whether it resides in a stem or a specific type of loop--strongly shapes molecular interactions and regulatory function. Structural-context probabilities therefore provide a more functionally informative view of RNA folding than the minimum free energy structures or base-pairing probabilities. However, existing tools either require O(N3) time or employ span-restricted approximations that omit long-range base-pairs, limiting their applicability to large and biologically important RNAs. Results: We introduce LinearCapR, enabling linear-time, span-unrestricted computation of structural-context marginalized probabilities, using beam-pruned Stochastic Context Free Grammar-based computation. LinearCapR retains global ensemble features lost by span-limited methods and yields superior predictive power on bpRNA-1m(90) dataset, especially for multiloops and exterior regions, as well as long-distance stems. LinearCapR supports analysis of long RNAs, demonstrated on the full genome of SARS-CoV-2. Conclusions: LinearCapR provides the first base-pair-span-unrestricted, linear-time framework for RNA structural context analysis, retaining key thermodynamic ensemble features essential for functional interpretation. It enables large-scale studies of viral genomes, long non-coding RNAs, and downstream analyses such as RNA-binding protein site prediction. Availability: The source code of LinearCapR is available at https://github.com/hoget157/LinearCapR.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.26.696559v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrative metagenomics and structural bioinformatics identify explainable gut microbial variants associated with Crohns disease</h2>
+<p class="paper-authors">Khan, N., Nasir, M. M., +5 authors, Kayani, M. U. R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Metagenomics has revealed disease-associated shifts in microbial taxa and functions in inflammatory bowel disease (IBD) patients. However, the role of genomic variation in gut commensals remains poorly understood. Here, we integrated metagenomic profiling, variant calling, and structural bioinformatics to identify disease-associated variants in the gut microbes. Crohns disease (CD) and ulcerative colitis (UC) showed significant negative associations with Bacteroides uniformis, Bacteroides vulgatus, and Eubacterium rectale. These bacteria exhibited 190,712 single-nucleotide polymorphisms, including 479 CD-specific and 235 UC-specific variants. Variant prioritization identified a CD-specific Val170Leu substitution in the conserved starch-binding domain of the Starch Utilization System D (SusD) protein in B. uniformis. Structural modeling and cyclodextrin docking indicated reduced binding affinity in the mutant, while 200-ns molecular dynamics simulations showed stable ligand retention only in the wild type. These findings suggest that impaired starch metabolism driven by SusD variation may contribute to B. uniformis depletion in CD and demonstrate the value of integrating metagenomics with structural analyses to identify functionally relevant microbial variants.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696894v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A Mechanism-Aware Dual Attention Deep Model for Molecular-Protein Binding Affinity Prediction with Enhanced Generalizability and Interpretability</h2>
+<p class="paper-authors">Brown, R., Thompson, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate prediction of molecular-protein binding affinity (MPBA) is paramount in drug discovery, yet current computational models often lack generalizability, interpretability, and explicit mechanistic understanding. To address these limitations, we introduce BindMecNet (Binding Mechanism Network), a novel mechanism-aware, multi-scale deep model. BindMecNet's core innovation lies in its Interfacial Interaction Prediction Module, which explicitly predicts an atom-residue level interaction map, serving as a crucial mechanistic inductive bias. This map guides a Mechanism-Aware Dual Attention Interaction Module, ensuring that information exchange between protein and ligand representations is focused on genuinely interacting regions, fostering a deeper understanding of binding mechanisms. We employ a robust two-stage training strategy: initial pre-training on PDBBind with a multi-task loss (affinity and interaction prediction), followed by fine-tuning on challenging generalization datasets using predicted protein and ligand structures. Our comprehensive evaluations on unseen protein families using predicted binding conformations demonstrate BindMecNet's superior performance, significantly outperforming state-of-the-art deep learning baselines. Ablation studies confirm that both the PDBBind pre-training and the explicit mechanistic inductive bias are critical for achieving this enhanced generalizability and accuracy. Furthermore, BindMecNet's predicted interaction maps offer valuable, interpretable insights into binding hotspots, paving the way for more rational and mechanism-driven drug design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696866v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Semi-rational Engineering of Terminal Deoxynucleotidyl Transferase for High-efficiency Enzymatic de Novo DNA Synthesis</h2>
+<p class="paper-authors">Zhang, C., He, Z., +4 authors, Li, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The 21st century has witnessed rapid advancements in synthetic biology, with DNA synthesis emerging as a foundational technology. Conventional phosphoramidite-based methods face significant limitations, including short DNA elongation lengths (&lt;300 nt), hazardous chemical waste, and low stepwise incorporation efficiency. Enzymatic DNA synthesis using terminal deoxynucleotidyl transferase (TdT) offers a promising alternative, enabling kilobase-scale assembly with greater efficiency and minimal environmental impact. Here, we identified Bos taurus TdT (BtTdT) through UniProt database mining as a catalytically active scaffold for natural and 3'-modified dNTPs. Comprehensive characterization of BtTdT's enzymatic properties--including pH, temperature, metal ion dependence, and substrate specificity--revealed its optimal conditions. Truncation of the BRCT domain generated variants with enhanced activity compared to wild-type BtTdT. Guided by AlphaFold3-predicted structural models, we engineered a quintuple mutant (M5: Bt15AAR336L/K338G/L397M/E456S/D395G) optimized for 3'-ONH2-dNTP incorporation. M5 exhibited 30-fold activity enhancement relative to the triple mutant M3 (Bt15AAR336L/K338G/L397M) and achieved stepwise incorporation efficiency exceeding 98% in de novo synthesis of 10-nt ssDNA, demonstrating its potential for scalable enzymatic DNA synthesis. This work establishes a rational framework for TdT engineering through rational domain truncation and computational design, showing potential toward industrial-scale enzymatic DNA manufacturing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696827v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Design-of-Experiments for Nonlinear, Multivariate Biology: Rethinking Experimental Design through Perturb-seq</h2>
+<p class="paper-authors">Okano, Y., Ishikawa, T., +2 authors, Sakurada, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Design of experiments (DOE) principles are increasingly applied to biological assays, yet it remains unclear whether their foundational assumption, orthogonal decomposition, holds in nonlinear biological systems. We addressed this question using Perturb-seq as a case study. By benchmarking a design commonly used in Perturb-seq and related experiments against the orthogonal Plackett-Burman (PB) design via simulations, we uncovered a counter-intuitive phenomenon: while orthogonal designs generally excel, the multicollinearity inherent to the common design is functionally advantageous in systems with significant signal amplification. This challenges the blind application of DOE to biology. Based on these findings, we developed the PB suitability index (PBSI), a simple, parameter-free metric that predicts the optimal design solely from network structure. Our work not only provides practical guidelines for Perturb-seq but also establishes a "biology-oriented DOE" framework, bridging the gap between statistical rigor and biological complexity.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696309v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">yallHap: Modern Y-chromosome haplogroup inference with probabilistic scoring and ancient DNA support</h2>
+<p class="paper-authors">Hardie, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The human Y chromosome enables detailed reconstruction of paternal lineages through haplogroup classification. Existing tools for this purpose typically rely on outdated phylogenies, lack ancient DNA handling, or provide limited confidence metrics. Here I present yallHap, a Y-chromosome haplogroup classifier that integrates the YFull phylogenetic tree (185,780 SNPs) with probabilistic scoring, built-in ancient DNA damage filtering, and parallel processing for population-scale studies. Validation on 1,231 high-coverage gnomAD samples achieved 99.9% accuracy (95% CI: 99.5-100%) on GRCh38, and 1,233 samples from 1000 Genomes Phase 3 achieved 99.8% accuracy (95% CI: 99.3-100%). For ancient DNA with moderate variant density (4-10%), Bayesian ancient mode achieves +19.3 pp improvement over heuristic mode (+12 to +24 pp at 1% increments; see Supplementary Table S3), reaching 60-86% accuracy. On full AADR ancient DNA validation (7,333 samples spanning ~45,000 years), this translates to 90.7% overall accuracy (95% CI: 90.0-91.3%) versus 88.3% for heuristic transversions-only mode. At variant densities [≥]10%, both modes reach 97-99% accuracy. yallHap supports multiple reference genomes (GRCh37, GRCh38, T2T-CHM13v2.0), provides detailed quality metrics including optional ISOGG nomenclature output, and offers multi-threaded batch processing for large-scale studies. The tool is designed for integration into modern bioinformatics pipelines, with example wrappers for nf-core/eager [16,17] and Snakemake [18] workflows. The software is open source, available at https://github.com/trianglegrrl/yallHap, and distributed via pip, Bioconda, and Docker.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696719v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">BABAPPAlign: A Multiple Sequence Alignment Engine with a Learned Residue-Level Scoring Function</h2>
+<p class="paper-authors">Sinha, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Multiple sequence alignment (MSA) underpins comparative genomics, evolutionary analysis, and structural inference. Despite extensive methodological development, most widely used alignment algorithms rely on static amino acid substitution matrices that encode global average substitution tendencies and are inherently context-agnostic. Such models are limited in their ability to capture sequence-specific evolutionary constraints, particularly for divergent or low-signal protein families. BABAPPAlign is a multiple sequence alignment framework that replaces static substitution matrices with a learned, context-aware residue-level scoring function while preserving exact affine-gap dynamic programming. Residue compatibility is inferred using a neural scoring model, BABAPPAScore, operating on fixed contextual embeddings derived from a pretrained protein language model. Neural inference is performed entirely outside the dynamic programming recursion, ensuring that alignment optimization remains exact, deterministic, and reproducible. Evaluation on the BAliBASE benchmark using strict family-wise paired comparisons demonstrates statistically significant improvements in sum-of-pairs and total column scores over ClustalW, MUSCLE, MAFFT, and T-Coffee across 386 reference families.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.26.696577v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Connecting the dots: deep learning-based automated model building methods in cryo-EM</h2>
+<p class="paper-authors">Bansia, H., des Georges, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The resolution revolution in single particle cryo-electron microscopy (cryo-EM) has dramatically expanded our structural knowledge of large biomolecular complexes. While high-resolution cryo-EM density maps enable atomic model building, lower-resolution maps can still reveal secondary structures, folds, and domains. When combined with integrative modeling approaches, such data can provide meaningful insights into biomolecular structure and function. Constructing accurate models, however, remains challenging: at low resolutions it is difficult to interpret density maps features reliably, and at high resolutions traditional model-building workflows can become a time-consuming bottleneck. Deep learning, which is transforming problem-solving across scientific domains, offers powerful new tools to automate and accelerate this process. In this review, we discuss deep learning-based methods developed to automate model building in cryo-EM density maps, assessing their impact on streamlining structure determination. Recognizing that biomacromolecular structures exhibit hierarchical organization, we classify these methods according to their ability to model primary, secondary, tertiary, and quaternary structures of biomolecules. Deep learning tools for building atomic models in cryo-EM density maps are further grouped as de novo, where the model is predicted directly from features learned from the cryo-EM density, or hybrid, where it is derived by integrating structural templates with these features. We outline current limitations, including the challenge of obtaining sufficiently large and diverse datasets for training networks to model different types of biomolecules in the cryo-EM density maps, and the open challenge of constructing training sets that capture the conformational heterogeneity often observed in the cryo-EM maps. We conclude by highlighting emerging directions for this rapidly advancing field, which promise to make automated, data-driven model building an integral part of structural biology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.28.696775v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">RAMBO: Resolving Amplicons in Mixed Samples for Accurate DNA Barcoding with Oxford Nanopore</h2>
+<p class="paper-authors">Kolter, A., Hebert, P. D. N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> DNA barcoding, the use of short genetic markers to identify and differentiate species, is a foundational tool in ecological and taxonomic research. The method has scaled rapidly with next-generation sequencing technologies, enabling the processing of thousands of specimens in parallel. Nanopore sequencing offers a flexible, low-cost alternative to other platforms, producing full-length reads in real time and supporting applications in remote settings. However, its comparatively high error rate complicates downstream processing, particularly when PCR co-amplifies multiple templates from a single specimen, reflecting pseudogenes, paralogs, or contaminants. We present a novel pipeline for DNA barcoding that resolves mixed sequence signals from Nanopore reads using unsupervised clustering and staged consensus generation, without relying on curated reference databases, taxonomic priors, or error models. Unlike existing approaches to curate Nanopore sequence data that assume a single dominant amplicon per sample or require large sequence divergence among amplicons, our method distinguishes variants differing by 0.15 percent. It combines column-weighted encodings, UMAP projection, and HDBSCAN clustering, followed by conservative consensus refinement. The pipeline was benchmarked and validated using datasets with known composition, including high-fidelity PacBio sequences. The results show that Nanopore barcoding, when paired with appropriate analysis tools, can recover biologically meaningful variation even in technically complex samples. The pipeline is particularly suited for specimens where divergent templates are often co-amplified, including mitochondrial pseudogenes or multicopy nuclear regions like ITS. As such, it provides a generalizable framework for high-resolution Nanopore analysis of complex amplicon data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.694971v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">IKAROS Gene Regulatory Network Reveal ERG as a Vulnerability in B-cell Acute Lymphoblastic Leukemia</h2>
+<p class="paper-authors">Paculova, H., Richman, A., +12 authors, Frietze, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> B-cell acute lymphoblastic leukemia (B-ALL) is driven by transcriptional dysregulation that impairs B-cell differentiation and sustains leukemic growth. A defining feature of high-risk B-ALL is mutations in IKZF1, which encodes the tumor suppressor IKAROS. Here, we map IKAROS gene regulatory networks in IKZF1-mutated Ph B-ALL using an inducible IKAROS system and multi-omic profiling. IKAROS restoration reprograms chromatin accessibility and transcriptional control, shifting regulation from an ETS-dominated state to one enriched for B-cell lineage factors. Among repressed transcription factors, we identify ERG as a key regulatory node directly bound and antagonized by IKAROS. IKAROS binds regulatory elements near ERG and other progenitor-associated genes, coinciding with reduced ERG expression and repression of transcriptional programs linked to early B-cell developmental stages. Analysis of single-cell multiome data from human B-cell progenitors shows that ERG and IKAROS have opposing stage-specific activities and identifies a developmental stage-specific regulatory region in ERG intron 3 which is bound by IKAROS, and functionally important for ERG gene expression. Functional assays using CRISPRi and ETS inhibitors, along with gene dependency data from DepMap, confirm ERG dependency in IKZF1-deficient B-ALL. Our findings identify ERG as a context-specific dependency in IKZF1-deficient B-ALL, providing a mechanistic basis for the observed mitigation of poor prognosis for IKZF1-mutation in patients with co-occurring ERG deletions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696402v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Thioredoxin interacting protein (TXNIP), a redox regulator, mediates the RAPGEF3/4 signaling dependency in primary melanoma</h2>
+<p class="paper-authors">Teertam, S. K., Singh, M., +8 authors, Setaluri, V.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> RAP guanine exchange factors (RAPGEF3/4) also known as EPAC1/2 (Exchange Protein Activated by cyclic AMP) are important signaling proteins. In cutaneous melanoma, we reported that loss of dependency on RAPGEF3/4 is associated with metastatic progression. Here, we investigated the molecular mechanisms underlying EPAC1/2 signaling in melanoma. Using transformed human melanocytes, chemical inhibition and genetic deletion of EPAC in Braf/Pten mice, we show that EPAC activation is an early event in melanomagenesis and is required for the growth of transformed melanocytes in vitro and melanomagenesis in vivo. Query of the Cancer Genome Atlas (TCGA) and immunohistochemical analysis of melanoma tumors showed that low EPAC mRNA and RAP1-GTP protein correlate with better diseases free survival of patients with primary melanoma. RNAseq analysis of patient-matched primary and metastatic melanoma cells treated with EPAC inhibitor ESI-09 revealed that TXNIP, an important regulator of redox homeostasis, is a downstream effector of EPAC-RAP1 signaling. Our data also show that EPACs promote melanoma growth by regulation of redox homeostasis and mitochondrial reactive oxygen species through activation of mechanistic target of rapamycin complex 1 (mTORC1) that stabilizes hypoxia-inducible factor 1-alpha (HIF-1), a transcriptional activator of TXNIP and glycolytic enzymes. Our data suggest that targeting mechanisms that metastatic melanoma cells employ to bypass EPAC dependency as a potential therapeutic approach for melanoma.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696903v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Hierarchical Machine Learning Uncovers Topological Signatures of Autophagy Regulation by Oral Bacteria in Oral Squamous Cell Carcinoma</h2>
+<p class="paper-authors">Latifi-Navid, H., Akhavan, M., +9 authors, Ghavami, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Oral squamous cell carcinoma (OSCC) progression has been increasingly linked to dysbiosis of the oral microbiome. We hypothesized that pathogenic versus commensal bacteria differentially rewire host autophagy networks to either promote or inhibit OSCC progression. To test this, we constructed host-bacterium autophagy interactomes from KEGG, STRING, and curated databases, identifying key network hubs (e.g., MAPK1, STAT3) via graph-theoretic metrics. We then applied a hierarchical unsupervised machine learning pipeline, combining two-stage principal component analysis with permutation testing and linear discriminant analysis (LDA), to interrogate differences in network topology. This multi-layer approach revealed a clear separation between pro-cancer (pathogenic) and anti-cancer (commensal) bacterial network signatures, with Fusobacterium nucleatum and Streptococcus mitis emerging as dominant global outliers. Pathogenic taxa activated inflammatory-metabolic autophagy signatures (e.g., NFKB1, MYC, ACACA), whereas commensals stabilized kinase-homeostasis signaling (EGFR, PTEN, HSP90AA1). Permutation testing confirmed that these network differences were highly significant and non-random (p &lt; 0.001). We also derived a Dysbiosis Index that robustly distinguished the pro- versus anti-cancer bacterial cohorts with high predictive power. Collectively, our findings highlight oral microbiota-autophagy network topologies as potential biomarkers of OSCC dysbiosis and as novel therapeutic targets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2025.12.29.696881v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multi-omics and machine learning refine HCC molecular subtypes and prognosis based on liquid-liquid phase separation related genes.</h2>
+<p class="paper-authors">Minghao Li, Qi Liu, +7 authors, Shuijun Zhang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accumulating evidence has demonstrated that biological processes associated with liquid-liquid phase separation (LLPS) play a critical role in cancer development. However, the effect of LLPS on hepatocellular carcinoma (HCC) remains largely unknown. In this study, we integrated consensus clustering with an ensemble machine learning framework to establish robust LLPS-related molecular subtypes and a consensus machine learning-driven LLPS-related signature (CMLLS) for HCC. The consensus clustering robustly identified three fundamental LLPS-driven subtypes (LS1-LS3), and the subsequent machine learning integration, which encompassed 101 algorithm combinations, objectively identified the most generalizable prognostic signature from multiple candidate genes. Our analysis revealed that LS3 exhibits the worst prognosis, significant upregulation of cell cycle and epithelial-mesenchymal transition (EMT)-related pathways, and enhanced immune resistance. Conversely, LS2 displays the best prognosis, enrichment in metabolism-related pathways, and increased sensitivity to immunotherapy. The CMLLS demonstrated robust predictive performance in prognostic stratification and effectively distinguished patients who would benefit from immunotherapy. This study provides novel insights into HCC heterogeneity at the LLPS level and offers a powerful tool for individualized treatment decision-making.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41461700/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Dec 29, 2025</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Inverse modeling unveils governing law of mechano-chemical dynamics of epithelial migration.</h2>
+<p class="paper-authors">Yuto Kikuchi, Yoshifumi Asakura, +2 authors, Honda Naoki</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Collective cell migration is fundamental to tissue homeostasis and underlies biological processes such as wound healing and cancer invasion. Previous work has proposed governing equations to describe how chemical and mechanical inputs regulate these movements, but the quantitative validity of such models remains to be thoroughly assessed. Here, we developed a machine-learning framework that infers the governing equation from live-cell imaging data. Applied to epithelial sheet migration driven by MAPK/ERK, our approach quantitatively predicted single-cell movement from local chemical and mechanical cues. Examination of the learned equations further indicated that cells process environmental signals by computing their spatiotemporal derivatives. Moreover, when applied to individual cells, our framework revealed cell-cell heterogeneity in the underlying migratory rules. Our framework offers a powerful tool for predictive modeling of multicellular dynamics in both physiological and pathological settings.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41460949/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
