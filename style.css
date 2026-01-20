@@ -109,6 +109,12 @@ body {
   min-height: 100vh;
 }
 
+/* === HIGHLIGHT == */
+::selection {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
 /* === SIDEBAR === */
 .sidebar {
   position: fixed;
@@ -206,7 +212,7 @@ body {
 .hero h2 {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-normal);
-  opacity: 0.8;
+  color: var(--text-dim);
   margin-bottom: var(--spacing-3xl);
   display: flex;
   justify-content: center;
