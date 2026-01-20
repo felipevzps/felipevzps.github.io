@@ -48,7 +48,13 @@
     // === EXPAND / COLLAPSE PAPERS ===
     document.querySelectorAll('.paper').forEach(paper => {
       paper.addEventListener('click', e => {
-        if (e.target.tagName.toLowerCase() === 'a') return;
+        // Ignora cliques em links
+        if (e.target.closest('a')) return;
+
+        // Ignora clique se houver seleção de texto
+        const selection = window.getSelection();
+        if (selection && selection.toString().length > 0) return;
+
         paper.classList.toggle('expanded');
       });
     });
