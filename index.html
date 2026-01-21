@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- LOADING -->
+  <div id="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-inner"> 
@@ -416,6 +421,20 @@
     });
   });
   </script>
+
+  <!-- LOADING SCRIPT -->
+  <script>
+    window.addEventListener('load', () => {
+      const loadingOverlay = document.getElementById('loading-overlay');
+      loadingOverlay.classList.add('hidden');
+    
+      // remove o elemento loading após a transição
+      setTimeout(() => {
+        loadingOverlay.remove();
+      }, 500);
+    });
+  </script>
+
 </body>
 </html>
 
