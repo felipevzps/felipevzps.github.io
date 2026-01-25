@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Platform Biological Divergence: quantifying gene-level differences between bulk and single-cell transcriptomics in breast cancer</h2>
-<p class="paper-authors">Rashid, M. M., Low, B. H., Selvarajoo, K.</p>
+<h2 class="paper-title">ESMDisPred: A Structure-Aware CNN-Transformer Architecture for Intrinsically Disordered Protein Prediction</h2>
+<p class="paper-authors">Kabir, M. W. U., Dey, A., +1 author, Hoque, M. T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bulk and single-cell RNA-seq offer complementary views of tissue transcriptomes. Nevertheless, pseudo-bulk (PB) profiles derived from single-cell data often differ systematically from true bulk measurements. These discrepancies are rarely quantified at the gene level, despite their impact on downstream analyses. To investigate the PB-bulk disagreement, here we introduce, based on linear mixture models, a gene-centric platform biological divergence (PBD) score. Across matched breast cancer, human adipose, and healthy retinal datasets, PBD stratifies genes into low-PBD "stable proxies" that retain true biological signals and high-PBD "divergent drivers" that shape PB-bulk differences. High-PBD (15-25%) genes show platform-specific signatures: bulk-enriched drivers highlight stromal, immune, and metabolic programs (breast cancer, adipose) and housekeeping/translational pathways (retina), whereas PB-enriched drivers reflect cell-intrinsic and regulatory processes, including immune, endothelial, progenitor, ECM, developmental, and photoreceptor programs. In contrast, low-PBD genes reliably preserve biology-driven variation and improve cross-platform concordance. Overall, the PBD framework reveals systematic gene-level biases between PB and bulk profiles, enabling more accurate comparison and integration of bulk and single-cell transcriptomes across tissues and disease contexts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700982v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Intrinsically disordered proteins (IDPs) lack stable three-dimensional structures, yet play vital roles in key biological processes, including signaling, transcription regulation, and molecular scaffolding. Their structural flexibility presents significant challenges for experimental characterization and contributes to diseases such as cancer and neurodegenerative disorders. Accurate computational prediction of IDPs is important for advancing research and drug discovery, structural biology, and protein engineering. In this study, we introduce ESMDisPred, a novel structure-aware disorder predictor that builds on the representational power of Evolutionary Scale Modeling-2 (ESM2) protein language models. ESMDisPred integrates sequence embeddings with structural information from the Protein Data Bank (PDB) to deliver state-of-the-art prediction accuracy. Model performance is further enhanced through feature engineering strategies, including terminal residue encoding, statistical summarization, and sliding-window analysis. To capture both local sequence motifs and long-range dependencies, we designed a hybrid CNN-Transformer architecture that balances convolutional efficiency with the representational power of self-attention. On CAID3 benchmarks, our latest model achieves ROC-AUC 0.895, AP 0.778, and a max F1 of 0.759, outperforming recent methods. Our results highlight the importance of integrating protein language model embeddings with explicit structural information for improved disorder prediction.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701204v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Exploring the Space of Tumor Phylogenies Consistent with Single-Cell Whole-Genome Sequencing Data</h2>
-<p class="paper-authors">Khan, S. R., Sashittal, P.</p>
+<h2 class="paper-title">Positive-Unlabeled Learning for Predicting Small Molecule MS2 Identifiability from MS1 Context and Acquisition Parameters</h2>
+<p class="paper-authors">Bekbergenova, M., Jiang, T., +1 author, Bittremieux, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Tumors comprise subpopulations of cells that harbor distinct collections of somatic mutations, ranging from single-nucleotide variants (SNVs) to large-scale copy-number aberrations (CNAs). Single-cell whole-genome sequencing (scWGS) enables direct measurement of these mutations; however, inferring tumor phylogenies from scWGS data remains challenging due to ultra-low coverage ([~] 0.05x). There may be multiple ways of imputing missing information in the data leading to distinct tumor phylogenies that are equally well supported by the data. Existing methods produce a single phylogeny and overlook this uncertainty in reconstructing evolutionary histories from sparse scWGS data. We present SCOPE, a novel algorithmic framework that characterizes the space of tumor phylogenies consistent with scWGS data under a copy-number constrained version of the perfect phylogeny model. Our approach relies on estimating the cell fraction of each mutation, i.e. the proportion of cells within each copy-number cluster that carry the mutation. We derive the necessary and sufficient conditions these fractions must satisfy to admit a copy-number constrained perfect phylogeny. This yields a complete combinatorial description of all tumor phylogenies that are supported by the data under our model. We prove that identifying the largest subset of mutations with cell fractions satisfy model constraints using noisy measurements of cell fractions is NP-hard. On simulated data, SCOPE outperforms existing methods in accuracy with faster runtime in particular on the larger simulations. On scWGS data from a patient-derived ovarian cancer cell line, SCOPE infers a more resolved phylogeny with stronger statistical support compared to existing methods. Using SCOPE to analyze a larger dataset of 4 triple negative breast cancer (TNBC) and 8 high-grade serous ovarian cancer (HGSOC) samples, we show that several samples admit multiple phylogenies. We further find that number of admissible phylogenies increases with lower sequencing coverage and is negatively correlated with the number of copy-number clusters and number of distinct loss of heterozygosity (LOH) events in the clusters, highlighting how data quality and evolutionary constraints jointly shape uncertainty in tumor phylogeny reconstruction. By providing a principled framework for exploring and quantifying phylogenetic uncertainty, SCOPE establishes a new foundation for robust inference of tumor evolution from scWGS data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700922v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: The quality of tandem mass spectra critically determines metabolite identifiability in untargeted metabolomics, yet optimizing MS2 acquisition parameters experimentally is costly, time-consuming, and infeasible across the full diversity of samples and instruments. A key obstacle to computational quality assessment is the absence of reliable negative labels: most MS2 spectra remain unannotated not because they are low quality, but because the corresponding compounds are absent from reference libraries. This label ambiguity fundamentally limits supervised learning approaches and complicates acquisition time decision making. Results: We present a deep learning framework that predicts the probability that an MS2 scan will be identifiable using only the preceding MS1 spectrum and instrument acquisition parameters, without inspecting the MS2 spectrum itself. The problem is formulated as positive-unlabeled learning and addressed using a non-negative positive-unlabeled objective, enabling robust training despite missing negative labels. Trained on over eight million MS2 scans from public Orbitrap metabolomics datasets and evaluated on laboratory-disjoint benchmarks, the model recovered 90% of known identifiable spectra in a held-out test set. Predicted probabilities generalized to unseen laboratories and stratified unlabeled spectra in a physicochemically meaningful manner. Independent validation demonstrated that high predicted quality is associated with increased structural explainability, richer fragmentation patterns, canonical precursor charge states, and reduced spectral interference. These results indicate that MS2 identifiability can be anticipated from precursor context and acquisition settings alone. Availability and implementation: Code is available at https://github.com/bittrem ieuxlab/pu_ms2_identifiability. Model weights and processed datasets are available at 10.5281/zenodo.18266932.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701093v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Steering Conformational Sampling in Boltz-2 via Pair Representation Scaling</h2>
-<p class="paper-authors">Suzuki, S., Amagasa, T.</p>
+<h2 class="paper-title">A computational framework for designing micron-scale crisscross DNA megastructures</h2>
+<p class="paper-authors">Aquilina, M., Katzmeier, F., +9 authors, Shih, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Deep learning has transformed protein structure prediction; however, most systems predominantly return a single dominant conformation with limited control over alternative states. We introduce Boltz-sample as a systematic steering strategy for Boltz-2 that modulates conformational sampling by uniformly rescaling the latent pair representation. In contrast to heuristic input perturbations such as MSA subsampling that rely on trial-and-error to induce variability, this operation systematically modulates the effective strength of pairwise couplings while preserving the input sequence and alignment. Across diverse benchmarks including membrane transporters and a curated panel of 15 multi-state targets, Boltz-sample significantly improves the recovery of both alternative states and ensemble coverage compared to standard inference. Crucially, our analysis of sequence-only inference reveals that the method does not rely solely on coevolutionary signals but actively unlocks the structural priors internalized by the model to recover alternative states even without MSA information. From a practical standpoint, the sign of the scaling parameter defines distinct search directions in the latent space and enables the efficient retrieval of diverse ensembles through simple confidence-based selection. Boltz-sample thus offers a transparent framework to navigate the latent conformational landscape and shifts the paradigm from unpredictable input variation to systematic latent space steering.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701250v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Crisscross polymerization enables the assembly of hundreds of unique DNA origami 'slats' into micron-sized structures with nanoscale precision. To design these megastructures, thousands of handle sequences from a fixed library must be assigned to individual slats to encode the desired binding architecture. This complexity presents two major challenges: handles must be selected to minimize parasitic interactions that compete with desired assembly, and the fabrication of hundreds of unique slats creates a substantial logistical burden. Here, we develop a unified framework that standardizes the design and fabrication of crisscross megastructures. We use an evolutionary algorithm to optimize handle assignment and minimize parasitic binding between slats, paired with a graph-based algorithm that expands the handle library. Together, these algorithms enable the assembly of large, multi-layered megastructures that otherwise would be produced at negligible yields. We have released this framework as #-CAD, an open-source graphical application that integrates these algorithms, streamlines laboratory workflows, and makes crisscross DNA origami more broadly accessible.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701435v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Polar Marine Microbial Communities as Reservoirs of Polyester Degrading Enzymes</h2>
-<p class="paper-authors">Grinen, A., Cifuentes-Anticevic, J., +5 authors, Diez, B.</p>
+<h2 class="paper-title">DeltaNMF: A Two-Stage Neural NMF for Differential Gene Program Discovery</h2>
+<p class="paper-authors">Karpurapu, A., Gersbach, C. A., Singh, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700866v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Non-negative matrix factorization (NMF) is a foundational dimensionality-reduction method in single-cell transcriptomics, valued for its interpretable gene programs. However, in case-control settings common in perturbation and disease research, standard NMF conflates quantitative shifts in program usage with qualitative emergence of novel programs, obscuring whether observed differences reflect altered activity of shared programs or genuinely new cellular states. Here, we present DeltaNMF, a neural network-based reformulation of NMF that enables flexible biological priors and structured multi-stage fitting. We first demonstrate how our framework incorporates foundation model-derived gene similarities through graph-Laplacian regularization, improving program coherence by 2.4-fold on protein interaction networks. Building on this flexibility, we introduce a two-stage architecture that explicitly separates baseline programs (learned from control cells) from case-specific programs, disambiguating altered usage from novel program emergence. Our GPU-accelerated implementation achieves 20x speedup over consensus NMF while maintaining comparable accuracy. On synthetic data with known ground truth, DeltaNMF correctly identifies which programs are new versus shifted. Applied to coronary artery disease (CAD) Perturb-seq data, DeltaNMF isolates disease programs including the cerebral cavernous malformations pathway identified by Schnitzler et al., while clearly distinguishing them from baseline endothelial programs with altered activity. Our neural network formulation of NMF opens new directions for incorporating diverse biological priors into interpretable single-cell analysis, providing a principled framework for differential program discovery in case-control studies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701049v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,15 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">miniMTI: minimal multiplex tissue imaging enhances biomarker expression prediction from histology</h2>
-<p class="paper-authors">Sims, Z., Govindarajan, S., +5 authors, Chang, Y. H.</p>
+<h2 class="paper-title">A Systems-Level Transcriptomic Analysis of Polycystic Ovary Syndrome as a Mitochondrial-Immunometabolic Disorder</h2>
+<p class="paper-authors">PATIAL, R., Ray, S., +1 author, Sobti, R. C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Virtual multiplexing from routine histology has advanced rapidly, yet morphology alone provides limited access to molecular state, imposing an intrinsic ceiling on H&amp;E-only inference. Here, we introduce miniMTI, a molecularly anchored virtual staining framework that determines the minimal set of experimentally measured markers required, alongside H&amp;E, to accurately reconstruct large multiplex tissue imaging (MTI) panels while preserving biologically and clinically relevant information. miniMTI learns from paired same-section H&amp;E-MTI data using a unified multimodal generative model that can condition on arbitrary combinations of measured marker channels, coupled with an iterative panel selection strategy to rank informative molecular anchors. Across colorectal and prostate cancer cohorts spanning two MTI platforms and over 40 million cells, miniMTI reduces a 40-marker MTI assay to H&amp;E plus as few as three measured molecular markers, while accurately recovering withheld markers, preserving cellular phenotypes and spatial tissue architecture, and disease-associated molecular programs, including Gleason grade-linked signatures. By integrating histology context with sparse molecular grounding, miniMTI overcomes the limitations of morphology-only virtual staining and provides a scalable, cost-effective approach for expanding MTI-level biomarker coverage with retained biological interpretability and clinical relevance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700911v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Polycystic Ovary Syndrome (PCOS) is known as an endocrine and metabolic disorder; however, emerging molecular evidence suggests a far more complex systems-level pathology. In this study, we performed an integrative transcriptomic and pathway-level analysis of endometrial tissue from women with PCOS to gain a deeper understanding of the underlying mechanism facilitating the disorder. The findings of the study highlighted mitochondrial dysfunction, chronic oxidative stress, and multi-layered immune dysregulation, adding some new insight apart from classical hyperandrogenism and insulin resistance. We identified some novel gene disease associations which involve C15orf48, ODF3B PRR15-DT, LINC01176, and LOC105379193. The upstream regulators such as (NFE2L2, TWNK, ALKBH1, BCOR, SMARCA4) involved in processes including mitochondrial genome, redox balance, and chromatin remodeling provided new insights into regulatory mechanisms. The IPA pathway analysis validated the compromised immune recovery with low grade inflammations and mitochondrial dysfunctionality. The observations emphasize on complex associations discarding its PCOS pure endocrine nature through immunometabolic-mitochondrial dysfunctionalities.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701018v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -135,72 +135,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Hybrid Stacking-Bagging Ensembles for Robust Multi-Omics Breast Cancer Prognosis</h2>
-<p class="paper-authors">Bozorgpour, R.</p>
+<h2 class="paper-title">Generative modeling reveals the connection between cellular morphology and gene expression</h2>
+<p class="paper-authors">Wen, S., Vinas, R., +9 authors, Brbic, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate breast cancer risk prediction remains a central challenge in precision oncology due to the complexity and heterogeneity of underlying biological processes. While single-modality models based on clinical, gene expression, or copy number variation (CNV) data provide valuable prognostic insights, they often fail to capture complementary information across data sources. Conventional stacking ensembles improve predictive performance through multimodal integration but remain susceptible to variance and overfitting. In this study, we propose a heterogeneous hybrid ensemble framework that combines stacking and bagging to enhance robustness and accuracy in multi-omics breast cancer classification. The framework integrates clinical features, gene expression profiles, and CNV data through stacked multimodal representations, followed by parallel stacking and bagging meta-learning and weighted fusion. Experiments conducted on the METABRIC cohort demonstrate that the proposed hybrid model achieves a ROC AUC of 0.9355, outperforming unimodal models (AUC range: 0.80-0.88) and a conventional stacking ensemble (AUC = 0.919). At the Youden's J optimal operating point, the hybrid approach yields balanced sensitivity (0.8571) and specificity (0.8792), with an overall accuracy of 87.4% and an F1-score of 0.7706. These results highlight the effectiveness of hybrid ensemble learning for robust multimodal integration and demonstrate its potential as a scalable and reliable approach for breast cancer risk prediction. The proposed framework offers a practical pathway toward improved predictive stability and supports the broader application of ensemble-based strategies in precision medicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700935v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Bayesian rhythmic model for jointly detecting circadian biomarkers and predicting molecular circadian time in human post-mortem brain transcriptome</h2>
-<p class="paper-authors">Xue, X., Wang, H., +4 authors, Tseng, G. C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Transcriptomic circadian analysis of human post-mortem brain provides a unique opportunity to characterize in vivo molecular circadian rhythms across brain regions implicated in aging and psychiatric disorders. A primary goal in such analyses is the detection of circadian biomarkers. However, this task is complicated by the frequent mismatch between a subject's recorded circadian clock time and their true molecular circadian time -- arising from observational or recording errors, as well as intrinsic biological variability. Existing methods typically address either biomarker detection or circadian time prediction in isolation. Because errors in one task can degrade performance in the other, the lack of a unified approach remains a key limitation. We propose BayCT -- a Bayesian model for simultaneous circadian marker detection and molecular circadian time estimation. The model extends naturally to repeated measurements from multiple brain regions or organs. For circular data, we employ a von Mises prior distribution, with slice sampling and reversible-jump Markov chain Monte Carlo (MCMC) for Bayesian inference. Through extensive simulations and applications to transcriptomic data from three human brain regions and from 12 mouse organs, BayCT demonstrates superior performance in both biomarker detection and circadian time estimation. Furthermore, we highlight the advantages of integrating data across brain regions, achieving substantial improvements in both tasks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700905v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">mRNAfold: Co-optimization of Global Stability, Local Structure, and Codon Choice via Suboptimal Folding</h2>
-<p class="paper-authors">Ward, M., Richardson, M., +8 authors, Metkar, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> mRNA medicines hold great promise, but designing sequences with high translation efficiency, robust in-solution stability, and manufacturability remains a major challenge due to the vast combinatorial space of synonymous coding sequences. Computational approaches such as mRNA folding algorithms have emerged as powerful tools by co-optimizing for in-solution stability and translation efficiency, yet current methods face important limitations. Here, we present "mRNAfold", an improved mRNA folding algorithm and software package that addresses these gaps by enabling efficient exploration of diverse near-optimal solutions, incorporating untranslated regions (UTRs), parallel execution, and supporting tunable control over local structural features across the mRNA. Thermodynamically optimized mRNAs from mRNAfold were more stable ({approx}2-fold) in-solution than those generated by simple GC maximization for the same encoded protein. In addition, mRNAs designed to vary local structure near the start codon while maintaining consistent structure and codon optimality elsewhere showed a complex relationship between local structure near the start codon and protein production in cells. We observed no impact of structure in the start codon region for a set of mRNAs with high codon optimality, but it did impact protein production for a set of mRNAs with lower codon optimality. Together, these results underscore the potential of structure-aware, multi-objective design to improve mRNA medicines and offer a framework for exploring how sequence, structure, and expression are interrelated.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701221v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Ensemble Machine Learning Approaches Predict Survival in Lower-Grade Glioma Based on Glycosphingolipid Gene Expression and Metabolic Modelling</h2>
-<p class="paper-authors">Welland, J. W. J., Deane, J. E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Glycosphingolipids (GSLs) are essential components of biological membranes with important roles in cell signalling. Disrupted GSL metabolism is associated with malignancy across a range of cancers, with different GSLs implicated in distinct tumours. GSLs have potential mechanistic roles in cancer; however, their functions in Lower Grade Gliomas (LGGs) remain poorly understood. We present ensemble machine learning approaches using transcriptomic data from LGG, combined with GSL-specific metabolic simulations, to predict survival outcomes. The ensemble approach demonstrates effective risk stratification for LGG patients based on GSL gene expression. Pathway analysis of model-derived risk groups highlighted potential association of GSLs with cell motility, division and Wnt signalling in LGG pathology. Given the strong performance of machine learning approaches to predict outcomes and that GSLs are shed into the tumour microenvironment, GSL-based diagnostics and prognostics may prove clinically beneficial. A Python package enabling GSL-specific metabolic modelling and risk prediction from RNA-seq data is provided.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700788v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The understanding of how transcriptional programs give rise to cellular morphology, and how morphological features reflect and influence cell identity and function remains limited. This is due in part to the lack of large-scale datasets pairing the two modalities as well as the absence of computational frameworks capable of modeling their cross-modal structure. Here, we introduce COSMIC, a bidirectional generative framework that enables quantitative decomposition of transcriptional variance reflected in morphology and morphological variance explained by gene expression. COSMIC builds on a foundation model trained on over 21 million segmented nuclei and couples it with existing transcriptomic embeddings. To enable cross-modal learning, we leveraged a newly generated multimodal dataset acquired using IRIS, a technology that captures high-resolution images and transcriptomes from the same single cells at scale. COSMIC accurately modeled cell type identity, as well as continuous dynamics such as cell-cycle progression, establishing a quantitative link between morphological phenotypes and underlying gene expression. In prostate cancer cells, COSMIC identified morphological and transcriptomic differences between chemotherapy drug treatment-responsive and -resistant cells, and revealed morphology-associated genes linked to tumor state. Together, these results demonstrate that generative modeling powered by paired single-cell measurements can capture the bidirectional flow of information between cellular form and gene expression, opening new avenues for mechanistic discovery and predictive modeling in both basic and translational cell biology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700673v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -211,15 +154,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">FAK Inhibition Remodels the Metastatic ECM and Restores CD8+ T Cell Trafficking and Immunosurveillance</h2>
-<p class="paper-authors">Barth, N. D., Peng, B., +16 authors, Brunton, V. G.</p>
+<h2 class="paper-title">Anticipating on-target resistance to WRN inhibitors in microsatellite unstable cancers</h2>
+<p class="paper-authors">Orcholski, M. E., Laterreur, N., +10 authors, Cuella-Martin, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metastatic breast cancer remains largely incurable, driven in part by immunosuppressive microenvironments that limit CD8+ T cell-mediated clearance. Using a murine pulmonary metastatic breast cancer model, we show that the focal adhesion kinase (FAK) inhibitor VS-4718 promotes a CD8+ T cell-dependent regression of metastatic lesions by reprograming the metastatic microenvironment. VS-4718 reduced immunosuppressive myeloid and regulatory T cells while increasing CD8+ T cell infiltration. Cellular and secreted proteome profiling revealed that VS-4718 downregulates ECM components such as laminin 5 and collagen VIII1, which we show impair CD8+ T cell migration and activity. In human breast cancer cohorts, elevated LAMA5/COL8A1 expression and a FAK-dependent ECM signature associate with poor outcome and prognostic for residual disease. Intravital imaging demonstrated that VS-4718 enhances CD8+ T cell extravasation and induces T cell-tumor cell contacts necessary for cytotoxicity. Ex vivo lung slice cultures recapitulated these findings, showing enhanced T cell swarming, metastatic cluster shrinkage, and apoptosis. These findings reveal how FAK inhibition remodels the metastatic ECM to potentiate coordinated CD8+ T cell responses. VS-4718 might aid in clearing metastases in breast cancer patients through modulating both stromal and immune components.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700837v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Leveraging WRN helicase dependency in microsatellite instability (MSI) cancers offers a synthetic lethal (SL) therapeutic opportunity, with several WRN inhibitors in development. However, the hypermutator nature of MSI tumors creates strong evolutionary pressure for rapid resistance. Here, we apply a multimodal functional genomics framework integrating base editing screens and deep mutational scanning to map on-target resistance to two clinical WRN inhibitors, HRO761 and VVD-214. We identify discrete resistance hotspots within WRN and demonstrate that single-allele (heterozygous) mutations at the drug-binding site are sufficient to abrogate WRN inhibitor-induced cytotoxicity. Resistance profiles diverged between HRO761 and VVD-214, revealing mutations that impair one but preserve sensitivity to the other. Genome-wide CRISPR screens further identified non-homologous end joining (NHEJ) factors and the checkpoint phosphatase WIP1 as tractable synthetic vulnerabilities that potentiate WRN inhibition. Together, these findings establish a framework for resistance-aware deployment of WRN inhibitors through rational drug selection, therapeutic switching, and combination strategies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700152v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -230,15 +173,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Metastatic dissemination of breast cancer stem cells requires MenaINV for lung extravasation but not survival</h2>
-<p class="paper-authors">Nauman, M., Jung, Y., +11 authors, Oktay, M. H.</p>
+<h2 class="paper-title">YAP/TEAD drives treatment-induced adaptive immunosuppression in EGFR-mutant lung cancer</h2>
+<p class="paper-authors">Honkanen, M., Baumgarten, J., +16 authors, Kurppa, K. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cancer stemness is a pivotal driver of tumor initiation, treatment resistance, and tumor cell survival. Cancer stem cells (CSCs), though constituting only a small fraction of primary tumor cells, are progressively enriched during metastatic progression: from circulating tumor cells traveling in the bloodstream, to disseminated tumor cells lodged in the lung vasculature, to extravasated tumor cells that have entered tissue parenchyma. However, whether CSCs have an intrinsic advantage for extravasation over cancer non-stem cells (CnSCs), or simply their increased representation in circulation renders them more likely to extravasate, remains unresolved. MenaINV, an invasive isoform of the actin regulatory protein Mena, promotes tumor cell transendothelial migration in primary and secondary sites, yet the direct mechanistic link between stemness and MenaINV in lung metastasis remains unresolved. Here, using a validated fluorescent stemness reporter (SORE6) to identify CSCs, we found that CSCs display elevated MenaINV expression relative to CnSCs. High-resolution intravital imaging showed that CSCs extravasate efficiently into lung parenchyma and survive at higher levels, robustly forming metastatic lesions, while CnSCs show limited extravasation, low survival, and poor colonization. Mechanistically, MenaINV disruption in CSCs specifically impaired extravasation without affecting survival, demonstrating that MenaINV is the key extravasation effector downstream of stemness, whereas stemness-associated factors independently confer survival advantages. Moreover, reintroduction of MenaINV in CnSCs restores their extravasation ability upon which extravasated CnSCs reactivate stem program and form metastases. Overall, we discovered a hierarchical framework where stemness regulates both survival and extravasation capacity, with MenaINV as the key CSC extravasation effector.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700685v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Residual disease remains a major obstacle for achieving durable responses in patients treated with oncogene-targeted therapy. Drug-tolerant persister (DTP) cells emerging under treatment and persisting in residual tumors are considered to be the root of acquired resistance, yet their contribution to immune evasion in on-treatment tumors is poorly defined. Here, we show in the context of EGFR-mutant lung cancer that DTP cells actively contribute to the formation of an immunosuppressive tumor microenvironment during EGFR tyrosine kinase inhibitor (TKI) therapy. In syngeneic mouse models and in patients, EGFR TKI therapy leads to an accumulation of immunosuppressive macrophages, which is strictly treatment-dependent and fully reversible upon treatment cessation or progressive disease, respectively. Quiescent DTP cells directly drive the recruitment and immunosuppressive reprogramming of monocytes and macrophages through a YAP-driven secretome, and the DTP-reprogrammed monocytes suppress T cell proliferation and effector functions in vitro. Co-targeting YAP with a TEAD inhibitor ORM-47286 rewires the DTP secretome and inhibits macrophage reprogramming in vitro, and prevents immunosuppressive macrophage accumulation and improves the efficacy of EGFR TKI therapy in immunocompetent mouse models. Our findings highlight the previously unappreciated role of DTP cells in modulating the tumor microenvironment in on-treatment tumors, and position the treatment-induced YAP/TEAD activity in DTP cells as an important driver of adaptive immunosuppression during EGFR-targeted therapy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701073v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -249,72 +192,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 23, 2026</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Prevalence and Actionability of MTAP Loss in Oncogene-Driven Lung Cancer</h2>
-<p class="paper-authors">Sakai, T., Piotrowska, Z., +11 authors, Dagogo-Jack, I.</p>
+<h2 class="paper-title">Forecasting tumor growth kinetics and hypoxia levels in mice using mathematical modelling</h2>
+<p class="paper-authors">Azzopardi, N., Ternant, D., +4 authors, Chadet, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700721v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Stromal estrogen signaling regulates fallopian tube homeostasis and cancer initiation via inflammatory pathways</h2>
-<p class="paper-authors">Chen, X., Han, S., +2 authors, Li, Z.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Lifetime estrogen exposure is a major risk factor for ovarian cancer, which can originate from fallopian tube epithelial (FTE) cells. Here we report that estrogen receptor (ER) signaling in fallopian tube (FT) stromal cells plays a critical developmental role in maintaining epithelial homeostasis by promoting FTE proliferation and ciliated differentiation. Stromal ER regulates expression of inflammatory cytokines, growth factors, and extracellular matrix components, creating a differentiation-supportive, tumor-suppressive niche that coordinates epithelial regeneration during hormonal cycles. Excessive or prolonged estrogen exposure, however, shifts this niche toward a tumor-promoting state by inducing inflammation and activating stemness-associated pathways, including JAK/STAT, in FTE cells. This effect is exacerbated in genetically altered FTE cells lacking key tumor suppressors, which resist differentiation while remaining responsive to stromal proliferation signals. These findings reveal how stromal ER signaling integrates hormonal cues, inflammation, aging, and genetic susceptibility to influence early events in FT carcinogenesis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700864v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Dual-antigen Doggybone DNA vaccine induces potent anti-tumor immunity against immunosuppressive oral cancer</h2>
-<p class="paper-authors">Tan, G. M. Y., Wang, C., +9 authors, Savelyeva, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Anti-PD1 blockade benefits only a subset of patients with head and neck squamous cell carcinoma (HNSCC), highlighting the need for approaches that overcome tumor immune resistance. Here, using the doggybone DNA (dbDNA) platform, we developed CaVac OPT, an optimized dual-antigen DNA vaccine targeting MAGED4B and FJX1, which are overexpressed in most HPV-negative HNSCC and multiple solid tumors. In the MOC-2 oral cancer model, CaVac OPT significantly reduced tumor growth and when combined with anti-PD1 therapy, further delayed progression and improved survival. Immune profiling showed increased infiltration of CD4+ and CD8+ T cells, expansion of stem-like Tcf1+ populations, without increase in regulatory T cells, a reduced M2/M1 macrophage ratio and activation of interferon gamma associated pathways with suppression of tumor-promoting signals. These findings demonstrate that CaVac OPT reprograms the tumor microenvironment, converting cold HNSCC into T cell-inflamed responsive tumors. CaVac OPT represents a promising strategy for achieving durable control of aggressive, immunotherapy-resistant head and neck cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700768v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Reduced B cell activation in Germinal center reaction of the mouse model of Li-Fraumeni syndrome</h2>
-<p class="paper-authors">Hasegawa, K., Barlow, J. H., Gothwal, S. K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The TP53 mutation associated with Li-Fraumeni syndrome in humans is known to exhibit p53 gain-of-function properties leading to early cancer onset. To explore whether these patients also have compromised immune responses due to p53 mutations, we investigated the humoral immune response using a Li-Fraumeni mouse model harboring a structural mutation, Trp53R172H (equivalent to codon 175 in humans). Trp53R172H mice were immunized with sheep red blood cells, and the Germinal center response was monitored. Our results revealed that SRBC-immunized Trp53R172H mice exhibit reduced B cell activation during the GC reaction. These suggest a selective role for p53 in promoting B cell activation early in the GC reaction prior to BCL6 upregulation. We propose that impaired B cell activation in Li-Fraumeni patients could contribute to immune deficiencies and heightened susceptibility to autoimmune disorders, potentially influencing the development of secondary cancers and impairing therapeutic responses to chemotherapies and immunotherapies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700937v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Quantitative description of tumor growth is challenged by vascular heterogeneity and hypoxia. In this study, mammary tumor growth was investigated in mouse model using caliper and ultrasound imaging measurements, bioluminescence imaging (BLI), and pimonidazole imaging. Tumor volume increased monotonically when assessed by caliper and ultrasound imaging, whereas BLI exhibited oscillating dynamics despite continued tumor growth, consistent with hypoxia-related signal attenuation. A mathematical compartmental model was developed primarily to describe tumor growth dynamics, incorporating latent vascular capacity as a key regulatory variable. The model accounts for reciprocal interactions between tumor expansion and vascular limitation. BLI was integrated as an auxiliary observable to reveal hypoxia-driven modulation of signal production rather than as a direct surrogate of tumor size. Model parameters were estimated using nonlinear mixed-effects modelling with population approach, allowing quantification of population-level behavior and inter-individual variability. The model adequately described tumor growth while explaining BLI dynamics through vascular and hypoxic effects. This framework provides the first semi-mechanistic description of tumor growth and supports the use of BLI as an indirect marker of hypoxia and, consequently, of tumor growth. This model may provide a useful framework for quantifying the effects of vascular-modulating therapeutics and genetic polymorphisms involved in tumor progression.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700997v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -325,15 +211,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Nov 27, 2025</span>
+<span class="date">Jan 24, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Diagnosis of head and neck cancer by AI-based tumor-educated platelet RNA profiling of liquid biopsies.</h2>
-<p class="paper-authors">Niles E Wondergem, Jos B Poell, +14 authors, Ruud H Brakenhoff</p>
+<h2 class="paper-title">ProteoBoostR: an interactive framework for supervised machine learning in clinical proteomics.</h2>
+<p class="paper-authors">Annika Topitsch, Niko Pinter, +3 authors, Oliver Schilling</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Over 95% of head and neck cancers are squamous cell carcinoma (HNSCC). HNSCC is mostly diagnosed late, causing a poor prognosis despite the application of invasive treatment protocols. Tumor-educated platelets (TEPs) have been shown to hold promise as a molecular tool for early cancer diagnosis. We sequenced platelet mRNA isolated from blood of 101 patients with HNSCC and 101 propensity-score matched noncancer controls. Two independent machine learning classification strategies were employed using a training and validation approach to identify a cancer predictor: a particle swarm optimized support vector machine (PSO-SVM) and a least absolute shrinkage and selection operator (LASSO) logistic regression model. The best performing PSO-SVM predictor consisted of 245 platelet transcripts and reached a maximum area under the curve (AUC) of 0.87. For the LASSO-based prediction model, 1,198 mRNAs were selected, resulting in a median AUC of 0.84, independent of HPV status. Our data show that TEP RNA classification by different AI tools is promising in the diagnosis of HNSCC.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41307954/" target="_blank">
+<p><strong>Abstract:</strong> Mass spectrometry-based proteomics enables high-throughput quantification of thousands of proteins in clinical samples, fueling biomarker discovery for disease diagnosis and prognosis. However, leveraging complex proteomic profiles for predictive modeling often requires advanced machine learning (ML) expertise that many biomedical researchers lack. User-friendly tools are needed to apply state-of-the-art ML algorithms to proteomics data. XGBoost is a powerful tree-based ML algorithm known for high accuracy in classification tasks, and has been successfully used to classify cancer subtypes from multi-omics data.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41580610/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Dec 31, 2025</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Unraveling the molecular mechanisms of air pollution-induced lung adenocarcinoma through machine learning, network toxicology, and molecular docking.</h2>
+<p class="paper-authors">Yang Xu, Bin Yuan, Mingjun Zhang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Airborne environmental contaminants are established carcinogens. This investigation elucidates the mechanistic contributions to pulmonary adenocarcinoma (LUAD) pathogenesis.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41478005/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
