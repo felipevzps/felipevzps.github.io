@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ESMDisPred: A Structure-Aware CNN-Transformer Architecture for Intrinsically Disordered Protein Prediction</h2>
-<p class="paper-authors">Kabir, M. W. U., Dey, A., +1 author, Hoque, M. T.</p>
+<h2 class="paper-title">antigen-prime: Simulating coupled genetic and antigenic evolution of influenza virus</h2>
+<p class="paper-authors">Thornton, Z. T., Tran, T., +4 authors, Haddox, H. K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Intrinsically disordered proteins (IDPs) lack stable three-dimensional structures, yet play vital roles in key biological processes, including signaling, transcription regulation, and molecular scaffolding. Their structural flexibility presents significant challenges for experimental characterization and contributes to diseases such as cancer and neurodegenerative disorders. Accurate computational prediction of IDPs is important for advancing research and drug discovery, structural biology, and protein engineering. In this study, we introduce ESMDisPred, a novel structure-aware disorder predictor that builds on the representational power of Evolutionary Scale Modeling-2 (ESM2) protein language models. ESMDisPred integrates sequence embeddings with structural information from the Protein Data Bank (PDB) to deliver state-of-the-art prediction accuracy. Model performance is further enhanced through feature engineering strategies, including terminal residue encoding, statistical summarization, and sliding-window analysis. To capture both local sequence motifs and long-range dependencies, we designed a hybrid CNN-Transformer architecture that balances convolutional efficiency with the representational power of self-attention. On CAID3 benchmarks, our latest model achieves ROC-AUC 0.895, AP 0.778, and a max F1 of 0.759, outperforming recent methods. Our results highlight the importance of integrating protein language model embeddings with explicit structural information for improved disorder prediction.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701204v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Seasonal influenza virus undergoes rapid antigenic drift to escape population immunity. Computational methods can be used to organize viral genetic diversity into antigenically similar variants and estimate variant-specific growth rates. However, benchmarking these methods is challenging because it can be di[ffi]cult to accurately quantify antigenicity and growth rates in nature. Simulating viral evolution using defined selective pressures can provide ground-truth data for benchmarking. But, existing simulators do not link genetic sequences to antigenic phenotypes under selection from host populations. Here, we present a forward-time epidemic simulator called antigen-prime that links these factors. We use it to simulate viral evolution over 30 years and validate the simulation recapitulates genetic and antigenic patterns observed in natural influenza evolution. We then use the simulated data to benchmark methods for assigning variants and estimating their growth rates. We evaluated a sequence-based and a phylogenetics-based method for variant assignment, finding the former was slightly more e[ff]ective at separating viruses into antigenically distinct groups. We also evaluated methods for estimating variant growth rates in one-year sliding windows. Estimates were accurate in most windows, but highly inaccurate in several others. Examining high- error windows revealed several examples of a previously unreported failure mode. In all, antigen-prime provides a simulation framework to benchmark models of influenza evolution, and could be used to help guide future development of these models. The source code is openly available at https://github.com/matsengrp/antigen-prime.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701420v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Positive-Unlabeled Learning for Predicting Small Molecule MS2 Identifiability from MS1 Context and Acquisition Parameters</h2>
-<p class="paper-authors">Bekbergenova, M., Jiang, T., +1 author, Bittremieux, W.</p>
+<h2 class="paper-title">NanoSimFormer: An end-to-end Transformer-based simulator for nanopore sequencing signal data</h2>
+<p class="paper-authors">Xie, S., Ding, L., +1 author, Zhu, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: The quality of tandem mass spectra critically determines metabolite identifiability in untargeted metabolomics, yet optimizing MS2 acquisition parameters experimentally is costly, time-consuming, and infeasible across the full diversity of samples and instruments. A key obstacle to computational quality assessment is the absence of reliable negative labels: most MS2 spectra remain unannotated not because they are low quality, but because the corresponding compounds are absent from reference libraries. This label ambiguity fundamentally limits supervised learning approaches and complicates acquisition time decision making. Results: We present a deep learning framework that predicts the probability that an MS2 scan will be identifiable using only the preceding MS1 spectrum and instrument acquisition parameters, without inspecting the MS2 spectrum itself. The problem is formulated as positive-unlabeled learning and addressed using a non-negative positive-unlabeled objective, enabling robust training despite missing negative labels. Trained on over eight million MS2 scans from public Orbitrap metabolomics datasets and evaluated on laboratory-disjoint benchmarks, the model recovered 90% of known identifiable spectra in a held-out test set. Predicted probabilities generalized to unseen laboratories and stratified unlabeled spectra in a physicochemically meaningful manner. Independent validation demonstrated that high predicted quality is associated with increased structural explainability, richer fragmentation patterns, canonical precursor charge states, and reduced spectral interference. These results indicate that MS2 identifiability can be anticipated from precursor context and acquisition settings alone. Availability and implementation: Code is available at https://github.com/bittrem ieuxlab/pu_ms2_identifiability. Model weights and processed datasets are available at 10.5281/zenodo.18266932.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701093v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Nanopore sequencing has achieved a new standard of accuracy with the advent of R10.4.1 flow cell and high-performance Transformer-based basecalling models. However, existing signal simulators often fail to capture the complex, non-linear dynamics of nanopore current signals, relying on static pore models or lacking optimization objectives linked to basecalling, resulting in synthetic signals with substantially lower accuracy and fidelity than experimental data. To address this, we introduce NanoSimFormer, an end-to-end Transformer-based signal simulator that integrates basecaller guidance during training to generate high-fidelity nanopore signals explicitly optimized for accurate calling. Rigorous evaluation across diverse human, bacterial, and fungal R10.4.1 DNA sequencing datasets demonstrates that NanoSimFormer consistently outperformed competing methods (seq2squiggle and Squigulator), achieving median read accuracies exceeding 99% and Q-scores above 22.8, closely matching experimental baselines. NanoSimFormer faithfully recapitulated experimental variant calling performance on the human HG002 sample, achieving F1-scores of 0.9967 for SNPs and 0.8295 for small indels, and notably minimized false-positive errors in homopolymer and short tandem repeat (STR) regions where other simulators struggled. Furthermore, NanoSimFormer-derived reads enabled high-quality de novo bacterial assembly with consensus error rates below one mismatch per 100 kbp, comparable to experimental assemblies, and preserved fungal mock community structures with high correlation to experimental abundance profiles in metagenomic benchmarks. With tunable parameters for amplitude noise and event duration variance, NanoSimFormer enables the simulation of datasets spanning a wide range of data qualities. Together, these results establish NanoSimFormer as a robust tool for benchmarking and algorithm development in the latest nanopore sequencing era.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.20.700442v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A computational framework for designing micron-scale crisscross DNA megastructures</h2>
-<p class="paper-authors">Aquilina, M., Katzmeier, F., +9 authors, Shih, W.</p>
+<h2 class="paper-title">Surf2Spot: A Surface-Informed Geometry-Aware Model for Predicting Binder and Nanobody Design Hotspots</h2>
+<p class="paper-authors">Zhao, A., Li, Y., +8 authors, Wang, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Crisscross polymerization enables the assembly of hundreds of unique DNA origami 'slats' into micron-sized structures with nanoscale precision. To design these megastructures, thousands of handle sequences from a fixed library must be assigned to individual slats to encode the desired binding architecture. This complexity presents two major challenges: handles must be selected to minimize parasitic interactions that compete with desired assembly, and the fabrication of hundreds of unique slats creates a substantial logistical burden. Here, we develop a unified framework that standardizes the design and fabrication of crisscross megastructures. We use an evolutionary algorithm to optimize handle assignment and minimize parasitic binding between slats, paired with a graph-based algorithm that expands the handle library. Together, these algorithms enable the assembly of large, multi-layered megastructures that otherwise would be produced at negligible yields. We have released this framework as #-CAD, an open-source graphical application that integrates these algorithms, streamlines laboratory workflows, and makes crisscross DNA origami more broadly accessible.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701435v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein-protein interactions (PPIs) and nanobody-antigen interactions (NAIs) play essential roles in cellular function, yet accurate hotspot prediction remains challenging. We present Surf2Spot, a deep learning framework that integrates sequence embeddings, structural features, and protein surface properties to predict interaction hotspots. By jointly modeling structural and physicochemical determinants, Surf2Spot achieves superior performance on curated PPI and NAI datasets, improving F1-scores by 45.9-46.9% and AUPRC by 43.2% over existing methods. Case studies on NbPDS1 and VdPDA1 demonstrate that Surf2Spot accurately recovers experimentally validated hotspots clustered within functional domains. When incorporated into binder design pipelines (RFdiffusion and BindCraft), Surf2Spot-guided designs yielded a 4-fold increase in successful design throughput and enhanced binding affinities compared to baseline strategies. These results establish Surf2Spot as a powerful tool for hotspot discovery and rational protein engineering.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.700806v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,53 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DeltaNMF: A Two-Stage Neural NMF for Differential Gene Program Discovery</h2>
-<p class="paper-authors">Karpurapu, A., Gersbach, C. A., Singh, R.</p>
+<h2 class="paper-title">RLBWT-Based LCP Computation in Compressed Space for Terabase-Scale Pangenome Analysis</h2>
+<p class="paper-authors">Sanaullah, A., Brown, N. K., +5 authors, Zhang, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Non-negative matrix factorization (NMF) is a foundational dimensionality-reduction method in single-cell transcriptomics, valued for its interpretable gene programs. However, in case-control settings common in perturbation and disease research, standard NMF conflates quantitative shifts in program usage with qualitative emergence of novel programs, obscuring whether observed differences reflect altered activity of shared programs or genuinely new cellular states. Here, we present DeltaNMF, a neural network-based reformulation of NMF that enables flexible biological priors and structured multi-stage fitting. We first demonstrate how our framework incorporates foundation model-derived gene similarities through graph-Laplacian regularization, improving program coherence by 2.4-fold on protein interaction networks. Building on this flexibility, we introduce a two-stage architecture that explicitly separates baseline programs (learned from control cells) from case-specific programs, disambiguating altered usage from novel program emergence. Our GPU-accelerated implementation achieves 20x speedup over consensus NMF while maintaining comparable accuracy. On synthetic data with known ground truth, DeltaNMF correctly identifies which programs are new versus shifted. Applied to coronary artery disease (CAD) Perturb-seq data, DeltaNMF isolates disease programs including the cerebral cavernous malformations pathway identified by Schnitzler et al., while clearly distinguishing them from baseline endothelial programs with altered activity. Our neural network formulation of NMF opens new directions for incorporating diverse biological priors into interpretable single-cell analysis, providing a principled framework for differential program discovery in case-control studies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701049v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A Systems-Level Transcriptomic Analysis of Polycystic Ovary Syndrome as a Mitochondrial-Immunometabolic Disorder</h2>
-<p class="paper-authors">PATIAL, R., Ray, S., +1 author, Sobti, R. C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Polycystic Ovary Syndrome (PCOS) is known as an endocrine and metabolic disorder; however, emerging molecular evidence suggests a far more complex systems-level pathology. In this study, we performed an integrative transcriptomic and pathway-level analysis of endometrial tissue from women with PCOS to gain a deeper understanding of the underlying mechanism facilitating the disorder. The findings of the study highlighted mitochondrial dysfunction, chronic oxidative stress, and multi-layered immune dysregulation, adding some new insight apart from classical hyperandrogenism and insulin resistance. We identified some novel gene disease associations which involve C15orf48, ODF3B PRR15-DT, LINC01176, and LOC105379193. The upstream regulators such as (NFE2L2, TWNK, ALKBH1, BCOR, SMARCA4) involved in processes including mitochondrial genome, redox balance, and chromatin remodeling provided new insights into regulatory mechanisms. The IPA pathway analysis validated the compromised immune recovery with low grade inflammations and mitochondrial dysfunctionality. The observations emphasize on complex associations discarding its PCOS pure endocrine nature through immunometabolic-mitochondrial dysfunctionalities.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701018v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Generative modeling reveals the connection between cellular morphology and gene expression</h2>
-<p class="paper-authors">Wen, S., Vinas, R., +9 authors, Brbic, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The understanding of how transcriptional programs give rise to cellular morphology, and how morphological features reflect and influence cell identity and function remains limited. This is due in part to the lack of large-scale datasets pairing the two modalities as well as the absence of computational frameworks capable of modeling their cross-modal structure. Here, we introduce COSMIC, a bidirectional generative framework that enables quantitative decomposition of transcriptional variance reflected in morphology and morphological variance explained by gene expression. COSMIC builds on a foundation model trained on over 21 million segmented nuclei and couples it with existing transcriptomic embeddings. To enable cross-modal learning, we leveraged a newly generated multimodal dataset acquired using IRIS, a technology that captures high-resolution images and transcriptomes from the same single cells at scale. COSMIC accurately modeled cell type identity, as well as continuous dynamics such as cell-cycle progression, establishing a quantitative link between morphological phenotypes and underlying gene expression. In prostate cancer cells, COSMIC identified morphological and transcriptomic differences between chemotherapy drug treatment-responsive and -resistant cells, and revealed morphology-associated genes linked to tumor state. Together, these results demonstrate that generative modeling powered by paired single-cell measurements can capture the bidirectional flow of information between cellular form and gene expression, opening new avenues for mechanistic discovery and predictive modeling in both basic and translational cell biology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700673v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Lossless full text indexes are utilized in a myriad of applications in bioinformatics. The continuously decreasing cost of generating biological data has resulted in the need to build full text indexes on biological datasets of increasing size. Many compressed full text indexes have been developed to address this problem. In particular, run-length Burrows-Wheeler transform (RLBWT) based compressed full text indexes have seen wide development and adoption. However, the construction of these RLBWT-based compressed full text indexes is still computationally expensive, sometimes prohibitively so, even for current dataset sizes. Therefore, we present algorithms for the construction of RLBWT-based compressed full text indexes and their supporting data structures in compressed space. The algorithms have a space complexity of O(r) words and run in O(n) time for repetitive datasets, where r is the number of runs in the BWT, n is the length of the text, and repetitive datasets implies the average run length is at least log n. We provide the first algorithm to compute LCP-related information for repetitive datasets in optimal time and O(r) space, greatly reducing memory requirements. The key idea behind this algorithm is the utilization of r samples of the inverse suffix array at regular intervals. For example, on the Human Pangenome Reference Consortium Release 2 dataset, this reduces peak memory from 2,135 GiB to 170 GiB (12.6x reduction) compared to the previous best method (pfp-thresholds).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701410v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -154,15 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Anticipating on-target resistance to WRN inhibitors in microsatellite unstable cancers</h2>
-<p class="paper-authors">Orcholski, M. E., Laterreur, N., +10 authors, Cuella-Martin, R.</p>
+<h2 class="paper-title">Mitochondria-nucleus communication dictates progressive versus bimodal aging of the mammary gland.</h2>
+<p class="paper-authors">Jenkins, E. C., Chattopadhyay, M., +5 authors, Germain, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Leveraging WRN helicase dependency in microsatellite instability (MSI) cancers offers a synthetic lethal (SL) therapeutic opportunity, with several WRN inhibitors in development. However, the hypermutator nature of MSI tumors creates strong evolutionary pressure for rapid resistance. Here, we apply a multimodal functional genomics framework integrating base editing screens and deep mutational scanning to map on-target resistance to two clinical WRN inhibitors, HRO761 and VVD-214. We identify discrete resistance hotspots within WRN and demonstrate that single-allele (heterozygous) mutations at the drug-binding site are sufficient to abrogate WRN inhibitor-induced cytotoxicity. Resistance profiles diverged between HRO761 and VVD-214, revealing mutations that impair one but preserve sensitivity to the other. Genome-wide CRISPR screens further identified non-homologous end joining (NHEJ) factors and the checkpoint phosphatase WIP1 as tractable synthetic vulnerabilities that potentiate WRN inhibition. Together, these findings establish a framework for resistance-aware deployment of WRN inhibitors through rational drug selection, therapeutic switching, and combination strategies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700152v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Non-linear aging, identified through oscillations in human plasma proteomics around 44 and 60, is postulated to contribute to the onset of diseases. Incidence of breast cancer follows such bimodal pattern. We show that mitochondria-nucleus matching in mice results in two mammary gland aging patterns, including a bimodal pattern associated with susceptibility to mammary tumor and that this bimodal signature is enriched in breast cancer patients diagnosed at 45 and 65.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.21.700824v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -173,15 +135,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">YAP/TEAD drives treatment-induced adaptive immunosuppression in EGFR-mutant lung cancer</h2>
-<p class="paper-authors">Honkanen, M., Baumgarten, J., +16 authors, Kurppa, K. J.</p>
+<h2 class="paper-title">CRISPR-enabled genetic screens identify synthetic lethal targets across frequently altered cancer drivers</h2>
+<p class="paper-authors">Desjardins, J., Bowlan, J., +22 authors, Young, J. T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Residual disease remains a major obstacle for achieving durable responses in patients treated with oncogene-targeted therapy. Drug-tolerant persister (DTP) cells emerging under treatment and persisting in residual tumors are considered to be the root of acquired resistance, yet their contribution to immune evasion in on-treatment tumors is poorly defined. Here, we show in the context of EGFR-mutant lung cancer that DTP cells actively contribute to the formation of an immunosuppressive tumor microenvironment during EGFR tyrosine kinase inhibitor (TKI) therapy. In syngeneic mouse models and in patients, EGFR TKI therapy leads to an accumulation of immunosuppressive macrophages, which is strictly treatment-dependent and fully reversible upon treatment cessation or progressive disease, respectively. Quiescent DTP cells directly drive the recruitment and immunosuppressive reprogramming of monocytes and macrophages through a YAP-driven secretome, and the DTP-reprogrammed monocytes suppress T cell proliferation and effector functions in vitro. Co-targeting YAP with a TEAD inhibitor ORM-47286 rewires the DTP secretome and inhibits macrophage reprogramming in vitro, and prevents immunosuppressive macrophage accumulation and improves the efficacy of EGFR TKI therapy in immunocompetent mouse models. Our findings highlight the previously unappreciated role of DTP cells in modulating the tumor microenvironment in on-treatment tumors, and position the treatment-induced YAP/TEAD activity in DTP cells as an important driver of adaptive immunosuppression during EGFR-targeted therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.701073v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Synthetic lethality (SL) provides a treatment paradigm for targeting cancer with alterations in driver genes that are not conventionally druggable, including loss-of-function (LoF) mutations in tumor suppressor genes and gain-of-function (GoF) alterations in oncogenes. We undertook a series of genome-wide CRISPR screens using functionally validated isogenic cell lines and also conducted a large-scale SL analysis using data from the cancer dependency map (DepMap). We charted SL interactions across 15 genetic alterations characteristic of diseases with high incidence and unmet clinical need: FBXW7, CCNE1, CDK12, ARID1A, KMT2D, DNMT3A, TET2, KEAP1, STK11, IDH1, SF3B1, SRSF2, U2AF1, chromosome 18q loss, and chromosome 13q loss. We show validation of several SL interactions between tractable targets with cancer drivers, including ARID1A and the hexosamine biosynthetic pathway aminotransferase GFPT1, STK11 with CAMK protein kinase family members including MARK2, FBXW7 and the CDK1 regulatory kinase PKMYT1, and CCNE1 amplification and the anaphase promoting complex or cyclosome (APC/C). In summary, this study offers a rich resource of genetic interactions across cancer drivers enabling the discovery of new biological insights and drug targets for future therapeutic development.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.25.701589v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -192,15 +154,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jan 24, 2026</span>
+<span class="date">Jan 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Forecasting tumor growth kinetics and hypoxia levels in mice using mathematical modelling</h2>
-<p class="paper-authors">Azzopardi, N., Ternant, D., +4 authors, Chadet, S.</p>
+<h2 class="paper-title">Alternative Lengthening of Telomeres and CINSARC are interconnected toward non-translocation-related sarcomas progression</h2>
+<p class="paper-authors">Perot, G., Guerriau, C., +6 authors, Chibon, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Quantitative description of tumor growth is challenged by vascular heterogeneity and hypoxia. In this study, mammary tumor growth was investigated in mouse model using caliper and ultrasound imaging measurements, bioluminescence imaging (BLI), and pimonidazole imaging. Tumor volume increased monotonically when assessed by caliper and ultrasound imaging, whereas BLI exhibited oscillating dynamics despite continued tumor growth, consistent with hypoxia-related signal attenuation. A mathematical compartmental model was developed primarily to describe tumor growth dynamics, incorporating latent vascular capacity as a key regulatory variable. The model accounts for reciprocal interactions between tumor expansion and vascular limitation. BLI was integrated as an auxiliary observable to reveal hypoxia-driven modulation of signal production rather than as a direct surrogate of tumor size. Model parameters were estimated using nonlinear mixed-effects modelling with population approach, allowing quantification of population-level behavior and inter-individual variability. The model adequately described tumor growth while explaining BLI dynamics through vascular and hypoxic effects. This framework provides the first semi-mechanistic description of tumor growth and supports the use of BLI as an indirect marker of hypoxia and, consequently, of tumor growth. This model may provide a useful framework for quantifying the effects of vascular-modulating therapeutics and genetic polymorphisms involved in tumor progression.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.22.700997v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Alternative lengthening of telomeres (ALT) is a telomere elongation mechanism activated during oncogenesis and primarily acting in tumors of mesenchymal origin. Although the proteins involved in the machinery enabling ALT to elongate telomeres are becoming better understood, the underlying biology of this mechanism remains unclear. In the present study, we took advantage of a fully characterized cohort of 98 leiomyosarcomas (LMS) from the French Sarcoma Group to further our understanding of the ALT mechanism. We first compared the transcriptomic profiles of ALT+ and TERT+ LMS and demonstrated a strong enrichment of the CINSARC signature in ALT+ tumors. The establishment of an ALT+-related signature in these LMS confirmed the close association between CINSARC and ALT in two additional cohorts of non-translocation-related sarcomas. In vitro mesenchymal models of spontaneous ALT induction showed increased CINSARC expression following acquisition of the ALT mechanism. Conversely, ALT inactivation, through BLM inhibition, led to decreased CINSARC expression. These results establish CINSARC as a new hallmark of the ALT mechanism in non-translocation-related sarcomas and demonstrate the association of a cellular biological process with the CINSARC prognostic signature, namely the ALT mechanism.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701253v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -208,18 +170,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jan 24, 2026</span>
-<span class="journal">PubMed</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jan 25, 2026</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ProteoBoostR: an interactive framework for supervised machine learning in clinical proteomics.</h2>
-<p class="paper-authors">Annika Topitsch, Niko Pinter, +3 authors, Oliver Schilling</p>
+<h2 class="paper-title">Phosphoproteomic profiling reveals signaling pathways modulated by Annona muricata leaf extract in oral adenosquamous carcinoma cells</h2>
+<p class="paper-authors">Najar, M. A., Rex, D. A. B., +2 authors, Dagamajalu, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Mass spectrometry-based proteomics enables high-throughput quantification of thousands of proteins in clinical samples, fueling biomarker discovery for disease diagnosis and prognosis. However, leveraging complex proteomic profiles for predictive modeling often requires advanced machine learning (ML) expertise that many biomedical researchers lack. User-friendly tools are needed to apply state-of-the-art ML algorithms to proteomics data. XGBoost is a powerful tree-based ML algorithm known for high accuracy in classification tasks, and has been successfully used to classify cancer subtypes from multi-omics data.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41580610/" target="_blank">
+<p><strong>Abstract:</strong> Phosphorylation driven dysregulation of intracellular signaling networks is a central feature of cancer initiation, progression, and therapeutic resistance. Although Annona muricata leaf extracts have demonstrated anticancer activity across multiple experimental models, the underlying molecular mechanisms particularly at the level of phosphorylation dependent signaling remain poorly understood. In this study, we employed a tandem mass tag TMT-based quantitative phosphoproteomic approach to systematically characterize signaling alterations induced by methanolic Annona muricataleaf extract (AME) in oral squamous cell carcinoma (OSCC) CAL-27 cells. Functional assays revealed that AME significantly inhibited cell proliferation, migration, and clonogenic survival. Global phosphoproteomic profiling identified 6,362 phosphopeptides corresponding to 1,964 unique phosphorylation sites across nearly 7,000 phosphoproteins. AME treatment induced widespread, time-dependent hypophosphorylation, indicating a coordinated suppression of oncogenic signaling networks. Pathway and network analyses revealed marked inhibition of signaling pathways associated with key oncogenic kinases, including cyclin-dependent kinases (CDKs), mitogen-activated protein kinases (MAPKs), and signaling modules linked to EGFR and mTOR pathways. Kinase-substrate enrichment and kinome mapping further demonstrated reduced inferred activity of CDK and MAPK driven signaling, accompanied by suppression of cell cycle progression, mitosis, and checkpoint regulation. Collectively, these findings demonstrate that AME induces systems-level remodeling of phosphorylation dependent signaling networks, enforcing a growth-restrictive cellular state in OSCC cells. This study highlights quantitative phosphoproteomics as a powerful strategy for dissecting natural product mediated regulation of oncogenic signaling and provides mechanistic insight into the anticancer potential of Annona muricata.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701273v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -227,18 +189,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Dec 31, 2025</span>
-<span class="journal">PubMed</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jan 25, 2026</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Unraveling the molecular mechanisms of air pollution-induced lung adenocarcinoma through machine learning, network toxicology, and molecular docking.</h2>
-<p class="paper-authors">Yang Xu, Bin Yuan, Mingjun Zhang</p>
+<h2 class="paper-title">Cancer-myeloid cell invasive program in pediatric-type diffuse high-grade glioma</h2>
+<p class="paper-authors">Ruiz Moreno, C., Collot, R., van den Broek, T. J. M., +12 authors, Stunnenberg, H. G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Airborne environmental contaminants are established carcinogens. This investigation elucidates the mechanistic contributions to pulmonary adenocarcinoma (LUAD) pathogenesis.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41478005/" target="_blank">
+<p><strong>Abstract:</strong> Pediatric-type diffuse high-grade gliomas (pHGGs) are highly aggressive brain tumors with no effective therapies. Limited understanding of their tumor microenvironment has hindered the identification of targetable cell-cell dependencies driving tumor growth. Here, we generate pHGGmap, an integrative multimodal atlas of over 800,000 cells from 136 patients profiled across single-cell transcriptomic, epigenomic, and spatial modalities. We identify novel cancer cell states defined by developmental and context-responsive programs and uncover robust cancer-myeloid interactions that organize the tumor ecosystem. Distinct myeloid immunomodulatory programs align with specific cancer cell states, revealing three conserved multicellular niches across patients and treatment. One conserved stem-like-enriched niche couples disseminating radial glial-like (RG-like) cancer cells with complement-enriched macrophages, indicative of cellular co-option supporting invasion. Longitudinal profiling of a metastatic pHGG case further supports RG-like cells as the dominant disseminating population and demonstrates a preserved association with complement-enriched macrophages even outside the brain. Our findings highlight a stable cancer-myeloid dependency and therapeutic vulnerability. Importantly, therapeutic reprogramming of this niche restores immune activation and promotes targeting of highly invasive RG-like cells. Together, pHGGmap reveals targetable cancer-myeloid dependencies in pHGG and provides a foundation for translational discovery.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.23.701142v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
