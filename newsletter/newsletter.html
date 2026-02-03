@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 01, 2026</span>
+<span class="date">Feb 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DynaBiomeX: An Interpretable Dual-Strategy Deep Learning Framework for Architectural Noise Filtration in Sparse Longitudinal Microbiome Data</h2>
-<p class="paper-authors">Qureshi, A., Wahid, A., +1 author, Shahzad, M. K. K.</p>
+<h2 class="paper-title">GRAVITY: Dynamic gene regulatory network-enhanced RNA velocity modeling for trajectory inference and biological discovery</h2>
+<p class="paper-authors">Miao, Z., Fang, Z., +4 authors, Li, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Longitudinal biomedical datasets, particularly high-resolution microbiome profiles, present unique and complex challenges arising from their extreme sparsity, prevalence of zero inflation, and inherently dynamic, nonstationary behavior. Conventional Recurrent Neural Networks (RNNs) frequently encounter difficulties in these contexts, as they are unable to reliably differentiate between structural zeros and sampling zeros. To address these limitations, we introduce DynaBiomeX, a methodological framework specifically developed to model temporal dependencies within sparse biomedical timeseries data, while maintaining clinical interpretability. The DynaBiomeX framework integrates three parallel architectures BiDirectional Long Short Term Memory (BiLSTM), Attention based Gated Recurrent Unit (GRU), and an adapted Temporal Fusion Transformer (TFT) within a unified dual strategy Clinical Decision Support (CDS) workflow. These models are combined using stacking ensembles, which serve to maximize screening sensitivity by optimizing collective decision boundaries and thereby reducing the likelihood of missed cases. Concurrently, the adapted TFT functions as a specialized Sentinel, enhanced with Gated Residual Networks (GRN), to actively filter out stochastic noise and robustly validate predictions. This design helps the model separate real biological signals from random sampling noise. We tested on a multi modal dataset from 1,871 hematopoietic cell transplantation (HCT) patients to detect gut dysbiosis. Our benchmarks comparisons reveal that the model architectures exhibit distinct functional differences. Stacking ensembles achieved the best discriminative performance ROCAUC = 0.912, making them well suited for risk screening. In contrast, the noise filtering TFT reached perfect precision with no false positives Precision = 1.0 and strong reliability (MCC = 0.646; p 0.81. DynaBiomeX couples sensitive ensemble screening with precise transformer validation to robustly analyze sparse longitudinal data. Validated on microbiome dysbiosis, this framework offers a template for zero inflated domains like single cell sequencing and EHR monitoring.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.28.702442v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> RNA velocity techniques have emerged as efficient tools for unraveling the complex trajectories of cell development and differentiation. However, most of existing RNA velocity approaches are constrained by estimating transcriptional parameters for each gene in isolation and neglects the regulatory relationships among genes, which limits the ability to jointly resolve the dynamic rewiring of gene regulation and the underlying gene transcriptional kinetics across cell state transitions. To address these limitations, we present GRAVITY, a novel deep learning framework that explicitly integrates regulatory dynamics into transcriptional kinetics inference and utilizes a refined two-stage optimization strategy. Benchmarking across various simulated and real single-cell RNA sequencing datasets demonstrates that GRAVITY accurately infers both cellular and gene trajectories, along with their associated kinetic parameters. Most importantly, GRAVITY uncovers terminal cell states L5/L6 in embryonic brain development dataset. Furthermore, GRAVITY not only provides mechanistic insights by identifying the driver regulatory factors and modules governing cell fate, but also enables the systematic in silico simulation of cellular velocity changes induced by targeted regulatory perturbations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.31.702983v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 01, 2026</span>
+<span class="date">Feb 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Graph neural network-based prediction of direct reprogramming factors using gene regulatory networks with microRNA-mediated regulation</h2>
-<p class="paper-authors">Kawasaki, R., Takemoto, K., Hamano, M.</p>
+<h2 class="paper-title">Quantitative measurement of synthetic repression curves reveals design challenges for genetic circuit engineering under growth arrest</h2>
+<p class="paper-authors">Marken, J. P., Prator, M. L., +1 author, Murray, R. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Direct reprogramming (DR) converts somatic cells directly into target cell types while bypassing an intermediate pluripotent state, such as induced pluripotent stem cells. In practice, DR is achieved by transfecting multiple transcription factors (TFs); prior research has shown that combining microRNAs (miRNAs) with TFs further improves reprogramming efficiency. However, experimentally identifying effective TFs and miRNA combinations is difficult and costly, underscoring the need for robust in silico prediction approaches. We developed a graph neural network-based method to predict TFs that induce DR across diverse human cell types while explicitly modeling miRNA-mediated transcriptional regulation. By constructing a gene regulatory network integrating TF-target gene, TF-miRNA, miRNA-target gene, and gene-gene interactions, we implemented a Graph Attention Network v2 that predicts DR-inducing TFs while learning interaction importance and capturing transcriptional activation and repression. This approach outperformed existing methods in predicting experimentally validated DR-inducing TFs. Moreover, high-ranking predictions for previously unexplored tissues included TFs known to be associated with the development of the corresponding tissues, supporting the biological relevance of the results. Overall, the proposed method provides a practical in regenerative medicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.28.702229v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Despite the fact that microbes in natural environments spend most of their time in growth arrest, we understand little about how this physiological state affects the performance of engineered genetic circuits. Here, we measure repression curves from a library of genetic NOT gates at single-cell resolution in Escherichia coli under both active growth and growth arrest to systematically investigate how growth arrest affects circuit behavior. We find that the impact of growth arrest on circuit performance is almost entirely dominated by a single effect: a &gt;100-fold reduction in unrepressed expression levels. Growth arrest caused gene expression noise to increase moderately and had only minimal impacts on the sensitivity and sharpness of the repression curves. Our work shows both that conventional genetic circuit design paradigms are currently insufficient to develop circuits that can function properly under growth arrest, but also that addressing the reduction in just a single performance parameter would be sufficient to resolve this problem. This work expands our understanding of bacterial gene regulation under growth arrest and lays the groundwork for new design paradigms that will be essential in ensuring the safe and reliable performance of synthetic biology systems in real-world environments.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.01.703179v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 01, 2026</span>
+<span class="date">Feb 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Transcriptomic evaluation of immune-infiltrated patient-derived tumor organoids as preclinical models in renal cell carcinoma</h2>
-<p class="paper-authors">Yin, L., Lugand, L., +2 authors, Battail, C.</p>
+<h2 class="paper-title">Transcriptomics-based modeling of methionine metabolism effectively estimates sample-wise DNA methylation activity and epigenetic aging</h2>
+<p class="paper-authors">Guo, T., Dang, P., +7 authors, Zhang, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Patient-derived tumor organoids (PDTOs) have emerged as valuable preclinical models for studying tumor biology and therapeutic responses. However, despite the development of protocols for tumor dissociation and immune cell infiltration, their fidelity in representing clear cell renal cell carcinoma (ccRCC) tumors remains poorly characterized. To address this, we established matched samples, including tumor tissue, enzymatically dissociated tumor, formed PDTOs, and immune-infiltrated PDTOs from three ccRCC patients, and performed bulk RNA sequencing to capture dynamic molecular changes across the experimental workflow. Our analyses revealed that tumor dissociation triggered stress-related transcriptional changes, marked by the upregulation of heat shock genes (e.g., HSPA1A) and the downregulation of the hypoxia pathway, while PDTOs recapitulated hypoxic signaling. Immune-infiltrated PDTOs retained critical immune signatures including T-effector, and exhibited an enhanced pro-inflammatory phenotype (CXCL10, JAK-STAT). Furthermore, predictive gene signatures and immunotherapy response scores further underscored the clinical relevance of immune-infiltrated PDTOs consistent with the original tumor tissue. Collectively, these findings validate immune-infiltrated PDTOs as robust, patient-specific models for personalized therapeutic exploration, offering a platform to optimize immunotherapy strategies in ccRCC.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.28.699468v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> DNA methylation is a central epigenetic modification that regulates gene expression, maintains genomic stability, and guides cellular differentiation. However, direct measurements of DNA methylation, such as whole genome bisulfite sequencing or DNA methylation arrays, are costly and require substantial DNA input, limiting their scalability for large cohorts and their applicability to emerging modalities such as single cell and spatially resolved transcriptomics. In this study, motivated by the fact that DNA methylation is fundamentally a metabolic process, we investigate whether sample-wise DNA methylation activity can be inferred directly from transcriptomic profiles of genes involved in methionine and one-carbon metabolism. We show that a compact metabolic model comprising seven core reaction steps and 98 genes accurately predicts total DNA methylation activity across matched transcriptomic and methylation datasets from CCLE, TCGA, GTEx, and an independent single-cell multi-omics data set. Building on this framework, we develop Total DNA Methylation Activity (TDMA), a physics-informed neural network based score that enables robust estimation of DNA methylation activity from bulk, single-cell, and spatial transcriptomics data. We demonstrate that TDMA captures methylation-dependent transcriptional regulation and identifies genes and pathways under epigenetic control. Applying TDMA to GTEx, we further reveal strong associations between the predicted total methylation activity, chronological aging, and established epigenetic clocks. We also demonstrated that TDMA can serve as a transcriptomics-derived epigenetic clock and highlights age-dependent roles of folate and glutathione metabolism in epigenetic aging. Applying TDMA to single cell and spatial transcriptomics data collected from pancreatic adenocarcinoma (PDAC), we identified that methionine metabolism and DNA methylation regulates T cell cytotoxicity in the tumor microenvironment of PDAC. Together, this work establishes a scalable, modality-agnostic framework for estimating DNA methylation activity from transcriptomics and provides new insights into the metabolic regulation of epigenetic aging.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702880v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 01, 2026</span>
+<span class="date">Feb 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Semantic-Guided Spatial Representation Learning for Spatial Domain Identification</h2>
-<p class="paper-authors">Lu, Y., Xu, Y., +1 author, Zhang, Y.</p>
+<h2 class="paper-title">Fine-tuned synthetic transcription factors for production of 3' phosphoadenosine-5'-phosphosulfate in yeast</h2>
+<p class="paper-authors">Borah, M., Gu, S., +3 authors, Naseri, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Spatial domain identification is a fundamental task in spatial transcriptomics analysis, aiming to partition tissue sections into coherent regions that reflect underlying biological organization. Most existing methods rely on gene expression similarity and spatial proximity, which can be insufficient when expression measurements are sparse, noisy, or weakly discriminative. In such settings, representation learning faces ambiguity in determining how spatial neighborhood information and expression-based similarity should be jointly utilized. Results: We present GreS, a spatial domain identification framework that incorporates gene-level semantic priors into spatial representation learning. GreS models spatial adjacency and expression-driven similarity using two complementary neighborhood graphs and leverages aggregated gene semantic information to guide how these views are weighted at the spot level. Rather than redefining neighborhood relationships, semantic priors act as contextual signals that modulate the relative contribution of spatial and expression-based cues during domain inference. We evaluate GreS on diverse spatial transcriptomics datasets, including layered brain tissue, embryonic development, and heterogeneous tumor microenvironments. Across these settings, GreS consistently identifies spatial domains that are structurally coherent and biologically interpretable, outperforming existing methods in quantitative accuracy and qualitative spatial organization. Our ablation analyses further demonstrate that performance gains arise from biologically meaningful and properly aligned semantic information, rather than from increased model complexity or auxiliary features.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.28.700742v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Technologies developed over the past decade have made Saccharomyces cerevisiae a promising platform for producing various natural products. Balancing multi-enzyme expression, while maintaining robust microbial growth, remains a limiting factor for engineering long biosynthetic pathways in yeast. Here, we improved the transcriptional capacity of our previously developed isopropyl {beta}-D-1-thiogalactopyranoside (IPTG)-inducible synthetic transcription factors (synTFs) derived from the plant JUB1 DNA-binding domain. To this end, at cysteine positions within surface-exposed loop regions of a JUB1-derived DNA-binding scaffold, we introduced a short peptide to enhance loop flexibility while providing local stability and orientation. The generated synTFs, so-called JUB1-X synTFs, varying in strength, have been successfully used to improve the synthesis of 3'-phosphoadenosine 5'-phosphosulfate (PAPS), a universal sulfate donor necessary for the synthesis of bioactive molecules, including therapeutic glycosaminoglycans and sulfolipids. Using only this engineered yeast strain in simple batch culture, PAPS accumulation of 21.4 {+/-} 5.8 mg/g cdw was achieved after only 5 hours of inducing the expression of JUB1-X synTFs. Beyond PAPS production, the design principle demonstrated here provides a generalizable strategy to fine-tune other plant-derived synTFs, expanding the regulatory capabilities of existing synTF collections. Together, this work offers a modular, scalable approach to constructing high-performance gene circuits and supports the development of yeast cell factories for complex metabolic and synthetic biology applications.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.02.703094v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,15 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 01, 2026</span>
+<span class="date">Feb 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MolSpecFlow: Mass-Constrained Hybrid Flow Matching for Joint Molecular-Spectral Analysis</h2>
-<p class="paper-authors">Wang, Y., Yang, F., +8 authors, Yao, J.</p>
+<h2 class="paper-title">HistoSweep enables cellular-resolution tissue quality control for gigapixel images in digital pathology and spatial omics</h2>
+<p class="paper-authors">Schroeder, A., Yu, X., +14 authors, Li, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Identifying the ``dark matter" of the chemical universe requires bridging the fundamental gap between molecules and mass spectra. Existing approaches struggle to accurately map between these distinct data formats, often yielding results that are either chemically implausible or inconsistent with the physical evidence. We introduce MolSpecFlow, a unified foundation model pre-trained on 100 million molecules and 42 million spectra, which leverages a hybrid flow matching framework to orchestrate optimal transport paths for spectral peaks and discrete probability flows for molecular tokens. Furthermore, to guarantee the physicochemical validity of the generated structures, we incorporate explicit rule-based constraints into the generative process, utilizing a token-level mass control mechanism that strictly enforces alignment with the precursor molecular weight. MolSpecFlow establishes a new state-of-the-art on the MassSpecGym benchmark, surpassing diffusion and retrieval baselines in de novo generation (Top-1 accuracy +35%), spectral simulation, and molecular retrieval, demonstrating the power of physics-grounded unified modeling.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.28.702438v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> High-resolution histology images are indispensable for pathology and increasingly serve as the structural backbone for spatial omics. Yet whole-slide images (WSIs) frequently contain artifacts, acellular voids, and background regions that, when included in computational workflows, introduce noise, degrade model accuracy, and compromise biological interpretation. Existing tools provide only coarse foreground-background separation, leaving a gap in fine-grained quality control (QC). Here we present HistoSweep, a scalable framework that generates morphology-aware tissue masks at cellular resolution. By integrating density filtering, texture descriptors, and adaptive thresholding, HistoSweep systematically removes non-informative tissue regions while preserving biologically meaningful microstructures. It processes billion-pixel WSIs in minutes on standard CPUs, requiring no GPU acceleration, and is deployable across research and clinical settings. Across 25 WSIs spanning distinct tissues, disease states, and spatial omics platforms, HistoSweep consistently outperformed existing methods. It enhanced visualization and segmentation, improved virtual cell type predictions, and safeguarded spatial transcriptomics integrity by detecting transcript leakage and transcript-histology misalignment. By enabling fine-grained, scalable QC, HistoSweep provides a foundational preprocessing step for reliable and reproducible digital pathology and spatial omics analyses.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702675v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -135,15 +135,167 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jan 31, 2026</span>
+<span class="date">Feb 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Topological reprogramming transforms an integral membrane oligosaccharyltransferase into a water-soluble glycosylation catalyst</h2>
-<p class="paper-authors">Kwon, Y. H., Mihaljevic, L., +14 authors, DeLisa, M. P.</p>
+<h2 class="paper-title">METEOR: joint genome-scale reconstruction and enzyme prediction</h2>
+<p class="paper-authors">Niu, K., Kulmanov, M., Hoehndorf, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Glycosyltransferases (GTs) catalyze the formation of new glycosidic bonds and thus are vital for synthesizing nature's vast repertoire of glycans and glycoconjugates and for engineering glycan-related medicines and materials. However, obtaining detailed structural and functional insights for the &gt;750,000 known GTs is limited by difficulties associated with their efficient recombinant expression. Members of the GT-C fold, in particular, pose the most significant expression challenges due to the integration and folding requirements of their multiple membrane-spanning regions. Here, we address this challenge by engineering water-soluble variants of an archetypal GT-C fold enzyme, namely the oligosaccharyltransferase PglB from Campylobacter jejuni (CjPglB), which possesses 13 hydrophobic transmembrane helices. To render CjPglB water-soluble, we leveraged two advanced protein engineering methods: one that is universal called SIMPLEx (solubilization of IMPs with high levels of expression) and the other that is custom tailored called WRAPs (water-soluble RFdiffused amphipathic proteins). Each approach was able to transform CjPglB into a water-soluble enzyme that could be readily expressed in the cytoplasm of Escherichia coli cells at yields in the 3-6 mg/L range. Importantly, solubilization was achieved without the need for detergents and with retention of catalytic function. Collectively, our findings demonstrate that both SIMPLEx and WRAPs are promising platforms for advancing the molecular characterization of even the most structurally complex GTs, while also enabling broader GT-mediated glycosylation capabilities within synthetic glycobiology applications.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702934v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Current machine learning methods for enzyme function prediction primarily treat proteins as independent entities, ignoring the metabolic context in which they operate. This reductionist approach often generates biologically implausible annotations that fail to satisfy stoichiometric or thermodynamic constraints. While genome-scale metabolic models (GEMs) enforce systemic coherence, traditional reconstruction workflows decouple functional annotation from network assembly, resulting in information loss during the discretization of enzymatic evidence. Results: We developed METEOR, a framework that integrates continuous confidence scores from deep learning models directly into a Mixed-Integer Linear Programming (MILP) formulation. By conditioning predictions on global metabolic requirements, METEOR resolves functional ambiguities where sequence signals are weak. Evaluation on the Price-149 dataset shows that our method yields physiologically viable networks capable of sustaining growth and improve protein-level predictions over baseline methods. Validation on 6,894 bacterial genomes reveals that system-aware refinement increases the recall of experimentally observed phenotypes substantially. Furthermore, we show that constraint-driven selection can still improve annotation performance in highly incomplete genomes. Our results suggest that functional annotation should be treated as a unified inference problem where global system constraints supervise local predictions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.01.701942v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">DBSOMA: A Machine Learning Method that Identifies Chemical Modulators of Transcriptional States Uncovers Effectors of Beta-Cell Maturation</h2>
+<p class="paper-authors">Kunz, T. R., Rivera-Feliciano, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The effects of perturbation on a biological system can be readily measured in terms of transcriptional changes. However, despite a wealth of transcriptional perturbation response data, there are currently few methods to draw equivalence between the many biological systems used to generate that data and a specific system of interest. Here we use density analysis of transcriptional correlations to computationally predict whether a given perturbation readout is relevant to Stem Cell derived islet (SC-Islet) maturation. The approach, Density Based Self-Organizing Map Analysis (DBSOMA), first learns patterns of gene expression represented in scRNA-seq sets by clustering genes with the Self-Organizing-Map (SOM) algorithm. Perturbation expression profiles and other gene lists are then projected onto the SOM grid, where the degree of clustering is determined by the Density-Based Spatial Clustering of Applications with Noise (DBSCAN) algorithm. We applied DBSOMA to SC-Islet maturation and identified known and novel regulators of {beta}-cell maturation. This workflow can be applied broadly to biological systems where single-cell RNA-sequencing data is available, and a desired outcome can be represented in transcriptional changes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.701818v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multi-ancestry conditional and joint analysis (Manc-COJO) applied to GWAS summary statistics</h2>
+<p class="paper-authors">Wang, X., Wang, Y., +2 authors, Yengo, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Conditional and joint (COJO) analysis of genome-wide association study (GWAS) summary statistics to identify single nucleotide polymorphisms (SNPs) independently associated with a trait is standard in post-GWAS pipelines. GWAS meta-analyses are increasingly conducted across multiple ancestry groups but how to perform COJO in a multi-ancestry context is not known. Here we introduce Manc-COJO, a method for multi-ancestry COJO analysis. Simulations and real-data analyses show that Manc-COJO improves the detection of independent association signals and reduces false positives compared to COJO and ad hoc adaptations for multi-ancestry use. We also introduce Manc-COJO:MDISA, a follow-up within ancestry algorithm to identify ancestry-specific associations after fitting Manc-COJO identified SNPs. The C++ implementation of Manc-COJO substantially improves on computational efficiency (for single ancestry &gt;120 times faster than GCTA-COJO software) and supports linkage disequilibrium references derived either from individual-level genotype data or pre-computed matrices, facilitating analysis when data sharing is limited.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702783v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">scDiagnostics: systematic assessment of cell type annotation in single-cell transcriptomics data</h2>
+<p class="paper-authors">Christidis, A., Ghazi, A. R., +3 authors, Geistlinger, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Although cell type annotation has become an integral part of single-cell analysis workflows, the assessment of computational annotations remains challenging. Many annotation tools transfer labels from an annotated reference dataset to a new query dataset of interest, but blindly transferring labels from one dataset to another has its own set of challenges. Often enough there is no perfect alignment between datasets, especially when transferring annotations from a healthy reference atlas for the discovery of disease states. We present scDiagnostics, a new open-source software package that facilitates the detection of complex or ambiguous annotation cases that may otherwise go unnoticed, thus addressing a critical unmet need in current single-cell analysis workflows. scDiagnostics is equipped with novel diagnostic methods that are compatible with all major cell type annotation tools. We demonstrate that scDiagnostics reliably detects complex or conflicting annotations using both carefully designed simulated datasets and diverse real-world single-cell datasets. Our evaluation demonstrates that scDiagnostics reliably identifies misleading annotations that systematically distort downstream analysis and interpretation and that would otherwise remain undetected. The scDiagnostics R package is available from Bioconductor (https://bioconductor.org/packages/scDiagnostics).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.29.701618v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Spatial multi-omics unveils the monoclonal origin, neuroendocrine plasticity, and microenvironment niches in combined small cell lung cancer</h2>
+<p class="paper-authors">Wang, Z., Luo, Q., +12 authors, Li, Z.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Combined small-cell lung cancer (cSCLC) is a rare and aggressive subtype of small-cell lung cancer (SCLC) characterized by mixed histology comprising SCLC and non-small cell lung cancer (NSCLC) or large cell neuroendocrine carcinoma (LCNEC) components. Despite its histological heterogeneity and even poorer prognosis than de novo SCLC, cSCLC is clinically managed as pure SCLC, largely due to the lack of molecular insights into its biology, lineage plasticity, and tumor microenvironment (TME). Here, we perform multi-omics profiling, including spatially-resolved whole-exome sequencing (WES), spatial transcriptomics (ST) and single-nucleus RNA sequencing (snRNA-seq), across 19 treatment-naive cSCLC tumors spanning all major histological subtypes. Our analysis reveals that SCLC and NSCLC/LCNEC components share a monoclonal origin, with histological divergence characterized by distinct mutation and copy number alteration patterns. ST and snRNA-seq uncover spatially exclusive or interspersed tumor domains, with distinct TME compositions and immune landscapes. Notably, fibroblast-rich regions enriched for an aggressive fibroblast subtype form boundaries between tumor domains, potentially influencing immune TME and treatment responses. We identify extensive lineage plasticity within cSCLC, including active LUAD-to-SCLC transdifferentiation and SCLC subtype coexistence, suggesting transitional cellular states not captured by traditional diagnostics. Leveraging these insights, we developed the cSCLC Detector, a sensitive mutation-based diagnostic assay that improves the detection of cSCLC in tissue and liquid biopsy samples. Our findings offer critical insights into cSCLC lineage plasticity, cellular evolution, and microenvironmental interactions, underscoring the need for tailored treatment strategies and diagnostic frameworks for this aggressive cancer subtype.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.31.702982v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A MET-Targeted Variable New Antigen Receptor Theranostic for Non-Small Cell Lung Cancer</h2>
+<p class="paper-authors">LeBeau, A., Minne, R., +25 authors, Baschnagel, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The MET receptor tyrosine kinase is mutated or amplified in ~6% of non-small cell lung cancers (NSCLC) and overexpressed in NSCLC. Here, we report a novel shark-derived single-domain variable new antigen receptor (VNAR) with high MET affinity for theranostic applications. Following immunization of a juvenile nurse shark (Ginglymostoma cirratum) with the extracellular domain of human MET, we identified a VNAR clone exhibiting high MET selectivity in vitro. As a bivalent human Fc fusion, vMET1-Fc was selectively internalized by MET-expressing cell lines and xenografts. Radiolabeled with zirconium-89 (Zr-89-vMET1-Fc), it enabled PET/CT detection of MET-positive NSCLC xenografts. As a therapeutic, Lu-177-vMET1-Fc delayed tumor growth in MET-mutant and MET-amplified cell line-derived xenografts. Non-human primate studies in healthy rhesus macaques confirmed favorable biodistribution, predictable clearance, and minimal off-target uptake. Together, these findings establish vMET1-Fc as a theranostic agent for imaging and treating MET-altered NSCLC.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702875v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A CRISPR-Based Humanized Model Reveals Cooperative Role of STAG2 Loss in Familial GATA2-Deficient MDS Progression</h2>
+<p class="paper-authors">Freed, G., Quijada-Alamo, M., +14 authors, Wagenblast, E.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Myelodysplastic syndrome (MDS) is a heterogeneous myeloid malignancy driven by hematopoietic stem cell dysfunction, leading to ineffective hematopoiesis and cytopenias. Familial GATA2 deficiency is the most common cause of Myelodysplastic syndrome in adolescents, with progression often accelerated by co-occurring mutations, notably STAG2 loss-of-function. Using CRISPR/Cas9-mediated genome engineering in primary human fetal liver-derived hematopoietic stem cells and xenotransplantation in mice, we modeled GATA2-deficient Myelodysplastic syndrome with acquired STAG2 loss to investigate disease initiation and progression. While GATA2 deficiency alone had minimal short-term impact in our model, combined GATA2 and STAG2 loss increased hematopoietic stem cell maintenance and self-renewal, induced a myeloid-lineage bias, and expanded primitive progenitors. Single-cell transcriptional profiling revealed upregulation of stemness genes and inflammatory pathways. This humanized model faithfully recapitulates high-risk GATA2-deficient Myelodysplastic syndrome, providing mechanistic insight into how cooperative mutations drive stem cell expansion, inflammatory signaling, and myeloid skewing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702879v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Tumor-to-endothelium mitochondrial transfer licenses endothelial cells for CD8+ T cell recognition via mitochondrial neoantigen presentation</h2>
+<p class="paper-authors">Costabile, F., Pierini, S., +8 authors, Facciabene, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Renal cell carcinoma (RCC) frequently exhibits resistance to immune checkpoint blockade, highlighting the need for strategies that enhance tumor-specific T cell priming and improve immune access to the tumor microenvironment. Here we show that vaccination targeting tumor-associated mitochondrial antigens (TAMAs), derived from tumor-specific mitochondrial DNA (mtDNA) missense mutations, synergizes with PD 1/PD L1 blockade to overcome checkpoint refractoriness in the RENCA RCC model. TAMAs vaccination elicits antigen-specific T cell responses, increases intratumoral CD8+ T cell infiltration, and reduces immunosuppressive myeloid populations, resulting in delayed tumor progression and improved survival when combined with checkpoint inhibition. In parallel, TAMAs + checkpoint blockade induces vascular remodeling characterized by increased pericyte coverage, reduced vascular leakage, improved perfusion and reduced hypoxia. Mechanistically, vascular remodeling is driven by CD8+ T cell dependent, IFN{gamma} associated immune activity and is associated with endothelial apoptosis and diminished intratumoral CD31 signal. We further identify tumor-to-endothelium mitochondrial transfer as a mechanism linking mitochondrial neoantigens to the tumor vascular compartment: tumor-derived mitochondria enter human and mouse endothelial cells in vitro and in vivo, and tumor-associated mtDNA mutations are detectable in endothelial fractions from murine tumors and human RCC specimens. Human endothelial cells can present mitochondrial neoantigens via MHC class I and become targets of TAMAs-specific CD8+ T cell cytotoxicity, including following mitochondrial acquisition from tumor cells. Together, these findings establish mitochondrial neoantigen immunity as a tractable approach to enhance checkpoint responses and reveal mitochondrial transfer as an antigenic bridge that expands immune targeting to the tumor vasculature.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702567v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Coverslip Hypoxia High-Content Screening (CH-HCS): A 2D Imaging Platform for Spatially Resolved Analysis of CAR-T Function Under Oxygen Gradients</h2>
+<p class="paper-authors">Murarolli, J. P. Z., Beatriz Capuz, G. B. C., +5 authors, Panepucci, R. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Hypoxia within the tumor microenvironment profoundly limits the efficacy of immune and cellular therapies, yet most in vitro cytotoxicity assays neglect spatial oxygen heterogeneity. We developed Coverslip Hypoxia High-Content Screening (CH-HCS), a simple, scalable 2D co-culture platform that enables quantitative, region-resolved evaluation of CAR-T cell activity across controlled oxygen gradients within a single well. In CH-HCS, a 5 mm glass coverslip placed over tumor-stroma co-cultures restricts oxygen diffusion, generating concentric hypoxia-normoxia zones in standard 96-well plates. Fluorescently labeled CD19+ Raji or CD19- K562 tumor cells, stromal cells, and anti-CD19 CAR-T cells were analyzed using multiparametric fluorescence imaging with an ImageXpress Micro XLS system coupled to custom CellProfiler-KNIME pipelines, enabling segmentation of spatial Regions of Interest (InnerCore, OuterCore, Periphery, and Outside) and single-cell quantification of tumor death (SYTOX Green) and T-cell morphodynamics. The platform reproducibly established oxygen gradients that strongly shaped cellular behavior: CAR-T cytotoxicity and motility were maximal in normoxic regions but markedly suppressed within hypoxic cores, whereas effector cell survival increased under low oxygen. Unlike bulk cytotoxicity assays, CH-HCS directly visualizes spatial functional heterogeneity within the same well, allowing simultaneous comparison of matched hypoxic and normoxic compartments. Together, CH-HCS provides a cost-effective, high-throughput, and physiologically relevant tool for preclinical screening of CAR-T products and therapeutic strategies aimed at overcoming hypoxia-driven immune resistance at the tumor-stroma interface.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.01.30.702833v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
