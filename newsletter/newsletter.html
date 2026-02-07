@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">FrustrAI-Seq: Scaling Local Energetic Frustration to the Protein Sequence Space</h2>
-<p class="paper-authors">Leusch, J.-P., Poley-Gil, M., +4 authors, Heinzinger, M.</p>
+<h2 class="paper-title">Detection of Somatic Point Mutations Directly from Spatial Transcriptomics Enables in vivo Spatiotemporal Lineage Tracing</h2>
+<p class="paper-authors">Yang, Z., Yao, M., +23 authors, Dou, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteins fold into their native three-dimensional (3D) structures by navigating complex energy landscapes shaped by the biophysical and biochemical properties of their sequence. Once folded, some sequence positions (dubbed residues) remain locally frustrated, reflecting functional constraints incompatible with optimal packing. This local energetic frustration provides important insights into protein function and dynamics, but its analysis typically relies on structure-based energy calculations and remains energetically costly at scale. Here, we introduce an ultra-fast sequence-based prediction of local energetic frustration directly from protein sequences using embeddings from protein language models (pLMs). Our method, coined FrustrAI-Seq, enables proteome-wide frustration profiling in minutes (17 minutes for the entire human proteome on a single Nvidia H100 GPU) while retaining biologically relevant performance as shown for the alpha-globin and beta-lactamase family. By eliminating the need for explicit structural or evolutionary information, this approach expands frustration analysis to protein regions and classes that were previously inaccessible, including intrinsically disordered regions and high-throughput de novo designed protein datasets. To support reproducibility and large-scale applications, we provide the largest freely available resource of precomputed local frustration scores to date (10^6 proteins), along with model weights and complete training and inference code at: github.com/leuschjanphilipp/FrustrAI-Seq.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703498v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Spatial transcriptomics reveals tissue organization but lacks in vivo lineage-tracing methods applicable to humans. We introduce SpaceTracer, a computational framework that accurately detects somatic single-nucleotide variants (SNVs) directly from spatial transcriptomics data. By leveraging naturally occurring somatic SNVs, SpaceTracer reconstructs cellular phylogenies within native tissue architecture, enabling the mapping of lineage spread, migration, lineage-coupled expression changes and lineage-aware local interactions. Applied to human cutaneous squamous cell carcinoma, it traced tumor initiation and progressions, uncovered widespread pre-invasive migration of dedifferentiated epithelial cells and characterized mutant B cells migrating from tertiary lymphoid structures (TLS) into the tumor boundary. The framework also reconstructed developmental lineages across multiple tissues and identified tissue-resident mutant immune cells. SpaceTracer thus provides a perturbation-free platform for high-resolution spatiotemporal lineage tracing, offering a transformative tool for elucidating complex biological systems--especially tumor-immune ecosystems--with direct implications for advancing cancer immunotherapy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703493v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Neretva: Unsupervised Neural Variational Inference for Allele-level Genotyping of Highly Polymorphic Genes</h2>
-<p class="paper-authors">Zhou, Q., Ahmadi, S. P., Numanagic, I.</p>
+<h2 class="paper-title">IDTrack: Time- and Namespace-Aware Identifier Harmonization for Reproducible Workflows</h2>
+<p class="paper-authors">Inecik, K., Erken, E., Theis, F. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate genotyping and phasing of highly polymorphic gene families are essential for precision medicine. Yet, the genotyping problem remains computationally challenging due to extreme sequence similarity between related genes, copy number variation, and structural complexity. Current methods typically rely on integer linear programming or maximum likelihood-based approaches that often suffer from scalability and flexibility issues. Here, we present Neretva, a new framework that models the genotyping problem as an instance of a hierarchical probabilistic model based on auto-encoding variational Bayes (AEVB). Leveraging the reparameterization strategy and neural inference networks, our approach scales efficiently to complex pharmacogene families such as CYP (cytochrome P450) and KIR (killer-cell immunoglobulin-like receptors), and achieves improved accuracy over the current state of the art on both CYP and KIR gene families. Neretva is open source and is freely available at https://github.com/0xTCG/neretva.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703582v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Reproducibility in computational biology fails silently when gene identifiers drift beneath unchanged analysis code: the same frozen pipeline, rerun months later, yields different results not because biology evolved but because identifier semantics shifted with upstream annotation releases; a failure mode invisible to version control and containerization because the mapping layer itself constitutes an undeclared coordinate system whose time axis advances independently of downstream workflows. Gene identifiers occupy positions in a joint space of namespace, annotation release, genome assembly, and entity layer that evolves through retirements, merges, splits, and nomenclature reassignments, so atlas integration, retrospective reanalysis, and perturbation screens inherit temporal dependencies that existing utilities cannot surface: current mappers answer what an identifier resolves to now rather than under what declared contract the feature space was constructed. IDTrack reconceptualizes identifier harmonization as a time-indexed coordinate transformation by materializing annotation release history into a snapshot-bounded identifier graph and solving conversions through a time-traveling, contract-constrained pathfinder that pins release boundaries, assembly contexts, and ambiguity policies as explicit parameters rather than implicit endpoint state. This architecture surfaces reachability and ambiguity as interpretable outcome classes (unmapped, uniquely resolved, or ambiguously multi-target) enables atlas-scale harmonization with explicit collision handling, and records every mapping decision in a provenance ledger that transforms invisible preprocessing into citable methodological infrastructure whose coordinate choices can be inspected, compared, and reproduced rather than lost as ephemeral preprocessing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.703984v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Deconvolving mutation effects on protein stability and function with disentangled protein language models</h2>
-<p class="paper-authors">Ding, K., Li, Z., +2 authors, Luo, Y.</p>
+<h2 class="paper-title">Distributional and Centile Calibration of Diffusion Tensor Imaging Normative Models as Training Sample Sizes Increase to 40,000 Subjects</h2>
+<p class="paper-authors">Villalon Reina, J. E., Feng, Y., +7 authors, Thompson, P. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Understanding how evolutionary constraints shape protein sequences is fundamental to deciphering the molecular mechanisms underlying protein stability and function, which has broad implications in protein engineering and therapeutics development. Recent advances in protein language models (pLMs) have enabled accurate prediction of mutation effects through evolutionary information, effectively capturing the selective pressure that governs protein sequence variation. A critical challenge, however, remains in disentangling the intertwined mutation effects on protein stability and function, as evolutionary signals conflate both stability-driven and function-driven pressures, obscuring the mechanistic basis of mutation effects and limiting their utility for rational protein engineering. In this work, we introduce DETANGO, a novel deep learning framework that explicitly deconvolves the mutation effects on protein functions by removing components attributable to stability perturbations from the pLM-predicted mutation effects. Guided by computational or experimental stability measurements, DETANGO estimates a functional plausibility score for each single-point mutation that is the component of the mutation effect not accounted for by changes in stability. Single-point mutations with low functional plausibilities are predicted to be stable-but-inactive (SBI) variants, whose compromised activities are caused by direct perturbations on functional mechanisms rather than structural stability. Residues enriched for such variants are inferred to be functionally critical, as indicated by the strong evolutionary pressures to maintain protein function. Through extensive benchmarking experiments, we show that DETANGO accurately identifies SBI variants and pinpoints functionally important residues across contexts, including ligand binding, catalysis, and allostery. Moreover, extending DETANGO from individual proteins to homologous protein families reveals shared and distinctive functional patterns across protein families. Collectively, these results establish DETANGO as a biologically grounded framework for disentangling evolutionary constraints on protein stability and function, advancing mechanistic understanding of protein function, and informing rational protein engineering.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703560v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Normative modeling (NM) is a powerful framework for quantifying individual deviations in brain structure and function relative to a population reference. However, its clinical utility depends on well-calibrated models trained on heterogeneous datasets such as those found in neuroimaging. Here, we systematically examine the effect of training sample size on the distributional and centile calibration of hierarchical Bayesian regression (HBR)-based NMs. Using multisite 3D diffusion MRI scans of the brain from 54,583 subjects, spanning almost the entire lifespan (age: 4-91 years), we trained NMs of white matter fractional anisotropy, a key microstructural metric, on subsamples ranging from 5,000 to 40,000 subjects. HBR was modeled with a Sinh-Arcsinh likelihood. Model calibration was evaluated using Kernelized Stein Discrepancy (KSD) to assess distributional agreement of Z-scores with the standard normal distribution; we also used Mean Absolute Centile Error (MACE) to quantify centile accuracy. Both metrics showed consistent and substantial improvements as the training sample size increased, indicating reduced posterior uncertainty and improved estimation of distributional parameters, particularly at the centile extremes. These results demonstrate that large training cohorts are essential for well calibrated NMs derived from heterogeneous neuroimaging data and highlight the importance of large-scale data aggregation for reliable individual-level inference.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703901v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Using a GPT-5-driven autonomous lab to optimize the cost and titer of cell-free protein synthesis</h2>
-<p class="paper-authors">Smith, A. A., Wong, E. L., +39 authors, Thavaraj</p>
+<h2 class="paper-title">PanACRpred: Predicting Accessible Chromatin Regions in Pangenomes using Motif Chaining</h2>
+<p class="paper-authors">Warr, M. J., Dinh, T., +6 authors, Mumey, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> We used an autonomous lab, comprising a large language model (LLM) and a fully automated cloud laboratory, to optimize the cost efficiency of cell-free protein synthesis (CFPS). By conducting iterative optimization, the LLM-driven autonomous lab was able to achieve a 40% reduction in the specific cost ($/g protein) of CFPS relative to the state of the art (SOTA). This cost reduction was accompanied by a 27% increase in protein production titer (g/L). Iterative experimental design, experiment execution, data capture and analysis, data interpretation, and new hypothesis generation were all handled by the LLM-driven autonomous lab. The interface between OpenAI's GPT-5 LLM and Ginkgo Bioworks' cloud laboratory incorporated built-in validation checks via a Pydantic schema to ensure that AI-designed experiments were properly specified. Experimental designs were translated into programmatic specification of multi-instrument biological workflows by Ginkgo's Catalyst software and executed on Ginkgo's Reconfigurable Automation Cart (RAC) laboratory automation platform, with human intervention largely limited to reagent and consumables preparation, loading and unloading. By integrating LLMs with programmatic control of a cloud lab, we demonstrate that an LLM-driven autonomous lab can successfully perform a real-world scientific task, highlighting the potential of AI-driven autonomous labs for scientific advancement.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.703998v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> In this work, we investigate whether motif subsequence features can predict accessible chromatin regions (ACR) in a genome, i.e. regions that are accessible to regulatory proteins, thus enabling transcription of associated genes. We focus on plants, whose agricultural and ecological importance make them interesting and important organisms to study, and whose complex genomes provide important stress tests for our algorithm. We show that regulatory motif sequence similarity can be found efficiently using co-linear chaining. The similarity scores found are then used as features in machine learning models to explore the feasibility of effectively predicting ACRs in genome assemblies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.703812v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,15 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Scalable probe-based single-cell transcriptional profiling for virtual cell perturbation mapping and synthetic biology phenotyping</h2>
-<p class="paper-authors">Swinderman, J. T., Tung, P.-Y., +17 authors, Gilbert, L. A.</p>
+<h2 class="paper-title">CLEAR-HPV: Interpretable Concept Discovery for HPV-Associated Morphology in Whole-Slide Histology</h2>
+<p class="paper-authors">Liu-Swetz, Y., Tan, S., +1 author, Wang, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Large-scale single-cell transcriptional phenotyping of genetic perturbations (perturb-seq) links genes to phenotypes and should enable virtual cell predictive modeling and cellular engineering. However, current perturb-seq single-cell methods are costly, information sparse and require barcodes for many applications. We developed ProPer-seq, a perturb-seq method that uses multiplexed custom DNA probe panels to measure and phenotype synthetic biology perturbations at single-cell resolution without barcodes, including multidomain proteins and sgRNAs. ProPer-seq faithfully reproduces gold-standard perturb-seq phenotypes while achieving 4-fold cost reduction and 50% increased gene detection per cell. As a scalable fixed-cell profiling method, ProPer-seq enables atlas-scale profiling for virtual-cell initiatives and demonstrates data quality suitable for training and validating predictive models. Lastly, ProPer-seq's targeted detection of modular transgenes enables library-on-library perturbation profiling of combinatorial synthetic protein design spaces. We applied this to 3,550 sgRNA x dCas9 effector combinations as well as 260 CAR x ORF combinations dynamically profiled in primary T cells, revealing principles of transcriptional control and cell state modulation by multidomain synthetic transgenes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703058v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Human papillomavirus (HPV) status is a critical determinant of prognosis and treatment response in head and neck and cervical cancers. Although attention-based multiple instance learning (MIL) achieves strong slide-level prediction for HPV-related whole-slide histopathology, it provides limited morphologic interpretability. To address this limitation, we introduce Concept-Level Explainable Attention-guided Representation for HPV (CLEAR-HPV), a framework that restructures the MIL latent space using attention to enable concept discovery without requiring concept labels during training. Operating in an attention-weighted latent space, CLEAR-HPV automatically discovers keratinizing, basaloid, and stromal morphologic concepts, generates spatial concept maps, and represents each slide using a compact concept-fraction vector. CLEAR-HPV's concept-fraction vectors preserve the predictive information of the original MIL embeddings while reducing the high-dimensional feature space (e.g., 1536 dimensions) to only 10 interpretable concepts. CLEAR-HPV generalizes consistently across TCGA-HNSCC, TCGA-CESC, and CPTAC-HNSCC, providing compact, concept-level interpretability through a general, backbone-agnostic framework for attention-based MIL models of whole-slide histopathology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703870v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -135,15 +135,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">How many are you? Open data and bioinformatics reveal species misidentification and potential introgression in Chordodes (Phylum Nematomorpha)</h2>
-<p class="paper-authors">De Vivo, M.</p>
+<h2 class="paper-title">Population-scalable genotyping from low-coverage sequencing data using pangenome graphs</h2>
+<p class="paper-authors">Bolognini, D., Guarracino, A., +6 authors, Soranzo, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The potential usage of genomic open data can help us to understand patterns in biodiversity. They can also be helpful for identifying morphologically similar species. An example of taxon in which this can be useful is Nematomorpha, one of the less studied animal phyla, for which data has started to be available recently and where species identification can be hard. In this study, I planned initially to evaluate the usage of mitochondrial data for population analyses using an RNA sequencing (RNA-seq) dataset labelled as belonging to Chordodes fukuii . After surprising results using extracted sequences from the barcoding gene cytochrome c oxidase subunit I (COXI), I evaluated species delimitation using a mix of a previously released double-digest restriction-site-associated DNA sequencing (ddRADseq) SRA dataset plus the RNA-seq one. PCA, R analyses through adegenet and ADMIXTURE confirmed the presence of two species in the RNA-seq dataset, which should be labelled as C. formosanus and C. japonensis; however, some individuals labelled as C. japonensis according to COXI clustered with C. formosanus specimens or had some C. formosanus ancestry when more data was used, indicating potential introgression or incomplete lineage sorting. The study shows how previously released data can be used for evaluating species delimitation, potential previous demographic events and potential needs in DNA barcoding and genomics for avoiding future misidentification of morphologically similar species.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703548v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Pangenome-based genotyping of structurally complex loci remains challenging at low sequencing depths, particularly when samples are of low quality, such as in ancient DNA. We present COSIGT (COsine SImilarity-based GenoTyper), a method that infers structural genotypes by matching short-read coverage patterns to pangenome haplotypes using cosine similarity. COSIGT maintains robust accuracy at low coverage (1-2X), outperforming existing methods where depth-sensitive approaches degrade. We demonstrate scalability to thousands of modern and ancient genomes, enabling population-scale analyses of complex variation from low-coverage data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.704023v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -154,15 +154,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ABFormer: A Transformer-based Model to Enhance Antibody-Drug Conjugates Activity Prediction through Contextualized Antibody-Antigen Embedding</h2>
-<p class="paper-authors">Katabathuni, R., Loka, V., +1 author, Kondaparthi, V.</p>
+<h2 class="paper-title">Macro-Equi-Diff (MED): Scaffold-based Macrocycles Generation Using Equivariant Diffusion</h2>
+<p class="paper-authors">Kambampati, S. S., Anumandla, S., +3 authors, Kondaparthi, V.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Computational screening is increasingly becoming a crucial aspect of Antibody Drug Conjugate (ADC) research, allowing the elimination of dead ends at earlier stages and concentrating on potential candidates, which can significantly reduce the cost of development. The current state-of-the-art deep learning model, ADCNet, usually considers antibodies, antigens, linkers, and payloads as distinct features. However, this overlooks the complex context of antibody-antigen binding, which is primarily responsible for the targeting and uptake of ADCs. To address this limitation, we present ABFormer, a transformer-based framework tailored for ADC activity prediction and in-silico triage. ABFormer integrates high-resolution antibody-antigen interface information through a pretrained interaction encoder and combines it with chemically enriched linker and payload representations obtained from a fine-tuned molecular encoder. This multi-modal design replaces naive feature concatenation with biologically informed contextual embeddings that more accurately reflect molecular recognition. ABFormer outperforms in leave-pair-out evaluation and achieves 100% accuracy on a separate test set of 22 novel ADCs, while the baselines are severely miscalibrated. Ablation study confirms that the predictive capability is predominantly driven by interaction-aware antibody-antigen representations, while small molecule encoders enhance specificity by reducing false positives. In conclusion, ABFormer provides a reliable and efficient platform for early filtering of ADC activity and selection of candidates.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703522v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Macrocyclic compounds are essential in drug discovery as they can modulate protein-protein interactions and enhance selectivity. Their structural complexity enables access to molecular diversity beyond traditional small molecules; however, designing feasible macrocycles remains a challenging task. Current computational methods often fail to generate macrocycles with proper drug-like properties. Here, we present Macro-Equi-Diff (MED), a deep learning framework that combines transformer-based site identification with an E(3)-equivariant Diffusion Model (EDM) for linker creation, and a fragment-linker attachment module. MED transforms acyclic molecules into structurally consistent macrocycles. MED was tested on the ZINC dataset, achieving high validity (93.92%), uniqueness (99.94%), macrocyclization (99.92%), and linker novelty (82.81%). MED improves upon previous methods that lack a macrocyclic geometry context. As a case study, MED was used to macrocyclize four acyclic drugs targeting the JAK2 protein. The generated macrocycles exhibited favourable molecular descriptors and strong binding affinities, establishing MED as a reliable method for expanding the macrocyclic chemical space.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.703948v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -173,15 +173,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Decoding ATG9A Variation: A Comprehensive Structural Investigation of All Missense Variants</h2>
-<p class="paper-authors">Utichi, M., Marjault, H.-B., +1 author, Papaleo, E.</p>
+<h2 class="paper-title">SIP-BERT: A multi-organism deep strategy for predicting self interaction in proteins</h2>
+<p class="paper-authors">Chakraborty, T., Majumder, S., +3 authors, Basu, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Macroautophagy (hereafter autophagy) is a cellular recycling pathway that requires different ATG (autophagy-related) proteins to generate double-membraned autophagosomes. ATG9A, a multi-spanning membrane protein, plays a crucial role in this process as the only transmembrane component of the core autophagy machinery. ATG9A functions as a lipid scramblase, redistributing lipids between membrane leaflets for the expanding autophagosome membrane. Structural studies have revealed that ATG9A forms a homotrimer with an interlocked domain-swapped architecture and a network of internal hydrophilic cavities. This configuration underlies its role in lipid transfer and membrane remodeling together with the lipid transporter ATG2A. ATG9A dysfunction has also been linked to human disease, as specific ATG9A mutations cause neurodevelopmental or neurodegenerative phenotypes. Additionally, ATG9A is altered in cancer, promoting pro-tumorigenic traits. However, most missense variants in ATG9A remain uncharacterized, posing a significant challenge for interpreting genomic data. In this study, we employed in silico saturation mutagenesis approach using the MAVISp (Multi-layered Assessment of VarIants by Structure) framework to predict the impact of every missense mutation in ATG9A. By analyzing multiple structural assemblies of ATG9A (monomer, trimer, and the ATG9A-ATG2A complex), we evaluated diverse mechanistic indicators of variant impact, including protein stability, long-range conformational changes, effects on multimerization interfaces, and alterations in post-translational modifications. We integrated the structure-based predictions with Variant Effect Predictors from recent deep-learning or evolutionary-based models and cross-referenced known variants catalogued in ClinVar, COSMIC, and cBioPortal. Finally, we predicted mechanistic indicators for all possible variants with structural coverage not yet reported in the disease-related databases supported by MAVISp. Our analyses identified a group of potentially damaging variants in ATG9A and the possible molecular mechanisms underlying their effects. Together, this work provides a roadmap for interpreting missense variants in autophagy regulators and highlights specific ATG9A mutations that deserve further investigation in the context of human disease.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703515v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Self interacting proteins (SIPs) are critical to cellular regulation, yet their experimental identification remains challenging due to high costs, inefficiencies, and frequent false positives. Leveraging recent advances in deep language models, we introduce SIP BERT, a family of lightweight transformer based models trained on organism-specific self interaction datasets curated from existing protein protein interaction databases. We developed three variants: SIP BERT(H), SIP BERT(Y), and SIP BERT(HY) trained on human, yeast, and combined datasets, respectively. These models significantly outperform existing methods, exceeding baseline accuracies by 18%, 8% and 15% respectively. SIP BERT models also generalise effectively to under-annotated organisms such as the mouse and the fruit fly, achieving high recall despite minimal labeled data. Furthermore, structural analysis of predicted false positives using PDB derived alpha carbon distance maps reveals close spatial residue proximities, suggesting plausible but undocumented self interactions. These results highlight the potential of SIP BERT to uncover novel SIPs and expand our understanding of protein self interaction across diverse species. The dataset and the developed models are available at https://github.com/CMATERJU-BIOINFO/SIP-BERT for academic use only.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.04.702782v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -192,15 +192,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PRISM: Niche-informed Deciphering of Incomplete Spatial Multi-Omics Data</h2>
-<p class="paper-authors">Mu, S., Wang, Z., +10 authors, Cai, H.</p>
+<h2 class="paper-title">AncientMetagenomeDir dating metadataset highlights need for standardised radiocarbon reporting in ancient DNA</h2>
+<p class="paper-authors">Hearne, K., Spurite, D., +37 authors, Zampirolo, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial multi-omics data, characterizing the knowledge of diverse molecular layers, have become indispensable for the in situ analysis of tissue architecture and complex biological processes. Nevertheless, current spatial multi-omics sequencing protocols are often hindered by incompatible protocols, resulting in incomplete spatial multi-omics pairing due to inconsistent field-of-view or spatial resolution. To address this, we present PRISM, a novel computational method tailored for this scenario. PRISM leverages a niche-informed graph to propagate information from paired to unpaired regions, jointly achieving the spatial domain identification and spatial omics imputation. Extensive benchmarking on five diverse simulated and real experimental datasets demonstrated that PRISM outperformed existing methods in spatial multi-omics analysis tasks. Application to the human Parkinson's disease data revealed that PRISM accurately recovered dopamine-associated spatial domains and metabolite distributions masked by incomplete data gaps. PRISM offers a robust solution for bridging the integration gap inherent in incompatible sequencing protocols, thereby facilitating more accurate downstream biological interpretation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703456v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Ancient DNA is a valuable data source for the understanding of our past. However, to effectively interpret this data, it is essential to know the age of the samples from which the DNA is obtained. Although the field of palaeogenomics has been recognised for its robust open data sharing practices, dating information associated with analysed samples is not reported consistently across palaeogenomic studies, nor is it included as metadata in most genetic data repositories. Here, we describe the addition of standardised precise dating information for ancient microbial genomes into the AncientMetagenomeDir metadata repository of published ancient metagenomic samples. This extension currently includes dating information for over 700 ancient microbial genomic datasets, of which 333 are dated using historical, contextual, or stratigraphic methods, and 405 are radiocarbon dated. We quantitatively assess the quality of radiocarbon date reporting and find that, despite established reporting conventions, radiocarbon dating information is often reported inconsistently across ancient metagenomic studies. This new resource provides ancient microbial researchers with standardised dating information that facilitates more accurate and consistent analysis of metagenomic sequencing data. The dataset also highlights the need for greater standardisation of radiocarbon date reporting in original publications in order to allow effective reuse of this and future ancient microbial data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704039v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -211,72 +211,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Feb 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MosaicLev: Modified Levenshtein distance for mobile element-aware genome comparison</h2>
-<p class="paper-authors">Stoltz, H. K., Kuhlman, T. E.</p>
+<h2 class="paper-title">PhyloSOLID: Robust phylogeny reconstruction from single-cell data despite inherent error and sparsity</h2>
+<p class="paper-authors">Yang, Q., Liu, Y., +10 authors, Dou, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Somatic genetic mosaicism arises when genomes diverge across cells during development, in part due to the activity of transposons (cut-paste) and retrotransposons (copy-paste). Standard sequence comparison methods are not motif-aware, penalizing mobile element insertions based on length rather than recognizing them as single biological events. Results: We introduce a modified Levenshtein distance (mlev) that discounts mobile element insertions via a tunable parameter (m in [0, 1]). Validation on 67 Cluster G1 mycobacteriophage genomes demonstrates bidirectional discrimination between Mycobacteriophage Mobile Element 1 (MPME1) and MPME2 elements: using MPME1 as target yields 49% discount for MPME1 carriers but only 9% for MPME2 carriers, while using MPME2 reverses this pattern. This approach classifies 35 MPME1 carriers and 11 MPME2 carriers, and identifies 14 phages showing low discount with both motifs, consistent with absence of both elements. Availability and Implementation: Python implementation with Numba JIT compilation freely available at https://doi.org/10.5281/zenodo.18452982.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703520v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Next generation protein-corrole bio-assemblies provide effective tumoricidal treatment in a metastatic triple-negative breast cancer model</h2>
-<p class="paper-authors">Sharma, V. K., Gonzalez-Almeyda, N., +10 authors, Medina-Kauwe, L. K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Assemblies that combine chemotherapeutics with tumor-targeting proteins are promising agents for treating resistant cancers but require full biochemical characterization before therapeutic deployment. We developed and optimized a HER3 targeting capsomere, HPK2.0, which forms stable nanoscale assemblies with cytotoxic corroles via electrostatic neutralization and shape complementarity. These nanocomplexes exhibit durable serum stability, HER3 dependent tumor invasion, and efficient endosomal escape, resulting in potent and selective cytotoxicity in triple negative breast cancer (TNBC) cells. In an orthotopic metastatic TNBC model, systemic treatment with HPK2.0 corrole assemblies achieved 67 to 83% tumor regression, near-complete suppression of spontaneous lung metastasis, and a ~2 fold improvement in survival relative to mock treatment, with minimal off-target toxicity. By integrating tumor specificity with therapeutic potency, this next-generation protein corrole platform establishes a clinically scalable strategy for treating metastatic HER3 positive TNBC.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703292v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">LIMK Inhibition and Metformin Block Mitochondrial Transfer Overcoming Macrophage Driven Therapy Resistance in Acute Myeloid Leukaemia</h2>
-<p class="paper-authors">Nwarunma, E., Miari, K. E., +21 authors, Wheadon, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Chemoresistance is a major contributor to poor clinical outcomes in AML patients and can arise from interactions between AML cells and the bone marrow microenvironment (BME). How immune cells, particularly macrophages (M{varphi}s), facilitate this process requires better clarification. This study shows that M2-like M{varphi}s protect AML cells from apoptosis induced by daunorubicin (DNR) and cytarabine (Ara-C). This protection occurs via co-culture and is linked to enhanced mitochondrial transfer from M{varphi}s to AML cells. M{varphi}s interacted with AML cells via tunneling nanotube (TNT)-like structures. Furthermore, inhibition of mitochondrial transfer using cytochalasin B reduced the protective effect, indicating that mitochondria mediate this process. M{varphi}s transferred functional mitochondria to AML cells as evidenced by enhanced metabolic capacity and reduced reactive oxygen species levels in AML cells under chemotherapy stress. TH-257 (LIMK inhibitor) and metformin blocked mitochondrial transfer and M{varphi}-driven chemoprotection. Moreover, increased transcript expression levels of RhoC and cofilin correlate with inferior overall survival in AML patients. These findings suggest that M2-like M{varphi}s contribute to chemoresistance through TNT-mediated mitochondrial transfer and the LIMK-Cofilin pathway, identifying potential therapeutic targets to circumvent chemoresistance in AML.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.702377v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">JAK-STAT Pathway Heterogeneity Governs Immunotherapy Response in Breast Cancer</h2>
-<p class="paper-authors">Zhou, J., Zhang, H., +2 authors, Peng, F.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The JAK-STAT pathway (JSP) is a well-known oncogenic cascade; however, recent clinical trials have detected JSP upregulation in breast cancer following anti-PD1 immunotherapy. This paradoxical observation warrants further investigation into JSPs intercellular heterogeneity, tumor dynamics, molecular mechanisms, and clinical implications for immunotherapy. JSP expression showed dynamic shifts during breast cancer progression, with higher levels in T cells and para-cancerous epithelial cells. In tumor cells, elevated JSP highly correlated with malignant phenotypes. JSP-high tumor cells overexpressed oncogenic pathways, while exhibiting increased immunosuppressive signaling via MIF-CD74 signaling axis. In T cells, higher JSP levels were associated with enhanced cytotoxic activity, improved differentiation, and reduced exhaustion, reflecting robust anti-tumor immunity. Analysis of immunotherapy datasets revealed that higher JSP levels were associated with improved responses towards PD-1 inhibitors, particularly in triple-negative breast cancer (TNBC) patients, with JSP serving as a predictive biomarker for immunotherapy sensitivity. As a key JSP component, STAT4 exerts dual roles in breast cancer: it drives tumorigenesis in malignant cells, sustains breast epithelial cell proliferation, and bolsters T cell anti-tumor functionality--while also acting as a highly accurate biomarker for predicting immunotherapy response. This indicates that JSP targeting demands a nuanced approach: broad inhibition may impair anti-tumor immunity, and optimized therapeutic strategies paired with precise biomarkers are critical to maximize JSPs utility in breast cancer immunotherapy. Our findings highlight JSPs functional heterogeneity in epithelial, tumor, and T cells, with high JSP activity correlating with enhanced immunotherapy efficacy in breast cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.03.703506v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> While lineage tracing based on somatic mutations in single-cell sequencing data offers a powerful approach to reconstructing cellular histories in vivo, its reliability is fundamentally limited by pervasive technical artifacts--specifically, high error rates and data sparsity. These issues introduce false phylogenetic signals that corrupt tree topology and lead to spurious evolutionary conclusions. To overcome these limitations, we present PhyloSOLID, a phylogenetic algorithm designed to be inherently robust to these data imperfections. PhyloSOLID employs a progressive scaffolding strategy that begins with graph-based construction of a low-resolution, high-confidence backbone tree from reliable and uniformly covered mutations. This scaffold is then refined through the iterative integration of remaining data, guided by a Bayesian statistical model that penalizes phylogenetic inconsistencies to effectively separate the true evolutionary signal from technical artifacts. Benchmarking on both simulated datasets and multiple ground-truth datasets demonstrates that PhyloSOLID achieves superior lineage reconstruction accuracy over existing methods, for both single-cell RNA-seq and DNA-seq data. Additionally, a user-friendly web interface enables customized quality assessment, artifact removal, and interpretation of lineage structures. PhyloSOLID provides a powerful solution for decoding cellular evolution in developmental and disease contexts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703905v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -287,15 +230,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Dec 30, 2025</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Enhancing Transcription Factor Regulatory Network Analysis through Data Balancing and Representation Learning.</h2>
-<p class="paper-authors">Xuan Tho Dang</p>
+<h2 class="paper-title">Machine Learning-Based Multi-Omics Integration for Identification of Hepatocellular Carcinoma Biomarkers in an Egyptian Cohort.</h2>
+<p class="paper-authors">Rency S Varghese, Xinran Zhang, +2 authors, Habtom W Ressom</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Transcription factor (TF) and target gene interactions are pivotal in gene regulatory networks, influencing molecular biology and disease mechanisms, particularly cancer. Dysregulated TFs contribute to aberrant gene expression, driving tumor progression. While experimental methods like ChIP-seq and RNA-seq provide valuable insights, their high cost and scalability constraints necessitate computational alternatives. Machine learning offers promising solutions, yet data imbalance remains a major challenge affecting predictive accuracy. This study introduces a novel approach integrating K-means++ clustering with a data balancing strategy to enhance TF-target interaction prediction. By selecting low-frequency TFs within clusters based on an inverse information principle, our method mitigates data bias and improves model generalization. Additionally, we incorporate deep learning with random walk sampling and skip-gram embeddings to extract informative representations of heterogeneous biological networks. Experimental results using five-fold cross-validation demonstrate superior performance, achieving an average AUC of 0.9452 ± 0.0047. Our framework enhances predictive accuracy while addressing data imbalance, offering significant applications in molecular biology and biomedical research for TF-target gene discovery and therapeutic development. .</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41643219/" target="_blank">
+<p><strong>Abstract:</strong> Hepatocellular carcinoma (HCC) ranks among the most common causes of cancer-related deaths globally. The high incidence of HCC is largely linked to chronic hepatitis virus infections, liver cirrhosis, and exposure to carcinogenic substances. Egypt has one of the world's highest burdens of HCC, with liver cirrhosis from chronic hepatitis C virus (HCV) infection as the primary risk factor. Malignant conversion of cirrhosis to HCC is often fatal in part because adequate biomarkers are not available for diagnosis of HCC in the early stage. Therefore, there is a critical need for more effective biomarkers to detect HCC at an early stage, when therapeutic intervention is more likely to be successful. Multiomics integration has emerged as a powerful strategy to uncover biomarkers and better understand the molecular underpinnings of complex diseases such as HCC. This study summarizes findings from multiple untargeted and targeted mass spectrometry-based analyses of proteins, N-linked glycans, and metabolites performed on blood samples from HCC cases and cirrhotic cohorts recruited in Egypt. Integrative analysis using machine learning methods is performed to identify a panel of multiomics features that differentiates HCC cases from the high-risk population of cirrhotic patients with liver cirrhosis.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41467861/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -306,15 +249,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Feb 05, 2026</span>
+<span class="date">Dec 26, 2025</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrative bioinformatics and machine learning approaches identify novel diagnostic signatures for oxaliplatin-resistant colorectal cancer.</h2>
-<p class="paper-authors">Xue Chen, Zhen Zheng, Kaitai Liu</p>
+<h2 class="paper-title">Proteomic Profiling of Plasma Extracellular Vesicles Combined with Multivariate Modeling Identified Potential Biomarkers for Distinguishing Benign Pulmonary Nodules from Early-Stage Lung Adenocarcinoma.</h2>
+<p class="paper-authors">Shujun Liu, Yating Ma, +3 authors, Chuanbao Li</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Oxaliplatin resistance significantly impairs therapeutic outcomes in colorectal cancer. However, reliable diagnostic markers for early detection of resistance remain limited. This study aimed to identify novel diagnostic signatures through integrative bioinformatics and machine learning approaches.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41642369/" target="_blank">
+<p><strong>Abstract:</strong> Lung adenocarcinoma (LUAD) is the most common subtype of lung cancer and is difficult to distinguish from benign pulmonary nodules (BPNs), particularly at early stages. Extracellular vesicles (EVs) represent a promising source of biomarkers for the diagnosis of malignant pulmonary nodules. This study aimed to identify robust and clinically relevant EV-based protein biomarkers via isolation with EXODUS, a system that enables efficient direct capture of plasma EVs, followed by data-independent acquisition mass spectrometry (DIA-MS) for in-depth proteomic profiling. A total of 1383 proteins were identified from the plasma EVs obtained from 25 individuals (10 BPN and 15 early stage LUAD), while dysregulated protein signatures were revealed through differential expression analysis. Machine learning algorithms incorporating demographic variables, imaging features, EV protein profiles, and conventional tumor markers were applied to select diagnostic candidates. Random forest analysis revealed two upregulated proteins, NTN3 and APOA4, as promising biomarkers. Subsequently, their diagnostic performance and net clinical benefits were validated in an independent EV cohort (6 LUAD and 6 BPN) using ELISAs and decision curve analysis. In summary, we present an integrated pipeline that combines EXODUS-based isolation, DIA-MS, and machine learning to detect markers from plasma EVs for distinguishing early stage lung cancer from benign nodules.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41452660/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
