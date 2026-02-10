@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 08, 2026</span>
+<span class="date">Feb 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Widespread data leakage inflates performance estimates in cancer drug response prediction</h2>
-<p class="paper-authors">Asiaee, A., Strauch, J., +4 authors, Coombes, K. R.</p>
+<h2 class="paper-title">Navigating the conjugated metabolome</h2>
+<p class="paper-authors">Xing, S., Patan, A., +12 authors, Dorrestein, P. C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Drug response prediction models are widely used to nominate biomarkers and guide pre-clinical drug prioritization. However, their reported performance hinges on rigorous separation of training and test data during cross-validation (CV). Here we show that a commonly used pattern---supervised feature screening performed on the full dataset before CV---introduces data leakage that systematically underestimates prediction error. Analyzing 265 drugs across 1,462 cancer cell lines, we find that leakage-free CV increases mean squared error (MSE) by 16.6%, with low feature-set overlap between leaked and leakage-free pipelines (mean Jaccard 0.18). A manual audit of 12 recent deep learning and classical methods found confirmed leakage in 10. Such inflated performance estimates likely contribute to computational predictions that fail during independent validation or experimental follow-up. We provide an audit guide and reference implementation to prevent leakage, and introduce a tissue-aware Data Shared Elastic Net (DSEN) that, under correct evaluation, improves prediction for 65.7% of drugs while yielding sparser, more targeted biomarker sets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.704016v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Life's chemical diversity far exceeds current biochemical maps. While metabolomics has catalogued tens of thousands of small molecules, conjugated metabolites, formed when two or more molecular entities are covalently fused through amidation, esterification, or related chemistries, remain underexplored. These molecules can act as microbial signals, detoxification intermediates, or endogenous regulators. Here, we mined 1.32 billion MS/MS spectra across public metabolomics repositories using reverse spectral searching coupled with delta-mass inference to map conjugation events. We generated structural hypotheses for 24,227,439 MS/MS clusters. From these, we inferred 217,291 substructure pairs with dual spectral support and 3,412,720 candidate conjugates with single-match support. Predictions span host-microbe co-metabolites, diet-derived conjugates, and drug-derived species, including drug-ethanolamine and creatinine conjugates with altered bioactivities. We also uncover a family of steroid-phosphoethanolamine conjugates. Fifty-five conjugates were matched by MS/MS of synthetic standards for this work, with 27 additionally supported by retention time matching in biological samples. Guidance on how to leverage this resource is also provided. Together, these results deliver a pan-repository map of potential conjugation chemistry, establish a resource for structural discovery and MS/MS annotation, and offer a scalable framework to explore the scope and diversity of the conjugated metabolome.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704496v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,129 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 08, 2026</span>
+<span class="date">Feb 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Natural language-based representation and modeling of RBP binding</h2>
-<p class="paper-authors">Elhajjajy, S., Weng, Z.</p>
+<h2 class="paper-title">EpiExpr: Predicting gene expression using epigenetic data and chromatin interactions</h2>
+<p class="paper-authors">BHATTACHARYYA, S., AY, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> RNA-binding proteins (RBPs) are critical regulators of the human transcriptome, but the binding patterns of most RBPs are insufficiently characterized. While sequence context facilitates RBP binding specificity, its precise contribution remains unclear. Existing computational methods to decipher RBP binding patterns are limited by their architecture-dependence, challenging interpretability, and, importantly, lack of focus on context. We present a novel comprehensive approach to address the aforementioned knowledge gaps. We first introduce a natural language-based representation to model RNA sequences using lexical, syntactic, and semantic forms, then devise a sequence decomposition method based on these structures to deconstruct RNA sequences into regions, each containing a target k-mer and its flanking contexts. We leverage this linguistic conceptualization to predict RBP binding under a Multiple Instance Learning (MIL) framework, which we solve using a novel method of significant region extraction termed "iterative relabeling". We demonstrate that our bottom-up approach discovers key regions contributing to RBP binding in an architecture-dependent, accurate, and interpretable manner.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.704032v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Decoding gene expression from epigenomic landscapes remains a fundamental challenge in genomics. We introduce EpiExpr, a flexible deep learning framework that predicts gene expression from 1D epigenetic tracks (EpiExpr-1D) and integrates 3D chromatin interactions (EpiExpr-3D) to capture distal regulatory effects. Leveraging residual convolutional networks and graph neural networks, including graph attention and graph transformer models, EpiExpr models both local and long-range regulatory influences. Applied to GM12878 and K562 cells, EpiExpr-1D and 3D improve gene expression prediction relative to reference approaches. Analysis using CRISPRi-FlowFISH validated enhancers confirms that EpiExpr-3D accurately prioritizes regulatory elements, compatible with activity-by-contact scores. Remarkably, EpiExpr achieves performance comparable to DNA sequence-based transformer models without requiring sequence embeddings, offering a computationally efficient alternative. This approach provides a scalable, multi-resolution framework (https://github.com/souryacs/3CExpr) for dissecting the contributions of epigenetic modifications and 3D genome organization to gene regulation, enabling broader application across cell types and experimental settings.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704509v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Prediction of Biological Age and Blood Biomarkers from DNA Methylation Profiles Measured by the Methylation Screening Array: Development and Validation of Models on Japanese Data</h2>
+<p class="paper-authors">Shoji, T., Tomo, Y., Nakaki, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.703638v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Aviti Sequencing and Marker Gene Data Analysis</h2>
+<p class="paper-authors">Gould, T. J., Taylor, M., Santelli, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate identification of microbial species in complex populations and communities relies on the isolation of representative marker 16S, ITS, and 18S sequences through the use of DNA extraction, PCR, and sequencing. Aviti sequencing has brought an improvement in the read quality and depth of marker gene sequencing technology. Quality scores exceeding Q40 representing highly accurate sequencing allows researchers to ask more questions of their marker gene data. However, this improvement in quality and throughput also brings with it a surprising increase in diversity of amplicon sequencing variants (ASVs) making further analysis and comparisons to previous studies on Illumina platforms challenging. This increased diversity causes downstream processing issues, including an over-reporting of chimeric ASVs. Here we identify this problem and put forward straightforward solutions to retain counts and reduce technically introduced diversity, as well as tying chimeric read identification to minimum parent distance. Through the use of synthetic mock samples, we discovered that erroneous ASVs are systematically substitution errors introduced by the upstream PCR methods. This error can be reduced significantly bioinformatically through clustering of ASVs within 99% similarity. Further we highlight technically introduced variation as a result of variable region length, sample misassignment, and sample biomass. Collectively, these results improve the similarity of Aviti and Illumina datasets for better comparisons of microbial studies from different platforms.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704475v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">HiCInterpolate: 4D Spatiotemporal Interpolation of Hi-C Data for Genome Architecture Analysis.</h2>
+<p class="paper-authors">Chowdhury, H. M. A. M., Oluwadare, O.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Motivation: Studying the three-dimensional (3D) structure of a genome, including chromatin loops and Topologically Associating Domains (TADs), is essential for understanding how the genome is organized, such as gene activation, cell development, protein-protein interaction, etc. Hi-C protocol enables us to study 3D genome structure and organization. Chromatin 3D structure changes dynamically over time, and modeling these continuous changes is crucial for downstream analysis in various domains such as disease diagnosis, vaccine development, etc. The high expense and impracticality of continuous genome sequencing, particularly what evolves between two timestamps, limit the most effective genomic analysis. It is crucial to develop a straightforward and cost-efficient method for constantly generating genomic data between two timestamps in order to address these constraints. Results: In this study, we developed HiCInterpolate, a 4D spatiotemporal interpolation architecture that accepts two timestamp Hi-C contact matrices to interpolate intermediate Hi-C contact matrices at high resolution. HiCInterpolate predicts the intermediate Hi-C contact map using a deep learning-based flow predictor, and a feature encoder and decoder architecture similar to U-Net. In addition, HiCInterpolate supports downstream analysis of multiple 3D genomic features, including A/B compartments, chromatin loops, TADs, and 3D genome structure, through an integrated analysis pipeline. Across multiple evaluation metrics, including PSNR, SSIM, GenomeDISCO, HiCRep, and LPIPS, HiCInterpolate 1 achieved consistently strong performance. Biological validation further demonstrated preservation of key chromatin organization features, such as chromatin loops, A/B compartments, and TADs. Together, these results indicate that HiCInterpolate provides a robust computer vision-based framework for highresolution interpolation of intermediate Hi-C contact matrices and facilitates biologically meaningful downstream analyses. Availability: HiCInterpolate is publicly available at https://github.com/OluwadareLab/ HiCInterpolate.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704438v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">UniFacePoint-FM: A Foundation Model for Generalizable 3D Facial Representation Learning and Multi-Attribute Prediction</h2>
+<p class="paper-authors">Li, D., Fu, C.-H., Tang, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The human face is a rich medium for biometric, behavioral, and clinical information. However, 2D facial images based technologies lack critical geometric details and are susceptible to pose and illumination interference, while 3D facial deep learning frameworks are hindered by complex annotation, preprocessing, and task-specific designs with poor cross-domain generalization. To address these challenges, we propose UniFacePoint-FM, a 3D facial foundation model built on a self-supervised Point-MAE framework, tailored for high-fidelity point cloud representation learning. The model was pretrained on a self-constructed dataset of high-resolution 3D facial scans, followed by supervised fine-tuning and comprehensive evaluation across three independent datasets for diverse downstream tasks. Experimental results demonstrate that UniFacePoint-FM is both pretraining-efficient and highly generalizable: it achieves state-of-the-art performance on gender classification, age regression, and BMI prediction, and matches the accuracy of the ResMLP model (while outperforming other baselines) in facial expression recognition. Notably, by learning high-quality, fine-grained representations directly from raw point clouds, UniFacePoint-FM delivers robust generalization and transferability across tasks, datasets, and even different face scanning platforms. Overall, our work establishes an effective foundation model paradigm for 3D facial analysis, with promising implications for biometric security, health monitoring, and advanced human-computer interaction systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.703926v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">From Structure to Dynamics: Activation Mechanism of the G Protein-Coupled Bile Acid Receptor 1-Gs Complex</h2>
+<p class="paper-authors">Fiorillo, B., Moraca, F., +5 authors, Catalanotti, B.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The G protein-coupled bile acid receptor 1 (GPBAR1, also known as TGR5) is a key mediator of bile acid signaling, exerting its physiological effects through coupling with the stimulatory G protein (Gs). This interaction is essential for stabilizing the receptor's active conformation and triggering downstream signaling. Among endogenous ligands, lithocholic acid (LCA) is the most potent natural agonist. However, the dynamic features underlying its binding and activation mechanisms remain poorly defined. In this study, we investigated the molecular basis of the interaction between LCA and GPBAR1, as well as the functional consequences of this interaction on receptor activation by integrating homology modelling, molecular docking, and molecular dynamics (MD) simulations. Our calculations reveal that LCA binding stabilizes the active state of GPBAR1, biasing the conformational ensemble of TM5 and TM6, as well as the main microswitches. These ligand-induced rearrangements enhance the coupling interface with the 5 helix of Gs and facilitate allosteric communication between the orthosteric and intracellular sites. Overall, our findings provide dynamic insight into how LCA modulates GPBAR1 activation and G protein engagement, highlighting its role as a molecular effector in bile acid signaling, and furnishing molecular detail relevant to ongoing efforts in GPBAR1-targeted compound development.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704396v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Generalise or Memorise? Benchmarking Ligand-Conditioned Protein Generation from Sequence-Only Data</h2>
+<p class="paper-authors">Vicente, A., Dornfeld, L., +1 author, Ferruz, N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Proteins can bind small molecules with high specificity. However, designing proteins that bind user-defined ligands remains a challenge, typically relying on structural information and costly experimental iteration. While protein language models (pLMs) have shown promise for unconditional generation and conditioning on coarse functional labels, instance-level conditioning on a specific ligand has not been evaluated using purely textual inputs. Here we frame small-molecule protein binder design as a sequence-to-sequence translation problem and train ligand-conditioned pLMs that map molecular strings to candidate binder sequences. We curate large-scale ligand-protein datasets (&gt;17M ligand-protein pairs) covering different data regimes and train a suite of models, spanning 16 to 700M parameters. Results reveal a consistent trade-off driven by supervision ambiguity: when each ligand is paired with few proteins, models generate near-neighbour, foldable sequences; when each ligand is paired with many proteins, generations are more diverse but less consistently foldable. Our study exposes how annotation diversity and sampling choices elicit this behaviour and how it changes with the data distribution. These insights highlight dataset redundancy and incompleteness as key bottlenecks for sequence-only binder design. We release the curated datasets, trained models, and evaluation tools to support future work on ligand-conditioned protein generation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704305v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +192,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 08, 2026</span>
+<span class="date">Feb 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Effects of Spin4 ablation in aging mice: body composition, bone density, and malignancy prevalence</h2>
-<p class="paper-authors">Lui, J. C., Hannula, I., +2 authors, Baron, J.</p>
+<h2 class="paper-title">Targeting Myc activates a tissue-specific tumour resolution programme</h2>
+<p class="paper-authors">Kortlever, R. M., Campos, T., +3 authors, Evan, G. I.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Many overgrowth syndromes are associated with increased risk of tumorigenesis and malignancies. Our group recently identified a frameshift variant in histone reader SPIN4 located on the X chromosome to be a new genetic cause for human overgrowth. In the current study, we investigated the prevalence of malignancies, along with body weight, body length, body composition and bone mineral density, in Spin4 knockout mice at 18 months of age. We found that male mice lacking Spin4 have increased number of tumors and increased body length, while body weight, body composition and bone mineral density were comparable with wild-type mice. We also analyzed publicly available expression data in various types of human cancers and looked for increased or decreased expression of genes that are implicated in overgrowth syndromes and act through epigenetic mechanisms. We found that the expression of SPIN4, EZH2, and DNMT3A to be elevated in many human cancers compared to the corresponding non-malignant tissue samples. Taken together, our current findings confirm that loss of SPIN4 causes overgrowth in mice (in terms of body length) and is associated with increased prevalence in neoplasia; but does not appear to affect adiposity or bone density.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.704000v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Neoplastic transformation parallels hallmark cellular programs of tissue regeneration and wound repair1,2. However, the mechanisms driving tumour regression upon oncogenic driver inhibition - and why it often fails - remain poorly understood3-7. Oncogenic KRas mutations and Myc deregulation, two archetypal cancer drivers, frequently occur and cooperate to promote aggressive lung adenocarcinoma (LUAD)8-12. To investigate the mechanistic consequences of targeting Myc in LUAD, we applied spatiotemporally controlled genetic and functional perturbations in a reversible KRas/Myc-driven mouse model, integrated with RNA sequencing and immune protein profiling of tumours and their microenvironment. Acute oncogenic Myc inactivation in epithelial tumour cells elicits a localised regenerative immune response crucially dependent on rapid, transient release of the alarmin cytokine interleukin-33 (IL-33) by alveolar type 2 tumour cells. As a sentinel signal for Myc loss, IL-33 signalling reverses tumour immunosuppression and neoangiogenesis, critically recruits eosinophils, and promotes neoplastic cell elimination, driving regression beyond mere growth arrest. Notably, brief systemic recombinant IL-33 administration to mice with KRas/Myc-driven LUAD induces robust eosinophil influx and near-complete tumour resolution. Together, these findings demonstrate that blocking Myc activates an innate, tissue-intrinsic immune programme rooted in resolution of wound repair and capable of driving regression when activated in a tumour. This opens the possibility of treating cancer not only by blocking mitogenic oncogenic drivers but also by pro-actively triggering pro-resolution pathways.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704498v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +211,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 08, 2026</span>
+<span class="date">Feb 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Chromatin architecture and physical constriction cooperate in phenotype switching and cancer cell dissemination</h2>
-<p class="paper-authors">Berico, P., Dunton, C., +21 authors, Hernando, E.</p>
+<h2 class="paper-title">The DNA damaging properties of the experimental G-quadruplex (G4) drug QN-302 are potentiated by the DNA repair inhibitor Olaparib and mitigated by the molecular helicase PhpC</h2>
+<p class="paper-authors">Psalmon, G., Pipier, A., +3 authors, Monchaud, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Phenotypic plasticity is a prominent cancer feature that contributes to metastatic potential and resistance to therapy across multiple cancer types. Cancer cell state transitions have been attributed to transcriptional programs, such as the AP1/TEAD-regulated gene network driving the mesenchymal-like (MES) phenotype. In addition, during dissemination, tumor cells are subjected to variable loads of physical mechanical pressure and constriction across transited tissue, which are thought to impact nuclear molecular crowding. How the interplay between mechanical pressure, global 3D nuclear architecture and transcriptional programs contributes to MES identity and metastatic adaptation remains unclear. Using cutaneous melanoma as a model for early dissemination, we integrate in vitro and in vivo epigenomic profiling with nanoscale imaging of cell lines and patient samples to investigate chromatin organization features underlying the MES phenotype. We find that in MES cells, CTCF is relocated from domain boundaries to regulatory regions of EMT-like genes, leading to reduced insulation, extended topological associated domains (TADs) and increased inter-domain contacts, and de novo formation of chromatin hubs. This conformational rewiring, along with loss of heterochromatin, supports nuclear deformability during invasion and dissemination. Conversely, physical constriction of melanocytic cells induces MES-like chromatin features, including CTCF repositioning and heterochromatin loss, and promotes metastasis in vivo. Similarly, pharmacological inhibition of the heterochromatin mark H3K9me3 triggers MES characteristics and increases invasiveness. These results demonstrate that metastatic competency involves both epigenetic and structural nuclear reprogramming, enabling shifts in gene networks and physical adaptability. Our findings reveal mechanistic links between nuclear architecture and aggressive tumor behavior, identifying potential biomarkers and therapeutic targets to intercept metastatic progression.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.05.702638v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704351v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,15 +230,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 08, 2026</span>
+<span class="date">Feb 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Recurrent Escape from Osimertinib-Induced Senescence Promotes Genomic Instability Associated with Therapeutic Resistance</h2>
-<p class="paper-authors">Mcdaid, H., Jamil, N., +2 authors, Hosgood, D.</p>
+<h2 class="paper-title">Evaluation and application of chemical decrosslinking in the context of histopathological spatial proteomics</h2>
+<p class="paper-authors">Nwosu, A. J., Chen, L., +5 authors, Pasa-Tolic, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Acquired resistance to osimertinib remains a major challenge in treating EGFR-mutant (EGFR+) Non-Small-Cell Lung Cancer (NSCLC). Although most patients initially respond to treatment, relapses are universal, even after prolonged remission during which tumor dormancy occurs. Here, we show that osimertinib induces and maintains senescence in EGFR+ NSCLC. Importantly, osimertinib does not kill senescent cells; however, following drug withdrawal, cells escape and resume proliferation. To examine the consequences of recurrent senescence and escape on resistance, we generated four isogenic cell lines clonally expanded through sequential cycles of Osimertinib-Induced Senescence (OsIS). Phylogenetic reconstruction based on de novo somatic variants revealed that these lines form four distinct evolutionary clades with varying degrees of osimertinib resistance. All had elevated tumor mutational burden with distinct single-nucleotide and copy-number variants, and without acquisition of tertiary EGFR mutations or MET amplification. Resistance was predominately associated with chromosomal instability characterized by extensive loss of heterozygosity, high copy-number alteration burden, and mutational signatures consistent with replication-associated DNA damage and repair. A second resistance genotype exhibited extreme focal amplifications with breakage-fusion-bridge-like genome remodeling. Despite profound genomic instability, targeting DNA repair or replication stress pathways was ineffective, whereas sensitivity to platinum-based chemotherapy was retained across clades. Collectively, these findings indicate that recurrent senescence escape drives osimertinib resistance through widespread genomic instability and is most effectively treated by cytotoxic strategies rather than pathway-targeted approaches.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.07.704600v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Laser capture microdissection (LCM) - based spatial mass spectrometry proteomics is a rapidly emerging technique with strong potential for use in formalin-fixed, paraffin-embedded (FFPE) tissues. Several sample-preparation methods have been developed to decrosslink FFPE proteins for spatial proteomics; however, residual crosslinks often remain, and depth can remain impaired relative to fresh frozen tissue samples. To increase proteome coverage in spatially resolved LCM-FFPE samples, we investigated a panel of chemical compounds with the potential to catalyze the decrosslinking of nucleophilic functional groups on proteins. Systematic screening and optimization of temperature, incubation time, and reagent concentration led to the identification of 3,4-diaminobenzoic acid as an effective agent for improving proteome coverage in FFPE pancreatic tissue. This compound could boost precursor identifications by more than 10% at both reduced (70 C) and high (90 C) temperatures. Application of this chemical-decrosslinking strategy to a pancreatic ductal adenocarcinoma tissue section enabled the identification of numerous cell-type enriched proteins with clinical and therapeutic relevance. Taken together, our findings show that chemical decrosslinking can increase proteome coverage in FFPE tissues, thereby advancing our understanding of tissue microenvironments in physiological and pathological contexts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.06.704439v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -135,15 +249,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Feb 08, 2026</span>
+<span class="date">Feb 09, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrating Spatial Proteogenomics in Cancer Research.</h2>
-<p class="paper-authors">Yida Wang, Yang Wu, +11 authors, Yan Zhang</p>
+<h2 class="paper-title">A microenvironment-determined risk continuum refines subtyping in meningioma and reveals determinants of machine learning-based tumor classification.</h2>
+<p class="paper-authors">Sybren L N Maas, Yiheng Tang, +64 authors, Felix Sahm</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial proteogenomics marks a paradigm shift in oncology by integrating molecular analysis with spatial information from both spatial proteomics and other data modalities (e.g., spatial transcriptomics), thereby unveiling tumor heterogeneity and dynamic changes in the microenvironment.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41655216/" target="_blank">
+<p><strong>Abstract:</strong> Classification of tumors in neuro-oncology today relies on molecular patterns (mostly DNA methylation) and their machine learning-supported interpretation. Understanding the process of algorithmic interpretation is essential for safe application in clinical routine. This is paradigmatically true for the most common primary intracranial tumor in adults, meningioma. Here, by applying multiomic profiling and multiple lines of orthogonal computational evaluation in multiple independent datasets, we found that not only tumor cell characteristics but also incremental changes in the tumor microenvironment (TME) have impact on epigenetic meningioma classification and clinical outcome. Besides revealing the decisive role of non-neoplastic cells in the CNS methylation classifier, this challenges the model of distinct meningioma subgroups toward a TME-determined risk continuum. This refines current controversies in molecular meningioma subtyping. In addition, we apply these learnings to devise and validate a simple diagnostic approach for increased clinical prediction accuracy based on immunohistochemistry, which is also applicable in resource-limited settings.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41663806/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 22, 2025</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multi-omics and machine learning framework reveals ABCG2 as a therapeutic target of Eleven Flavored Shenqi Tablets in clear cell renal cell carcinoma.</h2>
+<p class="paper-authors">Dong Zhang, Xinglin Chen, +6 authors, Xinyu Zhai</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Eleven Flavored Shenqi Tablets (EFST) is a classical multi-herbal prescription in traditional Chinese medicine, traditionally prescribed for kidney tonification and systemic regulation. Despite its reported anti-inflammatory and antiproliferative properties, the therapeutic value of EFST in clear cell renal cell carcinoma (ccRCC) remains unclear.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41135615/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
