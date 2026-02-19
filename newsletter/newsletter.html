@@ -40,15 +40,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
+<span class="date">Feb 18, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Systematic Evaluation of Transfer Learning Strategies for Clinical Chemotherapy Response Prediction</h2>
-<p class="paper-authors">Du, H., Ballester, P.</p>
+<h2 class="paper-title">Resolving Genome-to-Phenotype Links in Bacteria: Machine-Learned Inference from Downsampled k-mer Representations</h2>
+<p class="paper-authors">Regueira, T. G. B., Barra, C., Lund, O.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurately predicting chemotherapy response remains a major challenge in precision oncology. Although machine-learning models based on tumour omics data have shown promise, the majority of existing studies are trained and evaluated on pre-clinical cell-line datasets, leaving their clinical applicability insufficiently characterised. In this study, we systematically evaluate a range of transfer-learning strategies for chemotherapy response prediction under realistic clinical constraints using patient data from The Cancer Genome Atlas (TCGA). Rather than proposing a new predictive model, we focus on assessing the effectiveness and limitations of commonly used approaches for transferring pre-clinical knowledge to clinical settings. These include cell-line validated biomarkers, biologically informed feature representations, direct application of pre-clinical deep learning models, model fine-tuning, and hybrid strategies that integrate pre-clinical predictions with clinical data. All methods are evaluated within a unified framework using consistent cohort construction, shared performance metrics, and bias-controlled validation procedures. Across multiple drugs and molecular data types, we find that most transfer strategies, including biomarker-based feature selection and direct pre-clinical model transfer, fail to produce robust or consistent improvements in clinical prediction performance. In contrast, conservative approaches based on fine-tuning pre-clinical models or incorporating pre-clinical predictions as features in clinical models yield more stable and reproducible gains. Further improvements are observed when basic pretreatment clinical variables are integrated. Together, our results demonstrate the practical boundaries of preclinical to clinical transfer for drug response prediction and highlight hybrid and fine-tuning strategies as more reliable baselines for future translational modelling efforts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.16.706121v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Standard approaches to bacterial phenotyping often treat the entire genome as the fundamental unit of information, resulting in high-dimensional inputs that may contain significant redundancy. Consequently, current bacterial phenotyping techniques typically rely on the assumption that entire sequences are required for accurate predictions. While downsampling based on min-hashing or prefix filtering has been used for clustering, its utility as a direct input for predictive machine learning remains underexplored. Here, we show that a novel prefix-based downsampling algorithm can reduce the size of genomes while maintaining relatively high predictive accuracy on phenotype prediction tasks. By combining a prefix reduction strategy with the specificity of short k-mers, we developed a method to downsample entire genomes into k-mer frequency matrices and textit{k-mer-on-a-string} representations. We found that ensemble models, such as Random Forest and Gradient Boosting, trained on k-mer frequency matrices from downsampled genome representations outperformed more complex deep learning architectures with the same downsampled representation, particularly on datasets with limited data or highly similar genomes. We were able demonstrate explainability by tracing back the k-mers with the most impact on the models to genes coding for the specific phenotype. Our results demonstrate that downsampling genomic data can yield models with good predictive power thus establishing an alternative when using full genomes is infeasible. We present an approach that offers relatively high performance on bacterial phenotyping tasks and demonstrates a path forward towards lightweight Genome Language Models that will enable analysis of entire genomes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.18.705352v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,186 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
+<span class="date">Feb 18, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">In silico transcriptomic analysis reveals shared molecular signatures and immune-associated pathways between Hashimotos thyroiditis and type 2 diabetes with exploratory drug repurposing</h2>
-<p class="paper-authors">Sharma, O., Ahmed, F., +10 authors, Mollah, M. N. H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The management of Hashimotos thyroiditis (HT), one of the most prevalent autoimmune disorders worldwide, becomes more complex when it coexists with type 2 diabetes (T2D) compared with the management of either disease alone. This complexity may arise from overlapping genetic, metabolic, and immune dysregulation, as well as potential therapeutic conflicts. Although HT and T2D are known to co-occur and share immune and metabolic features, the molecular characteristics underlying these overlaps have not been systematically explored. This study aimed to identify shared gene expression signatures and associated biological pathways between HT and T2D using an in silico, hypothesis-generating approach, and to explore candidate compounds that may be relevant to both conditions. Independent transcriptomic datasets (GSE138198 for control/HT and GSE29231 for control/T2D) were analyzed, leading to the identification of 59 genes that were differentially expressed in both HT and T2D compared with control samples. Protein-protein interaction (PPI) network analysis prioritized five shared key genes (sKGs): CDC42, CD74, FOS, RAC2, and YWHAB. Functional enrichment analysis of these sKGs revealed overlapping biological processes, molecular functions, cellular components, and immune-related signaling pathways, as well as shared regulatory networks involving transcription factors (FOXC1 and HNF4A) and microRNAs (hsa-miR-221-3p and hsa-miR-29a-3p). Immune infiltration analysis demonstrated broadly similar patterns of immune dysregulation in both diseases, providing additional biological context for the observed shared molecular signatures. Finally, an exploratory in silico drug repurposing pipeline incorporating molecular docking, ADMET profiling, drug-likeness assessment, and molecular dynamics simulations prioritized three candidate compounds: gliquidone, oleanolic acid, and glipizide for further investigation. Overall, this study provides a hypothesis-generating framework highlighting shared molecular features between HT and T2D, which may inform future experimental validation and clinical research.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.16.706089v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Cost-effective hybrid long- and short-read sequencing enables accurate somatic structural variant detection</h2>
-<p class="paper-authors">Gao, R., Jiang, T., +4 authors, Wang, G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Somatic structural variant (SSV) calling typically requires matched normal data. Incorporating relatively inexpensive short-read sequencing not only provides essential germline information but can also replace a substantial portion of long-read sequencing, thereby enabling more cost-effective somatic SV detection. Here, we present SomaSV, a hybrid sequencing framework that integrates 30x tumor long-read data with matched normal data comprising 10x long-read and 30x short-read sequencing. This design achieves high-accuracy somatic SV detection while remaining cost-competitive. Comprehensive benchmarking demonstrates that SomaSV outperforms current state-of-the-art methods by more than 13% in F1 score while reducing sequencing costs by approximately 19%. Moreover, SomaSV identifies clinically relevant cancer-associated genes, including CLDN4 and ROBO2, highlighting its potential for discovering valuable biomarkers to support early cancer screening and diagnosis. The source code for SomaSV can be accessed at https://github.com/eioyuou/SomaSV.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.16.706063v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Towards inferring atomic scale conformation landscape of biomolecules from cryo-electron tomography data</h2>
-<p class="paper-authors">Feyzi, F. S., Jonic, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Understanding continuous conformational variability of biomolecular complexes at atomic resolution is essential for linking structure to function, but remains challenging for cryo-electron tomography (cryo-ET) data due to high noise and missing-wedge (MW) artifacts. Physics-based methods, such as MDTOMO (based on classical molecular dynamics simulations of a given atomic structure to flexibly fit subtomograms), provide accurate estimation of atomic coordinates from subtomograms, but their computational cost limits large-scale applications. We present DeepMDTOMO, a supervised deep learning (DL) framework that uses a given set of pairs of atomic coordinates and subtomograms to learn their relationships in order to predict unknown atomic coordinates from a previously unseen set of subtomograms. The proposed regressor encoder-decoder architecture combines 3D convolutional extraction of features from subtomograms with a multilayer perceptron to predict Cartesian all-atom coordinates. Experiments on synthetic datasets show that DeepMDTOMO achieves low errors of coordinate prediction in presence of noise, MW, and large continuous conformational variability. Additionally, fine-tuning to a new motion demonstrates that learned representations capture general structure-density relationships rather than specific patterns. The results presented are encouraging and motivate future studies on speeding up subtomogram flexible-fitting methods with DL for fast atomic-scale conformational landscape determination from cryo-ET data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.15.706028v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">QuantCell: machine learning based cell annotation from qualitative and quantitative imaging profiles</h2>
-<p class="paper-authors">Boohar, W. R., Wang, B., +2 authors, Lu, R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Recent advances in spatial omics enable high-resolution, multiplexed in situ imaging of gene and protein expression. A major challenge in analyzing these data is cell annotation, especially in complex tissues with limited molecular markers, overlapping marker expression, or rare cell types such as stem cells. Here, we present QuantCell, a machine learning (ML) based framework that leverages quantitative imaging data to improve cell annotation derived from qualitative data. QuantCell evaluates multiple ML models to identify the best-performing approach and applies a user-defined false discovery rate (FDR) to ensure reliable annotation. Using PhenoCycler imaging of mouse bone marrow, we show that QuantCell increases the number of annotated cells from 33.1% to 90.2% at a 5% FDR, achieving 96.5% accuracy based on the test dataset from conventional annotation. Benchmarking results demonstrate that QuantCell outperforms existing annotation methods in predictive accuracy. It also minimizes performance bias toward abundant cell types, enabling robust detection of rare cell populations. Unlike many existing methods, QuantCell does not require manual cell annotation, which can be labor-intensive for multi-marker cell types and unfeasible for rare cell populations. In summary, QuantCell provides an effective ML solution for spatial omics analysis, with a workflow that is broadly compatible with various imaging platforms and adaptable to project-specific needs.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.15.706033v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Diffusion Probabilistic Models for Missing-Wedge Correction in Cryo-Electron Tomography</h2>
-<p class="paper-authors">Hasan, N., Bertin, A., Jonic, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Interpretation of 3D cryo-electron tomography (cryo-ET) reconstructions (tomograms) is hampered by the so-called missing-wedge (MW) distortions, which arise because tilt image series used for the reconstructions are acquired in a limited angular range. While many deep-learning approaches address the correction of the MW artifacts on the level of tomograms (3D volumes), the correction at the level of 2D tilt images (generation of unacquired images) remains underexplored. We propose MW-RaMViD, a 2D tilt-image generation method for MW correction, based on Random-Mask Video Diffusion (RaMViD) method for prediction of frames in natural videos. To adapt RaMViD for cryo-ET, we add MRC image-format support, floating-point pixel intensity representation, and a controlled inference protocol enabling both one-run and progressive MW completion (generating a small number of missing tilts per step using a sliding window). We evaluate the method on a synthetic noisy tilt-series dataset and study the effects of MW completion step size and conditioning sequence length. Results show that smaller step sizes and larger conditioning windows reduce error accumulation at higher tilt angles and improve reconstruction fidelity, which was measured by Root Mean Square Error on the image level and by Fourier Shell Correlation on the tomogram level.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.15.706025v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">FiCOPS: Hardware/Software Co-Design of FPGA Computational Framework for Mass Spectrometry-Based Peptide Database Search</h2>
-<p class="paper-authors">Kumar, S., Zambreno, J., +2 authors, Saeed, F.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Improving the speed and efficiency of database search algorithms that deduce peptides from mass spectrometry (MS) data has been an active area of research for more than three decades. The significance of the need for faster database search methods has rapidly increased due to the growing interest in studying non-model organisms, meta-proteomics, and proteogenomic data, which are notorious for their enormous search space. Poor scalability of serial algorithms with the growing size of the database and increasing parameters of post-translational modifications is a widely recognized problem. While high-performance computing techniques can be used on supercomputing machines, the need for real-time, on-the-instrument solutions necessitates the development of an efficient system-on-chip that optimizes design constraints such as cost, performance, and power of the system. To show case that such a system can work, we present an FPGA-based computational framework called FiCOPS to accelerate database search using a hardware/software co-design methodology. First, we theoretically analyze the database-search algorithm (closed-search) to reveal opportunities for parallelism and uncover computational bottlenecks. We then design an FPGA-based architectural template to exploit parallelism inherent in the search workload. We also formulate an analytical performance model for the architecture template to perform rapid design space exploration and find a near-optimal accelerator configuration. Finally, we implement our design on the Intel Stratix 10 FPGA platform and evaluate it using real-world datasets. Our experiments demonstrate that FiCOPS achieves 3.5 times speed-up over existing CPU solutions and 3 times and 5 times reduction in power consumption compared to existing CPU and GPU solutions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.15.706012v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">TITAN-BBB: Predicting BBB Permeability using Multi-Modal Deep-Learning Models</h2>
-<p class="paper-authors">de Oliveira, G. B., Saeed, F.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Computational prediction of blood-brain barrier (BBB) permeability has emerged as a vital alternative to traditional experimental assays, which are often resource-intensive and low-throughput to meet the demands of early-stage drug discovery. While early machine learn-ing approaches have shown promise, integration of traditional chemical descriptors with deep learning embeddings remains an underexplored frontier. In this paper, we introduce TITAN-BBB, a multi-modal deep-learning architecture that utilizes tabular, image, and text-based features and combines them using attention mechanisms. To evaluate, we aggregated multiple literature sources to create the largest BBB permeability dataset to date, enabling robust training for both classification and regression tasks. Our results demonstrate that TITAN-BBB achieves 86.5% of balanced accuracy on classification tasks and 0.436 of mean absolute error for regression, outperforming the state-of-the-art by 3.1 percentage points in balanced accuracy and reducing the regression error by 20%. Our approach also outperforms state-of-the-art models in both classification and regression performance, demonstrating the benefits of combining deep and domain-specific representations. The source code is publicly available at https://github.com/pcdslab/TITAN-BBB. The inference-ready model is hosted on Hugging Face at https://huggingface.co/SaeedLab/TITAN-BBB, and the aggregated BBB permeability datasets are available at https://huggingface.co/datasets/SaeedLab/BBBP.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.15.706007v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Targeting FGFR signaling overcomes therapeutic resistance and immune evasion in oncogenic PIK3CA-driven serous-like endometrial cancer</h2>
-<p class="paper-authors">Cheng, X., Qian, C., +18 authors, Zhao, J. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Serous endometrial cancer (SEC) is an aggressive subtype of endometrial cancer (EC) with poor prognosis and limited treatment options. Here, we developed the first clinically relevant, immunocompetent serous-like EC mouse model incorporating PIK3CA mutation, TP53 loss, and MYC overexpression. Through integrated analyses across mouse models, human cell lines, xenografts, and clinical samples, we investigated mechanisms underlying resistance to PI3Ka-targeted therapy. Single-cell profiling reveals that FGFR1/2 upregulation is associated with intrinsic resistance, whereas FGFR3 characterizes acquired resistance. Dual FGFR and PI3Ka inhibition produced more potent tumor suppression. Mechanistically, FGFR signaling promotes immune evasion by downregulating MHC-I/HLA-mediated antigen presentation and enriching M2-type tumor-associated macrophages. FGFR inhibition reversed these immunosuppressive features and synergized with anti-PD-1 therapy to enhance antitumor immune responses and establish durable immune memory. Collectively, these findings identify FGFR signaling as a key driver of therapeutic resistance and immune escape in SEC and provide a rationale for targeting FGFR to improve clinical outcomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.16.706009v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Coronin1A regulates tumor microenvironment in colitis-associated colorectal cancer in a SUMO-dependent way</h2>
-<p class="paper-authors">Srikanth, C., Babar, R., +14 authors, Ahuja, V.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Inflammatory bowel disease (IBD), comprising Crohns disease and Ulcerative colitis, is a group of multifactorial illnesses with persistent gastrointestinal inflammation and a series of undesirable consequences. IBD patients have a three times higher risk of developing colitis-associated colorectal cancer (CAC). A higher mutational burden due to persistent inflammation acts as a driver of dysplasia and even tumorigenesis. While the pathological sequence is known, the molecular mechanisms underlying the transition from chronic inflammation to CAC remain largely elusive. Post-translational modification- SUMOylation plays an integral role in shaping gut inflammation as well as several forms of cancers, including sporadic colorectal cancer. In this study, the contribution of SUMOylation to CAC pathogenesis was characterized. In the AOM-DSS CAC mice model and human IBD patient specimens, SENP5, but not other deSUMOylases, shows an altered expression. Notably, both SENP5 expression dynamics and alterations in the SUMOylome occur in chronically inflamed and neoplastic colon tissues. SENP5 interactome analysis identified Coronin1A (Coro1A), an actin-binding protein predominantly expressed in immune cells. Coro1A also shows a state-specific, distinct expression pattern in the colon. Interestingly, in contrast to wild-type mice, Coro 1A knockout mice were resistant to polyp formation, with reduced cell proliferation, oncogene expression, and epithelial-to-mesenchymal transition (EMT) gene activation, and reduced extracellular matrix (ECM) development and fibrosis, suggesting its integral role in tumorigenesis. WT mice with chronically inflamed colons and polyps have a higher number of M2-like macrophages, with increased abundance of Coro1A, suggesting a role of Coro1A in modulating the tissue microenvironment toward a pro-tumorigenic state. Mechanistically, Coro1A physically interacts with TGF-beta; RI and regulates TGF-beta;-TGF-beta; RI signalling endosome stability, thereby controlling TGF-beta;-mediated macrophage polarization. Detailed in vitro experiments revealed stabilization of Coro 1A through its interaction with SUMOylated Raftlin protein. Overall, Coro 1A is necessary and sufficient for TGF-beta; signalling, macrophage polarization, and tumorigenesis in CAC.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.16.706097v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Cross-reactivity of SARS-CoV-2-specific T cells against tumor-associated antigens via molecular mimicry</h2>
-<p class="paper-authors">Ragone, C., Mauriello, A., +5 authors, Buonaguro, L.</p>
+<h2 class="paper-title">SCiMS: Sex Calling in Metagenomic Sequences</h2>
+<p class="paper-authors">Tran, H. N., Kirven, K. J., Davenport, E. R.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.16.706083v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.705110v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -246,18 +75,75 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">PubMed</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Identification and Validation of Liver Transplantation-Induced Acute Lung Injury Biomarkers Using a Bioinformatics and Experimental Approach.</h2>
-<p class="paper-authors">Yang Guiting, Shengfeng Zhang, +5 authors, Linghui Pan</p>
+<h2 class="paper-title">The infant gut virome assembles rapidly and predictably over the first three years of life</h2>
+<p class="paper-authors">Shamash, M., Maurice, C. F.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Assembly of the gut microbiota in infancy is an important health determinant, yet the viral component, the virome, remains poorly described. Here, we conduct a meta-analysis of 12 infant cohorts across 8 countries to model gut virome development over the first three years of life. Our results revealed distinct diversity patterns, where viral richness increased significantly over the first eight months of life alongside a loss of community evenness. We define virome developmental velocity, the rate of change between sequential samples, which significantly decreased over time. This was mirrored by community-wide convergence, as infant viromes became more similar with age. Functionally, the transition to a stable state involved a significant decrease in extracellular temperate phages and shifts in phage-encoded auxiliary metabolic genes, which can modulate host metabolism. Our work provides a baseline characterization of gut virome development, marked by a conserved successional trajectory, providing a framework to identify disease-associated perturbations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.705938v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Beyond additivity: zero-shot methods cannot predict impact of epistasis on protein properties and function</h2>
+<p class="paper-authors">Kolchina, A., Dubanevics, I., +1 author, Kalinina, O. V.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate prediction of properties and function of mutated proteins is crucial for both research and industrial applications. Experimental assessment of mutations relies on biochemical techniques, which, while accurate, are costly and labour-intensive. As an alternative, computational methods have emerged as a scalable and cost-effective solution. A key challenge for predicting functional consequences of mutations is epistasis, a phenomenon where the effect of one mutation is influenced by others. We evaluated the ability of 95 zero-shot models to predict the impact of epistasis on proteins using datasets from ProteinGym. Our results demonstrate that while the current models perform well for single mutations and non-epistatic combinations of mutations, they fail to predict the effect of strongly epistasic combinations of mutations. This exposes deficiencies of the state-of-the-art models and the need for focusing on capturing complex mutational interactions, which is essential for advancing both evolutionary studies and protein design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.706292v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Reliable Evaluation and Learning in Multi-input Biological Association Prediction</h2>
+<p class="paper-authors">Ahmadian Moghadam, S., Montazeri, H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Multi-input association prediction is central to many key problems in computational biology, spanning tasks from drug-target and protein-protein interactions to higher-order challenges such as drug synergy modeling and MHC-peptide-TCR binding. Yet widely used benchmarks often overestimate performance by enabling models to exploit degree ratio shortcuts, while alternative out-of-distribution splits are overly restrictive and impractical. Here we introduce an entity-balanced evaluation framework that systematically neutralizes shortcut signals by balancing positive and negative associations at the entity level. This enables fairer assessments that reflect genuine relational learning and extend naturally from pairwise to multi-entity problems. We further present UnbiasNet, a model-agnostic training strategy that cycles through diverse entity-balanced sub-training sets, removing access to degree ratio bias and enhancing robustness. Applied to drug-target interaction and drug synergy prediction, our framework reveals the extent of shortcut reliance in existing methods while enabling consistent identification of meaningful biological associations, thereby setting a rigorous foundation for future methodological progress.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.706287v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multi-Model AI Consensus Pipeline for Automated Data Extraction in Plant Science Meta-Analysis</h2>
+<p class="paper-authors">Halpern, M.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41699834/" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.706322v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -265,18 +151,113 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Feb 17, 2026</span>
-<span class="journal">MED</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">AutoSimTTF: a fully automatic pipeline for personalized electric field simulation and treatment planning of tumor treating fields.</h2>
-<p class="paper-authors">Xie X, Fan Z, +7 authors, Zhang S.</p>
+<h2 class="paper-title">Distilling Protein Language Models with Complementary Regularizers</h2>
+<p class="paper-authors">Wijaya, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective. Tumor treating fields (TTFields) is an emerging cancer therapy whose efficacy is closely linked to the electric field (EF) intensity delivered to the tumor. However, current computational workflows for simulating the EF and planning treatment rely on time-consuming manual segmentation and proprietary software, hindering efficiency, reproducibility, and accessibility.Approach. We introduce AutoSimTTF, a fully automatic pipeline for personalized EF simulation and optimized treatment planning for TTFields. The end-to-end workflow utilizes advanced deep learning model for automated tumor segmentation, conducts finite element method-based EF simulation, and determines a computationally optimized treatment plan via a novel, physics-based parameter optimization method.Main results. The automated segmentation module achieved high precision, yielding a Dice similarity coefficient of 0.91 for the whole tumor. In terms of efficiency, the active planning workflow was completed in approximately 12 min, significantly outperforming conventional multi-day manual processes. The pipeline's simulation accuracy was validated against a conventional semi-automated workflow, demonstrating deviations of less than 14.1% for most tissues. Critically, the parameter optimization generated personalized transducer montages that produced a significantly higher EF intensity at the tumor site (up to 111.9% higher) and substantially improved field focality (19.4% improvement) compared to traditional fixed-array configurations.Significance. AutoSimTTF addresses major challenges in efficiency and reproducibility, paving the way for data-driven personalized TTFields therapy and large-scale computational research.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41643315/" target="_blank">
+<p><strong>Abstract:</strong> Large autoregressive protein language models (700M+ parameters) generate novel sequences de novo, yet their computational demands limit throughput in biopharma workflows such as antibody affinity maturation and enzyme engineering, where millions of candidates must be evaluated. We present a distillation framework combining temperature-scaled knowledge distillation with two protein-specific enhancements: uncertainty-aware position weighting, which emphasizes biologically variable regions via teacher entropy, and calibration-aware label smoothing. A central finding is complementary regularizers: each enhancement individually degrades distillation quality, yet their combination yields 53% perplexity improvement over baseline distillation-a result we explain through information-theoretic analysis of noise amplification and signal filtering. We train three student models at 3.8-20x compression, all outperforming baselines (31-87% perplexity improvement). The resulting models achieve 2.4-5.3x speedup while preserving amino acid distributions consistent with natural proteins (KL divergence &lt; 0.015), enabling on-premise screening of proprietary sequences without cloud API dependencies--a key requirement in pharmaceutical settings.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.706304v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">KG-Orchestra: An Open-Source Multi-Agent Framework for Evidence-Based Biomedical Knowledge Graphs Enrichment.</h2>
+<p class="paper-authors">Mohamed, A. H., Shalaby, K. S., +2 authors, Tom Kodamullil, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Biomedical Knowledge Graphs (BKGs) offer integrative representations of complex biology, yet their utility is compromised by the limitations of current construction methods: manual curation offers high fidelity but is unscalable, whereas purely automated Large Language Model (LLM) approaches often yield broad networks lacking mechanistic granularity. We present KG-Orchestra, an open-source multi-agent framework designed to build specialized, directional, cause-and-effect BKGs by enriching seed graphs. The framework focuses on increasing granularity within specific topics by leveraging Retrieval-Augmented Generation (RAG) to autonomously acquire, validate, and integrate evidence. The system orchestrates specialized agents for retrieval, schema alignment, and triplet validation with explicit, traceable provenance, transforming sparse seeds into dense, high-resolution resources. We evaluated KG-Orchestra on two specialized contexts -- the mechanistic link between Nelivaptan and Alzheimer's Disease (NADKG) and the complex probiotic interactions within the gut-brain axis (ProPreSyn-GBA) -- across varying computational budgets. Our benchmarking results demonstrate that Qwen 3 variants deliver superior reasoning performance and that hybrid retrieval strategies significantly enhance evidence relevance. Furthermore, the multi-agent architecture ensures high triplet integrity and biological validity through iterative cross-checking and self-correction. The framework remains computationally flexible, deploying from single laptop GPUs to high-performance clusters. By bridging knowledge gaps and adding context-aware entities, KG-Orchestra increases reliability while validating seed assertions against up-to-date sources. This versatility supports critical downstream applications, including completing missing mechanistic pathways, integrating novel entities for drug repurposing, constructing targeted subgraphs from entity lists, and retroactively validating graph evidence for transparent auditing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.18.706536v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Structural Characterization of the Type IV Secretion System in Brucella melitensis for Virtual Screening-Based Therapeutic Targeting</h2>
+<p class="paper-authors">Kapoor, J., Panda, A., +2 authors, Bandyopadhyay, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Brucellosis is a globally important zoonotic disease caused by Brucella melitensis, the most virulent and clinically significant species affecting both humans and livestock. Unlike many Gram-negative pathogens, B. melitensis, a facultative intracellular pathogen, lacks conventional virulence factors and instead relies on specialized systems such as the Type IV Secretion System (T4SS) for secretion of effector proteins. In this study, an integrated computational pipeline was implemented to identify, model, and assemble the T4SS components, encoded by virB operon, from the complete B. melitensis proteome. Template-based modeling strategies were employed to generate structures of T4SS subcomplexes, referencing crystallographic data from E. coli T4SS. Structural superposition with E. coli homologs revealed highly conserved architecture despite only 30 to 50% sequence identity. Stereochemical validation confirmed high model quality and favorable interactions among most VirB protein pairs. Membrane insertion analysis of the membrane-embedded assemblies further corroborated the spatial orientation of the modeled T4SS. Potential of T4SS as a drug target was explored by targeting dimeric interface of VirB11 ATPase to disrupt protein-protein interactions that could disarm the pathogen. Virtual screening of compounds from DrugBank database revealed compounds with docking score less than -7.0 kcal/mol that were screened based on ADMET properties, yielding three promising candidates: Ezetimibe (Drug Id: DB00973), Chlordiazepoxide (Drug Id: DB00475), and Alloin (Drug Id: DB15477). MM-GBSA analysis estimated favorable binding free energies for these compounds and molecular dynamics simulation for 200 ns further confirmed the protein-ligand interaction stability. Collectively, these findings provide new insights into the architecture of B. melitensis T4SS and identify three potential drug molecules targeting T4SS. This supports FDA approved drug repurposing as an effective strategy for anti-virulence therapy against Brucellosis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.18.706537v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">BOND-PEP: topology-conditioned bipartite alignment for evidence-grounded peptide binder generation</h2>
+<p class="paper-authors">Ding, W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Peptide binders can modulate proteins that remain challenging for small molecules, but discovering high-affinity, selective peptides is still slow and sample-intensive. Sequence-first generators could scale design when structures are unavailable or conformationally heterogeneous, yet they often trade diversity for control: unconstrained sampling is inefficient while conditioning remains largely implicit. This limitation is exacerbated by the uneven transfer of protein language model priors to short peptides. Here we present BOND-PEP, a retrieval-augmented, bipartite-aligned, topology-conditioned framework that converts empirical binding evidence into an explicit, residue-resolved conditioning state for peptide generation. BOND-PEP shows low perplexity together with satisfactory free-generation hit rates and sequence novelty under a fair evaluation protocol and decoding budget. Compared with existing peptide generation methods, BOND-PEP achieves state-of-the-art results that match or improve upon validated peptide-protein sequence pairs. In total, BOND-PEP provides a practical, sequence-only route to controllable de novo peptide binder generation under noisy labels and distribution shift.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.18.706554v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Api5-FGF2 regulates the transformation of breast epithelial cells via PDK1/Akt and Ras/MAPK/ERK signalling</h2>
+<p class="paper-authors">Goyal, A., Lahiri, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The equilibrium between cell death and cell division is crucial for maintaining tissue homeostasis in a multicellular organism. Apoptosis plays an essential role in preserving homeostasis and hence occurs in a coordinated manner. However, inhibition of apoptosis is one of the hallmarks of cancer. Apoptosis Inhibitor 5 (Api5), an anti-apoptotic protein, is upregulated in various cancers, including ovarian, bladder, cervical, and lung cancers. Studies have demonstrated that altered expression of Api5 leads to the transformation of non-tumorigenic breast epithelial cells. However, the mechanism regulating this process is not well-elucidated. Our study demonstrates that overexpression of Api5 increased FGF2 (Fibroblast Growth Factor 2) levels both at protein and transcript levels. We studied the mechanistic details of changes in morphology, proliferation, and polarity observed upon FGF2/FGFR1 deregulation in Api5-overexpressing cells. Deciphering the signalling mechanism underlying Api5-FGF2-mediated breast tumorigenesis revealed that the PDK1/Akt and Ras/MAPK/ERK pathways regulated multiple transformation phenotypes. PDK1/Akt enhanced proliferation and altered morphology during initial stages, whereas Ras/MAPK/ERK regulated polarity disruption, proliferation, and reduced apoptosis during later stages of morphogenesis. In conclusion, this study provides insights into the signalling mechanism regulating the transformation phenotypes associated with Api5 overexpression in a non-tumorigenic breast epithelial cell line.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.706358v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Feb 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">STING safeguards epithelial genome integrity and protects from carcinogenesis via mitotic checkpoint control</h2>
+<p class="paper-authors">Xiang, H., Marcino, M., +22 authors, Aden, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The cGAS-STING pathway is a central regulator of anti-tumor immunity, sensing cytosolic double-stranded DNA and inducing type I interferon responses. However, whether cGAS-STING directly coordinates DNA damage response in non-immune cells and thereby contributes to cell-intrinsic prevention of oncogenesis is not known. Using mouse models with deletion of ribonucleotide excision repair in the intestinal epithelium (H2b{Delta}IEC) and additional knock-out of STING (H2b{Delta}IEC/STING-/-, H2b/STING{Delta}IEC) we show that STING deficiency compromises DNA damage induced signalling via ATM and impairs homologous recombination repair, thereby promoting chromosomal instability and driving formation of spontaneous intestinal adenocarcinoma. Mechanistically, STING loss disrupts the NBS1-ATM axis and attenuates DNA damage signalling through enhanced phosphatase-mediated signal termination. Using single strand sequencing, we show that epithelial loss of STING promotes chromosomal instability and accumulation of mutations. By employing kinase screening, we further show that STING deficiency abrogates p53-dependent checkpoint control via overactivation of Cyclin-dependent kinase 1 (CDK1). CDK1 inhibitors lead to a STING-specific sensitization of tumor organoids and colorectal cancer cell lines, pointing towards a STING-specific vulnerability of tumors to CDK1 inhibition. Together, these data identify STING as an epithelial, interferon-independent genome-integrity checkpoint that couples DNA damage signaling to cell-cycle control, thereby restraining chromosomal instability, tumor evolution and revealing a therapeutically exploitable vulnerability in colorectal cancer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.17.706442v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
