@@ -37,18 +37,18 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="machine learning, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
 <span class="date">Feb 21, 2026</span>
-<span class="journal">PubMed</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Unraveling the role of polyamine metabolism in postoperative delirium: insights into biochemical mechanisms and biomarker potential.</h2>
-<p class="paper-authors">Nazia Saiyed, Vaibhav Pandya, +12 authors, Stewart F Graham</p>
+<h2 class="paper-title">Genomic-island cassette architecture drives pathogenic Enterococcus cecorum lineages: Cassette2Vec-EC, a structural genomics and machine-learning framework</h2>
+<p class="paper-authors">Goswami, A., Rafi, S., Lagad, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Postoperative delirium (POD) is a common complication in older surgical patients, linked to long-term cognitive decline and progression to dementia, yet its mechanisms remain unclear. We investigated arginine-related metabolites (ARMs) in cerebrospinal fluid (CSF) from 248 patients undergoing elective-surgery: 25 developed POD. Targeted mass spectrometry, gene expression profiling, and machine learning were applied to identify metabolic predictors. POD patients showed significant correlations with citrulline, ornithine, and glutamine, while models highlighted glutamine, glutamic acid, putrescine, N1-acetylspermidine, and spermidine as key biomarkers, achieving &gt;77% predictive accuracy. Cluster and pathway analyses revealed POD-specific shifts in GABA synthesis and polyamine metabolism, contrasting with urea cycle dominance in non-POD cases. Associations persisted after adjusting for age and CSF Aβ42. Preoperative profiles in polyamine metabolism, ammonia detoxification, and neurotransmitter regulation suggest underlying neuroinflammatory and oxidative stress vulnerabilities that reduce resilience. Targeting polyamine biosynthesis may offer novel preventative and therapeutic strategies to mitigate POD and dementia risk.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41720813/" target="_blank">
+<p><strong>Abstract:</strong> Mobile genetic elements and genomic islands (GIs) frequently encode antibiotic resistance and host-adaptation cargo, yet routine genome comparison pipelines often miss the higher-order organization of how genes co-occur as transferable, GI-anchored modules. We present Cassette2Vec-EC, a structural genomics framework that converts annotated genomes into cassette units (local gene neighborhoods with GI context), encodes each cassette as a fixed-length feature vector, and applies genome-grouped machine learning to predict pathogenic lineages while preventing within-genome leakage. Using a curated Enterococcus cecorum cohort from poultry production systems, we integrate pangenome context, GI calls, mobility markers, and AMR/virulence annotations into cassette-level features and evaluate models strictly under GroupKFold-by-genome. Cassette2Vec-EC achieves strong genome-level generalization (AUROC 0.975 {+/-} 0.030, average precision 0.938 {+/-} 0.077, Brier score 0.056 {+/-} 0.058). When evaluated at the cassette unit level under the same genome-grouped protocol, performance remains high (AUROC 0.974 {+/-} 0.029, AP 0.919 {+/-} 0.093, Brier 0.057 {+/-} 0.057), supporting that cassette representations capture transferable signal rather than genome identity. Baselines show that GI burden alone can partially rank genomes but yields poorer calibration and limited interpretability. By combining comparative genomics with cassette-aware features and providing locus-level explanations (SHAP) that map predictions to specific GI-associated modules, Cassette2Vec-EC provides a practical blueprint for genomic-island-aware pathogen surveillance, junction-based diagnostics, and targeted monitoring of high-risk lineages.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.21.707173v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -59,15 +59,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
+<span class="date">Feb 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">How to gain valuable insight from scarce data with Machine Learning: a post-hoc explanation tool to identify biases in biological images classification</h2>
-<p class="paper-authors">Bolut, C., Pacary, A., +4 authors, Simoncini, D.</p>
+<h2 class="paper-title">CoMR: an integrative scoring pipeline for Comprehensive Mitochondrial proteome Reconstruction across eukaryotes</h2>
+<p class="paper-authors">Boisard, J., Williams, S. K., +1 author, Stairs, C. W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Machine learning (ML) models are effective at classifying images across various fields, including biology. However, their performance on biomedical images is often limited by the small size of available datasets that are constrained by the time-consuming and costly nature of experimental data collection. A review of the literature shows that many studies using biomedical images fail to follow ML best practices. This study focuses on regenerative medicine, which aims to promote tissue regeneration rather than scarring. To explore this process, we applied ML to a limited dataset of images of mice tissues, aiming to distinguish between regenerating and scarring samples. As expected binary classification failed to generalize to independent data. A novel SHAP-based analysis revealed that the overfitting models were based on spurious correlations including individual mice characteristics that aligned with the regeneration/scarring labels. The models appeared to be solving the binary classification task, but were in fact recognizing individuals. To investigate this behavior further, we examined the test set confusion matrix of a model trained to identify individual mice. We observed that, beyond individual recognition, individuals were grouped according to the time elapsed after injury (day 3 or 10) and the healing outcome (regeneration or scarring). We hypothesized that these groupings were based on relevant biological information captured by the model. To test this hypothesis, we successfully trained a model to classify images according to the time elapsed after injury (3 or 10 days), demonstrating that ML can extract relevant biological information when the task is aligned with what the data can actually support. Altogether, this study demonstrates that carefully examining explanations of a model is not only an effective way to unveil putative biases but also to extract relevant information from a limited dataset.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706981v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Mitochondrial proteome reconstruction from eukaryotic sequence data typically relies on prediction of mitochondrial targeting signals (MTSs). However, MTS predictors are primarily trained on model organisms and may perform poorly in phylogenetically divergent lineages or in organisms with atypical or reduced targeting sequences. Accurate reconstruction therefore requires integration of complementary sources of evidence beyond targeting prediction alone. We developed CoMR (Comprehensive Mitochondrial Reconstructor), an integrative workflow that combines targeting prediction, curated homology searches, large-scale similarity searches, and automated phylogenetic analysis within a unified scoring framework. Benchmarking on the model yeast Saccharomyces cerevisiae yielded strong discriminatory performance (ROC-AUC = 0.92), exceeding standalone TargetP2 prediction (ROC-AUC = 0.72). In the divergent anaerobic protist Paratrimastix pyriformis, CoMR maintained robust performance (ROC-AUC = 0.86) validated with an experimental proteome despite extreme class imbalance, achieving a precision-recall AUC of 0.183 (~78-fold enrichment over random expectation and ~10-fold improvement over TargetP2). Ablation analyses demonstrate that predictive performance is robust to individual evidence-layer removal and that the relative contribution of homology sources depends on phylogenetic context. Together, these results show that integrative evidence scoring improves mitochondrial proteome reconstruction across both model and non-model eukaryotes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.707009v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -78,15 +78,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
+<span class="date">Feb 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ProteinConformers: large-scale and energetically profiled descriptions of protein conformational landscapes</h2>
-<p class="paper-authors">Zhou, Y., Wei, C., +6 authors, Zhang, Y.</p>
+<h2 class="paper-title">Disentangling the Impacts of Incomplete Lineage Sorting and Gene Tree Estimation Error on Species Tree Inference</h2>
+<p class="paper-authors">Tahmid, N., Rhythm, S. I., Bayzid, M. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Modeling protein conformational landscapes is essential for understanding dynamics, allostery, and drug discovery, yet existing resources lack diverse conformational coverage, energetic annotations, or benchmarking standards. ProteinConformers (https://zhanggroup.org /ProteinConformers) provides 2.7 million geometry-optimized conformations generated with a multi-seed molecular dynamics strategy, paired with 13.7 million energy evaluations and 5.5 million similarity annotations. It delivers continuous landscapes from non-native to near-native states, benchmarking framework for multi-conformation generators, and an interactive analysis platform.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.707011v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate species tree inference from genome-scale data is complicated by gene tree discordance, which can arise both from biological processes such as incomplete lineage sorting (ILS) and from technical factors such as gene tree estimation error (GTEE). While both factors reduce the accuracy of summary methods that infer species trees from gene trees, their relative impact and characteristic patterns remain poorly understood. Here, we systematically disentangle the effects of ILS and GTEE by simulating gene tree datasets with comparable overall discordance levels, but with discordance arising exclusively from either ILS or GTEE. Using widely employed summary methods such as ASTRAL and wQFM, we show that GTEE typically has a stronger detrimental effect on species tree accuracy than ILS, even at matched discordance levels. We further characterize the structure of gene tree distributions under these two sources of discordance and show that ILS induces a structured, constrained skew in quartet distributions, whereas GTEE generates more uniform, high-entropy noise that does not diminish with additional genes. Our results provide an empirical framework for a nuanced understanding of how ILS and GTEE shape gene tree distributions and influence species tree inference, and highlight the importance of appropriately distinguishing biological and estimation-driven discordance when inferring species trees from limited or noisy datasets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.21.707162v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -97,15 +97,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
+<span class="date">Feb 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">High-resolution population structure inference using genome-wide short tandem repeat variations</h2>
-<p class="paper-authors">Xia, F., Baudis, M., Anisimova, M.</p>
+<h2 class="paper-title">A Scalable Design for Proximity-Inducing Molecules</h2>
+<p class="paper-authors">Karaj, E., Venkatarangan, V., +20 authors, Choudhary, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Short tandem repeats (STRs) are a major source of genetic variation, yet their potential for genome-wide population structure inference remains underexplored. Here we present a multi-modal framework for STR-based population inference, integrating unsupervised clustering, supervised population assignment, and a novel admixture inference model, Directional Non-negative Matrix Factorization (dNMF). Applying this framework to thousands of genomes from multiple global cohorts, we first demonstrate that genome-wide STR variations provide substantially finer resolution of human population structure than single-nucleotide polymorphisms (SNPs), particularly at regional levels. The dNMF model estimates ancestry coefficients under the hypothesis that true ancestral populations are consistently encoded in the bidirectional mutation dynamics of STRs. Population structures inferred by dNMF are fine-grained, reproducible across datasets, and robust to technical artifacts. Motif-specific analyses further reveal direction-biased mutational tendencies and show that distinct STR motif classes encode complementary layers of population structure at different evolutionary scales. These results establish STRs as powerful and biologically interpretable markers for population structure inference, offering a mutation-aware perspective that complements traditional SNP-based frameworks and refines understanding of human demographic history.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.707006v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Chimeric molecules, which bring together an effector enzyme and a protein-of-interest (POI) to add/remove post-translational modifications (PTMs), are furnishing transformative modalities (e.g., PROTACs). However, these chimeras' scalability is limited as they employ rare, non-inhibitory binders of effectors. We report GRoup-transfer chimeras for Inducing Proximity (GRIPs) that employ abundantly available effectors' inhibitors to append POI binder on the effector using group-transfer handles. To demonstrate scalability, we develop 6 GRIPs classes for 3 PTMs utilizing diverse inhibitor (16 effector: POI pairs). Furthermore, we report a toolbox of 42 tunable group-transfer handles for Cys/Lys residues and ~5000 inhibitor-residue pairs from diverse effectors. Using global proteomics, we confirm the specificity for group transfer and PTM editing. GRIPs endowed new functionalities to POI drugs, including preventing rebound signaling upon drug withdrawal, a more potent/persistent inhibition, and inhibitor-induced pathway activation in 4 fully-endogenous systems. In diverse hemi-endogenous systems (tagged POI), GRIPs induced condensate formation with reduced off-targets, cleared pathogenic PTMs, and initiated PTM crosstalk. Overall, GRIPs provide a scalable and versatile platform for PTM editing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706349v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -116,129 +116,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
+<span class="date">Feb 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">On the consistency of duplication, loss, and deep coalescence gene tree parsimony costs under the multispecies coalescent</h2>
-<p class="paper-authors">Sapoval, N., Nakhleh, L.</p>
+<h2 class="paper-title">Paired oral clinical specimens reveal the underlying ecology supporting the emergence of inflammophilic microbiome communities</h2>
+<p class="paper-authors">Krieger, M., Kerns, K. A., +4 authors, Merritt, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Gene tree parsimony (GTP) is a common approach for efficient reconciliation of multiple discordant gene tree phylogenies for the inference of a single species tree. However, despite the popularity of GTP methods due to their low computational costs, prior work has shown that some commonly employed parsimony costs are statistically inconsistent under the multispecies coalescent process. Furthermore, a fine-grained analysis of the inconsistency has indicated potentially complimentary behavior of duplication and deep coalescence costs for symmetric and asymmetric species trees. In this work, we prove inconsistency of GTP estimators for all linear combinations of duplication, loss and deep coalescence scores. We also explore empirical implications of this result evaluating inference results of several GTP cost schemes under varying levels of incomplete lineage sorting.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.707019v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Fast and alignment-free flavivirus classification from low-coverage genomes</h2>
-<p class="paper-authors">Shahid, A., Ulrich, J.-U., Kuehnert, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> High genomic variability among viral species makes sequence classification highly dependent on multiple sequence alignment (MSA) methods, which are both computationally intensive and sensitive to data quality issues. To provide a more efficient and robust alternative, we developed DiCNN-UniK, a Dual-Input Convolutional Neural Network (DiCNN) utilizing unique k-mer signatures and universal k-mer libraries to generate novel and direct embeddings. Instead of relying on k-mer frequency patterns, DiCNN-UniK directly leverages k-mer embedding information, which provides a clear picture of local genomic context. This architecture is designed to handle full-length genomic sequences, overcoming the restrictive 512-token limit common in many genomic foundation models. Trained on Flaviviruses, our model shows high sensitivity, robustness, and reliability, achieving an accuracy of 99% on an independent test set. DiCNN-UniK is trained on full-genome data and is able to handle partial genomic sequences without preprocessing, maintaining high accuracy and precision with genomic coverage as low as 20%. DiCNN-UniK currently stands as the best available model for the classification of flaviviruses, offering a sensitive, robust, and reliable solution for sequence analysis under real-world genomic coverage and data quality scenarios.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706982v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Learning heritable multimodal brain representation via contrastive learning</h2>
-<p class="paper-authors">Xia, T., Zhao, X., +3 authors, Zhi, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Magnetic resonance imaging (MRI)-derived phenotypes (IDP) has enabled the discovery of numerous genomic loci associated with brain structure and function. However, most existing IDPs and learned representations are derived from a single imaging modality, missing complementary information across modalities and potentially limiting the scope of genetic discovery. Here, we introduce a multimodal contrastive learning framework to derive heritable representations from paired T1- and T2-weighted MRIs. Unlike single-modality reconstruction-based models, we designed a momentum-based contrastive learning framework. As a result, our approach offers improved prediction of traditional IDPs, age, and brain disorders. Notably, genome-wide association studies (GWAS) of the learned representations reveal a substantially higher overlap of genetic loci across modalities, indicating improved alignment of their underlying genetic architecture. Analysis of the GWAS loci identified shared protein and drug targets, yielding meaningful biological insights. Overall, our framework learns shared representations across brain imaging modalities that exhibit anatomical and genetic coherence.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706893v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Differential analysis of image-based chromatin tracing data with Dory</h2>
-<p class="paper-authors">Ma, Z., Liu, M., +2 authors, Zang, C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial organization of the genome plays a vital role in defining cell identity and regulating gene expression. The three-dimensional (3D) genome structure can be measured by sequencing-based techniques such as Hi-C usually on the cell population level or by imaging-based techniques such as chromatin tracing at the single-cell level. Chromatin tracing is a multiplexed DNA fluorescence in situ hybridization (FISH)-based method that can directly map the 3D positions of genomic loci along individual chromosomes at single-molecule resolution. However, few computational tools are available for statistical differential analysis of chromatin tracing data, which are inherently high-dimensional, highly variable and contain many missing values. Here, we present Dory, a statistical method for identifying differential spatial patterns between two groups of chromatin traces. Dory quantifies pairwise spatial distances among genomic regions in a chromatin trace and applies multi-level statistical tests to detect significant structural differences between the two groups of traces. It produces a differential score matrix highlighting region pairs with significant distance difference. Applying Dory to multiple chromatin tracing datasets, we found that the detected chromatin structural changes were associated with alterations in A/B compartments and promoter-enhancer interactions correlated with differential gene expression. Dory is a robust and user-friendly computational tool for quantitative analysis of imaging-based 3D genome data that enables systematic exploration of chromatin architecture and its roles in gene regulation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706897v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Chemical Probes in Scientific Literature: Expanding and Validating Target-Disease Evidence</h2>
-<p class="paper-authors">Adasme, M. F., Ochoa, D., +4 authors, Zdrazil, B.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Chemical probes are indispensable tools for validating therapeutic hypotheses, yet their broader impact on early-stage drug discovery remains unquantified. To our knowledge, this study represents the first systematic, large-scale investigation of the chemical probe literature. By screening over 18 million articles using a high-quality dictionary of 561 chemical probes, we identified 20,000 articles mentioning a chemical probe which resulted in 5,558 unique target-disease (T-D) associations. Our analysis yields four principal findings that redefine the utility of these chemicals: First, we show that chemical probe evidence typically precedes the appearance of structured data in major knowledge bases by 1-7 years, providing a crucial lead time for target prioritisation. Second, we identified 353 T-D pairs (6.4%) with no prior evidence in the Open Targets Platform, highlighting the approach's discovery potential. Third, the application of strict novelty filters uncovered 135 new high-confidence associations between targets and diseases, revealing distinct opportunities for therapeutic repurposing in non-oncological, rare autoimmune diseases, and diseases without effective therapies due to complex biology or high treatment resistance. Finally, we demonstrate that chemical probes are essential for strengthening evidence, providing functional validation for associations previously supported only by weaker, correlative data such as RNA expression or animal models. Collectively, these findings illustrate that chemical probes catalyse early therapeutic discovery, emphasising the importance of cataloguing existing probes and identifying new ones.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706919v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A New Sparse Bayesian Quantile Neural Network-based Approach and Its Application to Discover Physiological Sweet Spots in the Canadian Longitudinal Study on Aging</h2>
-<p class="paper-authors">Min, J., Vishnyakova, O., +1 author, Elliott, L. T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Identifying physiological sweet spots (optimal ranges for homeostasis) is essential for precision medicine. However, traditional statistical methods often rely on globally linear or locally jagged models that struggle to capture the smooth, non-linear nature of biological regulation in high-dimensional data. We present the Quantile Feature Selection Network (Q-FSNet), a neural network-based framework that integrates quantile regression, feature selection, and uncertainty estimation to identify biomarkers with sweet spots. Unlike traditional methods, Q-FSNet learns continuous response curves without requiring pre-specified number of change points. We further introduce Quantile Dirichlet Network (Q-DirichNet), a fully Bayesian extension that utilizes Dirichlet priors to automate feature shrinkage. Using data from the Canadian Longitudinal Study on Aging, we identified 25 metabolites with distinct homeostatic ranges for which biological age acceleration is minimized. The metabolites with sweet spots for biological aging include some derived from diet or produced by the gut microbiome; this highlights their potential for knowledge translation and public health impact. Our results, corroborated by existing literature, demonstrate that these sparse neural network-based methods offer a scalable and interpretable tool for discovering metabolic signatures of healthy aging vs. dysregulation in large-scale omics research.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706407v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Prediction of ligand-dependent conformational sampling of ABC transporters by AlphaFold3 and correlation to experimental structures and energetics</h2>
-<p class="paper-authors">Tang, Q., Mchaourab, H., +1 author, Soubasis, B.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> AlphaFold3 architecture represented an important leap relative to Alphafold2 by enabling the inclusion of protein ligands in the prediction network. Ligand-dependent structural rearrangements are inherently difficult to predict computationally as they imply transitions between states separated by large energy differences. Here we apply AlphaFold3 to predict nucleotide-dependent changes in the conformational cycle of representative ABC transporters that have been extensively investigated by experimental structural biology techniques. We show that under similar conditions, AlphaFold3 predictions sample experimentally observed conformations. Moreover, the heterogeneity of these predictions correlates with experimental measures of dynamics obtained from multiple techniques. For couple of the tested transporters, the implied relative energetics of the conformations mirror their experimental counterpart. Remarkably, AlphaFold3 predicts previously unobserved conformations that have been implied to be sampled by ABC transporters. Finally, we report preliminary results showing that postulated sequence determinants of conformational changes modify the predictions of AlphaFold3. Although hundreds of ABC transporter structures have been determined and were included in the training data of AF3, we propose that aspects of its predictions reflect extrapolation of principles learned from these structures.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706864v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706901v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -249,72 +135,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 20, 2026</span>
+<span class="date">Feb 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Cholesterol Biosynthesis is a Targetable Vulnerability of CEBPA-mutant Acute Myeloid Leukemia</h2>
-<p class="paper-authors">Ulfbeck Schovsbo, S., Liu, Y., +10 authors, Porse, B. T.</p>
+<h2 class="paper-title">NRF2 pathway activation and SPP1⁺TREM2⁺ macrophages drive chemoradiotherapy resistance in esophageal squamous cell carcinoma</h2>
+<p class="paper-authors">Deng, J., Xun, Z., +27 authors, Liang, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bi-allelic CEBPA mutations occur in 5-15% of acute myeloid leukemia (AML) patients. The precise molecular consequences of CEBPA mutations, especially in combination with frequently co-occurring mutations in TET2, WT1, and GATA2, remain incompletely understood. Here, we present a robust human model of CEBPA-mutant AML through gene editing of healthy bone marrow-derived hematopoietic stem cells. Loss of the CEBPA-p42 isoform expressed in healthy cells with concomitant upregulation of the leukemic CEBPA-p30 isoform resulted in a myeloproliferative phenotype. Concurrent loss-of-function mutations in TET2 or WT1 drove full leukemic transformation, while GATA2 haploinsufficiency promoted erythroid precursor accumulation without overt AML. Single-cell transcriptomics and low-input proteomics revealed enhanced myeloid output, increased interferon signaling and elevated cholesterol biosynthesis in leukemic cells. Targeting cholesterol synthesis enhanced chemosensitivity, highlighting a potential therapeutic vulnerability, particularly relevant for CEBPA-mutant patients harboring co-mutations in TET2 or WT1, which have poor outcomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706425v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">CDK12/13 inhibitor, CTX-439, suppresses tumor growth and potentiates BCL-2 family blockade</h2>
-<p class="paper-authors">Yamakawa, H., Khatab, R., +18 authors, Yusa, K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> CDK12 and CDK13 (CDK12/13) regulate transcription by phosphorylating Serine 2 (S2) of the C-terminal domain of RNA polymerase II and have been proposed as therapeutic targets in cancer. Here we report the development of CTX-439, a novel, orally bioavailable, ATP-competitive small-molecule CDK12/13 inhibitor. CTX-439 specifically inhibits S2 phosphorylation and downregulates many genes including those involved in DNA damage repair, thereby exerting a profound anti-cancer effect in vitro and in vivo including breast cancer PDX models. A CRISPR activation screen identified BCL-2 and BCL-xL, anti-apoptotic BCL-2 family members, as genes that when upregulated confer resistance to CTX-439. Simultaneous inhibition of BCL-2/BCL-xL and CDK12/13 rapidly induced apoptosis and significantly suppressed xenograft tumor growth. Mechanistically, CTX-439 downregulates MCL1 protein levels through transcriptional readthrough, shifting cell survival dependency to BCL-2 and BCL-xL. Our study provides novel insights into the anti-tumor effect of CDK12/13 inhibition and proposes a new combination therapy strategy with anti-apoptotic BCL-2 family inhibitors, which may improve therapeutic outcomes in cancer treatment.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706902v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">In Silico Identification of Aminoadipate Semialdehyde Synthase (AASS) as a Novel Prognostic Biomarker in Triple-Negative Breast Cancer</h2>
-<p class="paper-authors">Majeed, M., Akram, M. Z., Tariq, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Triple-negative breast cancer (TNBC) is an aggressive subtype that lacks effective targeted therapies. This study aimed to identify robust prognostic biomarkers by integrating network biology with machine learning (ML) approaches. TNBC expression cohorts were analysed to identify differentially expressed genes (DEGs) and crucial gene clusters via limma and Weighted Gene Co-expression Network Analysis (WGCNA). In results, 579 DEGs were identified, and network analysis revealed two TNBC-associated modules. Overlapping determined 208 genes enriched in cell-cycle and mitotic-regulation pathways. To identify candidate biomarkers, protein-protein interaction (PPI) networks and ML feature selection techniques, including support vector machine with recursive feature elimination module (SVM-RFE) and least absolute shrinkage and selection operator (LASSO) regression, were performed. The Kaplan-Meier (KM) analysis revealed AASS and CCNA2 were favourable prognostic markers, whereas CXCL8, SPP1, and CCNB1 were poor prognostic markers. Multi-level validation and immune-subtype analysis were carried out, revealing AASS as a novel TNBC-associated metabolic tumour suppressor.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706804v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Feb 20, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Single-cell spatial proteomics maps human liver zonation patterns and their vulnerability to disruption in tissue architecture.</h2>
-<p class="paper-authors">Caroline A M Weiss, Lauryn A Brown, +10 authors, Matthias Mann</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Understanding protein distribution patterns across tissue architecture is crucial for deciphering organ function in health and disease. Here we show the application of single-cell Deep Visual Proteomics to perform spatially resolved proteome analysis of individual cells in native liver tissue. We built a robust framework comprising strategic cell selection and continuous protein gradient mapping, allowing the investigation of larger clinical cohorts. We generated a comprehensive spatial map of the human hepatic proteome by analysing hundreds of isolated hepatocytes from 18 individuals. Among the 2,500 proteins identified per cell, about half exhibited zonated expression patterns. Cross-species comparison with male mice revealed conserved metabolic functions and human-specific features of liver zonation. Analysis of samples with disrupted liver architecture demonstrated widespread loss of protein zonation, with pericentral proteins being particularly susceptible. Our study provides a comprehensive and open-access resource of human liver organization while establishing a broadly applicable framework for spatial proteomics analyses along tissue gradients.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41721135/" target="_blank">
+<p><strong>Abstract:</strong> Esophageal squamous cell carcinoma (ESCC) is among the most aggressive cancers, with low rates of durable response to chemoradiotherapy and limited therapeutic options for relapsed disease. To uncover mechanisms of treatment resistance and relapse, we performed comprehensive multi-omics profiling of &gt;100 pre-treatment and post-relapse ESCC tumors from a prospective clinical trial (NCT04694391), integrating whole-exome/genome sequencing, bulk RNA-sequencing, single-cell RNA sequencing, and spatial transcriptomics. We identify somatic alterations in NFE2L2/KEAP1 in nearly 40% of relapsed patients, which are associated with upregulation of NRF2 signaling targets in resistant tumors and cell line models. At single-cell and spatial resolution, relapsed tumors are enriched for NRF2-activated epithelial cells that physically co-localize with immunosuppressive SPP1TREM2 macrophages. This co-localization suggests a synergistic interaction between NRF2-driven tumor programs and macrophage-mediated immune suppression that promotes relapse after chemoradiotherapy. Our findings nominate NFE2L2/KEAP1 mutations as predictive biomarkers for patient stratification and highlight therapeutic targeting of NRF2 signaling and SPP1TREM2 macrophages as rational strategies to overcome resistance in ESCC.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.20.706928v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
