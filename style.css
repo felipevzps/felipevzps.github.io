@@ -584,15 +584,24 @@ body {
     align-items: center;
     border-bottom: var(--border-width) var(--border-style) var(--color-gray-light);
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--text-faded);
     font-size: var(--font-size-lg);
     transition: background-color var(--transition-medium);
     padding: var(--spacing-md) var(--spacing-2xl) var(--spacing-md) var(--spacing-2xl);
 }
 
-  .contact-row:hover {
+.contact-row:hover {
   background-color: var(--color-gray-dark);
+  color: var(--color-white);
 }
+
+.contact-row:hover span { 
+  transform: translateX(10px); 
+}
+
+.contact-row:hover svg { 
+  transform: translateX(-10px); 
+} 
 
 /* === NEWSLETTER === */
 .newsletter-container {
