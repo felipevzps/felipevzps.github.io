@@ -30,15 +30,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ChatSpatial: Schema-Enforced Agentic Orchestration for Reproducible and Cross-Platform Spatial Transcriptomics</h2>
-<p class="paper-authors">Yang, C., Zhang, X., Chen, J.</p>
+<h2 class="paper-title">BiGAT-Fusion: Node-Wise Gated Bidirectional Graph Attention for Drug Repurposing</h2>
+<p class="paper-authors">Ding, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics has transformed our ability to study tissue architecture at molecular resolution, yet analyzing these data demands navigating dozens of computational methods across incompatible Python and R ecosystems---forcing researchers to devote more effort to making tools function than to pursuing biological questions. We present ChatSpatial, a platform in which the LLM selects from pre-validated tool schemas rather than generating free-form code, with domain expertise embedded in schema descriptions for context-aware parameter inference. Built on the Model Context Protocol (MCP), ChatSpatial unifies 60+ methods across 15 analytical categories into a single conversational workflow spanning Python and R ecosystems. Replication of two published studies---recovering subclonal heterogeneity in ovarian cancer and tumor microenvironment organization in oral squamous cell carcinoma---and validation across seven LLM platforms demonstrate that schema-enforced orchestration yields near-deterministic reproducibility at the workflow level for multi-step spatial analyses. Beyond replication, exploratory cross-method analyses illustrate practical triangulation across independent analytical frameworks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.26.708361v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Drug discovery remains slow, costly, and failure-prone, motivating computational drug repurposing that prioritizes plausible drug-disease associations (DDAs). However, DDA prediction faces three stubborn challenges: (i) extreme class imbalance with few confirmed links amid vast unknowns; (ii) directional asymmetry on the bipartite drug-disease graph that standard message passing underutilizes; and (iii) static fusion of heterogeneous evidence, where fixed rules cannot adapt the relative value of feature (similarity) and topology (association) views across nodes. We present BiGAT-Fusion, a two view graph neural model that addresses these issues end-to-end. Feature view embeddings are learned on kNN graphs built from drug-drug and disease-disease similarities, while topology view embeddings are learned via a bidirectional graph attention layer that explicitly models drug-to-disease and disease-to-drug aggregation. The views are combined by type specific, node wise gates that adaptively weight evidence per node. Pair scores are produced by a residual mixture of experts head that augments a main Multi-Layer Perceptron (MLP) with a bounded low rank bilinear residual and node biases. Under repeated K-fold cross validation with validation driven selection, and with the topology graph constructed strictly from training positives, BiGAT-Fusion achieves state-of-the-art AUPRC on standard benchmarks (Gdataset, Cdataset, LRSSL, Ldataset) while remaining competitive in AUROC. Analyses of learned gates and directional attentions corroborate the model's design. BiGAT-Fusion thus offers a practical, interpretable component for large-scale, computer-aided drug repurposing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708641v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -49,15 +49,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Evaluating AI-Assisted Customer Verification for Synthetic Nucleic Acid Screening</h2>
-<p class="paper-authors">Acelas, A., Palya, H., +2 authors, Nelson, C.</p>
+<h2 class="paper-title">High Diversity Gene Libraries Facilitate Machine Learning Guided Exploration of Fluorescent Protein Sequence Space</h2>
+<p class="paper-authors">Benabbas, A., Kearns, P., +2 authors, Plesa, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Legitimacy screening, the process of verifying the identity and purpose of customers ordering synthetic nucleic acids, is a primary safeguard against the misuse of synthetic biology. However, the associated costs discourage the adoption of screening practices. To evaluate whether AI tools can facilitate this process, we tested five large language models on five verification tasks using customer profiles of life sciences researchers from around the world. We compared AI performance against an expert human baseline on flag accuracy, source quality, source fidelity, and cost. The best-performing model, Gemini 2.5 Pro aided by four bibliographic and sanctions APIs, achieved comparable flag accuracy to the human baseline (90% and 89%, respectively). Gemini 2.5 Pro outperformed the human baseline on source quality and fidelity, at roughly one-tenth of the cost ($1.18 vs. $14.04 per customer). For information-gathering tasks, which excluded the human review step, costs averaged $0.23 per customer, around 50 times cheaper than human screening. These results support piloting AI-assisted legitimacy screening at providers of synthetic nucleic acids and other dual-use biotechnology products, with AI systems handling information gathering and human reviewers retaining authority over order fulfillment decisions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708645v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> While protein language models (PLMs) have shown great promise for protein design, their performance is fundamentally constrained by the diversity and completeness of available training data. In particular, PLMs often struggle to extrapolate to sequences that fall outside the distribution spanned by their training sets, limiting their ability to discover proteins in sparsely sampled regions of sequence space. Here we test the hypothesis that experimentally expanding training diversity can convert extrapolation into interpolation and thereby enable discovery of functional sequences beyond natural protein manifolds. Using large-scale gene synthesis and DNA shuffling, we generate libraries that span a broad region of fluorescent protein sequence space and create chimeric variants that bridge between distant homologs. Functional screening for blue fluorescence yields thousands of active variants distributed across diverse sequence lineages. Fine-tuning ProtGPT2 on this expanded dataset enables generation of diverse fluorescent proteins, including designs that extend beyond the regions occupied by known natural sequences while retaining function. This work illustrates how synthetic approaches can help address key limitations in machine learning-guided protein design, especially for small or sparsely populated protein families, by actively creating novel sequences across unexplored but functional regions of sequence space.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.01.706892v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -68,15 +68,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Information Leakage in Enzyme Substrate Prediction</h2>
-<p class="paper-authors">Atabaigi Elmi, V., Joeres, R., Kalinina, O. V.</p>
+<h2 class="paper-title">scDynOmics: An Optimized Transformer Model for Representation Learning from Single-Cell Multiomics</h2>
+<p class="paper-authors">Yu, G., Ramnarine, T. J. S., +1 author, Mages, S. W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Enzymes are essential catalysts in many cellular processes. Understanding their interactions with small molecules, such as regulators, cofactors, and most importantly, substrates, is crucial for understanding the biochemical processes that occur in cells. Correctly interpreting the roles of small molecules that interact with enzymes is key to elucidating enzyme function. Recently, the field of enzyme-small molecule interaction prediction has gained more interest from computational and, especially, deep-learning methods, and numerous datasets and models with remarkable performances have been published. In this work, we critically examine one of the most popular datasets and three models trained on it, identifying leaked information that may overinflate reported model performance. We show that the inspected models are susceptible to information leakage, and their performance drops to near-random when the leakage is removed.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.26.708291v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> As foundation models have become increasingly prevalent in several fields for multiple purposes, pretraining models with single-cell transcriptomic data has gained significant interest. Although existing single-cell foundation models have shown remarkable performance in various biological tasks, the challenge of representing multimodal single-cell data and efficiently tuning large pretrained models for diverse downstream applications remains largely unaddressed. Here, we introduce scDynOmics, a pretrainable transformer for representation learning from multimodal single-cell data. The model is motivated by gene regulatory networks and adopts a Linformer-style attention mechanism to scale to coding-genome wide multimodal inputs. Pretraining on paired single-cell transcriptomic and chromatin accessibility profiles yields compact embeddings that represent cellular states and developmental dynamics. For versatile application, scDynOmics employs low-rank adaptation modules, enabling parameter-efficient fine-tuning for downstream tasks. We demonstrate that scDynOmics achieves state-of-the-art performance in cellular classification and reveals interpretable factors driving developmental trajectories and perturbation responses. Overall, scDynOmics is a scalable, interpretable framework for cellular representation learning and deciphering cellular heterogeneity and dynamics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.28.708160v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -87,15 +87,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Evaluating Limits of Machine Learning-Assisted Raman Spectroscopy in Classification of Biological Samples</h2>
-<p class="paper-authors">Yadav, A., Birkby, A., +10 authors, Wu, H.-J.</p>
+<h2 class="paper-title">GTA-5: A Unified Graph Transformer Framework for Ligands and Protein Binding Sites - Part I: Constructing the PDB Pocket and Ligand Space</h2>
+<p class="paper-authors">Ciambur, B. C., Pageau, R., Sperandio, O.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Machine learning (ML)-assisted Raman spectroscopy has become a powerful analytical tool for the classification and identification of analytes; however, technical challenges impacting its detection accuracy have not been investigated. This study explores experimental factors affecting classification performance. Among the evaluated ML models, ML algorithms show minimal impacts on classification accuracy. Instead, experimental factors, including spectral similarity between tested samples and the data quality, dominate detection performance. Increases in spectral noises and spectral similarity significantly reduce classification accuracy. In well-controlled samples with low experimental noise, ML-assisted Raman spectroscopy can discriminate lipid mixtures with a composition difference of 1.85 mol%. To assess the effect of biological heterogeneity, we analyzed single-cell Raman spectra from Saccharomyces cerevisiae strains carrying single, double, or triple gene mutations. Intrinsic cell-to-cell variability introduced substantial spectral differences, severely reducing the accuracy of multiclass classification of these genetically similar strains at the single-cell level. Averaging Raman spectra across multiple cells improved classification accuracy by reducing this spectral variability. We also assess the effectiveness of transfer learning across different Raman spectrometers, specifically by applying a ML model trained on one instrument to another Raman spectrometer. Transfer learning can be improved with proper instrument calibration, highlighting the importance of instrument standardization. Overall, our results demonstrate that data quality and spectral similarity are the primary bottlenecks in ML-assisted Raman spectroscopy. Careful attention to sample preparation, data acquisition, measurement conditions, and instrument calibration is critical to achieving robust and reliable classification performance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.26.708284v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Structural recognition between a protein target and a ligand underpins therapeutic innovation, yet computational representations of protein binding sites and small molecules remain largely disjoint. Here we introduce GTA-5, a unified graph transformer auto-encoder framework designed to capture the geometric structure and chemical composition of ligands and protein binding pockets, embedding them into multidimensional latent spaces where proximity reflects functional compatibility. Ligands and pockets are represented as three-dimensional point clouds annotated with Tripos atom type labels, omitting explicit bond connectivity to enable structural reasoning based on spatial context rather than predefined connectivity graphs. By not enforcing bond topology, GTA-5 maintains representational flexibility across molecular modalities while preserving chemically meaningful local environments. The model was trained on a curated dataset from the Protein Data Bank comprising 64,124 liganded pockets and 23,133 unique ligands spanning 2,257 protein families. We find that functional protein families cluster coherently in both pocket and ligand latent spaces while retaining biologically meaningful heterogeneity. The model captures physicochemical pocket properties such as volume, exposure, and hydrophobicity directly from raw structural data, while ligands with distinct scaffolds co-localise when occupying similar binding environments. This provides a basis for several downstream applications including scaffold hopping in ligand-based virtual screening, QSAR/QSPR modelling using embedding-derived descriptors, and drug repurposing via pocket similarity. More broadly, the GTA-5 framework establishes a foundation for structural reasoning across molecular modalities in drug discovery.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708634v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -106,15 +106,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A single cell atlas of mouse podocytes upon injury identifies kidney zone-dependent responses.</h2>
-<p class="paper-authors">Pippin, J. W., Armour, C. R., +5 authors, Shankland, S. J.</p>
+<h2 class="paper-title">ExoFILT: Transfer learning for robust and accelerated analysis of exocytosis single-particle tracking data</h2>
+<p class="paper-authors">Kramer, E., Betancur, L. I., +4 authors, Gallego, O.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> There are regional differences in the kidney in focal segmental glomerulosclerosis (FSGS) where podocyte injury is more severe in the juxta-medulla (JM) compared to the outer cortex (OC). Single nuclear RNA-sequencing was performed to determine any regional transcriptomic differences. 1055 differentially expressed genes (DEGs) were identified between healthy OC and JM podocytes. Of 53 podocyte canonical genes, only Magi1 and Mapt, and Npnt were higher in healthy OC and JM podocytes respectively. Hallmark pathway analysis showed that in normal mice, healthy JM podocytes are enriched for oxidative phosphorylation, glycolysis and fatty acid metabolism compared to OC podocytes. At day 7 in an experimental FSGS model induced in mice with a cytopathic anti-podocyte antibody, 226 and 225 DEGs were higher in OC and JM podocytes respectively, and 166 overlapped. Five podocyte subclusters were identified, of which the most severe (subcluster 4) was enriched for a senescence phenotype, including the p53 pathway. Inducing FSGS in mice in which p53 was deleted specifically in podocytes had lower glomerular injury compared to diseased wildtype mice. These results are consistent with differences in podocytes in the OC and JM, which might underlie regional differences in FSGS.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.26.708349v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Understanding constitutive exocytosis at the molecular level requires quantitative characterization of protein dynamics during the process. Single-particle tracking allows the measurement of protein dynamics in living cells. However, identifying bona fide exocytic events requires extensive manual annotation, limiting throughput and introducing personal biases that affect reproducibility. Results: We present ExoFILT, a deep learning-based classifier designed to identify exocytic events in single-particle tracking data, using the exocyst complex as a reference. Trained via transfer learning on simulated and experimental data, ExoFILT reduces the time required for manual annotation by ten-fold while improving measurement consistency across researchers. When applied to simultaneous dual-color time-lapse movies, ExoFILT enabled the systematic quantification of temporal relationships between exocytic proteins. The increased throughput uncovered distinct subpopulations of exocytic events with differential molecular composition (e.g., events with and without detectable levels of Sec1), underscoring the potential of ExoFILT to reveal mechanistic insights into exocytosis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708581v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -125,15 +125,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MolX: A Geometric Foundation Model for Protein-Ligand Modelling</h2>
-<p class="paper-authors">Liu, J., Pan, T., +7 authors, Li, F.</p>
+<h2 class="paper-title">Benchmarking niche identification via domain segmentation for spatial transcriptomics data</h2>
+<p class="paper-authors">Wang, Y., Chen, Y., +3 authors, Xin, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Understanding how small molecules interact with protein binding pockets is central to structure-based drug discovery. Accurately modelling these interactions requires capturing the 3D geometry and physicochemical complementarity of binding interfaces, yet existing computational approaches encode proteins and ligands separately or rely on simplified structural representations that do not explicitly model cross-entity spatial relationships. Such decoupled representations restrict their capacity to capture interface-level geometric constraints that arise from protein-ligand co-organisational. Here we present MolX, a Graph Transformer foundation model that jointly learns geometric and chemical representations of protein pockets and ligands from large-scale 3D structural data. Integrating over 3 million protein pockets and 5 million molecules, MolX represents both entities as E(3)-equivariant graphs to preserve spatial geometry and chemical context. The architecture employs dual E(3)-equivariant graph Transformer encoders to model pocket and ligand embeddings, ensuring representations remain invariant to rotation, translation, and reflection. MolX is pretrained using a hybrid learning paradigm that combines supervised biochemical objectives, logP and energy-gap regression, with self-supervised geometric objectives, coordinate reconstruction, and atom-type prediction, fostering generalisable molecular understanding. Across eight downstream benchmarks, including antibody-drug conjugates (ADC), proteolysis-targeting chimera (PROTAC), molecular glue, and PCBA activity prediction, as well as binding affinity and physicochemical property regression, MolX achieves consistent state-of-the-art performance and strong cross-domain generalisation. Furthermore, MolX incorporates a sparse autoencoder module to decompose latent representations into interpretable biological components, thereby revealing the pocket-ligand interactions that drive prediction outcomes. Together, MolX establishes a scalable and interpretable foundation model for molecular representation learning, providing a unified framework for predicting and interpreting complex small-molecule-protein interactions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.26.708362v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Tissue niches are spatially organized microenvironments in which coordinated multicellular interactions shape cellular states and biological functions. Currently, niche identification is routinely performed using domain segmentation frameworks. While interrelated, spatial domains and niches are not fundamentally equivalent. The former emphasizes intra-domain compositional consistency and transcriptomic homogeneity, whereas the latter is defined by the emergent properties of localized signaling gradients and the functional reciprocity between key cell lineages. Here, we present a high-resolution reference by thoroughly annotating single-cell resolution CosMx ST data of a human follicular lymphoid hyperplasia lymph node, a dynamic, non-compartmentalized tissue containing several critical immune niches defined by specific lineage architectures. We systematically benchmarked 16 contemporary domain segmentation algorithms, demonstrating that most methods in their default configurations fail to recapitulate biologically defined niche boundaries. Our analysis reveals that the definitive, disjoint spatial distributions of key functional lineages are frequently obscured by the stochastic infiltration of peripheral cell types. Such reduction in the spatial signal-to-noise ratio represents a primary bottleneck for existing algorithms, which prioritize local transcriptomic variance over global architectural logic. Following this observation, we demonstrate that strategic weighting of core functional lineages can restore the resolution of spatial niches in select domain segmentation frameworks. Cross-comparison against compartmentalized tissues further underscores the unique challenges of niche identification in non-mechanically separated environments and clarifies the fundamental divergence between structural domain segmentation and functional niche discovery. Our work delineates the limitations of current paradigms and advocates for the development of specialized computational approaches tailored specifically to the complexity of functional microenvironments.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708202v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -144,15 +144,72 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CADGE 2.0, Transcription-Translation-Coupled DNA Replication is Improved in a Chemically Modified Cell-Free System</h2>
-<p class="paper-authors">Nagai, R., Ramirez, C. C., Abil, Z.</p>
+<h2 class="paper-title">Exploring the mechanism of Panax Notoginseng in the treatment of skin wound based on network pharmacology and experimental verification</h2>
+<p class="paper-authors">Li, Y.-b., Li, Q.-l., +6 authors, Zhang, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> In vitro directed evolution in synthetic microcompartments can generally support the evolution of genes with functions beyond affinity. The main challenge in the implementation of this strategy is the need to incorporate no more than a single DNA template molecule per microcompartment, thereby establishing a robust genotype-phenotype linkage, but which results in slow, inconsistent in vitro transcription and translation (IVTT) and poor DNA recovery after selection or screening. To address this challenge, we previously developed CADGE (Clonal Amplification-enhanceD Gene Expression) a strategy that allows the clonal amplification of linear gene-encoding DNA and coupled, in situ transcription-translation of the gene of interest. Here, we show that clonal amplification is highly sensitive to the cell-free system's composition and that robust, highly efficient cell-free DNA amplification via the CADGE platform can be achieved by replacing standard vendor-supplied energy mixes with DNA replication-optimized, homemade counterparts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708527v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.28.708691v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Explainable AI for end-to-end pathogen target discovery and molecular design</h2>
+<p class="paper-authors">Polonio, A., Perez-Garcia, A., +1 author, Jimenez-Castro, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Drug discovery is often constrained by target identification, a bottleneck especially acute in antimicrobial development and the fight against emerging fungicide resistance. We present APEX (Attention-based Protein EXplainer), an explainable AI framework for cross-species, proteome-scale target discovery and pocket-guided molecular design. APEX combines ESM-2 evolutionary embeddings, graph attention networks, and a multilayer perceptron to train pathogen-specific essentiality and virulence predictors (APEX-Tar) alonsgside a universal druggability model (APEX-Drug). Attention maps and GNNExplainer-derived subgraphs highlight residues and pockets driving predictions, enabling direct conditioning of structure-based diffusion models for inhibitor generation. APEX-Tar recovers known fungal targets (endopolygalacturonase 1, Hog1 MAPK) and proposes new candidates, including fungal GmrSD and bacterial YadV. APEX-Drug recapitulates established fungicide sites ({beta}-tubulin, cytochrome b), guides putative inhibitor design for GmrSD, and identifies in YadV a previously undescribed pocket distinct from known pilicide sites. Together, APEX offers a kingdom-agnostic pipeline for explainable target prioritization and guided molecular design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708593v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multiscale Symbolic Morpho-Barcoding Reveals Region-Specific and Scale-Dependent Neuronal Organization</h2>
+<p class="paper-authors">Zhao, S., Li, Y., +1 author, Peng, H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Neuronal morphology is a central determinant of circuit organization, yet its multiscale complexity has hindered systematic, brain-wide analysis and integration with anatomical context. Here we introduce Multiscale Morpho-Barcoding (MMB), a framework that encodes whole-brain neuronal morphology into symbolic representations spanning cellular geometry, axonal tract routing, arbor organization, and predicted synaptic distributions. Applying MMB to 1,876 fully reconstructed mouse neurons, comprising 3,776 arbors and 2.63 million predicted presynaptic sites, we identify distinct multiscale morpho-patterns that reveal region-specific and scale-dependent principles of neuronal organization across the brain. MMB robustly discriminates major anatomical divisions and resolves canonical thalamic circuit classes beyond what can be achieved using projection strength alone. By transforming complex neuronal geometry into interpretable multiscale representations, MMB provides a general framework for systematic comparison of neuronal structure and for integrating morphology with connectivity and function at whole-brain scale.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.28.708657v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 02, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">t2pmhc: A Structure-Informed Graph Neural Network to predict TCR-pMHC Binding</h2>
+<p class="paper-authors">Polster, M., Stadelmaier, J., +7 authors, Nahnsen, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Mapping of T cell receptors (TCRs) to their cognate MHC-presented peptides (pMHC) is central for the development of precision immunotherapies and vaccine design. However, accurate prediction of TCR affinity to peptide antigens remains an open challenge. Most approaches rely solely on sequence information, although increasing evidence suggests that TCR-pMHC binding is primarily determined by three-dimensional structural interactions within the entire TCR-pMHC complex. Consequently, sequence-based methods often fail to generalize to peptides not included in the training data (unseen peptides). Here we introduce t2pmhc, a structure-based graph neural network framework for predicting TCR-pMHC binding using predicted structures of the entire TCR-pMHC complex. We evaluated a Graph Convolutional Network (GCN) and a Graph Attention Network, both demonstrating improved generalization to unseen peptides compared to state-of-the-art models across a variety of public datasets. Evaluation with crystallographic structures yields high-confidence predictions, indicating that current limitations of structure-based models are largely driven by the accuracy of structure prediction. Analysis of node attention patterns in t2pmhc-GCN reveals biologically consistent patterns, assigning high attention to the peptide and the CDR3 regions. Within the peptide sequence, canonical MHC anchor residues are consistently downweighted, whereas potential TCR-binding residues are upweighted. These findings establish t2pmhc as a structure-informed framework for robust TCR-pMHC binding prediction, enabling improved generalization to unseen antigens and providing a foundation for integrating TCR repertoire sequencing into vaccine design and immunotherapy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708137v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -163,53 +220,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 01, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">mSWI/SNF complex inhibition sensitizes KRAS-mutant lung cancers to targeted therapies via epithelial-mesenchymal subversion</h2>
-<p class="paper-authors">Gentile, C., Feng, W. W., +23 authors, Kadoch, C.</p>
+<h2 class="paper-title">Single cell Correlation Analysis (SCA): Identifying self-renewing subpopulation of human acute myeloid leukemia stem cells using single cell RNA sequencing analysis</h2>
+<p class="paper-authors">Lee, Y., Wang, W., +3 authors, Sachs, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Targeted therapies for KRAS-mutant non-small lung cancer (NSCLC) have shown promising clinical results, however, incomplete tumoral responses and the inevitable emergence of therapeutic resistance remain critical challenges. Here we identify mSWI/SNF chromatin remodeling complexes as critical determinants of (EMT)-mediated KRAS inhibitor inefficacy and resistance in KRAS G12C lung cancers. Treatment with the clinical-grade SMARCA4/2 inhibitor, FHD-286, dampens EMT-mediated acquired resistance in drug-responsive models and similarly resensitizes drug-refractory models by rewiring mSWI/SNF chromatin localization and activities that modulate epithelial transcriptional programs and cell state. Further, synergistic mSWI/SNF and KRAS inhibitor combination treatment sensitizes non-G12C KRAS-mutant NSCLC cells to pan-RAS and G12D-specific inhibitors. Finally, FHD-286 and sotorasib combination treatment results in potent anti-tumor efficacy in both G12Ci-resistant and -sensitive organoid models and in vivo patient-derived xenograft (PDX) systems. These data nominate mSWI/SNF inhibition as a combination strategy to improve KRAS inhibitor efficacy, response duration, and to mitigate emergence of resistance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708377v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Pancreatic cancer-associated organ dysfunction promotes muscle autophagy and contributes to peripheral tissue wasting</h2>
-<p class="paper-authors">Gultekin, Y., Sivanand, S., +20 authors, Vander Heiden, M. G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Normal pancreas function supports both digestion and the hormonal regulation of whole-body metabolism. We find pancreatic ductal adenocarcinoma (PDAC) disrupts the normal function of the remaining pancreas, leading to altered systemic metabolism and peripheral tissue wasting that begins early in disease progression. Using mouse models of PDAC, we find small pancreas tumors lead to both endocrine and exocrine pancreatic dysfunction that results in systemic nutrient depletion and loss of both muscle and fat tissue. Providing free glucose in the diet that is absorbed despite pancreatic exocrine dysfunction causes hyperglycemia and blunts fat wasting without affecting muscle loss. Muscle mass can be restored by free dietary amino acids or pancreatic enzyme supplementation. Exocrine dysfunction causing reduced dietary protein digestion promotes muscle proteolysis and autophagy. Autophagy is a major driver of muscle wasting in PDAC, as muscle-specific deletion of the core autophagy gene Atg7 also reduces muscle wasting. Disrupting muscle autophagy without restoring systemic nutrition slows tumor growth and improves survival of mice with PDAC. Tracing the fate of amino acids released from muscle of mice with PDAC shows redistribution to both tumor and host tissues. Notably, improving nutrition in mice with disrupted muscle autophagy promotes tumor growth. Together, the data argue that early peripheral tissue wasting associated with early pancreatic cancer is driven by altered normal pancreatic organ function that leads to reduced nutrition and enhanced muscle autophagy, releasing nutrients to support both tumor and host metabolism.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708635v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A novel Gorilla-derived oncolytic Adenovirus with natural selective replication in cancer cells</h2>
-<p class="paper-authors">Scala, R., Cela, I., +5 authors, Raggioli, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Oncolytic virotherapy exploits viruses to selectively infect and destroy cancer cells while sparing normal tissues and represents a promising strategy in oncology. Human adenovirus type 5 (HAd5), although widely used, shows limited clinical efficacy due to high levels of preexisting immunity and suboptimal tumor selectivity. In this study, we evaluated novel gorilla-derived adenoviruses (GRAd) as alternative oncolytic vectors. Two distinct GRAd groups, GRAdBs and GRAdCs, were characterized for replication and cytopathic activity. GRAd25 (GRAdB group) exhibited robust replication in both tumor and normal cells, whereas GRAd32 (GRAdC group) demonstrated selective replication in tumor cells.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.26.708271v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Leukemia stem cells (LSCs), a rare and self-renewing subpopulation, drive Acute myeloid leukemia (AML) relapse and therapy resistance. While single-cell gene expression profiling (scGEP) offers high-resolution insights into LSC biology, existing computational tools rely on relative and arbitrary similarity metrics. This limits their ability to definitively identify true biological cell identities or compare rare cell populations across independent datasets. To overcome these limitations, we developed Single cell Correlation Analysis (SCA), a novel computational method that utilizes a permutation-based false discovery rate (FDR) framework and common background datasets to establish standardized, statistically rigorous thresholds of similarity. We applied SCA to query human AML scRNA-seq datasets using an experimentally validated murine scGEP of LSC self-renewal as our reference. SCA demonstrated superior specificity and precision, maintaining low false positive rates compared to existing reference-based annotation tools. Using SCA, we successfully identified cells expressing a conserved self-renewal program (scaLSC-SR) in both adult and pediatric human AML samples. These scaLSC-SR cells share classical LSC immunophenotypic markers (e.g., CD34, CD96, CD200) and exhibit transcriptomic hallmarks of LSC biology, including evasion of apoptosis and immune responses. Furthermore, this self-renewal program is significantly enriched in poor-risk genetic subtypes, specifically TP53 and NRAS mutated AML. Finally, we derived a 28-gene signature (LSC-SR28) from human AML patients that accurately captures LSC stemness and is highly prognostic across multiple independent clinical cohorts. SCA provides a robust, statistically principled framework for identifying rare and biologically meaningful cell populations across heterogeneous single-cell datasets. By successfully identifying a functional self-renewal profile to human AML, SCA reveals conserved, clinically relevant LSC populations that drive relapse and therapy resistance across different age groups.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.27.708585v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -220,72 +239,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 01, 2026</span>
-<span class="journal">MED</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Advances in Mass Spectrometry Instrumentation and Methodology for Analysis of Alternative Protein Isoforms.</h2>
-<p class="paper-authors">Lehe MD, Almofeez R, +1 author, Sheynkman GM.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteoforms represent the many final protein products that can be generated by a protein-coding gene. A key source of proteomic variation is alternative splicing (AS), with at least 90% of human genes undergoing AS to cause protein sequence alterations that impact protein structure and function. Therefore, detection and characterization of the protein isoforms generated by splicing is critical to a complete understanding of the effects of splicing on human phenotype and disease. Advancements in the power and throughput of mass spectrometry (MS) instrumentation over the past decade, coupled with growing interest in splicing among the proteomics community, are driving a new wave of MS utilization for protein isoform analysis. In this review, we outline recent innovations in MS instruments and the new acquisition strategies they support, sample preparation protocols, and integrative bioinformatics pipelines that have enabled deeper sampling of the alternative proteome. We highlight research from the field utilizing bottom-up and top-down MS as well as discovery and targeted acquisition methods, outlining the isoform coverage and advantages offered by each approach. Based on the evolution of the field, splicing continues to garner greater attention within the context of proteoform diversity.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41696826/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 01, 2026</span>
-<span class="journal">MED</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Advancing Personalized Strategies for Obesity Prevention Through Biologically and Behaviorally Tailored Interventions: The Strategic Framework for the BETTER4U Initiative.</h2>
-<p class="paper-authors">Kafyra M, Kalafati IP, +28 authors, BETTER4U consortium.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The BETTER4U project (Preventing Obesity through Biologically and bEhaviorally Tailored inTERventions for You) is a Horizon Europe initiative (GAP 101080117) dedicated to advancing our understanding of the multifaceted etiology of obesity. The project aims to move beyond current knowledge of obesity-related determinants by examining the system-level interactions between biological (including genetics), lifestyle behaviors (physical activity, nutrition, sedentary behaviors), and contextual factors, including social, economic, psychological, and environmental factors. BETTER4U advances from traditional approaches by exploring determinants embedded within interconnected systems and biological frameworks. It seeks to identify and integrate polygenic risks, omics-based markers, lifestyle and contextual factors using data from biobanks and previous landmark studies. This comprehensive approach enables the refinement of Artificial Intelligence (AI) algorithms, enhancing individualization in the design of tailored interventions. The project employs real-time behavioral monitoring tools and remote technologies to track individual behaviors and metabolic responses, allowing for the development of personalized obesity prevention strategies. By doing so, BETTER4U aims to bridge the gap between research and practical application, enabling the design of interventions that are biologically and behaviorally informed. The anticipated outcomes of BETTER4U include advanced AI models that support the development of sophisticated, targeted interventions for individuals at risk of overweight or obesity. These models will provide actionable insights into how personalized lifestyle adjustments in lifestyle behaviors, such as diet and physical activity, can effectively mitigate weight gain trajectories across the lifespan. Ultimately, the project seeks to empower individuals and support precision medicine approaches in obesity prevention and treatment through active participant engagement.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41725143/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 01, 2026</span>
-<span class="journal">MED</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DNA Methylation Signatures of Cellular Senescence Are Not Reversed by Senolytic Treatment.</h2>
-<p class="paper-authors">Kasamoto J, González J, +5 authors, Higgins-Chen AT.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Epigenetic clocks are commonly used aging biomarkers based on DNA methylation that predict long-term morbidity and mortality risk. Increased cellular senescence with age is also posited to contribute to age-related disease and mortality. However, prior studies have found that existing epigenetic clocks show inconsistent associations with cellular senescence and no reductions after senolytic treatment. We hypothesize this reflects that senescence-related CpGs are a small proportion of age-related CpGs, and that an epigenetic clock focused on a core senescence signal conserved across different cell types and different senescence inducers would be a better tool for monitoring senescence and senolytic treatment compared to traditional epigenetic clocks. In our study, we find that senescence, age and mortality risk intersect at a small subset of the DNA methylome (9363 CpGs out of 396,333 analyzed; 2.4%). Utilizing these CpGs, we generated three different epigenetic clocks trained to predict in vitro senescence, age, and mortality, respectively. Surprisingly, all three of these predictors stayed the same or even accelerated after senolytic treatment in both in vivo and in vitro data. Our findings not only call into question whether cellular senescence can be captured by DNA methylation but also challenge the assumption that aging biomarkers decrease after geroscience interventions.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41746138/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jan 06, 2026</span>
+<span class="date">Mar 02, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Artificial Intelligence for Genetic Cancer Risk Assessment in Gynecologic Oncology: A Review of the Current Landscape and Future Directions.</h2>
-<p class="paper-authors">Roxanna Haghighat, Sarah R Levi, Melissa K Frey</p>
+<h2 class="paper-title">Subtype-specific enhancer RNAs define transcriptional regulators and prognosis in breast cancers.</h2>
+<p class="paper-authors">Aamena Y Patel, Peyman Zarrineh, +4 authors, Sankari Nagarajan</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Hereditary cancer syndromes are associated with up to 25% of ovarian and 5% of endometrial cancers, yet rates of genetic testing and counseling remain low. Artificial intelligence (AI) offers new opportunities to streamline risk assessment, enhance gene variant interpretation, and expand access to genetic counseling. This narrative review synthesizes current evidence on AI applications in gynecologic cancer genetic risk assessment, including chatbot-based risk assessment, natural language processing of electronic records, and machine-learning approaches to variant classification. We highlight key challenges, including data bias, privacy, and implementation barriers, and outline future directions for AI technologies in gynecologic cancer genetic risk assessment.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41492947/" target="_blank">
+<p><strong>Abstract:</strong> Gene expression is tightly controlled by DNA elements called enhancers by associating with lineage-specific transcription factors. These enhancers transcribe noncoding RNAs (called enhancer RNAs or eRNAs). eRNA expression is an early indicator of transcription factor activity and is associated with treatment response and survival in cancer patients. By analysing ~ 300 000 eRNA loci profiled using RNA-sequencing data sets from 975 breast cancer patients using machine learning approaches, we categorised eRNAs specific to breast cancer molecular subtypes and survival. We associated these eRNAs with subtype-specific mRNAs to define proximal co-expressed regulatory eRNAs (ProxCReAm), which are enriched in pathways characteristic of their respective subtypes. Interestingly, cistrome and transcription factor motif analyses on these eRNAs highlighted involvement of diverse nuclear receptors (GR/AHR for luminal and GR/RAR for basal) and FOX factors in luminal regions. Moreover, luminal eRNAs were associated with better outcomes and Her2 eRNAs with worse outcomes in patients. Overall, we demonstrate that machine learning approaches performed on RNA-seq data sets can classify functionally relevant subtype-specific and prognostic eRNAs, which can identify critical gene pathways and transcription factor networks in breast cancer.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41769727/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Mar 02, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Developing a Metabolic-Associated Prognostic Index for Risk Stratification and Therapeutic Guidance in Stage I Lung Adenocarcinoma via Multiomics Analysis.</h2>
+<p class="paper-authors">Liu P, Chen Z, +1 author, Sun Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Early-stage lung adenocarcinoma (LUAD) exhibits substantial clinical heterogeneity that is not fully explained by TNM staging, highlighting the need for biology-driven prognostic tools. Although metabolic reprogramming is an established cancer hallmark, its systematic prognostic significance in stage I LUAD remains unexplored. We analyzed stage I LUAD samples from The Cancer Genome Atlas, Gene Expression Omnibus, and European Genome-phenome Archive databases. Weighted gene coexpression network analysis and differential expression analysis were conducted to identify metabolic genes associated with LUAD malignancy and prognosis. A metabolic-associated prognostic index (MAPI) was subsequently developed using machine-learning combinations. The performance of MAPI was evaluated from multiple biologic perspectives and at the single-cell level. Key gene functions were experimentally verified in vitro. MAPI robustly stratified patients into high- and low-risk groups with significantly divergent survival outcomes, outperformed conventional clinicopathologic features and previously published signatures, and emerged as an independent prognostic factor across all validation cohorts. The high-risk group was characterized by enhanced cancer stemness, genetic heterogeneity, metabolic reprogramming, immune exclusion, and reduced responsiveness to immunotherapy. We also pinpointed three potential therapeutic agents (paclitaxel, bortezomib, and vincristine) for high-risk patients. The single-cell RNA sequencing further validated the association between MAPI and malignant progression. Functional analyses demonstrated that knockdown of DEGS1 or PLOD1 significantly suppressed LUAD cell proliferation and migration. Our results establish MAPI as a biologically interpretable and clinically applicable tool for risk stratification and precision treatment decision making in patients with stage I LUAD.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41771017/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
