@@ -92,8 +92,11 @@
   --border-radius-xl: 12px;
   --border-radius-full: 999px;
   
+  /* === CONTENT SIZE === */
+  --content-max-width: 1350px;
+
   /* === NEWSLETTER ESPECÍFICO === */
-  --newsletter-max-width: 80rem;
+  --newsletter-max-width: var(--content-max-width);
   --newsletter-intro-max-width: 700px;
   --paper-gap: 2rem;
   --filter-gap: 1.5rem;
@@ -168,7 +171,7 @@ body {
 }
 
 .sidebar-inner {
-  max-width: 1350px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
   width: 100%;
 }
@@ -208,7 +211,7 @@ body {
 }
 
 .content > * {
-  max-width: 1350px;
+  max-width: var(--content-max-width);
   width: 100%;
 }
 
@@ -698,7 +701,6 @@ body {
 .newsletter-container {
   max-width: var(--newsletter-max-width);
   margin: var(--spacing-7xl) auto;
-  padding: 0 var(--spacing-2xl);
   width: calc(100% - var(--spacing-4xl));
 }
 
@@ -969,8 +971,8 @@ body {
   }
 }
 
-/* Mobile pequeno (480px ou menos) */
-@media (max-width: 480px) {
+/* Mobile pequeno (500px ou menos) */
+@media (max-width: 500px) {
   .sidebar {
     padding: var(--spacing-lg);
   }
@@ -983,6 +985,10 @@ body {
     flex-direction: row;
     gap: 0.2rem;
     margin: 0;
+  }
+
+  .nav a:first-child {
+    display: none;
   }
 
   .section {
