@@ -30,15 +30,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
+<span class="date">Mar 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ViroSeek: a viral detection pipeline for second-generation sequencing</h2>
-<p class="paper-authors">Berger, A., Lefebvre, M. J. M., +7 authors, Paupy, C.</p>
+<h2 class="paper-title">bMAE: Masked Autoencoder Latent Representations for Bulk RNA-seq Tissues</h2>
+<p class="paper-authors">Wan, Z., Untalan, M. Z. G., Vasconcellos Vargas, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Arbovirus emergences represent a rising public health issue and are exacerbated by climate change and globalization. Virome analysis has become a key approach for monitoring and managing infectious diseases, yet existing tools often remain technically complex and inaccessible to non-specialists. In this context, we present ViroSeek, a lightweight, reproducible and accessible bioinformatics pipeline specifically designed for the taxonomic analysis of second-generation sequencing data. ViroSeek performs a series of automated steps: quality control (FastQC), trimming (TrimGalore or fastp), host and bacterial sequence removal (BBduk), assembly (SPAdes), taxonomic assignment (DIAMOND and TaxonKit), read remapping for quantification (minimap2), and PCR duplicate removal (Samtools). The whole process is designed to produce a clear, usable viral taxonomy table that is suitable for diversity studies. ViroSeek was empirically validated on enriched control samples containing a known panel of viruses. All the expected viruses were correctly detected. Bacterial and host contaminant sequences were effectively removed. The pipeline is freely available and fully documented, supporting its adoption and adaptation by the research community. It provides an optimized solution for virome analysis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.04.706323v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Bulk tissue RNA-sequencing data from large-scale consortia such as GTEx provide comprehensive gene expression profiles across diverse human tissues. However, the high-dimensional nature of bulk RNA-seq data, combined with technical noise and batch effects, poses challenges for downstream analyses. While dimensionality reduction methods are routinely applied, standard approaches such as PCA often fail to optimally preserve tissue-discriminative information and exhibit poor generalization to unseen tissue types. We developed a masked autoencoder for bulk tissue RNA-seq that learns compressed latent representations through self-supervised learning with variable masking schedules. Evaluated on GTEx data (31 tissue types, 19,788 samples, 19,308 genes), our method substantially outperformed all baselines in leave-one-tissue-out (LOTO) cross-validation. We achieved mean silhouette 0.20, ARI 0.58, and NMI 0.84 versus best baseline UMAP (0.007, 0.25, 0.47), representing 28.6-fold, 2.3-fold, and 1.8-fold improvements. Remarkably, within held-out tissue categories containing subtissues, our latent space revealed hierarchical structure with enhanced subtissue separation (silhouette 0.16, ARI 0.35, NMI 0.36) versus baselines (silhouette 0.15, ARI 0.20, NMI 0.20), despite never observing these distinctions during training. The method compressed 19,308 genes to 128 dimensions while preserving multi-scale structure.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709470v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -49,167 +49,167 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
+<span class="date">Mar 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Ligand-guided Sequence-structure Co-design of De Novo Functional Enzymes</h2>
-<p class="paper-authors">Song, Z., Liu, H., +2 authors, Li, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteins underpin essential biological functions across all kingdoms of life. The capacity to design novel proteins with tailored activities holds transformative potential for biotechnology, medicine, and sustainability. However, since protein functions, particularly enzymatic activities, depend on precise interactions with small-molecule ligands, accurately modeling these interactions remains a formidable challenge in de novo protein design. Here, we present ProteinNet, a large-scale generative model for the simultaneous co-design of protein sequence and structure with ligand-guided functional targeting. ProteinNet integrates Transformer-based sequence modeling with equivariant graph neural networks for 3D structural representation and an explicit protein-ligand interaction module. This model architecture enables targeted design from heterogeneous inputs, including binding ligands, functionally important residues, and evolutionary taxonomy. ProteinNet is a 730-million-parameter foundation model trained on 720,993 protein-ligand complexes using multi-task learning objectives, encompassing sequence, structure, and protein-ligand interaction prediction. In rigorous in silico benchmarks, ProteinNet consistently outperforms state-of-the-art baselines, including Inpainting, RFdiffusion/ProteinMPNN, and AlphaFold3/LigandMPNN, as measured by enzyme--substrate prediction scores, AlphaFold2 confidence metrics, and structural fidelity. We further experimentally validated model across multiple enzyme families, including chloramphenicol acetyltransferase, aminoglycoside adenylyltransferase, and thiopurine S-methyltransferase. De novo enzymes generated by our fine-tuned ProteinNet exhibited catalytic activities comparable to or exceeding those of naturally enzymes, while retaining substantial novelty with sequence identities as low as 51.6%. These results establish ProteinNet as a robust Artificial Intelligence-based platform for functional enzyme design, demonstrating the power of large protein foundation models to create high-performance, novel biocatalysts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.709205v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Generative AI designs functional thiolation domains for reprogramming non-ribosomal peptide synthetases</h2>
-<p class="paper-authors">Buelbuel, E. F., Bang, S., +14 authors, Bozhueyuek, K. A. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Large language models and generative protein design promise to accelerate biotechnology, but it remains unclear whether they can engineer dynamic megasynth(et)ases whose activity depends on transient, context-specific domain interfaces. Nonribosomal peptide synthetases (NRPSs) are an especially demanding target, yet a high-value one because they produce many clinically important natural products and offer a route to analogs that are often difficult or impractical to access by chemical synthesis. Here we integrate pretrained generative models (ESM3, ProteinMPNN and EvoDiff) with design-build-test-learn cycles and data-guided prioritization to generate 76 de novo thiolation (T) domains. We built and tested 578 recombinant NRPS variants in vivo spanning minimal, full-length and hybrid assembly lines. AI-designed T-domains supported product formation across architectures, enabled catalytically active hybrids at recombined junctions and increased yields by up to ~3-fold relative to NRPSs carrying the native T-domain. A representative design showed improved soluble expression, refolding, and a 12 C higher melting temperature, while molecular dynamics simulations indicated preserved global stability but reshaped, state-dependent interdomain contact networks. Together, these results establish generative design as an effective route to context-conditioned optimization and reprogramming of biosynthetic assembly lines.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709401v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Evolutionary profile enhancement improves protein function annotation for remote homologs</h2>
-<p class="paper-authors">Dai, S., Luo, J., Luo, Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate annotation of protein function is essential for understanding biological processes, yet this remains challenging for proteins lacking characterized homologs or belonging to underrepresented functional classes. Although machine learning approaches have become the gold standard for automated function prediction, they often perform poorly on out-of-distribution samples with low sequence identity to training proteins with known annotations. We propose EPERep, an evolutionary input enhancement strategy that leverages the vast space of unannotated protein sequences to improve the prediction of the functions of underrepresented proteins. Our key insight is that, even if a query protein has insufficient similarity to annotated proteins for direct annotation transfer, a wider range of similar unannotated sequences can be identified to facilitate better representation learning. Inspired by profile-based sequence search methods, EPERep incorporates homologous sequences as contextual input to refine the representations of individual proteins from pre-trained protein language models, effectively constructing a pLM-based profile for each query protein. Across four major annotation benchmarks on EC numbers, structural domains, Pfam families, and Gene Ontology predictions, EPERep consistently outperforms strong ML and sequence-alignment baselines. Gains are most pronounced for proteins from rare functional classes, with few or no labeled homologs, and for sequences exhibiting remote homology to the training distribution. These results demonstrate that evolutionary input enhancement provides a principled and scalable strategy for improving protein function prediction, particularly in long-tail and low-identity regimes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709280v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Sampling protein structural token space enables accurate prediction of multiple conformations</h2>
-<p class="paper-authors">Wang, Z., Yu, Y., +1 author, Bu, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein function is fundamentally mediated by ensembles of distinct metastable states. However, existing methods, such as AlphaFold 3, typically exhibit a bias toward predicting a single dominant state, failing to capture alternative conformations or provide robust metrics for identifying high-quality multi-state conformations. Here, we present MultiStateFold (MSFold), a framework that integrates Parallel Tempering into the discrete structure token space of the ESM3 protein language model. By conceptualizing the model's latent space as an implicit energy landscape, MSFold enables global exploration and barrier crossing, thereby overcoming the local sampling limitations inherent in base generative models. Across a benchmark of 313 multi-conformation pairs, MSFold sets a new performance standard: it achieves the highest success rate in modeling native states and substantially outperforms leading methods, including AlphaFold 3, on challenging alternative conformations, while maintaining competitive accuracy for primary structures. Furthermore, we propose Sequence Log-Likelihood (SLL), a novel confidence metric derived from sequence-structure consistency. Our results demonstrate that SLL offers a modest improvement over standard metrics such as pTM and pLDDT. This work establishes a new paradigm for conformational sampling, bridging classical statistical physics with protein language models.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.708411v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">EvoStructCLIP: A Mutation-Centered Multimodal Embedding Model for CAGI7 Variant Effect Prediction</h2>
-<p class="paper-authors">Chung, K., Lee, J., +3 authors, Lee, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> We present EvoStructCLIP, a mutation-centered multimodal embedding model that integrates local 3D structural windows and evolutionary constraints to predict missense variant effects. EvoStructCLIP combines two encoders: a structure voxel encoder derived from AlphaFold residue neighborhoods and an MSA-based evolutionary encoder. It aligns the modalities through CLIP-style contrastive learning, with FuseMix regularization and an auxiliary pathogenicity loss trained on 153,787 ClinVar variants. Evaluations using lightweight regressors demonstrate that EvoStructCLIP embeddings capture highly transferable predictive signals across diverse phenotypes, including gene-specific functional readouts of BRCA1, KCNQ4, and PTEN/TPMT. This transferability is further supported in the CAGI7 blind competition setting, where models generalized to predicting different gene-specific readouts for BARD1, FGFR, and TSC2 without target-specific retraining and achieved competitive performance across heterogeneous biological tasks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.707336v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Rigidity-Aware Geometric Pretraining for Protein Design and Conformational Ensembles</h2>
-<p class="paper-authors">Ni, Z., Li, Y., +4 authors, Liu, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Generative models have recently advanced de novo protein design by learning the statistical regularities of natural structures. However, current approaches face three key limitations: (1) Existing methods cannot jointly learn protein geometry and design tasks, where pretraining can be a solution; (2) Current pretraining methods mostly rely on local, non-rigid atomic representations for property prediction downstream tasks, limiting global geometric understanding for protein generation tasks; and (3) Existing approaches have yet to effectively model the rich dynamic and conformational information of protein structures. To overcome these issues, we introduce RigidSSL (Rigidity-Aware Self-Supervised Learning}, a geometric pretraining framework that front-loads geometry learning prior to generative finetuning. Phase I (RigidSSL-Perturb) learns geometric priors from 432K structures from the AlphaFold Protein Structure Database with simulated perturbations. Phase II (RigidSSL-MD) refines these representations on 1.3K molecular dynamics trajectories to capture physically realistic transitions. Underpinning both phases is a bi-directional, rigidity-aware flow matching objective that jointly optimizes translational and rotational dynamics to maximize mutual information between conformations. Empirically, RigidSSL variants improve designability by up to 43% while enhancing novelty and diversity in unconditional generation. Furthermore, RigidSSL-Perturb improves the success rate by 5.8% in zero-shot motif scaffolding and RigidSSL-MD captures more biophysically realistic conformational ensembles in G protein-coupled receptor modeling. The code is available at: https://github.com/ZhanghanNi/RigidSSL.git.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.708991v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">gSV: a general structural variant detector using the third-generation sequencing data</h2>
-<p class="paper-authors">HAO, J., Shi, J., +8 authors, Yu, W.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Structural variants (SVs) are of increasing significance with the advancement of the third-generation sequencing technologies, but detecting complex SVs is still challenging for existing SV detection tools. In this paper, we propose gSV, a general SV detector that integrates alignment-based and assembly-based approaches with the maximum exact match (MEM) strategy. Without predefined assumptions about SV types, gSV captures all potential variant signals, enabling the detection of SVs with complex alignment patterns that are usually missed by other tools. Evaluations using both simulated and real datasets demonstrate that gSV outperforms state-of-the-art tools in detecting both simple and complex SVs. Unique SV discoveries in four breast cancer cell lines, particularly in cancer-associated genes, validate the clinical utility of gSV. The application in a breast cancer cohort from the Chinese population further illustrates the usefulness of our new tool in genomic studies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.703663v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A comprehensive benchmark of discrepancies across microbial genome reference databases</h2>
-<p class="paper-authors">Boldirev, G., Aguma, P., +4 authors, Mangul, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Metagenomic analysis of microbial communities relies significantly on the quality and completeness of reference genomes, which allow researchers to compare sequencing reads against reference genome collections to reveal essential community characteristics. However, the reliability of these analyses is often compromised by substantial discrepancies across existing reference resources, including differences in genome content, assembly fragmentation, taxonomic representation, and metadata completeness. While these inconsistencies are known to introduce bias, the extent of divergence between major databases remains largely unknown. Here, we present a comprehensive benchmark of discrepancies across multiple widely used microbial genome reference resources. We developed the Cross-DB Genomic Comparator (CDGC), which utilizes reference genome alignments to systematically capture discrepancies in genome assemblies across reference databases. Applying this framework, we found that 99% of viral genomes were identical across databases, indicating strong consistency in viral reference resources. In contrast, fungal genomes showed substantially greater variability: although 82% of assemblies exhibited at least 90% similarity, only 7% were identical across databases. More concerning, we identified a subset of 461 assemblies with less than 50% similarity, suggesting the presence of technical artifacts, incomplete assemblies, or damaged genome files that require closer examination. Collectively, these results demonstrate that systematic cross-database benchmarking provides a critical mechanism for refining the accuracy of individual reference databases and advancing efforts towards more unified and reliable universal reference genomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.709103v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Towards Useful and Private Synthetic Omics: Community Benchmarking of Generative Models for Transcriptomics Data</h2>
-<p class="paper-authors">Öztürk, H., Afonja, T., +19 authors, Honkela, A.</p>
+<h2 class="paper-title">Early Identification of At-Risk Patients: ProteomicSignature Predicts Progression to DecompensatedCirrhosis</h2>
+<p class="paper-authors">Therkelsen, M. L., Wewer Albrechtsen, N., +11 authors, Gluud, L. L.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.707794v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.04.709475v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">An Energy Landscape Approach to Miniaturizing Enzymes using Protein Language Model Embeddings</h2>
+<p class="paper-authors">Lala, J., Agrawal, H., +2 authors, Angioletti-Uberti, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> We present a general approach to find amino acid sequences corresponding to the most compact enzyme likely to retain the structure of a given catalytic site. Our approach is based on using Monte Carlo (MC) simulations to sample an energy landscape where minima correspond, by construction, to sequences with the aforementioned properties. Building on previous work (Wu et al., 2025) and with the BAGEL package (Lala et al., 2025), we implement a route to achieve this goal using only the information extracted from a protein language model (PLM), without structural information. After generating a set of candidate sequences with this PLM-guided BAGEL optimization, we further filter potential candidates for downstream experimental validation using a two-stage protocol. First, deep-learning-based structure prediction models (ESMFold, Chai-1, Boltz-2) are used to identify a structural consensus among designs with highly conserved active-site geometries, yielding many candidates with active-site RMSD below a few angstroms relative to the wild-type and pLDDT scores above 80. Second, molecular dynamics simulations are performed on a filtered subset of sequences (based on active-site RMSD and SolubleMPNN log-likelihoods) to evaluate active-site stability when including thermal fluctuations. For the most promising enzymes, these yield RMSF values in the active site below 1.0 [A] and an active-site RMSD drift between 0.5 and 1.5 [A], making these mini-variants comparable to the wild type, though outcomes vary across enzymes. Given the protocol's generality, we believe these results represent a step forward in AI-guided enzyme design. To facilitate rapid experimental validation by the broader community, we open-source all sequences generated by our computational pipeline. These include designs for four representative enzymes of this study: PETase, subtilisin Carlsberg (serine protease), Taq DNA polymerase, and VioA.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.04.709378v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Genetically Programmed Shape-morphing of Engineered Living Materials</h2>
+<p class="paper-authors">Becker, J., Liu, Y., +5 authors, Weber, W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Engineered living materials (ELMs) promise genetically programmable functions by coupling biological regulation to synthetic material responses. Here, we introduce genetically encoded, reversible shape-morphing in a peptide-crosslinked polyethylene glycol (PEG) hydrogel whose network density is modulated by opposing enzymatic pairs that induce crosslinking or hydrolysis. This molecular programmability alternates the hydrogel between deswelling and swelling/disintegration and produces 2 - 5-fold changes in mechanical properties. By fabricating a bilayer hydrogel with an inert layer, these molecular modulations are translated into a reversible and directional motion with angular bending motions exceeding 80 degrees. Further, by embedding genetically engineered bacteria or interfacing mammalian cells, producing the relevant enzymatic cues, the reversible shape-morphing of these ELMs is programmed at the genetic level. We further demonstrate genetically programmed, autonomous reversible bending in a bilayer hydrogel controlled by out-of-equilibrium counteracting biochemical reactions with dynamically changing respective reaction rates. This work establishes a concept where coordinated polymer/peptide material engineering and synthetic biology yield autonomous shape-morphing ELMs, opening avenues toward biohybrid soft robotics, adaptive microfluidic systems, and dynamic biomedical interfaces.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.05.709855v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">The Limits of Sequence-Based Biosecurity Screening Tools in the Age of AI-Assisted Protein Design</h2>
+<p class="paper-authors">Wittmann, B. J., Wheeler, N. E., +10 authors, Horvitz, E.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Rapid advancements in AI have enabled significant progress in protein and nucleic acid design, but they also pose biosecurity challenges. We examine the vulnerabilities of biosecurity screening software (BSS) to AI-reformulated synthetic homologs of proteins of concern (POCs) that have been fragmented into smaller segments. We evaluate four BSS tools that were recently patched to enhance their AI resiliency. Without any further modification, we found that two of the four tools were capable of robustly detecting fragments as short as 50 nucleotides, demonstrating screening capabilities that exceed those requested in the U.S. Framework for Nucleic Acid Synthesis. Upgraded versions of the other two tools improved performance. Although our findings confirm the effectiveness of the tested BSS tools, at the same time, they emphasize the urgency of developing alternate BSS approaches to counter evolving AI-enabled biosecurity risks.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.04.709671v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Electrostatic Engineering of Phosphoketolase Enhances Activity on Small Non-phosphorylated Sugars and Improves Cell-Free ATP Regeneration from Inexpensive C2-Substrates</h2>
+<p class="paper-authors">Krausser, F., Topham, C. M., +4 authors, Walther, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Phosphoketolases can be used to convert non-phosphorylated sugars to the high energy compound acetyl phosphate and the versatile metabolic precursor acetyl-CoA. The performance of these pathways is limited by low catalytic activity of natural phosphoketolases towards these sugars. Here, we report the rational engineering of the phosphoketolase from Bifidobacterium adolescentis (Bad.F6Pkt) to enhance its activity and affinity towards glycoaldehyde (GA) and D-erythrulose (ERU) through re-organisation of the protein electric field to reproduce the role of terminal phosphate groups in cognate substrates. Guided by predicted induced side-chain pKa shifts, visualisation of electrostatic potential difference maps alongside molecular modelling and sequence variation analyses, we identified mutations that could promote in situ ring opening of the pre-dominant cyclic GA dimer form in solution. This approach to the electrostatic inverse design problem yielded the GA-specific double mutant H142N:E153D, exhibiting a ten-fold improved affinity and slightly enhanced catalytic efficiency (KM = 4.4 mM, kcat/ KM = 26.3 s-1 M-1) compared to the previously reported H142N variant (KM = 42.3 mM, kcat/ KM = 20.6 s-1 M-1). We additionally constructed a H256Y:H260Y:H548Y variant comprising long-range electrostatic mutations with a 3.8-fold increased catalytic efficiency (kcat/ KM = 49.6 s-1 M-1) on the acylic four-carbon ERU ketose compared to the wild-type enzyme. The engineered enzymes were evaluated in cell-free enzyme cascades for ATP regeneration via acetyl phosphate formation. The H142N variant enabled efficient ATP regeneration from GA and ethylene glycol, whereas the H142N:E153D mutant exhibited reduced stability under synthesis conditions. Furthermore, coupling of a highly GA-specific D-threose aldolase and a D-threose isomerase with the PKT triple mutant enabled rapid conversion of GA into C4 sugar intermediates and significantly improved ATP regeneration from GA.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.04.709640v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Confidence Without Verification: Screening pLDDT Unreliability in AlphaFold2 Fold-Switching Predictions</h2>
+<p class="paper-authors">Thacker, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> AlphaFold2 (AF2) has transformed structural biology, yet its confidence metrics, particularly the predicted Local Distance Difference Test (pLDDT) and predicted Template Modelling score (pTM), systematically fail for fold-switching proteins, which adopt two or more distinct conformations from a single amino acid sequence. Multiple groups have called for alternative quality measures to address this limitation. Here, we present a confidence-integrity screening method derived from the SDI framework, originally developed to detect reasoning failures across artificial intelligence architectures. We apply this screen to 27,098 predictions across 18 experimentally validated fold-switching proteins from the Porter fold-switching benchmark, identifying a 33.6% high-confidence FalseVerify rate, defined as predictions where AF2 is simultaneously confident about its output and structurally committed to the dominant fold while failing to capture the known alternative conformation. FalseVerify severity is predictable: complete secondary structure refolding produces 80-97% FalseVerify rates, while local backbone rearrangements produce 0-2%. Per-residue analysis localizes confidence failures to specific fold-switching regions, with cross-cluster pLDDT variance serving as a structural fingerprint distinguishing reliable from unreliable predictions even when mean pLDDT values are indistinguishable. Applied blindly to 52 unvalidated E. coli fold-switching candidates from the CF-random proteome search, the taxonomy produces structured categories, not noise, with a perfect 50/50 directional split confirming zero population-level correlation between pLDDT and conformational accuracy. The blind screen also identifies a sixth category, INVERTED confidence, invisible in benchmark data, in which the alternative conformation is more confident than the dominant. Nine E. coli proteins with balanced confidence profiles are prioritized for experimental validation. These results fill a specific methodological gap identified by Schafer &amp; Porter (2025) and provide a quantitative framework for triaging fold-switching predictions before experimental validation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.02.19.706878v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A Quantum Lens on Molecular Design: A Machine-Learned Energy Function from Interacting Quantum Atoms.</h2>
+<p class="paper-authors">Hoffmann, M., Kazimir, A., +4 authors, Lamers, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate predictions of the interactions (covalent bonds and non-covalent contacts between atoms) in a molecular system require scalable, accurate, and interpretable energy functions. While classical force fields and knowledge-based energy functions struggle to capture key electronic effects, quantum chemistry approaches such as density functional theory (DFT) provide the necessary accuracy but remain computationally demanding. Furthermore, gaining insight into interactions requires energy decomposition schemes. The Interacting Quantum Atoms (IQA) scheme is exceptionally attractive, offering a chemically intuitive, electron density (ED) topologically based separation into intra- and interatomic contributions, however its high computational cost remains a significant barrier for application to larger systems or tasks like ligand screening in drug discovery. We address these limitations by introducing a novel machine learning (ML) framework to predict accurate energies derived from the IQA scheme together with a comprehensive dataset of molecular systems and their calculated IQA decomposed energies. It enables the rapid and accurate prediction of DFT single point energies and dissects these energies in a physically meaningful and chemically intuitive manner. Our method predicts all intra-atomic energies and inter-atomic interaction energies (covalent and non-covalent) within a defined distance cutoff, providing an energy function that decomposes the total energy into specific atomic contributions. This advance makes the IQA method viable for analyzing interaction energies in applications previously inaccessible due to computational expense, such as elucidating ligand-binding mechanisms and informing rational drug design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709242v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">waveome: a toolkit for longitudinal omics analysis using Gaussian processes</h2>
+<p class="paper-authors">Ross, A., Lloyd-Price, J., Rahnavard, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Identifying meaningful associations from small-sample longitudinal data is challenging, especially in low signal-to-noise environments where the Gaussian likelihood assumption does not hold. We introduce two methods to algorithmically perform variable selection with sparse, irregularly sampled, longitudinal count data with over-dispersion to characterize nonlinear relationships between omics measurements and covariates of interest using Gaussian processes. The first is an additive non-greedy search-based method, while the second is a penalization approach using Horseshoe priors on kernel hyperparameters. In simulation studies, both methods outperform conventional statistical models in terms of distributional fit and exhibit a trade-off in feature selection. Applying the penalized variant to a real-world Crohn's disease cohort, we recover well-established biomarkers, such as short-chain fatty acids, secondary bile acids, and specific lipid species, and uncover novel candidates for cross-sectional and temporal disease severity. Both methods are implemented in an open-source Python library, waveome, offering a robust set of tools for longitudinal biomarker discovery.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709362v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Gradient boosting regression and convolution improve deconvolution of bulk transcriptomes</h2>
+<p class="paper-authors">Wolfram-Schauerte, M., Vogel, T., +4 authors, Nieselt, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Bulk cell type deconvolution aims to estimate cell type composition from bulk transcriptomic data. So-called pseudobulk simulation, where single-cell RNA-seq data is aggregated to bulk-like expression profiles, represents a central concept in training and testing of deconvolution tools. However, deconvolution methods often lack interpretability and struggle to generalize from simulated to real data. We present GrooD (GradientBoostedDeconvolution), a second-generation deconvolution tool that uses gradient boosted trees trained on pseudobulks from scRNA-seq references. GrooD's pseudobulk simulations account for donor and condition variability to better model the complexity of real-world transcriptomes. We show that GrooD achieves state-of-the-art and superior deconvolution performance on human blood biospecimen. Furthermore, Grood provides visualizations of feature loadings and deconvolution results, that allow mechanistic insights for biological interpretation. We further integrate a convolution framework to assess the transcriptomic similarity between bulk and pseudobulk data, showing that higher similarity can indicate better deconvolution performance. GrooD deconvolution of blood transcriptomes from a large sepsis patient cohort identifies meaningful shifts in immune cell type composition that are associated with disease severity. By combining interpretability, robustness, and heterogeneous pseudobulk simulation, GrooD represents a powerful, user-friendly second-generation tool for cell type deconvolution.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709368v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -220,15 +220,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 04, 2026</span>
+<span class="date">Mar 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Hormone signaling and immune programs define differential endocrine responsiveness in high-risk breast tissue</h2>
-<p class="paper-authors">Goldhammer, N., Bont, M., +21 authors, Rosenbluth, J.</p>
+<h2 class="paper-title">Tabular foundation model predicts alternative lengthening of telomeres (ALT) and identifies SMARCAL1 as a target in ALT-driven cancers</h2>
+<p class="paper-authors">Bennett, D., Wierdl, M., +35 authors, Guenther, L. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Hormone therapies are frequently used to reduce breast cancer risk in individuals at increased risk for primary or subsequent disease; however, tissue-level responses to these therapies are heterogeneous and incompletely understood. Background parenchymal enhancement (BPE) on breast magnetic resonance imaging (MRI) provides a non-invasive radiologic readout of breast tissue features associated with endocrine responsiveness and cancer risk. Although BPE is associated with hormonal exposure, a subset of patients with BPE do not show a response to preventive endocrine therapy and therefore may remain at increased breast cancer risk. In this study, we integrated single-nucleus RNA sequencing and spatial transcriptomics to define the determinants of endocrine responsiveness in the setting of BPE. We identify hormone-driven epithelial cells with high levels of estrogen signaling and endocrine responsiveness, together with immune-associated epithelial programs characterized by diminished luminal identity and increased expression of immune-modulatory pathways, including major histocompatibility complex (MHC) class II and CD74. Functional organoid assays validate that these epithelial states exhibit differential sensitivity to tamoxifen and demonstrate that inflammatory signals can induce immune-modulatory epithelial programs. Together, our findings identify hormone signaling and immune programs as key determinants of endocrine responsiveness in breast tissue and provide a biological basis for interpreting radiologic markers relevant to cancer prevention.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.709108v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Alternative lengthening of telomeres (ALT) is a telomerase-independent pathway used by aggressive cancers to maintain their replicative immortality. Because ALT is absent from normal human cells, it is an appealing target for cancer therapy, but the lack of ability to determine ALT status at scale has hindered target discovery. Here, we developed ALTitude, a tabular foundation model-based method that infers ALT from cell line whole-genome sequencing data, without need for paired germline sequences. We deployed ALTitude across the Cancer Dependency Map, doubling the number of known ALT+ cancer models. Systematic integration of ALTitude with CRISPR-Cas9 screens yielded the selective dependency on SMARCAL1 in ALT+ cell lines, where we show it stabilizes the ALT phenotype. Acute depletion of SMARCAL1 leads to G2/M arrest, mitotic catastrophe, and cell death. These data provide a valuable resource for studying ALT-related genomic features and present SMARCAL1 as a therapeutically relevant drug target for ALT+ malignancies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.04.709438v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -239,15 +239,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 04, 2026</span>
+<span class="date">Mar 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Senescence-directed nanotherapy ameliorates fibrosis and overcomes immune exclusion in cancer</h2>
-<p class="paper-authors">Hinterleitner, C., Barthet, V. J. A., +24 authors, Lowe, S. W.</p>
+<h2 class="paper-title">Primary cilia promote resistance to EGFR tyrosine kinase inhibitor, osimertinib, in non-small cell lung cancer</h2>
+<p class="paper-authors">Wang, L., Pandit, A., +3 authors, Hoeppner, L. H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Fibrotic remodeling of tissues and tumors establishes immune-suppressive microenvironments that drive organ dysfunction and, in cancer, limit responses to immunotherapy. Cells exhibiting features of cellular senescence are conserved drivers of fibrotic remodeling and thus represent therapeutic targets, yet senescent states are heterogeneous and can exert both beneficial and pathogenic effects, complicating therapeutic intervention. Here, we show that P-selectin is selectively expressed by subsets of senescent-like cells in fibrotic tissues and fibrotic tumor microenvironments. Leveraging fucoidan-based nanoparticles that bind P-selectin, we develop senescence-modulating nanoparticles (SMNPs) to selectively target these disease-associated cell states. SMNPs exhibit potent antifibrotic and immunomodulatory activity while markedly improving therapeutic index. Mechanistically, we identify a pathogenic, immune-suppressive macrophage population as a principal functional target of SMNPs in vivo. In fibrotic tumors, niche remodeling restores immune infiltration and sensitizes tumors to immune checkpoint-based therapies. More broadly, SMNPs establish a generalizable nanotherapeutic strategy for selectively targeting pathogenic senescent cell subsets across fibrotic disease and cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.02.706451v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Patients with advanced non-small cell lung cancer (NSCLC) and mutations in epidermal growth factor receptor (EGFR) benefit from EGFR tyrosine kinase inhibitors (TKIs). Osimertinib, a third-generation EGFR TKI, is standard first-line therapy for EGFR-mutated NSCLC, but most patients develop resistance to it. Here, we demonstrate that increased formation of primary cilia, microtubule-based sensory organelles, is associated with osimertinib-refractory NSCLC progression. EGFR-mutated, osimertinib-resistant human NSCLC cells had increased cilia formation and acetylation of -tubulin and reduced histone deacetylase 6 (HDAC6) activity compared to their osimertinib-sensitive counterparts. HDAC6 inhibition increases cilia formation in osimertinib-sensitive NSCLC cells, and overexpression of exogenous HDAC6 sensitized osimertinib-resistant NSCLC cells to osimertinib's anti-proliferative effects. Because intraflagellar transport (IFT) proteins are essential for primary cilium formation and function, we knocked down IFT88 in osimertinib-resistant NSCLC cells, which reversed osimertinib resistance in orthotopic and subcutaneous mouse models of lung cancer. Mechanistically, increased sodium influx during osimertinib-induced inhibition of EGFR signalling promotes cilia formation through sustained HDAC6 inactivity and greater -tubulin acetylation. Inhibition of sodium influx with dibutyryl-cAMP decreased cilium formation, increased sensitivity to osimertinib, and reduced tumor progression in mice bearing osimertinib-resistant lung tumors. Collectively, our findings suggest that enhanced primary cilium formation mediates EGFR TKI resistance and that targeted inhibition of ciliogenesis may prevent or overcome osimertinib resistance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709408v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -255,56 +255,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">MED</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Mar 05, 2026</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Atomic Fe-Centered Hemin-TiO 2 Graphdiyne Nanozyme Sensor for Colorimetric Fingerprinting of Bacterial Extracellular Vesicles.</h2>
-<p class="paper-authors">Yang J, Qiu X, +7 authors, Guo C.</p>
+<h2 class="paper-title">ZNF423 depletion induces the integrated stress response and represents a potential vulnerability in NF1-associated MPNST</h2>
+<p class="paper-authors">Morrow, S. K., Berryhill, C. A., +20 authors, Angus, S. P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate identification of urinary pathogens is essential for the timely diagnosis and effective management of urinary tract infections (UTIs). Bacterial extracellular vesicles (bEVs), which carry pathogen-specific surface antigens, represent an attractive diagnostic target. However, their clinical translation is impeded by the time-consuming and labor-intensive isolation process (typically requiring up to 72 h) from complex biological samples such as urine. To overcome this limitation, we report an intelligent colorimetric sensor array capable of decoding pathogen-specific biochemical signatures for the direct, accurate and rapid identification of bEVs in UTIs. It is realized by inventing a three-dimensional biomimetic nanozyme comprising TiO2 nanoparticles-bridged Hemin molecules anchored on graphdiyne with a sandwich configuration, thus enabling both selective capture of bEVs and enhanced peroxidase (POD)-like catalytic activity. The specificity arises from the atomic Fe centers in Hemin molecules, which establish stable coordination interactions with the O-antigens of lipopolysaccharides on the bEV surface. Upon bEV recognition, the biomimetic nanozyme exhibits pH-dependent suppression of POD-like activity, generating distinctive colorimetric fingerprints. Coupled with machine learning, the platform accurately classifies bEV subtypes. Clinical validations demonstrate a diagnostic accuracy of 100.0% within 30 min, underscoring the promising point-of-care UTI management.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41778686/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">MED</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Lymphatics-on-a-chip microphysiological system: engineering lymphatic structure and function <i>in vitro</i>.</h2>
-<p class="paper-authors">Peng Y, Lee E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The lymphatic system-integral to fluid balance, immune surveillance, and lipid absorption-is frequently overlooked despite its vital roles. Traditional research modalities, including static two-dimensional cultures and animal models, have illuminated key molecular and cellular features but fall short in recapitulating human lymphatic function, due to limited physiological relevance, throughput, and mechanobiological complexity. Recent advances in microfluidic organ-on-a-chip systems offer biomimetic platforms that integrate three-dimensional architecture, fluid flow, and biomechanical stimuli alongside human lymphatic endothelial and supporting cells. These lymphatics-on-a-chip constructs faithfully reproduce dynamic behaviors such as fluid drainage, junction remodeling, and cell trafficking under physiological and pathological responses. This review highlights the foundational lymphatic biology and engineering principles behind these devices, their capacity for disease modeling and drug testing, and their potential to drive future innovation through induced pluripotent stem cell integration, organ-specific customization, and computational modeling. Merging bioengineering, cell biology, and machine learning, lymphatic microphysiological systems stand poised to significantly expand our understanding and treatment of lymphatic-related disorders.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41498589/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 04, 2026</span>
-<span class="journal">MED</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Autonomous microfluidic labs: progress and prospects.</h2>
-<p class="paper-authors">Damir S, Delgado-Licona F, deMello A, Abolhasani M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Global challenges such as climate change, escalating energy demands, and health equity require new scientific innovations able to deliver timely solutions. Self-driving laboratories (SDLs) combine robotics and lab automation with artificial intelligence to efficiently explore complex experimental spaces, reduce human effort, and speed up discovery through intelligent experimentation. Central to this transformation is responsible research acceleration (RRA). This ensures that advances are reproducible, transparent, and resource-efficient, and lays the foundation for sustainable innovation. Microfluidics, with its precise control of heat and mass transfer rates, minimal reagent use, and seamless integration with real-time sensing and automation, represents an ideal platform to embody RRA principles within SDLs. This perspective explores the synergy between microfluidics and autonomous experimentation, highlights key challenges, and proposes strategies for fully autonomous microfluidic workflows. We argue that flow-based platforms are essential to expedite discovery and that stronger academia-industry collaboration is critical in shortening the path from scientific insight to real-world implementation and impact.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41732020/" target="_blank">
+<p><strong>Abstract:</strong> Malignant peripheral nerve sheath tumors (MPNST) are aggressive sarcomas with limited systemic therapies and represent the leading cause of mortality for individuals with neurofibromatosis type 1 (NF1). Malignant progression can reactivate developmental precursor programs that are largely absent from normal nerve and benign tumors, creating tumor-selective vulnerabilities. Zinc finger protein 423 (ZNF423; also known as OAZ/ROAZ) is a developmentally regulated transcription factor that delays olfactory precursor differentiation and has been implicated in B cell malignancy. Here, we asked whether ZNF423 is reactivated and functionally required in NF1-associated MPNST. In genetically defined models, Nf1 loss reduced Zfp423 in a benign tumor cell-of-origin context, whereas combined Nf1 and Cdkn2a loss induced marked Zfp423 upregulation during transformation. ZNF423 depletion impaired DNA synthesis and proliferation, induced DNA damage signaling, and activated the integrated stress response (ISR), increasing sensitivity to cytotoxic agents. In an orthotopic MPNST model, shRNA-mediated suppression of ZNF423 reduced tumor initiation in vivo; however, tumors that eventually emerged showed restoration of ZNF423 expression. ZNF423 is developmentally restricted in the peripheral nerve lineage yet elevated in MPNST, with single-cell analyses of patient nerve sheath tumors revealing localized expression restricted to malignant cells rather than SOX10-positive benign tumor cells. These data identify ZNF423 as a putative malignant biomarker, a potential dependency in NF1-MPNST, and nominate downstream stress and genome maintenance pathways as cooperative therapeutic vulnerabilities.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.03.709360v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
