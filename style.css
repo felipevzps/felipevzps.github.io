@@ -713,26 +713,27 @@ body {
 .newsletter-intro h1 {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-semibold);
-  padding: var(--spacing-7-5xl) 0 var(--spacing-2xl) 0;
+  padding: var(--spacing-7-5xl) 0 var(--spacing-xl) 0;
 }
 
 .newsletter-intro p {
-  color: var(--text-dim);
+  color: var(--text-muted);
   line-height: 1.5;
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-2xl);
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  margin-bottom: var(--spacing-7xl);
   text-wrap: balance;
   text-align: center;
 }
 
-.newsletter-intro .note {
-  color: var(--text-very-faded);
-  font-size: var(--font-size-lg);
-  line-height: 1.4;
-  margin-top: var(--spacing-lg);
+.newsletter-footer {
+  color: var(--text-muted);
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  text-wrap: balance;
+  text-align: center;
+  margin-top: var(--spacing-2xl);
 }
 
-.newsletter-intro a {
+.newsletter-footer a {
   color: var(--color-link);
   font-weight: var(--font-weight-medium);
   text-decoration: none;
@@ -740,7 +741,7 @@ body {
   transition: all var(--transition-fast);
 }
 
-.newsletter-intro a:hover {
+.newsletter-footer a:hover {
   border-bottom: var(--border-width) var(--border-style) var(--color-link);
 }
 
