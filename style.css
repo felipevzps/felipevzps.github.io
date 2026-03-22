@@ -193,8 +193,12 @@ body {
   white-space: nowrap;
 }
 
-.nav a:hover {
+.nav:has(a:hover) a:not(:hover) {
   color: var(--text-faded);
+}
+
+.nav a:hover {
+  color: var(--color-white);
   border-bottom: none;
 }
 
