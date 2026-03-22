@@ -577,6 +577,24 @@ body {
 .card-image {
   background-color: var(--card-bg);
   padding: 8px;
+  position: relative;
+}
+
+/* === YEAR BADGE === */
+.card-year {
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  color: var(--text-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  padding: 2px 8px;
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.04em;
+  /*backdrop-filter: blur(4px);*/
+  /*background: rgba(0, 0, 0, 0.52);*/
+  pointer-events: none;
+  user-select: none;
 }
 
 .card-image img {
