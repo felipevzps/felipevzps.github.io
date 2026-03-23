@@ -31,15 +31,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 21, 2026</span>
+<span class="date">Mar 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Novel 4D tensor decomposition-based approach integrating tri-omics profiling data can identify functionally relevant gene clusters</h2>
-<p class="paper-authors">Taguchi, Y.-h., Turki, T.</p>
+<h2 class="paper-title">A harmonized benchmarking framework for implementation-aware evaluation of 46 polygenic risk score tools across binary and continuous phenotypes</h2>
+<p class="paper-authors">Muneeb, M., Ascher, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Integrating transcriptome, translatome, and proteome data remains challenging because changes in mRNA, ribosome occupancy, and protein abundance do not always occur simultaneously. To address this, we applied tensor-decomposition-based unsupervised feature extraction to a tri-omics dataset generated under branched-chain amino acid starvation. The three layers were organized into a tensor and analyzed to extract singular value vectors representing coordinated variation across omics, conditions, and replicates. This approach distinguished patterns consistent with ribosome stacking, in which the transcriptome and translatome increase while the proteome decreases, from those of translational buffering, in which the proteome remains stable despite variations in upstream layers. Using components associated with these signatures, we selected 1,781 genes related mainly to reduced translational efficiency and 221 related to buffering. Functional interpretation via enrichment analysis, supported by generative artificial intelligence and a manual literature review, revealed six major biological units: genome replication and maintenance, extracellular matrix remodeling, mitochondrial biogenesis and oxidative phosphorylation, proteostasis and secretion, vesicle transport and signal integration, and epigenetic/RNA regulation. These results indicate that tensor decomposition can effectively integrate tri-omics data and uncover the biologically meaningful gene clusters and mechanisms underlying cell fate transitions. This framework is valuable for interpreting complex multilayer regulation beyond conventional pairwise analyses.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.19.712900v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Polygenic risk score (PRS) tools differ substantially in statistical assumptions, input requirements, and implementation complexity, making direct comparison difficult. We developed a harmonized, implementation-aware benchmarking framework to evaluate 46 PRS tools across seven binary UK Biobank phenotypes and one continuous trait under three model configurations: null, PRS-only, and PRS plus covariates. The framework integrates standardized preprocessing, tool-specific execution, hyperparameter exploration, and unified downstream evaluation using five-fold cross-validation on high-performance computing infrastructure. In addition to predictive performance, we assessed runtime, memory use, input dependencies, and failure modes. A Friedman test across 40 phenotype--fold combinations confirmed significant differences in tool rankings ({chi}2 = 102.29, p = 2.57 x 10-11), with no single method universally optimal. These findings provide a reproducible framework for comparative PRS evaluation and demonstrate that tool performance is shaped not only by statistical methodology but also by phenotype architecture, preprocessing choices, covariate structure, computational demands, software robustness, and practical implementation constraints.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.22.713457v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -50,15 +50,34 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 21, 2026</span>
+<span class="date">Mar 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Long-read metagenomic sequencing reveals novel lineages and functional diversity in urban soil microbiome</h2>
-<p class="paper-authors">Duan, Y., Cusco, A., +8 authors, Coelho, L. P.</p>
+<h2 class="paper-title">ATHILAfinder: a tool to detect ATHILA LTR retrotransposons in plant genomes</h2>
+<p class="paper-authors">Bousios, A., Primetis, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> City parks and other urban green spaces can bring significant benefits to the physical and mental health of city residents. However, there is limited knowledge about the microbial communities inhabiting these urban soils. Here, we applied long-read metagenomic sequencing to 58 urban soil samples from two major cities in China, enabling genome-resolved reconstruction of microbial diversity at unprecedented contiguity. We recovered 7,949 medium- and high-quality metagenome-assembled genomes, comprising 4,171 species-level genome bins, of which over 97% represent previously undescribed species. Long-read assemblies revealed extensive secondary metabolic capacity, including more than 30,000 biosynthetic gene clusters, which were highly contiguous compared with those from fragmented short-read assemblies. Beyond secondary metabolism, we uncovered over 2 million small protein families, including hundreds that are strongly enriched in the neighbourhood of defense systems and mobile genetic elements, highlighting their overlooked role in urban soils. These findings expand our understanding of the functional diversity of urban soil microbiomes and provide new insights with implications for urban public health.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.20.713087v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation The ATHILA lineage of LTR retrotransposons has colonised all branches of the plant tree of life. In Arabidopsis thaliana and A. lyrata, ATHILA elements have invaded centromeres, influencing the genetic and epigenetic organisation, and driving satellite evolution. To assess the broader significance of ATHILA across plants, a computational pipeline is needed to identify ATHILA elements with high efficiency. Existing tools lack this ability because they are optimised for broad transposon classification at the expense of precise annotation of lower taxonomic levels. Results We present ATHILAfinder, a pipeline for accurate and large-scale discovery of ATHILA elements. ATHILAfinder uses lineage-specific sequence motifs as seeds and additional filters to build de novo intact elements. Homology-based steps rescue intact ATHILA and identify soloLTRs. A detailed identity card includes coordinates, LTR identity, coding capacity, length and other sequence features for every ATHILA. We validate ATHILAfinder in the A. thaliana Col-CEN assembly and five additional Brassicaceae species, covering four supertribes and ~30 million years of evolution. ATHILAfinder has very low false positive rates and outperforms widely-used tools like EDTA and the deep-learning-based Inpactor2 software for both recovery and precision of ATHILA. To demonstrate its usefulness, we generate insights into ATHILA dynamics across Brassicaceae. Outlook Few computational pipelines target specific transposon lineages, yet such tools can empower their identification and downstream analyses. Our tailored approach can be adapted to other LTR retrotransposon lineages, offering new ways for high-resolution analysis of transposons.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.20.713144v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Mar 22, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">aaKomp: Alignment-free amino acid k-mer matching for genome completeness assessment at scale</h2>
+<p class="paper-authors">Wong, J., Coombe, L., +1 author, Birol, I.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> In de novo sequencing projects, genome assembly optimization requires evaluating a number of candidate assemblies to identify optimal tool parameters. Yet, current completeness assessment tools like BUSCO and compleasm require 10-80 minutes per evaluation for gigabase-scale genomes, transforming what should be rapid iteration into time-intensive processes. These tools rely on alignment-based approaches and fixed ortholog databases, limiting their scalability across the tree of life. We present aaKomp, a scalable alignment-free tool that leverages amino acid k-mer matching and multi-index Bloom filters for rapid genome completeness assessment. Unlike current utilities, aaKomp supports user-defined reference databases, enabling customized assessments for any organism. In benchmarking against state-of-the-art tools using simulated T2T-CHM13 datasets, aaKomp achieved 68-fold faster execution and 15-fold lower memory consumption while maintaining accuracy. Testing on 94 Human Pangenome Reference Consortium assemblies and a European Eel assembly, aaKomp maintained one-minute runtimes (1.2 {+/-} 0.35 min) and low memory usage (&lt;13.64 GB). aaKomp's scoring system provides nuanced estimates rather than threshold-based classifications, offering increased resolution for tracking incremental improvements during iterative workflows. aaKomp's speed, memory efficiency, and flexible database generation makes it well-suited for modern and biodiverse projects requiring the evaluation of hundreds of assemblies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.19.713078v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -69,72 +88,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 21, 2026</span>
+<span class="date">Mar 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A treatment-resilient lipid metabolic program drives temozolomide resistance in glioblastoma</h2>
-<p class="paper-authors">Naghibzadeh, K., Barzegar Behrooz, A., +8 authors, Ghavami, S.</p>
+<h2 class="paper-title">A 3D Tumor-on-a-chip Platform to Identify Drugs that Block Breast Cancer Cell Intravasation</h2>
+<p class="paper-authors">Perera, N., Coutinho, D., +10 authors, Magalhaes, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Temozolomide (TMZ) resistance remains a major obstacle in glioblastoma (GBM) therapy, yet the metabolic adaptations underlying this phenotype are incompletely understood. Here, we performed integrative lipidomic, ultrastructural, and pathway analyses to define lipid metabolic reprogramming associated with TMZ resistance and failure of statin-mediated sensitization. Targeted LC-MS lipidomics quantified 322 lipid species across 25 lipid classes in TMZ-sensitive and TMZ-resistant U251 cells under basal conditions and following TMZ, simvastatin, or combination treatment. Multivariate analyses (PCA, PLS-DA, and volcano plots) revealed a robust and treatment-resilient lipidomic signature in resistant cells characterized by enrichment of lysophospholipids, sphingolipids, and cholesteryl esters, alongside depletion of glycerolipid and phospholipid pools. Complementary univariate analysis confirmed these changes at the species level, demonstrating consistent elevation of lysophosphatidylcholine/ethanolamine, glycosphingolipid subclasses, and cholesteryl esters, together with reductions in phosphatidylcholine, phosphatidylethanolamine, phosphatidylinositol, and diacylglycerol intermediates across multiple treatment conditions. In contrast, sensitive cells displayed dynamic lipid remodeling, including phosphatidylinositol and phosphatidylethanolamine enrichment associated with autophagic membrane expansion. KEGG pathway analysis linked the resistant phenotype to Rap1, PI3K-Akt, and phospholipase D signaling networks regulating vesicle trafficking and membrane homeostasis. Transmission electron microscopy confirmed a vesicle-rich intracellular architecture consistent with persistent autophagy flux blockade in resistant cells. Collectively, these findings define a stable lipid metabolic program characterized by lysophospholipid expansion and cholesteryl ester accumulation that supports membrane integrity and therapeutic resistance. Targeting lipid buffering and cholesterol storage pathways may represent a promising strategy to overcome chemoresistance in glioblastoma.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.19.712341v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 21, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Oncodevelopmental plasticity of the skeleton in myeloid neoplasms</h2>
-<p class="paper-authors">Atakhanov, S., Ghezzi, I., +37 authors, Schneider, R. K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Myelofibrosis in patients with myeloproliferative neoplasms (MPNs) is traditionally characterized by bone marrow fibrosis and osteosclerosis, with de novo bone formation commonly attributed to impaired osteoclast-mediated resorption. Here, we challenge this paradigm by demonstrating that a solitary clonal driver mutation simultaneously induces pathological bone formation and resorption, with osteosclerosis acting to conceal localized and active bone destruction rather than inhibiting it. Through population analysis; clinical imaging; patient-derived multi-tissue sequencing; murine models and organ-on-a-chip systems, we demonstrate that spatial and ontogeny-dependent remodeling in mesoderm- and neural crest-derived bones is mechanistically interconnected via a previously unidentified osteochondral stromal injury program. Neural crest-derived stromal cells suppress osteogenic programs and undergo injury-induced lineage plasticity with ectopic chondrogenesis, mirroring pathological remodeling in mesoderm-derived growth plate regions. This shared injury response promotes osteoclastogenesis and is mediated by a conserved Thrombospondin 1+ (THBS1+) stromal population that links fibrotic remodeling to bone loss. Combined pharmacological inhibition of THBS1 and JAK signaling reduces myeloproliferation, halts fibrosis progression, and restores two developmentally distinct bones, establishing THBS1 as a unifying therapeutic target in myelofibrosis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.19.712939v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 21, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">TET2 loss promotes premalignant survival and clonal selection in MYC-driven B cell lymphoma</h2>
-<p class="paper-authors">Spoeck, S., Kinz, N., +10 authors, Labi, V.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The DNA demethylase ten-eleven translocation enzyme 2 (TET2) is frequently inactivated in hematologic malignancies, yet how its loss shapes oncogene-driven transformation remains unclear. Using a mouse model in which MYC is overexpressed in the B cell lineage, driving aggressive B cell lymphoma, we show that Tet2 loss increases lymphoma penetrance and biases disease toward an IgM+ immunophenotype. Established lymphomas are broadly similar across genotypes, suggesting that Tet2 loss exerts much of its effects before lymphoma onset. Accordingly, Tet2 loss expands a premalignant IgM+ B cell subset with reduced apoptotic sensitivity and an increased frequency of BCL2+BIMhi cells. Consistently, Tet2 deficient IgM+ B cells persist better in in vitro cultures, show increased clonogenic survival, and exhibit clonal skewing. These findings support a model in which Tet2 loss heightens MYC-driven lymphoma penetrance by promoting the survival and selection of premalignant B cells under apoptotic stress.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.20.712678v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 21, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Focal adhesion kinase promotes metastasis in BRAF-mutant melanoma</h2>
-<p class="paper-authors">Stanley, K. A., Field, M. N., +10 authors, Holmen, S. L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Despite the availability of several FDA-approved therapies, metastatic melanoma remains a significant clinical challenge, particularly for patients with brain metastases, which frequently represent the site of treatment failure and a major cause of melanoma-related mortality. Melanoma exhibits a strong propensity to metastasize to the brain, yet the molecular mechanisms driving this lethal progression remain incompletely understood, limiting the development of effective treatment options. Building on our prior discovery that focal adhesion kinase (FAK) is a key mediator of AKT1-driven brain metastasis, we sought to validate the role of FAK in melanoma progression and metastatic dissemination. Using complementary autochthonous and syngeneic mouse models of BRAF-mutant melanoma, we evaluated the impact of FAK expression on overall survival, primary tumor growth, and metastasis. Through the generation of targeted FAK mutants to distinguish, we distinguished kinase-dependent from kinase-independent functions and demonstrate that FAK promotes melanoma metastasis in a kinase-dependent manner. Furthermore, we establish that FAK functions downstream of PTEN to drive metastatic progression. Collectively, these findings support the therapeutic potential of FAK inhibition, either alone or in combination with existing treatments, to more effectively combat metastatic melanoma and inform the development of emerging FAK-targeted therapies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.19.712212v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Metastasis is the leading cause of death in breast cancer patients, yet there are no drugs specifically designed to block cancer cell intravasation, an early step of the metastatic cascade that originates circulating tumour cells (CTCs). A major challenge in developing anti-intravasation drugs is the scarcity of relevant in vitro platforms suitable for predictable drug discovery. Intravasation is a fundamental step of metastasis and involves the crossing of cancer cells through an endothelial barrier to enter the blood circulation. Here we developed an intravasation-on-a-chip model with controlled extracellular matrix composition, fluid flow and shear stress, which mimics the dynamic tumour-endothelium interface. The systems allows real-time imaging of intravasation and the isolation and quantification of intravasated cancer cells. As a proof-of-concept for drug testing, we show that perfusion with the PI3K/mTOR inhibitor Dactolisib, significantly reduced intravasation without compromising endothelial cell viability. The system also provides the capability to evaluate inhibitor on-target activity via imaging analysis. This intravasation-on-a-chip model offers a powerful, scalable, and imaging-compatible platform for discovering and evaluating anti-intravasation compounds.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.19.712923v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
