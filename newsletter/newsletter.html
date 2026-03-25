@@ -8,16 +8,17 @@
 <link href="../docs/photo_51.ico" rel="shortcut icon"/>
 <link href="../style.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script data-host-url="https://umami-proxy.felipe-vzps.workers.dev" data-website-id="dac15830-c6a0-4446-b682-eff407735a47" defer="" src="https://umami-proxy.felipe-vzps.workers.dev/worker.js"></script>
 </head>
 <body>
 <aside class="sidebar">
 <div class="sidebar-inner">
 <nav class="nav">
-<a href="../index.html#about">FELIPEVZPS</a>
-<a href="../index.html#research">RESEARCH</a>
-<a href="../index.html#hackathon">HACKATHON</a>
-<a href="#">LATEST IN SCIENCE</a>
-<a href="../index.html#contact">CONTACT</a>
+<a data-umami-event="nav-home" href="../index.html#about">FELIPEVZPS</a>
+<a data-umami-event="nav-research" href="../index.html#research">RESEARCH</a>
+<a data-umami-event="nav-hackathon" href="../index.html#hackathon">HACKATHON</a>
+<a data-umami-event="nav-latest-in-science" href="#">LATEST IN SCIENCE</a>
+<a data-umami-event="nav-contact" href="../index.html#contact">CONTACT</a>
 </nav>
 </div>
 </aside>
@@ -311,6 +312,7 @@
       const btn = document.createElement('button');
       btn.className = 'filter-btn';
       btn.textContent = keyword;
+      btn.dataset.umamiEvent = 'newsletter-filter-' + keyword;
       if (keyword === 'all') btn.classList.add('active');
       filterBar.appendChild(btn);
     });
