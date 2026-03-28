@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 28, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Nextstrain automates real-time phylodynamic analysis of open data for endemic and emerging pathogens</h2>
-<p class="paper-authors">Andrews, K. R., Chang, J., +21 authors, Bedford, T.</p>
+<h2 class="paper-title">Open-source, Hardware-Independent GPU Acceleration for Scalable Nanopore Basecalling with Slorado and Openfish</h2>
+<p class="paper-authors">Wong, B., Singh, G., +5 authors, Gamaarachchi, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Genome sequencing provides an exceptional window into the evolutionary and epidemiological dynamics of endemic and emerging pathogens, and thus allows for better, more targeted, public health interventions. Online genomic surveillance platforms can provide near real-time insight into these dynamics. Results: Nextstrain provides continually updated real-time genomic surveillance for 21 viruses and the bacterial pathogen Mycobacterium tuberculosis, with most analyses relying solely on open sequence data. Each pathogen includes steps to fetch and curate open data, classify sequences using established nomenclature systems, perform phylodynamic analyses, and share the results publicly. These analyses are automated, with most running daily to provide continually updated snapshots of pathogen evolution. Availability and Implementation: All source code is available at https://github.com/nextstrain. Phylodynamic results can be visualized and downloaded at https://nextstrain.org/pathogens, and open sequence data and curated metadata are available at https://nextstrain.org/pathogens/files.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.23.713807v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Nanopore sequencing technologies are used widely in genomics research and their adoption continues to accelerate. 'Basecalling' is an essential step in the nanopore sequencing workflow, during which raw electrical signals are translated into nucleotide sequences. The current state-of-the-art basecaller, Oxford Nanopore Technologies (ONT) software 'Dorado,' relies on proprietary, platform-specific NVIDIA GPU optimisations bundled in the closed-source 'Koi' library. As a result, practical, high-speed basecalling is effectively restricted to a narrow class of supported hardware, limiting accessibility, portability, and innovation. We present (1) 'Openfish,' an open-source GPU-accelerated nanopore basecaller decoding library that provides a competitive alternative to ONT's proprietary Koi library; and (2) Slorado, a fully open-source basecalling framework that supports both DNA and RNA with equivalent accuracy to Dorado. Together, Openfish and Slorado remove the hardware lock-in that currently limits high-performance nanopore basecalling. Our framework scales efficiently across heterogeneous computing environments, from low-power embedded devices to GPU-equipped datacenters, without sacrificing speed or accuracy. Openfish and Slorado are available as free open-source packages for basecalling research, optimisation and deployment beyond the constraints of proprietary software and hardware ecosystems: Openfish: https://github.com/warp9seq/openfish, Slorado: https://github.com/BonsonW/slorado.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714356v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Predicting Unseen Gene Perturbation Response Using Graph Neural Networks with Biological Priors</h2>
-<p class="paper-authors">Dip, S. A., Zhang, L.</p>
+<h2 class="paper-title">GYDE: A collaborative drug discovery platform for AI-powered protein design and engineering</h2>
+<p class="paper-authors">Down, T., Warowny, M., +8 authors, Mukhyala, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting transcriptional responses to genetic perturbations is a central challenge in functional genomics. CRISPR Perturb-seq experiments measure gene expression changes induced by targeted perturbations, yet experimentally testing all possible perturbations remains infeasible. Computational models that infer responses for unseen perturbations are therefore essential for scalable functional discovery. We introduce PerturbGraph, a biologically informed graph-learning framework for predicting transcriptional responses of unseen gene perturbations by integrating interaction networks, functional annotations, and transcriptional features. Our approach is motivated by the observation that perturbation effects propagate through molecular interaction networks and manifest as coordinated transcriptional programs. Starting from single-cell CRISPR perturbation data, we construct perturbation signatures representing expression shifts relative to control cells and project them into a compact latent program space that captures stable transcriptional variation while reducing noise. Each gene is represented using enriched biological features integrating protein-protein interaction network embeddings, network topology statistics, baseline transcriptional characteristics, and Gene Ontology annotations. A graph neural network propagates information across the interaction network to infer perturbation programs for genes whose effects are not observed during training. Across unseen-perturbation benchmarks, PerturbGraph consistently outperforms classical machine learning models, perturbation-specific deep learning approaches such as scGen and CPA, and alternative graph neural architectures. The model achieves up to 6% improvement in cosine similarity over strong tree-based baselines and more than 20% improvement over linear models while improving recovery of differentially expressed genes. These results show that integrating biological interaction networks with graph representation learning enables accurate prediction of transcriptional effects for previously unobserved genetic perturbations. Code is publicly available at https://github.com/Sajib-006/PerturbGraph.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.23.713780v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> As computational tools and machine learning models for protein sciences continue to advance and proliferate, bench scientists face increasing technical challenges adopting these tools for specific applications such as drug discovery. Here we present GYDE (Guide Your Design and Engineering), an open-source, versatile, and web-based collaboration platform designed to make computational analyses of proteins and antibodies easily accessible to bench scientists. GYDE enables the exploration of sequence-structure-function relationships through a tightly integrated visual interface, offering researchers a comprehensive exploration of protein functional determinants either via real assay data or computational tools. GYDE's intuitive interface facilitates seamless access to cutting-edge AI models for protein and antibody structure prediction, design, and downstream analyses. The flexible and easy addition of new tools and models is facilitated by the use of the Slivka compute API. The platform supports saved sessions that enable researchers to easily share their findings with other users, fostering a more collaborative scientific community. GYDE is freely available for protein scientists in academia and industry to build drug discovery analytics platforms customized to their needs.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.714039v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Scaling and Generalization of Discrete Diffusion Models for Tumor Phylogenies</h2>
-<p class="paper-authors">Sabata, S., Schwartz, R.</p>
+<h2 class="paper-title">TattleTail: A Pyocin Prediction Tool</h2>
+<p class="paper-authors">Pais, R. G., Chen, W., +2 authors, Loh, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Tumor phylogenies - rooted trees encoding clonal ancestry and mutation acquisition - are central to understanding cancer evolution, yet generating realistic phylogenies remains challenging. We investigate whether discrete graph diffusion can learn the structural constraints of tumor phylogenies directly from data. Working with approximately 12,500 synthetic phylogenies across twelve evolutionary regimes, we train graph transformer models that denoise typed graphs through a learned reverse diffusion process. Scaling experiments reveal a non-monotonic capacity-performance relationship: a mid-scale model achieves high structural validity and close distributional match to held-out data, while a deeper model fails under fixed optimization hyperparameters. Low-data cross-regime experiments show that diverse training produces more transferable representations than single-regime specialization. These results establish that phylogenetic structural constraints can be learned implicitly through unconditional discrete diffusion, suggesting a viable path toward generative models of tumor evolution.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.23.713822v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Tailocins are phage tail-like bacteriocins (PTLBs) thought to be remnants of prophages that have lost the ability to package viral genomes while retaining the ability to kill closely-related bacterial strains, thereby mediating bacterial competition. Tailocins produced by Pseudomonas aeruginosa are referred to as pyocins. Apart from their contribution to ecological fitness, they also have the potential to be harnessed as highly-specific antimicrobials to treat antibiotic resistant bacterial infections. Although pyocins lack the genetic components to package viral genomes, pyocin-encoding gene clusters share a high degree of genetic homology to phage tail genes, attributed to their shared ancestry. This poses a significant annotation-based challenge, as current prophage prediction tools, which rely on phage homology for prediction, can misclassify pyocins or tailocins as prophages. Pyocins unknowingly being misannotated as prophages is not only a bioinformatic issue, but can certainly confound experiments examining bacterial competition and prophage induction, if the experimental setup is based on this unintentional misannotation. In this study, we present "TattleTail", the first version of a bioinformatic tool designed to accurately identify tailocins in genome sequences, with a focus on identifying phage tail-derived pyocin-encoding gene clusters in P. aeruginosa in its first iteration. The tool leverages conserved pyocin gene cluster markers and accounts for the absence of canonical phage features, such as capsid, terminase and integrase genes, thereby distinguishing pyocins from intact and cryptic prophages. Validation in P. aeruginosa and non-P. aeruginosa genomes confirmed the presence of pyocin regions in all P. aeruginosa genomes, while none were detected in any non-P. aeruginosa genomes. Notably, TattleTail enabled the identification of representative pyocin-encoding gene clusters in clinical P. aeruginosa isolates. The identified pyocins in the clinical isolates were induced using mitomycin C, visualized via transmission electron microscopy, processed via tangential flow filtration and demonstrated bactericidal activity, thereby confirming TattleTail predictions. TattleTail aims to complement existing prophage prediction tools during genomic analyses involving phage-derived elements in bacterial genomes, allowing more accurate identification of these elements facilitated by robust discrimination between prophages and tailocins.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.712926v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Experimental mismatch in benchmarking PELSA and LiP-MS</h2>
-<p class="paper-authors">Van Leene, C., Araftpoor, E., Gevaert, K.</p>
+<h2 class="paper-title">KyDab - a comprehensive database of antibody discovery selection campaigns.</h2>
+<p class="paper-authors">Zhou, Q., Chomicz, D., +5 authors, Krawczyk, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Limited proteolysis coupled to mass spectrometry (LiP-MS) is a peptide-centric conformational proteomics approach during which a brief incubation with a non-specific protease (e.g., proteinase K) under native conditions generates structural fingerprints that report on treatment-induced conformational changes, which is followed by a tryptic digest under denaturing conditions allowing to read out these fingerprints. In contrast, the recently introduced peptide-centric local stability assay (PELSA) uses a high trypsin-to-substrate ratio under native conditions to release fully tryptic peptides that reflect structural stability upon ligand binding. In their paper, Li et al. compared PELSA and LiP-MS across several benchmarks and reported that PELSA exhibited quantitative sensitivity comparable to or exceeding LiP-MS. Notably, PELSA quantified a 21-fold greater rapamycin-induced change for FKBP1A compared to LiP-MS. Because such claims influence method selection for conformational proteomics, we reanalyzed the publicly deposited datasets underlying these comparisons and assessed the experimental and analytical choices that contributed to the reported effect sizes. Our evaluation indicates that the reported 21-fold difference arises from non-matched experimental conditions and undisclosed data imputation, and that conclusions regarding quantitative superiority or biological interpretability should therefore be treated with caution.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713688v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Preclinical antibody discovery relies on progressive screening and down-selection of candidate antibodies from large immune repertoires, yet this critical process is poorly represented in existing public databases. Here we introduce KyDab (Kymouse Antibody Database), a well-curated database of antibody discovery selection data generated using standardized workflows on the Kymouse humanized mouse platform. The current release includes 11 Kymouse platform mice immunisation studies covering 51 immunogens, more than 120,000 paired heavy-light chain sequences, and binding measurements for a selected subset of experimentally characterized clones. By capturing full-funnel selection data with consistent metadata and both positive and negative experimental outcomes, KyDab provides a valuable data resource for the development and evaluation of artificial intelligence models for antibody discovery. KyDab is accessible https://kydab.naturalantibody.com, and the database will be continuously updated as new datasets become available.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.713450v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">FoundedPBI: Using Genomic Foundation Models to predict Phage-Bacterium Interactions</h2>
-<p class="paper-authors">Carrillo Barrera, P., Babey, A., Pena, C. A.</p>
+<h2 class="paper-title">Teaching Diffusion Models Physics: Reinforcement Learning for Physically Valid Diffusion-Based Docking</h2>
+<p class="paper-authors">Broster, J. H., Popovic, B., +2 authors, Imrie, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The scalability of phage therapy as a viable alternative or complement to antibiotics is limited by the labor-intensive experimental screening required to identify compatible phage-bacterium pairs. To accelerate this discovery process, we propose FoundedPBI, an ensemble deep learning approach that leverages the emergent capabilities of genomic foundation models, large language models pre-trained on vast DNA corpuses to predict phage-bacterium interactions from DNA sequences alone. We employ an ensemble strategy that aggregates outputs from three state-of-the-art DNA language models into a unified meta-embedding, which is then processed by a neural classifier. Our approach makes two key contributions: (1) We demonstrate that performing ensemble learning across models trained on different genomic data i.e., prokaryotic (Nucleotide Transformer v2, DNABERT-2) and bacteriophage (MegaDNA) genomes, captures partially-orthogonal biological signals, yielding 6% F1-score improvement over the best individual model. (2) We adapt long-context NLP aggregation strategies to handle whole bacterial and phage genomes (up to 5M base pairs) that exceed the foundation models context windows (12-96K bp) by a factor of 50-100, a critical challenge largely unaddressed in prior genomic deep learning work. On the PredPHI benchmark, FoundedPBI achieves a 76% F1-score outperforming the current state-of-the-art (PBIP) by 7%. On our internal dataset (CI4CB), we achieve 93% F1-score, improving our previous best methods by 4%. These results demonstrate that ensemble learning with proper long-context handling enables effective knowledge transfer of genomic foundation models to specialized prediction tasks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713871v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Molecular docking aims to predict the binding conformation of a small molecule to its protein target. Recent work has proposed diffusion models for this task, from rigid-body docking that diffuses over ligand degrees of freedom to co-folding approaches that jointly generate protein structure and ligand pose. However, diffusion-based docking models have been shown to frequently produce physically implausible poses and fail to consistently recover key protein-ligand interactions. To address this, we introduce a reinforcement learning framework for training diffusion-based docking models directly on non-differentiable objectives. Fine-tuning DiffDock-Pocket for physical validity with our approach substantially increases the number of generated poses that are physically valid and interaction-preserving, with no increase in inference-time compute. Importantly, this comes without sacrificing structural accuracy; in fact, our approach increases the proportion of structures with near-native poses. These effects are most pronounced for protein targets that are dissimilar to the training data. Our fine-tuned DiffDock-Pocket model outperforms both classical docking algorithms and machine learning-based approaches on the PoseBusters set. Our results demonstrate that reinforcement learning can teach diffusion-based docking models to better respect physical constraints and recover key interactions, without the requirement to rely on inference-time corrections.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714128v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">GraphHDBSCAN*: Graph-based Hierarchical Clustering on High Dimensional Single-cell RNA Sequencing Data</h2>
-<p class="paper-authors">Ghoreishi, S. A., Szmigiel, A. W., +3 authors, Campello, R. J. G. B.</p>
+<h2 class="paper-title">SAPTICoN, a robust no-code pipeline to analyze  single cell transcriptomics data sets</h2>
+<p class="paper-authors">Pichot, C., Verdenaud, M., +3 authors, Hilson, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA sequencing (scRNA-seq) is widely used to resolve cellular heterogeneity across thousands to millions of cells. A major challenge is to identify biologically meaningful cell populations while preserving their hierarchical organization, because broad cell types frequently split into more specialized subtypes. However, state-of-the-art approaches mostly focus on flat partitions and ignore the hierarchical structure of single-cell data. Here we introduce GraphHDBSCAN*, a graph-based, hyperparameter-free extension of HDBSCAN* that performs hierarchical density-based clustering on a graph representation of the data, enabling robust recovery of both single-level and hierarchical relationships in high-dimensional and sparse datasets. We evaluate GraphHDBSCAN* across multiple scRNA-seq datasets and show that it recovers biologically meaningful hierarchies that reveal fine-grained structure in complex data, including monocyte subpopulations. In addition, the method yields high-quality flat partitions that outperform widely used community-detection methods.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713924v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell transcriptomic (SCT) analysis is essential for resolving cellular heterogeneity and uncovering the molecular foundations of development, physiology, and environmental responses. Despite its increasing importance, robust, reproducible, and broadly applicable SCT analytical tools remain largely restricted to well-annotated animal systems. This limitation poses significant challenges for biologists working on non-model species and poorly characterized tissues, where gene annotation is sparse and computational expertise is often limited. We developed a stable, end-to-end SCT analysis pipeline designed to be accessible to biologists with little training in bioinformatics and applicable to species and tissues with limited genomic annotation. Built on the Seurat framework and complemented with additional tools, the pipeline supports any organism by automatically generating R-compatible annotation packages from basic genome files. It integrates standardized workflows for data preprocessing, quality control, clustering, biomarker identification, and gene set enrichment analysis within a fixed Snakemake framework, ensuring high reproducibility. By minimizing coding requirements, the pipeline enables rigorous, biologically informed SCT analyses across diverse experimental systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714156v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Is metabolism spatially optimized? Structural modeling of consecutive enzyme pairs reveals no evidence for spatial optimization of catalytic site proximity.</h2>
-<p class="paper-authors">Algorta, J., Walther, D.</p>
+<h2 class="paper-title">Horse, not zebra: accounting for lineage abundance in maximum likelihood phylogenetics</h2>
+<p class="paper-authors">De Maio, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metabolic pathways are often hypothesized to benefit from the spatial organization of enzymes, facilitating substrate transfer through mechanisms such as metabolic channeling or metabolon formation. However, it remains unclear whether the spatial proximity of catalytic sites represents a general organizational principle of metabolism or is restricted to specific pathways. Here, we investigate whether consecutive enzymes in metabolic pathways, when physically interacting, exhibit structurally optimized arrangements that minimize distances between their catalytic sites, thereby increasing metabolite transfer efficiency from one enzyme to the next. We first evaluated the ability of current protein-protein interaction prediction methods, including AlphaFold2, AlphaFold3, ESMFold, and HDOCK, to model weak and transient interactions using a benchmark dataset of 112 low-affinity protein dimers from PDBbind. AlphaFold-based approaches performed best in recovering correct interaction geometries, while ESMFold showed limited performance. We further assessed several confidence metrics and identified ipTM, ipSAE, and VoroIF-GNN as the most informative predictors of correct interaction conformations. In addition to simple Euclidean distance metrics, we developed a computational procedure to estimate shortest accessible space paths between catalytic sites in predicted enzyme-enzyme complexes. Applying this framework to 107 consecutive enzyme pairs in E. coli revealed an increased tendency for consecutive enzymes to interact, but no systematic evidence that interacting enzymes position their catalytic sites in spatially optimized configurations. In the predicted complex conformations, catalytic sites tend not to be positioned closer than expected at random. The developed computational workflow provides a general framework for analyzing structural aspects of metabolic organization.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713955v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Maximum likelihood phylogenetic methods are popular approaches for estimating evolutionary histories. These methods do not assume prior hypotheses regarding the shape of the phylogenetic tree, and this lack of prior assumptions can be useful in particular in case of idiosyncratic sampling patterns. For example, the rate at which species are sequenced can differ widely between lineages, with lineages more of interest to humans being usually sequenced more often than others. However, in some settings sampling can be lineage-agnostic. In genomic epidemiology, for example, the sequencing rate can change through time or across locations, but is often agnostic to the specific pathogen strain being sequenced. In this scenario, one expects that the abundance of a pathogen strain at a specific time and location in the host population is reflected in the relative abundance of that strain among the genomes sequenced at that time and location. Here, I show that this simple assumption, when appropriate and incorporated within maximum likelihood phylogenetics, can greatly improve the accuracy of phylogenetic inference. This is similar to the famous medical principle ``when you hear hoofbeats, think of horses, not zebras''. In our application this means that, when for example observing a (possibly incomplete) genome sequence that has a similar likelihood of belonging to multiple different strains, I aim to prioritize phylogenetic placement onto a common strain (the "horse", a common disease) rather than a rare one (the "zebra", a rare disease). I introduce and assess two separate approaches to achieve this. The first approach rescales the likelihood of a phylogenetic tree by the number of distinct binary topologies obtainable by arbitrarily resolving multifurcations in the tree. This approach is based on a new interpretation of multifurcating phylogenetic trees particularly relevant at low divergence: multifurcations represent a lack of signal for resolving the bifurcating topology rather than an instantaneous multifurcating event, and so a multifurcating tree is interpreted as the set of bifurcating trees consistent with the multifurcating one, rather than as a single multifurcating topology. The second approach instead includes a tree prior that assumes that genomes are sequenced at a rate proportional to their abundance. Both approaches favor phylogenetic placement at abundant lineages, and using simulations I show that both methods dramatically improve the accuracy of phylogenetic inference in scenarios like SARS-CoV-2 phylogenetics, where large multifurcations are common. This considerable impact is also observed in real pandemic-scale SARS-CoV-2 genome data, where accounting for lineage prevalence reduces phylogenetic uncertainty by around one order of magnitude. Both approaches were implemented as part of the free and open source phylogenetic software MAPLE v0.7.5.4 https://github.com/NicolaDM/MAPLE.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714173v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Self-supervised learning for a gene program-centric view of cell states</h2>
-<p class="paper-authors">Moullet, M., Isobe, T., +39 authors, Lotfollahi, M.</p>
+<h2 class="paper-title">Why phylogenies compress so well: combinatorial guarantees under the Infinite Sites Model</h2>
+<p class="paper-authors">Hendrychova, V., Brinda, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell omics has extended the biological interrogation of cell state from examining the expression of individual genes to unbiased profiling of tens of thousands of genes at once. However, extracting biological insights from such high-dimensional data remains challenging. To enable downstream analyses, many computational approaches compress cell state into a single latent representation. This can obscure the structure of underlying gene programs (GP), defined as coordinated sets of biologically related genes, such as signalling pathway response modules or transcription factor targets. Here, we present Tripso, a self-supervised transformer deep learning model which learns multiple GP-specific embeddings from predefined GPs, while also enabling the discovery of novel, data-driven GPs. Tripso facilitates principled comparisons across development, disease, and experimental systems. Firstly, in a dataset of human hematopoietic cells spanning prenatal development through adulthood and aging and including newly generated data, Tripso resolved age-specific GP patterns, including elevated JAK-STAT activity in pediatric hematopoietic cells and postnatal shifts in IKZF1 GP activity during B cell differentiation. Secondly, leveraging Tripso GP embeddings and comparing in vivo to in vitro data, we hypothesized and experimentally validated that inhibition of the SEC61 translocon improved maintenance of hematopoietic stem cells in culture. Finally, Tripso's capacity for data-driven GP discovery revealed a previously uncharacterized tissue-resident memory T cell GP with increased activity in atopic dermatitis. Its spatial co-localization with sebaceous gland-associated immune niches was demonstrated in spatial transcriptomic and proteomic data. Thus, by moving beyond single embeddings of cellular states, Tripso enables interpretable and actionable discoveries, demonstrating how GP-centric modelling can generate hypotheses with substantial biomedical relevance. By anchoring cellular representations in meaningful GPs, Tripso establishes a principled and biologically grounded framework towards the development of interpretable virtual cell models.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713961v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> One important question in bacterial genomics is how to represent and search modern million-genome collections at scale. Phylogenetic compression effectively addresses this by guiding compression and search via evolutionary history, and many related methods similarly rely on tree- and ordering-based heuristics that leverage the same underlying phylogenetic signal. Yet, the mathematical principles underlying phylogenetic compression remain little understood. Here, we introduce the first formal framework to model phylogenetic compression mechanisms. We study genome collections represented as RLE-compressed SNP, k-mer, unitig, and uniq-row matrices and formulate compression as an optimization problem over genome orderings. We prove that while the problem is NP-hard for arbitrary data, for genomes following the Infinite Sites Model it becomes optimally solvable in polynomial time via Neighbor Joining (NJ). Finally, we experimentally validate the model's predictions with real bacterial datasets using an exact Traveling Salesperson Problem (TSP). We demonstrate that, despite numerous simplifying assumptions, NJ orderings achieve near-optimal compression across dataset types, representations, and k-mer ranges. Altogether, these results explain the mathematical principles underlying the efficacy of phylogenetic compression and, more generally, the success of tree-based compression and indexing heuristics across bacterial genomics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.18.712055v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,34 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Emergent Biological Realism in RL-Trained DNA Language Models</h2>
-<p class="paper-authors">Thiel, M., Cunningham, A., Barnes, C. P.</p>
+<h2 class="paper-title">MEIsensor: a deep-learning method for mobile element insertion discovery</h2>
+<p class="paper-authors">Wang, Y., Zhang, P., +6 authors, Yang, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Reinforcement learning has driven the mass adoption of large language models by unlocking unexpected capabilities, yet this approach remains largely underexplored for generative DNA models. We investigate whether similar post-training techniques can induce emergent biological realism in DNA language models, using plasmid generation as a testbed due to plasmids' relative simplicity, well-characterized functional constraints, and ubiquity in biotechnology. Using Group Relative Policy Optimization with a reward function based on constraints from engineered biology, our model achieves a 77% quality control pass rate compared to 5% for the pretrained baseline. Remarkably, beyond explicitly optimized features, the model exhibits surprising biological parallels: generated sequences match natural plasmids in thermodynamic stability, codon usage patterns, and ORF length distributions, properties not explicitly optimized in the reward function. These results suggest that RL post-training can steer DNA language models toward biologically coherent regions of sequence space, analogous to how such techniques unlock unexpected capabilities in natural language models, particularly in verifiable domains.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713963v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Mar 26, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">OPTIMIS: Optimizing Personalized Therapies through Integrated Multiscale Intelligent Simulation</h2>
-<p class="paper-authors">Su, Z., Wu, Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Controlling complex biological systems across multiple scales remains a major challenge in computational medicine, because whole-body disease behavior is closely shaped by noisy cellular events at much smaller scales. Standard deterministic models often miss this molecular variability, while fully stochastic simulations are too slow for the repeated, high-throughput interactions needed to train artificial intelligence. To address this problem, we developed a new AI-based framework that combines a discrete stochastic Gillespie algorithm for microscale receptor dynamics with continuous, nonlinear ordinary differential equations for systemic macroscale behavior. To reach the speed needed for deep reinforcement learning (RL), we compress this hybrid system into a differentiable Neural ODE surrogate that acts as a fast digital twin. As a proof of concept, we applied this framework to engineered cellular therapy and used RL agents to learn dynamic, closed-loop treatment policies inside the surrogate environment. By tracking microscopic, unpredictable cellular activity as an early-warning signal, the AI learned to continuously adjust the drug dose-anticipating and stopping dangerous immune reactions before they could spiral out of control. This computational advance improved successful control rates to more than 70% in highly unstable simulated phenotypes and provides a practical, general framework for adaptive intervention in multiscale biological systems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713941v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Mobile element insertions (MEIs) are a critical source of structural variation in the human genome, yet their accurate detection remains challenging, particularly within repetitive regions and for structurally complex insertions. While long-read sequencing enables the direct recovery of inserted sequences, current analytical pipelines rely heavily on repeat-library alignment, which can limit both computational efficiency and accuracy. Here, we present MEIsensor, a deep learning framework designed to detect and classify MEIs directly from long-read sequencing data. Unlike conventional methodologies, MEIsensor performs direct, sequence-based annotation of Alu, LINE1, and SVA insertions. Evaluated against HGSVC benchmarks using HiFi long-read datasets, MEIsensor consistently outperformed existing tools across major MEI classes while substantially improving computational efficiency, demonstrating particularly pronounced gains for structurally complex SVA insertions. Furthermore, manual curation confirmed that MEIsensor successfully identifies MEIs hidden in highly repetitive genomic regions, including centromeric higher-order repeats, that were previously absent from benchmark datasets. Together, these advancements establish MEIsensor as an efficient framework for MEI analysis that promises to significantly advance our understanding of human genomic architecture and evolution.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714113v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Mitochondrial protein translation is a heightened dependence and therapeutic vulnerability of chemo-refractory triple negative breast cancer</h2>
-<p class="paper-authors">Berner, M. J., Wall, S. W., +10 authors, Echeverria, G. V.</p>
+<h2 class="paper-title">Targeting 3-mercaptopyruvate sulfurtransferase induces cancer stem cell death</h2>
+<p class="paper-authors">Ascencao, K., Oravecz, O., Szabo, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Triple negative breast cancer (TNBC) patients harboring residual cancer burden following completion of conventional neoadjuvant chemo-immunotherapy regimens have poor relapse-free and overall survival rates despite recent advances in immunotherapies and antibody drug conjugates. We and others have demonstrated the requirement of mitochondrial function for survival of chemo-refractory TNBC, as well as its pervasive association with chemoresistance in human and patient-derived xenograft (PDX) cohorts. We sought to gain new mechanistic insights into the mitochondrial vulnerability of TNBC. Analyses of human and PDX mass spectrometry proteomics datasets revealed that mitochondrial protein translation-related signatures were among the topmost significantly associated with chemoresistance. Those signatures encompassed many core mitoribosome components as well as the mitoribosome accessory protein, Oxidase (Cytochrome C) Assembly 1-Like (OXA1L), which was consistently enriched in chemoresistant versus chemosensitive TNBCs across datasets. OXA1L, while not yet characterized in cancer, has been reported to be crucial for the termination of translation of the 13 mtDNA-encoded electron transport chain (ETC) proteins and for the insertion of those proteins, as well as nDNA-encoded ETC proteins, into the inner mitochondrial membrane. Together, those functions are crucial for the proper formation and function of the ETC. Therefore, we hypothesized that mitochondrial translation supported by OXA1L promotes mitochondrial dependence and chemoresistance in TNBC. Knockdown of OXA1L in human TNBC cells reduced ETC protein levels, mitochondrial respirasome supercomplex levels, ATP production, and oxidative phosphorylation (oxphos). Of note, OXA1L was required for the characteristic oxphos elevation induced by carboplatin (CRB), and KD significantly enhanced CRB sensitivity. To explore the translational potential of targeting the mitoribosome in TNBC, we leveraged the bacterial ancestry of mitochondria to repurpose the FDA-approved antibiotic tigecycline (TIG) as a chemo-sensitizing drug based on its mitoribosome inhibitory function. Direct measurement of mitochondrial nascent peptide levels revealed that, while CRB elevated mitochondrial translation, TIG potently diminished mitochondrial translation as monotherapy and combined with CRB or DTX. Further, TIG abolished CRB-induced oxphos, decreased oxphos in combination with DTX, and significantly improved sensitivity to chemotherapies in human TNBC cell lines, PDX-derived spheroids, and in an in vivo PDX trial. These findings identify OXA1L-dependent mitochondrial translation and ETC formation as critical determinants of mitochondrial function that support TNBC chemoresistance, laying the groundwork for further exploration of the clinical potential of repurposed antibiotics for TNBC.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.23.712647v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> 3-mercaptopyruvate sulfurtransferase (3-MST) is a mammalian enzyme that contributes to hydrogen sulfide and reactive sulfur species generation. Here we show that 3-MST is markedly upregulated in colorectal cancer stem cells (CSCs) and functions as a critical metabolic support mechanism for this therapy-resistant tumor cell population. CSCs exhibit low proliferation rate, high membrane rigidity and a metabolically restrained phenotype characterized by low oxidative phosphorylation rate, combined with a reduced rate of glycolysis. Genetic or pharmacological inhibition of 3-MST further suppresses cellular bioenergetics in CSCs, and this bioenergetic collapse impairs CSC proliferation, spheroid formation, migration and promotes cell death and attenuates tumor growth. Integrated transcriptomic, proteomic, metabolomic, and lipidomic analyses reveal extensive metabolic remodeling of the CSCs following 3-MST inhibition, including disruption of the glycolysis-TCA axis and marked remodeling of membrane lipid composition, including enrichment of ceramides and sphingolipids and increased incorporation of polyunsaturated phospholipids, resulting in increased membrane fluidity. 3-MST inhibition induced an activation of integrated stress pathways, proteotoxic stress responses and inflammatory signaling, linking the metabolic failure of CSCs to the induction of mixed-mode cell death. These findings identify 3-MST as a metabolic vulnerability in colorectal CSCs. Targeting this enzyme may be a translatable strategy to eliminate therapy-resistant tumor stem cell populations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714276v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +222,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Cell-of-Origin, not Oncogenic Effect, Determines esmoplastic Immune Exclusion in KRAS-Driven Liver Cancer</h2>
-<p class="paper-authors">Liu, C.-S., Wu, Y.-L., +18 authors, Dill, M. T.</p>
+<h2 class="paper-title">Suppression of de novo lipogenesis and dietary PUFA supplementation inhibit prostate cancer progression</h2>
+<p class="paper-authors">Rodrigues, S. D., Fidalgo Ribeiro, C., +16 authors, Loda, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Intrahepatic cholangiocarcinoma (iCCA) and hepatocellular carcinoma (HCC) are the two most common primary liver cancers and share common risk factors. Yet they exhibit distinct oncogenic driver landscapes and fundamentally different tumor microenvironments (TME), with iCCA characterised by dense desmoplastic stroma that limits therapeutic efficacy. Whether these differences reflect oncogenic context or the developmental lineage of the cancer cell has remained unresolved. Here, using syngeneic orthotopic murine models derived from CRISPR-engineered cholangiocyte and hepatocyte organoids each carrying Trp53 deletion and KrasG12D mutation, we show that cell-of-origin, not oncogenic pathway activation, is the dominant determinant of TME architecture. Spatial proteomics of [~]390,000 cells reveals that cholangiocyte-derived tumors develop a stromal barrier of peripherally enriched SMA+ cancer-associated fibroblasts (CAFs) that physically excludes immune cells and elevates PD-1/PD-L1 engagement, whereas hepatocyte derived tumors permit broader immune infiltration. Transcriptional variance partitioning confirms lineage as the primary source of gene expression divergence. Integrating murine and human transcriptomic and secretomic datasets, we identify LAMC2 and uPA as cholangiocyte lineage-specific secreted factors that trigger CAF activation. Genetic deletion of either factor markedly impairs iCCA formation in vivo. These findings establish that lineage-encoded secretory programmes create a desmoplastic and immune-excluded stroma and identify LAMC2 and uPA as functionally relevant modulators of TME in KRAS-driven iCCA.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.711280v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Prostate cancer progression is characterized by dysregulated lipid metabolism, with fatty acid synthase (FASN), the rate-limiting step in de novo lipogenesis (DNL), resulting in significant accumulation of saturated lipids. Here, we investigate whether pharmacologic FASN inhibition creates a metabolic state that increases reliance on exogenous polyunsaturated fatty acids (PUFAs). Inhibition of FASN profoundly alters membrane phospholipid composition, driving compensatory incorporation of PUFAs into membrane phospholipids, thus increasing susceptibility to lipid peroxidation and oxidative damage. Combined FASN inhibition and PUFA exposure increased reactive oxygen species, induced mitochondrial hyperpolarization, and enhanced lipid peroxidation in both hormone-sensitive and castration-resistant prostate cancer models. Marked inhibition of human and murine prostate cancer organoids is achieved ex vivo. In genetically engineered, DNL-reliant HiMyc mice, a diet enriched in PUFAs significantly inhibited invasive carcinoma compared to a saturated fat-enriched diet. Environmental PUFAs modulate and enhance the therapeutic efficacy of FASN-targeted strategies. These findings set the stage for pharmacologic and dietary intervention in prostate cancer patients.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714193v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -260,15 +241,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Quantitative imaging of schwannoma captures heterogeneity and accelerates preclinical testing, revealing distinct impacts of targeted therapies</h2>
-<p class="paper-authors">Wright, E., Vitte, J., +9 authors, McClatchey, A.</p>
+<h2 class="paper-title">Tumor Heterogeneity Induces Pro- and Anti-metastatic Myeloid Cell Phenotypes in Breast Cancer Lung Metastasis</h2>
+<p class="paper-authors">Superville, D. A., Chrenkova, E., +7 authors, Winkler, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Schwannomas are debilitating hallmarks of familial schwannomatoses and common sporadic tumors that form on spinal and cranial nerves. Drug-based therapies for schwannoma are desperately needed but their development has been extremely slow and disappointing, impeded particularly by the poorly understood and surprisingly complex and heterogeneous biology of schwannomas, and by the inefficient use of physiologically relevant in vivo preclinical models. We have addressed these gaps by developing a quantitative imaging-centered workflow that allows both a deep analysis of schwannoma development and accelerated preclinical testing in a widely used genetically engineered mouse model of neurofibromatosis type 2-related schwannomatosis (NF2-SWN). We deployed our workflow to study schwannoma development and to test two clinically relevant drugs (rapamycin and brigatinib) head-to-head. Our results uncovered the very early onset of heterogeneity and macrophage recruitment to initiating schwannomas, and the unexpectedly distinct impacts of the two drugs on both, highlighting the value of the pipeline for rapid, innovative future drug-testing.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.714069v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Metastasis is a major cause of cancer-related mortality, yet targeting metastatic cells directly has been largely unsuccessful due to their plasticity and heterogeneity. Myeloid cells play diverse pro- and anti-metastatic functions and are an attractive alternative target for treating metastasis, but how tumor heterogeneity influences myeloid cell phenotypes during metastasis remains poorly understood. Here, we profiled myeloid cells from primary tumors and matched metastatic lungs of 12 heterogeneous and differentially metastatic patient-derived xenograft models of breast cancer. Comparative analysis of cell type abundances revealed distinct myeloid remodeling specific to primary tumors or metastatic lungs. Beyond compositional differences, we identified gene expression programs that were associated with metastatic burden, such as number or size of metastatic nodules, indicating distinct microenvironmental requirements for metastatic seeding and outgrowth. Examining these metastasis-associated programs using time-course datasets, we discovered an evolution from anti- to pro-metastatic monocyte phenotypes during metastatic progression. We further showed that this phenotypic shift was driven by an increase in two distinct myeloid-derived suppressor cell signatures, and a transcriptionally regulated impairment of monocyte differentiation leading to the depletion of non-classical monocytes. Our results comprehensively dissect the heterogeneity of myeloid cell phenotypes across primary tumor and metastatic sites, opening novel avenues for myeloid-targeting therapies specific to metastasis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.27.714678v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -279,15 +260,53 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PATIENT-DERIVED ORGANOIDS CAPTURE HISTOLOGICAL, MOLECULAR AND THERAPEUTIC HETEROGENEITY IN PHARYNGEAL AND LARYNGEAL SQUAMOUS CELL CARCINOMAS</h2>
-<p class="paper-authors">Alvarez-Gonzalez, M., Pozo-Agundo, E., de Luxan-Delgado, B., +16 authors, Alvarez-Fernandez, M.</p>
+<h2 class="paper-title">Role of a childhood cancer-linked BRIP1/FANCJ germline variant in genomic instability and cancer cell vulnerability</h2>
+<p class="paper-authors">Hofmann, T. G., Kuhlen, M., +5 authors, Anand, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.713954v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Childhood cancer is frequently associated with inherited pathogenic variants of cancer predisposition genes. Using Whole-Exome Sequencing, we identified an inherited, monoallelic pediatric cancer-linked germline variant of DNA helicase FANCJ/BRIP1, BRIP1 R162Q of unclear clinical significance. Intriguingly, in vitro helicase assays demonstrated that BRIP1 R162Q encodes a hyperactive DNA helicase. In cells, stable expression of BRIP1 R162Q in BRIP1- proficient cells selectively sensitized to ectopic DNA replication stress. Moreover, BRIP1 R162Q expressing cells showed chronic, steady-state activation of DNA replication stress indicated by decreased fork speed, fork stalling and impaired fork symmetry. Moreover, BRIP1 R162Q expression triggered genomic instability indicated by elevated gH2AX foci numbers and chromosomal aberrations, suggesting BRIP1 R162Q as a variant driving genomic instability. Mechanistically, BRIP1 R162Q mislocalizes upon replication stress, and leads to accumulation of DNA secondary G-quadruplex (G4) structures and R-loops. RNaseH1 expression, which resolves R-loops, also reduced G4 levels and relieved BRIP1R162Q-induced replication stress. Finally, BRIP1 R162Q introduces exploitable vulnerabilities for targeted therapies using G4-ligand Pyridostatin and DNA damage kinase ATR and DNA-PK inhibition. Our findings propose a mechanistic framework of how a childhood cancer-linked monoallic, hypermorphic BRIP1 germline variant participates in cancer development, and suggest potential therapeutic treatment strategies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.24.714005v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Mar 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Extracellular Vesicles from Senescent Tumor Cells Are Necessary and Sufficient to Drive Paracrine Senescence</h2>
+<p class="paper-authors">Estevez-Souto, V., Miralles-Dominguez, A., +18 authors, Da Silva-Alvarez, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cellular senescence exerts powerful non-cell autonomous effects through the senescence-associated secretory phenotype (SASP). This SASP comprises soluble factors and extracellular vesicles (EVs). Although soluble SASP components can induce senescence in neigbouring cells, the specific contribution of EVs to paracrine senescence is poorly defined. Here, we show that EVs released by senescent tumor cells are necessary and sufficient to propagate senescence. Conditioned media from bleomycin-induced senescent A549 cells triggered a permanent growth arrest with morphological changes and upregulation of senescence markers in recipient tumor cells. Pharmacological inhibition of EV biogenesis using GW4869 or genetic downregulation of the EV secretion mediator RAB27A markedly attenuates paracrine senescence without affecting soluble SASP factor secretion or the senescent state of producer cells. Proteomic characterization reveals that senescent EVs exhibit a distinct molecular signature enriched for extracellular components and processes related to wound healing and hemostasis. Importantly, purified senescent EVs, devoid of soluble SASP factors, fully recapitulated paracrine senescence induction. These findings identify senescent EVs as key autonomous SASP effectors and highlight vesicular pathways as potential therapeutic targets in cancer and therapy-induced senescence.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.713920v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Mar 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Cancer resistance to therapy by tissue-level homeostatic feedback</h2>
+<p class="paper-authors">Somer, J., Straussman, R., +1 author, Mannor, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cancer displays remarkable robustness, exemplified by its ability to develop resistance to virtually every therapy. Resistance has traditionally been explained by clonal selection of pre-existing mutations, but there is now abundant evidence for resistance by non-genetic pathways including signals from normal stromal and immune cells. It is largely unclear why normal cells help cancer cells overcome treatment. We propose that physiological circuits responsible for tissue homeostasis can explain why cells cooperate to produce pathological resistance to therapy. To show this, we construct mathematical models of physiological dynamics. We then simulate cancer treatments within the context of a functioning tissue. We find that classic examples of resistance to therapy can be explained by homeostatic feedback regulation - including BRAF inhibitors in melanoma and anti-angiogenic therapy. The homeostatic theory of resistance (HTOR) reframes resistance as a byproduct of tissue robustness, rather than solely tumor-specific adaptation. Finally, we analyze two large-scale single-cell RNAseq databases of normal and cancer samples: the Tabula Sapiens1 and the Curated Cancer Atlas2. We show that in multiple cancers (breast, colon, kidney, liver, lung, ovary, prostate, and skin), malignant cells preserve their tissue-specific homeostatic cell-signaling. We thus expect the robust feedback loops from healthy tissues to play a role in cancer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.25.714177v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -298,15 +317,72 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 26, 2026</span>
+<span class="date">Mar 27, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Development and validation of a highly accurate multigene gene expression biomarker to predict chemotherapy response in primary triple-negative breast cancer.</h2>
-<p class="paper-authors">Soukaina Amniouel, Mohsin Saleet Jafri</p>
+<h2 class="paper-title">Artificial Intelligence and Multiomics Beyond PSA Screening in African and Middle Eastern Prostate Cancer Patients.</h2>
+<p class="paper-authors">Rula Al-Shahrabi, Omer S Alkhnbashi, +3 authors, Zainab Al Shareef</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Triple-negative breast cancer (TNBC) is an aggressive subtype lacking estrogen and progesterone receptors and HER2 amplification. Representing 10-15% of breast cancer cases, TNBC disproportionately affects Black and pre-menopausal women and is associated with poorer outcomes. With chemotherapy as the primary systemic treatment option, achieving a pathological complete response (pCR) to neoadjuvant chemotherapy (NAC) is a key prognostic factor. However, TNBC biological heterogeneity complicates treatment response prediction. This study aimed to identify transcriptomic biomarkers predictive of NAC response in TNBC patients and evaluate machine-learning models for response classification.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41885969/" target="_blank">
+<p><strong>Abstract:</strong> Prostate cancer (PCa) remains a major global health burden, with incidence rising as populations age. The molecular, histological, and patient-specific heterogeneity of PCa underscores the urgent need for advanced strategies to improve detection and risk stratification. This review highlights how multiomics integration, including transcriptomics, DNA methylation, proteomics, and metabolomics, combined with artificial intelligence (AI), can validate biological mechanisms across molecular layers, thereby enhancing diagnostic reliability and biological relevance. While prostate-specific antigen (PSA) testing has significantly shaped PCa epidemiology, its limited specificity and sensitivity have led to widespread overdiagnosis and overtreatment, particularly of indolent tumors. These limitations are especially pronounced in underrepresented populations, notably men of African descent and those in the Middle East and North Africa (MENA) region, where PSA-based screening demonstrates reduced effectiveness. Despite advances in biomarker discovery, current datasets lack sufficient ethnic and regional diversity, raising concerns about the clinical validity and equity of AI-driven models. We argue that equitable precision oncology requires not only technological innovation but also the development of inclusive, demographically representative datasets. This review offers a forward-looking perspective on advancing PCa screening and stratification beyond PSA, with a particular emphasis on addressing the unmet clinical needs of African and Middle Eastern patients.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41894385/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Mar 27, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">IGH::FENDRR and specific KRAS mutations define a novel B-ALL molecular subtype with poor chemotherapy response.</h2>
+<p class="paper-authors">Sonja Bendig, Alina M Hartmann, +25 authors, Lorenz Bastian</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Large scale sequencing efforts have defined up to 27 diagnostic entities in B-ALL, leaving few samples without subtype assignment. Extended genomic and transcriptomic profiling in routine diagnostics broadens the sample collection and holds the potential to identify novel B-ALL subtypes. By analyzing an aggregated set of 4,857 B-ALL patients from three cohorts, we identified a novel group of twenty cases (age 18-66 years, median: 34 years) characterized by a previously undescribed IGH::FENDRR rearrangement exclusive to this subtype (n=17/20), KRAS p.A146T/V/P mutations (n=17/20 vs. n=86/4,857; p&lt;0.001) and distinct DNA-methylation/gene expression profiles, including overexpression of the lncRNA FENDRR and the transcription factor FOXF1 ('FOXF1/FENDRR') as well as JAK/STAT and RAS signaling signatures. A gene expression machine learning classifier identified FOXF1/FENDRR cases in two independent cohorts with high accuracy. Patients treated according to GMALL/GRAALL protocols showed very poor chemotherapy response with n=8/13 having induction failure or MRD ≥10-3 and n=8/12 remaining MRD positive after 1st consolidation / salvage. MRD-stratified intensification including blinatumomab (n=10) and/or allogenic stem cell transplantation (n=12) resulted in ongoing molecular remission in 13/16 cases. FOXF1/FENDRR patients represent a novel B-ALL subtype which might benefit from early immunotherapeutic treatment or targeted interventions.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41894249/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Mar 27, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">PTBD: a machine learning-based non-invasive diagnostic model for pulmonary tuberculosis using large-scale blood transcriptomes.</h2>
+<p class="paper-authors">Changchun Wu, Xueqin Xie, +5 authors, Jian Huang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate and rapid diagnosis is essential for controlling pulmonary tuberculosis (PTB) by enabling timely intervention and reducing disease transmission. Existing diagnostic methods for PTB are limited by sensitivity, specificity, or practicality.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41888771/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Mar 27, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Functional-based multi-omics early prediction of radiation pneumonitis in NSCLC using AI-generated perfusion and ventilation from planning CT.</h2>
+<p class="paper-authors">Zhao M, Peng T, +9 authors, Ren G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Objective.This study aims to develop a functional-based multi-omics model for early prediction of radiation pneumonitis (RP) by extracting radiomic and dosiomic features from functionally defined lung regions, using generated perfusion (Q) and ventilation (V) from pre-radiotherapy planning computed tomography (CT).Approach.We retrospectively analyzed data from 121 patients with locally advanced non-small cell lung cancer treated with curative-intent intensity-modulated radiotherapy between 2015 and 2019, including pre-treatment CT and dose maps. Q and V maps were generated from CT with deep learning-based and supervoxel-based approaches, respectively. Regions of interest (ROIs) combined the planning target volume with each of three functional lung regions-high functional lung (HFL), low functional lung, and whole lung (WL)-defined by thresholds on Q and V maps. Radiomic and dosiomic features were extracted from CT and dose distributions within each ROI. For each ROI, three methods-radiomics (R), dosiomics (D), and dual-omics (RD)-were constructed. 13 machine learning algorithms were trained and evaluated using 10-fold cross-validation, and model performance was assessed by the average area under the receiver operating characteristic curve (AUC), accuracy, precision, recall, andF1 score. RP was defined as CTCAE grade ⩾2.Main results.Of the 35 selected features, 20 were from HFL. In dual-omics models, using HFL features improved predictive performance for RP (AUC 0.879 ± 0.105) compared to WL (AUC 0.778 ± 0.100). In HFL, the RD method outperformed both R (AUC 0.786 ± 0.076) and D (AUC 0.791 ± 0.107) methods. Decision curve analysis showed the dual-omics model based on HFL provided the highest net benefit across threshold probabilities.Significance.This study is the first to systematically demonstrate that features extracted from CT-derived HFL capture important functional differences and provide strong predictive value for RP. Compared to conventional methods, integrating radiomics, dosiomics, and CT-based functional information further improves predictive performance.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41825133/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
