@@ -29,18 +29,18 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
+<span class="keyword">machine learning, cancer biology</span>
 <span class="date">Apr 02, 2026</span>
-<span class="journal">bioRxiv</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Aurora kinase A enables collective invasion and metastasis by endowing a leader cell phenotype and stabilizing Eplin-mediated cohesion with follower cells</h2>
-<p class="paper-authors">Zhou, B. P., Chu, T. L. H., +8 authors, Maxwell, C. A.</p>
+<h2 class="paper-title">ProVenTL: a transfer-learning framework for predicting peptide-protein interactions derived from snake venom for cancer therapeutics.</h2>
+<p class="paper-authors">Jeni Adhiva, Hanif Aditya Pradana, +9 authors, Respati Tri Swasono</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The metastatic process initiates with collective cell invasion into surrounding tissues and axillary nodes, and subsequent colonization at a distant site. Previously, we found collective invasion is augmented during the G2 cell cycle phase, facilitated through Aurora kinase A (AURKA)-mediated centrosome polarization in the leader cell. Here, we identify cell cycle-associated gene signatures as overrepresented in axilla and liver metastatic sites, with AURKA expression strongly correlated with breast cancer metastasis signatures, and pan-cancer patient survival. Then, we show GFP-AURKA expression endows breast epithelia cells with the ability to form metastatic outgrowths within immune-incompetent chicken embryos. Multi-parametric imaging of wound closure assays reveals phenotypes enabled by, and dependent upon AURKA expression. We discover leader cells express AURKA and acquire front-polarized centrosomes, which differentiates them from other cells in the migrating group. Ectopic expression of GFP-AURKA induces a leader cell phenotype. Conversely, inhibition of AURKA activity alters actin dynamics, promotes turnover of cell contacts, and reduces coordination within migrating groups. Specifically, AURKA interacts with the actin regulator EPLIN, and AURKA inhibition localizes EPLIN to lamellipodia and away from E-cadherin-positive contacts. Inhibiting these necessary roles for AURKA may provide a critical barrier against the metastatic spread of human breast carcinoma cells.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.31.715024v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate prediction of peptide-protein interactions (PepPI) is crucial for advancing peptide-based anticancer drug design. In this study, we introduce ProVenTL, a computer-aided molecular design framework that leverages transfer learning and protein language model embeddings to enhance PepPI prediction accuracy and interpretability. Two complementary strategies were explored: (i) fine-tuning a CAMP model pretrained on large-scale PepPI data from the Protein Data Bank (PDB) using a curated dataset of Calloselasma rhodostoma venom peptides and cancer-related proteins, and (ii) integrating ProtT5 embeddings with stacked autoencoder-deep neural networks (SAE-DNN) and TabNet classifiers. Models were comprehensively benchmarked against baseline configurations and representative deep-learning approaches using standard classification metrics, while biological relevance was evaluated through functional enrichment and pathway analysis of top-ranked predictions. Compared with baseline configurations and conventional deep-learning approaches, the ProtT5-based SAE-DNN model achieved the best performance (accuracy = 0.78; ROC-AUC = 0.86), demonstrating improved generalization capability on a small, domain-specific venom peptide dataset. The model identified key targets such as TRBC2, CD274, HIF1AN, PCSK9, and PLAU, which are associated with pathways involved in immune suppression, hypoxia regulation, lipid metabolism, and metastasis. This study highlights the utility of transfer learning and protein language models for PepPI prediction in data-limited scenarios and establishes a computational framework for prioritizing snake-venom-derived peptides for anticancer drug discovery and future experimental validation.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41925960/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -48,208 +48,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 02, 2026</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SSPSPredictor: A Sequence and Structure based Deep Learning Model for Predicting Phase-Separating Proteins</h2>
-<p class="paper-authors">Wang, T., Liao, S., +1 author, Zhang, Z.</p>
+<h2 class="paper-title">Multimodal AI-driven analysis in breast and lung cancer: insights from the OPTIMA prototyping workshop.</h2>
+<p class="paper-authors">Maryam Abdollahyan, Emanuela Gadaleta, +18 authors, Claude Chelala</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Liquid-liquid phase separation (LLPS) underlies the formation of biomolecular liquid condensates (also referred to membraneless organelles, MLOs), which are essential for spatially organizing various biochemical processes within cells.Proteins that play a key role in driving condensates formation are termed phase-separating proteins (PSPs).Given experimental identification of PSPs remains labor-intensive and time-consuming, multiple computational tools have been developed based on empirical features or deep learning. In this study, we propose SSPSPredictor, a novel multimodal predictive model for PSPs with folded or intrinsically disordered structures, leveraging the fusion of sequence information from a protein language model ESM-2 and structural insights from a graph neural network GVP. Compared with existing tools, SSPSPredictor achieves balanced performance in identifying endogenous PSPs, predicting relative LLPS propensities, and recognizing key regions that drive LLPS. Moreover, SSPSPredictor exhibits good interpretability in identifying driving regions along protein sequences, although no relevant supervision was provided during training. Further predictive analysis of the human proteome using SSPSPredictor reveals that the proportion of intrinsically disordered proteins (IDPs) undergoing LLPS is significantly higher than that of folded proteins. In addition, pathogenic variants, especially those located in disordered regions, exhibit higher LLPS propensity than other mutations, uncovering a link between LLPS and diseases at the amino acid level.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715224v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">ProteoPy: an AnnData-based framework for integrated proteomics analysis</h2>
-<p class="paper-authors">Fichtner, I. D., Temesvari-Nagy, L., +2 authors, Bludau, I.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Summary: ProteoPy is a lightweight Python library for protein- and peptide-level quantitative proteomics analysis, built around the AnnData class as its core data structure. It streamlines data import, preprocessing, and differential analysis while preserving all metadata within a single object. A reimplementation of our previously published COPF algorithm enables proteoform group inference directly from peptide-level data, facilitating the identification of proteoform-specific regulation and isoform usage. Designed for accessibility and flexibility, ProteoPy simplifies analysis for non-specialists and provides an extensible foundation for advanced proteomics workflows, seamlessly integrating with the scanpy and muon ecosystems for reproducible and scalable multi-omics analysis. Availability and implementation: ProteoPy is implemented in Python 3 and publicly available on GitHub: https://github.com/UKHD-NP/proteopy under the Apache 2.0 license. Contact: isabell.bludau@med.uni-heidelberg.de Supplementary information: Tutorial notebooks for ProteoPy are included as supplementary data and are also available on GitHub: https://github.com/UKHD-NP/proteopy/tree/main/docs/tutorials.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.31.715273v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">De novo design of a peptide ligand for specific affinity purification of human complement C1q</h2>
-<p class="paper-authors">Tsuchihashi, R., Kinoshita, M., Aino, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Affinity purification is a essential technique for isolating highly purified proteins; however, generating affinity ligands require significant time and financial investment. To address these limitations, this study proposes a novel affinity chromatography method utilizing in silico-designed cyclic peptides as ligands. Targeting Complement C1q (C1q), a plasma protein that plays crucial roles in classical complement pathway, we employed the biomolecular structure prediction model, AlphaFold2, to design specific binding cyclic peptides. Based on these designs, we synthesized lariat-type cyclic peptides characterized by disulfide cyclization and biotinylation, which were subsequently immobilized on streptavidin carriers. Performance tests confirmed that the resulting column specifically captured C1q, allowing for elution via a standard NaCl concentration gradient. Notably, high selectivity was preserved even in the presence of plasma, underscoring the ligand's practical robustness. By overcoming traditional constraints through (1) rapid and simple design, (2) high specificity, and (3) universal versatility without genetic modification, this de novo design strategy represents a potential breakthrough in protein purification technologies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.714096v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">The PhageExpressionAtlas reveals shared and unique transcriptional patterns across phage-host interactions</h2>
-<p class="paper-authors">Wolfram-Schauerte, M., Trust, C., +1 author, Nieselt, K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Time-resolved transcriptomic profiling has been used to study phage-host interactions for more than a decade. However, the resulting datasets are not readily accessible for custom re-analysis, and resources are lacking that provide standardized processing, storage, and analysis of transcriptomes from phage infections. Here, we present the PhageExpressionAtlas, the first bioinformatics resource for storing time-resolved dual RNA-sequencing data from phage infections. This data was processed uniformly using a custom analysis pipeline and is presented for interactive exploration through visualisation. The PhageExpressionAtlas currently hosts 42 datasets from 23 studies. Using the PhageExpressionAtlas, we replicate key findings from original publications and extend hypothesis testing across multiple phage-host systems. By systematically querying and analyzing the underlying database, we evaluate approaches to phage gene classification and show that uncharacterized phage genes are expressed across all infection phases. Moreover, we provide a comprehensive view of the expression dynamics of anti-phage defenses as well as host- and phage-encoded anti-defense systems in the infection context, indicating unique and conserved patterns of transcriptional regulation underlying bacterial anti-phage immunity and phage counter-strategies. Together, the PhageExpressionAtlas is a unifying resource that democratizes transcriptomics-driven analyses of phage-host interactions and supports integrative cross-study assessment.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715471v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Baktfold: Sensitive protein functional annotation across the microbial tree of life using structural information</h2>
-<p class="paper-authors">Bouras, G., Lim, S. w., +4 authors, Schwengers, O.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The functional annotation of protein sequences has undergone tremendous progress over recent years, but still too-many protein sequences remain as so-called hypothetical proteins after applying state-of-the-art genome annotation software pipelines. Here, we introduce Baktfold, a new command line software tool for the ultra-sensitive but taxon-independent fast annotation of protein sequences across the microbial tree of life. Baktfold conducts sequential protein structure-based searches against four complementary structure databases. Protein sequences are transformed into Foldseek 3Di tokens via the ProstT5 protein language model and subsequently searched against structure databases via Foldseek. All results are exported in GFF3 and INSDC-compliant flat files as well as comprehensive JSON files facilitating automated downstream analysis 100% interoperable with the popular bacterial annotation tool Bakta. We compared Baktfold's performance in terms of wallclock runtime and functional annotation of hypothetical proteins from various sources including bacterial and archaeal isolates, plasmids, metagenomic-assembled genomes and micro-eukaryotes. When benchmarked on over three hundred thousand species representatives across the prokaryotic tree of life, Baktfold;s median overall bacterial genome annotation rate is 87.8% compared to 72.9% with Bakta, while Baktfold's median bacterial annotation rate of remaining hypothetical proteins is 50.1% (n=290258). For archaea, Baktfold's overall median annotation rate is 71.5% compared to Prokka's 35.8%, with a median archaeal annotation rate of hypothetical proteins of 68.0% (n=14058), making Baktfold the most sensitive automated archaeal annotation method by far. Baktfold is implemented in Python 3 and runs on MacOS and Linux systems. It is freely available under a MIT license at https://github.com/gbouras13/baktfold.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.31.715528v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Odon: An ultra-fast viewer for spatial proteomics</h2>
-<p class="paper-authors">Coulton, A., McGranahan, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Multiplexed spatial proteomics and spatial transcriptomics generate large, high-dimensional imaging datasets that are challenging to visualize efficiently, particularly at whole-slide and cohort scale. Visualization is an essential step for rapid detection of staining artefacts, such as protein aggregates or non-specific staining. Here, we present Odon, a native Rust desktop viewer designed for rapid, interactive exploration of multiplex imaging data on a standard laptop. Odon is primarily built around the OME-Zarr imaging format, and supports annotations via GeoJSON and GeoParquet, with secondary support for SpatialData, Xenium containers, and TIFF. Data can be stored locally or streamed directly from HTTP or S3-compatible object storage using viewport-driven tile loading. Odon incorporates a highly optimized rendering engine that substantially outperforms existing viewers. In benchmarking, Odon loaded a 32 GB, 36-plex whole-slide OME-Zarr image in under 1 second, compared with 10.14 seconds for QuPath and 35 seconds for Napari. Its GPU-based compositing pipeline also enables smooth rendering and interaction with more than 1,000,000 segmented cells, exceeding the practical limits of many existing tools. Odon further supports integrated visual analytics, including live thresholding and cell selection, and a mosaic mode for simultaneous viewing of hundreds of regions of interest in cohort and tissue microarray studies. Together, these features establish Odon as a high-performance platform for scalable visualization of spatial proteomics data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715233v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Structure-Guided Computational Analysis of Linker effects in an scFv Targeting Guanylyl Cyclase C</h2>
-<p class="paper-authors">Melo, R., Viegas, T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-chain variable fragments (scFvs) are widely used in diagnostic and therapeutic applications. These antibody fragments comprise two antibody variable domains connected by a flexible peptide linker whose properties critically influence folding, stability, oligomeric state, and antigen-binding. Therefore, careful linker selection represents a key step in scFv design. Guanylyl Cyclase C (GUCY2C) is a tumor-associated cell surface receptor expressed in gastrointestinal malignancies, including more than 90% of colorectal cancer (CRC) cases across all disease stages. Its restricted physiological expression pattern makes GUCY2C an attractive target for immunotherapy and precision oncology therapies. Here, we investigated the structural and functional consequences of incorporating alternative linker designs into an anti-GUCY2C scFv. Using molecular modeling, protein-protein docking, and molecular dynamics (MD) simulations, we evaluated the conformational stability, interdomain organization, and antigen-binding interactions of each construct. Our results provide a dynamic, structure-based assessment of how linker composition influences GUCY2C recognition and scFv structural behavior. Furthermore, this work establishes a computational framework for the rational optimization of GUCY2C-targeted antibody fragments.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.714862v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Dynamic multimodal survival prediction in multiple myeloma integrating gene expression, longitudinal laboratories, and treatment history</h2>
-<p class="paper-authors">JIA, S., Lysenko, A., +2 authors, Tsunoda, T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Prognostic stratification in multiple myeloma (MM) relies on staging systems that assign patients to fixed categories at diagnosis and discard the temporal information that accumulates during treatment. We developed a dynamic multimodal framework that predicts residual overall survival using observation windows ranging from 1 to 18 months post-diagnosis. The model integrates DeepInsight-transformed gene expression representation, longitudinal laboratory measurement trajectories across 10 analytes, and treatment history for three drug classes through an adaptive fusion mechanism that accounts for missing clinical observations. On the MMRF CoMMpass cohort (n = 752), five-fold cross-validation yielded a concordance index (C-index) of 0.773 +/- 0.024 and a time-dependent AUC at a 1-year prediction horizon (tdAUC1yr) of 0.789 +/- 0.021, outperforming all evaluated baseline methods including DeepSurv (0.633 +/- 0.095) and random survival forests (0.636 +/- 0.024) on matched cross-validation splits. Modality ablation identified longitudinal laboratory measurements as the strongest individual contributor (C-index 0.693); the DeepInsight spatial encoding of gene expression yielded higher discrimination than a multilayer perceptron (MLP) baseline operating on the same features (0.624 vs. 0.596). Kaplan--Meier analysis showed significant prognostic group separation at all primary landmarks (log-rank p &lt; 0.001; hazard ratios 3.46-3.93). A distilled student model retaining only the DeepInsight representation and five baseline clinical features achieved C-index 0.672 and tdAUC1yr 0.740 on an independent microarray cohort (GSE24080, n = 507) without retraining. Interpretability analysis identified prognostic associations consistent with established myeloma biology, including ubiquitin-proteasome pathway genes, endoplasmic reticulum stress markers, and Interferon Alpha Response pathway enrichment.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715136v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Explainable protein-protein binding affinity prediction via fine-tuning protein language models</h2>
-<p class="paper-authors">Singh, H., SINGH, R. K., +2 authors, Gorantla, R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting protein-protein binding affinity from sequence alone remains a bottleneck for antibody optimization, biologics design and large-scale affinity modelling. Structure-based methods achieve high accuracy but cannot scale when complex structures are unavailable. Here we present a framework that reframes affinity prediction as metric learning: two proteins are projected into a shared latent space in which cosine similarity directly correlates with experimental binding affinity, and the protein language model encoder is adapted through parameter-efficient fine-tuning (PEFT). On the PPB-Affinity benchmark, the model achieves Pearson r = 0.89 on a random split, generalises to evolutionarily distant proteins (r = 0.61 at &lt;30% sequence identity) and surpasses structure-based deep learning baselines across biological subgroups, without any three-dimensional input. On the strictly de-overlapped AB-Bind dataset, few-shot adaptation with 30% of assay data (Pearson r = 0.756, RMSE = 0.688) outperforms methods trained on 90% of data; consistent gains are observed across nine diverse AbBiBench deep-mutational-scanning assays with 10-30% labelled variants. Residue-level explainability reveals that the model concentrates importance on interface-localised residues aligned with experimentally validated interaction hotspots across enzyme-inhibitor, and antibody-antigen systems. Together, these results establish a scalable, explainable and data-efficient route to protein-protein binding affinity prediction and therapeutic antibody optimisation from sequence alone.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715237v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">SPTBN2 promotes an immunosuppressive tumor microenvironment and cross-resistance to anti-cancer therapies</h2>
-<p class="paper-authors">Bui, Q. T., Basavaraja, R., +24 authors, Fuchs, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Immunosuppressive tumor microenvironment (TME) inactivates CD8+ cytotoxic lymphocytes (CTLs). Here, we identify SPTBN2 spectrin as a key immunosuppressive regulator induced in CTLs in response to nutritional deficit. In human pancreatic and colorectal cancers, SPTBN2 expression negatively correlated with CTL infiltration and patients survival. In TME of mouse pancreatic and colorectal adenocarcinomas, SPTBN2 inactivated intratumoral CTLs, stimulated tumor growth and conferred cross-resistance to anti-cancer therapies. SPTBN2 knockout protected CAR T-cells from trogocytosis and increased their memory state. SPTBN2 maintained levels of cell surface proteins such as BTLA that undermine CAR T-cell cytotoxicity and promote exhaustion. Re-expression of BTLA largely reversed phenotypes in SPTBN2-deficient CAR T-cells. In manufactured CAR T cells, SPTBN2 was associated with their clinical failure in pediatric patients with leukemia. Accordingly, ablation of SPTBN2 in CAR T-cells increased their cytotoxicity, in vivo persistence and therapeutic effects indicating that SPTBN2 can be targeted to increase the efficacy of anti-cancer therapies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715365v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Impact of high-fat Western diet on chronic lymphocytic leukemia disease progression and gut microbiome profile in Eμ-TCL1 mice</h2>
-<p class="paper-authors">Skupa, S. A., Hernandez, J. B., +5 authors, El-Gamal, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.03.30.715124v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> This paper reports on insights from the OPTIMA (Optimal Treatment for Patients with Solid Tumours in Europe Through Artificial Intelligence) prototyping workshop held in Berlin from November 6 to November 8, 2024. Through integrated analysis of clinical, genomic, imaging and pathology data, we addressed the following key challenges in breast and lung cancer management: utility of comprehensive genomic profiling in metastatic breast cancer settings; relevance of tumor heterogeneity for predicting treatment response; development of less invasive technologies for assessing tumor biology; and treatment outcomes in early stages of small cell lung cancer. Our findings demonstrate the potential of computational analysis using multiple data modalities to identify cancer molecular subtypes and enhance treatment selection and monitoring while highlighting important areas for future development to achieve the research objectives of the OPTIMA consortium.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41923228/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
