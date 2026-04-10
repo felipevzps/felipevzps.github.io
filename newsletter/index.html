@@ -36,11 +36,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Quaternion Spectral Fingerprinting of DNA: GPU-Accelerated Multi-Channel Fourier Analysis for Alignment-Free Genomics</h2>
-<p class="paper-authors">Bergach, M. A.</p>
+<h2 class="paper-title">Expression landscape of heterologous enzymes in Synechocystis sp. PCC 6803</h2>
+<p class="paper-authors">Medipally, H., Karlsson, A., +2 authors, Englund, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spectral methods for DNA sequence analysis---treating genomic data as a discrete signal and computing its Fourier transform---were proposed over three decades ago but remained impractical for whole-genome analysis due to computational cost. We present a quaternion Fourier transform framework that encodes DNA as a quaternion-valued signal q[n] [isin] {1, i, j, k} mapping to the four nucleotides {A, T, G, C}, and prove that the full quaternion spectrum is computable from exactly two standard complex FFTs: Q(k) = Z_1(k) + Z_2(N-k) {middle dot} j, where Z_1 = FFT(u_A + i {middle dot} u_T) and Z_2 = FFT(u_G + i {middle dot} u_C). We establish that the resulting spectral fingerprint F(k) = (|Z_1(k)|^2, |Z_2(k)|^2) is invariant under both cyclic shift and reverse complement---the two fundamental symmetries of double-stranded DNA. Building on this theoretical foundation, we develop three computational tools: (i)~a 4x4 Hermitian cross-spectral matrix with inter-channel coherence analysis, (ii)~a genome spectrogram via sliding-window short-time Fourier transform, and (iii)~an alignment-free spectral variant detection algorithm with O(N log N) complexity. Applying Welch's cross-spectral coherence analysis to E.~coli K-12, we discover that the DNA helical repeat (~11~bp) is invisible to the standard power spectrum but clearly detected through the cross-spectral matrix condition number ({kappa} = 6.5), demonstrating that multi-channel analysis reveals structural periodicities that single-channel methods miss. Phase spectrum analysis recovers the characteristic nucleotide ordering within codons (A [-&gt;] T [-&gt;] G [-&gt;] C), while three distinct frequency regimes of inter-nucleotide coupling emerge: complementary-dominated (long-range), purine/pyrimidine-dominated (structural), and codon-position-dominated (coding). Cross-species validation on 18 genomes spanning all three domains of life---Bacteria~(5), Archaea~(3), and Eukarya~(10)---with GC content from 19.6% (P. falciparum) to 69.5% (T. thermophilus) confirms the universality of these findings. The helical repeat is detected via cross-spectral coherence in 18/18 organisms (100%). All 10 eukaryotes show A-T dominance at the helical repeat---a spectral signature of nucleosome wrapping absent from prokaryotes. Non-complementary pairs (A-C, T-G) dominate the coding frequency in 17/18 organisms. Validation on human chromosome 21 (46.7 Mb, processed in 5.0 s on Apple M1) reveals eukaryote-specific spectral signatures---nucleosome positioning at 10.67 bp, nucleosome spacing at 170.7 bp, and Alu repeat dominance at 341 bp---absent from prokaryotic spectra. A proof-of-concept spectral variant detection experiment achieves 100% read-matching accuracy (100/100 reads) and statistically significant discrimination of SNPs from sequencing errors (t = 14.80, p &lt; 0.001, Cohen's d = 1.64), scaling to d = 8.96 at 30x coverage. The full human genome can be spectrally analyzed in approximately 3--4 seconds on an M1 GPU and under 1 second on M4 Max, enabling interactive spectral genomics on commodity hardware.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.03.716441v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Photosynthetic cyanobacteria are promising platforms for sustainable chemical production, as they can convert light and CO2 into valuable compounds. Achieving this often requires engineering cyanobacteria with non-native enzymes with strong promoters to maximize enzyme accumulation. However, despite extensive engineering efforts, the extent to which heterologous proteins misfold and undergo degradation in cyanobacteria remains unknown. Here, we systematically investigate the fate of recombinant proteins in Synechocystis sp. PCC 6803 by quantifying metabolic enzyme degradation. To do this, we developed a quantitative approach that combines split-GFP protein reporting with inducible CRISPRi knockdown of Clp protease system, enabling detection of proteins that would otherwise be degraded. Applying this method to 103 heterologous proteins previously used in cyanobacterial metabolic engineering studies, we find that nearly half undergo significant degradation, with some losing over 95% of their potential expression. Furthermore, we demonstrate that replacing enzymes with homologs is often a more effective strategy to address expression issues than optimizing genetic elements. These findings provide the first quantitative overview of heterologous protein expression in cyanobacteria and identify enzymes that are poorly expressed and suboptimal for their respective pathways, information usable to increase production titers in photosynthetic cell factories.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.08.717203v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,34 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Exploring transcriptomic and genomic latent variable correction approaches in differential expression analysis.</h2>
-<p class="paper-authors">Appulingam, Y., Jammal, J., +4 authors, Pain, O.</p>
+<h2 class="paper-title">Sequence Design and Phylogenetic Inference with Generative Flow Networks</h2>
+<p class="paper-authors">Huang, Q., Mourra-Diaz, C. M., +1 author, Payette, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Phylogenetic inference remains computationally challenging due to the exponentially growing tree topology search space, and current methods rely heavily on multiple sequence alignments (MSAs) which are expensive and error-prone. We propose AncestorGFN, a proof-of-concept approach leveraging Generative Flow Networks (GFlowNets) for simultaneous sequence generation and phylogenetic exploration without requiring explicit MSAs. Our method learns to generate sequences matching a target distribution while the flow trajectories implicitly encode structural relationships among sequences. We demonstrate that greedy traceback on maximum-flow trajectories recovers shared intermediate states suggestive of common ancestry, and evaluate on the let-7 microRNA family where the learned flow structure qualitatively captures phylogenetic branching patterns. Furthermore, beam search at inference time discovers novel sequences clustering near known targets, suggesting applications in de novo sequence design. This work establishes an initial foundation for alignment-free phylogenetic exploration using generative models.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.08.717239v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">LOCOM2: Robust Differential Abundance Analysis for Microbiome Data</h2>
+<p class="paper-authors">He, M., Satten, G. A., Hu, Y.-J.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716914v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716976v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Geometry-aware ligand-receptor analysis distinguishes interface association from spatial localization and reveals a continuum of tumor communication</h2>
-<p class="paper-authors">Yepes, S.</p>
+<h2 class="paper-title">ARACRA: Automated RNA-seq Analysis for Chemical Risk Assessment</h2>
+<p class="paper-authors">sharma, S., Kumar, S., +2 authors, Kumar, V.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics enables inference of cell-cell communication through ligand-receptor (LR) interactions, but current prioritization strategies often rely on expression strength or interface-associated enrichment without explicitly modeling tissue geometry. As a result, interactions associated with population interfaces are frequently interpreted as spatially localized even when their underlying expression is broadly distributed. Here, we present a geometry-aware framework for LR prioritization that explicitly separates interface structure from spatial localization within a locked and reproducible analysis pipeline. We quantify interface-associated communication using a distance-weighted boundary score defined on a spatial neighbor graph, evaluate interface specificity using a label-permutation null model that preserves spatial geometry, and compute an LR-specific localization score that captures the proximity of ligand and receptor expression to the corresponding interface. This framework distinguishes interface-associated compatibility from interaction-level spatial concentration. Across spatial transcriptomics datasets from breast cancer, colorectal cancer, melanoma, and pancreatic ductal adenocarcinoma, interface-aware ranking consistently recovers pathway families associated with extracellular matrix, adhesion, inflammatory, and immune-related processes. However, interface enrichment frequently shows limited separation from the null model, indicating that interface structure alone does not establish spatial specificity. Incorporating geometric localization substantially alters LR prioritization, distinguishing interactions that are concentrated near interfaces from those that are more diffusely distributed. Under a fixed, deterministic pipeline applied identically across datasets without parameter tuning, discrete spatial communication regimes were not reproducibly recovered. Instead, variation across samples is more consistently captured as continuous differences in geometry-aware attenuation, reflecting the degree to which inferred interactions are spatially constrained by tissue architecture. Together, these results demonstrate that interface-associated enrichment and spatial localization are distinct properties of inferred LR interactions, and that accurate interpretation of spatial communication requires explicit modeling of tissue geometry. Under this framework, tumor communication is more consistently described as a continuum of spatial constraint.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716708v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Transcriptomic analysis is considered a powerful approach for biomarker discovery, however still exploring large scale omics dataset to extract meaningful biological insights remains a challenge for biologists. To address this gap, we present ARACRA a fully automated RNA-seq analysis pipeline including entire transcriptomics workflow from raw FASTQ files to the transcriptomics Point of Departure (tPoD) with human-in-the-loop review process. Overall, the analysis is performed in two phases: Phase 1 carries out the acquisition of raw reads, pre-alignment quality control, alignment to reference genome and quantification of gene expression. Whereas, Phase 2 performs statistical analysis including Differential Gene Expression analysis and Dose-Response modelling. Two phases are separated by an extensive quality control step which allows the user to visually inspect the quality of data processed and helps in filtering noise and outlier samples. ARACRA facilitates end-to-end analysis of RNA-Seq data through an interactive web-based application developed on nextflow and streamlit for minimizing computational complexities while ensuring correct downstream processing. Availability and implementation ARACRA is freely available online at the GitHub with MIT License and stream lit-based web application: ARACRA. Researchers can use the demo data or even upload their own data to do the analysis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716912v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">UBL3 UBL domain exhibits distinct helix-centered dynamic control among ubiquitin-like proteins</h2>
-<p class="paper-authors">Matsuda, K., Moriya, Y., +7 authors, Setou, M.</p>
+<h2 class="paper-title">ViralMap: Predicting Features in Viral Proteins from Primary Sequence</h2>
+<p class="paper-authors">Dwivedi, S., Kar, S., +1 author, Gollihar, J. D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Ubiquitin-like protein 3 (UBL3) is a post-translational modifier that sorts proteins into small extracellular vesicles and regulates the trafficking of disease-associated proteins such as -synuclein. The structural and dynamic features of the UBL domain that underlie these functions, however, remain poorly understood. Here we performed in silico structural dynamics analysis of the UBL3 UBL domain using an NMR structure ensemble combined with anisotropic network modeling (ANM) and perturbation response scanning (PRS). Principal component analysis and residue- wise fluctuation analysis consistently revealed high flexibility in the C-terminal region of UBL3. Comparative ANM analysis across 20 ubiquitin-like proteins (UBLs) further showed that C-terminal flexibility is a conserved yet variable property within the UBL family. PRS analysis demonstrated that residues forming the central -helix of the {beta}-grasp fold exert greater dynamic control over collective motions than {beta}- sheet residues. Notably, UBL3 displayed the highest helix/sheet PRS effectiveness ratio among all UBLs analyzed, highlighting the prominent dynamic contribution of helix residues in this domain. Together, these results provide a structural basis for understanding UBL3-dependent protein interactions and disease-related mechanisms, and suggest that helix-centered dynamic control in the UBL domain may represent a potential target for modulating UBL3 function.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716645v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Modern viral vaccines are designed to elicit an immune response against viral proteins that mediate infection, making those proteins important targets for characterization and engineering. To improve vaccine efficacy, the proteins often require changes to specific residues or domains to improve immunogenicity and induce a protective response. These engineering strategies vary significantly across viruses, and comprehensive and accurate protein sequence annotation is crucial for guiding vaccine design. The growing risk of novel pathogen emergence and initiatives such as the CEPI 100 Days Mission to rapidly counter "Disease X" threats heighten the need for tools that can convert viral protein sequences from newly characterized genomes or emerging variants into the annotation profiles required for antigen engineering. To address this, we developed ViralMap, a multi-label annotation model tailored for eukaryotic viral proteins. By leveraging ESM-2 language model representations, ViralMap simultaneously predicts ten distinct annotation classes spanning domain topology and localization, post-translational modifications, and structural features directly from primary sequences. The model achieves a residue-level precision-recall area under the curve (PR-AUC) of 0.75 or greater for seven of the ten classes and realizes predictive performance competitive with established tools across the eight benchmarked classes. Evaluation on complex glycoproteins, including the SARS-CoV-2 spike and HIV-1 Env, supported cross-strain and novel-family generalization. By providing a unified, sequence-based framework for multi-label annotation, ViralMap offers a practical and scalable bridge from raw viral protein sequences to the annotation profiles required for antigen engineering.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716565v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Spatially Anchored Regulatory State Inference in Melanoma</h2>
-<p class="paper-authors">Dwarampudi, J. M. R., Kochat, V., +9 authors, Banerjee, T.</p>
+<h2 class="paper-title">A Grid-Search Framework for Dataset-Specific Calibration of Actigraphy Sleep Detection Algorithms</h2>
+<p class="paper-authors">Rahjouei, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics (ST) captures gene expression within tissue architecture but lacks direct regulatory information, while single-cell multiome assays profile transcriptional and chromatin states without spatial context. We present a framework for spatially anchored regulatory inference that integrates Visium ST with single-cell multiome data to infer spatially resolved regulatory programs. Building upon GraphST, we introduce spatially regularized cell-to-spot mapping and propagate chromatin accessibility and transcription factor motif activity into tissue space. Regulatory analysis is performed at the spatial domain level via joint differential expression and accessibility testing, along with quantitative concordance assessment. Applied to melanoma tissue sections, the framework reveals spatially localized regulatory programs and shows that assignment strategy substantially affects downstream regulatory stability. This modular approach enables interpretable gene-, peak-, and transcription factor-level outputs for multimodal spatial analysis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.05.716552v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Actigraphy is widely used for long-term sleep monitoring, but established sleep-wake scoring algorithms often require parameter tuning, which is commonly performed manually and can reduce reproducibility. In this study, a grid-search-based calibration framework is presented for established actigraphy algorithms and evaluate whether it can serve as a practical alternative to manual tuning. The method was evaluated using two datasets: a multi-subject polysomnography-validated actigraphy dataset and a self-collected dual-device dataset. In the polysomnography-validated dataset, grid-search optimization produced performance patterns similar to manual parameter selection, while slightly improving detection of sleep onset and sleep offset and yielding modest gains in wake-sensitive metrics. In the dual-device dataset, consensus and majority voting were useful for reducing the influence of brief wake episodes occurring within the main sleep period, including micro-awakenings that can fragment sleep predictions across individual algorithms. Overall, these findings show that grid-search can replace manual parameter tuning with a more explicit and reproducible procedure while providing small improvements in sleep timing estimation and benefiting ensemble-based handling of within-sleep wakefulness.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.706161v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +146,72 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Adaptive Integration of Heterogeneous Foundation Models to Find Histologically Predictable Genes in Breast Cancer</h2>
-<p class="paper-authors">Nguyen, H., Li, C., +3 authors, Nguyen, Q.</p>
+<h2 class="paper-title">gbdraw: a genome diagram generator for microbes and organelles</h2>
+<p class="paper-authors">Kawato, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Foundation models for computational pathology have rapidly emerged as powerful tools for extracting rich biological and morphological representations from histopathology images. However, variations in model architecture, pre-training data, and optimization objectives often lead to task-dependent performance, rather than universal generalization. As a result, effective strategies for integrating their complementary strengths are essential to fully realize the potential of foundation models for robust histopathology analysis. Meanwhile, recent breakthroughs such as spatial transcriptomics provide an unprecedented opportunity to integrate genetic and histopathology information from the same patient sample, thereby maximizing both molecular and anatomical pathology insights. Specifically, each model's embedding is first mapped to gene-level predictions via a dedicated prediction head, enabling model-specific feature utilization. A lightweight weighting network then adaptively aggregates these predictions to produce a unified and robust output at gene and spatial location levels. Across multiple spatial transcriptomics datasets, our approach consistently outperforms both individual foundation models and classical ensembling methods. Focusing on breast cancer, we observe substantial gains in prediction accuracy for clinically relevant PAM50 subtype markers and drug-target genes. Moreover, the proposed framework improves interpretability by revealing model-specific contributions and specialization at the gene level. Overall, our work presents an effective solution to integrating multiple foundation models for enhancing the genetic analyses of histopathology images.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.05.716435v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Generating graphical diagrams of microbial and organellar genomes is a common and essential task in bioinformatics. Existing tools often present a trade-off; while powerful programming libraries that require coding skills, graphical applications require server processing or local installation with complex dependency. This highlights the need for a tool that offers both programmatic control for batch processing and graphical accessibility for ease of use. Results: To fill this gap, I developed gbdraw, a web application that generates circular and linear genome diagrams from self-contained GenBank or DDBJ files or combinations of GFF3 annotation and FASTA sequence files. Its core functions include visualizing annotated features, plotting GC content/skew tracks, and optionally generating pairwise sequence comparisons for comparative genomics. It is available as both a GUI web application and a command-line utility. Unlike existing web-based tools that require data upload to a remote server, gbdraw operates entirely within the user's web browser. This serverless architecture ensures that sensitive sequence data never leaves the local machine, providing a secure environment for visualizing unpublished genomic data. Availability and Implementation: gbdraw is implemented in Python 3 (version 3.10+) and is freely available under the MIT license. The web app is available at https://gbdraw.app/. Source code and documentation are available at https://github.com/satoshikawato/gbdraw. The local version can be installed from the Bioconda channel using a conda-compatible package manager.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716863v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">GMIP-PLSR: A Nextflow Pipeline for GWAS and Multi-Omics Integration in Gene Prioritization Using PLSR</h2>
+<p class="paper-authors">Kanchwala, M. S., Xing, C., Xuan, Z.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Genome-wide association studies (GWAS) have significantly advanced our understanding of complex traits and diseases, but their interpretive power remains limited due to challenges in identifying causal genes and pathways. Integrating GWAS with multi-omics data - such as gene expression, protein-protein interactions, and gene-pathway networks have the potential to enhance biological insights and improve gene prioritization. To fulfill this potential and need, we developed the GWAS &amp; Multi-omics Integration Pipeline (GMIP), a flexible and scalable framework that incorporates widely used tools such as PoPS, MAGMA, and benchmarker to enrich GWAS findings. However, PoPS suffers from multicollinearity in its features, which can impact performance. To overcome this, we introduce GMIP-PLSR, an extension of GMIP that uses Partial Least Squares Regression (PLSR) to manage multicollinearity effectively. We applied GMIP-PLSR across multiple GWAS datasets, demonstrating superior performance over PoPS in most cases. In a case study on NAFLD, GMIP-PLSR, using features derived from both disease-specific scRNA-seq and general PoPS features, identified gene sets with higher heritability and stronger enrichment in known NAFLD pathways, confirming its ability to enhance GWAS findings. Built on Nextflow, GMIP is computationally efficient, adaptable to diverse research environments, and provides a robust solution for gene reprioritization in post-GWAS analyses. GMIP-PLSR is available at https://github.com/mohammedmsk/GMIP.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716845v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Spectral Graph Features for Reference-free RNA 3D Quality Assessment</h2>
+<p class="paper-authors">Zhu, Y., Zhang, H., +1 author, Bi, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Motivation: Existing RNA 3D structure quality assessment (QA) methods rely on local geometric descriptors or statistical potentials that evaluate atomic-level contacts but are blind to global topological coherence. This creates a critical failure mode---structures that are ''locally correct but globally wrong''---where well-formed local helices mask misplaced domains and incorrect overall packing. Results: We introduce SpecRNA-QA, a lightweight method that scores RNA 3D models using multi-scale spectral features derived from the graph Laplacian of inter-nucleotide contact networks. By computing eigenvalue distributions, heat-kernel traces, and spectral entropy across four distance scales with binary and Gaussian kernels, SpecRNA-QA captures global structural coherence inaccessible to conventional descriptors. In leave-one-out cross-validation on CASP16 (42 targets, 7368 models), spectral features achieve median per-target Spearman rho = 0.69 [95% CI: 0.64--0.73], significantly outperforming an internal geometry baseline (rho = 0.47, Delta_rho = +0.22, Wilcoxon p = 1.2 x s 10^{-10}). Compared against established unsupervised statistical potentials---which require no labeled data, unlike the supervised spectral model---rsRNASP outperforms on small-to-medium RNAs (rho = 0.67 vs. 0.57$ , [≤]200~nt). However, rsRNASP times out on most large RNAs (&gt;200~nt), where SpecRNA-QA provides the strongest available quality signal (rho = 0.72 vs. DFIRE 0.52), revealing clear complementarity between global-topological and local-energy scoring. A training-free heuristic using only three spectral statistics enables quality estimation without any labeled data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716854v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Quantifying Scientific Consensus in Biomedical Hypotheses via LLM-Assisted Literature Screening</h2>
+<p class="paper-authors">Kim, U., Kwon, O., Lee, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Systematic literature reviews are labor-intensive tasks in biomedical research. While Large Language Models (LLMs) using Retrieval-Augmented Generation (RAG) techniques have enhanced information accessibility, the inherent complexity of biological systems---characterized by high context dependency and conflicting data---remains a primary driver of LLM hallucinations. This imposes a structural constraint that limits the precision of evidence synthesis. To address these limitations, we propose an automated framework designed for the exhaustive identification of supporting and contradictory evidence within a target literature set. Rather than relying on a model's pre-trained knowledge, our system requires the LLM to review each paper individually to determine its alignment with a specific research hypothesis. By evaluating semantic context, the framework captures subtle contradictions that are often overgeneralized by conventional methods. The framework's performance was validated using the BioNLI task, where it demonstrated high classification accuracy in distinguishing whether evidence supports or contradicts a given hypothesis. Notably, the implementation of an ensemble approach provided superior stability and slightly higher precision compared to individual models. Furthermore, the framework exhibited robust performance across several well-established biological hypotheses, confirming its practical utility and reliability in real-world research. This approach provides a rigorous basis for biomedical discovery by enabling the precise, systematic analysis of biological literature and the robust collection of evidence.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716861v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +222,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrating Fas-mediated apoptosis with IFNγ signaling to drive tumor regression in mRNA cancer therapeutics</h2>
-<p class="paper-authors">Shin, H.-s., Kwon, S.-G., +1 author, Lee, J.-O.</p>
+<h2 class="paper-title">Nanoparticle-delivered resiquimod induces brain tumor regression in medulloblastoma and diffuse midline glioma models by interrupting paracrine growth support and activating myeloid immune signaling and phagocytosis</h2>
+<p class="paper-authors">McSwain, L. F., Kim, K., +11 authors, Sokolsky, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> For mRNA-based cancer gene therapy, we engineered a membrane-bound fusion protein combining interferon-gamma (IFN-gamma) with the Fas intracellular domain (FasICD) to couple local IFN-gamma signaling with Fas-driven apoptotic tumor cell death. IFN-gamma-FasICD was robustly expressed on the plasma membrane after mRNA transfection. In murine cancer cell lines, IFN-gamma-FasICD mRNA reduced viability within 24 h, resulting in ~50% cell death in MC38 cells and ~75% in B16OVA cells, exceeding the cytotoxicity of the FasICD-deleted control (IFN-gamma-Fas-deletion). Mechanistically, IFN-gamma-FasICD induced predominantly apoptotic rather than necrotic cell death. IFN-gamma-FasICD also activated IFN-gamma receptor signaling in both cancer and the immune cells, inducing IFN-gamma-responsive genes in IFN-gammaR-high B16OVA cells and triggering STAT1 phosphorylation in co-cultured splenocytes. For in vivo delivery, IFN-gamma-FasICD mRNA was formulated in lipid nanoparticles (LNPs), enabling strong intratumoral expression that peaked at ~3 h and persisted for more than 48 h. Repeated intratumoral injections of LNP-formulated IFN-gamma-FasICD mRNA suppressed the growth of established B16OVA and MC38 tumors and improved survival, with ~40% and ~20% of mice surviving beyond 30 days, respectively. IFN-gamma-FasICD treatment remodeled the tumor microenvironment by increasing tumor-infiltrating CD45+ cells and CD8+ T cells, while further reducing FOXP3+ regulatory T cells. Moreover, NK/NKT cells and cDC1/cDC2 populations were increased, and their activation was enhanced. In tumor-draining lymph nodes, IFN-gamma-FasICD mRNA promoted dendritic cell migration and increased priming and differentiation of CD8+ T cells toward effector and memory phenotypes, accompanied by enhanced functional activation of IFN-gamma-producing CD8+ T cells and highly cytotoxic NK cells in peripheral blood. Overall, our findings provide a mechanistic foundation for cytokine-death receptor fusion proteins as an in vivo antitumor strategy that can reprogram tumor cells into localized sources of both apoptotic signals and immune-activating cues.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716844v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> We studied the effect of stimulating innate immune function in tumor-associated myeloid cells (TAMs) in medulloblastoma (MB) and diffuse midline glioma (DMG), using a polyoxazoline nanoparticle formulation of the TLR7/8 agonist resiquimod (ResiPOx). Children with MB and DMG need novel therapeutic strategies to improve outcomes and reduce recurrence. We investigated the effect of systemically administered ResiPOx on TAMs in MB and DMG using endogenous MB and DMG models in immune-competent mice and identified multiple mechanisms of anti-tumor effect. We packaged resiquimod into polyoxazoline micelles to generate ResiPOx. We studied ResiPOx efficacy as a single agent or paired with radiation therapy (RT). We determined ResiPOx pharmacokinetics (PK) using tritium-labeled resiquimod and mass spectroscopy imaging (MSI). We determined ResiPOx pharmacodynamics (PD) using flow cytometry immunohistochemistry, bulk and single-cell RNA-seq and immunoblotting. We then studied ResiPOx safety and PD in a non-human primate model using rhesus macaques. ResiPOx formulation improved the blood-brain barrier penetration and anti-tumor efficacy of resiquimod. ResiPOx treatment extended progression-free survival (PFS) in mice with MB and DMG. In both tumor types, ResiPOx expanded TAM populations and reprogrammed TAMs toward anti-tumoral states, characterized by activation of IFN{beta} and extrinsic apoptosis pathway signaling, antigen presentation, and T cell activation signatures. In rhesus macaques, systemic ResiPOx administration was well tolerated and induced brain transcriptional responses that resembled ResiPOx responses in DMG and MB mouse models, indicating common effects across species from mice to non-human primates, and highlighting potential for similar effects in patients. ResiPOx is a brain-penetrant immunomodulatory therapeutic that reshapes the immune-privileged brain tumor microenvironment. Systemic administration activates myeloid-driven anti-tumoral immunity mediated by microglial and macrophage TAMs, and improves survival in preclinical models of DMG and MB.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.714454v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +241,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Hierarchical Spatial Graph Neural Network Resolves Immunogenic and Tolerogenic Tertiary Lymphoid Structures in Renal Cell Carcinoma</h2>
-<p class="paper-authors">Peng, G.</p>
+<h2 class="paper-title">Myeloma and therapy reshape the bone marrow niche to durably constrain immune reconstitution and vaccine responsiveness</h2>
+<p class="paper-authors">Chander, A., Rachid Zaim, S., +40 authors, Goldrat</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Tertiary lymphoid structures (TLS) in the tumour microenvironment span a functional spectrum from immunogenic -- driving germinal centre reactions and anti-tumour immunity -- to tolerogenic, harbouring regulatory T cells and suppressive myeloid populations. Distinguishing these states is clinically critical: immunogenic TLS predict ICI response whereas tolerogenic TLS may promote immune evasion. Bulk transcriptomics conflates productive TLS with exhausted immune infiltrates, masking this distinction. We present a hierarchical graph neural network (GNN) that operates directly on 10x Visium spatial transcriptomics graphs to classify TLS functional state at the cluster level. Using a three-scale architecture combining graph attention (GAT) and differentiable pooling (DiffPool), the model hierarchically aggregates spot-level signals into niche- and region-level representations before predicting immunogenic versus tolerogenic state. Trained on 915 TLS clusters from 24 renal cell carcinoma (RCC) Visium samples (GSE175540), the model achieves a validation AUC-ROC of 0.718 and a clinical AUC of 0.908 on IgG-validated samples from the BIONIKK cohort. Zero-shot transfer to an independent multi-cancer Visium cohort (GSE203612; breast, liver, ovarian, pancreatic, uterine) correctly identifies hepatocellular carcinoma as harbouring the most tolerogenic TLS, consistent with the known immunosuppressive liver tumour microenvironment. Spatial decomposition of CXCL13 across TLS and non-TLS compartments reveals that 85% of tissue CXCL13 signal originates from non-TLS parenchyma, where it co-expresses primarily with exhaustion markers (mean Spearman rho = 0.233) rather than Tfh markers (CXCR5 rho = 0.039) -- a pattern consistent with the paradoxical association of bulk CXCL13 with worse overall survival in TCGA-KIRC (HR = 1.38, p &lt; 0.001). Code and processed data are deposited at GitHub and Zenodo.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.717084v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Infections are the most common cause of non-relapse mortality in multiple myeloma (MM), but the basis of persistent immune dysfunction is obscured by patient heterogeneity and complex treatment regimens, including autologous stem cell transplant (ASCT). We performed longitudinal multi-omic profiling of matched bone marrow and peripheral blood from MM patients across diagnosis, induction, ASCT, and recovery. We found the tumor imposes a compartment-specific immune program where the marrow exhibits metabolic and inflammatory changes that bias hematopoiesis and alter cytotoxic effector programs not mirrored in blood. Adaptive immune reconstitution is impaired up to two years post-ASCT. Half of patients fail to mount IgG responses to high-dose non-adjuvanted influenza vaccine, a defect overcome by the lipid nanoparticle (LNP) adjuvanted COVID mRNA vaccine, which elicited responses in all patients, supporting adjuvanted influenza vaccine strategies in MM. Together these findings define how myeloma and its treatment durably reshape immunity from the marrow outward.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.08.717307v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +260,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">lncRNA MANCR isoforms selectively mediate multiple levels of epigenomic and P53-responsive transcriptional control in triple negative breast cancer</h2>
-<p class="paper-authors">Pacht, E., Warren, J., +9 authors, Stein, J.</p>
+<h2 class="paper-title">Low-intensity vibration (LIV) cellular mechanotherapy reprograms tumor transcriptomes to suppress cancer-promoting inflammation</h2>
+<p class="paper-authors">Meena, S. S., Kosgei, B. K., +6 authors, Han, R. P. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Long noncoding RNAs (lncRNAs) are important regulators of gene expression and are frequently dysregulated in cancer. The mitotically associated lncRNA MANCR is highly expressed in aggressive cancers and contributes to genomic instability in triple-negative breast cancer (TNBC), but the molecular mechanisms underlying its activity remain poorly defined. Here we integrate computational and experimental approaches to examine the structure and regulatory interactions of MANCR isoforms. Analysis of transcriptomic datasets revealed tumor-type-specific expression patterns for seven MANCR isoforms in breast cancer cell lines. Computational prediction of RNA secondary structures identified conserved structural features across isoforms, suggesting potential functional specialization. We identify p53 as a MANCR-interacting protein through computational docking and RNA immunoprecipitation sequencing (RIP-seq) and demonstrate that MANCR depletion reduces p53-dependent transcriptional activity. Chromatin isolation by RNA purification sequencing (ChIRP-seq) revealed 1,250 genomic regions associated with MANCR, including enrichment of p53 consensus motifs and GC-rich sequence elements. Motif analysis further identified candidate sequence features associated with MANCR-occupied chromatin regions. Computational prediction of RNA-miRNA interactions identified multiple potential miRNA binding sites across MANCR isoforms, including miR-6756-5p, which targets the androgen receptor (AR). Consistent with this prediction, AR expression decreased following MANCR knockdown in TNBC cells. Together, these results suggest that MANCR isoforms may contribute to transcriptional regulation in TNBC through interactions with chromatin, p53 signaling pathways, and potential miRNA regulatory networks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716674v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> LIV is a non-pharmacological intervention for multiple pathologies, most notably pain, yet its potential in oncology remains unexplored due to poorly understood mechanotransduction pathways. Its therapeutic efficacy depends on precise dosing parameters, including frequency, amplitude, and duration; suboptimal application, whether excessive or insufficient, risks exacerbating symptoms or rendering treatment ineffective. In a breast cancer-immune cell co-culture model, a 15-min regimen of 90-Hz, 0.43-g LIV attenuates protumorigenic crosstalk by suppressing proinflammatory cytokines and reprogramming malignant cells into a transient metastasis-incompetent benignant state that retains oncogenic markers but loses invasive capacity. Our results reveal LIV as a non-drug inhibitor of IFN{gamma} and CXCL12{beta}; silencing IFN{gamma} impairs inflammatory bursts, while silencing CXCL12{beta} starves the CXCR4/CXCR7 axis, depriving tumor cells of motility cues. LIV enforces a genome-wide transcriptional brake, upregulating tumor-suppressive miRNAs (hsa-miR-141, hsa-miR-122) while downregulating protumorigenic miRNAs (hsa-miR-105-5p, hsa-miR-181a-5p). This work repositions LIV as a non-drug modality for coordinately targeting multiple cancer hallmarks.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716739v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,15 +279,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Antitrypsin surrogate, Alphataxin, increases tumor CD4+ T cells and suppresses murine colon cancer</h2>
-<p class="paper-authors">Bristow, C. L., Garvey, T. Q., Winston, R.</p>
+<h2 class="paper-title">Inhibition of miR-1307 Reverses Resistance to Cisplatin in Drug-Resistant Oral Squamous Cell Carcinoma</h2>
+<p class="paper-authors">Patel, A., Patel, V., +9 authors, Patel, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> CD4+ T helper cells are required for CD8+ killer T cells to suppress tumor growth. An orally-available small molecule surrogate of alpha-1 antitrypsin, Alphataxin, was previously demonstrated to elevate the numbers of circulating and tumor-infiltrating CD4+ T cells and to suppress kidney tumor growth in mice. To determine whether Alphataxin might be effective in other T cell-responsive cancers, mice orthotopically implanted with colon tumors were treated using Alphataxin and anti-PD-1 as monotherapies or in combination. Combination therapy significantly suppressed tumor growth (ORR = 37.5%) and increased tumor-infiltrating CD4+ T cells, CD8+ T cells, NK cells, M2 macrophages, and DC2 dendritic cells. Release of IFN-? by helper T cells in the tumor microenvironment appeared to contribute to the effectiveness of killer T cells in suppressing tumor growth. Toxicology studies in rats revealed no untoward effects. Alphataxin, to our knowledge the first and only drug developed to rapidly and sustainably increase the number of circulating and tumor-infiltrating CD4+ helper T cells, is a powerful therapeutic that provides long-term remission in T cell-responsive cancers in combination with anti-PD-1.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716656v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.709730v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +298,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Early Epigenetic and Metabolic Responses to the Adipocyte Secretome Reveal Stress-Adaptive States in Triple-Negative Breast Cancer</h2>
-<p class="paper-authors">Townsel, A., Jaffe, M., +6 authors, Haynes, K. A.</p>
+<h2 class="paper-title">Expression profile of CASSIOPEIA patients refines prognostic value of MRD negativity in multiple myeloma</h2>
+<p class="paper-authors">Magrangeas, F., Guerin-Charbonnel, C., +11 authors, Moreau, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Obesity is a well-established risk factor for triple-negative breast cancer (TNBC), yet how adipocyte-derived signals reprogram cancer cell metabolism and chromatin states remains poorly defined. Here, we investigate how adipocyte-driven lipogenesis reshapes metabolic-epigenetic coupling to support stress-adaptive cell states and functional changes in epithelial TNBC cells. Using an integrated multi-omic approach, we combine RNA sequencing (RNA-seq), chromatin accessibility (ATAC-seq), metabolic flux modeling, and functional metabolic assays in lipogenic BT-549 cells. Computational modeling trained on RNA-seq predicts shifts in metabolic pathway usage, including enhanced NAD-linked metabolism. RNA-seq reveals a predominance of gene activation, consistent with ATAC-seq data showing a strong bias toward increased accessibility. Regions of increased accessibility are enriched for stress-adaptive and antioxidant pathways, including superoxide dismutase 2 (SOD2) and metallothioneins (MT1F, MT1E, MT2A). Functionally, lipogenic cells exhibit increased spare respiratory capacity, altered ATP-linked respiration, elevated extracellular acidification, and reduced reactive oxygen species (ROS) accumulation, consistent with a bioenergetically flexible, stress-adaptive metabolic state. Together, these findings reveal that adipocyte-driven metabolic rewiring promotes selective chromatin opening and activation of stress-adaptive gene programs, enabling TNBC cells to buffer oxidative pressure for enhanced proliferation and survival after exposure to the adipocyte secretome.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.06.716548v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Long-term follow-up of the CASSIOPEIA trial (NCT02541383) demonstrated superior progression-free survival (PFS) with daratumumab, both in combination with bortezomib, thalidomide, and dexamethasone during induction and consolidation, and during maintenance therapy, in transplant-eligible patients newly diagnosed with multiple myeloma (MM). However, outcomes among CASSIOPEIA patients remain heterogeneous across treatment groups. Measurable residual disease (MRD) is a strong indicator of the depth and duration of therapeutic response and is independently associated with both PFS and overall survival (OS), but it does not fully capture the biological diversity of MM. We performed a risk prediction analysis based on transcriptomic subgroups in CASSIOPEIA patients. A subset of 628 patients was characterized using RNA sequencing and consensus clustering identified five transcriptomic subtypes of MM. Long-term follow-up allowed the definition of three transcriptomic risk categories, with estimated 72-month PFS rates of 70%, 51%, and 27% for low, intermediate, and high-risk groups, respectively, among patients who received daratumumab in at least one treatment phase. In these patients, MRD negativity rates after consolidation and six months later were significantly higher in the low and high-risk groups compared with the intermediate-risk group. In the high-risk group, MRD status was not associated with PFS or OS. This suggests that, although daratumumab administered during both the induction/consolidation and maintenance phases improves the clinical outcomes of patients with activation of NSD2 or overexpressing members of the MAF family, highly aggressive minor clones may rapidly expand. These findings emphasize the need for novel therapeutic strategies in this high-risk population.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.716874v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +317,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 08, 2026</span>
+<span class="date">Apr 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Single-section multiplexed imaging enables comprehensive lung cancer diagnosis</h2>
-<p class="paper-authors">Ben-uri, R., Keidar Haran, T., +9 authors, Keren, L.</p>
+<h2 class="paper-title">RAS-mutant clones drive extramedullary acute myeloid leukemia</h2>
+<p class="paper-authors">Chaida, P., Frimmel, J., +26 authors, Zebisch, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate and timely diagnosis is essential for effective lung cancer treatment. However, contemporary diagnostic workflows rely on sequential immunohistochemistry of small biopsy specimens, which can exhaust limited tissue, compromise diagnostic accuracy, and delay treatment decisions with clinical consequences. Here, we demonstrate that multiplexed imaging overcomes these limitations by enabling comprehensive lung cancer diagnosis from a single tissue section. We developed and validated a clinically informed multiplexed antibody panel that integrates tumor diagnosis and classification, predictive biomarker assessment, and tumor immune profiling. In diagnostic biopsies, multiplexed imaging achieved 96% concordance with standard pathological diagnosis, while enabling accurate automated PD-L1 scoring and rapid detection of clinically approved and emerging actionable targets. This approach preserves scarce tissue, supports quantitative computational analysis to streamline diagnosis, and generates research-grade spatial data while accelerating diagnostic workflow. Together, these findings establish multiplexed imaging as a robust, time and tissue-efficient framework for lung cancer diagnostics that bridges clinical care and translational discovery.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.05.716628v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Extramedullary acute myeloid leukemia (eAML) represents a clinically challenging manifestation of acute myeloid leukemia (AML), but its molecular drivers remain poorly defined. We performed targeted sequencing in 85 eAML biopsies, representing one of the largest molecular analyses of eAML to date. We detected mutations in RAS or RAS-modifying genes (RASMUT; NRAS, KRAS, PTPN11, CBL, and NF1) in 41% of cases, representing a significant enrichment compared to bone marrow (BM) samples of more than 1300 AML patients not selected for eAML. Analysis of paired eAML and BM specimens revealed expansion and/or de-novo appearance of RASMUT clones at the extramedullary site. Functional studies using primary murine leukemia cells and CRISPR/Cas9-engineered isogenic human leukemia cell lines demonstrated that RASMUT increase the migration and invasion of leukemic cells compared to RAS-wildtype controls. Consistently, RASMUT cells showed increased infiltration into the chorioallantoic membrane of chicken embryos and demonstrated enhanced extramedullary growth after injection into immunocompromised mice. RNA sequencing revealed increased expression of junctional adhesion molecule-like (JAML) and activation of PI3K/AKT signaling in RASMUT cells. JAML silencing and pharmacologic AKT inhibition reversed the RASMUT-driven effects on leukemic cell migration, demonstrating a causal role of the JAML-PI3K/AKT axis in RASMUT-driven eAML formation. In conclusion, these findings delineate the molecular landscape of extramedullary AML and show that RASMUT are enriched within this AML subform. They further demonstrate that RASMUT actively contribute to leukemic tissue infiltration through activation of a RASMUT-JAML-PI3K/AKT axis, highlighting AKT signaling as a potential therapeutic vulnerability in RASMUT-associated eAML.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.07.715220v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
