@@ -744,7 +744,7 @@ body {
   color: var(--text-muted);
   line-height: 1.5;
   font-size: clamp(0.9rem, 1.5vw, 1.05rem);
-  margin-bottom: var(--spacing-7xl);
+  margin-bottom: var(--spacing-4xl);
   text-wrap: balance;
   text-align: center;
 }
@@ -772,11 +772,13 @@ body {
 /* === FILTER BAR === */
 .filter-bar {
   display: flex;
-  justify-content: center;
+  width: fit-content;
+  margin: 0 auto var(--spacing-3xl);
   gap: var(--filter-gap);
-  padding-bottom: var(--spacing-lg);
-  margin-bottom: var(--spacing-3xl);
+  padding: 0.3rem;
   flex-wrap: wrap;
+  border: var(--border-width) var(--border-style) var(--color-gray-light);
+  border-radius: 999px;
 }
 
 .filter-btn {
@@ -786,16 +788,19 @@ body {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
   cursor: pointer;
-  transition: color var(--transition-fast);
-  position: relative;
+  padding: 0.4em 1.1em;
+  border-radius: 999px;
+  transition: color var(--transition-fast), background var(--transition-fast);
 }
 
 .filter-btn:hover {
   color: var(--color-white);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .filter-btn.active {
   color: var(--color-white);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* === PAPERS LIST === */
