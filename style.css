@@ -7,7 +7,7 @@
   --color-gray-medium: #1a1a1a;
   --color-gray-light: #222;
   --color-gray-lighter: #2a2a2a;
-  
+
   /* === CORES DE TEXTO === */
   --text-primary: #f5f5f5;
   --text-secondary: #ececec;
@@ -19,33 +19,20 @@
   --text-very-faded: #999;
   --text-ultra-faded: #888;
   --text-ghost: #777;
-  
+
   /* === CORES DE DESTAQUE === */
   --color-link: #9ae6b4;
   --color-hover: #e5e5e5;
-  
-  /* === SIDEBAR === */
-  --sidebar-bg: var(--color-black);
-  --sidebar-text: var(--text-secondary);
-  --sidebar-hover: var(--color-gray-medium);
-  --sidebar-border: var(--color-gray-light);
-  
+
   /* === CARDS === */
-  --card-bg: var(--color-gray-darker);
   --card-radius: 8px;
-  
-  /* === BOTÕES === */
-  --btn-bg-dark: var(--color-gray-light);
-  --btn-bg-white: var(--color-white);
-  --btn-text-dark: var(--color-white);
-  --btn-text-light: var(--color-black);
-  
+
   /* === TIPOGRAFIA === */
   --font-family: 'Inter', sans-serif;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
-  
+
   /* === ESPAÇAMENTOS === */
   --spacing-xs: 0.3rem;
   --spacing-sm: 0.4rem;
@@ -59,7 +46,7 @@
   --spacing-7xl: 7rem;
   --spacing-7-5xl: 7.5rem;
   --spacing-15xl: 15rem;
-  
+
   /* === TAMANHOS DE FONTE === */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.85rem;
@@ -80,26 +67,20 @@
   --transition-slow: 0.3s ease;
   --transition-slower: 0.5s;
   --transition-flip: 0.6s;
-  
-  /* === BORDERS === */
+
+  /* === BORDAS === */
   --border-width: 1px;
   --border-width-thick: 2px;
   --border-style: solid;
-  --border-color: var(--color-gray-light);
   --border-radius-sm: 4px;
   --border-radius-md: 6px;
   --border-radius-lg: 8px;
   --border-radius-xl: 12px;
   --border-radius-full: 999px;
-  
-  /* === CONTENT SIZE === */
-  --content-max-width: 1350px;
 
-  /* === NEWSLETTER ESPECÍFICO === */
-  --newsletter-max-width: var(--content-max-width);
+  /* === LAYOUT === */
+  --content-max-width: 1350px;
   --newsletter-intro-max-width: 700px;
-  --paper-gap: 2rem;
-  --filter-gap: 1.5rem;
 }
 
 * {
@@ -152,7 +133,7 @@ body {
   }
 }
 
-/* === HIGHLIGHT === */
+/* === TEXT HIGHLIGHT === */
 ::selection {
   background-color: var(--color-white);
   color: var(--color-black);
@@ -271,9 +252,8 @@ body {
 
 /* === SECTION === */
 .section {
-  scroll-margin-top: 10vh;
-  margin-top: var(--spacing-7-5xl);
   scroll-margin-top: 8rem;
+  margin-top: var(--spacing-7-5xl);
   margin-bottom: 15rem;
 }
 
@@ -287,13 +267,12 @@ body {
 
 .section-description {
   color: var(--text-dim);
-  margin-top: var(--spacing-lg); 
+  margin-top: var(--spacing-2xl);
   margin-bottom: var(--spacing-3xl);
   line-height: 1.6;
-  margin-top: var(--spacing-2xl);
   text-align: center;
-  max-width: 850px; 
-  margin-left: auto; 
+  max-width: 850px;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -338,7 +317,7 @@ body {
 
 .research-hero-content {
   display: flex;
-  max-width: 500px; 
+  max-width: 500px;
   flex-direction: column;
   gap: var(--spacing-lg);
 }
@@ -400,7 +379,7 @@ body {
 
 /* === NOTE CARD === */
 .note-card {
-  background: var(--card-bg);
+  background: var(--color-gray-darker);
   border-radius: var(--card-radius);
   overflow: hidden;
   display: flex;
@@ -410,7 +389,7 @@ body {
 }
 
 .note-card-image {
-  background-color: var(--card-bg);
+  background-color: var(--color-gray-darker);
   padding: 8px;
 }
 
@@ -457,8 +436,8 @@ body {
 
 /* === COMPOSITION CARDS === */
 .composition-card-image {
-  background-color: var(--card-bg);
-  border: 8px solid var(--card-bg);
+  background-color: var(--color-gray-darker);
+  border: 8px solid var(--color-gray-darker);
   border-radius: var(--border-radius-xl);
   background-size: 200% 100%;
   background-repeat: no-repeat;
@@ -477,7 +456,7 @@ body {
 /* Image slicing for #research section */
 #research .oa-card:nth-child(1) .composition-card-image {
   background-image: url('docs/pale-blue-dot.jpg');
-  background-position: 0% 0; 
+  background-position: 0% 0;
 }
 
 #research .oa-card:nth-child(2) .composition-card-image {
@@ -550,7 +529,7 @@ body {
 
 .flip-back-text {
   text-align: center;
-  color: #e0e0e0;
+  color: var(--text-tertiary);
 }
 
 .flip-back-text p {
@@ -569,7 +548,7 @@ body {
 
 /* === CARDS === */
 .oa-card {
-  background: var(--card-bg);
+  background: var(--color-gray-darker);
   border-radius: var(--card-radius);
   overflow: hidden;
   display: flex;
@@ -577,7 +556,7 @@ body {
 }
 
 .card-image {
-  background-color: var(--card-bg);
+  background-color: var(--color-gray-darker);
   padding: 8px;
   position: relative;
 }
@@ -655,14 +634,14 @@ body {
 }
 
 .btn.white {
-  background: var(--btn-bg-white);
-  color: var(--btn-text-light);
+  background: var(--color-white);
+  color: var(--color-black);
   position: relative;
   overflow: hidden;
 }
 
 .btn.white:before {
-  content:'';
+  content: '';
   top: 0;
   position: absolute;
   left: -100%;
@@ -681,8 +660,8 @@ body {
 }
 
 .btn.dark {
-  background: var(--btn-bg-dark);
-  color: var(--btn-text-dark);
+  background: var(--color-gray-light);
+  color: var(--color-white);
 }
 
 .btn.dark:hover {
@@ -691,20 +670,20 @@ body {
 
 /* === CONTACT SECTION === */
 .contact-list {
-    margin-top: 80px;
-    border-top: var(--border-width) var(--border-style) var(--color-gray-light);
+  margin-top: 80px;
+  border-top: var(--border-width) var(--border-style) var(--color-gray-light);
 }
 
 .contact-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: var(--border-width) var(--border-style) var(--color-gray-light);
-    text-decoration: none;
-    color: var(--text-faded);
-    font-size: var(--font-size-lg);
-    transition: background-color var(--transition-medium);
-    padding: var(--spacing-md) var(--spacing-2xl) var(--spacing-md) var(--spacing-2xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border-width) var(--border-style) var(--color-gray-light);
+  text-decoration: none;
+  color: var(--text-faded);
+  font-size: var(--font-size-lg);
+  transition: background-color var(--transition-medium);
+  padding: var(--spacing-md) var(--spacing-2xl) var(--spacing-md) var(--spacing-2xl);
 }
 
 .contact-row:hover {
@@ -712,17 +691,17 @@ body {
   color: var(--color-white);
 }
 
-.contact-row:hover span { 
-  transform: translateX(10px); 
+.contact-row:hover span {
+  transform: translateX(10px);
 }
 
-.contact-row:hover svg { 
-  transform: translateX(-10px); 
-} 
+.contact-row:hover svg {
+  transform: translateX(-10px);
+}
 
 /* === NEWSLETTER === */
 .newsletter-container {
-  max-width: var(--newsletter-max-width);
+  max-width: var(--content-max-width);
   margin: var(--spacing-7xl) auto;
   width: calc(100% - var(--spacing-4xl));
 }
@@ -774,7 +753,7 @@ body {
   display: flex;
   width: fit-content;
   margin: 0 auto var(--spacing-3xl);
-  gap: var(--filter-gap);
+  gap: 1.5rem;
   padding: 0.3rem;
   flex-wrap: wrap;
   border: var(--border-width) var(--border-style) var(--color-gray-light);
@@ -823,7 +802,7 @@ body {
 .paper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: var(--paper-gap);
+  gap: 2rem;
   padding: var(--spacing-2xl) 0;
   border-bottom: var(--border-width) var(--border-style) var(--color-gray-light);
   cursor: pointer;
@@ -899,13 +878,13 @@ body {
 }
 
 @keyframes fadeIn {
-  from { 
-    opacity: 0; 
-    transform: translateY(10px); 
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -982,7 +961,7 @@ body {
 
   /* Newsletter responsive */
   .newsletter-container {
-    width: calc(100% - var(--spacing-3xl));  
+    width: calc(100% - var(--spacing-3xl));
     padding: 0;
   }
 
