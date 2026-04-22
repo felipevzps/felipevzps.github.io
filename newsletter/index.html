@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">diagFDR: Verifiable False Discovery Rate Reporting in Proteomics via Scope, Calibration, and Stability Diagnostics</h2>
-<p class="paper-authors">Chion, M., Godmer, A., +2 authors, Giai Gianetto, Q.</p>
+<h2 class="paper-title">Rational engineering enhances the signal and modularity of an RNA barcoding technology to track gene transfer in microbiomes</h2>
+<p class="paper-authors">Karinje, L., Silberg, J., +1 author, Stadler, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> In mass spectrometry-based proteomics, false discovery rate (FDR) control underpins the credibility of peptide and protein identifications. In contemporary workflows, including multi-run Data Independent Acquisition (DIA), deep learning-assisted scoring, library-free searches, and extensive post-processing, the statement "1% FDR" has become increasingly ambiguous, potentially referring to different statistical entities, multiple-testing scopes, and null models. We propose a standardized framework requiring explicit specification of three complementary properties: "scope", meaning which statistical universe is controlled; "calibration", meaning whether confidence measures behave consistently with their intended interpretation on the reported unit; and "stability", meaning whether acceptance thresholds and resulting identification lists remain robust to perturbations. Building on routine target/decoy outputs, we introduce pipeline-agnostic diagnostics that audit internal coherence of scores, q-values, and posterior error probabilities, quantify tail support and cutoff fragility, and test plausibility of target-decoy assumptions. We further complement internal checks with external validation via entrapment, which measures empirical false positives on known absent sequences. We highlight a "granularity paradox": as scoring becomes more discriminative, decoy matches can become so sparse near stringent cutoffs that the numerical support for decoy-based estimation deteriorates, making reported FDR thresholds increasingly fragile despite improved separation between the distributions of target and decoy scores. Applications to DIA-NN and MS2Rescore show that scope and aggregation choices can materially alter both estimated error rates and list reproducibility. We provide a practical reporting checklist and an open-source R package (diagFDR, available from CRAN) that generates diagnostic reports from standard software outputs. As a minimal verifiable reporting standard, we recommend that any "FDR = alpha%" claim specify the controlled unit and scope, report tail support at the operating cutoff, and make decoy-inclusive outputs available for independent verification.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.16.718468v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Horizontal gene transfer drives microbial evolution and offers a powerful strategy for precision microbiome engineering. To track gene transfer within complex communities, we previously developed RNA-Addressable Modification (RAM), an RNA-barcoding technology where a mobile catalytic RNA barcodes host 16S ribosomal RNA (rRNA) upon gene transfer. However, the first-generation RAM suffered from low barcoding efficiency and lacked modularity, limiting its sensitivity and versatility. Here, we present RAM v2, a re-engineered system with significantly enhanced performance and modularity. By incorporating natural ribozyme structural motifs and improved barcode stability, we achieved a ~200-fold increase in barcoded rRNA signal. To enhance modularity, we integrated CRISPRi-based repression and ribozyme insulators, facilitating easy promoter swapping. We validated RAM v2 on a mobilisable plasmid delivered to a complex wastewater microbial community, demonstrating a substantial increase in signal over the original system while barcoding similar taxa. These improvements enable higher-resolution, more sensitive monitoring of horizontal gene transfer, providing a robust toolkit for accelerating the study of gene transfer in microbial communities and advancing targeted microbiome engineering.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.20.719664v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Full-Length Molecular Models of Brain-Derived α-Synuclein Fibrils Reveal a Fuzzy-Coat-Mediated Mechanism for Selective Peptide Binding</h2>
-<p class="paper-authors">Pintado-Grima, C., Barcenas, O., +3 authors, Ventura, S.</p>
+<h2 class="paper-title">Foundation cell segmentation models performance on live microscopy and spatial-omics data</h2>
+<p class="paper-authors">Miao, Y., Surguladze, N., +12 authors, Hickey, J. W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Parkinson's disease (PD) is characterized by the aggregation of alpha-synuclein (aSyn) into amyloid fibrils that seed further aggregation and contribute to pathological spreading. Peptides that bind aggregated aSyn are promising therapeutic leads, but their validation is slow, difficult to standardize, and often relies on structural models limited to the ordered cross-beta core. Here, we built models of brain-derived full-length aSyn fibrils by extending the Lewy-fold cryo-EM structure with disordered N- and C-terminal segments and sampling the resulting ensembles with the CALVADOS coarse-grained force field. The resulting fibrils display a dynamic fuzzy coat in which the termini, especially the acidic C-terminal tails, form recurrent transient contacts with the core, including the aggregation-prone beta 5 and beta 9 motifs. We then used these full-length fibrils in a standardized in silico assay for peptide binding. Simulations of the validated peptide binders PSMa3 and LL-37 reproduced their relative binding behavior and converged on a common mechanism in which electrostatic capture by the anionic fuzzy coat precedes stabilization on recurrent P2 and P3 hotspots within the structured core. Control simulations with monomeric aSyn or core-only fibrils showed that persistent association is lost in the absence of the full-length architecture, providing a mechanism for selectivity toward aggregated species. Finally, screening 123 peptides from aSynPEP-DB using a relative contact-based binding score yielded a ranked set of candidate binders and identified net positive charge as the dominant determinant of sustained association, with hydrophobicity acting as a secondary modulator. Together, these results establish full-length, brain-derived fibril ensembles as a practical framework for understanding ligand recognition at pathological amyloid surfaces and for prioritizing therapeutic peptide binders targeting aggregated aSyn.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.16.718707v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate cell segmentation is an essential step for quantitative analysis of biological imaging data. Recent advances in deep learning have led to the development of generalist segmentation models that perform robustly across multiple imaging modalities, including label-free phase contrast, fluorescence cell culture, and multiplexed fluorescence tissue imaging. However, systematic comparisons of these models at the level of downstream biological analysis remain limited. To address this gap, we evaluated several recent segmentation models, including Cellpose cyto3, Cellpose-SAM, SAM, and CellSAM, on phase contrast and fluorescence cell culture images. In addition, Mesmer and InstanSeg were included for benchmarking on multiplexed fluorescence tissue images generated using CO-Detection by IndEXing (CODEX). We found that Cellpose-SAM achieved strong performance on phase contrast images, while SAM-based models consistently performed well on fluorescence cell culture data. In contrast, no single model consistently outperformed others on CODEX datasets. Instead, each model exhibited distinct strengths and limitations, which led to differences in downstream analyses, including clustering and cell type identification. Together, our study emphasizes the importance of selecting segmentation models based on dataset characteristics and analytical goals, rather than relying on a single universal approach.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719315v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">How Mitochondria Distribute and Align in HeLa Cells: A Computational Analysis On Electron Microscopy Images.</h2>
-<p class="paper-authors">Brito Pacheco, D., Giannopoulos, P., Reyes-Aldasoro, C. C.</p>
+<h2 class="paper-title">Novel Parameter-Free and Interpretable Integration of CITE-seq RNA and ADT Profiles via Tensor Decomposition-Based Unsupervised Feature Extraction</h2>
+<p class="paper-authors">Taguchi, Y.-h., Turki, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> This paper investigates the way in which mitochondria distribute and align inside HeLa cells observed with serial block-face scanning electron microscopy. Four models of alignment were considered: (1) mitochondria exhibiting no discernible alignment pattern, (2) mitochondria aligned pointing towards the nucleus of the cell, (3) mitochondria aligned all in one direction when viewed from above, (4) mitochondria aligned tangent to the surface of the nucleus. These models were named (1) {it unaligned}, (2) {it petals}, (3) {it racecars}, and (4) {it clouds}. The mitochondria, nucleus and plasma membrane of 25 individual cells were segmented. A total of 12,299 mitochondria were identified and analysed. Alignment of the major axis of each mitochondrion was calculated in two ways: relative to a ray that joins it to the centroid of the nucleus, and relative to a ray that joins it to the nucleus' surface. Results indicate that mitochondria tend to align tangentially to the nucleus surface, i.e., a textit{clouds} model. In addition, differences in the spatial distributions of the mitochondria were found and quantified with clearly defined metrics. The methodology here presented can be extended to other acquisition settings where the distribution and alignment of cells could be important, for instance, histopathology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.16.718887v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> CITE-seq jointly profiles cellular transcripts and surface proteins, but integrating RNA and antibody-derived tags (ADTs) remains challenging because the two modalities differ markedly in dimensionality, sparsity, and noise characteristics. We present a tensor-decomposition-based unsupervised feature extraction framework for the parameter-free integration of CITE-seq data. By constructing a gene x cell x protein tensor and applying HOSVD, this method derives the shared latent representations of genes, cells, and proteins without prior gene filtering or modality-weight tuning. Across five ImmGen T-cell CITE-seq datasets, the resulting cell embeddings were generally more consistent with annotated cell types than RNA-only, protein-only, or totalVI-based embeddings, whereas the organ-level consistency did not improve. The latent factors also enabled post hoc unsupervised gene selection, and the selected genes showed biologically meaningful enrichment for T-cell-related terms. In addition, failure in a poor-quality dataset served as a useful quality-control signal. Together with a blocked sparse-matrix implementation for large tensors, these results indicate that tensor decomposition-based unsupervised feature extraction provides an interpretable, scalable, and competitive approach for integrating RNA and ADT measurements in CITE-seq experiments.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719420v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Selective Hydrolytic Defluorination of Branched Perfluorooctanoic Acid Isomers by a Haloacid Dehalogenase</h2>
-<p class="paper-authors">Hu, M., Bhardwaj, S., +3 authors, Scott, C.</p>
+<h2 class="paper-title">Benchmarking Agentic Large Language Models for ComplexProtein-Set Functional Annotation</h2>
+<p class="paper-authors">Zhang, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Per- and polyfluoroalkyl substances (PFAS) are highly resistant to enzymatic C-F bond cleavage, and hydrolytic defluorination of long-chain PFAS has rarely been demonstrated. Here, we report selective hydrolytic defluorination of branched perfluorooctanoic acid (PFOA) isomers by a haloacid dehalogenase (4A) from Delftia acidovorans strain D4B. A fluoride-specific riboswitch biosensor was used for initial substrate screening, followed by scaled-up assays in which fluoride release was quantified using a fluoride ion-selective electrode. Defluorination products were subsequently identified by liquid chromatography-mass spectrometry (LC-MS). Although purified 4A (10 M) readily catalyzed hydrolytic defluorination of fluoroacetic acid, incubation of PFOA (0.5 mM) with purified 4A resulted in a statistically significant increase in fluoride release at elevated enzyme loading (500 M). High-resolution LC-MS/MS analysis revealed that defluorination products originated from minor branched PFOA isomers rather than linear PFOA. Molecular docking analyses supported catalytically plausible binding geometries for branched PFOA isomers, positioning the substrate -carbon within ~4 [A] of the catalytic aspartate residue. These findings demonstrate previously unrecognized hydrolytic reactivity of a haloacid dehalogenase toward branched PFAS isomers and expand the known catalytic scope of the haloacid dehalogenase family.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.19.719434v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Large language model (LLM) agents are increasingly used to synthesize heterogeneous bioinformatics evidence, but their reliability for high-volume biological annotation remains poorly characterized. We evaluated three agent configurations on a controlled protein annotation task: Claude App with Claude Opus 4.7, Claude Code CLI with Claude Opus 4.7 and Claude Scientific Skills, and Codex App with GPT-5.4 and Claude Scientific Skills. Each configuration was run three times on the same verbatim prompt, the same 73 selected orthogroup FASTA files (1,705 protein sequences), and the same local evidence: Swiss Prot BLASTP output, Pfam/HMMER domain hits, DeepTMHMM topology predictions, and SignalP secretion predictions. We audited the nine outputs for coverage, biological correctness, missing evidence, hallucinated or over-specific annotations, and within-method consistency, then merged the best-supported evidence into a final orthogroup annotation table. All nine runs covered all 73 orthogroups, indicating that the agents could retrieve and organize the complete input set. However, normalized calcification-relevance calls were only moderately reproducible: within-method exact tier agreement ranged from 0.397 to 0.685 for Claude App (mean 0.562), 0.342 to 0.740 for Claude Code (mean 0.516), and 0.411 to 0.630 for Codex App (mean 0.539), and the per-run number of high-confidence calls varied from 0 to 12 across the nine runs. The final curated table retained 3 high-confidence, 9 moderate, 18 watchlist, and 43 low-relevance orthogroups. The most robust direct candidates were sulfatase (OG0017138) and sulfotransferase (OG0020703) families and an FG-GAP/integrin-like surface protein family (OG0018986), whereas common error modes included elevating pentapeptide-repeat orthogroups on motif evidence alone, treating weakly secreted housekeeping enzymes as matrix proteins, and taking low-complexity BLAST labels at face value. Skill-enabled agents improved file handling, evidence traceability, and reproducibility of computational checking, but they did not eliminate biological overinterpretation. These results support a best-practice workflow in which LLM agents draft annotations only after deterministic evidence tables are generated, with explicit scoring rules, provenance columns, run-to-run replication, and expert review of high-impact claims.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719404v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A trainable language model for modulating translation rates in non-model organisms by generating upstream untranslated region sequence libraries</h2>
-<p class="paper-authors">Duggan, A. D., Newman, M. P., McMillen, D. R.</p>
+<h2 class="paper-title">Topographical archetypes of somatic mutagenesis in cancer</h2>
+<p class="paper-authors">Lynch, A. W., Lee, S. S., +5 authors, Park, P. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Tuning protein expression in non-model organisms is often constrained by the lack of validated genetic parts and predictive design tools. Translational tuning through the modulation of upstream untranslated regions (5'-UTRs) offers a potentially organism-agnostic route, but existing methods typically rely on mechanistic assumptions, prior knowledge that may not be available in non-model contexts, or the screening of sequence libraries. Here, we present a simple generative approach for creating synthetic 5'-UTR libraries based solely on the genomic sequence statistics of any desired organism. The method uses a sliding-window n-gram language model applied to native 5'-UTR sequences to produce novel sequences that preserve organism-specific base distributions and motifs without hard-coding specific motifs or mechanistic rules into inflexible statistical templates. We have applied this approach to the model bacterium Escherichia coli and the non-model probiotic Limosilactobacillus reuteri. Libraries of approximately 1,000 sequences were generated for each organism, from which about 100 unique sequences were experimentally tested for translation of a fluorescent reporter protein. In both organisms, the synthetic libraries yielded a broad range of translation levels from this relatively small number of tested variants. Sequences derived from an organisms own genomic statistics generally performed better in that organism than sequences derived from the other species. Correlations of individual sequence performance across the two species were weak, and thermodynamic predictions of ribosome binding strength showed very little predictive power, especially in the non-model L. reuteri. The results demonstrate that simple statistical language model approaches applied to genomic data can generate functional translational regulatory sequence libraries without detailed mechanistic knowledge or explicit reference to consensus motifs. The approach requires minimal computational resources, avoids reproducing native sequences, and can be readily applied to any organism with a sequenced genome. This strategy may lower technical barriers to expression tuning in non-model organisms.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719341v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The genome of every cancer cell carries a record of the mutational processes that have acted throughout its history. Mutational signature analysis, which infers the activity of mutagenic processes from their characteristic base-change patterns, has become an indispensable tool for interpreting somatic mutations. However, this framework captures only which types of mutations a process generates and not where in the genome they occur - a distribution influenced by replication timing, chromatin organization, transcription, DNA secondary structure, and other genomic features. Here, we present a generative probabilistic framework (MuTopia) that jointly infers mutational spectra and their genome-wide topography as nonlinear functions of genomic and epigenomic state. Applied to whole-genome sequencing data from 15 tumor types, MuTopia reveals that mutational processes fall into eight conserved topographic archetypes, or topotypes, shaped primarily by replication timing and chromatin state. Diverse mutational processes converge upon this limited repertoire, indicating that the genomic distribution of mutagenesis is constrained less by the source of damage than by how that damage is processed. Individual mutational processes exhibit state-dependent variation in their genomic distributions: the same signature can adopt distinct topotypes depending on repair proficiency and replication stress. For instance, SBS8 shifts from a canonical late-replicating profile in homologous recombination-proficient tumors to an early-replicating, stress-associated topotype in HR-deficient tumors, and replication stress similarly reshapes the genomic distribution of APOBEC editing. Topotypes, therefore, provide a classification of mutagenesis distinct from spectral signatures, capturing aspects of tumor biology that spectra alone cannot resolve.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719374v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">KIR*BLOOM: Accurate KIR genotyping using a new copy number-aware integrated genotype likelihood framework</h2>
-<p class="paper-authors">Gohar, Y., Garcia, A. D., +2 authors, Dilthey, A. T.</p>
+<h2 class="paper-title">A sequence-based proactive intelligence for influenza antigenic profiling improves vaccine strain selection</h2>
+<p class="paper-authors">Chen, Y., Xu, Y., +11 authors, Shu, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Killer-cell immunoglobulin-like receptor (KIR) genes, key modulators of natural killer (NK) cell activity, play critical roles in immune response and disease susceptibility. Accurate KIR genotyping from short-read sequencing data remains challenging because of high sequence similarity among genes, extensive copy number variation, and substantial allelic diversity. Here, we present KIR*BLOOM, a likelihood-based approach for KIR genotyping from short-read data that models read depth and sequencing error across alternative genotype configurations. KIR*BLOOM first identifies KIR-relevant read pairs, maps them to a KIR allele database, and reduces the candidate allele space by excluding alleles unlikely to be present. It then infers gene copy number and selects alleles under the inferred copy-number constraints. Finally, variant calling is used to refine CDS sequences and identify potential novel alleles. We evaluated performance on 45 whole-genome sequencing samples with haplotype-resolved assemblies from the HPRC or HGSVC, using Immuannot-derived annotations as ground truth. KIR*BLOOM achieved 99.85% precision, 99.92% recall, and a Jaccard index of 99.77% for copy-number inference. At five-digit allele resolution, it achieved 92.73% precision, 92.69% recall, and an 87.29% Jaccard index, outperforming T1K, GraphKIR, and Geny. Together, these results demonstrate that KIR*BLOOM enables highly accurate KIR genotyping from short-read sequencing data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.15.718735v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Seasonal influenza viruses accumulate antigenic changes, eroding population immunity and necessitating recurrent vaccine updates. Hemagglutination inhibition (HI) assays are the standard for measuring antigenic relationships between circulating and vaccine strains; however, their limited throughput constrains the scale and timeliness of surveillance. Here, we present fluProfiler, a foundation-model-based framework that learns a stable mapping from viral sequences to antigenic space and uses this representation to support influenza antigenic prediction, vaccine strain evaluation, and diversity-driven sampling. fluAgPredictor aligns hemagglutinin (HA) and neuraminidase (NA) sequence representations with HI-derived antigenicity, enabling accurate and consistent inference of pairwise antigenic distances across surveillance-aligned evaluation settings. Without prior annotation of antigenic sites, it identifies key residues in immunodominant epitopes and reveals the cooperative contributions of HA and NA to antigenic variation. Building on this antigenic-space representation, fluVacSelector provides antigenic coverage scores that are concordant with World Health Organization (WHO) vaccine recommendations while also flagging potential candidates that may offer broader coverage ahead of formal consultations. fluAgEnhancer further leverages the same representation to prioritize antigenically informative and diverse strains for experimental characterization, achieving comparable predictive accuracy with approximately 25% fewer HI measurements than random sampling. Together, these modules provide a high-throughput and interpretable complement to HI testing, converting routine genomic surveillance into a more proactive, data-driven support system for antigenic monitoring and vaccine strain selection.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719333v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Elucidating the Bell-Shaped Dependence of Protein Translation Activity on EF-Tu Concentration in a Reconstituted Cell-Free System Using a Mechanistic Model</h2>
-<p class="paper-authors">Ban, S., Himeoka, Y., +3 authors, Furusawa, C.</p>
+<h2 class="paper-title">A novel polymerase III promoter for gene editing in the agricultural pest Ceratitis capitata</h2>
+<p class="paper-authors">Halll, A. S., Shackleton-Chavez, S. M., +1 author, Leftwich, P. T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein synthesis in cell-free protein synthesis systems often exhibits non-intuitive input-output relationships. In the PURE system, a reconstituted cell-free system, protein production peaked at low elongation factor Tu (EF-Tu) concentrations and decreased at higher concentrations, resulting in a characteristic bell-shaped profile. Here, we investigated the origin of this behavior using a detailed mechanistic model of translation in the PURE system, designated as ePURE, which describes reaction dynamics of hundreds of molecular species and reactions. Our computational analysis suggested that excess EF-Tu sequesters the initiator tRNA (tRNAfMet) into non-productive EF-Tu{middle dot}GTP{middle dot}Met-tRNAfMet complexes, thereby depleting the pool of initiator tRNA available for translation initiation. This suppression arises from competition for a limited molecular resource rather than from direct inhibition. Based on this mechanism, we predicted that increasing the concentrations of tRNAfMet and methionyl-tRNA formyltransferase would eliminate the bell-shaped dependence, and experimentally confirmed this prediction. Under these modified conditions, the bell-shaped response disappeared and protein production was enhanced. These findings demonstrate how mechanistic computational models can reveal hidden constraints underlying non-intuitive input-output relationships in complex biochemical networks and guide the rational optimization of cell-free protein synthesis systems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.17.719328v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> We report the identification and functional validation of a 7SK RNA polymerase III promoter in the Mediterranean fruit fly, Ceratitis capitata. CRISPR/Cas9-based genetic control strategies for this global agricultural pest, including gene drives and precision guided sterile insect approaches, require efficient guide RNA expression, yet only a single U6 Pol III promoter had previously been validated for this purpose in C. capitata, and no 7SK promoter had been characterised in any Tephritid species. Using comparative genomics with Drosophila orthologues, we identified a previously unannotated 7SK gene in the C. capitata genome, confirmed its transcriptional activity by RT-PCR, and demonstrated that the cloned promoter drives functional guide RNA expression in CRISPR/Cas9-mediated knockouts of the white gene. Comparative analysis identified putative 7SK orthologues across the Tephritid fruit flies. The availability of this additional new Pol III promoter will enable multiplexed guide RNA strategies using distinct promoters, supporting more robust genetic control designs.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.21.719894v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,53 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Genome-wide identification and characterization of the NAC transcription factor family in Cynodon dactylon and their expression during abiotic stresses</h2>
-<p class="paper-authors">Poudel, A., Wu, Y.</p>
+<h2 class="paper-title">Benchmarking Generative Large Language Models for de novo Antibody Design and Agentic Evaluation</h2>
+<p class="paper-authors">Hossain, D., Abir, F. A., +1 author, Chen, J. Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Common bermudagrass (Cynodon dactylon) is a highly resilient and cosmopolitan grass widely used for turf, forage, and soil stabilization. Although its genome has been sequenced, little study has focused on characterizing genes underlying its resilience, including the NAC transcription factor family, which is well known for its physiological and stress-related functions. This study aimed to systematically characterize NAC TF genes in the bermudagrass genome and assess their potential roles in abiotic stress tolerance. A total of 237 CdNAC genes were identified and phylogenetically classified into 14 groups, including 40 members in the NAM/NAC1 class, which is associated with plant growth and development, and 23 members in the SNAC class, which is associated with stress responses. Tissue-specific RNA-seq analysis indicated that about one-fourth of CdNAC genes were expressed across all tissues, whereas 13 genes showed relatively higher expression in roots and 9 in inflorescence, suggesting both essential and specialized functions. Stress-responsive expression profiling revealed that 35 CdNAC genes were upregulated in response to drought, 43 to heat, 10 to salt, and 42 to submergence stress. Notably, CdNAC122, 149, and 155, the members of SNAC class, were consistently upregulated across all stress conditions, while others exhibited stress-specific expression, such as CdNAC37, 130, 145, and 199 in drought, CdNAC7, 12, 18, and 29 in heat, CdNAC46 and 151 in salt, and CdNAC9 and 31 in submergence. In contrast, 53 genes were downregulated during different stresses, with most belonging to NAM/NAC1, TERN, or OsNAC7 classes, possibly reflecting suppression of photosynthesis and development-related processes under stress. These results provide the first comprehensive characterization of CdNAC genes, reveal their distinct regulatory roles in abiotic stress responses, and establish a foundation for future functional validation and applications in breeding of stress-resilient bermudagrass.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.15.718725v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Despite major advances in computational antibody engineering, no systematic comparison of modern open-source LLM backbone families for antibody sequence generation exists, nor is it known whether architectural differences matter at compact model scales. In this study, five compact transformer variants inspired by prominent open-source LLM families (Llama4, Gemma3, DeepSeekV3, Mistral 7B, and NVIDIA Nemotron3) were customized and trained from scratch for de novo VH single-domain antibody (sdAb) design. All five models were pretrained from scratch on 15 million sequences from the Observed Antibody Space (OAS) database. Pretraining yielded uniformly high generative fidelity across architectures: sequence diversity 0.507 - 0.516 (CV=0.8%), uniqueness approaching 1.0, and novelty 0.925 - 0.977(CV=2.2%). The models were subsequently fine-tuned on disease-stratified repertoires spanning SARS-CoV-2 (n=4,688), HIV (n=430), HER2 (n=22,778), and Ebola virus (n=2,868). Structural assessment of top-ranked candidates of those case studies via AlphaFold-2, Boltz-2, RoseTTAFold-2, and ESMFold produced mean pLDDT scores of 92.88 (1.54) to 93.77 (2.16), with no statistically significant inter-model differences(Kruskal Wallis H=2.06, p&gt;0.05; N=100), indicating that no statistically detectable difference was observed across architectures at this compressed scale in a single-seed experiment, suggesting that generative capacity at this parameter regime is primarily determined by training data and model scale rather than family-specific design elements at this scale. Computational docking yielded predicted binding free energies of -8722; -36.34 to -8722; -65.60 kcal/mol; independent biological rigor validation through IMGT-defined CDR-H3 extraction, BLASTp novelty assessment, and NetMHCIIpan 4.3 MHC-II immunogenicity profiling collectively confirmed antigen-binding loop novelty (CDR-H3 identity 0 - 29% to closest database hits), germline-consistent humanness (77 - 90% VHgermline content), and immunogenically silent antigen-binding surfaces with no strong MHC-II binders detected across CDR regions in any candidate. We further introduce a proof-of-concept agentic evaluation pipeline leveraging the ModelContext Protocol (MCP) with Claude Sonnet 4.6, enabling automated structural profiling and candidate prioritization across disease targets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.716776v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 21, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">SpaFlow depicts the dynamics of ligand-receptor interaction in spatial transcriptomics data</h2>
+<p class="paper-authors">Chen, H., Wang, X., +7 authors, Ma, Q.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Spatial transcriptomics (ST) enables the study of cell-cell communication in native tissue context, but current methods for the ligand-receptor interaction (LRI) inference generally rely on static, distance-based assumptions. Here we present SpaFlow, a reaction-diffusion framework that models ligand diffusion, binding, dissociation, production and degradation to infer spatially resolved LRI activity and hotspots from ST data. Across paired 10x Visium and CosMx metastatic renal cell carcinoma datasets, SpaFlow outperformed existing methods in recovering spatially coherent LRIs, with inferred LRI activity showing stronger association with downstream signaling. In hepatocellular carcinoma after neoadjuvant immunotherapy, SpaFlow identified CXCL12-CXCR4 hotspots enriched at immune-rich tumor boundaries in responders. In aging mouse heart, SpaFlow resolved niche-specific pro-fibrotic and senescence-associated signaling, highlighting Postn-Itgav/Itgb5 as an additional pro-fibrotic axis and Angptl2-Pirb as a candidate mediator of inter-niche senescence-related communication. In human idiopathic pulmonary fibrosis lung, SpaFlow localized CXCL12-CXCR4 signaling between adventitial fibroblasts and CD4 T cells, CD8 T cells, and B cells in the fibrotic surrounding regions. Together, SpaFlow provides a physically informed framework for quantifying spatially constrained cell-cell communication and mechanistically interpreting signaling patterns in complex tissues.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.17.719264v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 21, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Ancestra: A lineage-explicit simulator for benchmarking B-cell receptor repertoire and lineage inference methods</h2>
+<p class="paper-authors">Hassanzadeh, R., Abdollahi, N., +2 authors, Eslahchi, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> High-throughput B-cell receptor sequencing has transformed the analysis of adaptive immunity, but benchmarking clonal grouping and lineage reconstruction methods remains limited by the absence of datasets with known evolutionary histories. Here we present Ancestra, a lineage-explicit simulator of B-cell receptor heavy-chain affinity maturation. Ancestra models stochastic V(D)J recombination, context-dependent somatic hypermutation, affinity-based selection and clonal expansion while recording complete parent-child relationships and mutation events. The framework generates BCR heavy-chain sequence datasets together with their corresponding ground-truth lineage trees, enabling direct benchmarking of lineage-aware analytical methods. Across simulations, Ancestra recapitulates key properties of human repertoires, including complementarity-determining region 3 length distributions, amino-acid usage patterns, junctional mutation patterns consistent with IMGT criteria and heterogeneous branching topologies. Simulated lineages also reveal multi-label lineage trees, in which identical nucleotide sequences can arise independently along distinct evolutionary paths. Ancestra provides a practical foundation for rigorous benchmarking of lineage-aware immune repertoire analysis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.17.718988v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +222,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Elucidation of putative key genes involved in the regulation of triple negative breast cancer development and progression</h2>
-<p class="paper-authors">Kumar, A., Upadhyay, G. S., +3 authors, Rajala, M. S.</p>
+<h2 class="paper-title">Functionalized nanoparticle transforms cold to hot adenoid cystic carcinoma of salivary gland tumour microenvironment in vitro</h2>
+<p class="paper-authors">Chakraborty, R., Shah, R., +7 authors, Shannon, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The molecular basis of triple-negative breast cancer (TNBC), a highly aggressive and therapy-resistant subtype of breast cancer, is poorly understood. This study aims to identify key genes and pathways involved in TNBC development and progression using a systems biology approach followed by experimental validation. Here, two transcriptome microarray datasets from the GEO database were analysed using the R package LIMMA to detect differentially expressed genes (DEGs) in TNBC tumors. Gene Ontology (GO) and Kyoto Encyclopaedia of Genes and Genomes (KEGG) enrichment analyses using the DAVID database were performed to identify DEGs' regulated biological functions and pathways. Further, a protein-protein interaction (PPI) network was constructed using the STRING online database, and the topological properties were determined using MCODE and Cytohubba plug-ins. The expression and the prognostic value of the hub genes were validated using the Cancer Genome Atlas (TCGA) survival analysis. We found 727 DEGs, of which 473 were downregulated and 254 were upregulated in TNBC vs. non-TNBC samples. The GO and KEGG analyses indicated that the DEGs were mainly related to cell adhesion, tumorigenesis, and cellular immunity. The PPI network had shown six hub genes, namely CCND1, CDH1, ESR1, FN1, IL6, and PPARG, as the top key regulators. All these genes were validated by quantitative real-time PCR in the TNBC cell line using non-TNBC cell line as a calibrator, and the obtained results were in accordance with the bioinformatics data. This information may contribute to understanding the various molecular mechanisms that drive the development and progression of TNBC tumors.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.15.718835v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Adenoid cystic carcinoma (ACC) of salivary gland is an immune-cold tumour. Annexin A3 (ANXA3) is an apoptotic protein found to be participating in immune cell infiltration in tumour microenvironment (TME) of various cancer cases. Significant low expressions of ANXA3 protein found in adenoid cystic carcinoma. We hypothesized overexpressing ANXA3 transforms ACC cold TME to hot. We cultured UM-HACC-2A and UFH2 spheroids on extracellular matrix and co cultured them with peripheral blood mononuclear cells. We functionalized FDA (The Food and Drug Administration) approved Poly(lactic-co-glycolic acid) PLGA nanoparticles with anti-cMyb antibody and ANXA3 recombinant protein using streptavidin-biotin conjugation. Upon overexpressing ANXA3 in ACC spheroids in immune coculture model using functionalized nanoparticles, significant increase of tumour infiltrating lymphocytes and decrease in the size of the ACC spheroids observed. Apoptotic profiler assay further confirmed significant upregulation of apoptotic proteins, some of them participate in immune infiltration. Overall, this project exhibits promising results showing potential approach to convert ACC into an immune hot tumour.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719423v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,53 +241,34 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 20, 2026</span>
+<span class="date">Apr 21, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Transcription Factor-Mediated Reprogramming of Cancer-Associated Fibroblasts Reveals Targetable Vulnerabilities in Solid Tumors</h2>
-<p class="paper-authors">Lee, N. S., Datta, P., +11 authors, Puri, I. K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cancer-associated fibroblasts (CAFs) contribute to immune exclusion and therapy resistance in solid tumors, limiting the efficacy of chimeric antigen receptor (CAR) T cell and immune cell therapy. To overcome this, we developed a transcription factor (TF)-based strategy to reprogram prostate-derived CAFs (pCAFs) into normal fibroblast-like cells (NFs). We prioritized TFs enriched in quiescent stellate cells-Vitamin D receptor (VDR), Peroxisome Proliferator-Activated Receptor gamma (PPAR{gamma}), and p53- and selected VDR for proof-of-concept studies. Lentiviral VDR expression in pCAFs produced VDR-reprogrammed NFs (VDR-rpNFs) with reduced CAF markers, increased ATP, and suppressed TGF-{beta} and IL6, indicating phenotypic and metabolic reversion. In both in vitro 3D co-cultures and in vivo, VDR-rpNFs disrupted tumor architecture, enhanced CAR T cell infiltration, and reduced necrosis. PPAR{gamma}- and p53-rpNFs showed similar reprogramming effects. These results suggest TF-guided fibroblast reprogramming as a viable strategy to remodel the tumor microenvironment and improve CAR T cell efficacy in solid tumors.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.15.718753v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">In Silico study of clinical implication of markers associated with PTHrP regulatory mechanisms and linked to angiogenesis and EMT program of colorectal cancer</h2>
-<p class="paper-authors">Carriere, P. M., Novoa Diaz, M. B., +1 author, Gentili, C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Parathyroid hormone-related peptide (PTHrP), encoded by PTHLH, has been implicated in tumor progression through its involvement in epithelial-mesenchymal transition (EMT), angiogenesis, and tumor cell migration. Previous experimental studies suggest that PTHrP may promote these processes in colorectal cancer (CRC), partly through the modulation of factors such as secreted protein acidic and rich in cysteine (SPARC) and vascular endothelial growth factor (VEGFA). These events play a key role in the acquisition of an aggressive phenotype in our experimental models. In this study, we performed an integrative in silico analysis of multiple transcriptomic datasets to investigate the potential role of PTHLH in CRC. Differential expression analysis identified a set of consistently dysregulated genes across independent datasets. Functional enrichment and network analyses revealed that PTHLH expression is associated with biological processes related to extracellular matrix remodeling, EMT, and angiogenesis. Correlation analyses showed a positive association between PTHLH and SPARC expression, while network-based approaches suggested a potential functional connection with VEGFA. To assess the clinical relevance of these findings, survival analysis was performed using publicly available datasets. High expression levels of PTHLH, SPARC, and VEGFA were significantly associated with reduced overall survival in patients. Notably, a combined gene signature based on these three factors demonstrated a stronger prognostic effect than individual genes, indicating enhanced predictive value. These findings suggest that PTHrP is associated with molecular pathways involved in tumor progression and, together with SPARC and VEGF, may contribute to a coordinated regulatory axis with prognostic relevance in CRC, warranting further experimental validation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.15.718767v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Apr 20, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Plectin promotes an aggressive phenotype and represses cytotoxic T cell activity in pancreatic cancer</h2>
-<p class="paper-authors">Wolf, C. L., Ruiz, R. K., +7 authors, Kelly, K. A.</p>
+<h2 class="paper-title">A long-read RNA sequencing and polysome profiling framework reveals transposable element-driven transcript diversity and translational rewiring in glioblastoma</h2>
+<p class="paper-authors">Pizzagalli, M., Sasipalli, S., +3 authors, Tapinos, N.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.16.718901v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.18.719388v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 21, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A framework for the exploration of subcellular compartmentalization of RNA-binding proteins.</h2>
+<p class="paper-authors">Xiangpeng Guo, Jieyi Hu, +33 authors, Yuan Lv</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The ability of RNA-binding proteins to form complexes with other biomolecules underpins a broad range of structural properties and functions. Understanding the subcellular distribution of RNA-binding proteins and their interacting partners in the steady state and upon perturbation can therefore shed light on these aspects. Here, we present the compartmentalized RNA-Binding Protein (or coRBP) map, an experimental resource and analytical pipeline to study subcellular RNA-binding proteins through multimodal dataset integration and machine learning. Using this approach, we generate a dataset of 1,768 known and putative RNA-binding proteins distributed in a broad panel of subcellular compartments and delineate their intermolecular and intercompartmental relationships. We also establish a hierarchy of RNA-binding protein-containing complexes at multiple scales across the cell, which suggests additional functions for multiple RNA-binding proteins. Furthermore, we investigate changes in RNA-binding protein complex composition and subcellular distribution in response to C9ORF72-associated amyotrophic lateral sclerosis/frontotemporal dementia dipeptide repeats and DNA damage stress. The coRBP map provides a resource to study the roles of RNA-binding proteins in homeostasis and disease.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42014727/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
