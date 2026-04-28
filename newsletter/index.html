@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SNAC-DB: An ML-Ready Database for Antibody and NANOBODY(R) VHH-Antigen Complexes with Expanded Structural Diversity and Real-World Benchmarking</h2>
-<p class="paper-authors">Gupta, A., Munoz Rivero, B., +5 authors, Furtmann, N.</p>
+<h2 class="paper-title">Generative design of sequence specific DNA binding proteins</h2>
+<p class="paper-authors">Sehgal, E., Politanska, Y., +18 authors, Baker, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting antibody and NANOBODY(R) VHH-antigen complexes remains a critical challenge for state-of-the-art structure prediction models, limiting their impact in therapeutic discovery pipelines. We introduce SNAC-DB, an ML-ready database and curation pipeline enriched with structural biology expertise, designed to accelerate model accuracy and generalization by providing 31-37% expanded structural diversity over existing resources like SAbDab through comprehensive re-curation that extracts maximum value from available experimental structures. SNAC-DB expands coverage by capturing often-overlooked complexes and accurately identifying complete multi-chain epitopes through improved biological-assembly-based logic. Built for ML practitioners, SNAC-DB provides standardized formats with multi-threshold structure-based clustering to enable principled sample weighting during training. Using a rigorous benchmark of public PDB entries deposited post-May 2024 plus confidential therapeutic structures, we evaluate seven leading models (Protenix-v1, OpenFold-3p2, RosettaFold-3, Boltz-2, Boltz-1x, Chai-1, and AlphaFold2.3-multimer) with evaluation methodology tailored to antibody/NANOBODY(R) VHH-antigen complexes to ensure correct handling of multi-chain epitopes, revealing systematic performance gaps: success rates rarely exceed 25%, confidence-based ranking fails to identify best predictions even when accurate structures exist in ensembles, and all models consistently struggle with therapeutically relevant NANOBODY(R) VHHs. Systematic evaluation of sampling strategies demonstrates that while generating 1000 samples per target substantially increases the likelihood of producing accurate structures (oracle selection improves from 11.9% to 50.5%), confidence-based ranking remains nearly flat (between 10.9% and 14.9%), revealing that improved ranking mechanisms represent a more tractable path to performance gains. Finally, fine-tuning GeoDock on SNAC-DB yields higher success rates than training on SAbDab (11.0% vs. 7.1% for antibodies; 7.0% vs. 4.0% for NANOBODY(R) VHHs), suggesting that SNAC-DB's expanded structural diversity translates to improved model generalization.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.22.720253v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> De novo protein design has advanced rapidly in recent years, yet the programmable recognition of specific DNA sequences remains a longstanding challenge. Here we describe a deep learning based approach for designing sequence selective DNA binding proteins. Our method combines structure generation using RFdiffusion3 with explicit screening against off-target interactions using AlphaFold3. We test this approach by generating 96 designs for each of 15 diverse DNA targets and identify specific binders for 7 targets, representing a ~100-fold improvement in success rates over previous approaches. We further characterize the binding landscape using variant competition assays and randomized library screening, revealing robust sequence discrimination across diverse targets. Together, these results represent a significant step forward in de novo sequence specific DNA binder design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.27.720408v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Geometric Theoretical Framework for Dynamic Protein Mutation Detection Models: Defect Awareness and Pathogenicity Prediction</h2>
-<p class="paper-authors">Shao, H.</p>
+<h2 class="paper-title">UshEffect-3D: Structure-informed Classification of USH2A Missense Variants for Inherited Retinal Disease</h2>
+<p class="paper-authors">Choudhary, D., Portelli, S., Ascher, D. B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Traditional protein mutation detection and pathogenicity prediction pipelines rely on static single-conformation structural modeling, inherently ignoring conformational flexibility, dynamic ensemble evolution, and the underlying manifold geometry of protein dynamics. This induces systematic detection failures in flexible regions, allosteric sites, and metastable functional domains, yet lacks a rigorous mathematical characterization of such failure mechanisms. In this work, we establish a theorem-driven geometric-algebraic framework for dynamic protein mutation modeling. Starting from a dynamic conformational Riemannian manifold, we construct the latent representation space via representation-induced completion of operator-valued observations, rather than pre-assumed embedding structures. Within this setting, algebraic constraints are not imposed axiomatically but relaxed into learnable approximate Lie algebra regularization, enabling statistical verification of structural consistency.By integrating Levi-Civita connection, geodesic deviation, and heat kernel asymptotics, we introduce a Lipschitz-stable topological spectral defect (TSD, {delta}_spec) index that quantifies the intrinsic inconsistency between static representations and dynamic geometric invariants, linking it to curvature-induced instability and Lie algebra deformation. Under a functorial compatibility principle, we design a dual-branch architecture for pathogenicity prediction and defect awareness, realized via local Lie algebra encoding and low-rank spectral approximation.On multi-source datasets (108 curated PDB structures, 1060 validated residues from ClinVar, DMS, MaveDB, and gnomAD), we establish three fundamental theorems and validate key findings: TSD effectively distinguishes pathogenic/functional variants (PTM: =0.386, OMIM: =0.443, ClinVar: =0.302) from neutral ones (gnomAD: =-0.660) with high significance (P=6.67x10^-18) and strong classification performance (AUC=0.82-0.86), while correlating strongly with protein stability ({Delta}{Delta}G, Spearman=0.9794, P=5.38x10^-28). TSD further reveals PTM sites as topological hubs and neutral variants as evolutionary topological redundancy, enabling a paradigm shift from sequence alignment to geometric dynamics and providing a physics-based biomarker for variants of uncertain significance (VUS). These results upgrade protein mutation modeling from empirical static prediction to provable dynamic mechanism analysis. The source code of this work is publicly available at https://github.com/Harmenlv/LieFold-AI/tree/main.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.22.720255v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Variants of uncertain significance (VUS) in USH2A represent a critical interpretive challenge in inherited retinal disease, with over 70% of ClinVar submissions for this gene currently unresolved. We developed UshEffect-3D, a gene-specific, structure-informed machine learning framework for USH2A missense variant classification. A dataset of 545 curated variants was assembled from ClinVar and LOVD, and AlphaFold2-predicted domain structures were used to generate local structural descriptors combined with sequence-based evolutionary conservation scores, yielding nine features after sequential selection. Eleven classifiers were trained using 10-fold cross-validation and evaluated on a blind test set and 78 ACMG-classified pathogenic variants. The Random Forest classifier achieved an MCC of 0.87 and AUC of 0.97 on the blind test set, substantially outperforming general-purpose predictors including PolyPhen-2 (MCC = 0.61), AlphaMissense (MCC = 0.42), and ESM-1b (MCC = 0.32). SHAP and ablation analysis identified evolutionary conservation as the dominant predictor, with structural stability providing an independent complementary signal. Applied to 2,639 ClinVar VUS, the model prioritised 33.6% as likely pathogenic, with enrichment in the Laminin N-terminal and Laminin G-like domains. UshEffect-3D provides a high-confidence prioritisation resource for the large unresolved VUS burden in USH2A and is freely accessible via an interactive web server.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720479v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Controlling for DNA dosage with Whole Genome Sequencing improves ATAC-seq peak calling</h2>
-<p class="paper-authors">Vroland, C., Salma, M., +4 authors, Lecellier, C.-H.</p>
+<h2 class="paper-title">Integrating the MARTINI2 Coarse-Grained Force Field into HADDOCK3 for Faster Modelling of Large Biomolecular Complexes</h2>
+<p class="paper-authors">Versini, R., Reys, V. G. P., +2 authors, Bonvin, A. M. J. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq) is a scalable and sensitive method for profiling chromatin accessibility, enabling the identification of cis-regulatory elements (CREs) that govern gene expression in diverse cellular contexts. Although ATAC-seq is routinely applied to both bulk and single-cell samples, we reveal that its peak calling process is compromised by local biases in DNA dosage, arising not only from copy number variations (CNVs) but also from DNA replication timing (RT). These biases can distort read coverage and compromise peak detection accuracy. As part of the FANTOM consortium's efforts to elucidate genomic regulation, we propose enhancing the MACS pipeline by integrating whole-genome sequencing (WGS) data to account for local DNA dosage effects, analogous to the use of input controls in ChIP-seq analyses. By incorporating WGS data, we demonstrate an increase in both the number and width of ATAC peaks, with improved proximity to transcription start sites (TSSs). WGS-controlled ATAC peaks exhibit canonical CRE epigenetic marks and are enriched for trait- and disease-associated genetic variants. Furthermore, the number of WGS-controlled peaks correlates more strongly with gene expression levels compared to peaks called without WGS control. Collectively, these results demonstrate that integrating WGS as a control significantly enhances the accuracy of ATAC-seq peak calling. Critically, we show that even low-depth WGS data is sufficient to improve peak calling performance, making this approach both cost-effective and readily adoptable for routine analyses. To ensure accessibility and reproducibility, we implemented this method as an open-source Nextflow pipeline. By challenging the assumption of uniform genomic visibility, our approach also holds broad implications for other DNA sequencing-based technologies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720296v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The integration of coarse-grained (CG) approaches into docking workflows offers a powerful strategy for modelling large biomolecular assemblies with reduced computational costs. We present here the implementation of the MARTINI2 coarse-grained force field into the HADDOCK3 integrative modelling platform. This development enables the use of the CG representations and parameters within HADDOCK3 for efficient sampling and scoring of large protein-protein complexes. The implementation takes advantage of the modular and flexible architecture of HADDOCK3, allowing a seamless combination of MARTINI2 representation with the various modules. Conversion from and to all-atom models is integrated into the coarse-grained modelling workflow. The performance of the protocol is first assessed on protein-protein and protein-DNA benchmarks and then illustrated on a few representative large-scale systems, demonstrating a significant reduction in computational costs while maintaining biologically relevant accuracy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.25.720800v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">AlphaUnfold: Probing Potential Unfolding and Structural Fragility in AlphaFold3 Models via Short-Time High-Pressure MD</h2>
-<p class="paper-authors">Pegado, F. J. d. O., Ortega, J. M., Silva, J. R. P.</p>
+<h2 class="paper-title">Spatial organization of enzymes and cofactors in synthetic membrane-associated condensates (sMACs)</h2>
+<p class="paper-authors">Siu, K.-H., Jiang, V., +3 authors, Avalos, J. L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> We developed AlphaUnfold, an automated pipeline that couples AF3 predictions with short-time (5 ns) high-pressure Molecular Dynamics (MD) using NAMD3. By subjecting models to baric stress, AlphaUnfold acts as a dynamic stress-test to identify structural fragility and potential unfolding. Testing a diverse set of proteins revealed a significant inverse correlation between average pLDDT and Root Mean Square Deviation (RMSD) after MD, indicating that lower confidence translates to rapid structural drift. Furthermore, domains with low local pLDDT consistently exhibited high Root Mean Square Fluctuation (RMSF), a behavior also observed in 200 ns simulations under standard pressure, pinpointing specific metastable areas. AlphaUnfold thus provides a viable, computationally efficient framework for assessing the biophysical robustness of AI-generated models, offering an experimental-like validation that ensures more reliable downstream applications in structural biology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.22.720259v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Cells spatially organize metabolic enzymes to optimize flux through complex biochemical networks. Here, we engineered synthetic Membrane-Associated Condensates (sMACs), artificial assemblies that form on intracellular membranes through liquid-liquid phase separation, to couple metabolic compartmentalization with cofactor partitioning. Using intrinsically disordered regions (IDRs) characterized by simulations and validated by experiments, we identified an IDR sequence, Dbp1n, that selectively enrich NADH and NADPH, establishing distinct local redox microenvironments. At the endoplasmic reticulum (ER) membrane, NADPH-enriched sMACs enhanced cytochrome P450 activity by improving electron transfer and supporting in situ regeneration. At the plasma membrane, NADH-enriched sMACs provided scaffolds for a xylose uptake and assimilation pathway that exploits localized NADH/NAD recycling to improve flux. These results collectively demonstrated that condensate composition and membrane context can be engineered to enhance metabolic functions. sMACs thus provide a modular framework for creating programmable, membrane-associated microreactors, enabling new strategies for metabolic engineering and offering insights into how phase separation can be exploited in living cells.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.24.720695v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Cross-Species Adaptation of RETFound for Rodent OCT Age Estimation Reveals Strong CNN Baselines in Data-Scarce Space Biology</h2>
-<p class="paper-authors">Hayati, A., Gong, J., +9 authors, Sanders, L. M.</p>
+<h2 class="paper-title">MOSAIC: a longitudinal phenotypic clock to dissect organismal aging trajectories in C. elegans</h2>
+<p class="paper-authors">Vaudano, A. P., Pierron, M., +8 authors, Mouchiroud, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Space-biology imaging studies are often constrained by severe data scarcity, limiting the development of robust machine-learning biomarkers. Rodent spaceflight and space-analog datasets provide an important preclinical setting for testing transfer-learning strategies, but the extent to which human retinal foundation models can generalize to rodent optical coherence tomography (OCT) remains unclear. Here, we benchmark cross-species adaptation of RETFound, a human retinal Vision Transformer pretrained on 1.6 million retinal images, for chronological age prediction from Brown Norway rat OCT B-scans in the NASA Open Science Data Repository dataset OSD-679. We adapted RETFound using Low-Rank Adaptation (LoRA) and evaluated performance on control animals under matched 3-fold rat-level cross-validation. We compared RETFound+LoRA with a strong ImageNet-pretrained Xception baseline under matched protocols and included a scratch/random ViT as a negative-control architecture check. Metrics included mean absolute error (MAE), R2, and inter-eye mean absolute difference (MAD). RETFound+LoRA achieved MAE = 26.20 +/- 5.03 days with R2 = 0.744 +/- 0.049. However, Xception performed better in the primary benchmark (MAE = 19.01 +/- 7.67 days, R2 = 0.853 +/- 0.082), and the matched-fold comparison favored Xception, although this result should be interpreted cautiously given the small number of folds. Inter-eye consistency was maintained across the matched control evaluation, and saliency maps localized model attention to anatomically plausible inner retinal regions. Together, these results show that human retinal foundation models can transfer to rodent OCT in a scientifically useful way, but also that strong CNN baselines may outperform transformer-based models in small-sample cross-species settings. This preprint provides a reproducible benchmark and baseline framework for future retinal biomarker development in space biology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.22.720210v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Interventions that extend lifespan do not necessarily preserve healthspan, the portion of life spent in good health. This disconnect has intensified interest in biological aging clocks as quantitative proxies of organismal health. However, most existing clocks rely on invasive or endpoint measurements, providing static estimates that capture biological age at a single time point and offer limited insight into aging trajectories - the dynamic patterns through which physiological resilience and functional capacity change within individuals over time. Here we combine standardized, high-frequency imaging of individual Caenorhabditis elegans across the lifespan with machine learning to develop MOSAIC (Modular Organismal Signature of Aging In C. elegans), a non-invasive phenotypic clock that estimates biological age longitudinally at single-organism resolution. Leveraging ~3'750 animals, ~230'000 observations and 29 phenotypic features, MOSAIC predicts biological age with high accuracy and resolves organism-wide aging trajectories at high temporal resolution. Beyond age prediction, MOSAIC decomposes biological age into contributions from distinct physiological modules, enabling mechanistic interpretation of organismal decline. Applying MOSAIC to natural lifespan variation, dietary restriction, longevity mutants and pharmacological interventions reveals that lifespan extension can emerge through distinct, time-dependent phenotypic trajectories rather than a uniform slowing of aging. Interventions with similar effects on longevity produce divergent biological-age trajectories and distinct combinations of younger and older traits, highlighting context-dependent physiological trade-offs. MOSAIC provides a scalable, non-invasive framework to repeatedly quantify biological age across the lifespan and to compare interventions based on how they reshape aging trajectories.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720365v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Systematic Approach Toward Implementing Machine Learning Techniques to Analyze Gut Microbiome Data</h2>
-<p class="paper-authors">Jahanikia, S., Taada, A., +6 authors, Pentela, T.</p>
+<h2 class="paper-title">Unraveling protein conformational plasticity with PROTEUS</h2>
+<p class="paper-authors">Caparelli Piochi, L. F., Karami, Y., Khakzad, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> This study investigates the relationship between the gut microbiota and specific diseases. Data was collected from the Human Gut Microbiome Atlas, which examines regional variations across 20 countries on five continents, categorizing microbial species by taxonomy, from genus to species. The Atlas provides color-coded phylum classifications, numerical species counts within the same genus, and an analysis of dysbiosis-related associations with 23 diseases, as well as region-enriched species. The data stratified samples into distinct categories such as westernized, non-westernized, cancerous, and non-cancerous. The findings demonstrate that tree-based ensemble methods, such as Bagging and Boosting prediction methods, achieved the highest accuracies across all categories due to their robustness in handling the complex, high-dimensional data. The XGBoost model yielded the strongest predictive performance, achieving 91% accuracy for westernized cancer-associated samples, 84% accuracy for non-westernized cancer-associated samples, 92% accuracy for westernized samples, and 78% for non-westernized samples. Additionally, advanced topological data analysis was used to assess the global structure and underlying patterns within the dataset.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.22.720178v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein conformational plasticity underpins allosteric regulation, fold switching, and post-translational modification accessibility, yet no existing method can probe this property at the proteome scale without simulation. Here we show that SimpleFold, a flow-matching protein structure predictor, implicitly encodes conformational plasticity in its internal representations. By comparing per-residue embeddings between the sequence-only regime and the structure-converged regime of the denoising trajectory, we define a zero-shot conformational plasticity score, PROTEUS (PROtein TrajEctory Uncertainty Score), that requires no experimental dynamics data. PROTEUS correctly orders five independent protein classes spanning the full flexibility spectrum, from rigid de novo designed scaffolds to intrinsically disordered proteins that fold upon binding. Per-residue PROTEUS profiles correlate with atomic fluctuations from 1,290 independent molecular dynamics trajectories, and this signal persists after controlling for structure prediction confidence (pLDDT) and sequence-based disorder predictions. At the protein level, PROTEUS achieves AUROC = 0.77 for fold-switch detection, 0.81 for open/closed state discrimination, and 0.93 for identifying proteins with buried phosphorylation sites. Proteome-wide analysis of 4,188 Escherichia coli K-12 proteins reveals that fimbrial adhesins and the type II secretion machinery rank among the most conformationally plastic functional classes, consistent with the structural demands of chaperone-mediated secretion and receptor engagement, while ribosomal proteins score systematically lower. These results establish that PROTEUS provides unsupervised, proteome-scale probing of structural dynamics directly from a generative model.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.27.721098v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,167 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Apr 26, 2026</span>
+<span class="date">Apr 27, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrative Clinical-Molecular Modeling Identifies LRRN4CL as a Determinant of Structural and Functional Myocardial Improvement</h2>
-<p class="paper-authors">Johnson, E., Visker, J. R., +33 authors, Drakos, S. G.</p>
+<h2 class="paper-title">MycorrhizaTracer: A BIOINFORMATIC PIPELINE FOR FUNGI AND PLANT CLASSIFICATION OF SANGER DNA SEQUENCES</h2>
+<p class="paper-authors">Brekke, T. D., Weeks, T., +8 authors, Martinez-Suz, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Processing Sanger DNA sequences remains a routine yet technically demanding step in many biodiversity and ecological studies, particularly when barcoding large numbers of environmental samples. Manual inspection and editing of trace files, DNA sequence alignment, and classification using taxonomic reference databases is time-consuming, inconsistent, and prone to error. These challenges are compounded in studies involving degraded samples, in-house DNA sequencing, under-described taxa, or when investigators have limited access to computational tools. We present MycorrhizaTracer, an open-source, fully automated pipeline for processing and taxonomically classifying large batches of Sanger sequencing chromatograms. We have optimized it for fungal and plant taxa, but it is adaptable across the tree of life. The pipeline performs quality trimming, consensus generation from bidirectional reads, taxonomic classification via BLAST, clustering, optional salvaging of low-quality sequences, and functional annotation of fungal taxa. Designed for scalability and ease of use, MycorrhizaTracer can process thousands of DNA chromatograms in a matter of hours without the need for an HPC. Accuracy and ecological relevance are ensured by features such as gene region-specific taxonomic filtering and sequence-based clustering of unclassified reads. By streamlining trace-to-taxon workflows, MycorrhizaTracer reduces the burden of manual curation, supports reproducibility, and enables efficient recovery of biodiversity data from Sanger sequences - particularly in field-based or resource-limited research contexts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720352v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">An Extended Clade Framework for Annotated Trees in the Context of Phylogeography and Transmission Tree Inference</h2>
+<p class="paper-authors">Berling, L., Colijn, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Bayesian phylogenetic inference produces large samples from a posterior distribution over phylogenetic trees that represents uncertainty in both tree topology and associated variables. Such a collection of trees is hard to interpret and it is common practice to summarize such samples into a single representative tree. Methods for constructing representative trees have largely been restricted to plain tree topologies, encoding only relationships among taxa. Inference with more sophisticated models produce annotated tree objects. These have additional information representing nodes' locations in the case of phylogeography, host information when inferring transmission trees, or sampled ancestor status when incorporating fossil information. Nevertheless, these annotated representations are reduced to a single representative tree, typically using methods developed for plain tree topologies and without accounting for the resulting methodological mismatch. Here, we introduce the concept of an extended clade and investigate an extension of the conditional clade distribution (CCD) model. Through motivating examples and case studies in discrete trait phylogeography and transmission tree reconstruction, we demonstrate limitations of standard summary tree approaches and show how these can be addressed using an extended CCD framework that explicitly incorporates the annotated tree structure.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720428v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">SynCom101: A web-based platform for the standardized design of functionally tailored synthetic microbial communities</h2>
+<p class="paper-authors">Jing, J., Rockx, S., +4 authors, Medema, M. H.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.21.720029v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720341v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Semi supervised GAN for smart microscopy, fast and data efficient cell cycle classification</h2>
+<p class="paper-authors">Manick, R., El Habouz, Y., +8 authors, Pecreaux, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Modern optical microscopes are fully motorised; however, transforming them into truly smart systems requires real-time adjustment of acquisition settings in response to detected objects and dynamic biological events. At the core are classification algorithms that commonly depend on customised softwares and are generally designed for narrowly-defined biological applications. In addition, they often require substantial annotated datasets for effective training. We introduce a semi-supervised generative adversarial network (SGAN) for robust cell-cycle stage classification under low-resource conditions, adaptable to diverse cellular structures. The framework combines unlabelled microscopy images with synthetically generated samples to mitigate limited annotation, while preserving stable performance even when the unlabelled subset is class-imbalanced. Tested on the Mitocheck dataset, which features five mitosis classes, the model achieved 93{+/-}2 % accuracy using only 80 labelled per class and 600 unlabelled images. The proposed algorithm is generic and can be readily adapted to new labelling schemes, classification targets, cell lines, or microscopy modalities through transfer learning. SGAN is well suited for integration into automated microscopes, enabling efficient and adaptable image analysis across diverse biological and microscopy applications.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720294v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Systemic delivery of CRISPR-Cas9 nickase suppresses oncogene amplified cancer progression</h2>
+<p class="paper-authors">Hanlon, M. B., Wolfe, S. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Oncogene amplification is a key driver of tumorigenesis and a perpetuator of genomic instability. Oncogene amplification accelerates cancer cell proliferation and evolution, contributing substantially to the enhancement of adaptation mechanisms, such as treatment resistance, which pose a significant therapeutic challenge. However, previous studies have shown oncogene amplification to be a critical vulnerability, rendering cancer cells, but not normal cells, susceptible to targeted, CRISPR-Cas9 nickase - mediated DNA damage and cell death in vitro. Here, we demonstrate the initial framework for the translation of this potential therapeutic approach utilizing Cas9D10A - mRNA and functionalized lipid nanoparticles for the targeted delivery, and suppression of disseminated MYCN-amplified neuroblastoma in vivo.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.26.720919v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integration of spatial single-cell proteomics and spatial metabolomics reveals tumor microenvironment predictive of immunotherapy response in mucosal melanoma</h2>
+<p class="paper-authors">Wang, J., Nagarajan, P., +10 authors, Ekmekcioglu, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Mucosal melanoma (MuM) is a rare but aggressive malignancy with limited benefit from immune checkpoint inhibition and few predictive biomarkers. We integrated single-cell spatial proteomics (COMET) and spatial metabolomics (MALDI-IMS) to profile 97 tissue cores from 26 patients treated with PD-1/PD-L1 and/or CTLA-4 inhibitors. We profiled 695,444 cells and resolved 25 cell states across eight major cell types. Cellular neighborhood (CN) analysis revealed distinct tumor- and stromal-associated spatial architectures. Responders were enriched for tumor-associated CNs (invasive tumor and tumor boundary) with close spatial proximity among Ki67 tumor cells, CD163 macrophages, and CD11c dendritic cells (DCs), and increased proliferating/cytotoxic CD8+ T-cell subsets. Non-responders showed stromal CN dominance with reduced immune infiltration. Spatial metabolomics identified lower abundance of indole-derived metabolites and reduced indole/tryptophan pathway activity in responders within tumor and TME regions that tracked with DC/macrophage-enriched spatial contexts. This study advances MuM spatial biology and provides a framework for biomarker-driven immunotherapy strategies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.23.720453v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Macrophage-Derived PDGF-BB and GDF-15 Promote Drug Resistance in KRAS-Mutant Colorectal Cancer</h2>
+<p class="paper-authors">Aston, B. S., Badmos, H. A., Cagan, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Macrophages are abundant in the colorectal tumour microenvironment and can alter drug response. Using mouse Apc/Kras/Trp53 (AKP) colorectal cancer organoids, we found that macrophages and/or macrophage-conditioned medium reduced sensitivity to the MEK inhibitor trametinib and the pan-RAS inhibitor RMC-6236. In contrast, macrophage-conditioned medium had little effect on regorafenib and increased sensitivity to dabrafenib, suggesting that resistance depends on the inhibitory profile of each drug. Secretome profiling identified PDGF-BB and GDF-15 as candidate mediators. Adding both ligands to organoid medium reproduced much of the conditioned-medium effect, whereas either ligand alone was insufficient. Inhibition of PDGFR or RET partially reduced drug resistance, suggesting that PDGF-BB and GDF-15 likely act through canonical signalling by that additional macrophage-derived signals also contribute. Kinome profiling pointed to increased tyrosine kinase signalling during trametinib treatment, with SRC family kinases emerging as a key downstream node. Consistent with this, SRC inhibition reduced the difference between control and conditioned-medium responses. The multi-kinase inhibitor masitinib--which targets several kinases along this resistance network--strongly restored sensitivity to trametinib and RMC-6236. Together, these data define a macrophage-driven resistance network in KRAS-mutant colorectal cancer organoids and support combined inhibition of RAS-pathway and tyrosine kinase signalling.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.27.721111v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">AR suppression rewires a SOX4 regulatory program to promote enzalutamide resistance in prostate cancer</h2>
+<p class="paper-authors">Hakkola, S., Peramaki, A., +3 authors, Marttinen, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Treatment resistance in prostate cancer remains a major clinical challenge. While single-cell transcriptomics enables mapping of cellular composition and resistance-associated states, the gene regulatory programs driving these state transitions remain poorly defined. Here, we integrate single-cell chromatin accessibility and transcriptome sequencing data from an in vitro model to resolve the regulatory program architecture underlying anti-androgen resistance. We identify coordinated remodeling of androgen signaling- and stress response-associated regulatory programs, together with a pronounced gain of a SOX4-driven regulatory program in resistant cells. Analysis of clinical datasets reveals that SOX4 activity is both context-dependent and lineage-specific. In primary tumors, SOX4 cis-regulatory activity is elevated in PTEN-loss tumors, consistent with a PTEN-PI3K/AKT/mTOR-SOX4 axis that primes AR-independent epithelial lineages for subsequent activation of a more extensive SOX4 trans-regulatory program. This program is further amplified following AR-targeted therapy, indicating therapy-induced reinforcement of SOX4-linked regulatory adaptation. TF footprinting additionally implicates Nuclear Factor I family transcription factors as upstream regulators of SOX4, supporting a role in promoting SOX4 activation following AR inhibition. Together, these findings demonstrate that AR inhibition reshapes the gene regulatory landscape to promote engagement of the SOX4 program, facilitating prostate cancer progression under anti-androgen therapy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.27.721035v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 27, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">MetaXVP: an interpretable machine learning framework for deep insight into variant pathogenicity and VUS classification.</h2>
+<p class="paper-authors">Masoud Dehghan Tezerjani, Mohammadreza Sehhati, Mohammad Amin Tabatabaiefar</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The interpretation and classification of nonsynonymous single nucleotide variants (nsSNVs) remains a significant challenge in clinical genomics particularly for variants of uncertain significance (VUS). Although many computational methods have been developed for predicting variant pathogenicity, their performance remains limited and often lacks interpretability. To address these limitations, we developed MetaXVP (Meta eXplainable XGBoost Variant Predictor) ,designed to combine high predictive performance with effective feature explanation using rigorous methodology. MetaXVP was built using the XGBoost algorithm and trained on high-confidence pathogenic and benign nsSNVs from ClinVar (submissions up to April 2024). Feature annotations were obtained from dbNSFP v4.7 (last updated March 2024) where 32 features spanning conservation metrics, functional scores, ensemble predictors, and allele frequencies were selected through correlation-based feature selection. SHapley Additive exPlanations (SHAP) and Local Interpretable Model-agnostic Explanations (LIME) methods were also used to make the model interpretable. Final evaluation was conducted on four independent ClinVar test sets (isolated from training data), a TP53 functional dataset, and a cancer somatic driver dataset using area under the receiver operating characteristic curve (AUROC), area under the precision-recall curve (AUPRC) and evaluation metrics based on Bayesian threshold calculations. In addition, the performance was compared with 32 individual features and 6 benchmark tools. MetaXVP achieved high classification performance across ClinVar test sets (AUROC = 0.991 for pathogenic/benign and 0.986 for VUS reclassified to pathogenic/benign), and somatic cancer test set (AUROC = 0.924). In addition, the stability of the Bayesian decision threshold was evaluated using bootstrap resampling, demonstrating robustness to sampling variability. SHAP analysis also revealed that ensemble predictors such as ClinPred and gMVP; and population allele frequency (gnomAD) were among the most influential features in the model based on mean absolute SHAP values. Pre-computed MetaXVP scores for all potential human nsSNVs (~ 83 million) are provided at https://github.com/Masouddehghant/MetaXVP for community use, which is particularly helpful for classification of VUS.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42045441/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
