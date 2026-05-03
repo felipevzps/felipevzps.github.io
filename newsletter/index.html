@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
+<span class="date">May 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A VERSATILE LIBRARY OF TETRACYCLINE-INDUCIBLE AND REPRESSIBLE VECTORS FOR FINE-TUNED GENE EXPRESSION</h2>
-<p class="paper-authors">Nair, A. V., James, S., Jain, V.</p>
+<h2 class="paper-title">NeuroCDS: Integrating Local and Global Neural Network Representations via Structural Constrained Viterbi Decoding for Robust CDS Annotation</h2>
+<p class="paper-authors">Mei, Z., Xie, Z., +1 author, Wei, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The genus Mycobacterium is increasingly recognized as a major clinical concern due to diseases such as tuberculosis, along with the emergence of antimicrobial-resistant strains, underscoring the urgent need for advanced genetic tools to study mycobacterial biology and pathogenesis. Progress in this area relies heavily on the functional characterization of previously unannotated genes, which necessitates tightly regulated expression systems. Here, we report the development of an improved tetracycline-regulated vector platform, comprising the episomal pM(R)T2 and integrative pMI(R)T2 series, which builds upon the previously described pMT vector system. The pMT2 vector series incorporates a fine-tuned TetRO system for enhanced transcriptional control. The pMT2 vectors function as tetracycline-inducible systems, whereas the pMRT2 variants utilize a reverse tetracycline repressor (RevTetR) to enable tetracycline-repressible gene regulation. Additionally, the integrative variant, pMI(R)T2 switches the oriM element with the integrase and attP sites derived from mycobacteriophage L5, facilitating stable genomic integration and controlled expression of concentration-sensitive genes, including toxins. To expand the selection flexibility, the pAN(R)Tet series replaces the kanamycin resistance cassette with a hygromycin resistance cassette. Functional validation of gene regulation in M. smegmatis and M. bovis BCG shows that both TetR and RevTetR systems provide reliable inducible and repressible controls, respectively, upon anhydrotetracycline addition. Taken together, these vectors constitute a versatile, tightly regulated genetic toolkit with significant potential to accelerate research and therapeutic development in mycobacterial systems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.30.721401v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Robust annotation of Coding Sequences (CDS) is critical for downstream transcriptomics, yet heavily fragmented de novo RNA-Seq assemblies pose a severe challenge. Traditional computational tools rely on fixed, hand-crafted features that are prone to fail when canonical sequence signals are truncated. While recent deep learning models excel at automatically extracting complex representations, they predominantly treat these as isolated prediction tasks. Lacking a joint inference mechanism to enforce structural constraints, existing models occasionally output biologically invalid predictions. Therefore, a computational framework capable of fusing heterogeneous neural network representations for joint annotation is critically needed. Results: We present NeuroCDS, a reliable framework that bridges the effective representation capabilities of deep neural networks with the structural rigor of dynamic programming. NeuroCDS employs a dual-branch architecture: a Convolutional Neural Network (CNN) acts as a local sensor to extract Translation Initiation Sites (TIS), while a Temporal Convolutional Network (TCN) acts as a global sensor to evaluate continuous regional coding potential. The primary contribution of NeuroCDS lies in a structurally constrained Viterbi Decoding algorithm designed to fuse these heterogeneous signals. This joint inference mechanism strictly enforces biological grammars (e.g., reading frame preservation) to dynamically calculate the globally optimal transcript structure via a tripartite state space. Crucially, by introducing a dynamic length normalization mechanism, our formulation adaptively leverages global continuous representations to stably annotate both intact transcripts and highly truncated fragments. Comprehensive evaluations demonstrate that NeuroCDS achieves high F1-scores on full-length transcripts and maintains robust performance on complex Ribo-seq validated datasets, comparing favorably against traditional HMM-based and heuristic methodologies. Availability: Source code, pre-trained models, and datasets are freely available at https://github.com/hgcwei/NeuroCDS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721598v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
+<span class="date">May 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Rapid phylogenomic analysis for viral surveillance and metagenomic profiling with Omni2Tree</h2>
-<p class="paper-authors">Majidian, S., Chalco, A., +6 authors, Agustinho, D. P.</p>
+<h2 class="paper-title">TorchLIMIX: GPU-accelerated multivariate genome-wideassociation studies</h2>
+<p class="paper-authors">Horn, B. M., Nikoloski, Z., Lippert, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Phylogenomic surveillance is limited not by sequencing throughput, but by the difficulty of converting heterogeneous raw data into reliable evolutionary inference, particularly for low-titer and contaminated viral field samples. Here we present Omni2Tree, an assembly-free framework that reconstructs viral phylogenies directly from raw sequencing reads and generates easily shareable interactive reports and genome-wide entropy profiles to identify diversification. In H5N1 benchmark analyses, Omni2Tree maintained accurate placement and topological stability even under low coverage, unlike assembly or reference based methods. Omni2Tree generated an annotated phylogeny for 64-sample H5N1 field surveillance dataset from the eastern USA in under 3 hours. Omni2Tree recovered known phylogenetic structure and key variability insights across 1,328 hepatitis C virus and 707 human cytomegalovirus datasets, and resolved co-infecting respiratory viruses in clinical metagenomic samples. By enabling direct analysis from raw reads, Omni2Tree supports faster, more portable, and more decentralized phylogenomic surveillance across outbreak, clinical, and resource-limited settings.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721707v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> We introduce TorchLIMIX, a GPU-accelerated PyTorch implementation of the LIMIX multivariate genome-wide association study pipeline. By leveraging batched GPU linear algebra, TorchLIMIX achieves speedups of up to two orders of magnitude over the original CPU-based implementation while maintaining numerically equivalent results and full concordance of significantly associated loci. In simulation studies, replacing the default initialization of the genetic covariance factor with a QR-based strategy reduces genomic inflation factors to near-unity values under the common and interaction effect null hypotheses, ensuring well-calibrated type I error control. Applying TorchLIMIX to metabolic traits of Arabidopsis thaliana measured in two experiments uncovered 37 additional associated SNPs at the same significance threshold used in the original univariate GWAS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721342v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,186 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
+<span class="date">May 02, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Optimizing Lentiviral Vector-Based Delivery of SCN1A transgenes to Mammalian Cells</h2>
-<p class="paper-authors">Schindewolf, C., Wei, A. D., +1 author, Torbett, B. E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The SCN1A gene encodes NaV1.1, a voltage-gated sodium channel protein that is necessary for neuronal excitability and whose loss-of-function mutations cause Dravet syndrome, a treatment-resistant childhood onset epilepsy. Gene replacement strategies for this syndrome are challenged by the large size of SCN1A and difficulty achieving stable cellular expression. Lentiviral vectors (LVVs) offer sufficient packaging capacity and genomic integration for defective SCN1A gene replacement. Here, we evaluated LVV-mediated delivery of different engineered SCN1A transgene sequences in human cells. LVV-transduced cells expressed full-length NaV1.1 protein that trafficked to the membrane and produced functional sodium currents. However, SCN1A transgene expression declined over time despite stable vector copy number, indicating post-integration regulatory limitations. Expression efficiency varied by SCN1A transgene sequence, with a codon-optimized variant showing higher expression despite lower LVV copy number. Treatment with sodium butyrate, a histone deacetylase inhibitor, significantly enhanced SCN1A transgene expression and partially rescued expression decay in a sequence-dependent manner. Incorporation of a ubiquitous chromatin opening element (UCOE) upstream of the promoter to maintain expression resulted in a trend of increased expression and increased responsiveness to butyrate. These findings demonstrate that sequence-specific and epigenetic factors may influence expression of large transgenes following lentiviral delivery, highlighting key challenges and design considerations for therapeutic SCN1A transgene expression.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.01.722074v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Artificial intelligence aided design of peptides with custom secondary structure motifs and reduced amino acid alphabets</h2>
-<p class="paper-authors">Brown, S. M., Cohen, A. B., Dean, S. N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteins are highly diverse functional polymers where the specific sequence of amino acids, selected from a standard genetically-encoded alphabet of twenty (C20), determines the structure and ultimately the function of the resulting folded protein. This standard alphabet has been identified to be non-randomly distributed in physicochemical properties crucial to both structure-formation and function, often referred to as coverage theory. While machine learning models have drastically improved protein structure prediction, protein design has yet to have similar development. Here we therefore bridge contemporary biological theory with recent advancements in artificial intelligence (AI) to develop and evaluate a generative AI protein design model, trained on hundreds of thousands of proteins within the RSCB PDB, for custom secondary structure motifs using reduced amino acid alphabets. Results indicate an overall success in designing novel proteins with desired secondary structure motifs for a broad range of amino acid alphabets. Interestingly this tool often captures the full three-dimensional tertiary structure of a target protein despite training only on physicochemical sequence space and DSSP secondary structure. The development of this model advances research across multiple disciplines, from general scientific AI/ML architecture development to protein design for biotechnology, astrobiology, and early-Earth evolutionary biology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721096v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Scan Cluster: A versatile database-independent prediction tool for multi-genome identification of homologous gene clusters.</h2>
-<p class="paper-authors">Mogro, E. G., Pagnutti, A. L., +1 author, Lozano, M. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The exploration of colocalized gene sets, such as Biosynthetic Gene Clusters (BGCs) and symbiotic islands, is fundamental in modern genome mining. However, many existing prediction tools rely heavily on curated databases or predefined rules, inherently biasing detection toward known clusters. To address these limitations, we introduce Scan Cluster, a robust and flexible Python-based bioinformatic tool designed to identify user-defined, conserved gene clusters across diverse genomes without database-driven constraints. Scan Cluster leverages BLAST or HMMER to detect homologous proteins and evaluates their colocalization, accommodating complex evolutionary events such as orientation inversions, the insertion of alien genes, gene deletions, and the integration of insertion sequences. Beyond identification, the software performs progressive multiple cluster alignments and generates distance trees to assess cluster similarity, producing outputs ready for visualization in iTOL and Clinker. We validated Scan Cluster against standard tools like antiSMASH and DeepBGC, demonstrating high accuracy in delineating complete cluster boundaries. Its utility was further confirmed through the analysis of the nos and complex nod-nif-fix symbiotic gene clusters in rhizobia strains, successfully tracking genetic decay and grouping diverse architectures. Scan Cluster provides an accessible, low-resource framework to explore the evolutionary and functional dynamics of novel genetic clusters.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721675v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">SpatialBench: Comparative cross-platform benchmarking of high-resolution spatial transcriptomics using matched mouse lymphoid tissue</h2>
-<p class="paper-authors">Solano, A. N., Yip, R. K. H., +22 authors, Ritchie, M. E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics (ST) has rapidly expanded with the introduction of multiple high-resolution platforms, yet cross-platform benchmarking remains limited and has largely focused on technical performance. Here we present SpatialBench, a matched multi-platform resource comprising Visium HD, Xenium and MERSCOPE data together with single-cell and single-nucleus references from a malaria-challenged wild-type and B cell-specific Tbx21 knockout mouse spleen model. In this system, loss of T-bet in B cells disrupts germinal center (GC) polarization and antibody maturation, providing a biologically grounded benchmark for technology comparison. We leveraged this system to systematically evaluate ST platform performance using both technical and biological readouts. Across platforms, immune organization and Tbx21-associated programs were consistently recovered, indicating that major biological signals are robust to platform-specific technical differences. Platforms instead differed in the level of biological resolution accessible. Visium HD enabled transcriptome-scale GC characterization and, together with Xenium, resolved dark and light zone organization, whereas GC zonation was not resolved in MERSCOPE, consistent with differences in transcript detection sensitivity. SpatialBench provides a biologically defined reference dataset for evaluation of ST technologies, computational benchmarking, method development and studies of GC spatial organization in lymphoid tissue.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721531v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Mitigating Family Effects in RNA Secondary-Structure Prediction with Latent-Space Continual Learning</h2>
-<p class="paper-authors">Mokkedem, W., Pedrielli, G., Wu, T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate RNA secondary-structure prediction remains difficult despite decades of thermodynamics-based algorithms and the advent of deep-learning architectures (convolutional networks, Transformers, diffusion models). In fact, the datasets that pair RNA sequences with secondary-structure labels are often low-quality, noisy, and family-imbalanced, which limits out-of-distribution generalization and exacerbates catastrophic forgetting when new data regimes are introduced. We propose a continual-learning approach based on Lifelong Bayesian Optimization (LBO), RNAFoLBO, that treats each class of RNAs obtained from latent-space clustering as a sequential task and jointly orchestrates training and hyperparameter selection of heterogeneous models (UFold, RNA-FM, RNADiffFold), while preserving prior knowledge. Concretely, we apply LBO to 15 clusters obtained by clustering RNAStrAlign in the latent space of RNAGenesis, a model specialized in contextual representation learning and latent-space structuring, achieving a mean F1 per cluster of 0.931 (with a range of 0.177). These results surpass the strongest one-shot baseline and mitigate forgetting without full retraining. The gains persist as additional clusters are introduced. Overall, RNAFoLBO delivers higher and more stable performance and practical scalability for integrating new RNA clusters or families, enabling more robust and transferable RNA secondary-structure prediction.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721709v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">From Generalist to Specialist: Evolution of PS2 α-integrins and Implications for Drug Targeting</h2>
-<p class="paper-authors">Liu, S., Chen, Y., +3 authors, Liu, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Integrins are heterodimeric transmembrane receptors that mediate cell-cell and cell-extracellular matrix interactions and play essential roles in development and disease. Within the PS2 alpha-integrin subfamily, four paralogs (alphaIIb, alpha5, alpha8, and alphaV) share a conserved RGD-binding motif yet exhibit diverse functional specializations. Integrins have been widely targeted therapeutically for various clinical conditions, though achieving subtype specificity remains a major challenge. Here, we performed an integrative evolutionary analysis of 114 PS2 alpha-integrin sequences across 28 vertebrate species, combining phylogenetic reconstruction, time calibration, ancestral sequence inference, and structural mapping. Our time-calibrated phylogeny indicates that the PS2 lineage originated ~862 Mya, with diversification of the four paralogs occurring prior to vertebrate radiation. Ancestral state reconstruction reveals that fibronectin and vitronectin binding are ancestral traits, whereas fibrinogen binding and beta3 pairing arose independently in the alphaIIb and alphaV lineage. Evolutionary rate analysis shows domain-specific divergence, with the beta-propeller acting as a hotspot of evolutionary change, likely driven by combined pressures from ligand binding and beta-subunit interaction. These pressures vary across paralogs: alphaIIb exhibits accelerated evolution in ligand-binding regions, while alphaV displays elevated rates in beta-subunit interaction domains. Mapping sequence variation onto structural interfaces identifies lineage-specific substitutions underlying functional divergence, including distinct molecular solutions for fibrinogen binding in alphaIIb and alphaV. These findings collectively demonstrate that PS2 alpha-integrins evolved from a generalist ancestor through neofunctionalization and lineage-specific specialization. This work provides an evolutionary framework for identifying subtype-specific functional sites and highlights the potential of evolution-informed strategies to guide the development of more selective integrin-targeting therapeutics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721650v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Modeling healthy proteomic profiles for anomaly detection using subspace learning based one-class classification</h2>
-<p class="paper-authors">Sohrab, F., Kumar, A., +4 authors, Huang, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> High-throughput plasma proteomics provides sensitive and scalable measurements of thousands of systemic protein profiles from minimally invasive blood samples, creating new opportunities for disease detection and population-scale health monitoring. However, robust statistical modeling remains challenging due to high dimensionality, limited availability and high diversity of diseased samples, resulting in class imbalance in clinical cohorts. Here, we present a subspace One-Class Classification (OCC) framework for proteomics-driven anomaly detection that models healthy proteomic profiles as a reference distribution. To address the limitations of conventional hyperparameter tuning in severely imbalanced data settings, we introduce a fully data-driven parameter estimation strategy that infers all model parameters directly from intrinsic properties of the healthy training data, without using any disease labels. Using plasma proteomics data generated with Olink, we evaluate a family of subspace and graph-embedded subspace extensions of Support Vector Data Description, in which all models operate on learned low-dimensional representations rather than the original feature space. Models are trained exclusively on a healthy reference cohort and evaluated on heterogeneous disease conditions, including multiple cancer types and an independent COVID-19 cohort, with all disease samples withheld from training to enable unbiased assessment of cross-disease generalization. Across disease contexts, the evaluated one-class models yield stable and balanced detection performance, demonstrating that learning structured low-dimensional representations of healthy proteomic variation captures intrinsic biological organization that generalizes across disease-specific perturbations. These results establish healthy-profile-based, subspace one-class learning as a robust and disease-agnostic framework for screening in high-dimensional plasma proteomics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.30.722013v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">OmniAge: a compendium of aging omic biomarkers links mitotic clocks to clonal hematopoiesis and causality</h2>
-<p class="paper-authors">Du, Z., Ling, Y., +2 authors, Teschendorff, A. E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Interest in aging 'omic' biomarkers has grown due to their ability to quantify biological age. Most of these biomarkers have been derived in blood and fall into many diverse categories, yet relatively little is known about their correlative patterns, especially between biomarkers from different categories. Here we present the OmniAge R and Python package, a collection of 413 aging omic biomarkers representing 12 different categories, including traditional epigenetic clocks, epigenetic mitotic clocks, DNA methylation-based proxies for clonal hematopoiesis and inflammaging, causal clocks, cell-type specific epigenetic clocks and single-cell transcriptomic clocks. By studying their inter-class correlations across large blood datasets, we reveal associations of mitotic age with clonal hematopoiesis subtypes and causal clocks, which are predictive of cancer risk. Using proxies of serum protein levels, we further dissect associations with mitotic clocks, clonal hematopoiesis and causal clocks into distinct biological processes mapping to key aging pathways. Applying OmniAge to multi-modal data of sorted immune cell-types reveals that age-acceleration derived from transcriptomic and epigenetic clocks correlate, but that this is driven by underlying cell-type heterogeneity. In summary, the OmniAge package is an exploratory tool for evaluating large numbers of aging omic biomarkers, and to aid discovery and generate new hypotheses.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.720033v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MNT loss in MYC-driven B lymphoma cells enhances apoptosis, inhibits proliferation and increases sensitivity to cancer drugs.</h2>
-<p class="paper-authors">Nguyen, H. V., Michla, M., +4 authors, Cory, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Our previous mouse genetic studies showed that loss of the transcription repressor MNT enhanced apoptosis of premalignant lymphoid cells over-expressing MYC and inhibited lymphoma development. Here, we have explored the consequences of inducing Mnt deletion in fully malignant lymphoma cells. MNT loss provoked apoptosis of p53 wt and, albeit more slowly, p53 mutant E-Myc lymphoma cells, preceded by elevated levels of major BH3-only proteins BIM and PUMA. By inhibiting apoptosis, we showed that MNT loss also impaired cell cycling and increased senescence. E-Myc lymphoma cells depend on the BCL-2 ortholog MCL-1 for survival and expansion and, importantly, MNT loss enhanced their sensitivity to the MCL-1 inhibitor S63845 and to several chemotherapeutic agents. In BCL-2-overexpressing E-Myc lymphoma cells, which model aggressive human 'Double Hit Lymphomas', MNT loss enhanced sensitivity to the BCL-2 inhibitor ABT-199, even after BAX loss. Furthermore, MNT deletion improved drug responses of two long-established Burkitt Lymphoma cell lines.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721758v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Survivin inhibition induces PD-L1 expression through cGAS stabilization and attenuates antitumor immunity</h2>
-<p class="paper-authors">Liu, Y., Shen, H., +9 authors, Yu, F.</p>
+<h2 class="paper-title">Systematic benchmarking of small variant calling pipelines for long-read RNA sequencing data</h2>
+<p class="paper-authors">Wang, J., Robinson, M. D.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721504v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721619v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -257,75 +86,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">MED</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 02, 2026</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DNA Methylation-Based Risk Stratification and Classification of Pediatric Thyroid Carcinoma.</h2>
-<p class="paper-authors">Li JZ, Ricarte-Filho JC, +6 authors, Zhou W.</p>
+<h2 class="paper-title">Decoding the BRCA2 reversion principles underlying PARP inhibitor resistance</h2>
+<p class="paper-authors">Horacek, A. G., Kueper, F. L., +4 authors, Hockemeyer, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate assessment of invasiveness in pediatric thyroid carcinomas is essential to prevent unnecessary surgery and avoid surgery-associated complications. DNA methylation, a proven molecular biomarker for cancer classification, holds promise for stratifying thyroid cancer risk. The objectives were to determine the epigenetic hallmarks of pediatric thyroid carcinomas and investigate whether DNA methylome profiling is a feasible approach for preoperative risk stratification of this pediatric disease.We interrogated genome-wide DNA methylation profiles from two separately processed cohorts of pediatric thyroid carcinoma. The reference cohort included 100 samples, consisting of 87 well-differentiated primary tumors-77 papillary and 10 follicular thyroid carcinomas-and 13 matched lymph node metastases. To predict oncogenic drivers and tumor invasiveness, defined by the presence of nodal metastasis, we trained two classifiers on the reference cohort and then evaluated their performance on a second validation cohort of 84 samples, including 83 primary tumors and one lymph node metastasis.We identified distinct methylation patterns associated with tumor invasiveness and key driver mutations, including BRAF p.V600E, RAS-like mutations, kinase fusions, and DICER1 mutations. The differentially methylated regions reflect inflammatory stress and disrupted thyroid development and function, implicating androgen receptor, Hippo, and AP-1 signaling. Leveraging these epigenetic signatures, we developed and validated two methylation-based classifiers that accurately predict tumor invasiveness and oncogenic mutation subgroups.In patients with pediatric thyroid carcinoma, DNA methylation assays accurately predict tumor invasiveness and driver mutations. Our findings highlight the clinical value of DNA methylation profiling for risk stratification and classification of pediatric thyroid cancers.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41701943/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">May 01, 2026</span>
-<span class="journal">MED</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Association of Circulating T Cell and Tumor Microenvironment Profiles with Immune Checkpoint Blockade Outcomes in Sarcoma.</h2>
-<p class="paper-authors">Rosenbaum E, Ehrich F, +29 authors, Shen R, D'Angelo SP.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Immune checkpoint blockade (ICB) benefits only a subset of patients with sarcoma. Biomarkers of response and resistance are needed to help guide patient selection.We analyzed peripheral blood and tumor samples from patients with sarcoma treated in five ICB-based clinical trials. Baseline peripheral blood mononuclear cells (PBMC) underwent 11-color flow cytometry to define T-cell immunotypes. Baseline tumor tissue underwent RNA sequencing (RNA-seq) to classify tumors into four tumor microenvironment (TME) subtypes using consensus clustering of 29 functional gene expression signatures. Associations between immune features and clinical outcomes were assessed. A deep learning model was applied to baseline hematoxylin and eosin (H&amp;E) slides to detect and quantify lymphoid aggregates in patients with available RNA-seq.Among 178 patients with PBMC available for analysis, a proliferative (PRO) circulating T-cell immunotype was associated with poorer overall survival (OS) than lymphocyte-activation gene 3 (LAG)- or LAG+ immunotypes. RNA-seq from 67 tumors identified an immune-enriched/nonfibrotic TME subtype associated with a higher response rate, longer progression-free survival, and longer OS compared with immune-enriched/fibrotic, immune-depleted, and fibrotic subtypes. Automated analysis of 48 baseline H&amp;E slides identified lymphoid aggregates in five tumors; four were classified as immune-enriched and two of these responded to ICB.Patients with sarcoma and a PRO circulating T-cell immunotype had inferior outcomes to ICB, whereas those with an immune-enriched/nonfibrotic TME had superior outcomes. Automated analysis of H&amp;E slides showed promise in identifying patients with an immune-enriched TME. These findings support the use of a multimodal approach to identify predictors of response to immunotherapy in sarcoma.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41677857/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jan 28, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Detecting optimal biomarkers in ovarian cancer cells from high-dimensional mRNA expression data using machine learning.</h2>
-<p class="paper-authors">Rama Krishna Thelagathoti, Chao Jiang, +4 authors, Appolinaire Olou, M Rohan Fernando</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Reliable detection of robust biomarkers from high-dimensional transcriptomic data remains a major challenge in computational oncology. Traditional approaches often suffer from overfitting and poor generalization due to the high dimensionality of genomic data and limited sample sizes. This study aims to identify an optimal, biologically meaningful subset of mRNA biomarkers capable of distinguishing ovarian cancer samples from healthy controls using an integrated machine learning-based feature selection framework.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41643488/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jan 25, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Microbiome-Based Modeling of CAR-T Therapy Response in Lymphoma: Insights From Shotgun Metagenomics Sequencing.</h2>
-<p class="paper-authors">Rafael Hernani, Eliseo Albert, +19 authors, Carlos Solano</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The interplay between the commensal microbiota and the mammalian immune system may influence the outcomes of T cell-driven cancer immunotherapies. However, clinical studies supporting microbiota-based interventions in chimeric antigen receptor T-cell (CAR-T) therapy remain scarce. This study included 30 adult patients with B-cell lymphoma treated with axicabtagene ciloleucel (axi-cel) or 4-1BB investigational product. Shotgun metagenomics sequencing (SMS) of fecal samples, collected before lymphodepletion and 1 month post infusion, enabled species-level resolution. We also trained 25 microbiome-based machine-learning (ML) models for response prediction. Neither prior "high-risk" antibiotics exposure nor alpha diversity influenced toxicity, response, or survival. However, dysbiosis was observed between 11 healthy controls and patients, particularly in those treated with axi-cel. SMS identified species associated with clinical outcomes. Increased abundance of Alistipes senegalensis and Alistipes onderdonkii correlated with lower neurotoxicity and improved survival, respectively. Bifidobacterium longum was associated with reduced cytokine release syndrome, whereas Bifidobacterium adolescentis , Bifidobacterium bifidum , and Bifidobacterium breve correlated with poorer survival. ML models demonstrated strong predictive performance, with some identifying non-responders using only six species selected by the Boruta method ( Bacteroides xylanisolvens , Bifidobacterium bifidum , Bifidobacterium breve , Eubacteriaceae bacterium Marseille-Q4139, Negativibacillus massiliensis, and Sellimonas intestinalis). These findings deepen current knowledge and support prospective microbiota-based strategies in CAR-T therapy.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41582602/" target="_blank">
+<p><strong>Abstract:</strong> Reversion mutations that restore BRCA2 function represent a major mechanism of resistance to poly(ADP-ribose) polymerase inhibitors (PARPi) in BRCA2-mutant cancers. Understanding and predicting these events could inform treatment strategies, identify patients at increased risk of acquiring PARPi resistance, and improve the clinical interpretation of secondary BRCA2 variants detected in resistant tumors. Here, we evaluated reversions in an isogenic cell system using CRISPR editing and long-read transcript analysis to define the principles governing BRCA2 reversion systematically. We find that local sequence context dictates the spectrum of reversions, whereas BRCA2 domain architecture determines which of these events confer PARPi resistance. Moreover, we characterize the two routes of BRCA2 reversion: DNA-level restoration of the reading frame and transcript-level rescue through altered splicing. Both mechanisms were frequently used to restore BRCA2 expression across exon boundaries. The detection of such events at multiple loci suggests that inter-exonic reversion may be more widespread than previously appreciated. Lastly, we identify a unique set of mechanisms that underlie exon 11 reversions. In this region, reversions arose through both large genomic deletions and recurrent splicing events, including isoforms predicted to remove all eight BRC repeats. These splicing-mediated reversions engaged cryptic donors and were conserved across distinct genotypes, including the founder mutation c.5946delT. These findings define a predictive reversion code that governs the paths to BRCA2 functional rescue, enabling anticipation of reversion-mediated PARPi resistance and interpretation of secondary BRCA2 variants in resistant tumors.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721733v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
