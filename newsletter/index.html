@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 02, 2026</span>
+<span class="date">May 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">NeuroCDS: Integrating Local and Global Neural Network Representations via Structural Constrained Viterbi Decoding for Robust CDS Annotation</h2>
-<p class="paper-authors">Mei, Z., Xie, Z., +1 author, Wei, C.</p>
+<h2 class="paper-title">A droplet microfluidic-based platform for enhanced DNA delivery in non-model organisms</h2>
+<p class="paper-authors">Stibelman, A., Tran, A., +1 author, Shamoo, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Robust annotation of Coding Sequences (CDS) is critical for downstream transcriptomics, yet heavily fragmented de novo RNA-Seq assemblies pose a severe challenge. Traditional computational tools rely on fixed, hand-crafted features that are prone to fail when canonical sequence signals are truncated. While recent deep learning models excel at automatically extracting complex representations, they predominantly treat these as isolated prediction tasks. Lacking a joint inference mechanism to enforce structural constraints, existing models occasionally output biologically invalid predictions. Therefore, a computational framework capable of fusing heterogeneous neural network representations for joint annotation is critically needed. Results: We present NeuroCDS, a reliable framework that bridges the effective representation capabilities of deep neural networks with the structural rigor of dynamic programming. NeuroCDS employs a dual-branch architecture: a Convolutional Neural Network (CNN) acts as a local sensor to extract Translation Initiation Sites (TIS), while a Temporal Convolutional Network (TCN) acts as a global sensor to evaluate continuous regional coding potential. The primary contribution of NeuroCDS lies in a structurally constrained Viterbi Decoding algorithm designed to fuse these heterogeneous signals. This joint inference mechanism strictly enforces biological grammars (e.g., reading frame preservation) to dynamically calculate the globally optimal transcript structure via a tripartite state space. Crucially, by introducing a dynamic length normalization mechanism, our formulation adaptively leverages global continuous representations to stably annotate both intact transcripts and highly truncated fragments. Comprehensive evaluations demonstrate that NeuroCDS achieves high F1-scores on full-length transcripts and maintains robust performance on complex Ribo-seq validated datasets, comparing favorably against traditional HMM-based and heuristic methodologies. Availability: Source code, pre-trained models, and datasets are freely available at https://github.com/hgcwei/NeuroCDS.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721598v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Expanding genetic engineering beyond model microorganisms is critical to unlocking novel applications in biotechnology, yet the low efficiency of DNA delivery methods like conjugation, remains a major bottleneck in non-model and environmental microbes. Here, we present an automated, high-throughput droplet microfluidic platform that enhances conjugation by encapsulating donor and recipient microbes in picoliter-scale water-in-oil microdroplets, stabilizing cell-cell contact and DNA transfer. Optimization of incubation time, donor to recipient ratio, and plasmid type yielded over a 100-fold increase in conjugation efficiency compared to conventional methods and enabled delivery of complex DNA libraries in low reaction volumes, demonstrating scalability for pooled plasmid library delivery. We further utilized a synthetic biology circuit for donor removal within microdroplets without antibiotic selection, eliminating the need for host-specific selection markers or engineered auxotrophs. When applied to a soil microbial community, this platform improved community-level conjugation, preserving microbial diversity and enabling the identification of genetically accessible chassis. Collectively, this platform establishes a scalable, generalizable solution for high throughput DNA delivery in previously inaccessible microbial hosts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.30.721591v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 02, 2026</span>
+<span class="date">May 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">TorchLIMIX: GPU-accelerated multivariate genome-wideassociation studies</h2>
-<p class="paper-authors">Horn, B. M., Nikoloski, Z., Lippert, C.</p>
+<h2 class="paper-title">MOSAIC: Model-based, Subgroup-Aware Identification of Driver Mutations in Cancer</h2>
+<p class="paper-authors">Campbell, K., Reyna, M. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> We introduce TorchLIMIX, a GPU-accelerated PyTorch implementation of the LIMIX multivariate genome-wide association study pipeline. By leveraging batched GPU linear algebra, TorchLIMIX achieves speedups of up to two orders of magnitude over the original CPU-based implementation while maintaining numerically equivalent results and full concordance of significantly associated loci. In simulation studies, replacing the default initialization of the genetic covariance factor with a QR-based strategy reduces genomic inflation factors to near-unity values under the common and interaction effect null hypotheses, ensuring well-calibrated type I error control. Applying TorchLIMIX to metabolic traits of Arabidopsis thaliana measured in two experiments uncovered 37 additional associated SNPs at the same significance threshold used in the original univariate GWAS.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721342v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> In cancer genomics, recurrent patterns of mutual exclusivity within a gene set can indicate shared biological context and involvement in tumorigenesis. However, existing methods are not designed to distinguish between mutual exclusivity arising from meaningful biological interactions from those influenced by heterogeneity between underlying patient subpopulations. In this work, we introduce MOSAIC, a novel statistical framework that models patient subgroup heterogeneity in mutual exclusivity analyses. In experiments with simulated data and real data from The Cancer Genome Atlas, we show that MOSAIC amplifies subgroup-specific mutual exclusivity signals, including between IDH1 and IDH2 in young low grade glioma patients, while reducing the effect of signals produced by underlying subgroup structures, such as distinct genomic lineages associated with histological subtypes of endometrial cancer. Finally, we demonstrate that MOSAIC is more powerful than existing p-value combination methods for patient subgroup stratification. MOSAIC is available as an open-source tool at https://github.com/reynalab/mosaic.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721672v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 02, 2026</span>
+<span class="date">May 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Systematic benchmarking of small variant calling pipelines for long-read RNA sequencing data</h2>
-<p class="paper-authors">Wang, J., Robinson, M. D.</p>
+<h2 class="paper-title">A 37-million-particle dataset from over 250 experiments to accelerate data-driven cryo-EM analysis</h2>
+<p class="paper-authors">Zamanos, A., Kyrilis, F. L., +2 authors, Panagakis, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721619v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Cryogenic Electron Microscopy (cryo-EM) has revolutionized structural biology by enabling near-atomic-resolution structure determination of biological macromolecules. Central to cryo-EM analysis are particles, namely 2D projections of biomolecules extracted from micrographs, which serve as the primary input for 3D reconstruction. While data-driven methods have transformed other scientific domains, their impact on cryo-EM remains limited because existing particle datasets are too small, too narrow in protein diversity, and lack rich per-particle annotations. We introduce cryoPANDA (cryo-EM Particles ANnotated DAtaset), comprising over 37 million annotated particles from 252 experiments spanning a wide range of protein types, more than 10-fold larger than prior collections. Each particle is accompanied by detailed annotations covering acquisition, classification, and reconstruction metadata, alongside the corresponding 3D electrostatic potential map, the published EMDB map, and, where available, the PDB model. We validate cryoPANDA in two ways: first, by reconstructing hundreds of distinct high-resolution cryo-EM maps; and second, by training a DINOv2 foundation model and evaluating its learned representations on micrograph segmentation, particle picking, and particle clustering.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.720997v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,53 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 02, 2026</span>
+<span class="date">May 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Decoding the BRCA2 reversion principles underlying PARP inhibitor resistance</h2>
-<p class="paper-authors">Horacek, A. G., Kueper, F. L., +4 authors, Hockemeyer, D.</p>
+<h2 class="paper-title">Improving reproducibility in pharmacogenomic screens through cross-study benchmarking</h2>
+<p class="paper-authors">Nader, K., Ianevski, F., +1 author, Aittokallio, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Reversion mutations that restore BRCA2 function represent a major mechanism of resistance to poly(ADP-ribose) polymerase inhibitors (PARPi) in BRCA2-mutant cancers. Understanding and predicting these events could inform treatment strategies, identify patients at increased risk of acquiring PARPi resistance, and improve the clinical interpretation of secondary BRCA2 variants detected in resistant tumors. Here, we evaluated reversions in an isogenic cell system using CRISPR editing and long-read transcript analysis to define the principles governing BRCA2 reversion systematically. We find that local sequence context dictates the spectrum of reversions, whereas BRCA2 domain architecture determines which of these events confer PARPi resistance. Moreover, we characterize the two routes of BRCA2 reversion: DNA-level restoration of the reading frame and transcript-level rescue through altered splicing. Both mechanisms were frequently used to restore BRCA2 expression across exon boundaries. The detection of such events at multiple loci suggests that inter-exonic reversion may be more widespread than previously appreciated. Lastly, we identify a unique set of mechanisms that underlie exon 11 reversions. In this region, reversions arose through both large genomic deletions and recurrent splicing events, including isoforms predicted to remove all eight BRC repeats. These splicing-mediated reversions engaged cryptic donors and were conserved across distinct genotypes, including the founder mutation c.5946delT. These findings define a predictive reversion code that governs the paths to BRCA2 functional rescue, enabling anticipation of reversion-mediated PARPi resistance and interpretation of secondary BRCA2 variants in resistant tumors.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721733v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Drug-response measurements across pre-clinical pharmacogenomic studies remain poorly correlated, which limits biomarker discovery, precision oncology, and predictive modelling. The drivers of this inconsistency have been debated but not yet resolved. By integrating 15 pharmacogenomic studies encompassing 760 small-molecule compounds, 1,111 cell models, and 9.8 million dose-response measurements, we demonstrate that dose-response metric is the strongest driver of inconsistency, followed by experimental factors, such as treatment duration, plate format, and viability readout; in contrast, cell line molecular features contribute only minimally to reproducibility. Among drug classes, hormone therapies and PARP inhibitors show the highest concordance, whereas antimetabolites, topoisomerase inhibitors, and mitotic inhibitors exhibit substantial response variability across studies. To improve consistency, we developed a Drug Response Score (DRS), a proximity-weighted measure that emphasize pharmacologically informative concentrations near IC50, and we demonstrate in systematic benchmarking how DRS markedly improved cross-dataset concordance. Applications to patient-derived neuroblastoma organoids and leukemia patient primary cells demonstrate that DRS improves replicate-level consistency in patients drug-response profiles. To improve reproducible pharmacogenomic studies, we make openly available an integrated Drug Response Resource (iDRR, https://aittokallio.group/iDRR/), a standardized 15-dataset portal that supports robust biomarker discovery and cross-study benchmarking.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721574v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 03, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Chemoproteomic Characterization of GPX4 Covalent Ligands and Targeted Degradation</h2>
+<p class="paper-authors">Kadam, V. D., Bai, G., +10 authors, Teng, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Despite intensive efforts, the ferroptosis gatekeeper glutathione peroxidase 4 (GPX4) remains difficult to selectively target due to stringent structural constraints surrounding its catalytic selenocysteine, which impose tight requirements on warhead reactivity and geometry. Here, leveraging a chemoproteomic approach, we characterize a potent and selective covalent GPX4 inhibitor featuring a pyrimidinylmethyl isourea warhead and define the chemical features underlying its proteome-wide selectivity. This chemotype enables tunable electrophile reactivity through steric and electronic modulation of leaving group ability, suggesting potential broader utility for targeting other recalcitrant proteins. Building on this scaffold, we further develop two selective GPX4 degraders - one CRBN-dependent and the other CRBN-independent - enabling complementary modulation of GPX4 through both inhibition and degradation. Together, these molecules expand the GPX4 chemical toolbox for more nuanced interrogation of GPX4 biology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.29.721679v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 03, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Distinct functions of PBRM1 and BAP1 reconcile the course of kidney cancer evolution and disease progression</h2>
+<p class="paper-authors">Deng, D., Feng, H., +32 authors, Turajlic, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Clear cell renal cell carcinoma (ccRCC) progresses along two predominant evolutionary trajectories, defined by PBRM1 (~40%) or BAP1 (~15%) mutations on a VHL-inactivated background. They have distinct patterns of evolutionary tempo and mode, and vastly different clinical outcomes, yet the underlying genotype-specific molecular phenotypic programmes are unknown. We established a patient-derived preclinical model biobank that captures the genetic diversity of ccRCC. Through integrative analyses of preclinical models and tumour bulk and single cell profiling, we identified transcriptional and epigenetic changes specific to PBRM1- and BAP1-driven ccRCC. Modelling PBRM1 loss in vitro demonstrates that it reinforces renal lineage identity and maintains progenitor-like cell state. In contrast, BAP1 loss drives inflammatory signalling and chromosomal instability. These insights reconcile the distinct evolutionary modes (branched versus punctuated), tempo (slow versus fast) and clinical outcomes associated with PBRM1 and BAP1 mutations, respectively, establishing a framework for patient stratification and genotype-directed therapeutic development.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.04.30.721837v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
