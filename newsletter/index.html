@@ -32,15 +32,53 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Evaluating open LLMs for agentic analysis orchestration in a typical biomedical lab</h2>
+<p class="paper-authors">Nekrutenko, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Agentic tools - software environments where a large language model plans, calls external tools, executes code, and iterates with minimal human intervention - will run a substantial share of routine biomedical data analysis within the next few years. However, per-call inference cost on frontier models is the bottleneck and can add up quickly. Here, we tested whether a free, locally-runnable open-weight model could take over the repetitive execution steps at frontier accuracy. We used Claude's Opus to author plans of increasing detail for per-sample variant calling, and ran six 2026-release open-weight implementer LLMs against those plans on a set of desktop GPUs. qwen3.6:27b reproduced frontier accuracy on every plan and matched Opus cell-for-cell on a 36-cell error-injection matrix. A sub-$2,000 Jetson or Apple Mac Mini sufficed for the implementer side. The open-weight model landscape evolves on the order of months, so the specific implementer recommended here will be superseded; we provide the plans, harness, scoring code, and per-cell artifacts at https://github.com/nekrut/LLM-eval-paper as a framework for re-evaluating future models.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724985v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 18, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Rescuing true protein binders from AI hallucinations via zero-shot, ensemble-driven statistical physics scoring</h2>
+<p class="paper-authors">Chou, C.-H., Hong, X., Xu, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The advancement of deep generative models has facilitated de novo protein and antibody design, yet translation to experimental success is hindered by a high generation rate of structural decoys. Current affinity predictors and standard structural confidence metrics fail to reliably distinguish these AI hallucinations from true binders. Here, we present Sipobe-PPA, an affinity ranking framework that conceptualizes interacting protein interfaces as pseudo-ligands, evaluating them through an AI-driven statistical physics forcefield. Because this forcefield is trained exclusively on small-molecule interactions, Sipobe-PPA acts as a zero-shot physical evaluator for protein-protein interfaces, preventing the framework against the data leakage and memorization pitfalls that affect models trained directly on protein complex datasets. To capture the structural plasticity of binding interactions, Sipobe-PPA employs a conformational ensemble strategy, computing interaction scores across multiple AlphaFold3(AF3)-predicted structural states. Benchmarking on decoy-rich de novo datasets-including Bindcraft, Boltzgen, and the Germinal antibody dataset-demonstrates the significant improvement offered by this approach. In a real-world pipeline scenario simulating wet-lab constraints (pre-filtered by AF3 ipTM &gt; 0.8 and pLDDT &gt; 80), Sipobe-PPA achieved an 80% Hit Rate within its Top 5 predictions across the combined dataset, compared to 0% for physical baselines like Rosetta-dG. Notably, our structural ensemble averaging outperformed single-structure scoring, highlighting the necessity of modeling prediction diversity. By maximizing top-tier hit rates across diverse nanobody and de novo targets, Sipobe-PPA provides a scalable screening paradigm that bridges the gap between computational generation and wet-lab viability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.11.724213v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
 <span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Learning from Drops: AI-Guided Integration of Liquid Biopsy Features in Cancer Studies</h2>
-<p class="paper-authors">Andueza, M., Villoslada-Blanco, P., +6 authors, Malats, N.</p>
+<h2 class="paper-title">TreeGazer: Prospecting Protein Sequence-Function Landscapes via Phylogenetic Structure</h2>
+<p class="paper-authors">Porras, S. A., Davis, S. J., +3 authors, Boden, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cancer is a major global health issue with rising incidence and mortality. Early detection, tumor characterization, and disease surveillance are crucial for timely and effective treatment, ultimately reducing mortality rates. Liquid biopsy (LB) has emerged as a valuable detection tool offering a non-invasive method to determine tumor-derived biomarkers in body fluids with demonstrated translational potential. To increase biomarker sensitivity, high-throughput sequencing platforms deliver massive volumes of data. Artificial Intelligence (AI) is pivotal in enabling huge and complex data integration. This contribution aims to assess the current state of integrative AI-based research in the LB field and provide methodological guidance. First, we conducted a PubMed search and found that the literature is sparse in studies integrating LB features, particularly by applying AI. When adopting the latter approach, defining the study objectives is crucial to guide the subsequent methodological aspects, including study design, patient selection criteria, sample size, nature of the LB features, and metadata to collect. Specifically, we propose strategies and tools for data preprocessing, including normalization and batch correction, as well as handling outliers and missing data. Furthermore, we recommend various Machine/Deep Learning approaches for feature selection techniques to ensure model robustness, and we highlight the importance of undergoing rigorous internal and external validations of the selected models. Assessing clinical utility and interpretability is often overlooked but fundamental for real-world implementation. In conclusion, we provide the LB scientific community with an AI-based methodological guidance to bridge the two fields and enhance the integrative analysis of LB features.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.12.724535v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Building diverse and informative protein sequence datasets is critical for understanding how function varies across sequence space. Because only a small fraction of sequences in a dataset can typically be experimentally characterised, strategies for selecting what sequences to characterise should maximise the information gained from each experiment. Here, we present TreeGazer, a phylogeny-informed framework that combines Bayesian optimisation with the topology of a tree to guide sequence selection. TreeGazer balances exploitation of sequences predicted to exhibit favourable properties against exploration of regions higher model uncertainty. Unlike existing approaches that apply Bayesian optimisation for sequence selection, TreeGazer does not rely on black-box models and instead uses latent representations of property distributions that are directly tied to phylogenetic structure. Modelling properties in this way enables biologically interpretable predictions and uncertainty estimates. Across two simulated selection campaigns, TreeGazer consistently selected sequences that produced datasets more representative of the underlying property distribution than alternative strategies that used protein language models. TreeGazer also performed effectively in low-data settings, where tree-guided selection enabled accurate identification of functional transitions across clades. TreeGazer can be run on conventional laptop computers while still providing equivalent or superior performance to embedding-based approaches. These results demonstrate that phylogenetic structure is a powerful and underutilised prior for guiding informative sequence selection.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.14.725301v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">cfMIND: A read-level methylation framework for accurate non- invasive disease detection using cell-free DNA</h2>
-<p class="paper-authors">Li, J., Liu, Z., +3 authors, Li, Y.</p>
+<h2 class="paper-title">MIMOSA: A model-independent framework for transcription factor binding site motif similarity assessment</h2>
+<p class="paper-authors">Tsukanov, A. V., Levitsky, V. G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Plasma cell-free DNA (cfDNA) emerged as a promising non-invasive biomarker for cancers. However, reliable detection remains challenging due to the low abundance of tumor-derived cfDNA fragments and the dilution of informative methylation signals when aggregated into region-level features. Here, we propose a novel approach cfMIND, an efficient and robust machine-learning framework that leverages stratified read-level methylation signals to preserve rare cell-type-specific information and enhance detection sensitivity. By avoiding information loss inherent to conventional aggregation strategies, cfMIND enables more accurate and stable inference across diverse conditions. cfMIND is compatible with various cfDNA methylation sequencing technologies and cancer types. Across multiple cancer datasets (n = 868), cfMIND achieves high performance (AUROC up to 0.966) and maintains strong accuracy even at ultra-low sequencing depth (0.2x) and in early-stage cancers. Notably, cfMIND demonstrates exceptional robustness, generalizing effectively across cohorts and platforms without the need for model retraining. These results highlight its potential utility in heterogeneous experimental and clinically relevant settings. Beyond cancer detection, cfMIND is readily extendable to non-malignant diseases, as demonstrated by its ability to capture disease-associated methylation alterations in amyotrophic lateral sclerosis (ALS). Functional investigations on cfMIND-identified features further reveal enrichment in key regulatory regions implicated in disease pathogenesis and recapitulate tissue- and single-cell-level methylation and transcriptional programs underlying tumor biology. Collectively, cfMIND represents a significant advancement in the field, offering a broadly applicable, functionally interpretable, and high- resolution framework for non-invasive disease detection.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.725033v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Transcription factors (TFs) regulate gene expression by binding specific DNA sequences, which are commonly represented by motif models. Although position weight matrices (PWMs) remain the dominant motif representation, alternative models, such as Markov models, can capture interpositional dependencies and may provide higher predictive performance. However, existing motif comparison tools are designed mainly for PWMs or require motifs to be reduced to PWM/PPM representations. This creates a major bottleneck for comparing motifs represented by different model architectures. This limitation complicates the interpretation of de novo motif discovery results and hinders the systematic integration of diverse motif models into genomic analyses. Results: We present MIMOSA (Model-Independent Motif Similarity Assessment), a model-independent framework for direct comparison of TF binding site (TFBS) motifs regardless of their mathematical representation. MIMOSA assesses motif similarity by comparing calibrated recognition profiles produced by motifs of different models on the same DNA sequence set, rather than by comparing the motifs themselves. In a cross-database benchmark on HOCOMOCO motifs, MIMOSA achieved retrieval performance comparable to established PWM-oriented tools, including Tomtom and MACRO-APE, with MRR and Recall@$k$ close to the best-performing methods. Pairwise ranking comparisons showed that MIMOSA captures a similarity signal consistent with existing approaches while providing a representation-independent comparison strategy. Application to de novo motifs derived from ChIP-seq data for the ATF3 TF demonstrated that recognition-profile comparison distinguished alternative spacer variants represented as separate PWMs from their integration within more flexible models such as BaMM and Slim. Thus, MIMOSA enables quantitative cross-model motif comparison and supports interpretation of motif heterogeneity in TFBS analyses. Availability and implementation: MIMOSA is implemented in Python and is freely available at https://github.com/ubercomrade/mimosa.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.725009v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">From Peaks to Power: Systematic Evaluation of Chromatographic Sampling Reveals Determinants of Quantification and Biological Discovery in DIA Proteomics</h2>
-<p class="paper-authors">Cantrell, L. S., Just, S., +2 authors, Batzoglou, S.</p>
+<h2 class="paper-title">IntegrateRigor: annotation-free integration optimization for cell identity recovery reveals cancer-immune interface niches</h2>
+<p class="paper-authors">Zhai, Z., Wang, C., Li, J. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Modern DIA proteomics increasingly emphasizes throughput and depth for large-cohort studies, but methods are often optimized using proxy metrics that can mask losses in quantifiable signal and statistical power. Here, we evaluate how datapoints per peak and other chromatographic features jointly contribute to quantification and downstream biological discovery. Using a matrix-matched calibration curve dataset, we checked how the number of datapoints per peak (DPPP) affects the limits of detection and quantification (LOD/LOQ). Reduced DPPP minimally affected LOD but substantially degraded LOQ. Feature modeling and nonparametric association analyses identified precursor peak area as the strongest feature-level predictor of LOQ, whereas DPPP showed weaker and context-dependent effects. Simulations of chromatographic peak integration recapitulated these trends, showing that increased sampling primarily improves integration precision, while quantitative accuracy is strongly governed by peak height and peak shape. Finally, when comparing 20 cancer vs 20 control plasma samples processed with Seer Proteograph, the decrease in DPPP led to a loss of statistical significance for proteins with low-abundance precursors. These findings argue that DIA optimization should prioritize LOQ and statistical power metrics - not identifications alone - by balancing sampling density with chromatographic peak height and quality to maximize useful biological signal.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724964v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Integrating single-cell and spatial transcriptomics data across batches is essential for recovering comparable cell identities (including cell types, subtypes, and states) as a prerequisite for downstream analyses in multi-condition and large-scale studies. This task remains challenging because between-batch variation removal often conflicts with cell identity preservation, and current methods typically rely on generic highly variable gene selection and lack principled metrics for hyperparameter tuning when cell identity annotations are unavailable. Together, these limitations often lead to over-integration, which merges biologically distinct cell identities, or under-integration, which leaves cells separated by batch rather than identity. Here we introduce IntegrateRigor, a data-driven, annotation-free, method-agnostic framework that optimizes integration specifically for reliable cell identity recovery across batches. IntegrateRigor first selects genes whose expression patterns are stable across batches using a gene-wise likelihood- based batch stability score, excluding batch-sensitive genes that can bias cell identity alignment during integration. It then identifies the optimal integration configuration across methods and hyperparameters by defining a dataset-level integration score that explicitly balances between-batch variation removal against cell identity preservation, without requiring prior annotations. In a colorectal cancer single-cell and spatial transcriptomics dataset, IntegrateRigor revealed previously uncharacterized cancer-immune interface niches in the tumor microenvironment that were masked by under-integration under default settings and by over-integration in previous literature. Across diverse datasets spanning multiple sources of between-batch variation, IntegrateRigor consistently improved cell identity recovery by mitigating both over-integration and under-integration across five state-of-the-art methods. By transforming integration from a heuristic preprocessing step into a statistically principled, dataset-adaptive procedure for cell identity recovery, IntegrateRigor improves the reproducibility and biological discovery power of large-scale single-cell and spatial transcriptomics analyses.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.14.725078v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Bioengineered algal lipids enriched in structured medium- and long-chain triacylglycerols, linoleate, and sn-2 palmitate for human milk fat substitutes</h2>
-<p class="paper-authors">Lin, J. Y.-T., Duenas, M. A., +7 authors, Merchant, S. S.</p>
+<h2 class="paper-title">A comparative analysis of urinary microbiome identifies putative probiotics</h2>
+<p class="paper-authors">Anand, R., Sahil, R., +3 authors, Maurya, G. K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Human milk fat (HMF) contains triacylglycerol (TAG) as its primary component, providing over 50% of the calories for infant nutrition, along with structural and bioactive lipids that are important for immune and nervous system development. Palmitic acid, comprising 20-25% of the fatty acid complement of HMF, is predominantly esterified to the sn-2 position on the glycerol backbone. This regiospecific positioning facilitates absorption as 2-palmitoyl-monoacylglycerol after hydrolysis of the fatty acids at sn-1 and sn-2 by gut lipases. Other features of HMF include enrichment in structured medium- and long-chain triglycerides (MLCTs), and variation in the ratio of oleic acid to linoleic acid with maternal diet and geography. We have engineered Auxenochlorella, an oleaginous green alga, for biosynthesis of an MLCT- and sn-2 palmitate-enriched HMF substitute for infant formula, matching the regioisomeric composition and proportions of the most abundant fatty acids in HMF.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725531v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Urinary tract infections (UTIs) are the most prevalent bacterial infections globally, and their management increasingly challenged by antimicrobial resistance (AMR). Probiotics offer a promising approach to mitigate AMR by competitively excluding uropathogens and enhancing host immunity by producing immune modulators. Despite being potential, key gaps persist between the discovery of uroprotective probiotic strains and optimization of formulations for urinary tract delivery. Here, we analyzed the urinary microbiome of UTI patients and healthy individuals to identify potential probiotic candidates for the prevention and management of UTIs. Publicly available 16S rRNA amplicon sequencing data of the urinary tract were processed using a standardized pipeline for sequence quality assessment, taxonomic assignment, and microbial function prediction. Comparative analysis showed a significant shift in microbial composition between UTI patients and healthy controls. The dominated phyla identified included Acidobacteriota, Actinobacteriota, Bacteroidota, Campylobacterota, Cyanobacteria, Firmicutes, Fusobacteriota, Patescibacteria, Proteobacteria, and Synergistota. Overall differential abundance analysis revealed Escherichia coli as the predominant UTI-associated species, while Lactobacillus crispatus was enriched in healthy samples. Additionally, predictive functional analysis indicated that metabolic pathways associated with beneficial microbes were enriched in the healthy group. Overall, the study highlights the association of distinct urinary microbiome signatures with infection status, which supports L. crispatus as the most promising probiotic for UTI prevention and control.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725591v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,110 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">TAMIPAMI: Software and methods for PAM/TAM identification for CRISPR and OMEGA gene editing systems</h2>
-<p class="paper-authors">Orosco, C., Jain, P. K., Rivers, A. R.</p>
+<h2 class="paper-title">KaryoScope: rapid, alignment-free sequence annotation for the pangenome era</h2>
+<p class="paper-authors">Ranallo-Benavidez, T. R., Chen, Y.-A., +10 authors, Barthel, F. P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protospacer adjacent motifs (PAMs) and target-adjacent motifs (TAMs) are essential for target recognition by CRISPR-Cas and TnpB nucleases. Here we present TAMIPAMI, an efficient experimental and computational framework for rapid PAM/TAM identification. TAMIPAMI requires only a single control library and Cas or TnpB-treated library, simplifying experimental design, reducing cost, and providing greater accessibility for users. The platform interprets sequencing data with interactive visualizations and introduces a novel algorithm that determines the minimal exact set of degenerate IUPAC sequences describing the observed PAM/TAM patterns. Using this approach, we accurately recovered canonical motifs for several nucleases, including SpCas9, LbCas12a, AsCas12a, BrCas12b, Cas12i1, and AmaTnpB. TAMIPAMI is available as both a web application and command-line tool, ultimately providing an accessible and efficient platform for PAM/TAM discovery and characterization across CRISPR and OMEGA systems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725432v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Hidden State Genomics: Graph-Based Analysis of Sparse Auto-Encoder Feature Activity in Genomic Language Models</h2>
-<p class="paper-authors">Kmiec, E., O'Brien, S., McCoy, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Pre-trained genomic language model (gLM) representations have been anticipated to enable enhanced deep learning predictions on several genomics tasks, but current benchmarking has led to questions over what they actually encode. We studied this with mechanistic interpretability on InstaDeeps Nucleotide Transformer v2 (500M), training sparse autoencoders across all 24 encoder layers to probe latent features. Correlation-based annotation against reference regulatory tracks was inconsistent across layers and insufficient for causal interpretation. We therefore built typed sequence-to-feature knowledge graphs to explore the SAE feature space and compared cisplatin-binding versus non-binding genomic DNA sequence communities by PageRank centrality, validating candidate features with decoder-based interventions and a CNN binding classifier. Interventions showed asymmetric effects: suppressive features could collapse predictive signal, while binding-associated features shifted predictions cumulatively with the presence of other binding-associated signals. Dependency maps further indicated strong local feature sensitivity within sequences. Together, these results provide evidence that gLM representations encode highly granular sequence syntax and conservation patterns, aligning more strongly with tightly coupled molecular interactions and local biophysical constraints than with complex, distributed regulatory logic. Within the scope of our intervention setting, this pattern is consistent with stronger performance on selected molecular tasks and weaker performance on broader regulatory inference, motivating scalable methods for causal feature annotation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.725007v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">PrEditR: A protein-centric platform for CRISPR-mediated base editor sgRNA design</h2>
-<p class="paper-authors">Myers, S. A., Vasquez Castro, F., Sanchez Solis, L. D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Post-translational modifications (PTMs) are critical to protein function, yet the function of most known modification sites remains uncharacterized. CRISPR-mediated phenotypic screens using base editors offer a powerful approach to dissecting PTM function at scale. However, existing sgRNA design tools for base editing applications are DNA-centric and lack the throughput required to integrate seamlessly with mass-spectrometry-based proteomics experimental outputs. We introduce protein editing in R, PrEditR, an open-source, protein-centric tool for high-throughput sgRNA design for custom base editor screens. PrEditR enables users to designate specific amino acid residues in proteins and design protospacer sequences to target the endogenous gene to install missense mutations via base editors.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725600v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">OpenBase: a universal framework for high-accuracy single-molecule detection of diverse non-canonical DNA bases using nanopore sequencing</h2>
-<p class="paper-authors">Zhong, Z., Xie, Y.-y., +5 authors, Luo, G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Nanopore sequencing holds great potential for the direct detection of non-canonical DNA bases from electrical signals, yet current approaches remain limited to a few classical epigenetic marks. Here we present OpenBase, an open and universal framework that standardizes training-data generation and deep learning based modeling for single molecule identification of diverse non-canonical DNA bases. OpenBase transforms nanopore sequencing into a broadly accessible platform for exploring the chemical diversity of DNA.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724850v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Genetic code expansion enables programmable covalent protein design</h2>
-<p class="paper-authors">de Puig, H., Kuru, E., +7 authors, Church, G. M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Covalent chemistry has transformed small-molecule drug discovery, yet analogous strategies for proteins remain largely inaccessible because covalent warheads cannot be readily integrated into biologics. Conventional genetic code expansion requires engineering a dedicated aminoacyl-tRNA synthetase for each new amino acid, rendering broad warhead screening impractical. Here we introduce AminoX, a platform that bypasses this limitation through direct tRNA acylation, enabling site-specific incorporation of chemically diverse non-standard amino acids (nsAAs), including covalent warhead nsAAs compatible with scalable biologic manufacturing and multifunctional nsAAs. Using a pooled mRNA display workflow, we screened more than 2,000 warhead-position combinations in machine learning-designed de novo miniproteins targeting CTLA-4, enabling parallel interrogation of covalent chemistry, linker geometry, and incorporation site. We confirmed covalent engagement on cells together with enhanced functional blockade. Finally, we demonstrate multifunctional nsAAs that combine covalent warheads with fluorogenic reporters for real-time detection of target engagement, as well as dual nsAA incorporation for macrocyclization and fluorescent imaging of covalent binding on cell surfaces. By uniting synthetic biology, chemical biology, generative protein design, and high-throughput functional selection, AminoX compresses covalent protein engineering timelines by orders of magnitude, accelerating the development of next-generation therapeutics, biosensors, and chemical probes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725538v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 16, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Heterologous expression of lyngbyatoxin biosynthetic genes in Aspergillus oryzae reveals transcriptional barriers but enables LtxC-mediated biotransformation</h2>
-<p class="paper-authors">Jayasundara, S., Ali, T., +4 authors, Skellam, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cyanobacterial natural products are a rich source of bioactive compounds, yet their heterologous production remains challenging. This study investigates the feasibility of expressing the lyngbyatoxin A (LTXA) biosynthetic gene cluster in a fungal host. The lyngbyatoxin biosynthetic genes (ltxA, ltxB, ltxC) were individually cloned and expressed in Aspergillus oryzae NSAR1 under the control of an inducible promoter. Metabolite production was assessed using LCMS, and transcriptional analysis was performed by RTPCR. Codon-optimized constructs and precursor feeding experiments were employed to evaluate pathway functionality. No production of LTXA or pathway intermediates was detected upon co-expression of ltxAC despite confirmed transcription of ltxB and ltxC. RTPCR analysis revealed truncation of the ltxA transcript, suggesting incompatibility with fungal transcriptional or splicing machinery. In contrast, expression of a codon-optimized ltxC enabled biotransformation of indolactam V to LTXA in A. oryzae, confirming functional expression of the prenyltransferase. These results highlight transcriptional limitations as a key barrier to heterologous expression of cyanobacterial NRPS pathways in fungal hosts, while demonstrating that downstream tailoring enzymes can remain functional. This work provides insights for future engineering of fungal platforms for cyanobacterial natural product biosynthesis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725566v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The pangenome era is producing long-read sequencing data and complete genome assemblies at a pace that current annotation methods cannot match. Existing tools were each built for a single feature class (repeats, centromeric satellites, or genes) and falter precisely where the genome is most variable and harbours clinically important variation: the centromeres, subtelomeres, and acrocentric short arms. Here we present KaryoScope, an alignment-free method to annotate an assembly at base resolution across any desired feature classes in a single pass, completing in minutes on a standard workstation. Applied to the Human Pangenome Reference Consortium Release 2 assemblies, KaryoScope identifies the SST1 macrosatellite as the recurrent sequence at Robertsonian translocation fusion points, delivers the first pangenome-wide census of D4Z4 macrosatellite structural diversity at the 4q and 10q subtelomeres relevant to facioscapulohumeral muscular dystrophy, and reveals previously uncharacterized centromere structural polymorphism, including chromosome-specific satellite loss and megabase-scale rearrangement validated by fluorescence in situ hybridization. A pre-built KaryoScope database for the human genome is distributed alongside the tool, and additional databases can be built for any reference genome or annotation source. Together, these capabilities bring the most variable regions of the genome within reach for comparative, clinical, and pangenome-scale analysis. KaryoScope is available at https://github.com/barthel-lab/KaryoScope.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.15.725544v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">TorchRef: An open-source PyTorch Framework for Crystallographic Refinement</h2>
-<p class="paper-authors">Weinert, T., Standfuss, J., Seidel, H. P.</p>
+<h2 class="paper-title">Overweight status drives early tumor microenvironment reprogramming in pancreatic ductal adenocarcinoma: a cell-type-resolved Bayesian hierarchical modeling and interactome analysis</h2>
+<p class="paper-authors">Viswanathan, A., Seby, J., Harikumar, K. B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Macromolecular crystallographic refinement underpins structural biology, yet existing software packages often lack accessible, modular codebases amenable to rapid method development. Here, we introduce TorchRef, a PyTorch-based crystallographic refinement framework that exposes all refinable parameters, atomic coordinates, displacement parameters, occupancies, and scale factors to automatic differentiation. The framework implements FFT-based structure-factor calculations, the French-Wilson treatment of intensities, bulk-solvent modeling with established mask parameters, and stereochemical restraints from the CCP4 Monomer Library. A modular target architecture allows loss functions to be combined, weighted, and extended independently of the core refinement machinery. Validation against 1,000 PDB structures demonstrates that TorchRef-based refinement reproduces a median R-free within 1% of Phenix while maintaining comparable model quality. Structure factor calculation in TorchRef scales readily across multiple CPU cores and is over 100 times faster on modern GPUs than CCTBX. To showcase how modern methods like time-resolved crystallography can benefit from the flexibility that TorchRef provides, we implemented direct refinement of a typical time-resolved model against amplitude differences, a use case currently not explored by classic refinement programs. TorchRef is released under the MIT license with full API documentation and tutorials, providing an accessible platform for developing and testing new crystallographic refinement protocols.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724821v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.14.721695v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Cellular stemness identifies high-risk ductal carcinoma in situ and offers a therapeutic interception opportunity</h2>
-<p class="paper-authors">Schueddig, E., Kochat, V., +33 authors, Behbod, F.</p>
+<h2 class="paper-title">Subclonal IDH1/2 Mutations as a Targetable Vulnerability in Vascular Tumors</h2>
+<p class="paper-authors">Yu, D.-M., Lee, E., +16 authors, Wang, R. C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Ductal carcinoma in situ (DCIS) exhibits substantial heterogeneity in its risk of progression to invasive breast cancer, yet the cellular and molecular determinants of high-risk lesions remain incompletely defined. Using spatially resolved single-cell transcriptomic and epigenomic profiling of 43 patient derived DCIS and DCIS/invasive ductal carcinoma (IDC) samples, we delineate cellular programs, spatial organization, and epigenetic regulatory mechanisms associated with invasive potential. We identify an epithelial population with stemness features within luminal hormone-responsive (LumHR) cells that progressively expands from benign tissue to DCIS and IDC, and is strongly associated with invasive progression and recurrence-linked transcriptional programs. Spatial mapping reveals discrete DCIS niches enriched for stem-like LumHR cells, characterized by elevated CEACAM6 expression and enhanced ligand receptor interactions, including CEACAM6-EGFR signaling between epithelial and stromal compartments, including cancer-associated fibroblasts, macrophages (APOC1 positive) and perivascular cells. These niches define a microenvironmental context that supports stemness and invasive potential. Epigenomic analyses implicate FOXA1 as a key regulator of these stem-like transcriptional states. Pharmacologic disruption of FOXA1 regulatory network using LSD1 inhibition suppresses stemness-associated transcriptional programs in vitro and significantly restrains tumor growth in vivo. Collectively, these findings define high risk DCIS as a stemness-driven disease embedded within specialized microenvironments, and identify associated regulatory networks as candidate biomarkers and therapeutic vulnerabilities.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724882v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Despite extensive sequencing, the genetic etiology of sporadic angiosarcoma remains poorly defined. Maffucci syndrome, characterized by vascular tumors and elevated cancer risk, is driven by mosaic gain-of-function mutations in IDH1/2, though these have not been reported in sporadic angiosarcoma. We identify recurrent, low-variant allele frequency hotspot mutations in IDH1/2 in over half of sporadic angiosarcomas. Mutations were validated by Sanger sequencing and immunohistochemistry. Mutant IDH1 endothelial cells promote tumorigenesis through non-cell-autonomous mechanisms, secreting 2-hydroxyglutarate (2-HG) to increase growth factor and endothelial-to-mesenchymal transition gene expression, activate pAkt/pERK signaling, induce DNA methylation changes, and promote anchorage-independent growth, which are reversed by the mutant IDH1 inhibitor ivosidenib. Patients with mosaic IDH1 mutations show reduced serum 2-HG and marked tumor regression following ivosidenib treatment. The clinical efficacy of ivosidenib in vascular tumors with subclonal IDH1 mutations suggests that low VAF IDH1/2 mutations may be a targetable vulnerability in sporadic angiosarcoma.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.14.725132v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -260,15 +203,34 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 16, 2026</span>
+<span class="date">May 17, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A unified benchmark of synthetic data generation for clinical transcriptomic cancer cohorts</h2>
-<p class="paper-authors">Trinh, T.-C., Woillard, J.-B., +1 author, Battail, C.</p>
+<h2 class="paper-title">Reprogramming tumour-associated macrophages from immune suppressive to inflammatory state by Checkpoint kinase 1 inhibitor combination treatment</h2>
+<p class="paper-authors">Zeng, Z., Gandini, A., +9 authors, Gabrielli, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Achieving a trade-off between biological utility and patient privacy remains a key challenge for secure data sharing when applying transcriptomic clinical datasets to artificial intelligence in precision oncology. Here, we introduce the first benchmarking study tailored to high-dimensional clinical transcriptomic cancer data, comparing synthetic data generation methods across three clinical cancer trials. Our framework, SynOmicsBench, combines standardized preprocessing with multidimensional evaluation, prioritizing downstream biological validation alongside statistical fidelity and attack-based privacy assessment. Results indicate that no single method dominated all dimensions, with Gaussian Copula achieving the most balanced performance, followed by Avatar, demonstrating that metric-based similarity alone is insufficient to ensure preservation of higher-order molecular dependencies. Synthetic data consistently reproduced biomedical signal directionality but with attenuated effect sizes and inter-replicate variability, supporting hypothesis generation when multi-seed synthesis is adopted. Collectively, this framework provides a reproducible decision-support tool for method selection and promotes biologically informed, privacy-aware adoption of synthetic data in precision oncology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724858v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.13.724422v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 17, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Targeting therapy-induced senescence across multiple breast cancer subtypes in a metastatic bone-like microenvironment</h2>
+<p class="paper-authors">Hamburger, E. C. B., Ghazizadeh, S., +5 authors, Rosenzweig, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Chemotherapeutic treatment of breast cancer with Doxorubicin (DOX) can induce tumor and stromal cell senescence leading to therapy-resistance. Senescence-associated secretory phenotype (SASP) promotes secretion of pro-inflammatory and tumorigenic factors causing systemic inflammation. Combined, this can result in immune suppression, tumor growth and secondary spread of cancer. Targeting and removing senescent and cancerous cells using a combination of chemotherapeutic and senolytic drugs may reduce systemic inflammation, improve therapeutic efficacy, and prevent metastasis. Exposure of triple-negative breast cancer (MDA-MB-231), hormone-responsive (MCF-7) and HER2+ (MDA-MB-453) cells, and primary spine osteoblasts to DOX showed significant induction of p21-positive senescent cells. DOX and senolytics (RG-7112, o-Vanillin) treatment of co-culture spheroids showed a significant additive effect in reducing tumor sphere viability and growth, indicating reduced metastatic potential. This was correlated with reduced SASP in triple-negative and hormone responsive lines and decreased levels of senescent cells in all subtypes and primary stromal cells, while proliferation was decreased, and apoptosis increased across all breast cancer subtypes. Future chemotherapeutic treatment in breast cancer models may be optimized by adding senolytic drugs to more effectively clear senescent tumor and stromal cells, reducing risk for relapse and metastatic potential, while allowing for tissue regeneration in the bone metastatic environment.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.12.724653v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
