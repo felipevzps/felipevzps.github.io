@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
+<span class="date">May 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A machine learning framework for interpreting phylogenetic tree patterns in interkingdom horizontal gene transfer</h2>
-<p class="paper-authors">Aguirre-Carvajal, K., Armijos-Jaramillo, V., Munteanu, C. R.</p>
+<h2 class="paper-title">OryzaG3: A Single-species Genomic Foundation Model Pretrained on Rice Pangenome</h2>
+<p class="paper-authors">Yang, L., Xia, Y., +4 authors, Xia, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Horizontal gene transfer (HGT), the movement of genetic material between unrelated organisms, is widely recognized as an important driver of genome evolution in bacteria. In eukaryotes, however, the evolutionary impact of HGT remains debated. The identification of interkingdom HGT (iHGT) is especially challenging due to the lack of gold standard methods. Traditionally, iHGT identification has relied on manual inspection of phylogenetic trees, a process that is subjective, difficult to reproduce, and not scalable to large datasets. In this study, we present a computational framework that formalizes phylogenetic tree interpretation into a supervised machine-learning problem. We define five recurrent phylogenetic patterns--iHGT, NoHGT, Limited donor evidence, Multiple major clades (Multiple MC), and Patchy phylogeny--capturing clear and ambiguous evolutionary scenarios. To operationalize these patterns, we developed a feature-extraction pipeline that quantifies taxonomic composition and phylogenetic topology using seven biological descriptors derived from gene trees. These features were used to train and evaluate multiple machine-learning models, among which a Random Forest (RF) classifier achieved the best performance (AUC-ROC = 0.98; accuracy = 0.89). Model interpretability analyses revealed that topological distance to additional clades and lineage diversity are the most informative predictors, reflecting key signals used in expert-driven phylogenetic interpretation. The RF model was further validated using 1,000 simulated phylogenies and 1,438 real iHGT candidates, achieving low misclassification rates (7.8% and 10.43%, respectively). Benchmarking against AVP (Alienness vs. Predictor), a comparable tool for iHGT detection, demonstrated improved performance across all evaluation metrics, highlighting the advantages of incorporating global phylogenetic structure into the classification process. This study provides a reproducible and scalable framework for phylogenetic pattern classification that captures complex evolutionary signals while maintaining biological interpretability. Beyond improving iHGT detection, the approach offers a more nuanced representation of evolutionary scenarios by explicitly accounting for inconclusive cases, supporting more robust inference in comparative genomics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726852v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> While multi-species genomic language models have advanced biological representation learning, high-quality, single-species foundation models for crops remain scarce. Leveraging recently expanded rice pangenome resources, we introduce OryzaG3, a species-specific DNA language model with 700M parameters. OryzaG3 was pretrained on 59.20 Gb of chromosome-level sequences from 149 high-quality rice genomes using a non-overlapping 3-mer tokenization strategy and a causal language modeling objective, featuring context-length variants up to 32k tokens. On the Plants Genomic Benchmark polyA prediction task, OryzaG3 achieves competitive predictive performance against leading multi-species models while delivering a four-fold increase in inference throughput under identical long-context conditions. Ultimately, OryzaG3 demonstrates that lightweight, single-species foundation models trained on high-quality pangenomes can match multi-species benchmarks while significantly reducing computational overhead. This work provides a scalable framework for rice functional genomics, molecular breeding, and targeted crop foundation model development.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.22.727045v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,167 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
+<span class="date">May 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Selective scoring of drug effects in multicellular co-culture systems</h2>
-<p class="paper-authors">Dias, D., Ianevski, A., +7 authors, Aittokallio, T.</p>
+<h2 class="paper-title">Integrated optimization of experimental and computational workflows improves genome recovery in long-read gut metagenomics</h2>
+<p class="paper-authors">Hu, Y., Sun, L., +13 authors, Zhang, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Multicellular co-culture screening reveals compound effects that depend on cell-cell interactions. Standard dose-response metrics fail to resolve effects that arise either from target-effector cell interactions or from non-specific toxic effects. Here, we developed Co-culture Efficacy Score (CES), a robust computational framework that enables systematic identification of compounds that selectively modulate cellular interactions in multicellular assays. CES framework supports both therapeutic scoring that penalizes direct effector cell toxicity, as well as a mechanistic discovery that estimates immunomodulatory effects by adjusting for effector cell responses. When screening 527 compounds across 10 hematological cancer models co-cultured with natural killer (NK) cells, CES distinguished co-culture-specific immunomodulatory effects from NK cell toxicity and cancer cell inhibitory responses, recovering systematic enhancer and inhibitory patterns. We further assessed CES robustness using higher-resolution validation screens and demonstrated its applicability to identify selective compounds in anti-CD19 CAR T-cell and antiviral host-pathogen screens. To facilitate its broad use, we implemented CES as an interactive web-application for quantitative analysis of compound responses in co-culture assays, providing a widely applicable scoring framework for cancer immunotherapy, antiviral screening and drug discovery.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.20.726737v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Spatial Regulation of CAR Signaling Enables Logic-Gated Activity</h2>
-<p class="paper-authors">Nichakawade, T. D., Mog, B., +17 authors, Kinzler, K. W.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Chimeric antigen receptors (CARs) can induce T cells to kill cancer cells but also to kill normal cells that express the same antigens. Designing CARs to recognize combinations of antigens, via Boolean logic, can simultaneously expand the scope of targetable antigens and make CAR T cells more specific to cancer. For example, one antigen may be expressed on cancer cells and normal bone marrow cells, while a second antigen may be present on the same cancer cells but only in normal lungs. If recognition of both antigens is required for T cell activation, only the cancer cells will be killed. Creating such AND-gated CAR T cells has been challenging given the need to engineer non-natural signaling mechanisms that integrate two ligand binding events into a single T cell activation stimulus. Here, we design a fundamentally new AND-gated receptor called Multi-ANtigen Triggered Immune Synapse (MANTIS), which leverages differences in extracellular receptor dimensions to regulate CAR signaling. MANTIS initially prevents CAR activity by steric blocking with a bulky extracellular domain. Upon engagement of the first antigen, MANTIS sheds this blocking domain, releasing a free CAR that can bind a second antigen and activate the T cell in an AND-gated manner. This work demonstrates how differences in extracellular receptor size can be leveraged to spatially regulate intracellular signaling pathways in response to antigen patterns, paving the way for new applications in synthetic biology and cell engineering.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.22.726983v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Biosynthetic glycan modeling reveals metabolic shifts in disease</h2>
-<p class="paper-authors">Bashir, U., Mank, M., +1 author, Bojar, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Glycans are biosynthesized by partly overlapping cascades of enzymatic reactions that can be conceptualized as biosynthetic networks. These networks latently contain reaction rates, substrate specificities, and metabolic states of the underlying cells. Yet extracting this information, across tissues, species, and hundreds of datasets, is challenging with existing methods. Here, we present a new structure-aware algorithm for glycan biosynthetic network construction that is easily scalable to any number of glycomics datasets and results in more interpretable networks. We further show how these networks then can be used to elucidate substrate preferences of enzymes, quantify metabolic shifts in conditions, such as cancer, and provide hypotheses for not yet elucidated structures via physiological network extension. We also show that tumorigenesis shifts glycome regulation from a carrier-expression-dominated regime toward being governed by biosynthetic network structure, which generalizes across six independent cancer cohorts. We envision that these improvements to glycan biosynthetic modeling will aid in understanding glycan regulation and observed glycomic shifts in health and disease.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726792v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Using combined RNA/DNA short read sequencing to investigate allele-specific expression from the inactive X chromosome in human cells</h2>
-<p class="paper-authors">Thomas, R., Blower, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Many genomic regions exhibit allele-specific expression. This effect is most pronounced in imprinted genes, where one copy of a gene is epigenetically silenced, and the inactive X chromosome of female cells, where almost the entire chromosome is silenced. Allele specific gene expression can have significant effects on human health and is implicated in a wide array of diseases. Research into allele specific expression is most often carried out in mouse models where cross breeding of mouse strains can yield progeny with well characterised haplotypes where parent of origin is known for a huge number of SNPs. The same approach cannot be taken with human data and haplotypes must be assembled using expensive and labour intensive long read sequencing and Hi-C based approaches. Although resolved haplotypes are available for a number of cell lines, allowing accurate measurement of allele-specific gene expression, this type of analysis is inaccessible for non-specialist labs. We demonstrate how to use previously published haplotypes to investigate X linked gene silencing and epigenetic changes. Additionally, in this paper we present a method to exploit the profound difference in expression levels between the two human X chromosomes to assign SNPs in expressed RNA to the active or inactive X chromosome using only short read DNA and RNA sequencing. We demonstrate this technique using sequencing libraries generated in house and sequencing data from publicly available databases including for a cell line with a complex karyotype. In each instance we identified genes that were silenced in each cell line opening them up to further research avenues. This X chromosome haplotyping technique can be applied to any clonally derived human cell line with 2 or more X chromosomes allowing researchers to investigate X linked gene silencing in cell lines already present in their lab rather than in the limited number of cell lines for which a haplotype is available.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726886v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Mind the gap: quantifying population-individual gap in depressive symptom dynamics through energy landscapes</h2>
-<p class="paper-authors">Tsutsumi, M., Kubo, T., +1 author, Naoki, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> People do not always feel the way they appear. Someone who seems emotionally stable may be struggling internally, whereas someone who appears distressed may experience their state very differently. This gap matters in psychiatry, where assessment often relies on symptom scales and external evaluation. Here we developed a hierarchical variational Bayesian framework to jointly estimate population-derived dynamics, reflecting an external reference based on pooled data, and individual-derived dynamics, reflecting each participant's subjective symptom organization. We applied this framework to time-series PHQ-9 data of depressive states from 248 participants during the COVID-19 pandemic. The population landscape contained three major stable states, whereas individualized landscapes often diverged substantially from this shared structure. We quantified this mismatch as individual-group landscape divergence, which was associated not only with depressive severity but also with modern-type depression-related traits (TACS-22) and interpersonal sensitivity-self traits (IPS-22). These findings reveal a previously unquantified gap between population-level and individual-level symptom organization.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.20.726729v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Genos-m: a foundation model for human-associated microbial genomes</h2>
-<p class="paper-authors">Fang, C., Yang, F., +31 authors, Shi, Z.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Human-associated microbial genomes encode extensive strain-level diversity and niche-specific gene repertoires that are critical to host health. However, these complex sequence features remain difficult to capture using general-purpose DNA foundation models, highlighting the need for dedicated representation learning tailored to the human microbiome. Here, we introduce Genos-m, an open-source foundation model for human-associated microbial genome representation. Genos-m was pretrained on approximately 1.2 trillion nucleotide tokens from a curated microbial genome corpus, including human-associated prokaryotic isolates, high-quality metagenome-assembled genomes (MAGs) and bacteriophages, supplemented with GTDB species-level representative genomes to broaden prokaryotic taxonomic breadth. The model uses a sparsely activated Mixture-of-Experts (MoE) Transformer architecture, with 4.7 billion total parameters, approximately 330 million activated parameters per forward pass and a maximum context length of one million base pairs. We evaluated frozen Genos-m representations across short-sequence and gene-level tasks, biosynthetic gene cluster (BGC)-based regional sequence tasks, whole-genome strain phenotype prediction, and zero-shot transfer on prokaryote-related RNAfitness assays. Across these benchmarks, Genos-m consistently ranked among the leading comparison models, with the best performance in five of eight gene-fitness regression tasks and in BGC type classification. Using sparse autoencoders, we identified sparse features in Genos-m hidden activations that aligned with annotated ORFs, intergenic regions, and tRNA and rRNA loci. In downstream applications, Genos-m-derived genome-informed species representations incorporated into a human microbiome self-supervised learning model improved colorectal cancer (CRC)-control classification over conventional species-abundance random forest models. Genos-m also generated stable sample-level embeddings from as few as 10,000 metagenomic reads, retaining gut microbial community structure that distinguished geographic origin and aligned with enterotypes defined from full-depth taxonomic profiles. Together, these results support Genos-m as a reusable representation model for microbial genomes and metagenomes, with conclusions bounded by the reported datasets, task definitions and evaluation protocols. Genos-m model weights, inference code, and usage documentation are publicly available on GitHub (https://github.com/BGI-HangzhouAI/Genos-m) and HuggingFace (https://huggingface.co/BGI-HangzhouAI/Genos-m).</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726868v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">kamino: proteome-wide variant calling for amino acid phylogenomics</h2>
-<p class="paper-authors">Derelle, R., Lees, J. A., Chindelevitch, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Amino acid-based phylogenetics usually relies on first clustering and aligning orthologous proteins. This approach is powerful but computationally demanding. Here, we present kamino, a reference-free and alignment-free method that builds amino acid phylogenomic alignments directly from proteomes. kamino adapts a local graph-based variant-calling algorithm to efficiently identify variable homologous positions among proteins and concatenate these polymorphic regions. Across diverse prokaryotic and eukaryotic datasets, we showed that kamino is able to generate good quality alignments. Phylogenetic analyses revealed that kamino generally recovered signals broadly similar to those obtained from marker-based approaches, while being much faster. Its main limitations are reduced performance on deeply divergent prokaryotic datasets and substantial memory requirements for large eukaryotic datasets. kamino therefore provides a fast and simple approach for constructing phylogenomic amino acid alignments, complementing classical marker-based workflows. The program is implemented in Rust and is freely available at https://github.com/rderelle/kamino.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726148v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Engineered microRNA feedback circuits enable tunable and autonomous control of synthetic receptor activity</h2>
-<p class="paper-authors">Nathalia, B. L., Makri-Pistikou, A.-M., +7 authors, Kapitein, L. C., de Greef, T. F. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Synthetic receptors are powerful tools for cellular engineering, yet their utility is often constrained by constitutive activity and the absence of natural feedback mechanisms that maintain cellular homeostasis. To address this, we engineered an autonomous regulatory circuit for synthetic Notch (synNotch) receptor activation using an orthogonal microRNA (miRNA)-mediated negative feedback mechanism in mammalian cells. Specifically, synNotch activation induces the expression of a synthetic miRNA that targets complementary sites engineered into the synNotch transcript, resulting in a self-limiting feedback loop. We demonstrate that synNotch repression positively correlates with the number of miRNA target sites integrated into the receptor transcript, enabling tunable control of receptor expression. Furthermore, flow cytometry and live-cell imaging analyses revealed effective suppression of synNotch expression following activation. Downstream target gene expression peaked at approximately 48 hours post-activation before gradually declining as the feedback circuit engaged. This approach achieves autonomous synthetic receptor regulation-eliminating the need for external intervention-and enables tunable response dynamics through rational circuit design. Our miRNA feedback strategy provides a generalizable platform for engineering self-regulating synthetic receptor systems with improved control and predictability for cellular engineering applications.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.22.727153v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">May 24, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Efficient and accurate near telomere-to-telomere haplotype reconstruction of diploid genomes</h2>
-<p class="paper-authors">Liu, Y., Yichen, L., +7 authors, Luo, X.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Telomere-to-telomere (T2T) and haplotype-resolved assembly are crucial for understanding eukaryotic genomes. For diploid species, this resolution is critical to uncover allelic variations, inheritance patterns, and functional genomic traits. Current scaffolding methods typically employ either sequence-based or graph-based strategies.Sequence-based approaches rely on proximity signals to yield high contiguity, but underutilize assembly graph information, resulting in more structural errors and chromosomal misassignments.Graph-based methods leverage graph topology for higher accuracy but frequently struggle to achieve chromosome-scale contiguity.However, neither strategy alone can overcome its inherent limitations to simultaneously achieve high contiguity and accuracy.To address these challenges, we introduce HapFold, the first hybrid scaffolding framework that synergistically leverages the complementary strengths of both graph-based and sequence-based approaches.By integrating the topological accuracy of assembly graphs with the proximity-guided contiguity of sequence models, HapFold achieves highly accurate, chromosome-scale or near-T2T haplotype reconstructions for diploid genomes.Compared to existing methods, HapFold achieves superior assembly quality while accelerating computation by an order of magnitude.Furthermore, in the haplotype reconstruction of diploid genomes using standard OxfordNanopore Technologies simplex reads, HapFold enables the reconstruction of a greater number of near-T2T assemblies.Our approach provides a robust and scalable solution for the high-fidelity reconstruction of haplotype-resolved diploid genomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.20.726711v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Short-read metagenomic sequencing is widely applied in microbiome research due to its high quality and increasingly more affordable prices. However, it suffers from fragmented reads which limits assembly contiguity and the recovery of complete microbial genomes. In contrast, long-read sequencing, with substantially longer read lengths, can help overcome these limitations. Achieving complete and accurate genome recovery is a central goal in metagenomics. To advance this goal, we present a systematic effort to unify and optimize the long-read sequencing workflow, from experimental sample processing to computational genome assembly, using the CycloneSEQ platform.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.22.727065v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +70,148 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 24, 2026</span>
+<span class="date">May 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Predicting Influenza Virus Host Tropism and Zoonotic Spillover Risk from Protein Sequences</h2>
-<p class="paper-authors">Root, B., Longest, A., +5 authors, Guertin, S.</p>
+<h2 class="paper-title">Non-Genetic Mechanisms of Fractional Resistance to Abemaciclib in Dedifferentiated Liposarcoma.</h2>
+<p class="paper-authors">Bailey, L. E., Wolff, S. C., +7 authors, Spanheimer, P. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Novel infectious diseases, predominantly originating from non-human animals, pose a significant threat to global public health and economic stability. Avian influenza virus presents an especially significant challenge due to its high mortality rates and spillover capability into new host species. Recent H5N1 spillover events into poultry and cattle resulted in massive economic burden and increased human health risk. Traditional methods of disease surveillance rely on reactive case detection and pathogen characterization, providing insufficient lead time for effective intervention. Computational tools that allow efficient and proactive prediction of zoonotic potential are critical in mitigation of influenza outbreaks and identification of strains with human spillover risk. Existing models predicting influenza virus subtypes or host have been developed; however, the complexity of spillover events, including the non-binary nature of zoonotic potential, limits the capabilities of these models. In the approach reported here, rich protein language model embeddings were generated from ESM-2 for each protein in influenza virus strains and used to predict the protein host tropism probabilities across nine animal families. The protein host tropism model achieved weighted precision and recall scores of 0.95 and 0.95, respectively. We then constructed a zoonotic risk prediction model using the outputs from the protein host tropism prediction model to classify the strains into six classifications: avian, mammal, human, avian-to-human zoonotic, avian-to-mammal zoonotic, or mammal-to-human zoonotic. The average weighted precision and recall scores for this model were 0.90 and 0.90, respectively. This framework advances the prediction of influenza zoonotic risk by being agnostic to influenza subtype, incorporating non-human mammals and mammal zoonotic spillover classifications, and using the full influenza proteome to capture the complexity of spillover dynamics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726772v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Dedifferentiated liposarcoma is a rare mesenchymal malignancy driven by amplification of chromosome 12q13-15, which includes the oncogenes CDK4 and MDM2. CDK4 amplification provides a rationale for targeted therapy with CDK4/6 inhibitors, and abemaciclib has shown the most durable activity reported to date in this disease. Clinical responses, however, are incomplete and often transient, and the cellular features that allow tumor cells to continue proliferating during treatment are not well understood. To address this gap, we performed multiplexed single-cell imaging to quantify 17 cell-cycle regulators in both dedifferentiated liposarcoma cell line Lipo246 and surgically resected primary human cells exposed to abemaciclib. Both models contained a subpopulation of cells that retained phosphorylated retinoblastoma protein, a marker of cell proliferation, at the highest abemaciclib doses. These fractionally resistant cells were defined by selective enrichment of cyclin-dependent kinase 2 (CDK2), cyclin B1, and phosphorylated ribosomal protein S6 (pS6), and showed enhanced sensitivity to the CDK2 inhibitor, tagtociclib. Together, these findings reveal nongenetic cell cycle plasticity as a mechanism of escape from CDK4/6 inhibition in dedifferentiated liposarcoma and nominate CDK2 and the PI3K-mTOR pathway as candidate targets for combination therapy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.22.727236v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">An engineered streptavidin condensate platform for chemically inducible control of endogenous proteins in mammalian cells</h2>
+<p class="paper-authors">Kamikawa, T., Wilson, C. J., +1 author, Nihongaki, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Inducible control of protein activity with temporal precision is essential for understanding and engineering dynamic cellular behaviors. However, current inducible molecular tools largely rely on overexpression of target proteins, which often disrupts the signaling pathways and cellular functions under investigation. A generalizable method to achieve inducible control of endogenous proteins in mammalian cells remains an unmet need. Here, we present a versatile platform based on engineered streptavidin biomolecular condensates to trap and release endogenously tagged proteins. By tagging endogenous loci with a short streptavidin-binding peptide via CRISPR knock-in, our synthetic streptavidin condensates efficiently partition and functionally inhibit the tagged endogenous proteins. The sequestered cargo protein is rapidly released upon the addition of biotin, restoring protein activity within minutes. We demonstrated the broad applicability of this system by controlling diverse endogenous targets: the anterograde motor KIF5B and retrograde motor DYNC1H1, which regulate intracellular vesicle trafficking, and the Arp2/3 complex subunit ARPC3, which regulates actin dynamics. Furthermore, we developed a dual-inducible system based on rapamycin-dependent condensation of streptavidin, enabling both rapid sequestration and release of endogenous proteins at user-defined time points. Altogether, this engineered streptavidin condensate platform provides a robust, rapid, and scalable approach for manipulating endogenous protein function under physiologically relevant conditions in both basic and translational research.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.22.725644v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A novel reaction-diffusion architecture for engineering self-organized patterns in mammalian cells</h2>
+<p class="paper-authors">Swedlund, B., Danan, J. J., +10 authors, Morsut, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Reaction-diffusion circuits generate self-organized spatial patterns through local activation and long-range inhibition, but synthetic implementations in mammalian cells have been limited by the differential-diffusion requirement. Here, we introduce a novel architecture, juxtacrine activation with paracrine inhibition (JAPI), where the activator propagates through cell-cell contacts rather than diffusion. We demonstrate mathematically and numerically that JAPI accesses the same patterning regimes as classical diffusion-based circuits with one fewer free parameter. We then engineer compact synNotch-based JAPI circuits in mammalian fibroblasts and demonstrate their sufficiency for self-organized patterning through tunable, size-limited signal propagation. Functionalized to spatially control morphogen secretion, these circuits perturb feather bud formation on adjacent embryonic chicken epidermis. Finally, we develop a library-based approach to explore coupled, dual-JAPI circuits with tunable cross-inhibition, enabling programmable interactions between patterns and access to a broad morphospace of spatial states. Together, JAPI provides a compact, modular platform for programming self-organized multicellular patterning.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.24.727552v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Artificial initiation codons and engineered initiator tRNAs enable N-terminal noncanonical amino acid incorporation in intact cell-free translation systems</h2>
+<p class="paper-authors">Furukawa, H., Okamoto, Y., Terasaka, N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Noncanonical amino acid (ncAA) incorporation at the protein N-terminus provides a powerful strategy for installing defined chemical handles while minimizing perturbation of internal protein sequences. However, highly efficient initiation-based ncAA incorporation systems suppress the native methionine pathway by removing methionine or methionyl-tRNA synthetase, limiting their use for proteins containing internal methionine residues. Here, we developed an orthogonal initiation system for selective N-terminal ncAA incorporation into proteins in intact cell-free translation systems. We systematically profiled background initiation from all 64 codons in reconstituted translation systems and identified low-background artificial initiation codons. Engineered initiator tRNAs, termed tRNAIniTx, were then designed to decode selected codons and support ncAA-dependent initiation. The optimized CAC/tRNAIniTx04GUG pair enabled efficient N-terminal incorporation of N-biotinyl-L-phenylalanine without removing methionine or methionyl-tRNA synthetase, reaching over 90% incorporation. The system was further extended to p-azido-L-phenylalanine and to an Escherichia coli extract-based cell-free translation system. Finally, N-terminally biotinylated proteins were directly immobilized on streptavidin biosensors for purification-free biolayer interferometry analysis of computationally designed Brd4BD2 binders. This work establishes a codon-guided orthogonal initiation strategy for N-terminal protein functionalization while preserving the native methionine translation pathway.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.24.725928v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Splice-Aware Optimization Prevents Pervasive Missplicing of Natural and Synthetic cDNAs</h2>
+<p class="paper-authors">Ahmad, M., Bellido Molias, F., +12 authors, Kudla, G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Heterologous gene expression is widely used across biology and medicine, and often relies on codon optimization to increase protein yields. Here we uncover missplicing as a common and largely unrecognized failure mode of heterologous expression. Using systematically designed libraries comprising over 5,000 synthetic reporter genes and natural human cDNAs, we find that the majority of gene variants expressed in a human cell line are at least partially spliced, and in many variants the spliced isoform dominates, reducing protein output or ablating expression entirely. By analysing sequence determinants of expression across multiple human cell lines, we uncover a hierarchical architecture of regulatory control, where GC content establishes baseline mRNA levels, local sequence features influence splicing, and tissue-specific codon adaptation to tRNA pools fine-tunes translation efficiency. These findings enable us to develop predictive models of expression and splicing, benchmark current optimization strategies, and design a splice-aware optimization algorithm that substantially improves transgene performance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.25.727620v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Coupling Mechanical Regulation with Biochemical Reaction-Diffusion Circuits Yields Robust Self-Organized Pattern Formation.</h2>
+<p class="paper-authors">Toda, S., Guan, G., +2 authors, Lim, W. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cell-cell signaling circuits that combine local self-activation with long-range inhibition have long been proposed as a theoretical mechanism sufficient to generate cellular patterns, such as spots and stripes. Here we construct synthetic pattern-forming circuits, implementing local self-activation (positive feedback) using juxtacrine synNotch receptor interactions, and implementing long-range inhibition using diffusible competitor molecules. While combining local positive feedback with long-range inhibition leads to more spatially heterogeneous cell states, these synthetic circuits do not robustly lead to well defined patterns. We find, however, that if we couple these reaction-diffusion circuits with induction of genes that regulate cell mechanics - such Cadherin molecules that promote local cell adhesion and sorting - we observed the emergence of much more well-defined cellular patterns. Theoretical analysis indicates while reaction-diffusion circuits can be sufficient to generate patterns under precisely balanced parameter conditions, the close coupling of cell mechanical/sorting significantly increases the robustness of pattern formation (the parameter space yielding patterns). Thus, circuits that closely integrate signaling and mechanical changes may underlie many evolved morphogenic pattern formation systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.23.727407v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Programmable assembly of higher-order DNA nanostructures from microbial ssDNA staple libraries</h2>
+<p class="paper-authors">Yen, M. H., Kesama, M. R., +2 authors, Solomon, K. V.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Bottom-up manufacturing of structural DNA nanotechnology requires a long single-stranded DNA (ssDNA) scaffold and hundreds of short (~30 nt) ssDNA staples. However, scaling production remains bottlenecked by the high economic cost and environmental footprint of solid-phase chemical staple synthesis. To address these limitations, a phage-free, biological nanomanufacturing platform engineered in Escherichia coli is developed here. Two intracellular strategies for producing programmable ssDNA were systematically evaluated: retron-based multicopy ssDNA (msDNA) synthesis via the Ec67 system and plasmid-encoded rolling circle replication (RCR). While native structural topology constraints within the retron (msd) cassette limit its sequence-design flexibility, the alternative RCR-driven engine successfully decouples ssDNA replication from sequence secondary structures, enabling the synthesis of arbitrary staples. This RCR platform reliably generates long circular ssDNA (cssDNA) precursors of at least 1.8 kb with exceptional sequence fidelity (&gt;99%). Integrating programmable BseGI cleavage sites allows targeted strand-selective enzymatic processing to cleanly release stoichiometric, origami-grade pools of 32-nt staple strands. Atomic force microscopy (AFM) confirms that these biologically produced staples successfully drive the high-fidelity self-assembly of complex DNA tiles and hollow tubules. Crucially, robust structural folding is demonstrated directly within crude, unpurified cellular lysates, establishing a green, cost-effective framework for the one-pot fabrication of advanced DNA-based nanomaterials.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.24.727530v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Benchmarking normalisation methods for differential binding analysis in CUT&amp;RUN</h2>
+<p class="paper-authors">Ambani, K., Ahn, A., +5 authors, Oshlack, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> CUT&amp;RUN (Cleavage Under Targets and Release Using Nuclease) is an increasingly popular method for profiling protein interactions (transcription factors, histone modifications, etc) with DNA across the whole genome. When performing differential binding analysis of CUT&amp;RUN data to identify genomic regions where interaction profiles vary between conditions, data normalisation is essential for accurate biological interpretations. Despite this, there are no clear guidelines on the optimal normalisation method for CUT&amp;RUN datasets. Here, we examine five normalisation approaches (spike-in, library size, background, reads-in-peak and greenlist) and highlight that different methods can result in widely discrepant interpretations of the data. We test these normalisation methods by simulating a variety of plausible differential binding scenarios as well as an in-house generated dataset. We determined that normalisation by either (i) library size or (ii) background to be the most robust. Importantly, we find spike-in normalisation to be the least reliable method. Our findings inform the use of normalisation methods for CUT&amp;RUN data and should thus facilitate reproducible and robust analysis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.24.727463v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +222,72 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">May 24, 2026</span>
+<span class="date">May 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Transcriptomic profiling reveals multiple mechanisms of insecticide resistance in Aedes aegypti from Angola</h2>
-<p class="paper-authors">Youd, H. A., Ooi, J. M. F., +9 authors, Weetman, D.</p>
+<h2 class="paper-title">Dynamics of the B-Cell gene regulatory network in differentiation determine evolutionary trajectories of childhood leukaemogenesis</h2>
+<p class="paper-authors">Bougueon, M., Wray, J., +1 author, Hall, B. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Control of arboviruses remains heavily reliant on insecticide-based vector control targeting adult Aedes aegypti, especially during outbreaks, but the effectiveness of these tools can be compromised by insecticide resistance. While the mechanisms underlying resistance have been widely studied in Latin American and South East Asian Ae. aegypti, knowledge from African populations is limited, particularly regarding metabolic resistance. To address this knowledge gap, we sequenced the transcriptomes of Ae. aegypti collected in Angola, from both unexposed individuals and survivors of exposure to the organophosphate fenitrothion, alongside two insecticide-susceptible laboratory reference strains. Many overexpressed genes belonged to the major detoxification enzyme families, including 96 cytochrome P450 monooxygenases (CYP450s), 18 glutathione S-transferases (GSTs), and 35 carboxylesterases, with multiple genes previously detected as upregulated in Latin American and Asian populations. These included frequently reported, functionally-validated, metabolic resistance genes such as CYP9J24, CYP9J26, and CYP6BB2. However, expression of auxiliary resistance families including hexamerins, heat shock proteins, and odorant binding proteins were linked to the insecticide resistance phenotype, whilst numerous cuticular genes differentiated the Angolan population from both susceptible laboratory strains. A novel candidate, CYP6AG7, that was overexpressed after fenitrothion exposure was experimentally validated, and surprisingly metabolised fenitrothion into its toxic oxon form, which it did not subsequently break down. The antioxidant response element (ARE) motif, to which the transcription factor Maf-S binds, was detected in all CYP450 overexpressed in the fenitrothion treatment suggesting their potential coordinated induction. Analysis of genetic differentiation revealed several resistance-linked genes under potential selection, and SNP screening identified both known and novel non-synonymous mutations in the voltage-gated sodium channel (VGSC) gene, the target for pyrethroid insecticides. This is the first RNAseq dataset for Ae. aegypti from Africa in the context of insecticide resistance, providing insight into the complexity of resistance mechanisms, including some shared, and others potentially novel, compared to better studied populations from other geographical regions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.723794v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> B-cell precursor acute lymphoblastic leukaemia (BCP-ALL) is the most frequent paediatric malignancy. Despite extensive molecular and cellular characterization a mechanistic model of leukaemogenesis has not yet been developed. Here we present a multi-valued logical model of B-cell differentiation, centred on a core pentad of transcription factors whose dysregulation results in the developmental arrest characteristic of BCP-ALL. Whilst B-cell maturation follows a fixed and sequential differentiation process, leukaemic transformation is driven by stochastic genetic insults. Integrating BCR-ABL1 as the initiating event, we model alternative evolutionary trajectories by introducing secondary mutations at different time points within synchronous simulations. We demonstrate that the combination, order and timing of secondary mutations dictate maturation arrest points and fitness, explaining how different patterns of mutations seen in patients may arise and in turn influence disease severity. This platform provides a generalisable framework to model driver mutations in their developmental context to predict evolutionary trajectories in cancer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.724796v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">OAC-PCA: orthogonal adjustment of confounding effects in principal component analysis for metabolomics data mining</h2>
+<p class="paper-authors">Kurata, M., Yamamoto, H., Tsugawa, H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Principal component analysis (PCA) is widely used in mass spectrometry-based metabolomics for exploratory data mining. Statistical testing of loading values can extract metabolite features associated with score patterns, but this approach requires principal components (PCs) to remain orthogonal while loadings are defined as correlation coefficients between PC scores and variables. Adjustment for Confounding PCA (AC-PCA) was previously developed to explore biologically meaningful components from data matrices affected by biological and technical confounders. However, AC-PCA does not simultaneously ensure PC orthogonality and a correlation-coefficient definition of loadings, limiting the statistical interpretation of its loadings. Here, we reformulated AC-PCA as Orthogonal Adjustment for Confounding effects in PCA (OAC-PCA). In OAC-PCA, PCs remain orthogonal, and loadings retain this correlation-coefficient interpretation. These properties enable statistical testing of metabolite associations while accounting for confounding effects.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726783v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Hydrogel confinement enables subcutaneous delivery of vesicant antibody-drug conjugates</h2>
+<p class="paper-authors">Jacquot, G., Hervy, C., +26 authors, Detappe, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Antibody-drug conjugates (ADCs) deliver cytotoxic payloads to tumors with antibody selectivity, yet all approved ADCs are administered by intravenous (IV) infusion despite a strong patient and clinical preference for subcutaneous (SC) delivery. SC administration would reduce treatment burden, but many ADC payloads are vesicants that cause tissue necrosis upon local release, a liability amplified, not mitigated, by the dispersion-enhancing excipients used for SC antibody formulations. We developed an injectable diacetyl-L-tartaric anhydride-functionalized chitosan hydrogel (TACT) that addresses this conflict by confining ADCs within a protective SC depot. TACT is compatible with clinically approved ADC formulations without drug-product modification and provides drug-to-antibody ratio (DAR)-dependent release kinetics that support a quantitative relationship with in vivo absorption timing. In direct comparison, recombinant human hyaluronidase (rHuPH20) co-formulated with vesicant ADCs caused severe tissue necrosis, whereas TACT prevented macroscopic injury while preserving antitumor efficacy comparable to intravenous dosing. TUNEL staining of injection sites showed that TACT attenuated peri-depot apoptotic injury 3-fold relative to T-DM1 alone and 2-fold relative to rHuPH20 co-formulation. In non-human primates, SC TACT achieved 78% relative bioavailability for total trastuzumab, reduced peak circulating T-DM1 catabolite (free DM1) exposure 7.6-fold compared to IV administration and produced only transient, self-resolving cutaneous reactions. These results identify depot-mediated confinement as a viable alternative to excipient-mediated dispersion for SC delivery of vesicant ADCs, demonstrated here for trastuzumab-based conjugates across two approved ADC drug products (T-DM1 and T-DXd, with non-cleavable MCC and cleavable peptide linkers), with supporting validation in a custom cleavable monomethyl auristatin E (MMAE) series. Additional validation with enfortumab vedotin (EV), a Nectin-4-targeting MMAE ADC, supported the applicability of this strategy beyond trastuzumab-based conjugates.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.726796v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">SpatialClaw: A Memory-Augmented Autonomous Ecosystem for Spatial Omics Analysis</h2>
+<p class="paper-authors">Du, G., Lan, O., +6 authors, Shang, X.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> While the expansion of spatial omics has revolutionized our ability to dissect tissue architecture, the accumulation of incompatible computational methods has heavily fragmented end-to-end analysis, rendering complex workflows irreproducible. Generic conversational agents lack the domain-specific precision necessary to navigate the intricate biological pipelines. To overcome this, we present SpatialClaw, a memory-augmented autonomous ecosystem to unify spatial omics analysis under a single natural-language interaction. SpatialClaw integrates 30 specialized skills, spanning raw data preprocessing, spatial domain identification, deconvolution, spatially variable gene detection, cell-cell communication analysis, multi-sample and cross-modality integration. Distinct from existing agents, SpatialClaw introduces a graph-based persistent memory architecture that stores dataset metadata, analysis lineage, biological insights, and user preferences as versioned nodes and edges across three hierarchical layers (Session, Episodic, and Semantic), governed by a deterministic promotion policy. A Memory-Augmented Reasoning (MAR) Operator bridges the memory store and the main agent, synthesizing retrieved experiences into task-specific guidance for each query. In rigorous benchmarking spanning three memory-sensitive scenarios across 10 spatial-omics skills, SpatialClaw outperforms both a standard large language model and the memory-only configuration. Furthermore, we demonstrate its robust biological utility by dissecting the complex tumor microenvironment of a 15-section human triple-negative breast cancer cohort. In merely three conversational turns and with zero direct scripting, SpatialClaw executes a comprehensive end-to-end workflow, yielding standardized output bundles. Ultimately, by synergizing comprehensive analytical tools with structured persistent memory, SpatialClaw elevates spatial omics from disjointed computational stitching to a fully traceable, reproducible, and self-improving discovery ecosystem.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.21.723451v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -260,15 +298,53 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Mar 02, 2026</span>
+<span class="date">May 25, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Di-(2-ethylhexyl) terephthalate promotes breast cancer progression: Multi-omics integrated experimental validation.</h2>
-<p class="paper-authors">Shiqi Li, Chuyu Zhang, +8 authors, Yuan Wei</p>
+<h2 class="paper-title">Transcriptional states define dependencies and therapeutic vulnerabilities in head and neck cancer.</h2>
+<p class="paper-authors">Joel M Vaz, Songli Zhu, +8 authors, Taranjit S Gujral</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Di-(2-ethylhexyl) terephthalate (DOTP), as an alternative to phthalate plasticizers, has been widely used in sensitive fields such as food packaging and medical devices. However, there remains a gap in the assessment of its systemic carcinogenic risk. This study systematically analyzed the potential carcinogenic mechanisms of DOTP by integrating network toxicology methods such as gene enrichment analysis, machine learning algorithms, molecular docking, single-cell sequencing, and spatial transcriptomics. We screened 24 core carcinogenic genes of DOTP using 11 topological algorithms, conducted cross-cancer expression and prognostic analyses, and quantified the prognostic risk weights of these genes in tumors using machine learning algorithms. Subsequently, we used molecular docking to identify six carcinogenic targets with high affinity for DOTP (PIK3CA, PTPN11, ESR1, PPARG, PTGS2, and MAPK1). Finally, using colony formation assays and Western blotting analysis, we confirmed that DOTP exposure can promote the proliferation of tumor cells. Both this proliferative effect and the induced upregulation of PTPN11 and ESR1 protein levels exhibited concentration-dependent enhancement. The study suggests that DOTP may exhibit carcinogenic potential by interfering with cell proliferation, gene transcription regulation, the tumor microenvironment, and related carcinogenic signaling pathways (primarily the PI3K-Akt-mTOR pathway). This study reveals the molecular mechanisms of DOTP in the occurrence and development of common tumors, providing a new theoretical framework for studying the carcinogenic mechanisms of environmental pollutants and laying the foundation for targeted prevention.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41780785/" target="_blank">
+<p><strong>Abstract:</strong> Molecular heterogeneity in head and neck squamous cell carcinoma (HNSCC) is well recognized, yet existing subtype frameworks remain largely descriptive and have not translated into therapeutic decision-making. Here, we establish a mechanistic platform that converts transcriptomic diversity into drug-actionable tumor states. Integrating multi-cohort RNA-seq from 727 tumors across five independent datasets, genome-scale CRISPR dependency maps, and pharmacologic screening, we define distinct tumor survival circuits across HPV-negative HNSCC and nominate subtype-matched therapeutic strategies. These circuits encompass a proliferative axis (MYC, MET/FAK, inflammatory and translational programs), an epithelial-differentiated/adhesion program, an EMT-like state with stromal activation, and mitochondrial/oxidative metabolic states, each mapping to selective liabilities (e.g., mitotic/autophagy control, ERBB/PI3K and cadherin signaling, OXPHOS/mitochondrial translation, and G2/M-integrin-Notch pathways, respectively). We then develop a transcriptomic predictor of EGFR-inhibitor response using machine learning and validate it in prospectively collected, fresh patient-derived 3D microtumors. The resulting 13-gene signature identifies erlotinib-responsive tumors (R = 0.93) and maps biologically to an epithelial-differentiated state, outperforming EGFR expression alone. Our study establishes a subtype-to-dependency-to-therapy framework, enabling precision stratification and providing a clinically feasible path for prospective biomarker deployment.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42185641/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Quantum Dot Encoding for In-Solution Single-Molecule Biomarker Counting in Metastatic Prostate Cancer.</h2>
+<p class="paper-authors">Chia-Wei Kuo, Siva Nalla, +4 authors, Andrew M Smith</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Digital assays are in wide development for biomarker quantification at the single-molecule level, but the common use of surface pull-down steps limits both analytical sensitivity and throughput. Here, we develop surface-free, wash-free, in-solution assays with an analytical sensitivity slope approaching unity for sequence-specific counting of microRNAs (miRs) relevant to metastatic castration-resistant prostate cancer (mCRPC). These assays are enabled by DNA nanoflowers (DNFs) densely encoded with ∼200 fluorescent quantum dots (QDs) that assemble in situ stoichiometrically to miRs. The QD-DNFs are detected as single events in solution by fluorescence microscopy or flow cytometry without washing away unbound labels. A ∼10 aM limit of detection and high agreement with absolute target count (intraclass correlation coefficient = 0.95) were achieved by machine learning-guided assay optimization, providing the potential for calibration-free measurements. Multiple miR sequences could be distinguished through ratiometric and colorimetric (5-color) QD signatures with a single excitation source for flexible detection in static solution or flow streams. The assays were applied to detect exosomal miRs from small-volume plasma from mCRPC patients and showed strong agreement with RT-qPCR, with more reliable detection of the trace prognostic biomarker miR-375. Consistent with our prior reports using large volume blood draws, higher plasma levels of miR-375 were associated with poor survival of patients with mCRPC. We anticipate that in-solution counting can increase the robustness of trace biomarker analysis needed for the advancement of cancer precision medicine.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42183605/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">May 25, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">User-Guided Visual Analytics of Genome-wide DNA Methylation Data Based on Self-Organizing Maps.</h2>
+<p class="paper-authors">Diaz I, Enguita JM, +5 authors, Chiara MD.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> DNA methylation is a key epigenetic modification with diagnostic and prognostic relevance across a wide range of diseases, particularly cancer. Modern array-based technologies enable high-throughput quantification of methylation states at hundreds of thousands of CpG sites, yielding high-dimensional datasets that pose significant challenges for exploratory analysis and feature prioritization. Existing visualization tools often lack interactivity, integration with machine learning methods, or flexible mechanisms for dynamic dimensionality reduction and biological interpretation. This work presents an interactive analytical framework that extends the Self-Organizing Map approach for epigenomic data exploration. Our method introduces meta sites-representative prototypes of CpG site clusters-enabling interpretable, real-time visualization and machine learning over reduced feature spaces. Through conditional sample projections (e.g., via PCA, t-SNE, or UMAP), user-driven region selection, and the integration of sparsity-controlled logistic regression, we generate metasite relevance maps that reveal discriminative epigenetic patterns and guide downstream analysis. The proposed approach supports iterative, visually driven discovery of co regulated modules and disease-associated methylation signatures, offering a powerful and intuitive interface for multidimensional exploration of complex methylation landscapes. Its utility is demonstrated through the analysis of DNA methylation in pheochromocytomas and paragangliomas, focusing on SDHB mutation status and the role of protocadherine gene clusters.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42184200/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
