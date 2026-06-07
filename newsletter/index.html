@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MicroGrowAgents: An Agentic AI System for Microbial Cultivation Engineering</h2>
-<p class="paper-authors">Naseem, S., Miller, M. A., +1 author, Joachimiak, M. P.</p>
+<h2 class="paper-title">CLASPP: A unified model for predicting post-translational modifications</h2>
+<p class="paper-authors">Gravel, N., Zhou, Z., +2 authors, Kannan, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Microbial cultivation optimization remains labor-intensive and inefficient, requiring extensive experimental screening to identify suitable growth conditions. Traditional one-factor-at-a-time approaches are particularly ineffective for exploring complex, multidimensional nutrient parameter spaces. We present MicroGrowAgents, an AI-driven, agent-based system that automates the design of optimized growth media through integration of knowledge graphs, metabolic modeling, and optimal experimental design. The system employs 28 specialized agents and 50 skills that query structured biological knowledge (KG-Microbe: 864,363 validated species), mine literature evidence (245+ papers), perform genome-guided design (57 genomes, 667,000+ annotated features), and generate statistically optimal experimental designs using the MaxPro algorithm. We applied the approach to Methylorubrum extorquens AM1 by cultivating 70 designed conditions in quadruplicate and assessing three concurrent objectives: biomass (OD600 at 740 nm), redox activity (Abs590 Biolog proxy), and lanthanide uptake (residual Nd measured by arsenazo III). Monte-Carlo resampling of the replicate-level uncertainty (1000 iterations) identified a single stable Pareto-optimal medium, MPOB_058 (membership frequency 0.99), together with two borderline candidates and six rare appearers, providing a robust anchor set for subsequent rounds of design-build-test-learn. The integration of chemical similarity search (208,000+ embeddings), metabolic gap analysis, and multi-modal reasoning enables evidence-based hypothesis generation that reduces experimental burden while accelerating discovery of growth-promoting conditions. MicroGrowAgents provides complete provenance tracking with cryptographic checksums and 90.5% literature citation coverage, advancing reproducible, data-driven approaches to microbial cultivation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.729985v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Post-Translational Modifications (PTMs) are a fundamental mechanism for regulating cellular pathways and increasing the functional diversity of the proteome. Accurately predicting the PTM types that are likely to occur at a given site in the primary sequence is a key challenge in functional proteomics. Existing PTM prediction models predominantly focus on either single PTM types or employ ensemble methods that combine multiple models to predict different PTM types. This fragmentation is largely driven by the vast imbalance in data availability across PTM types, making it difficult to predict multiple PTM types with a single model. To address this limitation, we present the Contrastively Learned Attention-based Stratified PTM Predictor (CLASPP), a unified PTM prediction model. CLASPP addresses imbalance challenges by leveraging unsupervised clustering-based undersampling and a novel contrastive learning framework tailored to PTM data. Additionally, our hierarchical data organization and curation are shown to improve CLASPP's performance by balancing the representation of individual PTM types and provides a standardized dataset to train and validate future model designs. Drawing inspiration from advancements in image and natural language processing, the CLASPP model employs a multi-stage training strategy and a high-quality, curated training dataset to improve PTM prediction performance. To uncover what is learned during the contrastive learning stage, the CLASPP model is shown to distinguish known protein kinase substrate specificity profiles as a form of explainability. Finally, we evaluate the application of CLASPP in predicting PTMs in different model organisms and experimentally validated ubiquitination sites in the understudied DCLK3 kinase. Overall, CLASPP represents a unified model for PTM prediction that addresses key bottlenecks in data imbalance and offers new strategies for biological data curation, thereby improving PTM-type prediction performance across diverse organisms.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.729962v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MarkerScout: A Disease-Agnostic Machine Learning Framework for Biomarker Prediction from Multi-Scale Mechanistic Models</h2>
-<p class="paper-authors">Moore, R. B., Agayie-Ntim, F., +3 authors, Helikar, T.</p>
+<h2 class="paper-title">Learning quality scores for chromatin accessibility bigWig tracks using Machine Learning</h2>
+<p class="paper-authors">Sanders, E., Riva, S. G., Hughes, J. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Identifying robust biomarkers from high-dimensional biomedical data is a central challenge in translational research, but candidate rankings produced by any single feature-selection or classification method depend on algorithmic choices and rarely reproduce across pipelines. We present a disease-agnostic machine-learning framework that addresses this dependence by systematically benchmarking 25 (feature-selection x classifier) pipelines under five-fold stratified cross-validation, aggregating per-feature evidence by two independent methods (a weighted-selection consensus score and Robust Rank Aggregation), and characterizing the direction of each candidate using Cohen's d. We demonstrate the framework on immune-response measurements from two clinical phases: SARS-CoV-2 hospitalization and intensive-care admission; obtaining cross-validated mean F1 above 0.99 with balanced classification errors and producing tiered, direction-aware biomarker lists per phase. Interleukin-18 (IL-18) reached the strongest tier in both phases with consistent direction. The framework generalizes to any binary clinical classification problem and supports principled, reproducible biomarker prioritization.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.05.30.727266v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> High-throughput chromatin accessibility assays such as bulk and single-cell ATAC-seq have generated large collections of processed signal tracks in bigWig format, which are widely used for visualisation, data integration, and Machine Learning (ML)-based analyses. Despite their central role, systematic quality control (QC) frameworks operating directly at the level of bigWig signal tracks remain underdeveloped. This gap limits the ability to assess data reliability and hampers robust downstream analyses. Here, we present a biologically grounded QC framework for chromatin accessibility bigWig files that integrates peak-level information, background noise estimation, and recovery of stable genomic reference features. Using an ML-based peak caller (LanceOtron), we derive complementary quality metrics capturing signal structure and signal-to-noise properties. We further define constant promoter and CTCF regions as internal biological controls and show that their recovery provides a sensitive measure of data quality across diverse cellular contexts. We apply this framework to a collection of 502 human chromatin accessibility bigWig tracks spanning a wide range of tissues and cell types. The proposed metrics capture related but non-redundant aspects of signal quality and motivate the use of constant promoter and CTCF recovery as biologically meaningful targets. An XGBoost model trained on LanceOtron-derived features accurately predicts recovery of these stable genomic elements on held-out data (R2 = 0.97), yielding a continuous and interpretable quality score. Feature importance analysis using SHAP values highlights that model decisions are driven by biologically relevant signal properties rather than arbitrary heuristics. Quantile-based stratification of the quality score is further supported by clear qualitative differences in genome browser visualisations. Together, this work provides a principled and extensible framework for assessing the quality of chromatin accessibility bigWig tracks, enabling more reliable data integration and supporting downstream ML applications in regulatory genomics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730303v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Auditable recovery of single-cell RNA-seq zeros with SPARE</h2>
-<p class="paper-authors">Hernandez Galaz, S. F., Pezoa, I., +2 authors, Martin, A. J.</p>
+<h2 class="paper-title">Structure-guided compound prioritization strategy for virtual screening identifies putative binders for the nuclear receptor LRH-1</h2>
+<p class="paper-authors">Chang-Gonzalez, A. C., Campbell, A. N., +2 authors, Meiler, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> In Single-cell RNA-seq, observed zeroes are the mix between biological absence and technical limitations. However, current evaluation metrics fail to distinguish between these two states, focusing on reconstruction accuracy rather than the biological validity of edits. We introduce SPARE, a partition-aware framework that audits the imputation process by cataloging observed zeros as edited, unchanged, or marker-vetoed prior to sequence reconstruction. Across multiple tissue benchmarks, SPARE successfully recovered masked expression while cataloging edit burden, marker leakage and raw-state movement. Protein and disease-context audits showed that recovered expression must be accepted, restricted or rejected endpoint by endpoint. SPARE reframes imputation as auditable zero editing rather than generic matrix completion.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729664v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Compound ranking in structure-based virtual screening notoriously yields highly ranked false positive binders due to variable poses or biases in scoring terms. We developed a compound prioritization strategy that utilizes sampled docked poses from contrasting docking approaches (targeted physics-based docking and blind docking with a generative model) against multiple models of the target protein to train a multi-layer perceptron (MLP). The model predicts binders at the orthosteric ligand-binding pocket of the nuclear receptor LRH-1 (NR5A2). Our approach circumvents the reliance on a single docked pose for scoring compounds or individual scoring metrics for compound ranking. In a separate benchmarking set, we observed that the MLP identifies known binders that are chemically dissimilar from the compounds in the training set and is sensitive to single scaffold modifications, making it a potential tool for lead optimization. We applied our strategy to a prospective virtual screening campaign, which resulted in the discovery of four putative LRH-1 binders. We found that a combination of scoring and prediction metrics enriches for the hit compounds across library sizes. In all, this implementation presents a method to leverage structural and experimental data to aid virtual screening for a challenging protein target.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730240v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Cellpin enables reference-based imputation and denoising of spatial transcriptomes</h2>
-<p class="paper-authors">Putze, P., Lucarelli, D., +4 authors, Saur, D.</p>
+<h2 class="paper-title">Ontologizer 3: a cross-platform desktop application for frequentist and Bayesian GO enrichment analysis</h2>
+<p class="paper-authors">Ramlow, L., Scholtes, J., +1 author, Robinson, P. N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatially resolved transcriptomics enables gene expression profiling within tissue architecture, but targeted panels leave much of the transcriptome unmeasured and spatial artifacts such as RNA diffusion and segmentation errors introduce technical noise. These limitations necessitate computational imputation and denoising, yet existing methods typically incorporate spatial measurements during training, limiting scalability and risking the embedding of technology-specific artifacts into learned representations. To address this, we present cellpin, a variational autoencoder trained exclusively on single-cell RNA sequencing data, using teacher-student latent distillation and noise-simulating augmentations to jointly impute unmeasured genes and denoise spatial profiles without requiring cross-modality alignment. Benchmarked against six methods across multiple paired datasets, cellpin achieves superior held-out gene prediction while scaling efficiently to atlas-size references and multi-sample cohorts. In full-transcriptome Atera data, cellpin reduces residual spatial noise and improves cell-state resolution, providing a scalable and principled foundation for biological discovery from spatial transcriptomics data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729566v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> We present Ontologizer 3, an easy-to-use cross-platform desktop application for Gene Ontology (GO) overrepresentation analysis. Ontologizer 3 offers two complementary methods. The first is a frequentist approach that evaluates GO terms individually using a one-sided Fisher's exact test, yielding term-level significance values. The second is a Bayesian approach that jointly evaluates terms using model-based gene set analysis (MGSA), yielding term-level posterior probabilities. Due to substantial overlap among annotated gene sets resulting from the GO's hierarchical structure, the two methods produce different results. The frequentist approach tends to report a lengthy list of terms with strong annotation overlap, whereas, MGSA yields a parsimonious set of terms that explain the observed gene activity. Using simulated data with a known ground truth, we demonstrate that both methods reliably identify the causal term, but MGSA achieves substantially higher precision. Ontologizer 3 is implemented as a Tauri application with a Rust backend and an Angular frontend, presenting enriched terms in tabular and graphical form. The software is freely available under the MIT licence at https://github.com/P2GX/ontologizer-gui. Installation packages for Macintosh, Windows and Debian-based Linux are available on the GitHub Releases page.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730045v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Mycol: A user-friendly app for automating analysis of microscopy images</h2>
-<p class="paper-authors">Bradley, S. A., Schiesaro, G., +7 authors, Acevedo-Rocha, C. G.</p>
+<h2 class="paper-title">pLM-Guided Inverse Folding for Antibody Sequence Design</h2>
+<p class="paper-authors">Noske, V., Koulischer, F., +1 author, Demeester, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Microscopy image analysis is central to modern biology, yet many available platforms remain inaccessible to non-specialist users because they require advanced technical expertise, code-based workflows, extensive setup, or paid access. This creates a barrier for researchers who need reliable and fast image quantification but lack dedicated computational support. Here, we introduce Mycol, an open-source, machine-learning-assisted image analysis platform designed to be accessible and run on standard laptops with minimal setup. Mycol supports end-to-end workflows in which users annotate microscopy images, perform human-in-the-loop fine-tuning of machine learning models for automated segmentation and classification, deploy machine learning models, quality control predictions and quantitatively compare morphological and class frequency descriptors through a single intuitive interface. By combining machine-learning analysis with efficient quality control by humans, Mycol makes rapid and high-quality image quantification available to biologists without requiring specialist training. We demonstrate the utility of Mycol in diverse workflows using two economically important organisms, the crop pathogen (Fusarium oxysporum) and the blue mussel (Mytilus edulis). Through Mycol, curated training sets were generated and high quality segmentation and classification models were obtained in each case. Deploying these models through Mycol decreased the time requirements and increased traceability of established cell counting workflows and facilitated a quantitative comparison of morphological parameters that reveals new patterns in early M. edulis larval development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729113v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Inverse folding, predicting amino acid sequences from three-dimensional structures, is a foundational task in computational protein design, yet it is hindered by the scarcity of structural data, which limits model training and risks overfitting. The standard approach fine-tunes general inverse folding models on domain-specific structural datasets like antibodies, but such data remain expensive. To enable inverse folders to benefit more from abundant sequence data, we propose combining ProteinMPNN, a general protein inverse folding model, with IgLM, an antibody-specific language model, via a training-free weighted en-semble of their predictions at inference time. Evaluated on antibody and nanobody structures, our results show that this approach substantially improves amino acid recovery over ProteinMPNN alone, approaching the performance of antibody- specific models like AntiFold while generating more diverse sequences. Even models already fine-tuned on antibody structures (AbMPNN) ben-efit from language model guidance, demonstrating that it complements structural fine-tuning and leads to more natural-looking sequences that still satisfy structural constraints.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730089v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Reproducible and Extensible Benchmark of Supervised Cell Type Annotation Tools for Cytometry Data</h2>
-<p class="paper-authors">Kirk, F., Sonnenholzner, A., +3 authors, Olsen, L. R.</p>
+<h2 class="paper-title">Handshake: Partner-Specific Protein-Protein Binding Site Prediction at Scale Using ProstT5 and Cross-Chain Attention</h2>
+<p class="paper-authors">Haspel, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High-dimensional cytometry technologies such as flow cytometry (FCM) and mass cytometry (CyTOF) are central to immunophenotyping in research and clinical practice. While manual gating remains the standard for cell population annotation, it is time-consuming, difficult to scale, and subject to inter-operator variability. Supervised annotation methods have emerged as a way of scaling manual annotation work, yet independent benchmarks for comparing these tools remain limited and quickly become outdated. This study presents a reproducible and extensible benchmark of supervised cytometry annotation tools implemented within the OmniBenchmark framework. Five supervised annotation methods were evaluated, spanning linear models, nearest-neighbor approaches, tree-based classifiers, mixture-rule systems, and deep learning, across eight publicly available datasets carefully selected to cover technologies, tissues, panel designs, and healthy and disease contexts. Using a sample-centric cross-validation design that reflects common reference-mapping scenarios, overall and per-population F1 scores, performance on rare populations, runtime, and robustness to reduced training set sizes was tested. Performance varied substantially across datasets and was not fully explained by dataset size or dimensionality, highlighting both operator dependence in annotation and the importance of biological context, cohort heterogeneity, and population imbalance. Less prevalent populations (&lt;1%) remained a key challenge for most methods. Downsampling analyses showed that moderate reference sizes were often sufficient to achieve near-maximum performance. Rather than ranking methods, this benchmark provides a standardized and transparent framework for evaluating annotation tools under realistic deployment conditions. As a living resource, the OmniBenchmark implementation supports continuous integration of new datasets, tools, and metrics for both tool developers and end users annotating datasets. This enables ongoing, reproducible method comparison and informed tool selection for diverse cytometry applications.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729500v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Partner-specific protein-protein binding site prediction, identifying which residues of a protein form the interface when bound to a specific partner, remains a challenging task with significant implications for drug discovery and understanding of protein structure and function. Existing computational methods are limited by small training datasets, inconsistent redundancy filtering, and reliance on three-dimensional structural information at test time. Here we present a sequence-only, partner-specific protein-protein interface predictor called Handshake. It combines ProstT5, a protein language model pre-trained on structural data, with Low-Rank Adaptation (LoRA), a cross-chain attention mechanism and a contact supervision head. Our method can detect both binding interfaces and pairwise contact matrices. We trained our model on very large datasets of non-redundant protein-protein pairs derived from the PPInterface dataset, the most comprehensive structural protein-protein database to date, and evaluated it on systematically filtered benchmarks at four redundancy thresholds (30%--90% sequence identity). We demonstrate that sequence redundancy inflates reported AUROC by up to 0.079 and MCC by up to 0.145 on identical models, representing a substantial methodological confound in the field. Even at 30% redundancy threshold, our results (AUROC=0.811, MCC=0.367, F1=0.45) exceed the best published sequence-only result on this convention. Our method also achieves comparable performance to existing partner-specific methods that use explicit structural information. The comprehensive training and evaluation dataset, in addition to the systematic redundancy inflation, can help gain insight into protein-protein interactions and the abilities and limitations of current detection methods.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730144v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Development of the Mitochondrial Base Editor Analysis Package (MitoBEAP).</h2>
-<p class="paper-authors">Mutti, C. D., Nash, P., +2 authors, Van Haute, L.</p>
+<h2 class="paper-title">Automated Retinal Dysplasia Segmentation in Mouse Optical Coherence Tomography Scans Using a UNet-Based model</h2>
+<p class="paper-authors">Mikroulis, A., Raishbrook, M. J., +5 authors, Novak, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> For many years, the genetic manipulation of mitochondrial DNA was largely hampered by inefficient delivery of nucleic acids to mitochondria. However, the development of mitoCBEs, such as mitochondrial cytosine base editors (DdCBEs), which catalyse C-to-T and G-to-A conversions, and more recently, mitoABEs, such as transcription-activator-like effector (TALE)-linked deaminases (TALEDs) enabling A-to-G and T-to-C conversion, has transformed this field. Generally, mitochondrial base editors exhibit high on-target efficiency and are straightforward to design and use. Nonetheless, unintended off-target effects cannot be overlooked and should be assessed consistently with each experiment, which can be challenging without specialised bioinformatic expertise. Here, we introduce Mitochondrial Base Editor Analysis Package (MitoBEAP), which, to our knowledge, is the first R package specifically designed to analyse next-generation sequencing data from base-edited mtDNA samples. The package facilitates the analysis of potential off-target effects, offers multiple visualisation options, and allows customisation of graphics and thresholds for calculations. As a proof of concept, this study demonstrates how MitoBEAP can be utilised to measure the efficiency of DdCBE treatment targeting human 12S rRNA, as well as to identify potentially harmful off-target conversions across the mtDNA.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729539v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Optical coherence tomography (OCT) is the state-of-the-art non-invasive imaging technique for preclinical retinopathy studies. However, manual pathology annotations in mouse OCT scans are labour-intensive and susceptible to inter-rater variability. To alleviate these issues, we developed a neural network-based model for automated annotation of retinal dysplasia in mouse OCT scans. Our model was trained on 205 expert-annotated OCT stacks and validated on 40 unseen stacks with additional expert annotation comparisons in a subset of them. The model detects pathologies with high accuracy (F1-score &gt; 0.95) and consistency with experts (median Dice score &gt; 0.8). We integrated the model into a cross-platform app ('OCTOPUS') that includes batch processing, automated annotation, manual annotation editing, and quantitative longitudinal tracking with pathological area estimation on the fundus image, and exportable results in CSV and SVG formats. Our open-source tool aims to facilitate and standardise OCT assessments between laboratories for efficient preclinical screening and high-throughput phenotyping in mouse models of retinal disease.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730047v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Towards Generalizable Protein-ligand Co-folding with ACER</h2>
-<p class="paper-authors">Vithayapalert, N., Grisoni, F.</p>
+<h2 class="paper-title">VelOT: kinetic-free RNA velocity inference via optimal transport, flow-field smoothing, and VAMP coarse-graining of cellular dynamics</h2>
+<p class="paper-authors">Rincon de la Rosa, L., Perez Garcia, D., Alentorn, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting protein-ligand complex structures is a central challenge in drug discovery. While recent co-folding models such as AlphaFold-3 achieve accurate structure prediction, they fail to generalize to underexplored binding interfaces - systematically misplacing ligands, particularly for allosteric or structurally novel targets. To address this gap, we present ACER (A daptive Co-folding via pocket E xploration and pose R anking), a training-free framework that (a) enables co-folding models to systematically explore alternative binding pockets, and (b) leverages the discovered pockets to increase pose accuracy. Our method enables the efficient discovery of non-prevalent pockets without prior expert knowledge. ACER improves pocket discovery and pose accuracy on allosteric targets and structurally novel complexes, successfully modeling binding interfaces that are under-represented or absent from the training set. Our results demonstrate how improved sampling dynamics enhance the generalisability of co-folding models without retraining.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.728568v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Inferring cellular dynamics from snapshot single-cell RNA sequencing remains difficult when spliced and unspliced counts are sparse or unreliable. We present VelOT, a kinetic-free RNA velocity framework that formulates dynamics as local optimal transport on the gene-expression manifold. VelOT orders cells by diffusion pseudotime, constructs overlapping spatial-temporal windows, estimates displacement vectors with entropy-regularized transport, and smooths them with a lightweight neural flow field. A downstream VAMP-based MetaFlow module learns soft meta-states and a directed PAGA-like graph, identifying initial, terminal, branching, and cycling regimes with committor probabilities. Across four real benchmarks and three synthetic topologies, VelOT outperforms scVelo, DeepVelo, and FluxMatching in cross-boundary directionality and intra-cluster coherence while remaining computationally efficient. In adult oligodendroglioma scRNA-seq, VelOT recovers stem-like to astrocyte-like and oligodendrocyte-like differentiation axes without kinetic inputs. VelOT reframes RNA velocity within scRNA-seq as a geometry and transport problem that does not require kinetic modeling.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730132v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,110 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 05, 2026</span>
+<span class="date">Jun 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">inGSEA: An Improved Method for Gene Set Enrichment Analysis Using a Weighted Integral Statistic</h2>
-<p class="paper-authors">Zhang, Q., Li, Q.</p>
+<h2 class="paper-title">Enformer-Based Phylogenetic Tree Reconstruction</h2>
+<p class="paper-authors">Capitanio, A., Stranieri, N., +2 authors, Hughes, J. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Gene Set Enrichment Analysis (GSEA) is one of the most popular methods for transcriptomic analysis, yet its statistical power is limited when the biological pathways exhibit heterogeneous or non-concordant expression patterns. We propose an improved GSEA method, textbf{in}tegral-based GSEA (inGSEA). inGSEA introduces a novel enrichment score based on the Anderson-Darling weighted integral statistic. The new enrichment score enhances detection power for complex signals, particularly sparse and bidirectional ones, while the Cauchy combination of integral and classic maximum statistics provides robustness across diverse expression patterns. Extensive numerical studies demonstrate that inGSEA achieves superior power and well-calibrated false discoveries. Application to real-world datasets reveals biologically relevant pathways missed by the standard GSEA. inGSEA reduces the computational burden of permutation testing by employing a generalized gamma distribution to approximate the null distribution. inGSEA is accessible as a user-friendly web-based software tool (https://amss-stat.github.io/inGSEA).</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729106v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Loss of the Y chromosome drives epigenetic and transcriptomic plasticity in lung adenocarcinoma</h2>
-<p class="paper-authors">Schlueter, K., Chen, M.-J. M., +41 authors, Ll</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Loss of the Y chromosome (LOY) is associated with poor survival across multiple solid tumors, yet the underlying molecular mechanisms remain poorly understood. Here, we identify LOY as a central driver of lineage plasticity and epigenetic heterogeneity in lung adenocarcinoma. Integrating multi-omic profiling of primary samples with isogenic cellular models, we show that LOY triggers epithelial-to-mesenchymal transition (EMT). Mechanistically, LOY causes haploinsufficiency of dosage-sensitive regulators, leading to widespread DNA hypomethylation at EMT gene promoters, including THY1 and LOX. Single-cell multi-omic analyses demonstrate that LOY induces epigenetic heterogeneity, destabilizes the chromatin landscape, and increases lineage plasticity, enabling rapid cellular adaptation to metabolic and genotoxic stress. Moreover, LOY-induced plasticity facilitates tumor engraftment and metastatic dissemination in vivo. These findings establish Y-linked gene dosage as a critical guardian of epigenetic stability, providing a mechanistic rationale for how its loss amplifies phenotypic diversity and lineage plasticity, ultimately driving adverse clinical outcomes in LOY patients.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729627v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Extrachromosomal DNA as a Causal Instrument for Spatial Multi-Omics</h2>
-<p class="paper-authors">Craig, D. W., Rodin, A. S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics, multiplex imaging, and computational pathology now map tissue organization at cellular resolution, but the analyses applied to these data remain correlational. Clustering and co-occurrence statistics describe which features appear together; they cannot say which feature drives the others. We propose a framework for causal inference in spatial multi-omics built on a specific feature of extrachromosomal DNA (ecDNA). ecDNA carries no centromere; it does not attach to the mitotic spindle and partitions randomly to daughter cells at division. Two neighboring cells in the same microenvironment can therefore inherit very different oncogene copy numbers for reasons unrelated to local signaling. Together, these cell-intrinsic randomization properties of ecDNA provide the framework for ecDNA copy number serving as an instrumental variable (IV) separating the effects of oncogene dosage from the downstream cellular effects. In this study, we formalize this within a structural causal model, implement two-stage least squares estimation with sibling-comparison and falsification diagnostics, and provide sensitivity analyses for residual confounding. To benchmark these methods against ground truth, we built CAUSANTA, an agent-based simulator that generates spatial tissue with a known causal graph and stochastic ecDNA inheritance. The framework recovers known oncogene-to-phenotype effects from simulated data, and we outline its application to real tumor sections, including multi-instrument settings where independent ecDNA species carrying different oncogenes enable factorial designs within a single tumor.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729483v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Spatial Transcriptomics Reveals a Conserved Border Niche and Etiology-Associated Immune Rewiring in Hepatocellular Carcinoma</h2>
-<p class="paper-authors">Bae, S., Choi, H., +4 authors, Hong, S. K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729569v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">The RNA helicase DDX21 cooperates with ETS1 and FLI1 in cell cycle, immune evasion, and snoRNA processing in activated B-cell-like diffuse large B-cell lymphoma cells</h2>
-<p class="paper-authors">Sartori, G., Priebe, V., +15 authors, Bertoni, F.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Diffuse large B-cell lymphoma (DLBCL) is a clinically and biologically heterogeneous disease, with the activated B-cell-like (ABC) subtype showing inferior outcomes. The ETS transcription factors ETS1 and FLI1 are recurrently gained and functionally relevant in DLBCL, yet their pathogenic role remains to be fully elucidated. Here, we describe their cooperation with the RNA regulatory machinery, demonstrating that the RNA helicase DDX21 is a central effector of the ETS1/FLI1 transcriptional network in ABC-DLBCL. Our proteomic analyses revealed that ETS1 physically interacted with DDX21 and other RNA processing factors. As ETS1, DDX21 was preferentially expressed in ABC-DLBCL, particularly in the MCD/C5 genetic subtype, and it was associated with adverse clinical outcomes in this lymphoma subtype. Genetic and pharmacological studies demonstrated that DDX21 was essential for ABC-DLBCL cell proliferation. DDX21 also coordinated various transcriptional programs, which were revealed by integrated RNA-Seq, small RNA-Seq, ChIP-Seq, and Capture Hi-C analyses. DDX21-dependent transcription was relevant for ribosome biogenesis, MYC signaling, cell cycle progression, and immune evasion, but also regulated non-coding RNA networks, including microRNAs and small nucleolar RNAs, in particular SNORA37. Collectively, our data establish DDX21 as a nucleolar hub linking ETS transcription factors to coding and non-coding RNA programs that sustain aggressive lymphoma biology. These findings suggest DDX21 and ETS-RNA helicase complexes as promising therapeutic vulnerabilities in ABC-DLBCL.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729583v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Tumor extracellular vesicle RNA profiling predicts treatment response in pediatric diffuse midline glioma</h2>
-<p class="paper-authors">Kim, C., Kim, J., +6 authors, Min, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Detection of reliable markers of therapy response and drug resistance remains a major unmet need in brain cancer, as serial tumor biopsy is often not feasible. This challenge is particularly acute in diffuse midline glioma (DMG), a fatal pediatric brain tumor for which new targeted therapies are entering clinical use, yet tools for real-time molecular analysis of tumor evolution during therapy remain lacking. Here, we demonstrate that plasma tumor-derived extracellular vesicle (EV) profiling provides a minimally invasive and complementary approach for diagnosis and longitudinal molecular monitoring in H3K27M-mutant DMG. Across patient-derived tumor models and clinical plasma samples, EV mRNA levels correlated strongly with parental tumor transcriptomes. EV H3K27M mRNA enabled discrimination of DMG from non-DMG controls, and exploratory EV response-associated mRNAs were linked to radiographic response and progression-free survival in patients receiving ONC201. To enable tumor-selective EV enrichment and multiplexed molecular profiling within a clinically practical workflow, we developed a new integrated platform supporting same-day EV analysis from small plasma volumes. This work represents the first proof-of-concept demonstration of the diagnostic and treatment response relevance of tumor-derived EV RNA in pediatric DMG and establishes a generalizable framework for minimally invasive longitudinal molecular monitoring in diseases where tissue access is inherently limited.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729542v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Enformer is a deep learning model trained on human and mouse genomes to predict regulatory activity from 196,608 bp DNA windows. Its trunk embeddings capture long-range cis-regulatory interactions, but whether this signal generalises across the tree of life has not been assessed. We embed universal single-copy orthologous groups (OGs) from OrthoDB v12 across three taxonomic scales and evaluate reconstructed trees against TimeTree5 using Mantel r and Normalised Robinson-Foulds (NRF). On 702 OGs across 34 Primate species ([≤]74 Mya), the consensus tree achieves Mantel r=0.902 and NRF=0.481, correctly recovering major clades. A key finding is that flanking regulatory context - not the gene locus itself - carries the phylogenetic signal: restricting pooling to central 448 bins collapses Mantel r to 0.355. Applying the same fixed configuration to Vertebrates ([≤]450 Mya, 83 OGs, 150 species) and Plants ([≤]1,500 Mya, 92 OGs, 40 species) yields consensus Mantel r of 0.752 and 0.803 respectively, with NRF worsening monotonically across tiers. Distance-ordering fidelity degrades smoothly with evolutionary distance while topological accuracy declines steadily, with no sharp taxonomic boundary. These results show that an unmodified regulatory deep learning model encodes robust phylogenetic signal well beyond its training distribution, reaching across 1,500 million years of divergence.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730316v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
