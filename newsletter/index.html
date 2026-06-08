@@ -36,11 +36,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CLASPP: A unified model for predicting post-translational modifications</h2>
-<p class="paper-authors">Gravel, N., Zhou, Z., +2 authors, Kannan, N.</p>
+<h2 class="paper-title">Inosine incorporation in DNA nanostructures and 3D DNA crystals</h2>
+<p class="paper-authors">Chandrasekaran, A. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Post-Translational Modifications (PTMs) are a fundamental mechanism for regulating cellular pathways and increasing the functional diversity of the proteome. Accurately predicting the PTM types that are likely to occur at a given site in the primary sequence is a key challenge in functional proteomics. Existing PTM prediction models predominantly focus on either single PTM types or employ ensemble methods that combine multiple models to predict different PTM types. This fragmentation is largely driven by the vast imbalance in data availability across PTM types, making it difficult to predict multiple PTM types with a single model. To address this limitation, we present the Contrastively Learned Attention-based Stratified PTM Predictor (CLASPP), a unified PTM prediction model. CLASPP addresses imbalance challenges by leveraging unsupervised clustering-based undersampling and a novel contrastive learning framework tailored to PTM data. Additionally, our hierarchical data organization and curation are shown to improve CLASPP's performance by balancing the representation of individual PTM types and provides a standardized dataset to train and validate future model designs. Drawing inspiration from advancements in image and natural language processing, the CLASPP model employs a multi-stage training strategy and a high-quality, curated training dataset to improve PTM prediction performance. To uncover what is learned during the contrastive learning stage, the CLASPP model is shown to distinguish known protein kinase substrate specificity profiles as a form of explainability. Finally, we evaluate the application of CLASPP in predicting PTMs in different model organisms and experimentally validated ubiquitination sites in the understudied DCLK3 kinase. Overall, CLASPP represents a unified model for PTM prediction that addresses key bottlenecks in data imbalance and offers new strategies for biological data curation, thereby improving PTM-type prediction performance across diverse organisms.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.729962v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> DNA nanotechnology is based on programmable base pairing, resulting in the precise construction of nanoscale structures. Sequence variability in DNA nanostructure self-assembly is achieved by the use of xeno nucleic acids, chemically modified bases and base analogs. The naturally occurring base inosine, while well studied in RNA editing, has not been used in the context of DNA nanotechnology. In this work, I demonstrate the use of inosine in DNA nanostructures, specifically by incorporating inosine within the duplex regions or junctions of a double crossover DNA motif. In strand displacement and competition assays, I show that canonical complements do not displace inosine containing strands post-assembly but dominate in product formation when competing with inosine containing strands during assembly. Finally, sticky ends with inosine base pairs enable the formation of rationally designed 3D DNA crystals based on the tensegrity triangle motif. Overall, this work shows that inosine is a useful addition to the library of sequence variations in DNA nanotechnology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.06.730639v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -55,11 +55,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Learning quality scores for chromatin accessibility bigWig tracks using Machine Learning</h2>
-<p class="paper-authors">Sanders, E., Riva, S. G., Hughes, J. R.</p>
+<h2 class="paper-title">KDM: embedding DNA/RNA motifs and sequences in a shared k-mer space for unified discovery, analysis and binding prediction</h2>
+<p class="paper-authors">Fumagalli, L., Becchi, T., +1 author, Pozzoli, U.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High-throughput chromatin accessibility assays such as bulk and single-cell ATAC-seq have generated large collections of processed signal tracks in bigWig format, which are widely used for visualisation, data integration, and Machine Learning (ML)-based analyses. Despite their central role, systematic quality control (QC) frameworks operating directly at the level of bigWig signal tracks remain underdeveloped. This gap limits the ability to assess data reliability and hampers robust downstream analyses. Here, we present a biologically grounded QC framework for chromatin accessibility bigWig files that integrates peak-level information, background noise estimation, and recovery of stable genomic reference features. Using an ML-based peak caller (LanceOtron), we derive complementary quality metrics capturing signal structure and signal-to-noise properties. We further define constant promoter and CTCF regions as internal biological controls and show that their recovery provides a sensitive measure of data quality across diverse cellular contexts. We apply this framework to a collection of 502 human chromatin accessibility bigWig tracks spanning a wide range of tissues and cell types. The proposed metrics capture related but non-redundant aspects of signal quality and motivate the use of constant promoter and CTCF recovery as biologically meaningful targets. An XGBoost model trained on LanceOtron-derived features accurately predicts recovery of these stable genomic elements on held-out data (R2 = 0.97), yielding a continuous and interpretable quality score. Feature importance analysis using SHAP values highlights that model decisions are driven by biologically relevant signal properties rather than arbitrary heuristics. Quantile-based stratification of the quality score is further supported by clear qualitative differences in genome browser visualisations. Together, this work provides a principled and extensible framework for assessing the quality of chromatin accessibility bigWig tracks, enabling more reliable data integration and supporting downstream ML applications in regulatory genomics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730303v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motif discovery and binding-site prediction in DNA and RNA sequences are central tasks in regulatory genomics, yet the methodological landscape is split between interpretable but rigid position weight matrices (PWMs) and high-performing but opaque machine-learning models. We present KDM, a unifying framework in which both motifs and sequences are represented as probability distributions over a shared k-mer dictionary, embedded via the Hellinger transformation. This common geometry enables motif-sequence scoring, motif-motif comparison, de novo discovery, and binding prediction with a single primitive, the Bhattacharyya coefficient. We instantiate four tools on this representation: KDMMap for positional enrichment analysis, KDMMatch for information-content-aware motif matching, KDMFind for unsupervised motif discovery via projective non-negative matrix factorization, and KDM-LRLM for binding prediction with Lasso-regularized logistic regression. Across 1,324 transcription-factor ChIP-seq and 161 RBP eCLIP experiments, KDMMap matches CentriMo's motif rankings in 84% of TF and 79% of RBP experiments, and KDMMatch agrees with Tomtom on motif annotation in 74.5% of TFs. On binding prediction across four datasets covering 2,475 experiments, KDM-LRLM matches or exceeds eight deep-learning and three k-mer-based competitors. Notably, AI methods overtake k-mer methods only in the top quartile of training-set size, indicating that data scale, not architecture, drives the recent dominance of deep models. KDM provides a single interpretable representation across the full motif-analysis workflow.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730329v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -74,11 +74,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Structure-guided compound prioritization strategy for virtual screening identifies putative binders for the nuclear receptor LRH-1</h2>
-<p class="paper-authors">Chang-Gonzalez, A. C., Campbell, A. N., +2 authors, Meiler, J.</p>
+<h2 class="paper-title">Quantifying Evidence for Competing Biomedical Hypotheses using Large Language Models and Bayesian Analysis</h2>
+<p class="paper-authors">Moore, B. M., Freeman, J., +9 authors, Stewart, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Compound ranking in structure-based virtual screening notoriously yields highly ranked false positive binders due to variable poses or biases in scoring terms. We developed a compound prioritization strategy that utilizes sampled docked poses from contrasting docking approaches (targeted physics-based docking and blind docking with a generative model) against multiple models of the target protein to train a multi-layer perceptron (MLP). The model predicts binders at the orthosteric ligand-binding pocket of the nuclear receptor LRH-1 (NR5A2). Our approach circumvents the reliance on a single docked pose for scoring compounds or individual scoring metrics for compound ranking. In a separate benchmarking set, we observed that the MLP identifies known binders that are chemically dissimilar from the compounds in the training set and is sensitive to single scaffold modifications, making it a potential tool for lead optimization. We applied our strategy to a prospective virtual screening campaign, which resulted in the discovery of four putative LRH-1 binders. We found that a combination of scoring and prediction metrics enriches for the hit compounds across library sizes. In all, this implementation presents a method to leverage structural and experimental data to aid virtual screening for a challenging protein target.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730240v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Science fundamentally depends on the generation and testing of hypotheses, many of them controversial. An explosion in scientific literature has made evaluating hypotheses even within a domain a problem of scale, and risks slowing an already extensive consensus-building process. While this challenge has prompted interest in automated hypothesis evaluation tools, existing methods have not yet proven effective for comparing hypotheses. Here, we introduce KM-GPT-DCH, an algorithm that combines co-occurrence methods with large language models (LLMs) to develop a transparent and reproducible literature-based algorithm to compare controversial hypotheses using a structured scoring approach with Bayesian methods to estimate confidence. When testing the algorithm on historical controversial hypotheses previously decided, KM-GPT-DCH chooses the correct hypothesis with high confidence several years before the scientific community or public do so. We further apply the algorithm to compare twenty unresolved controversial hypothesis pairs providing guidance for future research. The method can help researchers and the public to evaluate biomedical hypotheses such as "Is it more likely that monoamine deficiency or inflammation causes depression?" It can also be used to assess and visualize historical trends in the scientific literature. A web-based implementation of the algorithm is freely available at https://skim.morgridge.org.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730173v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 06, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Ontologizer 3: a cross-platform desktop application for frequentist and Bayesian GO enrichment analysis</h2>
-<p class="paper-authors">Ramlow, L., Scholtes, J., +1 author, Robinson, P. N.</p>
+<h2 class="paper-title">GLOF: A large-scale expert-curated benchmark dataset of gain-of-function and loss-of-function missense variants</h2>
+<p class="paper-authors">Maricato, V., Schlesinger, D., de Souza Moura, P. N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> We present Ontologizer 3, an easy-to-use cross-platform desktop application for Gene Ontology (GO) overrepresentation analysis. Ontologizer 3 offers two complementary methods. The first is a frequentist approach that evaluates GO terms individually using a one-sided Fisher's exact test, yielding term-level significance values. The second is a Bayesian approach that jointly evaluates terms using model-based gene set analysis (MGSA), yielding term-level posterior probabilities. Due to substantial overlap among annotated gene sets resulting from the GO's hierarchical structure, the two methods produce different results. The frequentist approach tends to report a lengthy list of terms with strong annotation overlap, whereas, MGSA yields a parsimonious set of terms that explain the observed gene activity. Using simulated data with a known ground truth, we demonstrate that both methods reliably identify the causal term, but MGSA achieves substantially higher precision. Ontologizer 3 is implemented as a Tauri application with a Rust backend and an Angular frontend, presenting enriched terms in tabular and graphical form. The software is freely available under the MIT licence at https://github.com/P2GX/ontologizer-gui. Installation packages for Macintosh, Windows and Debian-based Linux are available on the GitHub Releases page.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730045v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Distinguishing loss-of-function (LOF) from gain-of-function (GOF) effects of missense variants is fundamental to understanding disease mechanisms and guiding therapeutic strategy, yet no large-scale, expert-curated benchmark has been publicly available for this task. Here we present GLOF (Gain and Loss Of Function), a dataset of 112,399 missense variants across 2,809 human genes, each classified as LOF, GOF, or neutral by board-certified clinical geneticists following ACMG guidelines. Pathogenic variants were sourced from ClinVar and annotated with their functional mechanism based on published functional studies, phenotype correlations, and established gene-disease relationships. Neutral variants were drawn from gnomAD v3.1 and validated against v4.1 using stringent population frequency filters. The dataset spans diverse protein families, includes 97 genes with bidirectional mechanisms (containing both LOF and GOF variants), and has been validated against well-characterized variants in the literature. GLOF is publicly available on Kaggle (https://www.kaggle.com/datasets/maricatovictor/loss-and-gain-of-function-variants) and Hugging Face (https://huggingface.co/datasets/victormaricato/glof), and provides a standardized resource for developing and benchmarking computational methods that predict variant functional mechanisms.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.729843v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 06, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">pLM-Guided Inverse Folding for Antibody Sequence Design</h2>
-<p class="paper-authors">Noske, V., Koulischer, F., +1 author, Demeester, T.</p>
+<h2 class="paper-title">Multi-level, multi-body atomic interaction graphs for machine learning-based prediction of protein-ligand binding energies</h2>
+<p class="paper-authors">Le, T. T. H., Nguyen, B. T., +2 authors, Nguyen, D. D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Inverse folding, predicting amino acid sequences from three-dimensional structures, is a foundational task in computational protein design, yet it is hindered by the scarcity of structural data, which limits model training and risks overfitting. The standard approach fine-tunes general inverse folding models on domain-specific structural datasets like antibodies, but such data remain expensive. To enable inverse folders to benefit more from abundant sequence data, we propose combining ProteinMPNN, a general protein inverse folding model, with IgLM, an antibody-specific language model, via a training-free weighted en-semble of their predictions at inference time. Evaluated on antibody and nanobody structures, our results show that this approach substantially improves amino acid recovery over ProteinMPNN alone, approaching the performance of antibody- specific models like AntiFold while generating more diverse sequences. Even models already fine-tuned on antibody structures (AbMPNN) ben-efit from language model guidance, demonstrating that it complements structural fine-tuning and leads to more natural-looking sequences that still satisfy structural constraints.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730089v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate prediction of binding affinity is crucial for rational drug design and discovery. Traditional computational methods often rely on complex scoring functions that incorporate a multitude of physical and chemical descriptors, leading to high computational demands and sometimes limited generalizability. In this work, we propose a novel scoring function that models multi-level, multi-body atomic interactions using graph-based representations. Our method constructs comprehensive interaction graphs that incorporate both pairwise and triplet-wise atomic features that help capture cooperative spatial patterns essential for binding affinity prediction. By employing a feature fusion strategy, GMI-Score maintains model simplicity while enhancing accuracy. Extensive evaluation across multiple datasets, such as PDBbind v2013, PDBbind v2016, PDBbind v2020, CSAR-NRC-HiQ, and PDBbind-Redocked, demonstrates that our model consistently outperforms state-of-the-art scoring functions, achieving Pearson correlation coefficients up to 0.877. Furthermore, it retains strong predictive power under strict data leakage controls and realistic docking conditions to highlight its robustness and generalizability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730001v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 06, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Handshake: Partner-Specific Protein-Protein Binding Site Prediction at Scale Using ProstT5 and Cross-Chain Attention</h2>
-<p class="paper-authors">Haspel, N.</p>
+<h2 class="paper-title">Germline regulation of tumor evolutionary dynamics shapes multiple myeloma progression</h2>
+<p class="paper-authors">Chen, H., Shu, J., +6 authors, Liu, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Partner-specific protein-protein binding site prediction, identifying which residues of a protein form the interface when bound to a specific partner, remains a challenging task with significant implications for drug discovery and understanding of protein structure and function. Existing computational methods are limited by small training datasets, inconsistent redundancy filtering, and reliance on three-dimensional structural information at test time. Here we present a sequence-only, partner-specific protein-protein interface predictor called Handshake. It combines ProstT5, a protein language model pre-trained on structural data, with Low-Rank Adaptation (LoRA), a cross-chain attention mechanism and a contact supervision head. Our method can detect both binding interfaces and pairwise contact matrices. We trained our model on very large datasets of non-redundant protein-protein pairs derived from the PPInterface dataset, the most comprehensive structural protein-protein database to date, and evaluated it on systematically filtered benchmarks at four redundancy thresholds (30%--90% sequence identity). We demonstrate that sequence redundancy inflates reported AUROC by up to 0.079 and MCC by up to 0.145 on identical models, representing a substantial methodological confound in the field. Even at 30% redundancy threshold, our results (AUROC=0.811, MCC=0.367, F1=0.45) exceed the best published sequence-only result on this convention. Our method also achieves comparable performance to existing partner-specific methods that use explicit structural information. The comprehensive training and evaluation dataset, in addition to the systematic redundancy inflation, can help gain insight into protein-protein interactions and the abilities and limitations of current detection methods.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730144v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Germline variation shapes cancer risk, yet its influence on the evolutionary dynamics of established tumors remains poorly understood. In multiple myeloma, subclonal diversification drives disease progression and treatment failure, but the heritable factors that modulate this process are unknown. Here, we show that germline variation is associated with tumor evolutionary features, implicating inherited regulation in subclonal expansion. Integrating germline variation with tumor evolutionary parameters identifies variants associated with evolutionary features, with signals enriched in regulatory regions, consistent with a transcriptional basis. We further identify TBKBP1 as a key locus linking germline variation to tumor evolution and clinical outcome. Germline variation at this locus is associated with TBKBP1 expression and subclonal expansion, and TBKBP1 expression correlates with adverse prognosis, consistent across independent cohorts. Functional analyses demonstrate that TBKBP1 promotes proliferation and activates MYC, mTORC1 and non-canonical NF-{kappa}B signaling pathway. Together, these findings establish germline regulatory variation as a determinant of tumor evolutionary dynamics and identify TBKBP1 as a mediator linking inherited variation to subclonal expansion and disease progression in multiple myeloma.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730550v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 06, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Automated Retinal Dysplasia Segmentation in Mouse Optical Coherence Tomography Scans Using a UNet-Based model</h2>
-<p class="paper-authors">Mikroulis, A., Raishbrook, M. J., +5 authors, Novak, D.</p>
+<h2 class="paper-title">CiliAI: Automated segmentation and compartment specific fluorescence quantification of primary cilia in confocal microscopy images</h2>
+<p class="paper-authors">Karapetian, E., Gerhardt, C., +1 author, Pfirrmann, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Optical coherence tomography (OCT) is the state-of-the-art non-invasive imaging technique for preclinical retinopathy studies. However, manual pathology annotations in mouse OCT scans are labour-intensive and susceptible to inter-rater variability. To alleviate these issues, we developed a neural network-based model for automated annotation of retinal dysplasia in mouse OCT scans. Our model was trained on 205 expert-annotated OCT stacks and validated on 40 unseen stacks with additional expert annotation comparisons in a subset of them. The model detects pathologies with high accuracy (F1-score &gt; 0.95) and consistency with experts (median Dice score &gt; 0.8). We integrated the model into a cross-platform app ('OCTOPUS') that includes batch processing, automated annotation, manual annotation editing, and quantitative longitudinal tracking with pathological area estimation on the fundus image, and exportable results in CSV and SVG formats. Our open-source tool aims to facilitate and standardise OCT assessments between laboratories for efficient preclinical screening and high-throughput phenotyping in mouse models of retinal disease.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730047v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Primary cilia regulate essential signalling pathways controlling cell proliferation, differentiation, and tissue homeostasis. Quantitative analysis of ciliary morphology and compartment-specific protein localization by confocal microscopy is labor-intensive, user-dependent, and difficult to scale, particularly for multiplexed 3D image datasets. Here, we present CiliAI, a web-based deep-learning workflow for automated detection, substructure segmentation, and quantitative analysis of primary cilia in confocal microscopy images. CiliAI identifies ciliary substructures including the basal body, transition zone, and axoneme from multiplexed 3D image stacks and performs automated measurements of cilium length and compartment-specific fluorescence intensity. In NIH-3T3 cells, automated cilium length measurements showed close agreement with manual quantification and no statistically significant difference between methods (mean difference -0.214 {gamma}m, p = 0.213). Automated fluorescence analysis reproduced previously reported reductions in transition zone-associated Cep290 signal intensity in Rpgrip1l-deficient cells and identified the absence of significant Rpgrip1l accumulation changes in Rmnd5a-deficient cells. Automated processing reduced analysis time from days of manual quantification to minutes. Together, these findings establish CiliAI as an automated framework for quantitative analysis of ciliary morphology and compartment-specific protein abundance in confocal microscopy datasets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.727888v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 06, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">VelOT: kinetic-free RNA velocity inference via optimal transport, flow-field smoothing, and VAMP coarse-graining of cellular dynamics</h2>
-<p class="paper-authors">Rincon de la Rosa, L., Perez Garcia, D., Alentorn, A.</p>
+<h2 class="paper-title">Single-cell gene regulatory network reconstruction and key regulator identification using a dual-channel fusion graph convolutional network</h2>
+<p class="paper-authors">Tang, R., Liu, J., +1 author, Liang, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Inferring cellular dynamics from snapshot single-cell RNA sequencing remains difficult when spliced and unspliced counts are sparse or unreliable. We present VelOT, a kinetic-free RNA velocity framework that formulates dynamics as local optimal transport on the gene-expression manifold. VelOT orders cells by diffusion pseudotime, constructs overlapping spatial-temporal windows, estimates displacement vectors with entropy-regularized transport, and smooths them with a lightweight neural flow field. A downstream VAMP-based MetaFlow module learns soft meta-states and a directed PAGA-like graph, identifying initial, terminal, branching, and cycling regimes with committor probabilities. Across four real benchmarks and three synthetic topologies, VelOT outperforms scVelo, DeepVelo, and FluxMatching in cross-boundary directionality and intra-cluster coherence while remaining computationally efficient. In adult oligodendroglioma scRNA-seq, VelOT recovers stem-like to astrocyte-like and oligodendrocyte-like differentiation axes without kinetic inputs. VelOT reframes RNA velocity within scRNA-seq as a geometry and transport problem that does not require kinetic modeling.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730132v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730394v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,91 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 06, 2026</span>
+<span class="date">Jun 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Enformer-Based Phylogenetic Tree Reconstruction</h2>
-<p class="paper-authors">Capitanio, A., Stranieri, N., +2 authors, Hughes, J. R.</p>
+<h2 class="paper-title">CytoGem-XAI:A Hypergraph Neural Network Framework for Genome-Scale Metabolic Modeling and Interpretable Analysis</h2>
+<p class="paper-authors">Chen, S., Chen, T., +3 authors, Mao, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Enformer is a deep learning model trained on human and mouse genomes to predict regulatory activity from 196,608 bp DNA windows. Its trunk embeddings capture long-range cis-regulatory interactions, but whether this signal generalises across the tree of life has not been assessed. We embed universal single-copy orthologous groups (OGs) from OrthoDB v12 across three taxonomic scales and evaluate reconstructed trees against TimeTree5 using Mantel r and Normalised Robinson-Foulds (NRF). On 702 OGs across 34 Primate species ([≤]74 Mya), the consensus tree achieves Mantel r=0.902 and NRF=0.481, correctly recovering major clades. A key finding is that flanking regulatory context - not the gene locus itself - carries the phylogenetic signal: restricting pooling to central 448 bins collapses Mantel r to 0.355. Applying the same fixed configuration to Vertebrates ([≤]450 Mya, 83 OGs, 150 species) and Plants ([≤]1,500 Mya, 92 OGs, 40 species) yields consensus Mantel r of 0.752 and 0.803 respectively, with NRF worsening monotonically across tiers. Distance-ordering fidelity degrades smoothly with evolutionary distance while topological accuracy declines steadily, with no sharp taxonomic boundary. These results show that an unmodified regulatory deep learning model encodes robust phylogenetic signal well beyond its training distribution, reaching across 1,500 million years of divergence.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730316v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Genome-scale metabolic models are essential for understanding cellular metabolism, yet existing deep learning approaches remain black boxes, and traditional flux balance analysis (FBA) cannot provide sample-specific predictions. To our knowledge, CytoGem-XAI is the first framework to combine hypergraph neural network representation with interpretable, FBA-parallel analysis and sample-specific metabolic characterization. Built upon hypergraph representations where reactions are encoded as hyperedges connecting their participating metabolites, CytoGem-XAI introduces three analysis modules: perturbation-based carbon source importance ranking, hard intervention reaction bottleneck identification, and pathway-level topological attribution. Beyond prediction, CytoGem-XAI uniquely enables condition-dependent carbon source essentiality and reaction bottlenecks that vary with genetic background - capabilities absent from both traditional FBA and existing deep learning methods. Trained on 17,400 E.coli growth conditions using 10-fold cross-validation, our framework achieves 2 =0 .862,substantially outperforming AMN (R^2=0 .81,+6 .4%), FBA ( R^2=0 .62,+39%),and gradient boosting baselines (R^2 =0.71,+21%). Biological validation confirms that CytoGem-XAI identifies known essential carbon sources (e.g., alanine, malate) and rate-limiting enzymes (e.g., TCA cycle), while also revealing N-acetylmuramate - a peptidoglycan precursor - as a previously underappreciated essential nutrient.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730334v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Metadata Collector: An Open-Source Platform for Standardized Metadata Management in Multi Centre Sequencing Projects</h2>
+<p class="paper-authors">Liguori, R., Ferrazzi, F.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.05.730314v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jun 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">High resolution spatial transcriptomics decodes the microenvironmental determinants of response to Nr-CWS therapy in cervical precancerous lesions</h2>
+<p class="paper-authors">Long, T., WEI, B., Ding, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Immunotherapy with Nocardia rubra cell wall skeleton (Nr-CWS) can clear human papillomavirus (HPV) and induce regression of cervical precancerous lesions, yet many patients do not respond. The cellular and molecular basis for this heterogeneous clinical outcome remains unknown. Using high-resolution spatial transcriptomics, we profiled squamous intraepithelial lesions (SIL) from patients stratified by their subsequent response to Nr-CWS therapy. We discovered that non-responders were characterized by an immunosuppressive epithelial phenotype, defined by aberrant expression of the pro-inflammatory alarmin S100A9 in squamous epithelial cells (SECs), which was associated with poorer overall survival in cervical cancer. Non-responding lesions were enriched in proliferative (MKI67+) and pro-angiogenic (VEGFA+) SEC subpopulations and spatially organized into a pro-tumorigenic cellular neighborhood (CN-10) overexpressing S100A9 and ANXA1. In contrast, responders exhibited protective glandular-cell-enriched neighborhoods (CN-13) and supportive spatial interactions between lymphatic endothelial cells and fibroblasts. The unfavorable microenvironment was further defined by an immunosuppressive cloak of VCAN+ stromal cells and CD163+ M2 macrophages encircling SECs. Thus, response to Nr-CWS is determined by a pre-existing spatial network of epithelial-stromal-immune interactions, providing a roadmap for patient stratification and rational combination therapies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729727v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jun 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Autoantibodies Drive Fc Gamma Receptor-Dependent Colon Inflammation During Immune Checkpoint Blockade</h2>
+<p class="paper-authors">Voloshyna, I., Patskovsky, Y., +19 authors, Krogsgaard, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Immune-related adverse events (irAEs), particularly colitis, are major limitations of immune checkpoint inhibitor (ICI) therapy, but their mechanisms remain poorly understood. Here we show that endogenous autoantibodies (AAbs) can promote ICI-associated colitis through Fc gamma receptor (FcgR) dependent pathways. IgG from melanoma patients treated with pembrolizumab, nivolumab, or ipilimumab, with or without severe colitis, was transferred into wild-type or humanized FcgR (hFcgR) mice receiving comparable ICI therapy. Wild type mice did not develop changes in the colon. In contrast, hFcgR mice given IgG from patients with colitis developed colon inflammation marked by a significant increase in submucosal lymphocyte infiltration, goblet cell loss, and circulating cytokines, including IL6, IL17, and IL22. Single cell RNA sequencing identified an IgG-regulated inflammatory network involving IFNg-producing ILC1, Th1 and cytotoxic T cells, IL1betta M1 macrophages, plasma B cells or plasmablasts, and IL22 producing ILC3 LTi cells. Patient serum autoantibody profiling further identified CCR5 and CXCR4 receptors as candidate immune-related targets associated with ICC susceptibility.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.03.729692v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jun 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">An Itch Receptor Drives Melanoma</h2>
+<p class="paper-authors">Gour, N., Atakkatan, A., +10 authors, Dong, X.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Mas-Related GPCR X4 (MRGPRX4) is a sensory neuron-restricted receptor for cholestatic itch. Here, we identify MRGPRX4 as an unexpected melanoma driver. MRGPRX4 is upregulated in melanoma and is confined to invasive, neural-crest-like and pre-EMT states associated with dedifferentiation and therapy resistance. Ectopic MRGPRX4 expression in mouse melanocytes drives 100% penetrant, highly metastatic melanoma, demonstrating oncogenic behavior. MRGPRX4 promotes melanoma cell proliferation and invasion through basal, ligand-independent, PI3K-AKT-MAPK activation. Multi-omics links MRGPRX4 expression to a mesenchymal/neural-crest-like program that defines a distinct invasive MRGPRX4? niche. Comparing transcptomics of MRGPRX4-driven tumors shows a broad overlap with BRAF/NRAS-driven tumors; however, the MRGPRX4 model also enriches an ECM-rich, invasive neural crest-like melanoma state. MRGPRX4 further remodels the tumor microenvironment toward an immunosuppressive, checkpoint-high state enriched in suppressive myeloid cells. Pharmacologic MRGPRX4 inhibition suppresses basal signaling and limits melanoma growth and invasion. In sum, melanoma exploits MRGPRX4 to acquire an invasive and immunosuppressive phenotype, nominating this somatosensory GPCR as a promising therapeutic target.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.01.729383v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
