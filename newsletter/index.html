@@ -36,11 +36,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Sequence-Based Therapeutic Peptide Classification with Augmented Negative Sampling</h2>
-<p class="paper-authors">Ellerbrock, R., Valentini, A., +2 authors, Perelshtein, M. R.</p>
+<h2 class="paper-title">HalluDesign-NA: Extending HalluDesign for De Novo Nucleic Acid Design</h2>
+<p class="paper-authors">Fang, M., Wang, Z., Cao, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Therapeutic peptides offer high target specificity, low toxicity, and the ability to modulate protein-protein interactions, yet experimental functional characterization remains costly and slow. Computational prediction of therapeutic function directly from sequence could accelerate peptide screening and enable generative design pipelines, but requires reliable discrimination between therapeutic and non-therapeutic peptides. Existing multi-label predictors cover few functions, rely on limited datasets, and exhibit high glspl{fpr}, limiting their practical utility. We present a lightweight CNN classifier trained on the most comprehensive therapeutic peptide database to date (54,655 peptides, 48 functional categories). A key contribution is a statistically motivated negative sampling strategy using Markov models to generate diverse synthetic decoys at multiple difficulty levels. When evaluated on this controlled decoy benchmark, the FRP is reduced from over 60% for previous models to 2.1% for our approach. Our fine-tuned five-model ensemble achieves 78.9% Micro F1 and 54.6% Macro F1 while requiring only amino acid sequences as inputs. Analysis using a sparse L1-constrained variant of our model shows that convolutional filters capture conserved functional motifs and statistically improbable non-therapeutic patterns, with downstream layers combining these signals, providing mechanistic evidence that the network learns biologically meaningful structure. In a generalization task on the TPpred-LE benchmark, our model achieves 55.3% Micro F1 and 38.6% Macro F1, comparable to TPpred-LE trained on its native dataset (57.9%/38.1%) while predicting four times more therapeutic functions with four times fewer parameters. Code and models will be made available at https://github.com/terra-quantum-public/tq-therapep-ai.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.07.730473v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> AlphaFold3 has revolutionized the prediction of biomolecular structures and interactions, including atomic-level modeling of nucleic acids. However, the de novo design of structured and functional nucleic acids remains a significant challenge. Here, we extend our HalluDesign framework to nucleic acid design by integrating NA-MPNN for nucleic acid sequence optimization and design. This new framework, HalluDesign-NA, enables iterative sequence-structure co-optimization, facilitating the de novo design of nucleic acids. Computational benchmarking across ssDNA, ssRNA, and aptamer design tasks demonstrates consistent improvements in confidence scores (pLDDT, ipTM), supporting the feasibility of de novo nucleic acid design under various constraints, such as sequence length, symmetry, and protein structure context. We anticipate that HalluDesign-NA will accelerate the de novo design of functional nucleic acids for applications in biotechnology and medicine. The source code for HalluDesign-NA is available at https://github.com/MinchaoFang/HalluDesign_NA.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.730767v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -55,11 +55,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Robust semi-supervised scRNA-seq integration from virtual adversarial learning</h2>
-<p class="paper-authors">He, C., Filippidis, P., +2 authors, Guan, L.</p>
+<h2 class="paper-title">Viability of engineered AAVs via protein language models</h2>
+<p class="paper-authors">Desrosiers, M., Ocari, T., +8 authors, Ferrari, U.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA sequencing integration methods that rely solely on transcriptomic data often struggle to preserve fine-grained distinctions between closely related cell subtypes. As a result, cell populations that are separable in the raw data may become over-mixed after integration, reducing biological resolution and interpretability. Incorporating marker gene information can potentially address these issues; however, the variability and complexity of available marker sets limit their effective application. To address this, we introduce scCRAFT+, a semi-supervised integration model that innovatively incorporates marker gene information through Virtual Adversarial Training (VAT). By jointly optimizing marker-derived supervision and transcriptome-wide representations, VAT enforces local prediction smoothness among transcriptionally similar cells, improving robustness to noisy marker annotations while enhancing both integration quality and cell type auto-annotation. This targeted approach significantly enhances annotation accuracy and robustness, particularly when faced with incomplete or incorrect marker gene sets. Benchmarking shows that scCRAFT+ achieves consistently stronger performance than current unsupervised and supervised integration approaches, resulting in improved integration quality and biologically meaningful sub-cell type auto-annotations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.07.730754v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Capsid engineering has greatly improved the performance of recombinant AAV vectors used for gene therapy. One commonly used strategy is the insertion of a short, 7-mer, peptide into surface-exposed loops to modify receptor interactions and enhance cell entry. While effective in receptor retargeting and improved transduction, these insertions might destabilize the capsid protein, hinder assembly, and thus limit production. While previous attempts have used deep mutational scanning and AI to predict which insertions are viable, there is lack in understanding the structural consequences of these peptide insertions at the amino-acid level. Here we combined experiments, deep sequencing and large protein language models to gain insight on the impact of 7-mer insertions on the VR-VIII region. We first characterize the biochemical properties of viable insertions, thus identifying which residues are well tolerated, and which should instead be avoided. We then focus on the nearby context of those insertions, by studying the effect of the linkers, either for highly diverse libraries or for individual variants known for their efficiency. Next, we study the broader context, by extending our analysis to the whole capsid sequence, and identifying regions that can tolerate insertions without long-ranged structural deformations that could affect capsid functionality. We conclude with a cross-serotype comparison and a viability analysis of tens of previously engineered variants. Our work showcases how AI can uncover structure-function rules governing the success of engineered AAV capsids.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731521v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">HOMED enables hierarchical and multimodal optimization of DNA methylation deconvolution across tissues</h2>
-<p class="paper-authors">Liu, Y., Chen, Y., +1 author, Garmire, L.</p>
+<h2 class="paper-title">DLDN-Bench: A Benchmark Framework for Deep Learning de Novo Peptide Sequencing in Proteomics</h2>
+<p class="paper-authors">Schneider, J., Hartwig, S., +3 authors, Turewicz, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cellular heterogeneity is a major confounder in bulk DNA methylation data for epigenome-wide association studies. Existing reference-based DNAm deconvolution methods often ignore hierarchies among related cell types and may generalize poorly across datasets due to limited variability in reference profiles. We developed HOMED (Hierarchically Optimized Methylation Deconvolution), a framework that integrates cell-lineage hierarchies, single-cell RNA sequencing-guided deconvolution, and paired bulk RNA-seq/DNAm data for CpG signature optimization. Across simulated and real peripheral blood mononuclear cell, lung, and placental datasets, HOMED consistently yielded the highest PCCs and lowest RMSEs, outperforming existing scRNA-seq-guided DNAm deconvolution methods, improving accuracy, resolution, and cross-tissue generalizability.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.08.730896v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> De novo peptide sequencing is an essential approach for analyzing mass spectrometry data because it enables the identification of novel peptides without relying on protein sequence databases. Recent advances in deep learning have substantially improved the performance of de novo sequencing methods, but the rapid emergence of new models has led to heterogeneous evaluation practices and limited comparability. To address this, we introduce DLDN-Bench, a benchmark framework including a set of benchmark datasets derived from human muscle biopsy mass spectrometry data retrieved from PRIDE and annotated through consensus across multiple widely used database search engines. Using these datasets, we systematically benchmark recent deep learning-based de novo sequencing tools alongside traditional approaches. Performance is assessed using established metrics, including precision and coverage relative to a pseudo-ground truth defined by cross-engine agreement. To demonstrate the utility of DLDN-Bench, we benchmark four recent deep learning models and make all results publicly available. This benchmark framework provides a standardized basis for comparing state-of-the-art methods and offers an extensible resource for evaluating future tools in de novo peptide sequencing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.728383v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Computational Framework for Domain Insertion into Type IV Pili for Bacterial Display and Living Material Assembly</h2>
-<p class="paper-authors">Tesoriero, R. F., Harris, N. E., +1 author, Ajo-Franklin, C. M.</p>
+<h2 class="paper-title">OMIO: A policy-driven Python library for reproducible microscopy image I/O</h2>
+<p class="paper-authors">Musacchio, F., Antony, H., +6 authors, Fuhrmann, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bacterial surface structures have enabled display systems with broad impact across biotechnology, but their narrow host range limits their deployment into diverse species. Conversely, Type IV Pili (TFP) are ubiquitous, structurally conserved appendages found across bacteria, but have been minimally explored for display. Here, we describe a computational framework for predicting viable insertion sites in major pilins for stable TFP-mediated display, which we apply to the major pilin PilA1 of the cyanobacterium Synechocystis sp. PCC 6803 to enable covalent binding to living materials. By analyzing an Alphafold3-generated PilA1 monomer alongside known multimeric TFP multimers, our pipeline identifies non-interfacial, solvent-accessible, and flexible sites for optimal PilA1 display. We probe these sites with both full-length and truncated SpyCatcher003 at two different expression levels. We show that cells expressing these PilA1-SpyCatcher003 fusions maintain up to 8-fold higher levels of cell suspension than previous C-terminal PilA1 display platforms, suggesting improved TFP assembly despite more than a two-fold increase in cargo size. Additionally, we validate SpyCatcher003 reactivity across the engineered strains, enabling covalent attachment of SpyTag003-containing proteins on the Synechocystis surface. Lastly, we utilize this covalent patterning to achieve a four-fold increase in Synechocystis loading into a living material without compromising its viscoelastic or mechanical properties. Taken together, this work provides a predictive framework for TFP engineering, and opens the door towards programmable surface display across the breadth of bacterial species.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731259v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Modern fluorescence and multiphoton microscopy workflows operate within a heterogeneous ecosystem of file formats, partially overlapping metadata standards, and reader-specific conventions. In practice, this frequently leads to silent axis misinterpretations, loss or corruption of physical voxel size information, and laboratory-specific glue code that is fragile, poorly documented, and difficult to reproduce. OMIO, short for Open Microscopy Image I/O, addresses these issues by providing a lightweight, policy-driven image I/O layer for Python that enforces a canonical, OME-compatible data representation at the API boundary. The central contribution of OMIO is the explicit separation of low-level format access from semantic normalization. Existing reader libraries are used as interchangeable backends for extracting pixel data and available metadata, while OMIO enforces axis conventions, metadata interpretation, and fallback decisions in a centralized and auditable policy layer. This design allows heterogeneous microscopy inputs to be converted into a stable representation without propagating backend-specific assumptions into downstream analysis code. The core design principles of OMIO include canonical axis semantics (TZCYX), robust metadata normalization with explicit and auditable fallbacks, memory-aware operation via optional Zarr-based backends, and workflow-level semantics that extend beyond individual files to folder stacks and BIDS-like project structures. This architecture allows OMIO to orchestrate existing reader libraries into a coherent and reproducible I/O pipeline without replacing or duplicating their functionality. OMIO is implemented as an open-source and community-oriented system in which support for additional file formats and metadata conventions can be added incrementally through modular reader backends. By encouraging the contribution of example datasets, backend extensions, and feature requests, OMIO is designed to evolve alongside emerging acquisition systems while preserving strict semantic guarantees at the interface level. The resulting standardized OME-TIFF outputs are immediately suitable for downstream quantitative analysis and interactive inspection in scientific Python workflows, including workflows based on ImageJ and Napari.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731118v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Folding the unfoldable 2: using AlphaFold and ESMFold to explore spurious proteins</h2>
-<p class="paper-authors">Orr, A. K., Bateman, A.</p>
+<h2 class="paper-title">DModE: An end-to-end framework for Differential Modification and Expression Analysis of Nanopore direct RNA sequencing data</h2>
+<p class="paper-authors">Miedema, J., Pastore, S., +7 authors, Gerber, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Spurious protein sequences, resulting from gene prediction errors, theoretically should not yield folded structures. AlphaFold2 was previously shown to predict short spurious sequences with high pLDDT scores and was therefore unlikely to distinguish between real proteins and spurious proteins which are usually short. We evaluate whether newer structure prediction methods (ESMFold and AlphaFold3) similarly predict short sequences with high pLDDT or if they better discriminate between spurious and real proteins. Results: All three structure prediction methods (ESMFold, AlphaFold2, and AlphaFold3) predict short spurious sequences from AntiFam with unexpectedly high pLDDT scores, however the discrimination between spurious and real proteins improves beyond 100 amino acids. By analysing sequences with disparate pTM and pLDDT scores, we identified two likely spurious shadow ORFs in Swiss-Prot and one potentially non-spurious AntiFam entry. Using the structure prediction scores, we developed a Gaussian Process Model and evaluated its performance on AlphaFold DB, identifying potential spurious proteins at scale. While limited on its own, this model can increase confidence in spurious protein identification when combined with other methods.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.728211v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Summary: Nanopore direct RNA sequencing (DRS) enables simultaneous quantification of transcript abundance and RNA modifications from native RNA molecules, providing a unique opportunity to study transcriptional and epitranscriptomic regulation within a single experiment. However, comprehensive analysis of DRS data remains challenging, as existing workflows typically focus on individual processing steps and often require manual integration of multiple software packages for expression analysis, modification detection, statistical testing, and visualization. Furthermore, integrated differential expression and differential RNA modification analysis at both gene and isoform resolution remains poorly supported by current workflows. Here, we present DModE (Differential Modification and Expression Analysis), an end-to-end framework for integrated analysis of Nanopore DRS data. DModE combines an Epi2ME-compatible Nextflow preprocessing workflow with a dedicated Python package for downstream statistical analysis, visualization, and reporting. The framework supports differential gene and isoform expression analysis, differential RNA modification analysis at genome and transcript level, metagene profiling, exploratory epitranscriptomic analyses, and integrated assessment of relationships between expression and modification dynamics. Results are automatically summarized in interactive HTML reports, facilitating reproducible and accessible data interpretation. By integrating transcriptomic and epitranscriptomic analyses within a single framework, DModE substantially simplifies comprehensive DRS data analysis and lowers the barrier for studying RNA modification biology using Nanopore sequencing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731112v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Pseudoperplexity Probes Memorization in Protein Language Models</h2>
-<p class="paper-authors">Plaikner, A., Ploner, M., +5 authors, Rost, B.</p>
+<h2 class="paper-title">DyMoTree decodes early cell state transitions and drivers from single-cell transcriptomes using a tree-structured neural network</h2>
+<p class="paper-authors">Wang, J., Xu, Y., +5 authors, Wang, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein Language Models (pLMs) have significantly advanced computational biology. Yet their scale and reliance on redundant training data raise a fundamental question: do pLMs generalize the statistical grammar of proteins, or do they simply memorize their training data? To investigate this, we used pseudoperplexity as a probe for sequence-level memorization, comparing ProtT5's pseudoperplexity on a pre-training proxy dataset against a post-training holdout of genuinely novel sequences. To ensure a valid comparison, we matched the datasets by sequence length, cluster size, and taxonomic family. As a statistical baseline, we trained n-gram language models; analysis of higher-order n-gram composition and a statistically significant divergence in perplexity confirmed that the post-training sequences were genuinely novel at the local sequence level. ProtT5 showed a statistically significant difference in pseudoperplexity between seen and unseen sequences, though further analysis revealed this memorization signal to be modest. These findings suggest that ProtT5 exhibits detectable but limited memorization of its training data as measured by a pseudoperplexity-based probe.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.08.730685v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Inferring early cell fate from single-cell RNA-sequencing data is essential for identifying cellular origins and fate plasticity in development and disease. However, existing methods often fail to exploit tree-structured lineage trajectories, limiting the accuracy and interpretability of fate mapping. Here we present DyMoTree, a computational framework that models cell fate decisions as nonlinear mappings between progenitor and terminal cell states under explicit lineage constraints. By integrating lineage graphs with a tree-structured neural architecture, DyMoTree learns lineage-resolved cell-state transition maps from single-cell transcriptomes, enabling robust inference of early fate bias and identification of fate-specific progenitor substates and driver genes. Across simulations, lineage-tracing experiments, and in vivo systems, DyMoTree outperformed existing methods in resolving early fate biases. Applications to mouse embryogenesis, lung adenocarcinoma progression, and CAR-T immunotherapy revealed regulatory programs underlying developmental and disease-associated transitions. DyMoTree provides a general framework for modeling lineage-resolved cell-state dynamics underlying development and disease progression.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731114v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">GEOAgent: An AI-driven Autonomous Framework for Intelligent GEO Data Retrieval and Standardized Preprocessing</h2>
-<p class="paper-authors">Zhao, Y., Cai, Q., +1 author, Chen, J.</p>
+<h2 class="paper-title">A systematic imputation framework for sparse, multimodal space biology datasets: application to retinal imaging and omics from the RR9 mission</h2>
+<p class="paper-authors">Nagesh, V., Sanders, L., +9 authors, Gong, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Datasets in the Gene Expression Omnibus (GEO) remain difficult to reuse at scale because sample annotations are heterogeneous and raw sequencing data require assay-specific preprocessing. We present GEOAgent, an AI-driven autonomous framework designed for intelligent dataset retrieval and standardized preprocessing by coupling autonomous semantic governance with an automated Nextflow pipeline named bioStream. Metadata from 181,760 sequencing series and 84,756 associated PubMed records were organized in a relational database and semantic index to support natural-language dataset retrieval. The framework automatically determines assay modalities, resolves experimental design pairings, and standardizes sample naming to minimize manual curation overhead. Based on these parsed attributes, the framework generates deployment-ready manifests to automatically execute containerized workflows across bulk and single-cell omics modalities. In expert-curated benchmarks, the workflow achieved 96% retrieval precision alongside 100% accuracy in assay classification and sample relationship resolution. The web platform is publicly accessible, while the source code and associated databases are openly available via GitHub and Zenodo.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.06.730646v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Space biology experiments are expensive, logistically complex, and inherently limited in sample size, resulting in datasets that are frequently incomplete and highly heterogeneous (2). Missing data is a fundamental barrier to building reliable computational models of how the human body responds to spaceflight. This work introduces a systematic framework for addressing missing data through imputation. We developed a validated four-stage framework for imputation specifically designed to preserve biological signal needed for digital twin development, while quantifying trade-offs in downstream analyses. Using retinal imaging and omics data from the NASA RR9 mission as a case study (9), we demonstrate how to diagnose why data is missing(10), select and optimize appropriate imputation strategies (5,10), and rigorously evaluate whether imputed data remains biologically meaningful. A key finding of this work is that while imputation substantially improves the performance of predictive models, it can simultaneously obscure subtle biological patterns; a critical trade-off that researchers must understand before applying these methods (11). This framework provides practical, actionable guidance for space biologists and data scientists working with sparse, multimodal datasets in space biology, and represents a foundational step toward more complete and reliable data-driven models of human physiology in extreme environments.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.730965v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Promera: a unified model for biomolecular structure prediction, filtering, and design</h2>
-<p class="paper-authors">Jing, B., Bafna, M., +2 authors, Berger, B.</p>
+<h2 class="paper-title">PhyloZoo: a unified framework for phylogenetic network analysis in Python</h2>
+<p class="paper-authors">Holtgrefe, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Generative models have become staple tools for modeling and designing biomolecular structures. However, although these tools have improved in structural prediction accuracy, their ability to filter designed binders---an essential use case---remains insufficient; whereas design methods have focused more on unconstrained binder generation rather than capabilities enabled by controllable design. We introduce Promera, a unified generative model that combines all-atom structure prediction with improved filtering and controllable design. We find that Promera's confidence metrics are more accurate for filtering binders from non-binders for both miniproteins and nanobodies, while its co-folding performance surpasses popular open-source models (OpenFold3-p2, Boltz-2) on therapeutically relevant categories. As a design model, Promera generates binders by predicting masked protein sequences with optional epitope, paratope, and template constraints. Remarkably, our nanobody designs match the in silico success rates from backprop-based techniques (mBER) when evaluated under co-folding confidence filters. We further provide two in silico demonstrations of the the versatile capabilities of our design method: epitope targeting of the Andes hantavirus glycoprotein with VHHs and active state stabilization of the beta-2 andrenergic GPCR. We conclude by proposing a scaling law for co-folding models, suggesting a path for further performance improvement.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.07.729267v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Reticulate evolutionary processes (events in which lineages merge, such as hybridization, recombination, and horizontal gene transfer) are widespread across nature but cannot be represented by phylogenetic trees alone. Phylogenetic networks have therefore become an important modelling tool, yet existing software is typically tied to specific inference paradigms and provides limited support for working with multiple network representations in a unified and programmable environment. PhyloZoo is an open-source Python framework that lowers the barrier to developing practical, easy-to-use software for phylogenetic network analysis. It provides data structures and algorithms covering the main representations used in the field, together with dedicated visualization tools and robust I/O for all major phylogenetic file formats. A particular emphasis lies on semi-directed phylogenetic networks, which explicitly represent root uncertainty and have so far received limited support in existing software. By offering a shared foundation for developing interoperable tools and a combinatorial layer that supports computational proofs and theoretical exploration, PhyloZoo enables reproducible workflows for applied, methodological, and theoretical studies of reticulate evolution. Availability and implementation: PhyloZoo is implemented in Python and installable from PyPI, with source code, documentation, and examples available at https://github.com/nholtgrefe/phylozoo.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731120v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">When batch correction corrupts gene expression: uncovering distortions in correlation structures</h2>
-<p class="paper-authors">Nourisa, J., Passemiers, A., +1 author, Raimondi, D.</p>
+<h2 class="paper-title">A quantitative coordinate system for developmental dynamics</h2>
+<p class="paper-authors">Wang, J., Ren, J., +4 authors, Marioni, J. C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Batch correction is essential for integrating datasets and enabling population-level insights into health and disease. Embedding-based approaches are among the most widely used solutions, but here we highlight a critical, overlooked limitation: these methods can distort feature-to-feature (e.g., gene gene) relationships, potentially undermining downstream analyses. We investigate this issue and introduce a novel metric to quantify it.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.06.729466v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Quantitative comparison of morphogenesis across individuals remains a fundamental challenge, as developing embryos vary in shape, orientation and developmental tempo. Moreover, real-time three-dimensional imaging generates large, heterogeneous four-dimensional datasets that are difficult to directly align. As a result, developmental variability is typically described qualitatively rather than measured. Here we introduce STERN, a quantitative framework that learns continuous spatiotemporal representations of morphogenesis directly from in vivo 4D imaging data. By embedding embryos into a shared spatiotemporal space, STERN defines a quantitative developmental coordinate system that enables direct comparison of developmental trajectories across individuals without requiring explicit registration or staging. Applied to mouse embryogenesis, STERN reveals that embryos follow conserved developmental trajectories while progressing at distinct temporal rates, providing a quantitative measure of developmental heterochrony. Extending this framework to zebrafish neural crest light-sheet timelapse imaging, we further show that developmental order is preserved across distinct imaging views even with altered anatomical coverage, supporting the generality of the learned representation across vertebrate imaging contexts. Finally, in developing mouse hearts, where morphogenesis proceeds through subtle and continuously evolving structural changes, STERN resolves fine-scale developmental dynamics at minute-scale temporal resolution that are difficult to localize reproducibly using human experts or general-purpose multimodal AI. Together, these results establish a shared quantitative coordinate system for morphogenesis, in which developmental trajectories become directly comparable across individuals and developmental variability becomes a measurable property.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.730858v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,34 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Unified Spatial AI Framework for Cross-Domain Tissue-State Analysis in Trauma, Oral, and Cardiovascular Pathology</h2>
-<p class="paper-authors">Pham, T. D.</p>
+<h2 class="paper-title">Amylo-Pipe: an integrated web server for mechanistic and kinetic prediction of protein and peptide aggregation</h2>
+<p class="paper-authors">Rawat, P., Ramakrishnan, P., +3 authors, Gromiha, M. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective: To develop a cross-domain spatial AI framework for identifying conserved tissue-state organisation across trauma, oral disease, and cardiovascular tissue using spatial transcriptomic data. Methods: Four public spatial transcriptomic datasets spanning wound healing, periodontitis, oral squamous cell carcinoma, and cardiac tissue were integrated using recurrence modelling, graph-based spatial learning, fuzzy tissue-state analysis, and tensor decomposition. Cross-domain coupling, spatial fragmentation, recurrence structure, and permutation-based topological validation were evaluated. Results: Six conserved fuzzy tissue states were identified, dominated by extracellular matrix remodelling, fibroblast/stromal activation, endothelial signalling, and inflammatory pathways. Latent embedding analysis demonstrated strong overlap between trauma and oral domains, while cardiovascular tissue exhibited more compact spatial organisation. Oral inflammatory tissue showed the highest fragmentation, whereas cardiovascular tissue demonstrated greater recurrence coherence. Tensor decomposition identified conserved stromal-remodelling programmes across domains. Permutation testing confirmed significantly elevated graph modularity and reduced spatial entropy relative to null distributions. Conclusion: The proposed framework identified conserved spatial tissue-state architecture linking wound healing, oral pathology, and cardiovascular tissue despite differences in tissue origin, pathology, and acquisition technology. Significance: These findings demonstrate the potential of spatial AI for investigating conserved stromal and inflammatory microenvironmental organisation across clinically related disease systems and may support spatial biology research in trauma--oral--systemic health.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.07.730662v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">APOSM: Pairwise preference learning improves generative small-molecule design</h2>
-<p class="paper-authors">Dreisler, M. W., Michael, R., +1 author, Boomsma, W.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Small-molecule lead refinement is constrained by the cost of synthesizing and assaying candidates, making the surrogate models that prioritize compounds for experimental testing central to the design process. The reliability of such surrogates is limited by the noise and sparsity of screening measurements. We show that training the surrogate on pairwise comparisons between candidate molecules, rather than on absolute predicted scores, yields a substantially more reliable signal for active candidate selection in this regime. We develop APOSM, an active-learning algorithm that combines a fragment-based generator, a pairwise message-passing graph neural network surrogate, and probabilistic ranking inside a batched acquisition loop. On the Practical Molecular Optimization benchmark and a GPCR ligand rediscovery task, APOSM improves target attainment and sampling efficiency over unguided fragment-based optimization, the Graph-GA genetic algorithm, and a pointwise-regression ablation, with the largest gains on tasks where absolute scores are hardest to calibrate.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.06.730554v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein aggregation is central to amyloid-related disorders and remains a major developability challenge for protein therapeutics. Over the past two decades, significant advances have been made to predict aggregation-prone regions (APRs) and estimate aggregation propensity in proteins and peptides. In contrast, the prediction of aggregation kinetics has received relatively less attention due to the limited availability and heterogeneity of experimental data. Consequently, aggregation propensities from APR prediction algorithms were widely accepted as a means to predict relative changes in the aggregation kinetics of proteins and mutants. Previous studies have demonstrated, using large-scale datasets, that aggregation propensity shows a weak or inconsistent correlation with aggregation kinetics. In the present study, we have integrated complementary state-of-the-art mechanistic and kinetic prediction tools for protein aggregation into a unified, user-friendly web framework entitled "Amylo-Pipe". Amylo-Pipe also implements practical features that are especially useful for protein engineering, such as gatekeeper-residue mutational scanning to support the design of aggregation-resistant variants. By consolidating multiple prediction tasks in a single interface, Amylo-Pipe enables a more comprehensive assessment of aggregation behavior than APR-only workflows. The web server is freely accessible at: https://web.iitm.ac.in/bioinfo2/amylopipe/.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731090v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,34 +222,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 10, 2026</span>
+<span class="date">Jun 11, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">The Intelligence Revolution in Biosensing: Transforming Raw Data into Smart Clinical Diagnostics.</h2>
-<p class="paper-authors">Omar Ramadan, Hassan A Rudayni, +5 authors, Ahmed A Allam</p>
+<h2 class="paper-title">Immunoediting restricts clonal neoantigens in primary, treatment-naive human tumors.</h2>
+<p class="paper-authors">Elizabeth S Borden, David Castellano, +12 authors, Karen Taraszka Hastings</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Artificial intelligence (AI) is revolutionizing nanobiotechnology-enabled biosensing by combining advanced nanomaterials with intelligent data analytics to create next-generation diagnostic platforms. This review summarizes recent progress in AI-integrated nano-biosensors, highlighting the contributions of functional nanomaterials such as graphene, carbon nanotubes, metal oxides, quantum dots, and hybrid nanocomposites in enhancing sensitivity, selectivity, and signal transduction. Machine learning and deep learning techniques, including support vector machines, random forests, convolutional neural networks, and transformer-based models, are examined for their roles in feature extraction, noise reduction, and multi-analyte prediction from complex biological samples. The synergy between nanomaterial properties and AI-driven optimization has facilitated the development of real-time, miniaturized, and wearable diagnostic devices. Applications in cancer, metabolic, infectious, and neurological disease diagnostics are critically reviewed, demonstrating improved analytical performance, ultralow detection limits, and enhanced diagnostic accuracy. Emerging technologies such as edge AI, federated learning, explainable AI, and self-powered nanosystems are also discussed for their potential in decentralized and personalized healthcare. Challenges related to data quality, nanomaterial reproducibility, scalability, and regulatory approval remain significant barriers to clinical translation. Nevertheless, the integration of AI and nanobiotechnology offers a powerful framework for developing intelligent biosensing systems and advancing modern analytical and clinical diagnostics.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42267474/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Apr 09, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Efferocytosis-related biomarkers and immune infiltration in pancreatic ductal adenocarcinoma based on single-cell sequencing and machine learning: a comprehensive bioinformatics analysis and experimental validation.</h2>
-<p class="paper-authors">Shaoyang Huang, Dandan Gu, Wei Xiong</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Pancreatic ductal adenocarcinoma (PDAC) is a highly invasive and lethal malignancy, with its complex tumor microenvironment (TME) severely limiting therapeutic efficacy. Efferocytosis, a key process by which macrophages clear apoptotic cells, has been demonstrated to influence tumor initiation and progression by modulating immune responses, promoting M2 polarization, and facilitating immune evasion. Yet, the function and predictive significance of genes linked to efferocytosis in PDAC are still not fully understood.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41966742/" target="_blank">
+<p><strong>Abstract:</strong> T cell targeting of cancer cells alters the tumor antigen landscape in preclinical models. Here, we examined the impact of immunoediting on the antigenic landscape of primary, treatment-naive human tumors. Cutaneous squamous cell carcinoma tumors from immunocompetent and immunosuppressed patients revealed consistent tumor mutational signatures; however, high-immune-infiltrate tumors from immunocompetent patients had lower overall mutational burdens and lower clonal mutational burdens compared with low-infiltrate tumors from immunocompetent patients and tumors from immunosuppressed patients. The lower clonal mutational burden in high-immune-infiltrate tumors from immunocompetent patients persisted after accounting for tumor purity and growth rate. Predicted neoantigen: major histocompatibility complex (MHC) class I binding affinity decreased with increasing variant allele frequency, demonstrating restriction of mutations encoding MHC-binding neoantigens. Neoantigens with features shared with validated immunogenic neoantigens were decreased in clonal relative to subclonal cancer cell populations in high-immune-infiltrate tumors from immunocompetent patients. Thus, the immune system restricts cancer cells expressing immunogenic antigens from clonal populations in primary, treatment-naive human tumors.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42276071/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
