@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ProMiSE: Protein Multi-State Evaluation Benchmark in Biological Contexts</h2>
-<p class="paper-authors">Ku, B., Kim, S., +2 authors, Seok, C.</p>
+<h2 class="paper-title">PertDiffBench: Benchmarking Diffusion Models for Single-Cell Perturbation Response Prediction</h2>
+<p class="paper-authors">Song, Z., Xiang, Y., +4 authors, Xie, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteins are inherently dynamic, with biological functions often emerging from transitions between multiple conformational states. While recent breakthroughs have largely addressed the static structure prediction problem, no systematic benchmark exists to demonstrate how well current models capture functionally relevant dynamics. We introduce ProMiSE, the first benchmark that provides both a dataset and an evaluation scheme, based on native biological assemblies and integrating major conformational change mechanisms - intrinsic, ligand-induced, and protein-induced - within a single curated dataset. We conducted a comprehensive evaluation of state-of-the-art structure prediction models, including AlphaFold3 and recent generative approaches. Our findings reveal that current models exhibit a limited ability to sample intrinsic multi-states and are often insensitive to biological context in induced scenarios. Internal representation analysis suggests that training-data exposure can shift predictions toward dominant conformational states over alternative biologically relevant states, primarily at the structure module. In contrast, results from BioEmu indicate that reducing decoding-stage bias can substantially improve multi-state sampling without major changes to upstream pair representations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731790v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Diffusion models are increasingly used to predict transcriptional responses to perturbations, but whether they improve on simpler generative and representation-based baselines remains unclear. Existing evaluations often do not separate the effects of model architecture, input representation, biological context and metric choice, making it difficult to determine where diffusion-based methods are useful. Here we introduce PertDiffBench, a standardized benchmark for diffusion-based transcriptomic perturbation prediction across single-cell and bulk RNA-seq datasets. PertDiffBench evaluates diffusion-based models across three complementary evaluation settings: standard prediction in known single-cell contexts and bulk perturbation conditions, generalization to unseen cell types, species, drugs and intermediate time points, and stress tests of feature dimensionality, input representation, noise type and gene ordering. Across these settings, diffusion models did not show a consistent advantage. scGen remained a strong baseline in common prediction tasks, whereas scDiffusion was the most competitive diffusion-based method in several generalization settings. Temporal imputation showed a different pattern, with a simple DDPM operating directly in expression space outperforming more specialized models. Stress tests showed that performance was model dependent and sensitive to feature dimensionality, encoder choice, noise type and gene ordering. Pretrained encoders did not consistently improve performance, with the classical scVI representation slightly exceeding STATE in seen-condition and unseen-cell-type settings. These results indicate that diffusion-model performance in perturbation response prediction depends strongly on task design and representation choice. PertDiffBench provides a practical framework for evaluating these models under biologically varied and stress-tested conditions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.13.732013v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Computational Design of Optimal Sequences for Targeted Hypermutagenesis Using Recombination-Coupled Diversity-Generating Retroelements</h2>
-<p class="paper-authors">Regnier, L., Rochette, P., +3 authors, Cocco, S.</p>
+<h2 class="paper-title">Reinforcement learning-driven unified generative framework for multi-objective RNA codon design</h2>
+<p class="paper-authors">Lin, S., Tan, H., +4 authors, Xiong, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Diversity-generating retroelements (DGRs) are natural systems that accelerate evolution via targeted hypermutation at adenines. We previously developed DGRec, a system combining DGRs and recombineering for programmable mutagenesis in Escherichia coli. We here address two important issues with DGRec: the dependence of mutagenesis efficiency on the dgrRNA secondary structure and the variability of the reverse-transcription biases with sequence context and position. First, we introduce and validate a method to recode non-functional templates, i.e. with low mutagenesis efficiency, into highly functional ones through synonymous mutations. Second, we develop a Long Short-Term Memory (LSTM) model to predict DGRec mutational profiles for any given template sequence. By integrating this LSTM model with our recoding method, we establish a comprehensive workflow for customized directed evolution, enabling researchers to precisely fine-tune DGRec in vivo mutagenesis to their engineering needs.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731847v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Current RNA codon design methods are limited by inefficient long-sequence processing and poor generalizability, often relying on a decoupled "generate-or-optimize" paradigm. We introduce RNARL, a reinforcement learning-driven framework that unifies sequence generation with multi-objective optimization. RNARL directly learns to generate high-performance sequences, effectively optimizing sequences over 3,900 nucleotides and demonstrating superior performance and universality across six species and five RNA types. RNARL thus establishes an effective and generalizable framework for RNA codon design. Finally, a user-friendly web platform is freely available to facilitate its application for RNA therapeutic design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.732012v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Graph-based QSAR Modeling Pipeline for Predicting In vitro PubChem Assays and In vivo Human Hepatotoxicity: Mechanistic Analysis of Caspase-3/7 Activation</h2>
-<p class="paper-authors">Chitikela, Y., Zhu, c., Jia, Z.</p>
+<h2 class="paper-title">ProtAff: Protein Binding Affinity Prediction via LoRA-Finetuned ESM-2</h2>
+<p class="paper-authors">Chu, L.-S., Vogt, J., +1 author, Gray, J. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731399v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Predicting the binding affinity of protein--protein interactions remains a central challenge in computational biology. Structure prediction models such as AlphaFold3 (AF3) and Boltz-2 can produce high-quality docking poses, and their confidence scores indicate structure quality, but these same scores fail to rank binding affinity among confirmed binders. Here we present ProtAff, a sequence-only affinity prediction model built on ESM-2 (650M parameters) with low-rank adaptation (LoRA) fine-tuning and a cross-attention module. ProtAff is trained using a margin ranking loss on 362,567 affinity measurements spanning 20 heterogeneous data sources, and we removed all training samples whose target sequence exceeds 50% similarity to the test target EGFR. On the AdaptyvBio EGFR benchmark (N = 55), ProtAff achieves a Spearman correlation coefficient {rho} = 0.413, outperforming the best AF3 metric ({rho} = 0.054), the best Boltz-2 metric ({rho} = -0.046), and ML-based predictors MINT ({rho} = 0.242) and CrossAffinity ({rho} = 0.216). Applied to the AdaptyvBio Nipah virus binder design competition, a pipeline incorporating ProtAff for affinity ranking produced a design with KD = 0.132 nM (2 of 5 designs confirmed binding), a 2.8-fold improvement over the competition winner. On a cross-target discrimination benchmark of 91 VHH-antigen crystal structures, ProtAff underperforms structural methods for distinguishing cognate from non-cognate pairings, indicating that sequence-based affinity models are effective for within-target ranking but not for cross-target specificity.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.13.732058v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CAREPath: Semantic Context-Aware Reasoning Paths with Mechanism-Augmented Embeddings for Drug Repurposing</h2>
-<p class="paper-authors">song, h., bang, d., koo, b., Kim, S., lee, s.</p>
+<h2 class="paper-title">MoE-Bind: Guiding De Novo Protein Binder Generation with Sparse Experts</h2>
+<p class="paper-authors">Sarkar, D., Sarkar, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Biomedical knowledge graphs (BKGs) that include drugs, genes, and diseases support drug repurposing by connecting drugs to diseases through gene-mediated multi-hop paths, thereby enabling mechanism-of-action reasoning. However, deeper traversal does not necessarily improve mechanistic reasoning: long paths grow combinatorially and frequently pass through hub genes, producing irrelevant gene regulatory signals, whereas overly constrained or sparse paths may miss broader biological context. We propose CAREPath, a KG-LLM framework inspired by depth-first search (DFS)-like and breadth-first search (BFS)-like reasoning to balance mechanistic specificity, scalability, and context recovery. The DFS-like module constrains traversal to short disease-gene-drug paths, converts each path into a structured prompt, and encodes it with a biomedical language model to generate semantic path embeddings. Complementarily, the BFS-like module constructs entity-level mechanism-context embeddings from one-hop gene neighborhoods and enriches them through similarity-guided augmentation using pharmacologically related drugs and gene-signature-similar diseases. Across five biomedical KGs, CAREPath achieves the best overall AUPRC among 18 baselines, improving performance by up to 3.8%. Additional analyses show that semantic short-path encoding contributes most to performance, while mechanism-context augmentation improves robustness under sparse evidence and strengthens Gene Ontology functional agreement. Case studies and recently FDAapproved indications further demonstrate its practical relevance, positioning CAREPath as an interpretable framework for scalable and mechanism-aware drug repurposing. Source code is available at https://github.com/hamppy-song/CAREPath.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.731247v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> De novo protein binder design has been dominated by structure-based pipelines that require known three-dimensional target conformations and consume substantial compute and generation time per design, limiting their throughput and accessibility for routine large-scale binder exploration. Sequence-only generative models promise a faster and lighter alternative, yet existing systems remain uniformly dense and frequently reintroduce structural computation at inference, undermining the core advantages they were intended to deliver. Across the broader language modelling community, transformers have meanwhile transitioned from fully dense designs to sparse Mixture-of-Experts architectures that decouple capacity from per-token compute, a shift that has yet to reach sequence-only protein binder generation. We present MoE-Bind, an autoregressive protein binder generator that, for the first time in this domain, combines Multi-head Latent Attention with a sparse Mixture-of-Experts feed-forward network and is evaluated under two independent structure predictors, Boltz-2 and AlphaFold2-Multimer. Despite activating less than half the per-token parameters of compute-matched dense baselines, MoE-Bind matches or exceeds them on full-length receptor-conditioned binder generation on a leakage-free Docking Benchmark 5.0 evaluation, transfers without peptide-specific training to short-peptide design, and reduces training and inference compute by a large margin. Routing analysis on generated binders reveals interpretable expert specialization at both the individual amino acid and biochemical group level, a structured expert-token alignment not previously reported for natural-language MoE models. These results show that sparse architectural design, rather than scale, can deliver fast, structure-free, and interpretable protein binder generation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.13.732043v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Evaluating cell type annotations in single-cell omics in the absence of ground truth</h2>
-<p class="paper-authors">Garnica, J., Andreatta, M., Carmona, S. J.</p>
+<h2 class="paper-title">ADMETron: An AI-driven SaaS platform for comprehensive ADMET prediction and compound prioritisation</h2>
+<p class="paper-authors">Nair, D. N., Yadav, R. S., +10 authors, Arora, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate cell type annotation is essential for single-cell transcriptomics, directly shaping downstream analyses and biological interpretations. Yet, objective evaluation of annotation quality remains a major challenge. Here, we argue that a cell type or cell state label has practical utility only if it captures a molecular pattern that is reproducible across biological replicates. Based on this principle, we introduce inter-sample consistency (ISC), a quantitative framework to assess annotation quality in single-cell RNA-seq datasets. Unlike existing cluster validation approaches, ISC distinguishes annotations that generalize across samples and individuals from those driven by technical or unwanted variation, thereby providing principled criteria for annotation quality and transferability. When applied to published single-cell atlases, ISC reveals widespread reproducibility gaps and provides actionable guidance for repairing inconsistent annotations. Notably, ISC enables benchmarking of automated cell type annotation tools even when ground-truth labels are unavailable, providing interpretable metrics to guide their development and evaluation. Implemented as the scTypeEval Bioconductor package, this framework offers a broadly applicable resource for evaluating and improving cell type annotations in single-cell RNA-seq experiments.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731285v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> ONTOSIGHT(R) ADMETron is an AI-driven platform designed for rapid prediction and visualization of Absorption, Distribution, Metabolism, Excretion, and Toxicity (ADMET) properties to support modern drug discovery. The platform integrates an interactive web interface with a scalable predictive engine, enabling high-throughput virtual screening and batch analysis of chemical compounds. Its core architecture combines recurrent neural network (RNN)-derived molecular embeddings from SMILES representations with physicochemical descriptors, which are subsequently modeled using gradient boosting machines (GBMs). This framework provides predictions across 34 ADMET endpoints, including physicochemical properties, absorption, CYP450 interactions, hERG liability, and mutagenicity. The predictive performance of ADMETron was evaluated using benchmark datasets from the Therapeutics Data Commons (TDC), demonstrating strong performance and generalizability across both classification and regression tasks. Beyond predictive modeling, the platform introduces an interactive radar graph-based structure-activity relationship (SAR) visualization framework that enables real-time comparison of multiple compounds and reference drugs across selected ADMET parameters. This feature facilitates intuitive interpretation of multidimensional molecular profiles and supports lead optimization and compound prioritization. Comparative assessment against widely used online ADMET tools further demonstrated broad endpoint coverage spanning pharmacokinetic, physicochemical, toxicity, and medicinal chemistry properties within a unified environment. Together, these capabilities establish ADMETron as a comprehensive platform for ADMET assessment and data-driven decision-making in drug discovery. (https://admetron.partex.ai/).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.13.732026v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PeptiDIA: A Machine Learning Framework for Enhanced Peptide Identification in Fast-Gradient Data-Independent Acquisition Proteomics</h2>
-<p class="paper-authors">Ortona, J., Leclercq, M., +3 authors, Droit, A.</p>
+<h2 class="paper-title">Testing the reliability of AI-generated protein structures</h2>
+<p class="paper-authors">Xu, A., Salzberg, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Data-independent acquisition (DIA) mass spectrometry has become increasingly prevalent in proteomics as advances in instrumentation, chromatography, and computational analysis have enabled robust proteome identification across complex biological samples. However, analytical depth achieved with fast chromatographic gradients remains lower than that obtained using long-gradients, reflecting a throughput-depth trade-off. Here, we present PeptiDIA, a machine learning framework that enhances peptide identification in fast-gradient DIA data by leveraging paired fast and long-gradient acquisitions from identical samples. PeptiDIA processes DIA-NN outputs generated at relaxed false discovery rate thresholds to obtain expanded candidate peptide pools and trains gradient-boosted decision tree models using long-gradient identifications as reference labels. The model integrates DIA-NN features with engineered peptide descriptors and applies isotonic regression to calibrate probabilities, enabling controlled peptide recovery relative to the long-gradient reference. Applied to human and murine datasets spanning six tissues acquired on an Orbitrap Exploris 480, PeptiDIA increased peptide identifications by 25-34% at 1% target reference-discordance rate (RDR) and increased the number of protein groups containing at least one rescued peptide by 15-17%. Overall, PeptiDIA improves the identification depth of fast-gradient DIA-NN workflows without altering acquisition strategies. The framework is available as a web application and command-line tool at https://github.com/Jordano700/PeptiDIA.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731224v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Although AlphaFold2 and its competitors have demonstrated remarkable abilities to predict protein structure, more work is needed to explore the limitations of these methods. Here we investigated the reliability of AlphaFold2 and ColabFold by creating a set of realistic but false protein sequences, using ColabFold to predict their structure, and then asking how often the program produces a high-scoring structure for a sequence that does not represent a protein. We determined that AlphaFold2 has a very small but non-zero false positive rate, estimated here at approximately 1 in 435 if one uses a threshold pLDDT score of 70 to define positive predictions. We also discovered, serendipitously, that some high-scoring sequences in the human genome were not false positives, but instead were previously unknown and un-annotated pseudogenes. These latter findings indicate that some well-established human annotations of protein-coding genes may have incorrectly extended the 5-prime untranslated regions too far. They also suggest that the false positive rate of AlphaFold2 is low enough that almost any high-scoring structure, even in a noncoding region, is worthy of further investigation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731682v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,72 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">The Geometry of Allostery: A Laplacian Minor Hierarchy for Many-Body Protein Communication</h2>
-<p class="paper-authors">Senguler Ciftci, F., Erman, B.</p>
+<h2 class="paper-title">Virus-human protein-protein interactions predict viral phenotypes</h2>
+<p class="paper-authors">Zhang, Z., Feng, Y., +2 authors, Peng, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Quantifying how cooperative, many-body relationships drive allostery in protein networks remains a major challenge. To address this, we develop the Laplacian minor hierarchy, a mathematical framework that characterizes the geometric invariants of a protein network. Lower-order minors yield standard metrics including the partition function and effective distances, whereas higher-order minors define novel topological measures: cooperation indices, each bounded between zero and one, that characterize pathway correlations at increasing levels of complexity, the third-order minor determines whether allosteric pathways are correlated or uncorrelated, and the fourth-order minor quantifies how distinct pathways communicate through intermediary residues. We apply this framework to analyze the evolutionary adaptation of the PSD95pdz3 domain from Class I to Class II ligand specificity via mutations G330T and H372A. The cooperation index demonstrates a distinct evolutionary hierarchy: the G330T mutation establishes distributed pathway couplings that the H372A mutation subsequently exploits, whereas H372A alone produces minimal global changes. Furthermore, the fourth-order analysis identifies His317 as a critical intermediary node bridging the class-switching (330-372) and class-bridging (330-400) allosteric pathways. These results demonstrate that allosteric dependencies emerge only when mutations accumulate in specific combinations, with a hierarchical organization of pathways structured around position 330 and intermediary nodes His317 and Phe400. Rather than predicting allosteric mechanisms, this framework provides a mechanistic explanation for why and how allostery emerges during protein evolution.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731266v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Deciphering cross-omics complexity of tissues via diagonal integration of unpaired spatial multi-omics data</h2>
-<p class="paper-authors">Zhou, X., Kangning, D., +2 authors, Zhang, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Recent spatial multi-omics technologies enable the simultaneous in situ profiling of multiple omics modalities on the same tissue section; however, they face challenges in experimental complexity and high costs. This technical limitation can be circumvented by diagonal integration methods, which integrate omics data from different modalities. However, existing single-cell diagonal integration approaches overlook spatial information, causing unreliable anchoring across omics layers. Here, we introduce STAMO, a graph attention neural network model for spatially aware integration of unpaired spatial slices from different omics. Systematic benchmarking on spatial epigenome-transcriptome slices proves that STAMO outperforms the state-of-the-art methods in generating aligned embeddings and identifying consensus spatial domains across omics. We apply STAMO to integrate unpaired data from diverse spatial omics types (transcripts, epigenetics, DNA, and proteins), including slices from spatial RNA and four different epigenomic modalities, spatial ATAC and RNA slices across embryonic stages, spatial protein and RNA slices, and spatial DNA and RNA slices. In addition, the integration capability of STAMO can be further used to achieve cross-omics generation, offering a solution for exploring spatial region-specific gene regulatory mechanisms.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.09.730286v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DNA Compression with Genomic Language Models: Tokenization, Benchmarking, and an Information-Content Map</h2>
-<p class="paper-authors">Macala, V., Simecek, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Lossless compression and probabilistic sequence modeling are two faces of the same coin: a model that assigns high probability to a sequence can encode it in few bits via arithmetic coding. We exploit this duality to evaluate genomic language models as compressors of DNA, using compression primarily as an objective probe of generative sequence modeling rather than as a deployable storage system. We release DNAGPT2, a family of ten GPT-2-small models pretrained for one epoch on a single A40 using the DNABERT2 multi-species corpus that differ only in byte-pair encoding vocabulary size. Coupled with arithmetic coding, the best model reaches 1.47 bits per base (bpb) on the T2T human genome, fourth in the Cobilab compression benchmark and ahead of every general-purpose compressor. Our results suggest that NLP-style tokenization choices may be suboptimal for DNA: a 32-token BPE vocabulary compresses better than larger vocabularies. We also find that, in this benchmark, published long-context genomic LMs underperform a much shorter-context BPE GPT-2; we discuss in Section 5 that this is not a controlled context-length ablation, since the compared models also differ in architecture, training data, parameter count, and tokenization. Finally, we compute a per-nucleotide information-content map of the human genome and show that exons, introns, intergenic regions, and Alu repeats have statistically distinct information profiles.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731316v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 12, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">PHI-Reason: evidence-grounded species-level phage-host prediction from structured biological text profiles</h2>
-<p class="paper-authors">Zhang, Y.-z., Xu, L., Imoto, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Phage--host interaction (PHI) prediction is a fundamental problem in microbiology with applications in microbial ecology and microbiome engineering. Existing computational approaches typically convert phage and host information into numerical representations derived from sequence similarity, protein content, genome composition or reference databases, then score candidate hosts or train host-prediction models. Although effective, such representations often make it difficult to inspect which biological evidence supports a prediction. Here, we present PHI-Reason, a species-level PHI prediction framework that reformulates host prediction as constrained biological text reasoning. Instead of embedding phages and hosts directly as numerical vectors, PHI-Reason converts heterogeneous PHI-related evidence from phage genomes, host genomes, functional annotations, homology searches and biological metadata into modular natural-language profiles. A frozen large language model then performs species-level candidate-host ranking or pairwise PHI assessment by integrating the supplied evidence at inference time. Across species-level benchmarks, PHI-Reason achieved competitive host-prediction performance and recovered complementary correct assignments relative to established sequence- and reference-based methods. Its explicit profile design enabled systematic evidence perturbation and rationale-grounding analyses, showing that predictions depend on coherent multi-source biological evidence and that hallucination risk from unsupported or incomplete profiles can be made operationally measurable. These results position PHI-Reason as a constrained evidence-integration framework for species-level PHI prediction. Rather than replacing sequence-based predictors, it provides an interpretable layer that shows how far explicit biological evidence can support host inference, and where that evidence falls short.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.727770v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Viral phenotypes such as host and tissue tropism are critical determinants of viral infection and transmission. Inferring viral phenotypes presents unique challenges compared to cellular organisms, as viruses rely entirely on host machinery for replication and survival. Current methods for predicting viral phenotypes mainly rely on viral genomic data, often overlooking host-related information. Here, we evaluated the utility of predicted virus-human protein-protein interactions (PPIs) in inferring diverse viral phenotypes using machine-learning algorithms. For predicting human infectivity, a PPI-based machine learning model outperformed both virus genomic and protein sequence-based models that used large language model embeddings. It also surpassed previous methods that incorporated both viral and host genomic data. The human proteins identified by the model were significantly enriched in functions related to viral infection and immune response. In predicting various phenotypes of human RNA viruses, PPI-based models performed better than virus sequence-based models in forecasting virulence, human transmissibility and transmission routes, while showing comparable performance to genomic sequence-based models in predicting tissue tropism. Finally, we demonstrated that a PPI-based model could distinguish high-risk HPV genotypes from low-risk ones. Proteins associated with high-risk HPV were involved in apoptosis and immune regulation, whereas those linked to low-risk HPV were enriched in telomere maintenance and DNA repair. Collectively, this study is the first to demonstrate the value of predicted virus-human PPIs in inferring viral phenotypes, thereby enhancing our understanding of the molecular mechanisms underlying these phenotypes. It also provides effective tools for risk assessment of emerging viruses, contributing to improved pandemic preparedness.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.732009v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,53 +165,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 12, 2026</span>
+<span class="date">Jun 13, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrated proteogenomic and metabolomic profiling of acute myeloid leukemias to identify molecular subtypes and associated therapy targets.</h2>
-<p class="paper-authors">Shih-Chun A Chu, Yi Hsiao, +64 authors, Marcin P Cieslik</p>
+<h2 class="paper-title">Circulating DNA reveals nucleosome occupancy patterns that are associated with nucleosome-DNA affinity and are affected in cancer.</h2>
+<p class="paper-authors">Marianne Richaud, Ekaterina Pisareva, +2 authors, Jacques Colinge</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Acute myeloid leukemia (AML) is a genetically and phenotypically heterogeneous hematological malignancy. Here, to better define this clinically taxing and translationally challenging malignancy, we applied a multiomics approach, consisting of 13 modalities to analyze 173 treatment-naive individuals with AML. By integrating these 'omes', we identified distinct AML subtypes, genotype-phenotype associations, biomarkers and pathobiological mechanisms. Across the spectrum of primitive and committed AML, we found extensive metabolomic and lipidomic reprogramming driven by divergent MYC and mTOR activity. We linked metabolic changes to striking hyperacetylation of mitochondrial proteins in CEBPA-mutant AML. Protein-centric subtyping revealed a distinct NPM1-mutant subset characterized by outlier expression of FOXC1 and HOXB8/9. To nominate therapeutic targets across subtypes, we developed a multiomic machine-learning approach and validated MTA1 as a contributor to panobinostat resistance. Altogether our findings underscore the complex nature of AML and provide a clinically and translationally informed unified view that reveals coalescent phenotypes across multiomic layers.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42286338/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 12, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Cell-specific multi-target mechanisms of cotinine in cervical cancer oncogenesis and progression.</h2>
-<p class="paper-authors">Jiaming Cheng, Yiyang Shi, +1 author, Changsong Lin</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cervical cancer is the fourth most common malignant tumor in women globally, with tobacco smoke being a major environmental risk factor. The tobacco-specific metabolite cotinine may promote cancer progression through mechanisms such as chronic inflammation and genomic instability, but its precise molecular targets and interactions remain unclear.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42283742/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 10, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">PathTIGR: A pathway topology-informed graph representation learning framework for immunotherapy response prediction.</h2>
-<p class="paper-authors">Xiangmei Li, Yalan He, +6 authors, Junwei Han</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Immunotherapy has revolutionized cancer treatment, yet substantial inter-patient response heterogeneity limits therapeutic benefit to specific patient subsets. Here, we present PathTIGR, a pathway topology-informed graph representation learning framework that systematically integrates biological pathway network topology knowledge with genome variation information for immunotherapy response prediction. PathTIGR uses a three-component design: (i) pathway graph encoder with multihead attention embeding pathway topology knowledge and cancer genomic variants to pathway representation, (ii) transformer module capturing pathway regulatory dependencies, and (iii) multilayer perceptron synthesizing pathway-level representations to predict immunotherapy response. This architecture enables PathTIGR to capture complex molecular interactions underlying immunotherapy response. Comprehensive validation across multiple independent immunotherapy cohorts demonstrates that PathTIGR achieves superior predictive performance compared to established biomarkers and state-of-the-art deep learning approaches while maintaining biological interpretability through identification of key signatures underlying response heterogeneity. PathTIGR represents an interpretable graph-based learning framework that enhances immunotherapy response prediction and elucidates molecular determinants of therapeutic efficacy, thereby facilitating the advancement of precision cancer immunotherapy.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42268974/" target="_blank">
+<p><strong>Abstract:</strong> The study of cell-free circulating DNA (cirDNA) fragments (fragmentomics) from liquid biopsies has received increasing attention to detect biomarkers. CirDNA found in blood plasma originates from cells in diverse tissues with a predominance for hematopoietic cells. CirDNA fragments are associated with nucleosomes which protect them against DNAse degradation.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42286706/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
