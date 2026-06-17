@@ -36,11 +36,182 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Expanding gene regulatory networks from transcriptome data through graphical modeling with heterogeneous priors</h2>
-<p class="paper-authors">Kokaji, T., Suzuki, K. T., +1 author, Sakumura, Y.</p>
+<h2 class="paper-title">DMcloud: Macromolecular Structure Modeling Using Local Structure Fitting for Medium to Low Resolution cryo-EM maps</h2>
+<p class="paper-authors">Terashi, G., Wang, X., +3 authors, Kihara, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Gene regulatory network inference is widely used to reconstruct large-scale networks and identify functional genes from transcriptome data. Meanwhile, in many biological fields, core regulatory genes have been extensively studied, leading to the establishment of small-scale gene regulatory networks, and novel genes connected to these networks remain to be identified. However, methods for expanding existing gene networks by identifying novel regulatory interactions, rather than reconstructing the entire network, are not well established. Here, we propose a method for gene network expansion that incorporates known regulatory relationships and evaluates each candidate gene individually to infer its regulatory connections to the existing network. Using simulated datasets from the DREAM4 benchmark and the PRECISE-1K experimental dataset, our method outperformed conventional methods by incorporating prior knowledge. In particular, it improved the ability to distinguish true regulatory interactions from indirect associations arising from strong correlations among genes in the existing network. The method also showed strong performance for interactions involving genes with high outdegree or centrality. Furthermore, it maintained stable performance as the size of the existing network increased and was robust to noise in prior information. These results demonstrate that our method provides an effective framework for expanding existing gene regulatory networks by leveraging prior knowledge.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731835v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Cryogenic electron microscopy (cryo-EM) has become an essential experimental approach in structural biology for determining macromolecular structures. When the resolution of a cryo-EM map is worse than approximately 5[A], fitting known or predicted molecular models into the map becomes a common strategy for interpretation. However, accurately fitting biomolecular models into cryo-EM maps, particularly for large macromolecular complexes, remains challenging when the input structure models contain errors or are in a conformation different from that represented in the map. Here, we present DMcloud, a method for local structure fitting of proteins and nucleic acids in cryo-EM maps. Instead of forcing an entire input model into the map, DMcloud divides input structures into local regions, identifies regions that are supported by the density, removes unsupported regions, and assembles the retained regions into a final model. We benchmarked DMcloud on 176 cryo-EM maps, including intermediate and high-resolution maps that include proteins, DNAs, or RNAs. For EM maps in the 5.0-10.0 [A] and 2.5-5.0 [A] resolution ranges, DMcloud achieved average sequence modeling coverage of 0.49 and 0.70, respectively. For DNA/RNA maps, DMcloud achieved an average sequence coverage of 0.75. Across all datasets, DMcloud consistently outperformed existing methods in model accuracy, map-model correlation, and modeling coverage.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731990v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Phylogenetic tree inference using generative models</h2>
+<p class="paper-authors">Dotan, E., Schers, A., +2 authors, Belinkov, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate inference of phylogenetic trees is fundamental to evolutionary biology, yet existing methods rely on complex pipelines involving multiple sequence alignment, explicit evolutionary models, and computationally intensive tree search procedures. Here, we present BetaInfer, a generative framework that reformulates phylogenetic tree inference as a sequence transduction problem. BetaInfer leverages hybrid transformer-based architectures to directly map sets of unaligned sequences to phylogenetic trees represented in Newick format. Trained on large-scale simulated evolutionary data with known ground truth, BetaInfer learns to capture complex evolutionary signals directly from sequence data. Ensemble-based generation of multiple candidate trees further improves robustness, reducing reconstruction error by over 30% relative to single predictions. Across extensive evaluations on both simulated and empirical datasets, BetaInfer achieves competitive performance relative to state-of-the-art phylogenetic pipelines, matching, and in some cases exceeding, the accuracy of established likelihood-based and distance-based methods under a wide range of conditions. Interpretability analyses reveal that BetaInfer leverages internal pairwise-distance computations to synthesize evolutionary relationships into an integrated, global representation that supports direct tree generation. Together, these results demonstrate that generative models can serve as a viable and scalable alternative to standard phylogenetic pipelines.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.14.732140v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">AutoZyme: An Autonomous Agentic Framework to Optimize Bioinformatics Software</h2>
+<p class="paper-authors">Xie, E., Cheng, L., +2 authors, Kendziorski, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Performance bottlenecks in widely used genomics and bioinformatics software present a substantial and growing burden as biological datasets continue to increase in size and number. Relieving these bottlenecks relies largely on expert manual optimization and therefore remains difficult to scale. Here we present AutoZyme, an agentic framework for scientific software optimization. Given a target function, AutoZyme builds benchmarks, identifies bottlenecks, and iteratively tests code changes, retaining only those that improve runtime while preserving output. We evaluated AutoZyme on 45 functions, improving runtime without substantial memory increases in over 95% of cases considered. Across 38 functions from Seurat, Scanpy and related packages in genomics and bioinformatics, AutoZyme reduced runtime by a median of 8.52-fold, with the largest reductions exceeding 676-fold. The optimized functions are distributed through AutoZyme-Library as drop-in replacements for existing analysis pipelines. We also release AutoZyme as a reusable framework for optimizing additional user-specified packages and functions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731250v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Orion: Towards Lab Automation with Computer-Using Agents</h2>
+<p class="paper-authors">Ma, C., Trinh, L., +2 authors, Wang, H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Laboratory discovery increasingly depends on computational workflows that connect experimental data to analysis, interpretation and follow-up hypotheses. Yet these workflows remain constrained by labor-intensive use of specialized software, visual inspection through graphical user interfaces, and integration of knowledge across multiple sources. Here, we present Orion, a computer-using AI agent for biomedical image analysis and interpretation that moves towards lab automation by automating this computational layer of laboratory work. Orion combines large language models with terminal execution, GUI control and adaptive multi-step reasoning in a shared computing environment. It can inspect visual data, operate standard scientific software, mine web resources and conduct end-to-end analysis and interpretation workflows without requiring bespoke software integrations. Across benchmarks, Orion achieved over 90% accuracy on biomedical database and literature retrieval tasks, learned to use the popular tools CellProfiler and QuPath for quantitative analysis of cellular and tissue images, respectively, and facilitated autonomous discovery in experimental imaging data. In 100 hours of autonomous exploration of a large-scale perturbation imaging dataset, Orion generated 52 research reports, of which human scientist review prioritized 22 plausible mechanistic hypotheses. These results show that computer-using AI agents can substantially expand the reach of laboratory automation, providing a scalable and auditable route from experimental imaging data to quantitative analysis, reports and biologically grounded hypotheses.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.13.732095v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Evidence for recombination in dengue virus genomes</h2>
+<p class="paper-authors">de Paula Oliveira, H., Jacob Machado, D., +1 author, Ocana, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Recombination is a key driver of RNA virus evolution, yet its extent and evolutionary implications in dengue virus (DENV) remain incompletely understood. We conducted a comprehensive, genome-wide recombination screen across 6,905 complete DENV genomes representing all four serotypes, 82 countries, and eight decades of sampling (1944-2023) retrieved from the Bacterial and Viral Bioinformatics Resource Center. Using seven complementary recombination detection methods implemented in RDP5, we identified 66 recombination events across 53 unique recombinant sequences, of which 29 are newly described. Events included intra-genotypic (n = 18), inter-genotypic (n = 32), and inter-serotypic (n = 16) exchanges spanning 14 genotypes and four continents, with no meaningful serotype-level enrichment (Cramer's V = 0.054). Recombination was concentrated in non-structural genes, most frequently NS3 (19 events), NS5 (17), and NS2 (12), while the capsid gene contained no recombination events, consistent with strong functional constraint. Single-nucleotide polymorphism analyses confirmed low divergence between recombinants and their inferred parents in both recombinant and non-recombinant regions. Phylogenomic analysis of 6,642 sequences revealed that recombinants cluster significantly closer to their major parents (p = 8.9 x 10-6 ) and that their removal does not significantly alter tree topology (p = 0.898), suggesting that the short length of recombinant regions limits phylogenetic conflict. We also introduce RECOSIM, an unsupervised machine-learning tool for recombination detection that achieved higher precision than RDP5 on both simulated (93.4% vs. 80.0%) and empirical (98.1% vs. 39.3%) datasets. Collectively, these results establish recombination as a widespread, pan-serotypic phenomenon in DENV with implications for genomic surveillance, vaccine evaluation, and evolutionary inference.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.14.732057v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Programmatic access to ICTV virus taxonomy through a public ontology API</h2>
+<p class="paper-authors">Lieutaud, P., McLaughlin, j., +5 authors, Coutard, B.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The International Committee on Taxonomy of Viruses (ICTV) is responsible for developing and maintaining a universal virus taxonomy. As the reference framework for organising the viral world, it is essential for virology and related fields. Despite its widespread use in research and public health, programmatic access to ICTV taxonomy has remained limited, posing challenges for integration, versioning, and interoperability across databases and bioinformatics resources requiring up-to-date virus taxonomy. To address this, we developed a public and sustainable solution leveraging ontology-based APIs. Successive ICTV Master Species List (MSL) releases were transformed into a structured ontology and deployed as a unified representation through the Ontology Lookup Service (OLS). The framework also provides ICTV-NCBI mappings and helper libraries for integration into downstream systems. This enables, for the first time, public programmatic retrieval of current and historical virological taxon names, taxonomic relationships, metadata, and persistent identifiers through stable endpoints. More broadly, this work illustrates a general strategy for transforming structured biological datasets into semantically enriched graph resources exposed through scalable public APIs. These developments enhance interoperability, reduce manual curation, and support FAIR-aligned taxonomic data management in virology and pandemic preparedness.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732600v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrative Transfer Network: Deep Transfer Learning Across Populations and Prediction Targets</h2>
+<p class="paper-authors">Gao, Y., Cui, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Large-scale clinical and biomedical datasets increasingly contain both diverse subgroup attributes (e.g., demographic or clinical subgroups) and multiple prediction targets. Although various machine learning approaches can address subgroup differences or multi-target prediction, they often consider these aspects independently rather than jointly. To more effectively capture the shared and subgroup-specific information in such complex datasets, we propose the Integrative Transfer Network (ITN), a deep neural network designed to leverage data across subgroups and multiple related outcomes simultaneously. In extensive experiments, including time-to-event and classification tasks where demographic subgroups and multiple disease endpoints are prevalent, ITN demonstrates consistent improvements in subgroup-specific prediction by borrowing strength from other subgroups and outcomes. We envision ITN as a unified framework for learning from heterogeneous datasets where subgroup-specific insights are critical.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731936v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">RetroMol: Parsing a shared encoding from natural products and their biosynthetic gene clusters</h2>
+<p class="paper-authors">Meijer, D., Williams, S. E., +6 authors, Medema, M. H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Natural products such as polyketides and nonribosomal peptides (NRPs) are important sources of bioactive compounds, including many antibiotics. Many of them are assembled by modular enzyme complexes and further modified and diversified by tailoring reactions encoded by biosynthetic gene clusters (BGCs). Although natural products and their coding BGCs describe different data modalities of the same biochemical process, a unified language to jointly describe their biochemistry is lacking. Here we introduce a sequence-based representation of the core biosynthesis of modular natural products, which we call primary sequences, that bridges chemical structures and BGCs. We also present RetroMol, an algorithm that parses either natural product structures or their encoding BGCs into their primary sequences of natural product building blocks. RetroMol allows for similarity scoring between natural products and BGCs, enabling the retrieval of compounds, BGCs, and a combination of the two, based on their biosynthetic similarity. This can, for instance, be used to retrieve biosynthetically similar but structurally dissimilar compounds, or link natural products to candidate coding BGCs in large experimental datasets. We demonstrate the latter by rediscovering the nocardichelin B BGC as a proof of principle. We also exemplify the utility of biosynthetic similarity by showing various pairs of biosynthetically similar compounds with low structural similarity. Together, these results establish primary sequences as a shared biosynthetic encoding for natural product comparison and BGC prioritization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731935v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">FlowBench: separating planning, fault recovery and interpretation in agentic bioinformatics</h2>
+<p class="paper-authors">Kurjan, A., Cribbs, A. P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Agentic large language model (LLM) systems are being deployed in bioinformatics faster than they are understood, and single-metric evaluations conflate capabilities that fail independently. We introduce FlowBench, a benchmark that decomposes agentic bioinformatics performance into planning, fault recovery, biological interpretation, and end-to-end output-fidelity. Existing systems achieve high plan completeness, but their closed, single-provider designs prevent attribution of performance to scaffolding versus the underlying model. We therefore built FlowAgent, a modular, provider-agnostic framework whose components can be selectively disabled and whose backbone model can be swapped across providers on a shared harness, and used it to evaluate 23 models from three main providers. Three findings emerge. First, generating a valid workflow plan from a named toolchain is largely solved, whereas inferring an appropriate toolchain from biological intent alone is uniformly difficult regardless of model tier, compressing all models into a narrow 44-57% pass-rate band. Second, ablation shows that the dependency-structured plan and a completeness-reflection step drive performance, while adding a same-context validator-driven retry makes structural quality worse. Third, fault recovery and data-grounded interpretation remain unsolved. Models frequently propose fixes that force a clean exit while leaving the underlying data invalid, and data-grounded interpretation lags internal-knowledge recall by a consistent margin. Safety does not emerge from capability, and reasoning-tier models were among the least reliable at recognising unrecoverable faults. Once planning saturates, agent architecture and refusal calibration, not model scale, are the productive frontier.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731844v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 16, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Better data, better trees: GenBank-GISAID deduplication and source-specific artifact masking in viral genomics</h2>
+<p class="paper-authors">de Moraes, L., de Alencar, A. L., Brusselmans, M., +4 authors, Khouri, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> GenBank and GISAID are the primary repositories for viral genomic data, but integrating records across them remains a challenge. The same sequence could be made available in both databases without any cross-reference linking the two entries. Consequently, there is no systematic way to identify this redundancy, which compromises the compilation of representative, non-redundant large-scale datasets. In parallel, the growth of viral genomic data has increased the risk of systematic technical artifacts introduced during sequencing or assembly. These artifacts can inflate substitution rate estimates and degrade temporal signal, biasing evolutionary rate estimates. To address both challenges, here we present a formal, reproducible workflow integrating two newly developed complementary tools: G2G matcher for cross-repository harmonization and Lab-Specific Bias FILTer (LSBFILT) for masking of laboratory-specific artifacts. Using the Eastern/Central/South African (ECSA) chikungunya virus lineage as a proof-of-concept, we demonstrate that our integrated workflow restores temporal signal and provides a robust, curated dataset for downstream phylodynamic analyses. Critically, restricting masking of homoplastic sites to specific sequences reduces the substitution rate estimate from an inflated 8.517 x 10e-4; to 5.078 x 10e-4; substitutions/site/year and increases the coefficient of determination (R2) of the root-to-tip regression analysis from 0.353 to 0.677. By enabling systematic cross-repository harmonization and source-specific artifact masking, we provide the molecular epidemiological community with scalable tools to reconcile fragmented genomic data and reduce technical biases, fostering more accurate and reproducible phylogenetic analysis. G2G matcher is available at https://github.com/andrezaleite/G2G-Matcher, and LSBFILT at https://github.com/khourious/LSBFILT.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.731931v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -55,182 +226,11 @@
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Transcriptomic profiling identifies immunotherapy-responsive phenotypes in microsatellite-stable metastatic colorectal cancer.</h2>
-<p class="paper-authors">Tomas Konecny, Nate Zadirako, +9 authors, Hans Binder</p>
+<h2 class="paper-title">Benchmark of biomarker identification and prognostic modeling methods on diverse censored data.</h2>
+<p class="paper-authors">Wesley Fletcher, Samiran Sinha</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Conventional immune checkpoint inhibitors (ICIs) remain largely ineffective in microsatellite-stable metastatic colorectal cancer (MSS mCRC), where low tumor immunogenicity and molecular heterogeneity across metastatic sites underpin therapeutic resistance. We present a comprehensive transcriptomics analysis of metastatic and primary tumor biopsies from MSS mCRC patients treated with botensilimab (BOT; Fc-enhanced anti-CTLA-4) ± balstilimab (BAL; anti-PD-1). Self-organizing map (SOM) machine learning stratified tumors into four molecular types, including a liver-like (LIV) subtype characterized by metabolic reprogramming and immunosuppressive signatures, and proliferative (PRO), inflammatory (INF), and mesenchymal (MES) types concordant with pan-cancer classifications. PRO, INF, and MES types were enriched for epithelial tumor cells, immune cells, and fibroblasts, respectively, defining immune-depleted, immune-enriched, and fibrotic states along a plasticity gradient. We observed treatment-related transcriptomic shifts toward immune-enriched states via upregulation of antigen presentation, T cell recruitment, and cytotoxicity pathways. INF and MES tumor types exhibited improved clinical responses and survival vs PRO and LIV types. This study identified distinct tumor microenvironment states that align along an immunophenotype axis marked by CD74, interferon-γ, and APOBEC3 expression identified previously for primary CRC. Our findings provide novel insights into molecular correlates of immunotherapy response in MSS mCRC, potentially informing future therapeutic strategies to expand ICI efficacy to historically unresponsive tumors.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42298180/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DAQplugin: Deep Learning based Real-time Model Evaluation Plugin for ChimeraX</h2>
-<p class="paper-authors">Terashi, G., Zhu, H., Kihara, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Although an increasing number of protein structures are determined by cryogenic electron microscopy (cryo-EM), protein structure modeling frequently suffers from residue misassignments and sequence register shifts, particularly in regions with ambiguous density. Here, we present DAQplugin, a ChimeraX plugin that performs real-time evaluation of protein models against cryo-EM density maps using the deep-learning-based residue-wise model quality (DAQ) score. Unlike existing validation tools that are typically applied after model construction, DAQplugin enables real-time deep-learning-based validation during model building and refinement. To our knowledge, DAQplugin is the first tool that provides real-time deep-learning based validation of protein models for cryo-EM map within an interactive modeling environment. In addition to identifying potential modeling errors, DAQplugin also provides guidance for correcting sequence register shifts by suggesting alternative residue placements along the backbone. The computation in this plugin is designed to run efficiently on general CPUs without requiring GPU hardware. Using DAQplugin, users can perform deep-learning-based validation on standard laptops during interactive model building, model-map fitting, and refinement. DAQplugin is able to facilitate more accurate interpretation of cryo-EM density maps and improve the reliability assessment of protein structure models.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731735v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Inferring Cell Fate Trajectories in Time-Resolved Metabolic RNA Labeling data</h2>
-<p class="paper-authors">Audit, A., Peyre, G., Cantini, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA sequencing provides high-resolution snapshots of cellular states but lacks direct information about transcriptional dynamics. Metabolic RNA labeling addresses this limitation by distinguishing newly synthesized RNA, offering insight into the direction of cell state changes, and providing valuable information when attempting to recover the underlying continuous dynamics from static snapshots of cell distributions. However, existing trajectory inference methods do not fully exploit this additional signal. Here, we propose FLOWSATATE, a framework for single-cell trajectory inference that leverages time-resolved RNA labeling within an Optimal Transport setting. We model cell dynamics as a gradient flow in an inferred potential landscape parameterized by a neural network, integrating both total and labeled RNA across time points. The learned potential enables identification of key genes and transcription factors driving cell fate decisions and supports prediction of future cellular states. We benchmark our approach on its ability to generalize unseen data and recover coherent trajectories. We also apply it to study colorectal cancer response to demethylation treatment as well as neuronal differentiation of embryonic stem cells.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731638v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Biological meaning in protein embedding space is resolution-dependent</h2>
-<p class="paper-authors">Zong, L., Ren, J., +2 authors, Wang, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein language model embeddings are increasingly used to organise biological sequences, yet how biological meaning is encoded within embedding neighbourhoods remains poorly understood. Using two independent hierarchical enzyme systems, carbohydrate-active enzymes and peptidases, we investigated how biological interpretation changes across embedding organisations aligned to different levels of biological hierarchy. Different embedding organisations give rise to distinct neighbourhood semantics. When aligned to membership-boundary resolution, embeddings robustly separated artefacts and unrelated proteins from members of the target category. However, embeddings aligned to functional-grouping resolution maintained compositional neighbourhood structure for multi-domain proteins spanning more than one functional or catalytic group. Finally, embeddings aligned to local-family resolution recovered compact family-like neighbourhoods, including families withheld from training, while weakening broader membership-boundary and functional-grouping relationships. Moreover, embeddings optimised toward the same level of biological organisation retain different biological relationships depending on optimisation trajectory employed. Together, our results show that proximity in protein embedding space has no fixed biological interpretation. Instead, biological meaning emerges across embedding resolutions through selective preservation of different forms of biological organisation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.12.730559v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Multiple Fault Analysis and Drug Therapy on Signaling Pathways Using Dynamic Bayesian Network-based Model</h2>
-<p class="paper-authors">Chowdhury, T., Maitra, A., +4 authors, Lodh, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cell growth is an intricate biological phenomenon that is closely regulated by the interplay between various growth factors and transcription factors. Signaling pathways are the main mediators in this event, which provide the driving force for mitosis or sometimes meiosis. However, when malfunctions occur within the biological network, they can cause uncontrolled cell division, regardless of external stimuli. By employing Dynamic Bayesian Networks (DBNs), these malfunctions can be explicitly simulated, offering insights into their effects on cellular behavior and growth regulation. To a significant extent, the resultant outcomes can be mitigated through the use of reduced drug combinations. This study delves into the intricacies of signaling pathway behavior under the influence of concurrent malfunctions. Initially, we replicate the effects of these dysfunctions within DBNs. Subsequently, drug therapy is applied to alleviate their impact. Our methodology introduces a parameter known as efficiency_score, enabling the identification of optimized drug combinations without prior knowledge of specific dysfunctions. Particularly relevant in the context of realistic cancer conditions, these tailored drug inhibition points demonstrate enhanced efficacy compared to conventional treatments. Leveraging GPU acceleration throughout the modeling process accelerates the analysis of multiple faults within the biological networks, rendering our approach notably faster and more efficient.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731601v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Maternal BMI and Placental Transcriptomic Changes: A Meta-Analysis of Gene Expression at the Maternal-Fetal Interface</h2>
-<p class="paper-authors">Tangri, R., Regnault, T. R. H., Shooshtari, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective: Maternal body mass index (BMI) is often used as a measure of metabolic status and increased or decreased maternal BMI is associated with a heightened risk of cardiometabolic diseases across generations. The placenta mediates these maternal metabolic cues; however, its genome wide transcriptional adaptations in response to maternal BMI remain incompletely defined. Methods: To delineate placental genes, pathways, and interaction clusters whose transcript abundance varies with maternal prepregnancy BMI through a genome wide meta analysis of human placental RNA sequencing datasets. Placental RNA seq reads from four publicly available cohorts (n=146) were mapped to the GRCh38 reference genome and differentially expressed genes were identified. An independent microarray cohort (n=19) was reanalysed separately to facilitate cross platform comparison. Functional enrichment employed GO, KEGG, and STRING protein interaction resources. Results: Meta-analysis of 146 RNA seq samples identified eight genes with genome-wide significance in placentae from underweight pregnancies including inflammatory signaling gene MAP4K1 and metabolic enzyme PSPH, while overweight and obese categories revealed nominally significant differential expression. KEGG analysis demonstrated significant downregulation of oxidative phosphorylation with increasing maternal BMI, and protein-protein interaction networks revealed inflammatory mediators as central nodes in overweight and obese groups. Independent microarray validation corroborated key findings, including consistent downregulation of oxidative phosphorylation in obesity. Conclusion: Maternal BMI is associated with placental transcriptomic signatures involving inflammatory, metabolic, and hormonal pathways, with consistent downregulation of oxidative phosphorylation across platforms. This genome-wide meta-analysis provides a reproducible catalogue of BMI-responsive placental transcripts that may contribute to developmental programming of offspring health.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731498v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">VrySure: A Multi-Task AI Scientific Fraud Detection Platform for Identifying Manipulated and AI-Generated Biomedical Research Images</h2>
-<p class="paper-authors">Sun, J., Li, B., Kalluri, R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Integrity of scientific data is critical in biomedical research, where images often serve as primary evidence for experimental observations and conclusions. Advances in image-editing technologies and generative artificial intelligence (AI) have increased the accessibility and realism of visual manipulation, making detection through manual review increasingly challenging. To empower our laboratory researchers to continuously monitor and uphold scientific rigor and data integrity, and serve the global scientific community, we developed VrySure, an easy-to-deploy, AI-driven multi-task platform for automated image-integrity screening in biomedical research. VrySure integrates four detection modules: cross-image transformation detection, within-image copy-move detection, splicing detection in blot and gel images, and AI-generated image detection. The system identifies potentially manipulated images and, when possible, localizes suspicious regions using bounding-box outputs to support downstream verification. To support development and evaluation, we constructed task-specific datasets by combining public biomedical image resources, curated manipulated examples, and synthetic images generated by multiple generative AI systems. We evaluated VrySure using region-level F1 score, recall, precision, false negative rate (FNR), and false discovery rate (FDR) across multiple manipulation categories and compared its performance with two commonly used commercial image-integrity screening platforms under a predefined benchmark protocol. Under the tested conditions, VrySure achieved a higher F1 score and recall, lower FNR, and maintained a low FDR for within-image copy-move detection, splicing detection, and AI-generated image detection, while showing comparable performance in transformation detection. Beyond automated screening, VrySure is designed to support source-data comparison and evidence-based assessment in scientific integrity investigations. By integrating multiple detection capabilities into a unified and scalable workflow, VrySure provides a practical framework to improve the efficiency and consistency of image-integrity screening in biomedical research.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.10.731492v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">RepGene: Toward a Unified Gene Representation Space Robust to Missing Biological Views</h2>
-<p class="paper-authors">Hou, H., Xia, T., +5 authors, Cao, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Genes can be described through multiple heterogeneous biological views, including genomic sequence, transcript sequence, protein sequence, textual knowledge, and single-cell expression context, yet existing gene embeddings remain largely modality-specific and difficult to compare or reuse when many views are unavailable. We study a narrower but practically important question: whether pretrained embeddings from these distinct sources can be organized into a shared gene representation interface that remains usable under severe missing-modality conditions. To investigate this question, we introduce RepGene, a lightweight single-branch framework that combines modality adapters, a shared encoder, presence-aware fusion, and self-supervised cross-view objectives to map five biological views into one latent space. Our goal is not to claim a new multimodal learning principle or to establish superiority over all simpler fusion strategies, but to provide an initial technical instantiation for testing whether such a shared interface is feasible in a fixed-feature setting. Under a two-stage protocol in which RepGene is trained self-supervised on frozen upstream embeddings and evaluated by downstream linear probing, we find preliminary evidence that the learned representation is broadly competitive in the full-modality setting and remains informative when only partial modality subsets are observed at inference time. The strongest signal in our study is robustness under missing views: average performance changes are often limited when one modality is removed, and even single-view inference remains non-trivial in the evaluated benchmark regime.These results do not resolve unified biological representation learning, and they should be interpreted in light of incomplete simple-fusion baselines, limited architectural ablation, benchmark dependence, and possible upstream feature exposure. We therefore position RepGene as a feasibility study and a starting point for stronger comparisons, broader benchmarks, and leakage-aware validation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731512v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">AliceDB database and pipeline for identification of natural protein variants based on mass spectrometry measurement data</h2>
-<p class="paper-authors">Thiel, M., Rozycka, A., +1 author, Oldziej, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The natural variation that distinguishes living organisms within a single species is currently being studied intensively, primarily at the genetic level. Unfortunately, studies of natural variants at the level of protein gene products are not very common, mainly due to the lack of appropriate databases and bioinformatics tools. The main research technique used to study proteomes/peptidomes is mass spectrometry (MS). A classic method for interpreting raw mass spectrometry data in proteomic/peptidomic studies involves the use of databases containing representative (canonical) sequences that define the proteome of the organism under study. In this paper, we present the AliceDB database, which contains information on over 7 million natural variants of protein sequences described in the scientific literature for Homo sapiens. The data contained in the AliceDB database can be utilized using widely available and commonly used software for interpreting proteomic data. Test results regarding the use of the AliceDB database for the interpretation of proteomic data indicate that accounting for the presence of natural variants increases both the number and quality of identified proteins. Furthermore, it is easy to identify protein sequence variants that may, for example, be of significance in medicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731579v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">oxo-flow: compiled, memory-safe bioinformatics workflow orchestration</h2>
-<p class="paper-authors">Wang, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Bioinformatics analyses depend on workflow engines to coordinate dozens of computational tools across complex dependency chains. The most widely adopted engines-Snakemake, Nextflow, the Common Workflow Language (CWL), and the Workflow Description Language (WDL)-run on interpreted or just-in-time (JIT) compiled language runtimes, incurring hundreds of milliseconds of startup latency and providing no compile-time safety guarantees from the host language. We developed oxo-flow, a workflow engine written in Rust that compiles to a single native binary. On an Apple M5 processor, oxo-flow parses, validates, and dry-runs a production-scale workflow in roughly 22 milliseconds-before Snakemake or Nextflow have finished loading their runtime environments. Peak memory usage is 16 megabytes, representing six- to seven-fold reductions relative to Snakemake and Nextflow. Dry-run latency is essentially independent of workflow size: a hundred-fold increase in rule count adds approximately 0.4 milliseconds. oxo-flow integrates 31 command-line tools, a REST interface with 60 endpoints, an embedded web application, and native cluster submission into a single 10-megabyte binary. It provides per-rule environment isolation across seven backends, checkpoint-based fault tolerance with cryptographic output verification, and a formal installation and operational qualification protocol for regulated laboratory environments. Ten curated workflows and three demonstration pipeline repositories are available. oxo-flow is freely available under Apache License 2.0 at https://github.com/Traitome/oxo-flow.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.11.731578v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The practices of identifying biomarkers and developing prognostic models using genomic data has become increasingly prevalent. Such data often features characteristics that make these practices difficult, namely high dimensionality, correlations between predictors, and sparsity. Many modern methods have been developed to address these problematic characteristics while performing feature selection and prognostic modeling, but a large-scale comparison of their performances in these tasks on diverse right-censored time to event data (aka survival time data) is much needed. We have compiled many existing methods, including some machine learning methods, several which have performed well in previous benchmarks, primarily for comparison in regards to variable selection capability, and secondarily for survival time prediction on many synthetic datasets with varying levels of sparsity, correlation between predictors, and signal strength of informative predictors. For illustration, we have also performed multiple analyses on a publicly available and widely used cancer cohort from The Cancer Genome Atlas using these methods. We evaluated the methods through extensive simulation studies in terms of the false discovery rate, F1-score, concordance index, Brier score, root mean square error, and computation time. Of the methods compared, CoxBoost and the Adaptive LASSO performed well in all metrics, and the LASSO and elastic net excelled when evaluating concordance index and F1-score. The Benjamini-Hoschberg and q-value procedures showed volatile performances in controlling the false discovery rate. Some methods' performances were greatly affected by differences in the data characteristics. With our extensive numerical study, we have identified the best performing methods for a plethora of data characteristics using informative metrics. This will help cancer researchers in choosing the best approach for their needs when working with genomic data.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42302057/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +241,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 15, 2026</span>
+<span class="date">Jun 16, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A myeloid immunosuppressive phenotype defines primary refractoriness to atezolizumab Plus bevacizumab in hepatocellular caarcinoma.</h2>
-<p class="paper-authors">Pasquale Lombardi, Erik Ramon-Gil, +52 authors, David J Pinato</p>
+<h2 class="paper-title">The potential utility of in-silico approach in identifying phytochemicals against various targets for the management of lung cancer.</h2>
+<p class="paper-authors">Rupali Saini, Anis Ahmad Chaudhary, +4 authors, Sanjay Kumar</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Despite improved outcomes with atezolizumab plus bevacizumab (A+B) in hepatocellular carcinoma (HCC), primary refractoriness (PRef), characterised by early progression or short-lived disease stabilisation following treatment, remains a significant challenge.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42297215/" target="_blank">
+<p><strong>Abstract:</strong> Research on novel treatment approaches is crucial for lung cancer, because it is one of the most common and aggressive malignancies with high mortality in the world. The potential advantages of using in silico methods to find phytochemicals for lung cancer treatment have been summarized in this review. This also highlights the various computational tools, such as ADMET profiling, network pharmacology, molecular docking, and machine learning algorithms, involved in the identification of potential phyto-constituents for lung cancer therapy. Key molecular targets that were assessed against a range of phytochemicals that showed multi-target binding and promising pharmacokinetic properties included EGFR, KRAS, ALK, and PD-L1. Prominent compounds such as quercetin, curcumin, and luteolin showed notable interactions with carcinogenic pathways, tumor microenvironment modulators, and apoptosis inducers. Mechanistic understanding, high-throughput screening, and economical drug development were made possible by this computational approach. This review demonstrates the potential utility of in silico techniques to bridge the gap between precision oncology and traditional medicine, as well as the intriguing function of phytochemicals as supplemental medicines in lung cancer therapy.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42301529/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -260,15 +260,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 15, 2026</span>
+<span class="date">Jun 16, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Unlocking precision diagnostics: A multimodal framework integrating metabolomics with advanced machine learning techniques.</h2>
-<p class="paper-authors">Parisa Shahnazari, Kaveh Kavousi, +2 authors, Reza M Salek</p>
+<h2 class="paper-title">Target-site dynamics explain a large share of apparent microRNA differential expression.</h2>
+<p class="paper-authors">Mert Cihan, Piyush More, +2 authors, Miguel A Andrade-Navarro</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Integrating multiple omics modalities is a crucial strategy in cancer research, particularly in metabolomics, enabling early detection and detailed exploration of cancer biomarker signatures. This study evaluates five strategies for integrating metabolomics data from liquid chromatography-mass spectrometry, gas chromatography-mass spectrometry, and nuclear magnetic resonance. Deep Transfer Learning and Multiple Kernel Learning demonstrated superior performance, significantly improving classification accuracy, sensitivity, and robustness compared to single-modality analyses. Deep Transfer Learning employed a custom autoencoder for feature extraction followed by artificial neural network classification, while Multiple Kernel Learning optimized kernel matrices across different modalities. Feature extraction in the Deep Transfer Learning approach, combined with the selection of important features and subsequent analysis, revealed elevated levels of monounsaturated phospholipids such as phosphatidylcholine 30:1, phosphatidylethanolamine 32:1, and sphingomyelin 32:1 in HER2-positive cases. Additionally, β-alanine, gluconic acid, and N-acetylaspartic acid were increased, whereas 5'-deoxy-5'-methylthioadenosine and nicotinamide were decreased. These methods advance cancer detection, biomarker discovery, and the development of precise diagnostic and therapeutic tools while offering robust and adaptable strategies for multi-omics data integration across diverse biological datasets.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42296160/" target="_blank">
+<p><strong>Abstract:</strong> MicroRNA (miRNA) abundance reflects a dynamic balance between biogenesis, target engagement, and decay, yet differential expression analyses typically ignore changes in target-site availability driven by alternative polyadenylation (APA). We introduce MIRNAPEX, an expression-stratification-based machine learning framework that quantifies miRNA regulatory effect sizes from RNA-seq data by integrating target-gene expression with 3'UTR isoform usage to infer effective binding-site dosage. Using pan-cancer training sets, we train models that learn relationships between transcriptomic features and miRNA log fold changes, with APA patterns providing context-dependent complementary information alongside gene expression. When applied to knockdowns of core APA regulators, MIRNAPEX captured widespread 3'UTR shortening and predicted miRNA-specific shifts whose direction was consistent with changes in the APA-associated 3'UTR landscapes of target genes. Analysis of target-directed miRNA degradation interactions further showed that loss of distal decay-trigger sites coincides with increased miRNA abundance, consistent with reduced target-directed miRNA degradation. Together, these findings suggest that apparent miRNA differential expression can be associated with dynamic target-site landscapes in addition to altered miRNA transcription, and that neglecting this dimension can lead to misestimation of regulatory effect sizes.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42025302/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -279,15 +279,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 15, 2026</span>
+<span class="date">May 14, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A novel computational framework for tumor-specific T cell antigen identification using a deep neural network.</h2>
-<p class="paper-authors">Salman Khan, Islam Uddin, +1 author, Naif Almusallam</p>
+<h2 class="paper-title">Artificial intelligence-driven integration of multi-biofluid omics and clinical phenotype enables stratification of endometrial cancer.</h2>
+<p class="paper-authors">Dandan Li, Pengfei Wu, +12 authors, Liang Qiao</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Identifying tumor-specific T-cell antigens is essential for advancing cancer immunotherapy and enabling precision-driven, AI-assisted discovery. While artificial intelligence (AI) and machine learning (ML) have significantly impacted healthcare and biotechnology, existing approaches often struggle with the inherent complexity and sequence dependency of antigen data, resulting in suboptimal predictive performance. In this study, we propose a Deep Neural Network (DNN)-based framework specifically designed to address these challenges in computational tumor T-cell antigen identification. The proposed framework employs hybrid sequence encoding techniques, including Position-Specific Scoring Matrix with Discrete Wavelet Transform (PsePSSM-DWT) and Protein Bidirectional Encoder Representations from Transformers (ProtBERT-BFD). To enhance efficiency, a Shapley Additive exPlanations (SHAP)-based global feature selection strategy is applied to select the most informative feature set before model training. The optimized feature set is subsequently used to train the DNN. Experimental evaluation demonstrates that the proposed model achieves an average accuracy of 96.16% with a Matthew's correlation coefficient of 0.923. These results significantly outperform conventional machine learning and state-of-the-art methods. The proposed framework not only establishes a robust computational baseline for antigen identification but also provides a foundation for potential integration with multi-omics data and real-time immunotherapy workflows.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42295488/" target="_blank">
+<p><strong>Abstract:</strong> Endometrial cancer (EC) incidence is rising, yet current diagnostics lack precision and scalability. We develop an artificial intelligence (AI)-based platform integrating multi-biofluid omics and clinical data for EC stratification. Using two independent cohorts from different clinical centers (531 participants for model development, 204 for external validation), we collect 1,179 samples (plasma, cervical/uterine secretions) and the corresponding clinical data (age, ultrasound, etc.). Machine learning identifies EC-specific signatures, and the AI framework fuses omics features with clinical factors to enable multilevel risk stratification. On the external validation cohort, the platform achieves 95.65% sensitivity for minimally invasive EC screening and balanced performance with an area under the curve (AUC) value of 0.94 for EC confirmation. The model also shows potential for high-risk subtype detection. Biological plausibility is supported by identified omics signatures. A web tool is developed to support clinical translation. This platform demonstrates the potential of multi-omics and AI in precision oncology.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42140194/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
