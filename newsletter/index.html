@@ -36,11 +36,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">The recount3 Python package for programmatic access to uniformly processed RNA-seq data</h2>
-<p class="paper-authors">Alsalihi, A., Flight, R. M., Moseley, H. N. B.</p>
+<h2 class="paper-title">Seed variation impacts clustering stability in Single-Cell RNA-Seq and can be mitigated by StAbility-BasEd-Reassignment (SABER)</h2>
+<p class="paper-authors">Zagaria, N., Tini, G., +1 author, Mazzarella, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The recount3 online resource provides tens of thousands of uniformly processed RNA-seq samples across human and mouse from major sequencing repositories like the Sequence Read Archive. While access to these datasets has traditionally been centered in the R/Bioconductor ecosystem, the growing prominence of Python in bioinformatics and machine learning necessitates native, efficient tooling for Python users. Therefore, we present the recount3 Python package with robust application programming interface (API) and command-line interface (CLI) for discovering, downloading, and materializing recount3 resources. The software orchestrates uniform resource locator (URL) resolution, persistent on-disk caching, and the automatic parsing of data into analysis-ready data structures, including Pandas DataFrames and BiocPy RangedSummarizedExperiment objects. The recount3 Python package drastically lowers the barrier to entry for large-scale utilization of RNA-seq data in Python-based computational pipelines, bridging the gap between massive public transcriptomic data and modern machine learning ecosystems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732943v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell RNA-seq clustering is commonly treated as reproducible once a random seed is fixed, yet the choice of seed itself may alter cell assignments and downstream interpretation. We systematically quantified seed-induced clustering variability by running Louvain and Leiden clustering across 100 seeds in Seurat and Scanpy on 28 single-cell RNA-seq datasets from the Human Cell Atlas and IMMUcan. Using Element-Centric Consistency, we found that seed choice affected a substantial fraction of cells, with Scanpy showing more unstable assignments than Seurat on average, 40.46% versus 26.78% unstable cells, respectively. This increased stability came at a marked computational cost: Seurat required approximately 19-fold higher median memory than Scanpy. Seed-dependent clustering variability also propagated to cell-type annotation, particularly among transcriptionally related populations including macrophage/monocyte, endothelial/epithelial and T/NK cell states. To mitigate this instability, we developed StAbility-BasEd Reassignment (SABER), a Scanpy-based framework that identifies seed-sensitive cells across repeated clusterings and reassigns them to stable cluster cores using cosine similarity. SABER improved clustering quality while preserving annotation concordance and reduced median memory usage 3.5-fold compared with Seurat-Louvain. Our results identify seed choice as an underappreciated source of variability in single-cell analysis and provide a scalable strategy to improve clustering robustness.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732539v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Morpho-FM: spatial molecular reconstruction from routine H&amp;E histology using transcriptomic foundation-model priors</h2>
-<p class="paper-authors">Huang, J.-J., Feng, X., +1 author, Zheng, L.-L.</p>
+<h2 class="paper-title">Systematic Evaluation of Feature Representations for Cancer-Associated sORF Prediction in Non-coding RNA</h2>
+<p class="paper-authors">Rodrigues de Goes, F., Mazheke, M., +4 authors, Rossi Paschoal, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Routine haematoxylin and eosin (H&amp;E) histology captures tissue architecture at clinical scale, but lacks a direct molecular readout of the transcriptional programmes that organise tumour epithelium, stroma, vasculature and immune compartments. Spatial transcriptomics provides this context, yet cost, workflow complexity and sparse sampling limit routine use. Most existing histology-to-expression models are trained de novo on small paired cohorts and therefore remain weakly constrained when extrapolating from sparse measurements to dense, tissue-wide molecular maps. Here we introduce Morpho-FM, a weakly supervised framework that predicts spatial gene expression from routine H&amp;E whole-slide images by conditioning a pretrained single-cell transcriptomic foundation-model prior on local histological neighbourhoods. A lightweight morphology-to-transcriptome adapter maps cached whole-slide histology features into a transcriptomic decoder, enabling prediction at measured locations, dense full-section reconstruction, and re-aggregation to the original measurement support. Across harmonized prostate cancer benchmarks, Morpho-FM achieved the strongest overall performance among five representative methods, reaching mean per-gene Pearson correlations of 0.286 in rotating single-slide evaluation and 0.298 in multi-slide held-out validation. The framework reproduced this advantage across kidney cancer sections, achieved a mean correlation of 0.210 across 56 directed single-slide evaluations and retained measurable predictive signal after external transfer to clear-cell renal cell carcinoma sections. Controlled ablation analyses identified pretrained transcriptomic initialization as a reproducible source of performance gain exceeding that attributable to changes in the histology feature backbone. Beyond predictive accuracy benchmarks, Morpho-FM recovered ERBB2-enriched tumour compartments, boundary-associated molecular gradients, and annotation-aligned tissue domains across Xenium and HER2ST breast cancer datasets. Together, these results support transcriptomic foundation-model priors as an effective constraint for morphology-conditioned molecular decoding and demonstrate the potential of Morpho-FM to extend spatial transcriptomic insight across routine pathology sections.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732498v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Short open reading frames (sORFs) within non-coding RNAs (ncRNAs) have arisen as a hidden layer of gene regulation, encoding small peptides that represent a new class of cancer regulators with diagnostic and therapeutic potential. However, inferring associations between sORFs to specific cancer types remains challenging and requires computational approaches for accurate prediction. Recently, the CoraL framework introduced the first computational approach for predicting cancer-associated peptides, focusing primarily on model architecture while overlooking how feature extraction strategies influence predictive accuracy. We present a systematic evaluation of machine learning models and feature extraction approaches to predict cancer-associated sORFs across 15 cancer types. We benchmarked seven traditional machine learning algorithms combined with three feature extraction methods: k-mer frequency, Word2Vec embeddings, and genomic language model (gLM)-based embeddings. To our knowledge, this is the first study applying gLM-derived embeddings to the prediction of cancer-associated sORFs in ncRNA. Our results show that traditional machine learning models with appropriate feature extraction outperform the CoraL baseline across all cancer types, achieving up to 10% higher accuracy in some of the 15 evaluated datasets. Interestingly, k-mer features consistently outperformed gLM embeddings without fine-tuning, suggesting that local sequence composition may provide more discriminative information for this task and that pre-trained genomic representations may require task-specific adaptation to fully capture these patterns. Additionally, we observed that the way sequences are tokenized, such as the k-mer length, can affect performance: longer fragments (e.g., k=7) sometimes reduced accuracy for Random Forest but had a smaller effect on MLP. Our findings suggest that appropriate feature engineering can provide greater improvements than increasing model complexity.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732659v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Evaluation of analysis modes for RNA coexpression in single-cell and bulk tissue</h2>
-<p class="paper-authors">Pavlidis, P., Chu, P., +4 authors, Morin, A.</p>
+<h2 class="paper-title">RNAStabFormer: Region-Aware Multi-Task Hybrid Learning for RNA Stability Prediction from Pulse-Chase Transcriptomics</h2>
+<p class="paper-authors">Wang, S., Zhang, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Coexpression of transcripts presents the most common means of computational inference of transcription factor regulation, and is often combined with other data types to infer regulatory networks. With the growing popularity of single-cell approaches, there are questions about how best to extract coexpression information from the data. Recently we reported a simulation study that explored the differences among coexpression performed at different levels: across single cells (xCell, per cell type), across subjects from pseudobulked single-cell data (xSubject, per cell type), or across subjects using bulk tissue samples (xBulk). Here we test predictions made by those models using real data. We consider both preservation (consistency of coexpression findings across different levels of analysis of the same data) and replicability across independent studies, as well as biological interpretability. We find that preservation across levels is limited, indicating the choice of analysis level will affect outcomes. We show that xCell coexpression is more replicable across studies compared to xSubject. xBulk coexpression is dominated by patterns driven by variability in cellular composition and fails to capture much coexpression that is reliably detected at finer resolutions. While all modes of analysis exhibit some enrichment for known regulatory relationships, it was highest with the xCell mode. Finally, we present a case study of the effect of analysis modes on a schizophrenia-associated pattern, reinforcing the importance of analytic choices in the interpretation and replicability of coexpression analyses. Together with our modeling study, this work emphasizes the importance of understanding sources of expression covariation as they relate to the goals of the analysis, and recommend single-cell-based data with biological replicates should be the focus of attempts to infer dynamic regulatory interactions that are more likely to be replicable by others.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.731965v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> RNA stability is a central layer of post-transcriptional gene regulation, yet large-scale stability labels derived from pulse-chase transcriptomics depend strongly on quantification region, time-window definition, and replicate quality control. We present RNAStabFormer, a controlled learning framework for predicting human RNA stability proxies from transcript sequence. Its core model, RAMHT, combines region-specific nucleotide Transformer encoders for CDS, and sequence, a CDS codon stream, engineered sequence-grammar features, gated fusion, and four task-specific regression heads. We construct four strict consensus labels from ENCODE BrU-seq/BruChase-seq data by crossing gene-sense and exon-sense quantification with late-chase 6 h/2 h and total-chase 6 h/0 h retention ratios, and evaluate all models on fixed repeated-random and chromosome-holdout splits. Across chromosome holdouts, XGBoost remains the strongest standalone model, with median Pearson correlations of 0.504, 0.544, 0.546, and 0.778 on the four labels. RAMHT is competitive with raw-sequence deep models but does not universally exceed engineered-feature baselines. A strict nested RAMHT--XGBoost blend nevertheless improves gene total-chase prediction by 0.017 mean Pearson and exon late-chase prediction by 0.004 mean Pearson over XGBoost. Region and mechanism analyses show that CDS, local k-mer composition, and codon-sensitive signals dominate predictive information. RNAStabFormer therefore provides both a multi-task neural model and a leakage-controlled evaluation protocol for RNA stability prediction from pulse-chase data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.733389v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Identification of Altered Potassium Channels for Drug Repurposing in Long COVID Patients</h2>
-<p class="paper-authors">George, J. P., Gaikwad, K. B., Sharma, J.</p>
+<h2 class="paper-title">Evaluation of Trypanosoma brucei Phosphofructokinase Allosteric Inhibition: An In-Silico Study</h2>
+<p class="paper-authors">Gumbis, G., Houston, D. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Long COVID (LC) is a complex condition characterized by persistent, chronic multisystem manifestations, with a significant proportion of patients exhibiting neurological symptoms. Human ion channels (HICs), particularly potassium channels, are abundantly expressed in the nervous system and linked to key metabolic processes, making them potential candidates for understanding LC pathophysiology and drug repurposing. Meta-analysis of RNA-Seq datasets from COVID-19 recovered and LC patients was performed to identify altered HICs in LC. Differential gene expression analysis, functional enrichment analysis, and weighted gene co-expression network analysis (WGCNA) were performed to uncover key genes, pathways, and co-expression modules consisting of HICs, lipid metabolism-, and immune signaling-related genes. Drug-gene interaction analysis was performed to identify approved drugs targeting potential HICs. A total of 715 dysregulated genes, including eighteen HICs were identified, among which seven were potassium channels. Three significant modules containing HICs, lipid metabolism-, and immune signaling-related genes were identified and found to be associated with antigen processing and presentation, complement and coagulation cascades, and cytokine-related pathways. Approved drugs targeting KCNA6, KCNJ10, KCNN3, and KCNH4 were identified. With further experimental validation, these dysregulated potassium channels, supported by their co-expression networks and pathway associations, may act as potential candidates for drug repurposing in LC patients.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.18.733062v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Human African trypanosomiasis, caused by a protozoan parasite Trypanosoma brucei, is a neglected tropical disease for which well-tolerated, conveniently administered, and highly efficacious medicines are still missing. Previously, T. brucei Phosphofructokinase was targeted by small-molecule inhibitor development efforts. This approach has shown promise both in vitro and in vivo. In this study, we have used these wet-lab results, evaluated the compounds already characterised by Molecular Dynamics simulations, found relationships between in silico and wet-lab data and used these observations to evaluate compounds that we selected through several different approaches of virtual screens. We observed that inhibitor-ATP interactions are highly predictive of the inhibitory activity. Several compounds selected through virtual screens have outperformed previously characterised compounds.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732740v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Sanjeevani: A manually curated anti-cancerous phytochemical database integrated with downstream analysis tools.</h2>
-<p class="paper-authors">Jha, V., Jha, R., +2 authors, Das, G.</p>
+<h2 class="paper-title">MIRATS framework: Normative multiscale characterization of brain regulatory systems across sex and age using multimodal MRI</h2>
+<p class="paper-authors">Ge, Z., Dou, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732344v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Deep brain systems involved in arousal, autonomic regulation, sensory integration, and homeostatic control remain underrepresented in conventional whole-brain neuroimaging frameworks. In particular, diencephalic and brainstem nuclei are often insufficiently represented in cortex-centered analyses, limiting the normative references needed to interpret systems-level variation in health and disease. To address this gap, we developed a unified multiscale framework with explicit representation of deep nuclei. By integrating cerebral, cerebellar, diencephalic, and brainstem atlases in standard space, we constructed a 220-region whole-brain parcellation and extracted complementary features at three analytical scales: nodal properties, edge-wise connectivity, and persistent-homology-based topological descriptors. We applied this framework to healthy adults from the Human Connectome Project-Aging cohort to characterize normative multiscale organization and test sex- and age-related variation. Applied to this cohort, our framework revealed pronounced heterogeneity across anatomical systems. Brainstem and diencephalic nuclei showed multiscale feature profiles distinct from those of cerebral and cerebellar regions across nodal, edge-wise, and higher-order topological scales. Sex comparisons identified selective differences across different scales, whereas age modeling revealed widespread but feature- and system-dependent variation across adulthood. Together, these findings show that normative whole-brain organization in this deep-system-aware space is structured by system-specific rather than globally uniform patterns. These findings establish a normative multiscale framework for characterizing brainstem-diencephalic-cerebellar-cerebral organization in healthy adults and provide a quantitative reference for future translational studies of disease-related abnormalities in deep regulatory systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732296v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Tox21mer, A transformer foundation model for Tox21 high-throughput concentration-response curves data</h2>
-<p class="paper-authors">Li, L., Hwang, J., +5 authors, Reif, D.</p>
+<h2 class="paper-title">SAbDab2: The structural antibody database in the age of machine learning</h2>
+<p class="paper-authors">Capel, H. L., Vavourakis, O., +2 authors, Deane, C. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The U.S. Tox21 collaboration has generated a large reference library of high-throughput concentration-response assays. Here we present Tox21mer, a 43.5-million-parameter transformer that encodes each Tox21 concentration-response curve together with assay metadata into a 768-dimensional representation. Tox21mer was pretrained on ~2.5 million curves from 102 assay protocols and 6,727 compounds using masked-response reconstruction as the primary objective, with low-weight auxiliary supervision on assay outcome and AC50. To evaluate the learned representation, we trained lightweight probes on frozen embeddings from concentration-response curves of held-out compounds. The representation supported a macro-F1 of 0.985 for three-class outcome prediction (agonist, antagonist, inactive), a binary F1 of 0.994 for active/inactive prediction, and an R2 of 0.87 for log10(AC50). The learned embeddings formed coherent groupings by curve-class category. A masked-only pretraining variant retained near-baseline probe performance, indicating that the representation is learned largely from the self-supervised objective rather than from auxiliary labels. Ablation analyses further showed that predictive performance depends mainly on curve-level response-value distributions conditioned on assay context, with limited reliance on detailed within-curve ordering. Tox21mer thus provides a reusable foundation representation for Tox21 concentration-response data that can support extrapolation to untested compounds through integration with chemical features or distillation into chemistry-only student models for large-scale external screening.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732308v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The Structural Antibody Database (SAbDab) is a publicly available repository of experimentally determined antibody structures, first released in 2013. Explicit support for single-domain antibodies was added in 2021, with SAbDab-nano. Recently, increasing interest in antibodies has led to a proliferation of novel antibody formats, while simultaneous advances in machine learning have increased demand for standardised, high-quality structure data. Here, we present SAbDab2, re-engineered for the machine-learning age. It introduces support for a variety of new formats, and makes it easy to retrieve and compare all known structures of a given antibody. In addition, SAbDab2 provides ready access to ML-grade structures of antibody and antibody--antigen-complexes, with standardised, versioned train/test splits. These will be updated every six months going forward, and are available at https://zenodo.org/records/20083995. SAbDab2 itself is updated weekly and is freely available at https://sabdab2.opig.stats.ox.ac.uk.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732554v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Geometric Deep Learning Reveals Ligandable and Cryptic RNA Binding Small Molecule Pockets (SMARTPocket)</h2>
-<p class="paper-authors">Thakare, R. H., Taghavi, A., +4 authors, Li, Y.</p>
+<h2 class="paper-title">A network approach to DNA methylation clocks</h2>
+<p class="paper-authors">Carcedo, A., Yang, S.-G., +4 authors, Lizana, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> RNAs are important therapeutic targets, however identifying ligandable small-molecule binding pockets remains a major barrier to RNA-targeted drug discovery. Here, SMARTPocket, an atomic-level geometric deep learning framework for predicting RNA-small molecule binding pockets directly from three-dimensional structure is introduced. SMARTPocket represents RNA as full-atom point clouds and uses transfer learning from more than 110,000 protein binding interface structures to overcome the limited number of experimentally elucidated RNA-ligand complexes. Across four established single-chain benchmarks and three broader curated benchmarks, SMARTPocket consistently outperforms existing RNA pocket predictors and general biomolecular modeling approaches. The model generalizes to apo RNA structures when conformational changes are modest, identifies cryptic ligandable pockets, and recapitulates experimentally validated binding sites in the SARS-CoV-2 frameshifting element and an RNA aptamer evolved to bind small molecules. SMARTPocket-guided docking further improves near-native RNA-ligand pose recovery and computational efficiency compared with blind docking. These results establish SMARTPocket as a generalizable framework for structure-based identification of ligandable RNA pockets and for accelerating discovery of RNA-targeted small molecules.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.18.732920v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Biological age predicts health and lifespan better than chronological age, but remains difficult to measure. One leading molecular proxy for biological age is DNA methylation, which underlies age predictors known as "clocks". These clocks use penalized linear regression to predict chronological age from methylation levels using selected cytosine--guanine pairs (CpGs) along DNA. Although they predict chronological age within a few years and track mortality risk, there are several issues. Different clocks share a vanishingly small number of CpG sites, many of which show weak associations with age. Also, the clocks often do not transfer across methylation array platforms. This paper takes a network approach to better understand these issues. By using 12 public datasets from human blood, we build a co-methylation network of the sites that show the strongest age correlation. After pruning weak links, we find that it has a small number of large modules of covarying CpGs surrounded by many small modules and singleton sites. These modules are biologically interpretable, as they are associated with CpG island contexts and enriched for distinct Gene Ontology functions. We also map five established clocks onto this network (Horvath, Hannum, AltumAge, Skin &amp; Blood, and Han) and find that they select some CpGs from the same module. This suggests that they are more similar than they appear. The network structure also suggests new ways to build clocks. A simple clock that retains one CpG per module matches the performance of established clocks. A second one, built from module-level principal components, outperforms all five established clocks in three validation cohorts and is transferable across array platforms (Illumina Infinium Methylation 450K or EPIC arrays). Overall, the network perspective shifts attention from individual CpG sites to modules of covarying sites. This perspective helps explain why DNA methylation clocks perform so well despite their differences and provides a more systematic approach for developing the next generation of aging biomarkers.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.18.733218v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,53 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
+<span class="date">Jun 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Accurate detection of tumor clonality and ongoing expansion mode from genomic data</h2>
-<p class="paper-authors">Chen, Y., Jaksik, R., +6 authors, Dinh, K. N.</p>
+<h2 class="paper-title">Ribosomes are covered by a coat of flexible protein fragments</h2>
+<p class="paper-authors">McGrath, H., Kvasnovsky, R., Kolar, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Recent evidence shows that despite considerable effort, currently available algorithms for estimating intra-tumor heterogeneity (ITH) remain limited. We developed DECODE (Deciphering Cancer Origin from DNA Evolution), a novel mutation clustering method that incorporates the impact of sample-specific sequencing coverage and mutation calling biases. On synthetic data, DECODE outperformed existing methods across multiple clonality metrics and accurately detected and characterized the neutral tail in the site frequency spectrum (SFS), which encodes the tumor's ongoing expansion mode. In acute myeloid leukemia, accounting for the neutral tail enabled DECODE to yield more parsimonious clonal decompositions that align more closely with known subclonal dynamics that drive relapse. Applied to data from The Cancer Genome Atlas, DECODE not only detected a neutral SFS tail in most samples across tumor types but also uncovered a clinically meaningful link between ITH and survival in low-grade glioma. By jointly inferring clonality and expansion mode, DECODE provides two complementary and prognostically relevant readouts of tumor evolution from single tumor genomic samples.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732415v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">HTS-Oracle v2: Prospective AI-Guided Discovery and Experimental Validation of Small Molecule Modulators Across Multiple Targets</h2>
-<p class="paper-authors">Abdel-Rahman, S., Gabr, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> High-throughput screening (HTS) remains the cornerstone of early-phase small molecule discovery yet consistently underperforms against immunotherapy targets, yielding validated hit rates below 0.1%. Here we introduce HTS-Oracle v2, which features rigorous cross-validation that ensures honest performance estimates. HTS-Oracle v2 was trained and validated across four clinically significant immune checkpoint targets (CD28, ICOS, LAG-3, and TIGIT) achieving ROC-AUC values of 0.968, 0.969, 0.875, 0.928 respectively under rigorous cross-validation. For prospective experimental validation, HTS-Oracle v2 was applied to an 8,960-compound Enamine Protein Mimetic Library, selecting only 25 compounds per target for experimental testing using temperature-related intensity change (TRIC) technology, a 99.7% reduction in screening burden. HTS-Oracle v2 identified 4, 5, 4, and 6 validated binders from 25 prospectively selected compounds per target, corresponding to validated hit rates of 16%, 20%, 16%, and 24%, respectively. Notably, 67-80% of all experimentally confirmed hits across the full 8,960-compound library were captured within just 25 model-selected compounds per target. For CD28, this represents a 28-fold improvement over HTS-Oracle v1 (239x versus 8.4x), establishing HTS-Oracle v2 as an efficient platform for AI-guided prospective hit discovery across immunotherapy targets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732399v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 19, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Children's DNA Methylation and Family Dynamics in a Congo Basin Subsistence Community: Links with Parental Conflict and Fathers' Caregiving</h2>
-<p class="paper-authors">Chan, M. H.-M., Merrill, S. S., +7 authors, Gettler, L. T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Family environments may contribute to children's long-term health through biological processes, including epigenetic regulation such as DNA methylation (DNAm). However, most studies in this area focus on Euro-American populations while also rarely including fathering data. The current study investigated children's blood DNAm associations with positive (father caregiving) and negative (parental conflict) family dynamics in a smaller-scale subsistence society living in the Congo Basin rainforest. We measured DNAm from dried blood spots of 54 children (mean age=8.48 years) and conducted three epigenome-wide association studies aimed at discovering differential co-methylated regions (CMRs) associated with family dynamics. Via path models, we investigated the health implications and shared contribution of family factors of the identified CMRs. Differential DNAm associated with family dynamics was localized to genes related to stress, immunology, development, and aging, thus possibly linking to children's physical health and were simultaneously connected to other family factors such as number of siblings. Our findings suggested similarities in biological embedding of family factors across socio-ecologically diverse contexts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.15.732362v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Ribosomal proteins contain flexible terminal regions that are averaged out during electron density reconstructions, rendering them absent from experimental models derived by X-ray crystallography or cryogenic electron microscopy. These flexible protein fragments (FPFs) collectively form an invisible coat on the ribosome surface whose presence has been systematically overlooked. Here we analysed FPFs from 36 ribosomes spanning bacteria, eukaryotes, and mitochondria. We found that mitoribosomes harbour the most numerous and longest FPFs. Structural predictions confirmed that FPFs are predominantly disordered across all ribosome classes. Comparison of FPF amino acid composition against proteome-wide background frequencies revealed strong and domain-specific compositional biases. The balance between arginine and lysine content tracks the cardiolipin content of the membrane each ribosome class contacts. The arginine enrichment in mitoribosomal FPFs may additionally reflect selection arising from the RNA-rich environment of mitochondrial RNA granules, membraneless condensates where mitoribosomes are assembled. FPFs are uniformly depleted in aromatic residues, arguing against protein-driven liquid--liquid phase separation propensity. Our findings suggest that the flexibly tethered coat is a highly functional intrinsic part of all ribosomes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.18.733196v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,72 +184,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 19, 2026</span>
-<span class="journal">PubMed</span>
+<span class="date">Jun 20, 2026</span>
+<span class="journal">MED</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning-driven QSAR modeling combined with single cell transcriptomics identifies novel drug targets for lung cancer.</h2>
-<p class="paper-authors">Nagasundaram Nagarajan, Sushil Kumar Shakyawar, +1 author, Chittibabu Guda</p>
+<h2 class="paper-title">Non-destructive yield estimation of onion and garlic using UAV-based hyperspectral imaging and hybrid machine learning models.</h2>
+<p class="paper-authors">Su Y, Long J, +4 authors, Yuan Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Non-small cell lung cancer (NSCLC) is a leading cause of cancer-related mortality, largely due to frequent metastasis to the brain and bones. Therapeutic outcomes are often limited by drug resistance, tumor heterogeneity, and the lack of effective treatment options across different stages and metastatic sites. Identifying druggable targets that are conserved between primary tumors and metastases is critical for advancing precision oncology.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42321836/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 19, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Dissecting T-cell exhaustion heterogeneity and immune ecosystem dynamics in colorectal cancer through multi-omics machine learning.</h2>
-<p class="paper-authors">Zhijing Zhang, Peng Ouyang, +9 authors, Xiao He</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Immunotherapy has shown limited efficacy in a substantial subset of CRC patients, yet the mechanisms underlying therapeutic resistance remain incompletely understood. T-cell exhaustion (TEX) in the tumor microenvironment has been identified as a pivotal driver of immune evasion and tumor progression. Dissecting its contribution to CRC is essential for the development of rational therapeutic strategies.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42321664/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 19, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">VariantMedium: sensitive and generalizable somatic point mutation calling with 3D DenseNets trained and evaluated on experimental data.</h2>
-<p class="paper-authors">Özlem Muslu, Thomas Bukur, +11 authors, Ugur Sahin</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurately identifying somatic variants from genomic sequencing is crucial for understanding and treating cancer. Previously, methods based on statistics and heuristics, as well as methods based on machine learning were proposed for somatic single nucleotide variant (SNV) calling from matched tumor-normal data, but they suffer from low sensitivity especially in certain genomic regions.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42316276/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">May 25, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Generating Labeled Low-Heterogeneity Transcriptomes Using CRISPRa and CRISPRi Can Improve Phenotype Prediction by Deep Learning.</h2>
-<p class="paper-authors">Ilya Velegzhaninov, Dmitry Kazakov, +2 authors, Dmitry Klokov</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The development of deep learning (DL) methods in biology holds great promise for fundamental knowledge, biomedicine, and agriculture. The most global challenge in this area is the development of models that use omics data to predict the complex phenotypic traits, in particular cancer resistance to radiotherapy and chemotherapy. Due to the insufficient volume and high heterogeneity, the available datasets are not suitable enough for DL-based phenotype prediction without dimensionality reduction. This paper briefly discusses the major deficiencies of existing omics datasets for phenotype prediction and proposes a framework to create the phenotypically labeled low heterogeneity datasets to supplement the existing ones. The authors formulated specific experimental considerations that are critical for obtaining phenotypically labeled cell lines with small incremental differences in transcriptomes using CRISPRa and CRISPRi technologies. These cell lines and corresponding datasets will serve as the uniform genetic information sources for gain/loss of function in DL-based phenotype prediction models.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42183825/" target="_blank">
+<p><strong>Abstract:</strong> Accurate pre-harvest yield estimation of underground bulb crops such as onion and garlic is important for precision agriculture, harvest planning, and food-security-oriented decision-making. However, their harvestable organs develop below ground and cannot be directly observed using conventional remote sensing methods. This study aimed to develop a non-destructive yield estimation framework by integrating UAV-based hyperspectral imaging with hybrid machine learning models. Field experiments were conducted in Muan-gun, Korea, using onion and garlic as representative underground bulb crops. UAV-based hyperspectral images, crop growth traits, and destructive live bulb weight measurements were collected during the growing period. Hyperspectral images were processed through geometric correction, radiometric correction, and Savitzky-Golay spectral smoothing. Three dimensionality reduction methods, including genetic algorithm (GA), principal component analysis (PCA), and clustering, were used to reduce spectral redundancy. Five prediction models, including random forest (RF), XGBoost, partial least squares regression (PLSR), multilayer perceptron (MLP), and residual network (ResNet), were then evaluated for live bulb weight prediction. Significant spectral differences were observed in the 550-680 nm and 730-800 nm bands, which were closely associated with crop yield and below-ground bulb development. GA was the most effective feature selection method for extracting yield-related spectral bands. For onion yield prediction, the GA + RF model achieved the highest predictive accuracy, with an R2 of 0.9656 and an NRMSE of 18.55%. For garlic yield prediction, PLSR showed the best performance, with an R2 of 0.9260 and an NRMSE of 27.20%. The proposed UAV-based hyperspectral framework enables accurate, real-time, and non-destructive yield estimation for underground bulb crops. This approach reduces reliance on labor-intensive destructive sampling and provides a practical tool for precision crop monitoring and data-driven agricultural management.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42321610/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
