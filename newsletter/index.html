@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ReSeT: a taxonomy-aware reference genome selection tool</h2>
-<p class="paper-authors">van Bemmelen, J., Baaijens, J. A.</p>
+<h2 class="paper-title">Few-Shot Classification of C. elegans Developmental Stages via Explainable Hierarchical Hyperbolic Graph Embeddings</h2>
+<p class="paper-authors">Khalid, N., Elliott, L., +2 authors, Scharf, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Reference genome composition determines which taxa a profiling pipeline can detect and distinguish, and becomes of critical importance for high-resolution profiling where taxonomic boundaries begin to blur. Existing selection tools optimize within-taxon representativeness but disregard discrimination across taxa, leaving open whether explicitly accounting for inter-taxon discrimination during selection improves profiling. Results: Here we present ReSeT, a facility-location-based reference genome selection tool that operates on arbitrary pairwise distance matrices, extended with a tunable inter-taxon discrimination term and per-genome selection cost, and solved by local search. We benchmark ReSeT against established selection methods on three viral datasets spanning varying degrees of taxonomic ambiguity. On the high-ambiguity SARS-CoV-2 datasets, appropriately tuned ReSeT selections matched or exceeded the strongest alternatives in terms of profiling accuracy, whereas on the low ambiguity IAV dataset VSEARCH remained dominant. Interestingly, we find that the novel inter-taxon discrimination term contributed weakly, indicating that ReSeT's facility-location formulation and selection cost drives ReSeT's performance. We further propose a novel taxonomic ambiguity index, computable from ReSeT's inputs, that summarizes the taxonomic ambiguity of reference genomes and aligns with where ReSeT improves over existing selection methods. Availability and implementation: ReSeT is implemented in Python ([≥]3.10) and is freely available under the MIT license. The source code is available on GitHub at https://github.com/JaspervB-tud/ReSeT and ReSeT can also be installed directly from the Python Package Index (PyPI) via pip install reset-bio.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732946v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Automated, accurate, and fast developmental-stage classification of C. elegans from microscopy-based morphological images is essential for aging research, drug screening, and disease modeling. However, it remains challenging due to morphological similarities between stages and the limited annotated data. In this work, we propose HyperDev, a hyperbolic few-shot learning framework that addresses these limitations by directly encoding developmental hierarchies in the embedding space, unlike conventional Euclidean approaches that treat stages as independent classes. HyperDev uses Poincare ball geometry, combined with a biologically informed developmental prior, to naturally represent stage relationships. We introduce our selfcurated C. elegans dataset spanning seven developmental stages (Egg, L1-L4, Adult, Dauer) with extreme class imbalance (6-8 samples per minority class). HyperDev achieves competitive classification accuracy (76.9-88.3%) while providing intrinsic explainability across nine 7-way few-shot evaluation settings. The learned embeddings exhibited strong biological alignment (Pearson r = 0.669, p &lt; 0.001), while significantly outperforming ProtoNet (r = 0.187), MatchingNet (r = 0.235), and RelationNet (r = 0.464). These results establish hyperbolic geometry as a principled approach to explainable few-shot learning in biological imaging, where understanding learned representations is as critical as predictive performance. Clinical Relevance--By enabling explainable, data-efficient developmental staging from scarce samples, HyperDev supports improved phenotype quantification for aging research, disease modeling, and drug screening. Index Terms--Hyperbolic learning, few-shot classification, developmental staging, Caenorhabditis elegans, interpretability, explainability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733631v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning evaluation of gene expression-based ALS subtypes across brain and blood tissues</h2>
-<p class="paper-authors">Gomez, E. A., Al Khleifat, A., +2 authors, Iacoangeli, A.</p>
+<h2 class="paper-title">EMAlign: accurate alignment of cryo-EM maps through main-chain probability using deep learning</h2>
+<p class="paper-authors">Cao, H., Chen, J., +1 author, Huang, S.-Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The clinical and molecular heterogeneity observed in amyotrophic lateral sclerosis (ALS) presents a challenge for diagnosis, prognosis, and treatment. RNA sequencing of post-mortem brain samples from ALS patients has identified several subtypes with distinct molecular signatures. We sought to evaluate these subtypes across diverse tissues and datasets and assess the feasibility of supervised machine learning models for sample classification. Unsupervised clustering and pathway analysis were performed to confirm the presence of ALS subtypes in motor cortex samples. Three machine learning strategies were then used to create models based on post-mortem motor cortex expression data of 112 people with ALS from the London Neurodegenerative Diseases Brain Bank. These models were subsequently improved through feature selection and evaluated in independent cohorts from motor cortex (n = 257, NYGC ALS Consortium) and blood (n = 96, Macquarie University Neurodegenerative Disease Biobank) samples. Multi-class linear discriminant analysis (LDA) models were then used for subtype classification. Clustering of ALS post-mortem motor cortex samples confirmed the presence of three subtypes: neuroinflammation (ALS-Neu), extracellular matrix organisation and muscle contraction (ALS-OxA), and synaptic and neuropeptide signalling (ALS-SNs). Among all machine learning strategies, random forests produced the most accurate and stable models for binary classification (~93% accuracy across the three subtypes). After feature selection, random forest models were able to classify samples from an independent post-mortem motor cortex cohort in their respective subtypes (AUC of ~0.98 across the three subtypes). When these models were evaluated in blood using LDA, we found consistent clustering patterns, with samples aligning in the same subtype regions of the post-mortem motor cortex samples, with ALS-SNs being the subtype in which samples were classified with the highest confidence (LDA class probability ~86%). Moreover, classification for this subtype improved when blood samples were collected closer to death. Our findings support the presence of three gene expression-based ALS subtypes in motor cortex samples and the utility of machine learning strategies for subtype classification. We also observed that the subtypes identified in the brain partially match those in the blood, with samples from the late stages of the disease more likely to be correctly predicted into the ALS-SNs cluster. This suggests a longitudinal effect in subtype identification that requires further investigation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.733362v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate alignment of cryo-EM density maps is essential for comparing conformational states, searching map libraries, and guiding atomic model building, but remains challenging for noisy experimental maps and partially overlapping structures. Existing alignment methods are often based on raw maps, which may result in reduced accuracy due to the density noise, or require manual intervention for local alignment, which suffers from limited general applicability. Addressing the limitations, we present EMAlign, an automatic global and local cryo-EM map alignment with predicted main-chain probability using deep learning. First, EMAlign predicts main-chain prob ability maps from raw cryo-EM density maps using a BiMCUNet network. Then, a fast Fourier transform (FFT)-based search strategy is used to globally search the accurate alignment between cryo-EM maps based on predicted main-chain probability maps. As such, the main-chain prob ability map overcomes the noisy raw map problem, and the FFT-based exhaustive global search ensures the general applicability of alignment. EMAlign is evaluated on 64 global map pairs, 195 local map pairs, and 60 structure-to-map pairs at 3-10 [A] resolution and compared with gmfit, fitmap, VESPER, and CryoAlign. It is shown that EMAlign outperforms the other methods in both global and local alignment, achieving mean RMSDs of 1.03 [A] (global), 2.56 [A] (local), and 0.82 [A] (structure-to-map), with success rates of 100.0%, 100.0%, and 98.3% under the criterion of RMSD &lt; 10 [A]. The EMAlign package is freely available at https://github.com/huang-laboratory/EMAlign/.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733642v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Expanding the GUSome: Structure-guided identification and characterization of gut microbial β-glucuronidases</h2>
-<p class="paper-authors">Singhal, T., Badgujar, C. V., Bihani, S. C.</p>
+<h2 class="paper-title">PanRes: A database of latent and acquired antimicrobial resistance allowing 3D-based protein homology search</h2>
+<p class="paper-authors">Vojtkova, M., Baltusis, M., +8 authors, Munk, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The gut microbiome-encoded {beta}-glucuronidase (GUS) enzymes have a significant effect on human physiology through their deglucuronidation activity on endogenous and exogenous glucuronides. GUS activity also significantly influences the pharmacokinetics, efficacy and toxicity of various drugs including chemotherapeutic drugs. Given their crucial role in drug metabolism, GUS enzymes have emerged as promising targets for therapeutic intervention. Here, we have identified and characterized 79 unique GUS enzymes through a structure-guided approach. Structural modelling of these GUS enzymes revealed a conserved core and active-site residues with significant variations in the number and nature of the C-terminal domains. A new classification system based on the number and type of additional C-terminal domains is presented for the GUS proteins. Further, GUS enzymes have been categorized into different loop categories linked to their substrate preferences. The relationship between domain architecture and loop-type is explored by sequence similarity network analysis. We could successfully express, purify and validate GUS processing capability of a panel of identified GUS proteins. The nature of oligomer organization has been deciphered by SEC and DLS studies. Further, we have identified additional GUS enzymes capable of processing SN-38G, glucuronidated form of anticancer drug, irinotecan. These newly identified GUS enzymes will offer valuable insights into gut microbial GUS diversity and their role in understanding the population-specific drug-induced adverse effects on human health.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.20.733316v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Antimicrobial resistance databases are central to genomic surveillance, but resistance determinants remain distributed across resources with different scopes, structures, and annotations. We developed PanRes, a curated resistance database of 11,717 genes integrating acquired and latent determinants of antibiotic, biocide, and metal resistance within a unified ontology. We predicted representative protein structures and clustered them by structural similarity, grouping proteins into 598 structurally conserved clusters coherent despite sequence divergence. Their structure-guided alignments were used to build Hidden Markov Models (HMMs) for remote homology search. In wastewater metagenomes from seven European cities, PanRes 3D-based HMMs expanded detection beyond high-confidence BLAST, with 35.2% of retained hits identified only by the HMMs and generally showing greater divergence from known proteins. For beta-lactamases, several proteins retained beta-lactamase-like folds and catalytic geometry despite weak sequence similarity. PanRes is available through an interactive web platform (https://panres.rambio.dk/), a structure-informed resource for exploring the whole resistome.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.22.733705v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DeepCDS: Ab initio coding sequence prediction in prokaryotic short reads</h2>
-<p class="paper-authors">Nielsen, L. S., Nielsen, H., Winther, O.</p>
+<h2 class="paper-title">Drug-Prot: A query system for statistical inference of drug effects and interactions in dynamic proteomic networks</h2>
+<p class="paper-authors">Ulmer, M., Sun, R., +3 authors, Buehlmann, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate coding sequence prediction in short prokaryotic metagenomic reads remains challenging due to sequence fragmentation, unknown sequence origins, and sequencing errors. Here we introduce DeepCDS, a deep learning-based ab initio coding sequence predictor trained on short prokaryotic sequences with and without simulated Illumina-like sequencing errors. DeepCDS integrates ESM-2 protein language model embeddings with nucleotide-level information to predict complete and fragmented coding sequence regions. Benchmarking on 215 phylogenetically diverse prokaryotic organisms demonstrates that DeepCDS consistently outperforms current state-of-the-art methods in coding sequence detection, start and stop codon localization, and robustness to different sequencing error profiles, while remaining operational at shorter sequence lengths than existing tools support. These findings demonstrate that protein language models capture distinct signals relevant for nucleotide-level coding sequence detection, especially at very short lengths. Ultimately, DeepCDS may help uncover the functional potential of the vast microbial diversity that remains genomically uncharacterized.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732633v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Understanding drug effects and drug-drug interactions is essential for developing combination therapies. We present Drug-Prot, a computational framework that leverages large-scale perturbation proteomics to quantify causal drug effects, drug-drug interactions, and dynamic protein relationships. Using data from 63 single drugs and 59 drug combinations applied to 18 breast cancer cell lines at 6, 24, and 48 hours, Drug-Prot estimates drug effects on protein expression and reconstructs directed temporal protein dependency networks. The publicly available software enables targeted analyses of user-defined protein sets, substantially reducing the multiple-testing burden. Through an interactive web application, users obtain corrected p-values for single-drug and combination effects, directed temporal dependency networks, and downloadable results without requiring access to the underlying proteomic dataset. As a use case, we apply invariance-regularized Random Forests to triple-negative breast cancer cell lines to identify proteins associated with drug response. Querying these proteins in Drug-Prot reveals drug-specific and interaction effects at the protein-network level, illustrating how the framework links candidate causal protein features to actionable drug combinations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732914v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,34 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SPA-C: an hybrid tool to accurately scaffold genomes using Hi-C and Deep-Learning</h2>
-<p class="paper-authors">Mergez, A., Mourad, R., +1 author, Zytnicki, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Genome assembly is a computational pipeline designed to reconstruct chromosomes from small sequencing reads. Following their assembly, contiguous sequences (contigs) are arranged into chromosome-long sequences during scaffolding. Hi-C, a long-range linkage information between regions of the genome widely used in recent large sequencing projects, is often required to correctly order contigs. Several tools have been developed to automate this task following either statistical or deep-learning approaches. Statistical approaches summarise 2D Hi-C matrices into contact densities across sequences, thus ignoring informative visual patterns. The sole existing deep-learning tool uses a transformer-based computer vision model to correct the assembly. It has been trained on several species and uses Hi-C matrices directly. Yet it comes as a supplementary step in the scaffolding process, introducing extra computation time, and has been trained on a dataset that might contain labelling errors, which could provide sub-optimal results. We propose SPA-C, an hybrid pipeline combining the strengths of both approaches. Linkage prediction is handled with a frugal CNN-based model and a graph-solving algorithm is used to generate the scaffolds. Through our input's design, the model is able to both correct errors within assemblies and link contigs, leveraging small, local Hi-C contact matrices. We handled low-complexity regions that might induce erroneous predictions using an external tool, improving the overall accuracy of generated assemblies. On a benchmark of six various genomes and four standard metrics, SPA-C outperformed four out of four state-of-the-art methods while achieving comparable start-to-end computation time.Python and Bash scripts are available on GitHub (https://github.com/SPA-C/SPA-C.git) and Zenodo (https://doi.org/10.5281/zenodo.19000361).</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732382v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">OracleScreen-LILRB4: Machine Learning-Guided Discovery of Myeloid Immune Checkpoint Binders Validated in Patient-Derived Cells</h2>
+<h2 class="paper-title">HTS-Oracle X: AI-Guided Prospective Discovery of Small Molecule Immune Checkpoint Binders</h2>
 <p class="paper-authors">Abdel-Rahman, S., Gabr, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The identification of small molecule modulators of immune checkpoint proteins remains a significant challenge in drug discovery due to the flat, featureless nature of protein-protein interaction interfaces and the characteristically low hit rates observed in conventional high-throughput screening campaigns. Here we report OracleScreen-LILRB4, an ensemble machine learning framework trained on quantitative biophysical screening data from two structurally diverse compound libraries (19,800 compounds total) screened against the myeloid immune checkpoint leukocyte immunoglobulin-like receptor B4 (LILRB4/ILT3). By formulating binding prediction as a regression task targeting continuous {Delta}Fnorm values rather than binary hit classifications, OracleScreen-LILRB4 achieved a mean Spearman R of 0.61 and ROC-AUC of 0.86 under scaffold-aware cross-validation. Prospective virtual screening of a 45,760-member compound library and experimental validation of the top 200 predictions yielded a 28.5% hit rate, representing a 15.0-fold enrichment over baseline, with 16 compounds demonstrating nanomolar-affinity LILRB4 (ILT3) engagement. Lead compounds ORS-22 and ORS-14 restored anti-tumor immune activity across patient-derived colorectal cancer and acute myeloid leukemia co-culture systems, reversing SCG2-mediated immunosuppression and recovering cytotoxic T-cell function. These findings establish OracleScreen-LILRB4 as an effective computational framework for accelerating small molecule discovery against non-enzymatic immune checkpoint targets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732859v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Targeting immune checkpoint protein-protein interactions (PPIs) using small molecules remains limited by the shallow, featureless binding surfaces of co-stimulatory and co-inhibitory receptors and the characteristically low hit rates of conventional high-throughput screening against these interfaces. Here we report HTS-Oracle X, a multimodal deep learning platform that integrates bidirectional cross-attention fusion of ChemBERTa SMILES embeddings with extended RDKit descriptors, trains on continuous biophysical binding signals rather than binary labels, and employs Monte Carlo Dropout uncertainty quantification for uncertainty-adjusted compound selection. Trained on 45,760 Dianthus TRIC-screened compounds per target under scaffold-aware cross-validation, HTS-Oracle X was applied prospectively to a 100,160-compound Enamine library against CD28, TIM-3, and VISTA. From 150 model-selected compounds, 45 dose-response confirmed binders were identified (30.0% overall hit rate), yielding enrichment factors of 234-408x over experimentally established random prospective baselines and 16 sub-micromolar hits. The top hits, HX-CD28-1 (KD = 233 nM), HX-TIM3-1 (KD = 249 nM), and HX-VISTA-1 (KD = 345 nM), demonstrated on-target functional activity in immune cell and tumor co-culture assays. HTS-Oracle X represents a scalable AI-guided framework for small molecule discovery against non-enzymatic immune checkpoint targets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732853v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">GENATATORs: ab initio Gene Annotation With DNA Language Models</h2>
-<p class="paper-authors">Shmelev, A., Shadskiy, A., +3 authors, Fishman, V.</p>
+<h2 class="paper-title">Multivariate Random Forests for Cross-Modal Multi-Omics Integration</h2>
+<p class="paper-authors">Zhang, W., Wang, L., +1 author, Chen, X. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Inference of gene structure and location from genome sequences - known as de novo gene annotation - is a fundamental task in biological research. However, sequence grammar encoding gene structure is complex and poorly understood, often requiring costly transcriptomic data for accurate gene annotation. In this work, we benchmark current solutions and develop new methods of gene annotation. We show that pretrained DNA language model (DNA LM) embeddings do not capture the features necessary for precise gene segmentation, and that task-specific fine-tuning remains essential. We comprehensively evaluate the impact of model architecture, training strategy, receptive field size, dataset composition, and data augmentations on gene segmentation performance. We revisit standard evaluation protocols, showing that commonly used per-token and per-sequence metrics fail to capture the challenges of real-world gene annotation. We introduce and theoretically justify new biologically grounded metrics, along with benchmarking datasets that better capture annotation quality. We show that fine-tuned DNA LMs outperform existing annotation tools, generalizing across species separated by hundreds of millions of years from those seen during training, and providing segmentation of previously intractable non-coding transcripts and untranslated regions of protein-coding genes. Our results thus provide a foundation for new biological applications centered on accurate gene annotation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732686v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Multi-omics studies are widely used across many areas of biomedical research. In many diseases, some signals are shared across data types, while others are strongest in a single omics layer. Current multi-omics clustering methods often either merge all data types into a single representation, which can blur biology that is strong in one layer, or rely on linear structure that may miss more complex relationships across data types. We introduce multiRF, a random-forest-based method that handles complex data types and separates shared and modality-specific structure for multi-omics data. multiRF learns sample similarities across omics layers from multivariate random forests, combines them across data types, and uses the resulting weights to estimate the part of each omics layer that is predictable from the others. The remaining residual is treated as modality-specific signal, allowing shared and modality-specific similarities to be clustered separately. In simulations, multiRF recovered shared clusters as well as or better than established integrative methods while more reliably separating modality-specific signal under nonlinear data structures. In TCGA head and neck squamous cell carcinoma, the shared component aligned with the main subtype structure across established reference classifications, while gene- and miRNA-specific components revealed additional immune and developmental biology. In the ADNI cohort with matched blood DNA methylation and structural MRI, the shared cross-modal aging signal was associated with future conversion to mild cognitive impairment or Alzheimer's disease, and a DNAm-specific residual signal showed exploratory additional information. These results show that multiRF can recover a common disease axis while retaining biologically meaningful signals specific to one data type. multiRF is available as an open-source R package at https://github.com/novawz/multiRF.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732933v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +146,129 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 21, 2026</span>
+<span class="date">Jun 22, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Antibody-Antigen Affinity Prediction with Chain-Aware Protein Language Modeling</h2>
-<p class="paper-authors">Singh, H., Malhotra, A., +2 authors, Gorantla, R.</p>
+<h2 class="paper-title">Dynamic balance of sparse flux vectors for efficient simulation of culture dynamics and metabolic network reduction</h2>
+<p class="paper-authors">Tapia García, I., Torrealba, C., +1 author, Saa, P. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Antibody-antigen affinity determines which antibodies advance in therapeutic discovery, repertoire analysis and affinity maturation, but experimental measurements are sparse relative to the scale of sequence libraries. Structure-based predictors can exploit interface geometry when reliable complexes are available, yet early discovery often requires ranking many heavy-light chain pairs against antigens for which no complex structure exists. Existing sequence-based models are scalable, but frequently compress heavy and light chains into a single antibody representation or concatenate antibody and antigen features obscuring the chain-specific and epitope-specific signals that drive binding. Results: We present AbAffinity, a sequence-only chain-aware three-stream architecture that maintains heavy chain, light chain and antigen as distinct streams. It integrates frozen ESM-2 embeddings with heavy-chain CDR-focused pooling, heavy-light self-attention, adaptive fusion gating and gated cross-attention, training only a compact interaction module. On the SAAINT-DB benchmark, AbAffinity achieves strong predictive performance under ten-fold cross-validation and maintains robust accuracy on novel antigens. It consistently outperforms recent sequence-based models across external benchmarks including SAbDab, AB-Bind and SKEMPI 2.0. Ablation studies highlight the contributions of chain-specific representations, CDR-focused pooling and the gated interaction pathway. Integrated Gradients attributions recover known paratope and epitope residues at structurally validated interfaces. AbAffinity provides a lightweight, explainable sequence-first framework for antibody triage and prioritisation when structural information is limited or unavailable.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.733375v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Dynamic Flux Balance Analysis (DFBA) enables simulation of microbial culture dynamics under changing environmental conditions, but remains computationally expensive for tasks such as parameter calibration and fermentation optimization when applied using genome-scale metabolic models (GEMs). To address this challenge, we introduce Dynamic Flux Vector Balancing (DFVB), a reformulation of DFBA that solves an equivalent problem using a pre-computed, sparse basis of flux solutions that reduces the dimensionality of the internal optimization problem without information loss. Notably, DFVB provides a compact, interpretable representation of flux states that can readily identify dynamically inactive pathways and enable simulation-based automatic metabolic network reduction. We showed that DFVB produces the same culture dynamics as DFBA across multiple model scales and conditions, and identifies inactive reactions more accurately than Flux Variability Analysis (FVA) when compared to transcriptomic data profiles. Furthermore, computational performance analyses demonstrated that integrating DFVB with solver warm-start strategies and model reduction enhances computational efficiency relative to DFBA, yielding up to 3-fold reductions in simulation time for large-scale metabolic models. Finally, kinetic parameter estimation of culture dynamics with DFVB in two fermentation scenarios using a large-scale yeast GEM reached equal or higher prediction fidelity and narrower confidence intervals than DFBA, indicating improved parameter identifiability and robustness. Together, these results position DFVB as a scalable, robust, and biologically coherent framework for dynamic metabolic modeling, easing the integration of GEMs for culture dynamics simulation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.733012v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">PhaseWY: A pipeline for haplotype phasing, sex chromosome identification and extraction of sex-limited sequences</h2>
+<p class="paper-authors">Ellerstrand, S. J., Churcher, A. M. J., +1 author, Hansson, B.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Sex chromosomes are central to many ecological and evolutionary processes. Evidence has accumulated that sex chromosome systems vary extensively in age, turnover and transitions, motivating renewed efforts to study the diversity of sex chromosome systems across the tree of life. However, successful genomic detection of sex chromosomes depends on several factors, including the size and divergence time, background genetic diversity, and the number of sequenced females and males. In addition, technical challenges associated with sequencing and analysing the sex-limited Y/W chromosome remain. Here, we present PhaseWY, an automated Snakemake pipeline that uses whole-genome sequencing data from multiple female and male individuals to identify sex-chromosomal regions and extract the corresponding Y/W sequences. PhaseWY (i) detects sex differences in alignment depth, (ii) applies read-based and statistical haplotype phasing, (iii) identifies sex-linked regions using haplotype clustering, and (iv) subsets autosomal, X/Z- and Y/W-linked variants for downstream analyses. We applied PhaseWY to simulated data to benchmark factors influencing sex-linkage detection and successful extraction of Y/W-linked variants. To demonstrate its practical utility, we further applied PhaseWY to the neo-sex chromosome system in Alauda larks (Alaudidae) and performed a range of downstream analyses demonstrating the scope of applications of the PhaseWY output. We conclude that PhaseWY provides an easy-to-use and reproducible tool for population-genomic analyses in non-model organisms, with particular importance for advancing our understanding of sex-chromosome evolution.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732863v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">When Less Is Not More: DICEPro Mitigates the Impact of Incomplete Reference Matrices on Cellular Frequency Deconvolution.</h2>
+<p class="paper-authors">BA, K., Thiebaut, R., +1 author, Hejblum, B. P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cellular deconvolution aims to estimate the frequencies of different cell populations from gene expression measurements in a biological sample. Supervised approaches, such as CIBERSORTx and DISSECT, critically depend on the reference signature matrix, which encodes the gene expression profiles of cell-types based on prior knowledge. Despite numerous deconvolution methods, the impact of missing cell populations in the reference matrix remains understudied. Here, we evaluate the robustness of state-of-the-art deconvolution approaches using simulations based on real dataset examples combined with statistical modeling, validated against published data, and multiple real benchmark datasets. Results show that deconvolution performance remains stable when the reference matrix includes most cell-types, but declines sharply as the matrix becomes incomplete, especially for abundant cell populations. To address the limitations of incomplete reference matrices, we introduce DICEPro, an optimization-based framework designed to enhance existing deconvolution methods. By systematically adjusting the reference signatures, DICEPro better accounts for missing or underrepresented cell populations, leading to improved precision and robustness. We show that DICEPro consistently boosts deconvolution performance across both simulated datasets, derived from real data examples, and multiple real biological datasets, offering a practical solution when standard methods are hindered by incomplete references.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.17.732876v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Benchmarking cell type annotation in spatial transcriptomics: resolving cellular hierarchies, biological fidelity, and dynamic cell states</h2>
+<p class="paper-authors">Zhu, Y., Hu, Y., +9 authors, Zhou, X. M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Spatial transcriptomics enables the quantification of gene expression within its native tissue context, providing unprecedented insight into tissue architecture, cellular ecosystems, and local cell-cell interactions at regional and single-cell resolution. Accurate cell type annotation is a critical prerequisite for interpreting these data and is often the first and most essential step in downstream analysis. Despite rapid advances in computational methods, cell type annotation remains challenging and frequently requires extensive expert-driven manual curation based on marker-gene expression, spatial context, and prior biological knowledge. While early approaches relied primarily on transcriptional similarity, newer methods increasingly incorporate spatial information, histological features, and multimodal data to improve annotation accuracy. Nevertheless, reliable annotation remains difficult when biological interpretation requires fine-grained subtype resolution, particularly for platforms with limited gene panels, tissues undergoing dynamic cellular state transitions, and studies in which reference and query datasets differ substantially in biological context or technical modality. Here, we present a systematic benchmark of 20 state-of-the-art cell type annotation methods across four spatial transcriptomics datasets spanning diverse technologies, experimental conditions, cell numbers, and gene panel sizes. Importantly, all benchmark datasets contain expert-curated cell type labels, including well-resolved cell populations and subtype annotations, providing high-quality biological ground truth for evaluation. The benchmark encompasses both reference-based and reference-free methods representing a broad range of computational frameworks. Performance was assessed using conventional classification metrics, including accuracy and F1-based measures, together with structure-aware metrics that evaluate both cell-level annotation accuracy and preservation of higher-order biological organization. Across datasets, annotation performance varied substantially according to tissue context, reference-query similarity, and annotation granularity. Fine-grained subtype annotation and recovery of rare cell populations remained challenging for many methods, particularly in datasets capturing injury, repair, developmental, and regenerative processes characterized by continuous cellular state transitions. Notably, high classification accuracy did not necessarily correspond to preservation of global cellular relationships or biologically coherent downstream pathway and gene-set enrichment analyses. Overall, scANVI, Seurat, and TACCO consistently ranked among the top-performing methods, although their relative advantages were context dependent. Together, our results provide a comprehensive assessment of current annotation strategies for spatial transcriptomics and offer practical guidance for selecting methods that best align with specific biological questions, dataset characteristics, and analytical priorities.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.16.732716v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Transcriptomic identification of key genes influencing m7G modification in thyroid carcinoma and experimental validation.</h2>
+<p class="paper-authors">Bo Li, Liying Zhu, Jiewu Zhang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> N7-methylguanosine (m7G) modification plays a critical role in RNA metabolism and is increasingly recognized for its implications in cancer biology. It can influence RNA stability, translation efficiency, and gene expression regulation. However, the specific role of m7G modification and its downstream genes in thyroid carcinoma (THCA) is not well understood. To comprehensively explore the impact of m7G methylation modification and the m7G-related gene ZNF831 on THCA, this study aims to identify key genes influencing m7G modification in THCA, with a particular focus on clarifying the role of ZNF831. This study is expected to further elucidate the pathological mechanisms of THCA and fill the current research gap in this field.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42332284/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrative single-cell and bulk transcriptomics reveal cuproptosis subtypes, prognostic models, and COL5A1 as a key gene in glioblastoma.</h2>
+<p class="paper-authors">Ying Zhan, Yige Zhang, +6 authors, Yichen Song</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Glioblastoma (GBM) remains one of the most aggressive primary brain tumors with limited therapeutic options. Cuproptosis, a recently identified copper-dependent form of regulated cell death, has emerged as a potential therapeutic vulnerability in cancer. Here, we systematically investigated the molecular and clinical significance of cuproptosis-related genes (CRGs) in GBM using integrated bulk and single-cell transcriptomic analyses. Based on the expression profiles of 31 differentially expressed CRGs, GBM patients were classified into two molecular subtypes with distinct prognostic and immune characteristics. Cluster 2 exhibited poorer survival and increased immune and stromal infiltration. To further assess the prognostic value of CRGs, we constructed a risk model using 110 subtype-associated genes and systematically compared 101 machine-learning algorithms. The SuperPC model achieved the best predictive performance and was successfully validated in two independent CGGA cohorts. The resulting risk score was closely associated with tumor microenvironment infiltration. Integrated single-cell analysis and experimental validation identified COL5A1 as a key GBM-associated gene. COL5A1 was specifically enriched in tumor cells across independent scRNA-seq datasets and positively correlated with the cuproptosis-related genes LOXL2 and SPARC. Functional assays demonstrated that COL5A1 knockdown suppressed GBM cell migration and invasion, reduced LOXL2 and SPARC expression, and enhanced sensitivity to cuproptosis induction. Collectively, our study establishes a robust cuproptosis-associated prognostic framework for GBM and identifies COL5A1 as a potential regulator linking extracellular matrix remodeling, malignant progression, and cuproptosis-related vulnerability, providing new insights into GBM biology and potential therapeutic targets.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42331202/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrating experimental biology, computational methods, and artificial intelligence in anticancer drug discovery: Bridging the translational gap.</h2>
+<p class="paper-authors">Cromwel Tepap Zemnou, Ramelle Ngakam, +5 authors, Nguyen Tien Huy</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cancer remains a leading cause of mortality globally, with the incidence projected to reach 28.4 million new cases annually by 2040. Traditional drug discovery is notoriously inefficient: 10-17 years and up to $2.8 billion per approved drug, with fewer than 10% of clinical candidates succeeding. This review critically examines how the integration of experimental methods with computational biology and artificial intelligence (AI) can accelerate anticancer drug development. We argue that an iterative feedback loop in which sophisticated in vitro and in vivo models provide biological context for validation while AI accelerates target identification, de novo molecular design, and ADMET prediction offers a path forward. FDA-approved drugs, including imatinib, crizotinib, and larotrectinib, have emerged from such integrated pipelines. A persistent translational gap still limits progress owing to three major barriers: poor data fidelity and lack of standardization, limited interpretability of AI models (the black box problem), and regulatory complexity. Addressing these challenges requires physiologically relevant organ-on-a-chip systems, explainable and physics-informed AI, federated learning ecosystems, and adaptive regulatory frameworks. Overall, the continuous integration of computational prediction with experimental validation in a rigorous, data-driven pipeline is critical for accelerating the development of next-generation anticancer therapies.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42330856/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
