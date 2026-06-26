@@ -29,18 +29,18 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ComplexDesign: sequence-hallucination design of protein binders bridging multiple proteins</h2>
-<p class="paper-authors">Xu, J., Ren, M., +4 authors, Bu, D.</p>
+<h2 class="paper-title">GenoSim: A Forward-Time Genotype Simulator for Clinical and Population Genetics with Population Stratification</h2>
+<p class="paper-authors">Bakar, A., Gul, R., +1 author, Afghani, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Designing multichain protein complexes requires coordinating the folding of component proteins with the formation of their interfaces. The existing methods, however, remain limited in their ability to satisfy these requirements simultaneously, especially for trimeric and tetrameric complexes. As an important practical scenario, designing a binder that bridges two target proteins into a ternary complex requires flexibility in the relative arrangement of the two targets, adding an additional challenge to existing design methods. Results: We present ComplexDesign, a hallucination-based approach for multichain protein design. ComplexDesign performs structure-prediction-guided sequence optimization to simultaneously fold each protein chain and form inter-chain interactions that bind them together. To provide the flexibility required to appropriately arrange these target proteins, ComplexDesign introduces a specialized masking mechanism that enables exploration of possible relative arrangements rather than being limited to the predefined ones. Across a comprehensive set of benchmarks with various chain lengths, ComplexDesign outperformed existing methods in the unconditional design of dimers, trimers, and tetramers, achieving a high design success rate exceeding 50%, supporting its capability for multichain complex design. Furthermore, in the case of multi-target binder design, ComplexDesign produced high-confidence, self-consistent ternary complexes for 8 out of 10 target pairs. These results establish ComplexDesign as an effective tool for multichain protein design, with particular utility for designing binders that bridge two target proteins. Availability and implementation: The source code of ComplexDesign will be made publicly available upon publication.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733655v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Next-generation sequencing studies in clinical genetics are often limited by the scarcity of human genotype data, which stems from ethical, regulatory, and economic barriers. The shortfall is sharpest in consanguineous populations, which are common in South Asia and the Middle East, where family-based designs need large pedigrees that are rarely sequenced in full. Existing simulators do not combine pedigree-aware propagation, realistic population stratification, and clinical export formats in one tool. Results: We present GenoSim, an R package for forward-time simulation of diploid SNP genotypes. It runs in two modes: a population mode implementing inbreeding-adjusted Hardy-Weinberg sampling, Wright-Fisher drift, directional selection, recurrent mutation, and Haldane recombination across multiple generations; and a pedigree-constrained mode that ingests real family VCFs and a pedigree, reconstructs phase where the pedigree makes it identifiable, propagates genotypes through the observed family structure, and appends synthetic generations. Version 1.1.1 adds population stratification through the Balding-Nichols model parameterised by gnomAD v3.1 fixation indices (F_ST) for eight ancestry groups (AFR, AMR, EAS, EUR, FIN, MID, SAS, ASJ), empirical allele-frequency loading from external reference panels, and admixed-cohort simulation. Analysis functions cover Hardy-Weinberg testing, linkage disequilibrium, runs of homozygosity, principal component analysis, founder-referenced and between-generation F-statistics, and Nei gene diversity. Availability and implementation: GenoSim is available as an R package at https://github.com/malikbak/GenoSim under the MIT licence. It requires R [≥] 4.0.0 and depends only on base R packages (stats, utils, graphics, grDevices, tools).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.20.733503v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -48,18 +48,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">V3Cell: A Vision-Guided Virtual 3D Cell Framework for Phenotypic Modeling and Perturbation Prediction</h2>
-<p class="paper-authors">Lu, Y., Xun, D., chenke, X., +8 authors, Pengwei, H.</p>
+<h2 class="paper-title">Evidence for post-allopolyploidy genetic exchanges between duplicated regions in three ancient polyploidies</h2>
+<p class="paper-authors">Dhillon, A. K., Pasagadugula, H., +2 authors, Conant, G. C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting how organoids respond to chemical perturbations is central to disease modeling and drug discovery. Existing virtual cell models operate at the single-cell level, producing static endpoint predictions from destructive assays. This leaves a critical gap at the organoid scale, where biological identity is defined by tissue-level architecture and continuous developmental dynamics rather than single-cell features. Here we introduce V3Cell, a vision-guided framework that constructs in silico surrogates of organoids directly from non-invasive brightfield microscopy. A foreground-aware model constructs static virtual 3D cells across colon, stomach, and lung organoid lineages. These virtual 3D cells closely match real samples across distributional metrics, micro-texture, and lineage-specific morphometrics, with small effect sizes for most descriptors. A temporal module further predicts developmental fate from as few as six early-frame observations and models fate-conditioned spatiotemporal trajectories that closely recapitulate real perturbation responses. V3Cell requires no omics profiling or fluorescent labeling, establishing a non-invasive brightfield-based paradigm for organoid-scale perturbation prediction. Our code and data are publicly available at https://github.com/Laineyoulu/V3Cell.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.23.734130v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Many successful lineages, including flowering plants and vertebrates, owe some of their evolutionary prosperity to whole genome duplications (WGD). However, in the immediate aftermath of a WGD, the new polyploid species that is formed often experiences multivalent pairings during meiosis, which can produce inviable gametes. To mitigate the potential harm caused by such pairings, most lineages eventually undergo "diploidization" to restore typical bivalent pairing. A key component of this process is the loss of duplicated genes. While diploidization was once thought to be rapid, recent analyses of polyploidies suggest the process may be more drawn out, with multivalent pairing persisting long after the initial WGD event. Here, we assess evidence for "late" diploidization after three different polyploidies: the teleost genome duplication (TGD), nested polyploidies in Paramecium lineages, and the ancient WGD in bakers yeast. Using our tool POInT (the Polyploidy Orthology Inference Tool), we model the resolution of these events. By analyzing discordance between expected species trees and observed gene trees, we argue that late diploidization was a likely feature in the resolution of all three polyploidies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.20.733495v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -67,18 +67,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">fastQpick: scalable bootstrap and subsampling of FASTQ reads</h2>
-<p class="paper-authors">Rich, J., Pachter, L.</p>
+<h2 class="paper-title">Ambiguity-Aware Multi-Stage Cell-Type Annotation for Spatial Transcriptomics</h2>
+<p class="paper-authors">Mahmud, M. I., Kochat, V., +4 authors, Banerjee, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> fastQpick is a command-line tool and Python library for sampling FASTQ reads with replacement. Sampling with replacement turns a single FASTQ file into an arbitrary number of bootstrap replicates, which enables uncertainty quantification and statistical analysis at the level of raw reads. This process answers questions such as how much an abundance estimate would change if the library were resequenced, or whether a low-abundance call is robust to the particular reads that were sequenced. fastQpick works efficiently on large libraries by streaming files in two passes by default: first to count reads and create a hash-based counter, and then to write the sample. It generates a full-size bootstrap replicate of a 500-million-read library in under 30 minutes with 9.4 GB of peak memory, with a low-memory mode that reduces the peak to 1.4 GB. A single-pass mode draws samples in a single read through the file, using O(1) working memory and producing an output size that is exact in expectation but not fixed. In a real yeast RNA-seq experiment, bootstrap replicates generated by fastQpick recover the sampling uncertainty of transcript abundance estimates, matching the analytic multinomial standard errors to within a few percent. fastQpick is open source and freely available under the MIT license on GitHub at https://github.com/pachterlab/fastQpick and on PyPI (pip install fastQpick).</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.23.734068v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Spatial transcriptomics enables characterization of cellular organization in intact tissue, but robust cell type annotation remains challenging due to heterogeneous expression profiles, mixed populations, and transitional states. Existing methods often enforce a single label per cluster, obscuring biologically meaningful ambiguity and producing overconfident assignments. We propose an ambiguity-aware, multi-stage framework for spatial cell-type annotation. The method combines hybrid spatial feature clustering with constrained language-model inference over curated label sets, and assigns confidence scores based on marker coverage, candidate separation, and entropy. Low-confidence clusters are selectively refined via local reclustering of ambiguous regions, while unresolved clusters are preserved as mixed rather than forcibly labeled. Applied to 10x Genomics Xenium spatial transcriptomics data from cholangiocarcinoma, the proposed refinement reduces cluster-level ambiguity from 16.1% to 2.27% and cell-level ambiguity from 18.4% to 0.86%, while improving confidence calibration. Spatial ablation confirms that topological integration resolves structural ambiguity over feature-only baselines, while constrained inference via a lightweight language model ensures scalable and biologically coherent annotations. These results highlight the importance of explicit ambiguity handling for reliable spatial annotation in heterogeneous tumors.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733596v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -86,18 +86,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">RNabel-A Standalone Software Tool for Annotating Tandem Mass Spectra of Modified Ribonucleic Acids</h2>
-<p class="paper-authors">Song, G., Du, Y.-J. N., +1 author, Dong, M.-Q.</p>
+<h2 class="paper-title">A Visually Interpretable Histopathology-Based Immune Model Predicts T-effector Biology and Response to Immune checkpoint inhibition in Clear Cell Renal Cell Carcinoma Clinical Trial and Contemporary Real-World Datasets</h2>
+<p class="paper-authors">Perny, A., Jarmale, V., +12 authors, Rajaram, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Ribonucleic acid (RNA) modifications, with over 170 identified types, play diverse roles in cellular processes. The past decade has witnessed surging demand for accurate identification and localization of RNA modifications in both endogenous and synthetic therapeutic RNAs. With accurate spectral annotation for RNA, tandem mass spectrometry (MS/MS) can meet this demand. Here we present RNabel, a user-friendly software tool for in-depth annotation of MS/MS spectra of RNA oligonucleotides. RNabel considers a full set of backbone-cleavage ions (a, b, c, d, a-B, w, x, y, z) in which the ribonucleotide unit could be A, U, C, G, Y (pseudouridine), or I (Inosine). Additionally, RNabel considers 196 modifications on the base, the phosphoribose linkage, the 5' or the 3' terminus, or detachment of a sub-nucleotide fragment as a neutral or charged group. Users can create new components if needed, including ribonucleotides, modifications, neutral or charged groups that could detach from a ribonucleotide. RNabel efficiently processes large datasets in four acceptable formats including .mgf, .raw, .txt from msConvert, and RNabel batch files. Multiple statistical metrics are provided for quality assessment of spectral annotation. To accelerate RNA modification analysis, RNabel is made freely available for Mac and Windows users at https://github.com/songge1111/RNabel/releases.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.22.733900v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Immune checkpoint inhibitors (ICI) are central to the treatment of metastatic clear cell renal cell carcinoma (ccRCC), yet only a subset of patients derive durable benefit, and clinically deployable predictive biomarkers remain an unmet need. RNA-based T-effector signatures capture cytotoxic immune biology and have been associated with ICI response in clinical trial cohorts; however, their clinical implementation is limited by the marked spatial heterogeneity of ccRCC, as well as cost, long turnaround time, sample quality requirements, and limited accessibility. Here, we developed a visually interpretable deep learning (DL) model that predicts a T-cell-enriched immune score directly from hematoxylin and eosin (H&amp;E)-stained whole-slide images. To overcome the inability of H&amp;E morphology alone to distinguish lymphocyte subsets, we trained the model using multimodal spatial supervision from CD8, PAX8, and ERG IHC, which respectively identified cytotoxic T-cell-rich regions, tumor cells, and endothelial cells, thereby constraining immune predictions to relevant tumor microenvironmental niches. The resulting H&amp;E DL Immune score was validated by pathologist review, comparison with held-out CD8 IHC annotations, and independent datasets. The H&amp;E DL Immune score correlated with T-effector RNA scores across independent institutional and IMmotion150 clinical trial cohorts (spearman correlations of 0.726; p=5.90x10-15 and 0.706; p=4.04x10-19). As a proof of principle, the score was used to characterize associations with key biological features across large cohorts, including sarcomatoid differentiation, BAP1 and PBRM1 mutation status, and additional transcriptomic signatures. In IMmotion150 clinical trial cohort, a median-dichotomized H&amp;E DL Immune score, similar to RNA-based T-effector score, was significantly associated with clinical benefit from atezulumab therapy. In contemporary institutional cohorts of patients treated with frontline ipilimumab plus nivolumab or in initial 3 lines of nivolumab monotherapy, patients in the top quartile of H&amp;E DL Immune score had significantly longer progression-free survival. Collectively, these findings support a scalable and interpretable H&amp;E-based biomarker that captures T-effector biology and can help identify patients with ccRCC more likely to benefit from ICIs.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733614v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -105,18 +105,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Development of Deep-Learning Models that Predict Quantitative Protein-Ligand Interac-tions in Glycobiology as a part of a Capstone Course</h2>
-<p class="paper-authors">Yin, H., Liu, W., +6 authors, Derda, R.</p>
+<h2 class="paper-title">CREPAS: a reproducible nascent chromatin sequencing analysis pipeline for epigenome replication studies</h2>
+<p class="paper-authors">Ruiz-Perez, S., Du, Q., +2 authors, Alcaraz, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Glycans coat the surface of all cells, and every glycan is recognised by specific glycan-binding pro-teins (GBPs). There are no general tools that can accurately estimate the binding strength between glycan and GBP from the amino acid sequence of the GBP and the molecular structure of the glycan, represented as SMILES string. We describe models for predicting such binding strengths developed as a part of a Capstone Course at the University of Alberta. The models are trained on a dataset that combines BindingDB, a published database of small-molecule protein interactions, and data from glycan arrays measured by Consortium of Functional Glycomics (CFG). In this hybrid dataset of protein-ligand interactions the ligands are both glycans from CFG and small molecules from BindingDB; similarly, proteins include GBP and proteins from BindingDB. Three models are presented (i) ProMax which fuses ESM-2, MolFormer, and MolCLR features; (ii) APEX which constrains learning to a predetermined form, a physical model of binding; (iii) UltraMax adds inter-atomic distances for the ligands. To address the dataset's severe long-tail distribution, the models employ tail-aware losses for rare high-binding instances. Trained and evaluated on approximately one million protein--ligand pairs using hold-out splits for unseen molecules, the three models provide a unified framework for quantitative glycan-protein binding prediction. We observed that learning glycan-protein binding is harder than the similar task of learning small-molecule-protein interactions. Simple mirror-inversion tests led us to postulate that insufficient use of chiral features is an important source of difficulty in learning these interactions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.733466v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Chromatin-based genomics data are essential for understanding genome regulation and the mechanisms underlying epigenetic memory. Recent methods such as ChOR-seq and SCAR-seq assess histone modifications and chromatin-associated proteins during and after replication, capturing chromatin states that contribute to memory across cell divisions. Current tools for chromatin data analysis lack scalability and reproducibility across computing infrastructures, offer limited parameters, and are applicable only to a few sequencing techniques, ignoring the information from nascent chromatin assays. To address these challenges, we developed CREPAS, a Nextflow pipeline for analyzing nascent and parental chromatin sequencing data, including ChIP-seq, ChOR-seq, SCAR-seq, OK-seq, ATAC-seq, CUT&amp;RUN, and CUT&amp;Tag, and derivative protocols. CREPAS provides an end-to-end solution, from quality control to advanced analyses, including downsampling, peak calling, annotation, and visualization. By harnessing quantitative assays such as qChIP-seq and qChOR-seq, the normalization methods in CREPAS allow to compare the restoration kinetics of individual marks or proteins across replication timepoints. Moreover, the pipeline includes calculations such as fork directionality and partitioning using OK-seq and SCAR-seq data, linking replication dynamics to epigenetic inheritance. CREPAS is a valuable resource that enhances the efficiency and reproducibility of nascent chromatin sequencing data analyses, enabling the study of chromatin replication and propagation of epigenetic states.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.732899v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -124,18 +124,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">InVitroGap: an open-source tool for automated quantification of wound closure in the in vitro scratch assay</h2>
-<p class="paper-authors">ARYA, R. K., Sindhani, M., +2 authors, Bukavina, L.</p>
+<h2 class="paper-title">NanoCellAnnotator: Formalizing Expert Cell Type Annotation with Large Language Models</h2>
+<p class="paper-authors">Mahmud, M. I., Kochat, V., +4 authors, Banerjee, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Background and Objective: Scratch assays are widely used to study wound closure in vitro, but quantitative image analysis remains constrained by manual variability, proprietary workflows, and tools requiring programming expertise. We developed InVitroGap, a Python-based application with a browser-accessible interface for automated quantification of scratch assay closure from sequential microscopy images. Methods: RCC-ER and Renca cells were seeded in 96-well ImageLock plates and scratched using a WoundMaker device for uniform linear wounds or a 200 uL pipette tip for crisscross wounds. Phase-contrast time-lapse images acquired at 0, 24, and 48 h with an IncuCyte SX5 system were independently analyzed using IncuCyte 2023A Rev2 and InVitroGap. The InVitroGap pipeline combines Gaussian smoothing, gradient-based texture mapping, adaptive percentile thresholding, and morphological post-processing to quantify wound confluence and relative wound density (RWD). Agreement was evaluated using paired comparisons, Pearson and Spearman correlations, Bland-Altman analysis, and mean absolute error (MAE). Results: InVitroGap measurements closely tracked IncuCyte outputs across both cell lines, with no significant between-method differences (p &gt; 0.05), strong pooled correlations (R square = 0.964 for RWD; R square = 0.983 for wound confluence), and small mean biases (absolute bias [≤] 1.64%). The tool successfully processed crisscross wounds from brightfield image series, and a complete four-timepoint series was analyzed in approximately 10 seconds, with robust performance across distinct cell morphologies and wound geometries. Conclusions: InVitroGap provides a transparent, computationally efficient, and platform-independent alternative for scratch assay analysis, delivering performance comparable to commercial systems while remaining freely accessible at https://invitrogap.vercel.app/.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.733445v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Cell-type annotation in spatial transcriptomics is challenging due to sparse gene panels, spatial heterogeneity, and limited availability of tissue-matched reference atlases. Recent approaches have explored large language models (LLMs) for integrating biological knowledge during annotation, but unconstrained inference can produce biologically unsupported predictions and hallucinated cell types. In addition, many LLM-based pipelines rely on large cloud-hosted models that limit reproducibility and deployment in privacy-sensitive environments. Results: We introduce NanoCellAnnotator, a biologically constrained and confidence-aware framework for automated cell-type annotation in spatial transcriptomics. The framework de-couples spatial structure discovery, deterministic biological evidence construction, and language model-based semantic inference. Spatial clusters are identified using hybrid spatially regularized non-negative matrix factorization (hSNMF), after which cluster-level marker genes are abstracted into ontology-derived functional programs using Gene Ontology enrichment and GO-slim projection. A lightweight locally executable language model performs constrained label selection within a curated admissible label space derived from PanglaoDB and CellMarker. Annotation confidence is estimated independently using marker support strength and lineage separation, enabling ambiguous or heterogeneous clusters to be explicitly flagged. We evaluate NanoCellAnnotator on Xenium spatial transcriptomics data from intrahepatic cholangiocarci-noma and an independent breast cancer spatial transcriptomics dataset. The framework recovers canonical cell populations with high confidence while identifying heterogeneous or transitional spatial domains as ambiguous. Agreement with manual annotations was evaluated using accuracy and adjusted Rand index. Availability: Code available at https://github.com/ishtyaqmahmud/NanoCellAnnotator.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.728965v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -143,18 +143,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Generative Modeling of Mouse Embryogenesis for Fate and Disease Prediction</h2>
-<p class="paper-authors">Fan, Y., Liu, X., +4 authors, Li, Y.</p>
+<h2 class="paper-title">Tissue-aware elastic net decomposition reveals shared and lineage-specific drug response biomarkers</h2>
+<p class="paper-authors">Strauch, J., Azinfar, L., +3 authors, Asiaee, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Embryonic development is orchestrated by complex gene regulatory networks, and learning regulatory dynamics from developmental data could allow us to understand, predict, and ultimately engineer cell fates. Here we introduce Navigo (https://github.com/aristoteleo/Navigo-release), a biologically grounded generative modeling framework that learns a developmental vector field by integrating flow matching at the population level with RNA kinetics modeling at the molecular level. Navigo accurately maps developmental trajectories across lineages on a mouse embryogenesis scRNA-seq atlas spanning 43 time points and comprising 12.4 million cells. Applied to cardiac development, Navigo enables disease modeling by mechanistically resolving regulatory networks that distinguish congenital heart disease subtypes. Navigo also predicts perturbation effects in a zero-shot manner, as validated on independent in vivo data from six knockout genotypes without perturbation-specific training, uncovering lineage-specific gene-compensation mechanisms. Moreover, Navigo guides rational cell-fate engineering, exemplified by fibroblast reprogramming analyses, including identifying pro-fibrotic barriers to cardiac fates and evaluating hundreds of pairwise transcription factor combinations for neuronal fate, each consisting of one bHLH factor and one POU factor. Overall, Navigo provides a generalizable AI platform for perturbation-effect prediction, disease modeling, and rational cell-fate engineering, advancing toward AI-based virtual embryos for developmental biology and regenerative medicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.18.733286v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Computational models that predict cancer drug response from genomic features are central to biomarker discovery, yet a recent audit found data leakage in 72% of 32 published methods, and complex models offer little interpretability while only modestly exceeding simple baselines under honest evaluation. Tissue lineage is a largely untapped source of legitimate inductive bias, but existing tissue-aware methods neither separate pan-cancer from lineage-specific signal nor report leakage-free performance. Results: We introduce the Data Shared Elastic Net (DSEN), a tissue-aware regression that decomposes each drug's model into a shared coefficient block common to all lineages and tissue-specific deviation blocks. Under leakage-free cross-validation across 265 drugs, 1,462 cell lines and 31 tissue lineages, DSEN improved mean squared error over a standard elastic net for 92.5% of drugs (mean 4.95%) while selecting 58% fewer stable shared features. Shared coefficients generalized to held-out tissues (59% tissue-level win rate) and recurrently recovered transferable pathway modules (p53, MAPK), whereas tissue blocks captured lineage markers such as the skin MITF/S100B program. The closest tissue-aware comparator, TG-LASSO, performed worse than the tissue-agnostic baseline (-13.8% mean MSE). Ablation shows tissue-aware modeling helps most when features are scarce, with no single modality dominating.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733619v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -162,18 +162,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Systematic benchmarking of multi-modal approaches for tumor-naive ctDNA detection and quantification</h2>
-<p class="paper-authors">Qi, T., Odinokov, D., +27 authors, Skanderup, A. J.</p>
+<h2 class="paper-title">BGC-QDR: A Quantum-Assisted Pipeline for Biosynthetic Gene Cluster Discovery and Ranking from Environmental DNA</h2>
+<p class="paper-authors">Mishra, A., Rai, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Longitudinal monitoring of circulating tumor DNA (ctDNA) has emerged as a promising framework for characterizing treatment response dynamics in cancer. Scalable tumor-naive approaches for quantifying ctDNA often involve whole-genome sequencing (WGS) or DNA methylation profiling, but their comparative performance and capacity for complementary integration remain poorly understood. Here we systematically benchmarked tumor-naive WGS- and methylation-based ctDNA quantification methods using plasma from 150 patients with colorectal, lung and breast cancer. Using paired high-depth WGS and EM-seq data, we generated 40,000 in silico samples and evaluated detection accuracy, limits of detection (LoD) and quantification (LoQ) across cancer types and sequencing depths (0.1x-30x). We further assessed single- and multimodal method combinations, identifying conditions under which integrated approaches enhance analytical performance for detection and quantification relative to single modalities. This benchmark delineates key performance trade-offs and provides a practical framework to support method development and guide future research applications in ctDNA-based biomarker studies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.733293v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Biosynthetic gene clusters (BGCs) encode enzymatic pathways for natural products with pharmaceutical potential, yet prioritizing candidates from fragmented environmental DNA (eDNA) assemblies remains computationally challenging. We present BGC-QDR (Biosynthetic Gene Cluster Quantum Discovery and Ranking), an open-source pipeline that integrates input quality control, Prodigal ORF prediction, Pfam HMM domain annotation, rule-based BGC classification, MiBIG 4.0 novelty assessment, and variational quantum classifier (VQC) ranking via PennyLane. BGC-QDR is designed as a quantum-assisted ranking framework for biologically informed BGC prioritization, not as a claim of quantum computational advantage over classical machine learning. We evaluate the pipeline on MiBIG 4.0 (2,636 annotated BGCs) using a 20-dimensional biosynthetic feature vector and stratified 10-fold cross-validation. The integrated VQC (6 qubits x 3 layers, 54 parameters) achieves an accuracy of 0.789 +/- 0.076 and ROC-AUC of 0.835 +/- 0.057. Random Forest achieves the highest ROC-AUC (0.898 +/- 0.032), followed by Logistic Regression (0.874 +/- 0.020) and MLP (0.872 +/- 0.024). Wilcoxon signed-rank tests on per-fold AUC scores show that VQC ROC-AUC is significantly lower than Random Forest (p = 0.0098) and Logistic Regression (p = 0.037) at alpha = 0.05, with no significant difference versus MLP (p = 0.064). Architecture ablation identifies 4 qubits x 3 layers as the best VQC configuration on hold-out validation (AUC = 0.737). Feature importance analysis highlights peptidyl carrier protein domains, cluster length, and module count as dominant predictors. BGC-QDR provides a reproducible, end-to-end workflow for eDNA-derived BGC discovery with integrated novelty scoring and quantum-assisted candidate ranking.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733574v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -181,18 +181,37 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Statistical tests for bivariate spatial association across multi-omics data with disjoint coordinates</h2>
-<p class="paper-authors">Hawinkel, S., Hu, W., +1 author, Maere, S.</p>
+<h2 class="paper-title">Multi-Omics Study of Ancestry in Adults with Intracranial Cancers Glioma (MOSAIC)</h2>
+<p class="paper-authors">Bondy, M. L., Noor, H., +27 authors, Huse, J. T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial biology has entered a new era of multimodal profiling, with multiple, high-dimensional spatial omics types being measured on consecutive tissue slices, or co-assayed on the same slice. Interest then lies in statistical testing for spatial association between the features of the different modalities, to gain insight in biological processes. One major challenge is the multitude of bivariate combinations, leading to high computational demands. Another difficulty is the difference in spatial resolution between technologies, implying no one-to-one matching between the measurement spots of the two modalities, even after alignment. As a result, common statistical measures such as joint distributions and correlations are not defined, and tests need to rely on spatial vicinity only. Moreover, we argue that many existing bivariate association tests address an inappropriate null hypothesis, or make inappropriate assumptions, both implying absence of spatial autocorrelation in any of the features and leading to misleading conclusions. As a remedy, we modify tests for the detection of spatially variable genes (Moran's I, Gaussian processes and generalized additive models (splines)) to derive bivariate tests across modalities with non-overlapping coordinate sets and provide variance estimators that do account for spatial autocorrelation. We develop inference methods for single sections as well as for replicated experiments with multiple sections, and compare their performance in nonparametric and parametric simulations. Finally, we apply the newly developed methods to two co-assayed spatial transcriptomics and metabolomics datasets from mouse and human. The full suite of tests is available from github.com/sthawinke/sbivar as the R-package sbivar.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.19.732250v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.24.733669v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 25, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">CNSigs: An R Package for the Identification of Copy Number Mutational Signatures</h2>
+<p class="paper-authors">Tallman, D., Striker, S., +6 authors, Stover, D. G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.21.733646v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,15 +222,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Meta-analysis reveals microbiome signatures for colorectal cancer that are universal across age groups and sequencing methods.</h2>
-<p class="paper-authors">Selin Pekel, Nicolai Karcher, +9 authors, Georg Zeller</p>
+<h2 class="paper-title">Metabolic determinants of cancer immunotherapy outcomes identified by plasma profiling.</h2>
+<p class="paper-authors">Déborah Suissa, Marine Fidelle, +46 authors, Laurence Zitvogel</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Numerous studies have linked gut microbiome alterations to colorectal cancer (CRC), but limited sample sizes and study heterogeneity have hampered cross-study comparisons and subgroup analyses. Here, we present a comprehensive single-disease gut microbiome meta-analysis based on consistently re-computed and re-analyzed shotgun and amplicon sequencing profiles (n = 6,779 samples, 27 studies). Association and machine-learning analyses delineate CRC microbiome signatures, which are robustly generalizable across studies and sequencing approaches and nearly identical between early- and late-onset cases. Meta-analysis of the tumor-resident microbiome reveals characteristic tumor-enriched microbes in concordance with fecal signatures that are clearly detectable in early-stage tumors, although their detection in feces becomes moderately higher in late-stage and distal tumors, possibly due to dilution effects in stool. The unified fecal CRC signature inversely associates with dietary fiber intake and is modifiable by dietary interventions. Finally, genome-resolved functional analysis reveals variation in virulence factor carriage and geographic enrichment across Fusobacterium subspecies.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42341762/" target="_blank">
+<p><strong>Abstract:</strong> Immune-checkpoint inhibitors benefit a subset of patients with advanced cancer, and the metabolic determinants of response remain unclear. Here, using targeted metabolomics and metagenomics, we profiled 4,336 plasma samples from 1,714 patients across five tumor types and 16 cohorts spanning Europe and North America, longitudinally sampled during five immune-checkpoint inhibitor-based treatment modalities, including fecal microbiota transplantation. A multimodal machine-learning framework integrating 154 metabolites with clinical variables identified five metabolites, age, body mass index and renal function as predictors of 12-month progression-free survival. The model achieved areas under the curve of 0.88 in training and 0.73 in validation cohorts of 105 and 30 patients, respectively and generalized across seven external cohorts. Histidine was a favorable prognostic feature of survival, whereas long-chain fatty acids and succinate were negatively associated with outcome. Histidine supplementation enhanced antitumor immunity in mice. Histidine-rich diets improved progression-free survival in patients lacking dysbiotic microbiome signatures associated with histidine catabolism.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42350644/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,34 +241,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 24, 2026</span>
+<span class="date">Jun 25, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">FFixR: A Machine Learning Framework for Accurate Somatic Mutation Calling from FFPE RNA-Seq Data in Cancer.</h2>
-<p class="paper-authors">Or Livne, Keren Yizhak</p>
+<h2 class="paper-title">Heterogeneity Analyzed by CT-Based Habitat Analysis for Clinical Management of Cancers: A Narrative Review.</h2>
+<p class="paper-authors">Yang Zhang, Zhi-Yan Jin, Min-Ying Lydia Su</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Formalin-fixed paraffin-embedded (FFPE) tissues are widely used in clinical and research settings, yet their use for detecting somatic mutations from RNA sequencing (RNA-seq) is hindered by artefactual mutations introduced by cytosine deamination and strand-specific damage. Existing FFPE noise-filtering tools are tailored to DNA-seq and rely on strand bias, rendering them unsuitable for RNA-seq. Here, we present FFixR, a machine learning-based framework that filters FFPE-induced artefacts from RNA-seq data without requiring matched-normal samples.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42340671/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Apr 18, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Integrated multi-omics data and machine learning approaches to decipher the molecular network and gene signatures of renal cell carcinoma induced by aristolochic acid.</h2>
-<p class="paper-authors">Fan Zhang, Shuai Han, +2 authors, Weijie Song</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> This study aims to delineate the molecular mechanisms through which aristolochic acid (AA) exposure drives renal cell carcinoma (RCC) pathogenesis, leveraging an integrated machine learning (ML) and multi-omics approach to systematically identify and validate key targets linking AA to RCC development.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42033937/" target="_blank">
+<p><strong>Abstract:</strong> Tumors are highly heterogeneous, and whole-lesion radiomics analysis is a popular method for extracting texture features that reflect this heterogeneity, which can be used to build models for cancer diagnosis, staging, therapy response evaluation, and prognosis prediction. However, there is no spatial information for understanding which components provide the most critical information. Recently, habitat analysis has gained widespread attention, and it is used to divide a tumor into distinct sub-regions, called habitats, that share common characteristics. CT reveals heterogeneity in attenuation, texture, entropy, and enhancement patterns, which can be used to generate habitats. In the past 2 years, many studies exploring the role of CT habitats have been reported. The divided habitats can be used to build models for the classification of histological or molecular subtypes, the evaluation and prediction of treatment response, and prognostication of progression-free survival or overall survival. This review aims to summarize studies on the application of CT-habitat analysis for cancer management. In addition to clinical applications, various methods for habitat segmentation will be reviewed. Lastly, how spatial information revealed by the habitat can guide tissue biopsy for tissue-level confirmation studies will be described, which is critical for understanding the underlying biology and paving the way for future clinical implementation.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42348293/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
