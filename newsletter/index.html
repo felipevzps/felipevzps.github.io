@@ -29,189 +29,18 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Pep2Mol: 3D Molecule Generation Targeting Protein-Protein Interfaces with Diffusion Models</h2>
-<p class="paper-authors">Yue, R., Yang, Z., +2 authors, Li, Y.</p>
+<h2 class="paper-title">Deep Unsupervised Domain Adaptation for Translating Cancer Dependency Maps From Cell Lines to Breast Cancer Tumor Genomics.</h2>
+<p class="paper-authors">Shi Y, Xu W, Hu P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein-protein interactions (PPIs) are central to biological processes. Designing small molecules that modulate dysregulated PPIs holds strong promise for targeting undruggable proteins. However, existing structure-based drug design approaches focus on well-defined small-molecule binding pockets and struggle to generalize to large, shallow, and chemically complex PPI interfaces. Here, we introduce Pep2Mol, a diffusion-based generative model for 3D molecule design that targets orthosteric PPI sites by explicitly incorporating binding peptides or proteins as structural guidance, moving beyond conventional pocket-conditioned generation. To enable model development and benchmarking, we curate a large-scale, high-quality dataset of 10,956 experimentally resolved protein complex structure pairs, each pairing an orthosteric competitive ligand with a protein binder at overlapping receptor interfaces. Pep2Mol integrates two SE(3)-equivariant graph neural networks that encode protein-ligand and protein-peptide interactions respectively, and fuses these representations via attention-based conditioning to jointly guide the diffusion trajectory. Extensive evaluations demonstrate that Pep2Mol generates chemically valid ligands with state-of-the-art binding affinities, providing a strong foundation for small-molecule inhibitor design against challenging PPI interfaces.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.734975v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">OpenGerminal: an open-source implementation of the Germinal antibody design pipeline</h2>
-<p class="paper-authors">Han, B., Li, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Germinal is a recently described computational pipeline for de novo antibody design that combines AlphaFold-Multimer hallucination with antibody language model guidance to generate epitope-targeted antibodies. Germinal identified binders with nanomolar-to-low-micromolar affinities by testing only 43-101 designs per target across four diverse antigens, establishing it as a practical tool for epitope-directed antibody design accessible to standard academic laboratories. As this architecture is itself very recent, systematic replacement and benchmarking of its individual components remains largely unexplored, yet offers a valuable opportunity to probe the robustness of the underlying design. We present OpenGerminal, which replaces PyRosetta with a fully open-source stack comprising OpenMM 8.5.1, FreeSASA, FASPR, Biopython, and sc-rs v1.0.0, and adopts AbLang1 (ablang2 v0.2.1) as the sole antibody language model in place of IgLM. Benchmarking on two VHH targets (PD-L1 and IL-3) reveals that OpenGerminal achieves a markedly higher cofolding pass rate (PD-L1: 33.7% vs. 18.6%; IL-3: 24.6% vs. 8.0%) with equivalent or improved Chai-1 structural confidence metrics in accepted designs, at the cost of a modest increase in per-trajectory computation time (&gt;=1.5x). Multi-chain target support is also extended and verified to run without error on the official insulin example. OpenGerminal provides the first systematic benchmarking of IgLM versus AbLang1 within the Germinal architecture, and its fully open-source component stack broadens the range of deployment contexts in which the pipeline can be used.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734527v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Function-guided design of active enzymes</h2>
-<p class="paper-authors">Hu, M., Wu, L., +2 authors, Zhu, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Designing enzymes from functional descriptions remains challenging because catalytic activity is governed by sequence-structure-function relationships. Here we present EnzymeArt, a function-conditioned enzyme-design framework centred on a generative sequence model. EnzymeArt couples function-conditioned sequence generation with structure-guided refinement, annotation checks and substrate-aware computational prioritization to select candidates for synthesis and biochemical testing. Across alcohol dehydrogenase (ADH), malate dehydrogenase (MDH) and triacylglycerol lipase design campaigns, 57 of 60 synthesized designs showed crude-lysate activity above matched background controls. Purified representatives further showed quantitative steady-state catalytic activity. The best designed ADH reached kcat = 223.7/s and exceeded a wild-type reference under matched conditions, an MDH reached kcat = 267.57/s despite having only 33% sequence identity to its closest BLASTP hit, and a designed lipase hydrolysed both short- and long-chain triglycerides with apparent activity modestly above that of a commercial lipase reference. Together, these results establish a route for converting functional descriptions into experimentally validated enzyme designs with quantitative steady-state kinetic activity.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.27.735025v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Homology-aware cross-validation strategies for generalization assessment in RNA structure prediction</h2>
-<p class="paper-authors">Bugnon, L., Kulemeyer, G., +3 authors, Milone, D. H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> RNA secondary structure prediction is a fundamental challenge in bioinformatics, essential for understanding the functional roles of non-coding RNAs. Recently, deep learning models have transformed the field with impressive results, leading to critical discussions regarding the validity of current cross-validation strategies. On the one hand, traditional random partitioning yields overop-timistic results due to data leakage from uncontrolled homology. On the other hand, removing from the training set all sequences that exhibit even the slightest resemblance to the testing sequences penalizes learning-based methods by requiring generalization to completely out-of-distribution sequences. While it is very simple to remove sequences and retrain a machine learned model, it is very difficult to remove the experimental data used for parameter tuning and the sequences used for the development of classical thermodynamic methods. Thus, these methods often benefit from an implicit knowledge leakage. In this work we critically review existing cross-validation strategies for RNA secondary structure prediction: random splitting, clustering-based splitting, and leaving one RNA family out for testing. We analyze the advantages and limitations of each strategy, also expanding them towards the future directions to ensure fair comparisons across the full range of sequence similarities, with the same rigor for both classical and learning-based methods.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.735057v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">GCBM-DCT-HV-Bio-NL-Grow-CHG-CSM-RHEC: A Unified Geometric, Biological, Causal, and Regenerative Framework for Mechanism-Aware Tissue and Connectome Modeling</h2>
-<p class="paper-authors">Xu, T., Hu, Z., +2 authors, Xiong, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Modern biological prediction problems increasingly require models that go beyond Euclidean feature regression and local graph smoothing. Tissue, cellular, and connectome systems are nonlinear, geometry-dependent, intervention-sensitive, history-dependent, and subject to regenerative or homeostatic constraints. We propose GCBM/DCT/HV/Bio/NL/Grow/CHG/CSM/RHEC, a unified model for mechanism-aware biological prediction. The model integrates geometric connectome dynamics, differentiable charted tissue geometry, Hamiltonian latent transport, nonlinear biological kinetics, nested latent memory, continual growth without overwriting, causal hypergraph structure, causal structure modeling, and regenerative homeostatic error correction. Unlike Euclidean baselines, which treat observations as flat vectors, and local graph baselines, which use neighborhood smoothing without mechanistic structure, the proposed model represents biological states (Trapnell 2015) as coupled geometric, dynamical, causal, and regenerative objects. We evaluate the model on four synthetic toy studies, Toy A, B,C, D, designed to reflect increasing biological complexity: local Euclidean structure, nonlinear mechano-chemical interaction, causal intervention response, and out-of-distribution regenerative shift. Compared with Euclidean and local graph baselines, the full model achieves the lowest mean squared error across all four toy studies. Relative to the Euclidean baseline, the full model reduces MSE by approximately 63.0%, 89.1%, 89.0%, and 90.9% on Toy A, Toy B, Toy C, and Toy D, respectively. These results support the value of integrating geometry, mechanism, causal structure, adaptive growth, and regenerative correction into a single predictive architecture (Figure 1).</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.24.734320v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MBIOME: A comprehensive, reproducible, and open-source workflow for amplicon-based microbiome data analysis.</h2>
-<p class="paper-authors">Gorostidi-Aicua, M., Otaegui-Chivite, A., +2 authors, Otaegui, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Microbiome analysis has become a pivotal tool in understanding the role of microbiota in human health and disease. However, the lack of standardized workflows, together with the limitations of proprietary software solutions, hampers reproducibility and flexibility. Here, we present Mbiome, an open-source, user-friendly and automated workflow designed to streamline amplicon-based microbiome analysis. Built upon QIIME2, Mbiome supports both bacterial (16S rRNA) and fungal (ITS) profiling, and is compatible with raw fastq files generated by Ion Torrent (IT) and Illumina (IL) sequencing platforms. The workflow guides users through an interactive setup process via a simple configuration file, enabling researchers with minimal bioinformatics experience to perform comprehensive analyses without writing code. Once configured, Mbiome automates major steps including quality control, taxonomic assignment, and {beta}-diversity analyses, functional predictions (via q2-metnet), and customizable visualizations and statistical analyses. Mbiome has been validated using real-world datasets from multiple sclerosis research projects, performing a comparison between different microbiome analysis approaches, including 16S hypervariable region reconstruction, amplicon-based strategies, and cross-platform sequencing (IT and IL), as well as against results obtained with Ion Reporter (IR) commercial software. This evaluation demonstrated its versatility and effectiveness across different sequencing platforms. Moreover, Mbiome provided improved flexibility, transparency, and taxonomic resolution compared to IR. By combining accessibility, reproducibility, and cross-platform compatibility, Mbiome lowers the barrier to microbiome data analysis and facilitates high-quality, standardized workflows in both research and applied settings. Mbiome is publicly available at https://github.com/MGorostidi/mbiome.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734448v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Prot2Prop: Structure-informed multitask protein property prediction</h2>
-<p class="paper-authors">Gharaie Amirabadi, D., Jackson, C., +2 authors, Amani, K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein engineering often relies on separate models for related developability properties, limiting efficiency and transfer across tasks. We present Prot2Prop, a multitask framework based on a frozen ProstT5 encoder with shared and task-specific adapters for joint prediction of six protein properties: material production, solubility, temperature stability, aggregation propensity, expression yield, and folding stability. Across held-out test data, Prot2Prop achieved strong performance on both classification and regression tasks, including AUROC values ranging from 0.86 to 0.98 for classification endpoints and Spearman correlations ranging from 0.73 to 0.86 for regression endpoints. The model achieved particularly strong performance for temperature stability (AUROC = 0.98) and aggregation propensity (Spearman = 0.86). Post-hoc calibration further improved regression accuracy, reducing folding stability MAE from 0.67 to 0.48. These results demonstrate that parameter-efficient multitask adaptation of protein language models can provide accurate and unified prediction of diverse protein developability properties.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.735009v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">False discovery rate control for trustworthy AI-based de novo peptide sequencing</h2>
-<p class="paper-authors">Liang, Z., Dai, C., +8 authors, Chang, C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> AI-based de novo peptide sequencing predicts peptide sequences from tandem mass spectra, enabling identification beyond predefined databases but leaving prediction reliability difficult to assess, particularly with respect to false discovery rate (FDR). In database search, FDR control is provided by target-decoy competition over a finite search space, whereas de novo predictions are generated in open sequence space and lack naturally matched sequence-level decoys. Here we introduce Counterpart Calibration Theory (CCT), a theory-guided framework that reframes de novo FDR control as a four-group score-ranking and threshold-selection problem over target-side predictions and matched counterpart-side comparators. Implemented in {pi}-NovoQC, CCT provides dual-level FDR control at the peptide-spectrum match and peptide levels. Across models, datasets, instruments and acquisition modes, {pi}-NovoQC achieves stable FDR control while preserving identification yield. In large-scale proteomic applications, {pi}-NovoQC recovers low-abundance in-database peptides missed by database search and provides de novo-supported protein-group and variant evidence.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735174v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Peptide:MHC Binding Stability Prediction Using Protein Language Models</h2>
-<p class="paper-authors">Karthikeyan, D., Vincent, B., Rubinsteyn, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Peptide:MHC class I (pMHC-I) binding stability governs the persistence of antigenic complexes at the cell surface and plays a key role in facilitating downstream immunological signals such as antigen presentation, T-cell activation, and immunodominance. However, methods for in silico stability prediction remain underexplored relative to binding affinity prediction, in part because available half-life datasets are sparse and expensive to collect. Here, we perform a systematic reassessment of pMHC-I stability prediction using controlled, similarity-aware data splits and apply a recently introduced supervised transfer-learning strategy to MINT, an interaction-aware protein language model, pretrained on binding affinity and fine-tuned for quantitative half-life prediction. We show that MINT improves stability prediction over standard ESM-2 representations and existing predictors, and that assay-conditioned recalibration corrects systematic shifts across experimental measurement modalities. Across eluted ligand, immunogenicity, and personalized neoantigen prioritization benchmarks, predicted stability provides signal beyond binding affinity, enriching for naturally presented and immunogenic peptides within affinity-filtered candidate sets. These results establish pMHC-I half-life as an orthogonal and transferable biophysical signal connecting peptide binding, surface presentation, and T-cell recognition, and provide a leakage-aware, assay-aware framework for future antigen-presentation modeling.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.735023v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A Robust Machine Learning Framework for Keloid Biomarker Discovery Beyond Differential Expression</h2>
-<p class="paper-authors">Daher, A., Eftimie, R., Afzal, F.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Keloids are fibroproliferative skin disorders arising following dermal injury that extend beyond the original wound margins. Their pathogenesis remains poorly understood, and current treatments are associated with high recurrence rates. Identifying transcriptomic biomarkers that distinguish keloids from other skin and scar phenotypes may provide insight into disease mechanisms and facilitate the development of targeted therapeutic approaches. However, previous transcriptomic studies have often been limited by small sample sizes, pairwise comparisons between tissue classes, heterogeneous data-integration strategies, and a reliance on conventional differential gene expression (DGE) analysis. Here, we employed a multi-stage machine learning (ML) workflow for robust keloid biomarker discovery using transcriptomic datasets derived from both bulk RNA sequencing and single-cell RNA sequencing (scRNA-seq). We assembled and harmonized, to the best of our knowledge, the largest curated cross-study keloid transcriptomic cohort currently available, comprising 81 samples from 13 independent studies spanning four clinically relevant tissue classes: normal skin, normotrophic scar, hypertrophic scar, and keloid scar. Through study-aware cross-validation, feature selection, partition-stability analysis, and bootstrap validation across multiple ML classifiers, we identified a panel of eight highly consistent biomarkers capable of distinguishing keloid from non-keloid samples. These biomarkers were associated with dysregulation of extracellular matrix homeostasis, fibrosis-resolution pathways, vascular remodelling, and metabolic reprogramming. Comparison with conventional DGE analysis demonstrated substantial agreement while also highlighting important differences between the two approaches. In particular, FASN was consistently identified by the ML workflow as an upregulated discriminatory biomarker despite exhibiting weak, non-significant differential expression in the DGE analysis. Cell-type-specific analysis further supported this finding, revealing significant FASN upregulation in fibroblast and vascular endothelial populations. These results demonstrate that ML and DGE capture complementary aspects of transcriptomic variation. This study provides a robust strategy for cross-study transcriptomic biomarker discovery and identifies candidate genes and pathways for future mechanistic and therapeutic investigation in keloids.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.24.734231v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The Cancer dependency maps (DepMap) identify genetic dependencies in cancer cells using large-scale loss-of-function screens, providing a foundation for cancer-specific treatment strategies. However, discrepancies exist between cancer cell line models (CCLs) and patient-derived tumor models, particularly in translating findings to clinical settings. To bridge this gap, computational approaches such as artificial intelligence-based domain adaptation can assist in aligning laboratory and patient-derived molecular data, thereby improving the translation of preclinical findings into personalized treatment strategies. We developed a deep unsupervised domain adaptation (UDA) algorithm to align features between source and target domains. It was trained on labeled CCLs data from the source domain and unseen, unlabeled CCL data from the target domain. The trained model was applied to predict the dependency map of breast cancer (BC) patients in The Cancer Genome Atlas (TCGA). To validate its performance, we used the predicted BC dependency map to classify ER + /HER2 + BC subtype statuses and identify synthetic lethality (SL) gene pairs for drug discovery. Our model demonstrated high accuracy in predicting cancer dependency maps for patient-derived tumors. The generated maps showed excellent performance in predicting ER + /HER2+ subtype statuses, with an area under the curve of the receiver operating characteristic (AUC-ROC) of 0.99. Notably, our analysis also identified two potential synthetic lethality gene pairs: PBRM1-NF2 and PBRM1-CTNND2, which can be potentially used for developing precision therapies for ER + /HER2+ breast cancer. Domain adaptation is a promising approach for transferring biological knowledge between different cancer models and improving patient-specific treatment strategies.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42339999/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +51,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">PubMed</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Somatic variant-calling beyond cancer: Repurposing algorithms to map low‑allele‑fraction variants across genomics.</h2>
-<p class="paper-authors">Nicholas Taylor, Timothy J Hearn</p>
+<h2 class="paper-title">Preclinical and Virtual Models of Mucosal Melanoma: Bridging Translational Gaps in a Rare and Lethal Cancer.</h2>
+<p class="paper-authors">Jin X, Zhang Y, +2 authors, Shi C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Somatic variant callers were originally developed to identify tumour-specific mutations in mixed tumour-normal samples. Increasingly, disciplines such as developmental biology, reproductive medicine, virology and mitochondrial genetics require detection of low-frequency variants from high-depth sequencing. Many laboratories therefore reuse cancer callers without clear guidance on their statistical assumptions or validation in non-cancer contexts.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42372426/" target="_blank">
+<p><strong>Abstract:</strong> Mucosal melanoma (MM) is a rare and lethal subtype of melanoma, disproportionately affecting Asian populations and exhibiting distinct clinicopathological and genetic features compared to cutaneous melanoma (CM). Often diagnosed at advanced stages, MM shows poor responses to conventional therapies, and no standardized treatment regimen currently exists. Progress in preclinical modeling, including cell lines, patient-derived xenografts (PDXs), organoids (PDOs), and comparative animal models-has provided valuable tools for studying MM pathogenesis and therapeutic resistance. Yet these models remain limited in number, heterogeneity, and standardization, restricting their ability to capture MM's molecular diversity and immunosuppressive microenvironment. Beyond physical platforms, emerging virtual strategies-including computational simulations, artificial intelligence-driven multi-omics integration, and in silico clinical trials-offer scalable, cost-effective complements. By simulating tumor-immune-drug interactions using minimal biospecimens, these models offer a unique platform for hypothesis testing and patient stratification in this rare cancer type. This review summarizes MM's clinicopathological features and therapeutic challenges, evaluates current preclinical models, and highlights the synergistic integration of biological and virtual approaches. Future efforts should prioritize MM-specific repositories, multi-model integration, and incorporation of in silico pipelines to accelerate translational research and improve outcomes in this highly lethal malignancy.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42261051/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +70,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 29, 2026</span>
-<span class="journal">PubMed</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">BetaDescribe: Providing rich descriptions from protein sequences.</h2>
-<p class="paper-authors">Edo Dotan, Iris Lyubman, +3 authors, Yonatan Belinkov</p>
+<h2 class="paper-title">The expanding role of protease therapeutics (2012-2026): from replacement therapies to immune system modulation and beyond.</h2>
+<p class="paper-authors">Nelson SE, Martinusen SG, +2 authors, Denard CA.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Deciphering protein function is fundamental to advancements in medicine and biotechnology. However, conventional experimental characterization remains resource-intensive. Public large language models (LLMs), though proficient in natural language processing, often fail to accurately interpret and predict the functional and structural properties of proteins, limiting their utility in bioinformatics. To address this gap, we introduce BetaDescribe, designed to generate detailed and rich textual descriptions of proteins, including their function, catalytic activity, involvement in specific metabolic pathways, subcellular localizations, and the presence of specific domains. The trained BetaDescribe model receives protein sequences as input and outputs a textual description of these properties. BetaDescribe starting point was the LLAMA2 model, which was trained on trillions of tokens. Our model was next trained on datasets containing both biological and English text, which allowed the incorporation of biological knowledge. In addition to the description generator, BetaDescribe comprises multiple validator models and a judge, which together enable accurate ranking of alternative generated descriptions. We demonstrate the utility of BetaDescribe by providing descriptions for proteins that share little to no sequence similarity to proteins with functional descriptions in public datasets. Using in silico mutagenesis, we further show that BetaDescribe relies on functionally important regions, as part of its prediction, suggesting that the model identifies regions of importance for the protein functionality without needing homologous sequence. BetaDescribe offers a powerful tool to explore protein functionality, augmenting existing approaches such as annotation transfer based on sequence or structure similarity.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42372160/" target="_blank">
+<p><strong>Abstract:</strong> Proteases are powerful therapeutic agents, offering unique advantages over conventional small molecules and biologics through their ability to directly and precisely cleave and (de)activate their protein targets. Since the early 1990s, FDA-approved protease therapeutics have served as replacement therapies for hematological disorders, as enzyme supplements for digestive disorders, and as treatments for neuromuscular disorders. Recent developments have expanded the use of native proteases to modulate antibody responses, improve transplant outcomes, and treat rare conditions with high unmet needs. Despite challenges such as immunogenicity and substrate specificity, the therapeutic landscape of proteases is being redefined by innovations in enzyme engineering and discovery. These advances, combined with targeted delivery strategies and improved stability, are reshaping proteases into precise and adaptable therapeutic agents. Rather than being limited to traditional uses, proteases are increasingly recognized for their potential to address complex conditions such as viral infections, neurodegeneration, and fibrosis, among others. With continued development, proteases are positioned to become a versatile and robust class of biologics with expanding clinical relevance. The present review explores the evolving landscape of protease therapeutics, focusing on their clinical applications, immune-modulatory capabilities, and future potential in precision medicine. This review provides a timely update to the comprehensive article "Proteases as Therapeutics" by Craik, Page, and Madison, published in the Biochemical Journal in 2011.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42237901/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -260,15 +89,300 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jun 29, 2026</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">The Look AHEAD Research Program: A 25-Year Retrospective From the Perspective of Geroscience.</h2>
+<p class="paper-authors">Espeland MA, Semelka CT, +2 authors, Newman AB.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The 10-year Action for Health in Diabetes (Look AHEAD) clinical trial compared a multidomain intensive lifestyle intervention to a diabetes support and education program with respect to major cardiovascular disease events (primary outcome) and other diabetes- and obesity-related outcomes. Follow-up of the cohort continues to add other aging-related outcomes and conditions to identify the long-term consequences of factors related to lifestyle and medical care. In this transition to a study of aging among individuals at risk for accelerated aging due to type 2 diabetes and overweight or obesity, the investigators have retrospectively reframed the study using the perspective of geroscience. This perspective strengthens the importance of lifestyle changes as a core component for medical care for these individuals to slow biological aging.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41575388/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Oestrogen receptor phosphorylation profiles and in silico PAM50 subtyping reflect sexual dimorphism in breast cancer.</h2>
+<p class="paper-authors">Chatterji S, Diack A, +8 authors, Speirs V.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Breast cancer (BC) is most prevalent in females but also accounts for &lt;1% of male cancer cases and 0.2% of male cancer-related deaths. Distribution of histological subtypes, receptor status, and age of diagnosis varies based on sex, and a growing body of evidence supports sex-specific molecular differences in BC. However, this is limited by the smaller number of male cases available for study compared to the thousands of cases of female BC. We combined publicly available male BC gene expression datasets for 195 patients from 4 studies and split randomly into discovery and validation sets. Clustering and gene expression analysis were performed. Two stable clusters were identified initially, confirmed in the validation set. Cluster C1 was enriched for genes associated with MAPK signalling and arylesterase activity. Cluster C2 showed enrichment of genes associated with proliferation, invasion, and metastasis, along with enrichment of gene ontology and pathway terms related to ECM regulation, particularly collagen-containing ECM. Of note, when stratified by ERα and PR status, no enrichment was observed with the predicted PAM50 classification. ERα and MAPK signalling were enriched in both clusters, albeit through different gene sets. Since these pathways were enriched, we investigated the signalling regulation of ERα based on immunohistochemical expression of phosphorylated ERα (S104, S118, S167, S294) and their prognostic roles. This analysis also revealed distinctions from female BC, showing a lack of prognostic outcome for any of these biomarkers. We show that male BC does not align with female BC in the same way that intrinsic subtypes of female BC are not identical. As BC heterogeneity is well recognised, we propose that male BC should be considered as a potentially unique clinical subtype of BC.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42333999/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">The T Cell Receptor: Molecular Sensor, Therapeutic Mediator and Probabilistic Driver of Adaptive Immunity.</h2>
+<p class="paper-authors">Schober K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Advances in high-throughput sequencing, single-cell profiling, and genome engineering have transformed the study of T cell receptors (TCRs), enabling the identification and functional interrogation of antigen-specific repertoires at an unprecedented scale. This review discusses how recent methodological developments-including high-dimensional TCR discovery strategies, physiological receptor engineering, and longitudinal in vivo analyses-have reshaped our understanding of TCR-driven immune responses. Recruitment into immune responses originates from diverse naïve precursor pools and results in polyclonal populations in which multiple clonotypes contribute to antigen recognition. Within such populations, receptor properties, such as TCR avidity, influence the likelihood of recruitment, expansion, and persistence. However, the impact of these parameters depends strongly on biological context, including antigen availability, cellular competition, and tissue environment. Physiological engineering approaches, such as orthotopic TCR replacement, now enable causal interrogation of receptor function while preserving endogenous regulatory control. Together with advances in spatial and longitudinal profiling of human immune responses, these approaches allow increasingly precise analyses of connections between TCR identity and T cell fate. Integrating insights across antigen discovery, receptor engineering, and in vivo dynamics suggests that TCR biology is shaped by the interplay of receptor sequence, regulatory context, and tissue environment across time. Understanding these relationships will be essential for interpreting immune responses and for guiding the rational design of T cell-based immunotherapies.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42244061/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 01, 2026</span>
+<span class="journal">MED</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Humanin Mitigates Aβ-Induced Retinal Pigment Epithelium Injury via AMPK-Beclin1-Dependent Mitophagy.</h2>
+<p class="paper-authors">Jang HY, Choi S, +5 authors, Kim JH.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Amyloid beta (Aβ), a key component of drusen in age-related macular degeneration (AMD), induces oxidative stress, mitochondrial dysfunction, and degeneration in the retinal pigment epithelium (RPE), contributing to progressive vision loss in the elderly. We investigated the protective role of Humanin (HN), a mitochondria-derived peptide with known neuroprotective effects in Aβ-related neurodegenerative diseases, in retinal pathology induced by subretinal injection of FITC-labeled Aβ. HN enhanced the clearance of Aβ-accumulated mitochondria in the RPE while preserving retinal function and RPE barrier integrity. In ARPE-19 cells, HN activated AMP-activated protein kinase (AMPK), leading to phosphorylation of ULK1 and Beclin1, which promoted the interaction between Beclin1 and Parkin and their translocation to mitochondria. This process facilitated the removal of Aβ-accumulated mitochondria in the RPE. Our results demonstrate that targeting mitophagy in the RPE with HN may offer a promising therapeutic strategy for AMD.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42333946/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">CyStainer: A transformer-based variational autoencoder for robust marker imputation in high-parameter cytometry</h2>
+<p class="paper-authors">Ivanov, K., Moussawy, M. A., +6 authors, Heinäniemi, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> High parameter cytometry is essential for clinical diagnostics through precise immune cell profiling, improved patient stratification, and monitoring, while also enhancing the understanding of cellular responses in disease and therapeutic contexts. The amount of cytometry data is growing fast, and with that, the need to merge different datasets for unified analysis. Here, we present CyStainer, a transformer-based variational autoencoder that demonstrates competitive or superior performance to existing methods on several key tasks related to marker prediction. As a key novelty, we demonstrate that CyStainer can impute markers without having a set of shared backbone markers. We performed several benchmarks using real-world FACS, CyTOF, InfinityFlow and CITE-seq datasets to show that CyStainer is a robust and flexible tool for panel merging, marker imputation, dataset integration and virtual staining of unseen samples.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.30.735235v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A robot model of compass cue calibration in the insect brain</h2>
+<p class="paper-authors">Mitchell, R., Dacke, M., Webb, B.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Dung beetles can use a variety of orientation cues to maintain a consistent bearing during ball-rolling. Where several cues are available, they appear to learn the spatial relationship between them, providing redundancy if some cues are removed. Mounting evidence indicates that such a learning process is implemented in the insect head direction circuit; specifically, in the plastic substrate between sensory input neurons and compass neurons in the central complex. This plasticity appears to be driven by rotational movements, providing a clear link with observed beetle 'dance' behaviour. Here, we extend our functional model of this circuit and use it on a robot platform, to test it in the same behavioural assay as was used for the beetles. The robot was able to replicate the beetle's ability to substitute a directional wind cue for a point source light cue in guiding straight-line movement. However, it also revealed significant biasing coupled to dance direction. This biasing appears to be caused by inherent conflict between recurrent and instantaneous inputs to the compass circuit. We predict that the real insect should experience similar issues unless it has evolved a neural mechanism to compensate.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734539v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Real-World Progression-Free Survival with Erlotinib versus Osimertinib in EGFR L858R+T790M Compound Mutation Non-Small Cell Lung Cancer: An Exploratory Analysis of the MSK-CHORD Dataset</h2>
+<p class="paper-authors">Dalloul, Z., Abboud, A., +1 author, Abdelsalam, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734551v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A High-Quality Acetylation Dataset Reveals Modest Data Requirements for Transfer Learning to Identify Little Studied Post-Translational Modifications</h2>
+<p class="paper-authors">Hartmaring, Y., Wang, S., +3 authors, Renard, B. Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Dysregulation of post-translational modifications (PTMs) is associated with severe pathologies, including cancers and Alzheimer's disease. Despite their biological importance, identifying modified peptides remains challenging due to the immense combinatorial search space. While searches benefit from prior knowledge of a peptide's modification status, the data scarcity for most PTMs hinders the development of accurate deep learning classifiers like AHLF (ad hoc learning of peptide fragmentation). Here, we overcome this data bottleneck for acetylation and ubiquitination. We harmonised a dataset with about 500,000 high quality acetylated peptide-spectrum matches (PSMs) from nine publicly available acetylation-enriched datasets. We fine-tuned AHLF with the acetylation and a 2-million spectra strong ubiquitination dataset separately and assessed the minimum data requirement for training by iteratively downsampling. Training separate models on SILAC and label-free subsets also assessed the impact of data diversity. The resulting acetylation and ubiquitination models achieve an AUC of 0.87 and 0.90 respectively. Beyond 28,500 acetylated spectra, corresponding to roughly 0.3% of the original model's training data, additional data just provides minor performance gains. Finally, we show that data diversity is beneficial for generalizability, while models trained on homogeneous data sources tend to overfit to their respective data type. All code, and model weights are available at https://gitlab.com/dacs-hpi/ahlf-ptmai.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.733353v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrating Semantic Retrieval, LLM-based Refinement, and Structured Expert Curation for Scalable AOP Gene Mapping</h2>
+<p class="paper-authors">Schaffert, A., Fratello, M., +12 authors, Greco, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Toxicogenomics can support regulatory toxicology, but its use is limited by the difficulty of translating molecular responses into mechanistic, decision-relevant interpretations. Adverse Outcome Pathways (AOPs) provide a framework for this translation, yet omics applications require scalable mapping of Key Events (KEs) to molecular features. Here, we present an AI-assisted, multi-step workflow for KE-to-gene mapping that uses embedding-based semantic retrieval to identify candidate ontology/pathway terms, large language model-assisted refinement to filter these candidates, and double-independent expert group curation with rule-based consolidation to finalize mappings and derive confidence scores. Compared with earlier NLP-based approaches, the workflow improves KE-to-ontology/pathway mapping performance and generates candidate annotations that better align with expert judgment while substantially reducing the need for manual augmentation. Explicit gene and protein mentions in KE titles were additionally grounded to improve specificity, and each curated mapping was assigned curator reason codes to support transparent, traceable, and confidence-aware reuse. Applied across AOP-Wiki, the workflow produced a comprehensive KE-to-gene set resource covering 1,254 KEs across 523 AOPs and linking 15,833 human genes. Utility is demonstrated through CTD-based AOP fingerprinting of curated reference chemical groups, highlighting expanded coverage and confidence-informed interpretation of chemical-associated gene signatures in an AOP context. The workflow and resulting resource provide a practical bridge between toxicogenomics and AOP-based mechanistic interpretation and support routine updating and future extension to additional omics layers within OECD Omics2AOP.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734475v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A pan-cancer benchmark of integrated ferroptosis, cuproptosis and disulfidptosis prognostic signatures</h2>
+<p class="paper-authors">Demir, A. Y., Yasar, E.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Integrated prognostic signatures combining ferroptosis, cuproptosis, and disulfidptosis are increasingly reported in oncology as advances in risk stratification, yet their added value over simpler pathway-specific or proliferation-related models remains unclear. Here, we developed an integrated regulated cell-death signature and evaluated it through an adversarial pan-cancer benchmark. Using the TCGA pan-cancer cohort comprising 9,808 tumours across 33 cancer types, we curated 118 genes associated with the three cell-death programmes, characterised inter-pathway crosstalk, and derived a 26-gene LASSO-Cox risk signature. The model showed reproducible prognostic performance across cancers, with a pan-cancer concordance index of 0.573 (95% CI, 0.552-0.594), and was independently validated in METABRIC and CGGA cohorts, remaining significant after adjustment for standard clinical variables. However, benchmarking revealed that the integrated signature, although superior to size-matched random gene sets (empirical p &lt; 0.001), did not outperform a ferroptosis-only model (DeLong p = 0.81), indicating no measurable gain from pathway integration. Moreover, much of the prognostic signal reflected tumour proliferation rather than regulated cell death. After adjustment for the proliferation meta-signature (meta-PCNA), ferroptosis performance declined from 0.573 to 0.504, while the integrated model decreased to 0.554. High-risk tumours were more sensitive to anti-proliferative drugs, and the risk score was most strongly associated with E2F, MYC, and G2M target programmes. The signature stratified prognosis but did not predict immune-checkpoint blockade response in IMvigor210 (AUC {approx} 0.50). Importantly, the underlying biology was not merely a modelling artefact. Signature genes showed concordance with protein abundance in CPTAC cohorts, and the three cell-death programmes co-varied within individual malignant cells, with correlations ranging from {rho} = 0.46 to 0.66. Overall, our findings indicate that integrated multi-death signatures are reproducible and biologically grounded, yet prognostically redundant and substantially confounded by proliferation. This study provides a cautionary benchmark for the rapidly expanding use of composite regulated cell-death signatures in cancer prognosis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734481v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Impacts of batch effects on the performance of machine learning classifiers across multiple studies</h2>
+<p class="paper-authors">Raab, P., Johnson, W. E., Piccolo, S. R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Precision medicine relies on accurate and generalizable predictions for patients across the spectrum of human diversity. Because capturing biological heterogeneity requires large sample sizes, researchers must often aggregate data from several experimental batches or independent studies. This integration allows for greater statistical power and diversity than a single study could provide, while avoiding the costs of generating massive new -omics datasets. Predictive models trained on these aggregated data are theoretically better equipped to detect subtle patterns that generalize to new data. However, this potential is frequently undermined by "batch effects"--systematic technical artifacts that can bias model training to predict experimental batches and shadow meaningful biological conditions. Models trained on data with batch effects can exhibit substantially degraded performance when applied to data from new batches. Statistical adjustment methods can mitigate these artifacts while preserving biological signals. To ensure these adjustments actually facilitate generalization, we emphasize the use of external, independent cohorts for rigorous validation. This chapter examines how batch effects impact predictions and compares various adjustment methods.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.24.734352v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Time-resolved inference of gene regulatory networks underlying human cranial neural crest development suggests novel risk genes for orofacial clefting.</h2>
+<p class="paper-authors">Eibl, M., Theiss, S., +11 authors, Laugsch, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cranial neural crest cells (CNCCs) play a central role in shaping the human head and face. Aberrant CNCC differentiation contributes to craniofacial birth defects, particularly non-syndromic cleft lip with or without cleft palate (nsCL/P), one of the most common congenital disorders. Although the number of genetic variants associated with this condition is steadily increasing, it remains challenging to determine if and how these variants may contribute to disease development. The majority of these variants lie within non-coding regulatory elements that govern cell-type and stage-specific gene expression, which is orchestrated by dynamic gene regulatory networks (GRNs). Despite extensive work in model organisms, a time-resolved, multi-omics perspective of GRNs controlling CNCC differentiation in a human system is still lacking. To fill this gap, we generated paired transcriptomic and chromatin accessibility data at four timepoints during in vitro differentiation of CNCCs derived from human induced pluripotent stem cells. Integrating these two modalities enabled time-resolved inference of GRNs and identification of dynamic regulatory relationships, including stage-specific roles of core transcription factors. Leveraging these time-resolved GRNs, we mapped 29 nsCL/P associated variants linked to 70 putative target genes, with 40 located outside the associated genomic loci, suggesting novel distal regulatory relationships. Integration of these data with complementary time-course scRNA-seq data revealed an ectomesenchymal-biased subpopulation of CNCCs as particularly sensitive to genetic variants associated with nsCL/P. We provide a time-resolved inference of GRN in human CNCC differentiation, allowing us to determine the dynamics of stage-specific core regulatory programs that are otherwise missed in analyses based on a single time snapshot. To our knowledge, the data represent the first multi-omics map of human CNCC with temporal resolution, which expands the understanding of early human craniofacial development, refines variant-to-gene assignment, prioritizes candidate risk genes and cell states relevant to nsCL/P. Our findings demonstrate the relevance of studying the dynamics upon differentiation rather than just one fixed timepoint and offer a valuable basis for further investigation of non-coding variation in CNCC-related disorders.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.25.734423v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Structural Bioinformatics of Four Human Aquaporins and Their Water-Soluble QTY Analogs</h2>
+<p class="paper-authors">Zhang, S., Xiao, E.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Human aquaporins (AQPs) are essential membrane channels, yet their inherent hydrophobicity complicates structural and functional studies. We present the systematic application of the QTY code to human AQPs, integrating it with AlphaFold 3 structure prediction to design and validate that four-representative human AQPs (AQP1, AQP3, AQP4, AQP7) can be converted into water-soluble analogs while maintaining their conformation. This approach features a novel platform for editing challenging membrane proteins. The QTY code was applied to the transmembrane regions of the selected four AQPs. Subsequently, the water-soluble QTY analogs of the four AQPs were predicted using AlphaFold 3. The predicted structures were superposed with CyroEM- or X-ray-determined native structures in PyMOL. Further analyses included root-mean-square deviation (RMSD) calculations, visualization of hydrophobic surface reduction, and inspection of conserved protein-ligand binding ability. After applying the QTY code, sequence changes between native AQPs and their QTY analogs was significant (42.86-48.80%). Nevertheless, their structures superposed well in analyses, with only slight deviations (RMSD 90; pTM ~0.83), supporting the reliability of the predicted structures. The findings demonstrate that membrane protein hydrophobicity can be edited and reduced without compromising fold integrity or functional architecture. Integration of the QTY code with AlphaFold 3 affords a high-throughput platform for designing water-soluble, structurally faithful analogs of challenging membrane proteins. Such a strategy can provide a potent platform for detergent-free biochemical studies and water-soluble analogs for therapeutic monoclonal antibody discoveries, thus advancing research of this pharmacologically important protein family.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.24.734367v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jun 30, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">GeneBench-Pro: Evaluating Multistage Statistical Reasoning\\in Genomics, Quantitative Biology, and Translational Biomedicine</h2>
+<p class="paper-authors">Li, J. H., Ho, A. J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> We introduce GeneBench-Pro, an expanded and improved version of GeneBench that comprises harder problems across a wider breadth of domains. GeneBench-Pro is a benchmark for AI agents performing realistic multi-stage scientific analyses in genomics, quantitative biology, and translational biomedicine which seeks to capture the complexity of real-world problems that computational life scientists face when tasked with producing a conclusion upon which a downstream scientific or translational decision is contingent. The benchmark comprises 129 evaluations targeting quantities of direct practical relevance across 10 primary domains and 21 terminal subdomains, with a genomics-centered core. Similarly to GeneBench, each problem provides the agent with brief context, a target estimand, and minimal guidance otherwise; the agent must then navigate multiple dependent decision points; i.e., substantive inferential forks where a plausible wrong choice changes the downstream analysis, to identify and execute the correct analysis workflow and arrive at the correct answer. Relative to GeneBench, GeneBench-Pro adds 29 new problems, drops three, and introduces significantly redesigned versions of 54 of the remaining 100 overlapping problems. 82 of the 129 problems were reviewed by external domain experts, whose findings led to prompt/data modifications and redesign of those problems whose targets were not sufficiently identifiable. Ten externally reviewed problems are released publicly, 50 held-out problems were provided to Artificial Analysis for independent third-party model benchmarking, and the remainder are retained as an internal holdout. In evaluations over the full 129-problem suite, GPT-5.6 Sol reaches an eval-level pass rate of 28.7% at the max reasoning level, and GPT-5.6 Sol Pro reaches 31.5% in separately reported GPT Pro runs. GPT-5.5 reaches 12.0%, GPT-5.4 reaches 8.9%, and the strongest non-GPT baseline, Claude Opus 4.8, reaches 16.0%. As with GeneBench, models often complete substantial portions of the workflow but exhibit a consistent gap between noticing and acting by identifying local diagnostic signals but failing to propagate the implications to the corresponding analysis decision. As a result, models often select wrong estimators or persist on initially plausible but incorrect analysis paths. GeneBench-Pro therefore measures an emerging capability of long-horizon biological reasoning that remains unreliable.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735386v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 08, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">From tumors to neurons: mass spectrometry imaging in spatial lipidomics.</h2>
-<p class="paper-authors">Bharath S Kumar</p>
+<h2 class="paper-title">A multidimensional strategy for identifying quality markers of Radix ginseng-Schisandra chinensis in the disruption of the inflammation-cancer transformation process of hepatocellular carcinoma based on metabolic regulation and chemical properties.</h2>
+<p class="paper-authors">Saiyu Li, Yijing Dong, +6 authors, Yiwen Zhang</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Lipids are fundamental biomolecules that regulate cellular structure, energy metabolism, and signaling, and their dysregulation is increasingly implicated in the pathogenesis of cancer and neurological disorders. Although conventional lipidomics has provided valuable insights into global lipid composition, it lacks spatial information essential for understanding tissue-level heterogeneity. Mass spectrometry imaging (MSI) has emerged as a transformative, label-free analytical platform that enables spatially resolved molecular mapping of lipids directly within biological tissues. Utilizing complementary ionization techniques such as matrix-assisted laser desorption/ionization (MALDI), desorption electrospray ionization (DESI), and secondary ion mass spectrometry (SIMS), MSI allows simultaneous detection of hundreds to thousands of lipid species while preserving their two- and three-dimensional spatial context. Recent technological advances have significantly improved spatial resolution, lipid identification, and biological interpretation through integration with multimodal imaging and machine learning approaches. In cancer research, spatial lipidomics have revealed heterogeneous lipid distributions within tumor microenvironments, providing insights into metabolic reprogramming, tumor progression, and therapeutic resistance. In neuroscience, MSI-based neurolipidomics has enabled region-specific characterization of lipid alterations associated with neurodegeneration, neuroinflammation, and myelin pathology. Despite ongoing challenges related to standardization, isomeric lipid discrimination, and data integration, MSI continues to reshape our understanding of lipid biology. This review highlights recent methodological innovations and biological applications of MSI, underscoring its growing impact on spatial lipidomics in cancer and neuroscience.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42370410/" target="_blank">
+<p><strong>Abstract:</strong> Comprehensive quality control is essential for ensuring the efficacy and safety of traditional Chinese medicines (TCMs). However, current quality control methods of TCMs primarily focus on quantifiable indicators, neglect the variation of pharmacodynamic constituents across disease progression. This study aimed to develop a comprehensive pathogenesis-oriented quality control framework for TCMs, using Radix ginseng-Schisandra chinensis (R-S) herb pair intervention in hepatocellular carcinoma (HCC) progression as an example. A rat model of "hepatitis-cirrhosis-HCC-advanced HCC" was established to evaluate the effects of R-S. Untargeted metabolomics revealed that bile acid (BA) dysregulation was the key pathological mechanism in HCC progression. Target metabolomics, liver-incorporated constituents analysis, immunoblotting techniques, correlation analysis and weighted average algorithm were integrated to screen the pharmacodynamic substances of R-S. HPLC fingerprinting of R-S was established and analyzed using machine learning (ML) algorithms to identify characteristic constituents. Ultimately, the Q-markers of R-S were ascertained and verified by molecular docking and molecular dynamics simulation. R-S effectively restored BA homeostasis during the progression in HCC by modulating the aberrant expression of BA-regulatory proteins (BSEP, MRP2, OATP1B1, NTCP1, CYP27A1, and CYP7A1). 6, 8, and 8 pharmacodynamic components of R-S were identified for preventing the further progression of hepatitis, cirrhosis, and HCC, respectively. Furthermore, 7 characteristic constituents of R-S were determined. Ultimately, 5 specific, measurable, and effectively Q-markers were identified. This study provides a reliable framework for facilitating precise quality control and applications of TCMs.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42264398/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">May 03, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Comprehensive Multi-Omics Profiling of Tertiary Lymphoid Structures Reveals Immunogenetic Landscapes and Prognostic Subtypes in Lung Adenocarcinoma.</h2>
+<p class="paper-authors">Yajie Zhou, Zijian Hu, +2 authors, Haiwei Rao</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Tertiary lymphoid structures (TLSs) are key components of the tumor immune microenvironment and show prognostic relevance in many cancers. However, their genetic association with lung adenocarcinoma (LUAD) is still lacking. This study aims to construct a TLS-related prognostic model through an integrated multi-omics strategy and to elucidate relevant immunogenetic mechanisms. TLS-related genes (TRGs) showing genetically supported associations with LUAD were identified using Mendelian randomization (MR). A TRG-based model was established using machine learning (ML), with its accuracy assessed through a nomogram. Downstream analyses were performed, including immune microenvironment, tumor mutational burden (TMB), pathway enrichment, drug sensitivity profiling, and single-cell RNA sequencing (scRNA-seq). The expression of TRGs was confirmed using reverse transcription quantitative polymerase chain reaction (RT-qPCR). The prognostic model we built using the best algorithm showed strong prognostic value (1-, 3-, and 5-year AUCs &gt; 0.75). Individuals classified in the high-risk (H-R) cohort exhibited markedly poorer outcomes (p &lt; 0.001). Incorporation of the risk model into the nomogram improved its predictive accuracy compared with the model without this variable (AUC = 0.769 for risk score). TMB analysis suggested a higher TMB in the H-R group, which may predict a worse prognosis. Drugs targeting the PI3K-AKT-mTOR and cell cycle pathways showed higher efficacy in the H-R group. According to enrichment results, TRGs were mainly involved in immune activation and cell cycle regulation, suggesting that these genes may regulate LUAD prognosis through PI3K-AKT-mTOR and cell cycle pathways. The scRNA-seq analysis showed that the 10 TRGs were predominantly localized within T/NK and myeloid cell clusters, indicating their potential involvement in modulating local immune responses. The differential expression patterns of these genes across multiple cell lines were validated using RT-qPCR. In summary, this comprehensive model highlights the significance of TRGs in LUAD, providing a new paradigm for immunogenetic risk evaluation and personalized therapy.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42070266/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -283,11 +397,68 @@
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning-enhanced plasma proteomics discriminates pancreatic cancer-associated diabetes from type 2 diabetes mellitus.</h2>
-<p class="paper-authors">Lucas Cardoso Lazari, Carlos Del Cistia Donnarumma, +10 authors, Giuseppe Palmisano</p>
+<h2 class="paper-title">A deep learning lung cancer segmentation pipeline to facilitate CT-based radiomics.</h2>
+<p class="paper-authors">A C P So, D Cheng, S Aslani, M Azimbagirad, D Yamada, A Bille, N Sivarasan, A Pennycuick, E Karapanagiotou, J Jacob</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Pancreatic ductal adenocarcinoma (PDAC) is frequently preceded by new-onset diabetes mellitus (NODM), yet differentiating PDAC-associated DM from type 2 diabetes (T2D) remains clinically challenging. We investigated whether plasma proteomic profiling combined with machine learning could discriminate these conditions. Plasma samples from individuals with PDAC (with and without DM), long-standing T2D, and controls were analyzed by MALDI-TOF mass spectrometry. Spectral features were processed through a nested cross-validation framework to prevent data leakage, and model interpretability was explored using SHAP values. In parallel, low-molecular-weight proteins were characterized by GeLC-MS followed by LC-MS/MS and differential abundance analysis. Machine learning models distinguished PDAC-associated DM from T2D with a balanced accuracy of 85%. Proteomic analyses identified distinct signatures in PDAC- associated DM, including downregulation of erythrocyte-related proteins and PPBP, and upregulation of acute-phase reactants such as FGA, CP, and SERPINA3. Treatment-naïve cases displayed increased circulating epithelial and keratin-associated proteins, which were attenuated after therapy, suggesting dynamic tumor-related remodeling. These findings demonstrate that integrating MALDI-TOF profiling with machine learning can capture plasma signatures associated with PDAC-associated DM. Although exploratory, this approach supports further validation in prospective cohorts aimed at improving PDAC risk stratification among individuals with NODM. SIGNIFICANCE: Pancreatic ductal adenocarcinoma (PDAC) is a highly lethal malignancy with a dismal 5-year survival rate, primarily due to late-stage diagnosis. The frequent occurrence of new-onset diabetes mellitus (NODM) as a paraneoplastic syndrome offers a critical window for early detection. However, the clinical challenge of distinguishing PDAC-associated diabetes (PDAC-DM) from type 2 diabetes mellitus (T2D) has hindered the implementation of effective screening strategies. This study addresses this significant clinical problem by leveraging a multi-faceted proteomics approach. We demonstrate that the integration of MALDI-TOF mass spectrometry peptide profiling with machine learning algorithms can accurately discriminate PDAC-DM from T2D with 85% accuracy. Furthermore, we used LC-MS/MS to identify specific low molecular weight proteins that are differentially regulated between these conditions, providing a molecular basis for the observed discrimination. Our work is significant as it presents a novel, high-throughput pipeline for biomarker discovery that combines the scalability of MALDI-TOF with the analytical power of LC-MS/MS and machine learning. The identified plasma signatures hold strong translational potential to improve risk stratification in patients with NODM, ultimately enabling earlier diagnosis of PDAC and improving patient survival prospects. This research directly contributes to the field of clinical proteomics by providing a robust methodological framework and candidate biomarkers for the early detection of one of oncology's most challenging diseases.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42069247/" target="_blank">
+<p><strong>Abstract:</strong> CT-based radio-biomarkers could provide non-invasive insights into tumour biology to risk-stratify patients. One of the limitations is the laborious manual segmentation of regions-of-interest (ROI). We present a deep learning auto-segmentation pipeline for radiomic analysis.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42190286/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 30, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">In silico identification of NPACT-derived PAK1 inhibitors using machine learning, molecular docking, and dynamic simulation approaches.</h2>
+<p class="paper-authors">Ha Nguyen Xuan, Chau Le Thi My, Thuy Phan Thi</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> P21-activated kinase 1 (PAK1) is a key serine/threonine kinase involved in cytoskeletal remodeling, cell proliferation, and survival, and its aberrant activation has been strongly associated with tumorigenesis in multiple cancer types. Owing to its central role in oncogenic signaling and its more favorable safety profile compared with other PAK isoforms, PAK1 has emerged as an attractive therapeutic target. However, the development of selective and non-toxic PAK1 inhibitors remains challenging, particularly due to the conserved nature of kinase ATP-binding sites. In this study, an integrated in silico strategy was employed to identify potential PAK1 inhibitors from the Naturally occurring Plant-based Anti-cancer Compound-Activity-Target database (NPACT). Machine learning models were first constructed to predict binding free energies, with the K-Nearest Neighbors model showing the best performance. Six top-ranked compounds were subsequently subjected to molecular docking, revealing favorable binding affinities and consistent interactions with key active-site residues of PAK1. Binding affinity was further refined using steered molecular dynamics simulations, which showed a strong correlation between maximum rupture force and experimental inhibitory activity, supporting the reliability of the steered molecular dynamics (SMD)-derived binding free energies. Toxicity prediction suggested moderate to low toxicity profiles for all candidates, with no predicted cardiotoxicity. Density functional theory calculations further elucidated the electronic properties, frontier molecular orbitals, and molecular electrostatic potential features relevant to protein-ligand interactions. Overall, this comprehensive computational investigation highlights several NPACT-derived phytochemicals as promising PAK1 inhibitors, providing valuable insights for future experimental validation and anticancer drug development.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42090979/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 30, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">CBFI: A multi-layer gene network key node identification algorithm integrating structural-biological features and dynamic regulatory weights.</h2>
+<p class="paper-authors">Yue Li, Junkai Kang, Xiaoyi Zhang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Identifying key nodes within multi-layer GRNs is crucial for uncovering potential biomarkers and therapeutic targets. Key nodes exhibit bothlocal structural advantages (e.g., bridging weak connections, disease associations) andglobal influence (e.g., centrality, regulatory impact). To comprehensively quantify node importance in multi-layer GRNs, we propose the CBFI (Comprehensive Biological Feature-based Importance) algorithm.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42069101/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 29, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A dynamic proteomic signature for the prediction of lung Cancer: a longitudinal analysis in the UK Biobank cohort.</h2>
+<p class="paper-authors">Jie Liang, Yi Feng, +11 authors, Wenhua Liang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> To understand the molecularly obscure pre-diagnostic phase of lung cancer, we mapped the temporal evolution of the plasma proteome for new biological insights and improved risk prediction.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42068891/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
