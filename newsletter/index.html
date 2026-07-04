@@ -36,11 +36,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Simulating population pangenomes under coalescent demographic models with MSpangenome</h2>
-<p class="paper-authors">Piat, L., Denni, S., +2 authors, Duvaux, L.</p>
+<h2 class="paper-title">AptBacterialDB: A Comprehensive, Manually Curated Database of Antibacterial Aptamers</h2>
+<p class="paper-authors">Bajiya, N., Gupta, I., Raghava, G. P. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Pangenome variation graphs (PVGs) are increasingly used to represent genomic diversity, yet there is currently no general framework for generating population pangenomes directly from explicit evolutionary histories. Existing simulators typically focus on individual classes of variation and do not integrate these variations within a genealogy-aware framework driven by explicit demographic histories. As a result, evaluating pangenome methods in realistic population-genetic settings remains challenging, and benchmark datasets with known evolutionary ground truth are scarce. Results: We present MSpangenome, a genealogy-aware frame- work that bridges coalescent population genetic simulations and pangenome graph analyses. The pipeline combines ancestry simulation with msprime and a de novo graph construction algorithm to generate PVGs directly from simulated genealogies. By explicitly modeling recombination, demographic history and incomplete lineage sorting, MSpangenome produces structurally complex pangenomes in which nested and overlapping structural variants emerge naturally from the underlying genealogies, while their evolutionary history and graph topology remain known by construction. This provides a general framework for generating realistic population pangenomes and establishing ground-truth datasets for methodological evaluation. We demonstrate its utility by generating population-scale pangenomes and using them as controlled references to benchmark the widely used graph construction tools, PGGB and Minigraph-Cactus. Our analyses reveal contrasting performance regimes across levels of sequence diversity, sample sizes and classes of structural variation, highlighting the value of simulation-based benchmarking for identifying reconstruction errors that are hard to detect using empirical datasets alone. Availability and implementation: MSpangenome is imple- mented in Python, fully containerized, freely available at https://forge.inrae.fr/pangepop/MSpangepop and mirrored at https://github.com/inrae/MSpangepop.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735168v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> In recent years, aptamers have transitioned from mere laboratory tools to highly potent molecular recognition agents capable of overcoming the strict limitations of conventional antibiotic therapies. We have developed AptBacterialDB, a manually curated, large, comprehensive database of experimentally validated antibacterial aptamers spanning 1996 to 2026. The database contains a total of 2131 aptamers targeting approx 75 different bacterial classes, and 124 aptamer targets with 95 entries found in UTexas databases, 97 in AptaDB, and 28 in Aptabase. It contains 1555 unique aptamer sequences, 189 unique modifications, 40 different selection approaches, and 44 different affinity methods. It integrates detailed annotations of about 20 fields, including sequence information, nucleic acid type, binding affinity, modifications, experimental and functional details. The secondary structure of the aptamers was predicted using ViennaRNA Package 2.0, demonstrating that they adopt mostly stable conformations, with a structured stem region. MySQL was implemented for database development, and a knowledge graph was integrated using ArcadeDB/openCypher for graphical visualization of aptamer-target-organisation relationships. Facilities such as different search modes, browsing, similarity search, REST API access, and entries linked to the existing database for a broader view of the aptamers have been provided. AptBacterialDB (https://webs.iiitd.edu.in/raghava/aptbacterialdb/) provides a user-friendly centralized platform to accelerate antibacterial aptamer research, therapeutic development, biosensor design, and computational modelling efforts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.01.735956v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Inferring differentiation trajectories from T cell clonotype distributions</h2>
-<p class="paper-authors">Guryleva, M. V., Danielsson, M., +2 authors, Murrell, B.</p>
+<h2 class="paper-title">zsasa: a Zig-based engine for high-throughput solvent accessible surface area at proteome scale</h2>
+<p class="paper-authors">Nagae, T., Tomii, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA sequencing (scRNA-seq) enables reconstruction of cellular differentiation trajectories, but most trajectory inference methods rely largely on gene expression and overlook lineage relationships. In T lymphocytes, the T cell receptor (TCR) provides a unique, endogenous barcode that is stably inherited during clonal expansion. Here we introduce PhyloTrajectory, a framework that leverages TCR-based clonotype frequencies together with scRNA-seq to infer T cell differentiation dynamics. By modeling clonotype frequency evolution as a continuous stochastic process, PhyloTrajectory reconstructs differentiation tree topologies from clonotype frequencies across cellular subsets. We investigate the ability to recover the underlying tree topology using simulated data, and apply our approach to CD4 T cells in murine models of allergic inflammation and viral infection. We further demonstrate that PhyloTrajectory is useful in the context of exogenously introduced barcodes. Overall, this shows that a stochastic model of clonal expansion can be used to infer cell state transitions from clonotype frequencies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735205v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Solvent accessible surface area (SASA) is widely used to describe protein stability, ligand binding, mutation effects, and protein-protein interfaces. As structural biology workloads expand to predicted-structure collections, trajectories, and large assemblies, SASA tools must combine reproducible calculation with high throughput, low memory use, and workflow-friendly input handling. We present zsasa, a Zig-based SASA engine with command-line and Python interfaces. zsasa implements the established Shrake-Rupley and Lee-Richards algorithms, provides exact f64/f32 modes and an optional bitmask approximation, and supports batch and trajectory workflows, compressed structure inputs, and configurable atom classification including Chemical Component Dictionary (CCD)-based radii for non-standard components. In matched Shrake-Rupley validation on 4,370 Escherichia coli AlphaFold Database structures, exact double-precision zsasa reproduced FreeSASA total SASA values to near numerical identity. In 10-thread batch benchmarks on the E. coli and 23,586-structure human AlphaFold collections, zsasa was 2.94x faster than a FreeSASA batch wrapper in exact f64 mode and up to 9.70x faster in bitmask mode, with roughly 4-8x lower peak memory. Trajectory benchmarks exceeded 1,000 frames/s at tens of megabytes of peak memory, and a 4.5-million-atom PDB stress-test file completed in under five seconds. These results support zsasa as a practical tool for reproducible, low-memory generation of surface-derived structural features at large scale. zsasa is available under the MIT License at https://github.com/N283T/zsasa.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.733683v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">WattmaMod enables high-resolution and extensible RNA modification profiling for nanopore direct RNA sequencing</h2>
-<p class="paper-authors">Han, R., Yu, B., +4 authors, Xin, G.</p>
+<h2 class="paper-title">Context-dependent calibration of Evo2 likelihood with bacterial fitness: a quantitative characterization across five E. coli datasets</h2>
+<p class="paper-authors">MinSeo, K., Shin, J.-H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Nanopore direct RNA sequencing enables direct profiling of RNA modifications on native transcripts, but accurate multi-modification detection remains limited by non-stationary signals and heterogeneity across chemistries. Here, we develop WattmaMod, a deep learning framework for multi-modification detection from nanopore direct RNA sequencing data. It combines self-supervised pretraining, supervised contrastive fine-tuning, and low-label incremental adaptation to improve representation learning and support efficient extension to low-resource modification types. The framework further incorporates wavelet-guided multi-scale encoding and dynamic cross-attention fusion to model raw signals and event-level features. Results show that WattmaMod achieves robust detection of multiple RNA modifications, including m6A, m5C, m1A, A-to-I, m7G, hm5C, m1{Psi}, f5C, ac4C, m5U and {Psi}. It also extends efficiently to low-resource modification types with minimal labeled data, generalizes across sequencing chemistries and species, and predicts potential higher-order local organization among distinct RNA modifications. WattmaMod thus provides a scalable framework for high-resolution epitranscriptome profiling and expands RNA modification analysis beyond single-site prediction to coordinated multi-modification characterization.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.02.735990v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> DNA foundation models are trained to predict the likelihood of natural sequences, but the calibration between such likelihood scores and laboratory fitness or directly measured molecular phenotypes depends strongly on gene context, sequence divergence from wild-type, and selection regime. We apply zero-shot variant scoring with Evo2 7B (dLLR, the change in pseudo-log-likelihood between mutant and reference windows) to five E. coli datasets and quantify this context-dependent calibration map. Calibration is strong in two settings. In the Firnberg 2014 deep mutational scan of TEM-1 beta-lactamase (13,027 nucleotide-level variants; plasmid-borne enzyme under band-pass ampicillin selection), Evo2 dLLR tracks measured fitness at Spearman rho = 0.545 (95% CI 0.532-0.557; SNV rho = 0.606, indel rho = 0.521). In the Tenaillon 2012 thermal-evolution dataset, type-stratified, window-tuned scoring reaches Insertion AUROC 0.882 (W = 2,048 bp) and Deletion AUROC 0.846 (W = 4,096 bp). Calibration is decisively absent in the same organism: the Ireland 2020 RegSeq promoter MPRA gives rho = 0.011 (95% CI 0.003-0.019; n = 64,665), flat even after -10/-35 mechanism stratification, and the Dewachter 2023 chromosomal-essentials scan (fabZ/lpxC/murA) gives rho = 0.041 (95% CI 0.025-0.058). The Papkou 2023 folA combinatorial landscape sits between, at rho = 0.237, with a sweep that falls monotonically from rho = 0.575 at two mutations from wild-type to rho = 0.065 at nine. Pooling per-gene and per-divergence correlations, we fit calibration as an explicit function rho = f(sequence divergence from WT, variant context): weighted regression gives a negative divergence coefficient and a negative regulatory-context coefficient (both in the predicted direction; R2 = 0.49), an explicit, if illustrative, fit rather than a metaphor. We further test, and find unsupported, the intuitive explanation for the residual TEM-1 vs. essentials gap: across five genes the chromosomal essentials are more represented than TEM-1 by raw public-database deposition couno simple training over-representation does not exiant diversity is a candidate but remains untested. We therefore reframe Evo2 not a a likelihood predictor whosecalibration with fitness is conble is not a DMS pre-screen toolbut a quantitative lookup table likelihood-fitness gap closes(training-rich plasmid CDS undeens (chromosomal essentials,native promoter regulatory variorganism, plasmid vs. chromosomal context and strong vs. weak selifferent calibration regimes,the central finding.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.02.736037v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Zero-Shot Metabolite Prediction from Gene Expression via Physics-Informed Graph Neural Networks</h2>
-<p class="paper-authors">Novella Rausell, C., Rabelink, T., Mahfouz, A.</p>
+<h2 class="paper-title">Strict OOD Antigen-to-Antibody Retrieval with CDR-Aware Slot Late Interaction</h2>
+<p class="paper-authors">Liu, P., Pan, M., +2 authors, Zhang, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting metabolite concentrations from gene expression is instrumental for linking regulatory programs to metabolic phenotypes. Prior approaches rely on static enzyme-metabolite mappings and often omit data-driven learning or biochemical constraints, limiting their ability to generalize to new metabolites. We present GAZE (Graph Attention for Zero-shot metabolite Estimation), a physics-informed graph neural network that integrates enzyme expression, Enzyme Commission functional embeddings, and ChemBERTa metabolite descriptors within a unified metabolic graph (5,414 nodes, 16,307 edges). A Metabolite-Conditioned Reader uses each metabolite's SMILES embedding to query learned pathway representations, enabling zero-shot prediction with no metabolite-specific parameters. We evaluate GAZE in three scenarios: (i) standard cross-validation on the Cancer Atlas of Metabolic Profiles (18,044 genes, 180 metabolites, 867 cell lines), achieving R2 = 0.816; (ii) leave-one-metabolite-out (LOMO) zero-shot evaluation across 50 held-out metabolites, where the physics-informed variant halves the median R2 deficit relative to a standard GNN baseline (-0.34 vs. -0.72), with 30% of unseen metabolites achieving positive R2; and (iii) external validation on an independent clear cell renal cell carcinoma tissue cohort (220 samples), where GAZE achieves median Spearman rho = 0.330 across 214 metabolites without fine-tuning. GAZE outperforms scCellFie, MEBOCOST, and UnitedMet across all evaluation settings.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735073v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Antigen-specific antibody retrieval aims to rank candidate antibodies for a target antigen, providing an early virtual-screening step before structural modeling or experimental validation. Existing sequence-based antibody-antigen interaction studies often formulate the problem as pairwise binding prediction, and random or non-clustered evaluations can overestimate generalization when related antigens appear across training and test data. We study a strict antigen-cluster out-of-distribution (OOD) retrieval setting in which test antigens come from sequence clusters unseen during training. This setting is difficult because binding is driven by local epitope-CDR complementarity, while available databases mainly contain observed positive complexes and lack reliable negative labels for unlabeled candidates. We propose Ab-CASLR, an antibody CDR-aware slot late-interaction retriever that encodes antigens with ESM-2, encodes antibodies with IgBert, constrains antibody-side latent slots to complementarity-determining regions (CDRs), and scores local slot compatibility instead of single-vector global similarity. On a strict OOD benchmark with 849 antigen queries and 869 candidate antibodies, the model achieves 7.42% Hits@10, outperforming k-mer homology transfer at 5.53% Hits@10 and yielding 6.28-fold enrichment over exact random screening at $K=10$. Ablations and diagnostics show that CDR-constrained antibody slots remain diverse, whereas antigen-side latent slots collapse into similar summaries. These results support CDR-aware local antibody representation as a useful inductive bias for early binder recovery under strict OOD evaluation, while antigen-side epitope grounding remains unresolved.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.30.735486v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ProteoDUDes: Taxonomic profiling for metaproteomics with false positive reduction</h2>
-<p class="paper-authors">Schiebenhoefer, H., Muth, T., +1 author, Renard, B. Y.</p>
+<h2 class="paper-title">SAPPTree: Identification of an S-Acylation Motif Drives a Novel S-Acylation Prediction Program</h2>
+<p class="paper-authors">Guo, A. S., Luong, V. S., +4 authors, Martin, D. D. O.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metaproteomics is the investigation of the protein composition of multi-organism samples. While metagenomics answers the question which organisms are present in a sample, metaproteomics additionally answers the question which organisms are active. State-of-the-art tools for annotating proteomic data with taxonomic information (e.g. Unipept, DIAMOND) do not control the false taxonomic identification rate, which can lead to incorrect results and thus incorrect interpretations, as we demonstrate with examples. ProteoDUDes processes the results from popular sequence annotation tools so that the proportion of true identifications in the result is at as high as or higher than in the the compared tools. We evaluate ProteoDUDes on simulated data and experimental mock community data. Our results indicate that ProteoDUDes has the same error rate as other tools on simulated data and half the error rate on the experimental mock community data. This allows more accurate statements to be made about which organisms are functionally active in a complex sample. ProteoDUDes is open-source and available at https://github.com/pirovc/dudes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.734936v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> S-acylation, the reversible addition of fatty acids to proteins, has emerged as an abundant post-translational modification that drives protein localization and function. With no known consensus sequence, current prediction programs rely on machine learning algorithms that use short peptide sequences and large proteomic datasets. However, current prediction programs often suggest incorrect sites of S-acylation, leading to wasted experimental time and effort following site-directed mutagenesis and low-throughput validation experiments. Using only experimentally confirmed sites of S-acylation, we sought to identify primary sequence, secondary structure, and tertiary structure features common amongst S-acylation sites to aid in developing more robust prediction tools. In doing so, we identified an S-acylation motif including a cysteine cluster flanked by a hydrophobic stretch, and a positively charged polybasic region found within a helical stretch. These features were combined with known or AlphaFold-predicted structures and additional features including residue depth and solvent accessibility into a random forest model to generate a new and more accurate S-acylation prediction program (SAPP), named SAPPTree. All the processed datasets and complete model training pipeline are available at https://github.com/neurdyphagy-lab/palm-prediction-model, while the webserver is available at http://martintools.sci.uwaterloo.ca/.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.30.735287v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SpaGRD deciphers signaling architectures in spatial transcriptomics using graph reaction-diffusion systems</h2>
-<p class="paper-authors">Liu, J., Sun, S., +4 authors, Liu, B.</p>
+<h2 class="paper-title">dSTORMQuant: A Python Package for Post-Processing and Quantitative Analysis of SMLM datasets</h2>
+<p class="paper-authors">Karki, S., Nemeita, B., +1 author, Thoms, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The rapid emergence of spatial transcriptomics offers unprecedented opportunities to study cell-cell communication (CCC) by capturing gene expression alongside spatial context. However, existing CCC inference methods often rely on static, heuristic models that overlook the inherently spatiotemporal dynamics and mechanistic complexity of intercellular signaling, limiting both accuracy and biological interpretability. Here, we present SpaGRD, a first-principles-based method that explicitly models ligand-receptor interactions through partial differential equations derived from Fick law of diffusion and the mass action law. Leveraging graph signal processing techniques, SpaGRD solves these equations on spatial graphs, providing a principled and generalizable approach to CCC inference. Through extensive simulations, SpaGRD demonstrates superior accuracy and robustness compared to existing methods. Applications to multiple datasets across diverse tissues and platforms reveal dynamic CCC patterns with spatially resolved signaling heterogeneity, providing biologically meaningful insights into cellular coordination and developmental processes. By bridging physical modeling with spatial transcriptomics, SpaGRD provides an accurate, interpretable, and mechanistically grounded framework for advancing quantitative studies of spatiotemporal cell-cell communication.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.735031v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Summary: Single-molecule localization microscopy techniques, such as (direct) stochastic optical reconstruction microscopy ((d)STORM) and photo-activated localization microscopy (PALM) enable the visualization of subcellular molecular organization beyond the diffraction limit of conventional light microscopy. Not only is data acquisition rather slow, but the downstream analysis of localization datasets often remains computationally challenging and time-consuming. Consequently, the complexity and duration of data processing often limit experiments to the acquisition and analysis of only small numbers of cells or regions of interest, thereby restricting the statistical power and biological reliability of SMLM studies. To address this limitation, we developed an open-source Python-based package for automated, high-throughput post-processing and quantitative analysis of SMLM localization data, enabling efficient and straightforward handling of extensive datasets with minimal manual intervention. Availability and implementation: dSTORMQuant (source code and documentation) are freely available on GitHub at https://github.com/BCMM-Bielefeld-University/dSTORMQuant under GPL v3 license.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.30.735216v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Dynamic consensus pocket detection across molecular dynamics ensembles reveals persistent and transient druggable sites</h2>
-<p class="paper-authors">Marigliani, G., Petrizzelli, F., +6 authors, Mazza, T.</p>
+<h2 class="paper-title">MycoCirc: A Pan-Fungal Multi-Modal Pretrained Model for Fungal circRNA Prediction from Genome Sequence</h2>
+<p class="paper-authors">Hu, X., Jin, Y., +1 author, Yang, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The traditional 'one drug, one target' paradigm assumes that drugs interact with a single specific binding site. Modern pharmacology has proven this definition overly simplistic and, instead, recognizes that drugs operate within complex biological systems and often interact with multiple targets. In this context, proteins cannot be viewed as possessing a single functional binding site, but rather as dynamic entities capable of accommodating ligands at multiple regions, including transient and cryptic pockets. Here, we review and repurpose representative pocket detection tools across geometry-based, energy-based, and machine/deep learning approaches, originally designed to work on static conformations, to evaluate their agreement on molecular dynamics-derived conformational ensembles. Using GLUT1 protein as a dynamic transporter model and Aldose reductase as a cryptic-pocket reference system, we combine inter-tool concordance, HDBSCAN-based spatial clustering, volumetric IoU analysis, and temporal persistence scoring. Our results show that different algorithmic classes capture complementary aspects of pocket dynamics, with energy-based methods showing stronger sensitivity to transient cryptic regions and geometry-based approaches depending more strongly on pre-formed cavities. This work proposes a consensus-oriented framework for identifying conserved and transient druggable pockets in dynamic protein systems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.27.734992v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Exploring the fungal circular RNA (circRNA) landscape is bottlenecked by both experimental and computational limits. While standard mRNA-seq systematically discards circRNAs due to their lack of poly(A) tails, high-cost total RNA-seq remains prohibitive for large-scale screening. Consequently, discovery relies heavily on computational prediction. However, existing models trained exclusively on human or plant sequences fail in fungi because of the extreme genomic divergence across fungal lineages, which span from intron-poor Candida to intron-rich filamentous fungi. As a result, no computational framework currently exists for de novo fungal circRNA prediction, leaving the vast majority of non-model fungi entirely inaccessible. Results: We present mycoCirc, the first end-to-end pan-fungal multi-modal pretrained model for fungal circRNA prediction, integrating three mandatory modalities with bidirectional cross-attention for donor-acceptor site interaction. Pre-trained on 22 strains with 16,483 positive gene-circRNA associations spanning Ascomycete yeast, Basidiomycete yeast, and Filamentous fungi groups and fine-tuned per group using 5-fold cross-validation, mycoCirc achieved AUROC 0.69-0.70 on held-out test species under Mode A (Genome+GTF, no RNA-seq), substantially outperforming JEDI (0.51-0.57) and CircPCBL (0.49-0.53). Cross-species evaluation on four independent fungi datasets demonstrated robust generalization across all fine-tuned variants (AUROC 0.63-0.72). Beyond gene-level classification, the JunctionEncoder module enabled backsplicing junction identification for detailed circRNA validation. We further build mycoCircAtlas, a companion database providing 319,860 high-confidence gene-circRNA predictions across 768 fungal species from Ensembl Fungi Release 113, enabling researchers to query precomputed predictions and design validation primers without local model deployment.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735431v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,34 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">StructureSAFE: A structure-aware chemical language model for unified hit identification and lead optimization</h2>
-<p class="paper-authors">Yang, B., Xu, K., +6 authors, Li, J.</p>
+<h2 class="paper-title">Binary search and and set operations on compacted k-mer lists</h2>
+<p class="paper-authors">Dufresne, Y., Andreace, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Structure-based generative models (SBGMs) hold great promises for accelerating drug discovery by enabling target-aware molecular design. However, existing approaches face fundamental challenges: three-dimensional graph-based models can explicitly incorporate protein structural information but often generate chemically implausible molecules due to limited training data, while chemical language models (CLMs) produce chemically plausible molecules but struggle to effectively leverage three-dimensional structural information for structure-conditioned generation and hard to incorporate lead optimization functionality due to the nature of SMILES string. Here, we present StructureSAFE, a structure-aware chemical language model that resolves this trade-off by integrating protein structural and evolutionary encoders with the SAFE molecular representation via pretraining and finetuning training scheme, enabling both de novo hit identification and a comprehensive suite of lead optimization subtasks within a unified framework. Comprehensive benchmarking on the MolGenBench dataset demonstrates that StructureSAFE achieves state-of-the-art (SOTA) performance across multiple metrics, with particularly pronounced improvements in chemical plausibility relative to graph-based models lacking pretraining. Evaluation on a rigorously constructed held-out test set further confirms its ability to generate drug-like, synthetically accessible molecules with competitive predicted binding affinities for previously unseen targets on both hit identification and lead optimization setting. In silico case studies across four therapeutically relevant targets validate its capacity to generate chemically plausible molecules that recapitulate key binding interactions of known high-affinity ligands while proposing novel interactions for potential better affinity and exploring previously unknown regions of chemical space. Taking together, StructureSAFE represents a versatile and practical tool to provide high-quality candidate molecules for augmenting medicinal chemistry workflows in both hit identification and lead optimization campaigns.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.735128v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 02, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Mapping pathogenic patterns in membrane transporters from the GLUT transporter family</h2>
-<p class="paper-authors">Kadasova, N., Martinat, D., +2 authors, Berka, K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Significance Missense mutations can lead to pathological effects in human cells. Predictive methods that account for structural context, such as AlphaMissense, can provide pathogenicity scores. The accumulation of pathogenicity hotspots can reveal important structural features within individual proteins of protein families, such as GLUT transporters. Mapping pathogenicity scores onto the structure can thus provide a mechanistic explanation of the protein function necessary for its role in the cell. Abstract Non-synonymous amino acid substitutions (missense mutations) are common in the general population; some are causative of serious disease. Depending on their structural context, they can disrupt protein function, folding, or dynamics. Computational predictive methods developed in recent years, such as AlphaMissense, provide new insights into how missense mutations affect protein structure by predicting and mapping their pathogenicity across each amino acid in the human proteome. In this study, we identify recurring patterns of pathogenicity prediction across the GLUT family membrane transporters encoded by genes slc2a1-14. Within the GLUT transporter family, we observe higher pathogenicity profiles in the transmembrane domains, particularly in pore-lining and binding-site residues. Predicted missense pathogenicity is elevated throughout residues assigned to the central cavity, suggesting sensitivity of the transport pathway. Another finding shows higher pathogenicity in specific transmembrane helices of the protein, with the same pattern across all proteins. On the other hand, we observed lower pathogenicity values in some representatives of the GLUT family. These findings show that the pathogenicity of glucose transport within the GLUT family may be shaped by functional redundancy and physiological essentiality across GLUT groups.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.28.735151v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Sorted lists of elements are particularly good for computing set operations. A single scan of the two lists is sufficient to materialize or count the results of the union, intersection, difference, and xor operators. In bioinformatics, only a few tools are designed to perform these operations on k-mers. A fast tool like KMC allows set operations at the cost of storing individual k-mers. In this paper, we introduce a novel way to represent sorted k-mers as a collection of recomposed super-k-mer sorted lists. We introduce the concept of virtual super-k-mer and show how to construct, query and perform set operations on sorted lists of virtual super-k-mers. In the implementation sklib, we demonstrate high throughput of the data structure for construction and set operations, while remaining competitive in query capabilities, within a controlled memory footprint (2-5x decrease in bits/element compared to KMC).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.06.29.735436v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,15 +184,110 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 02, 2026</span>
+<span class="date">Jul 03, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Clinical Variable-Based Machine Learning for Predicting Early mCRPC Using Exclusively Clinical Variables: Development and Multicenter External Validation.</h2>
-<p class="paper-authors">Miguel Ángel Gómez-Luque, Pedro De Pablos-Rodríguez, +16 authors, Rocío Martínez-Corral</p>
+<h2 class="paper-title">Multi-omics and metabolic flux modeling reveal that macrophage CYP27A1-derived 26-hydroxycholesterol drives immunosuppression and cancer malignancy.</h2>
+<p class="paper-authors">Jinfen Wei, Bin Yu, +10 authors, Zhenzhen Wang</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metastatic hormone-sensitive prostate cancer (mHSPC) exhibits heterogeneous progression patterns, with early progression to metastatic castration-resistant prostate cancer (mCRPC) within 12 months indicating aggressive tumor biology and poor prognosis. Current risk stratification tools (CHAARTED, LATITUDE) offer limited individualized prediction. Machine learning approaches are increasingly applied to predict prostate cancer progression, but most models show modest performance (AUC 0.68-0.72), limited external validation, or require genomic variables unavailable in routine practice. This study aimed to develop and externally validate a novel RINH algorithm for predicting early mCRPC progression (≤ 12 months) using exclusively clinical variables, positioning it as a superior alternative to conventional ML classifiers.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42391467/" target="_blank">
+<p><strong>Abstract:</strong> Emerging evidence indicates that aberrant cholesterol metabolism in macrophages plays a role in tumorigenesis, however, how specific metabolites released by macrophages influence immunosurveillance and along with their potential as therapeutic targets and prognostic biomarkers, remain unclear. We integrated 465 single-cell multi-omics and 1,318 bulk RNA-seq samples of colorectal cancer (CRC) using bioinformatics, single-cell metabolic flux modeling and machine learning to decipher cholesterol metabolic rewiring specific to tumor-associated macrophages (TAM), along with associated druggable targets and prognostic potential. We uncover that CYP27A1-mediated 26-hydroxycholesterol metabolism drives the formation of immunosuppressive SPP1 + APOE + TAM in CRC. Multi-omics and analysis (scATAC-seq, gene regulatory network, and spatial transcriptomics data) reveals that this subset activates SPI1, establishing a macrophage-Treg co-infiltration niche that inhibits CD8 + T-cell infiltration in large amounts of spatial transcriptomics data. Finally, we constructed a cholesterol metabolism-based gene signature derived from SPP1 + APOE + TAM and applied machine learning methods, achieving robust prognostic accuracy across four independent CRC cohorts. Collectively, our findings reveal CYP27A1 as a central regulator linking cholesterol metabolism to immune suppression, highlighting its therapeutic potential in tumor microenvironment-driven cancers and lipid-associated disorders.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42399552/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 03, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">New approach methodologies (NAMs) for preclinical and translational evaluation of mRNA-lipid nanoparticle (LNP) therapeutics.</h2>
+<p class="paper-authors">Jiawei Zhou, Nan Li, +4 authors, Yanguang Cao</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Messenger RNA-lipid nanoparticle (mRNA-LNP) therapeutics have emerged as a versatile drug modality, enabling in vivo protein expression for vaccines, cancer immunotherapy, and the treatment of genetic and metabolic diseases. Although mRNA-LNP platforms achieved rapid clinical success during the COVID-19 pandemic, most candidates fail to progress beyond preclinical development, largely due to the limited capacity of conventional animal models to predict human-relevant efficacy, safety, inflammation, biodistribution, and population heterogeneity. New approach methodologies (NAMs), encompassing advanced in vitro and ex vivo human systems and in silico computational models, offer a promising strategy to address these translational gaps while reducing reliance on animal testing. In this review, we evaluate commonly used animal models for mRNA-LNP development and highlight key areas where animal findings have shown poor concordance with human clinical outcomes. We then provide a comprehensive overview of emerging NAM technologies, including in vitro and ex vivo-based platforms such as two-dimensional and three-dimensional cell culture systems and microphysiological platforms; as well as in silico tools, including physiologically based pharmacokinetic (PBPK), quantitative systems pharmacology (QSP), and artificial intelligence (AI) models for formulation design and delivery optimization. Collectively, this review highlights how systematic adoption of NAMs can improve human predictivity, accelerate development timelines, and support more efficient, ethical, and translational robust mRNA-LNP drug development.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42398834/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 03, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Comprehensive identification of three key genes and three key DNA methylation CpG sites associated with prognosis and prediction in colon adenocarcinoma.</h2>
+<p class="paper-authors">Yu-Xian Liu, Xingjie Chen, +4 authors, Yan-Ni Cao</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Colon adenocarcinoma (COAD) is a common cancer with high incidence and mortality rates worldwide. DNA methylation has a significant impact on the occurrence and development of COAD. However, the regulatory and prognostic effects of DNA methylation in different regions on COAD remain unclear. This study analyzed the methylation of 12 different regions in COAD and normal colon tissue, revealing the differences in methylation distribution and the stability of methylation levels in COAD. Then, correlation analysis of differentially expressed genes and differentially methylated sites in different regions shows that methylation has an inhibitory effect on gene expression. Next, we performed Cox regression analysis and survival analysis based on clinical data, and identified three key genes (GSTM1, POU3F3, and RNF32) related to survival. We also constructed a prognostic risk scoring model, which demonstrated good predictive performance for prognosis. Furthermore, we identified three key DNA methylation CpG sites and their regulatory regions in three key genes. Subsequently, we constructed 120 COAD prediction models using 10 machine learning algorithms. The results show that these key genes and key DNA methylation CpG sites have very good predictive performance for COAD. Finally, we analyzed the immune microenvironment of three key genes and identified potential drugs associated with them. These results may provide theoretical support for the study of the regulatory mechanism of DNA methylation on gene expression, and may also provide potential biomarkers for the prognosis and early diagnosis of COAD.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42397623/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 03, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Recent advances in the detection and functional analysis of circRNAs with short-read RNA sequencing-based methods.</h2>
+<p class="paper-authors">Grace Lindner, Si-Mei Xu, +2 authors, Michael Janitz</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Circular RNAs (circRNAs) were first identified approximately 50 years ago in pathogenic viroids as single-stranded, covalently closed RNA molecules. Initially considered by-products of splicing, circRNAs are now recognised as an important class of regulatory RNAs involved in microRNA sponging, RNA-protein interactions, and cellular pathways. Their closed-loop structure, generated through backsplicing, confers resistance to exonucleolytic degradation and contributes to their stability. Owing to their tissue- and disease-specific expression, circRNAs have emerged as promising biomarkers for cancer, neurodegenerative disorders, and cardiovascular disease. Over the past decade, numerous bioinformatics tools utilising RNA-sequencing (RNA-seq) data have been developed for circRNA detection and analysis. Detection methods have evolved from manual split-read inspection to automated identification of the back spliced junction, while annotation pipelines now resolve the genomic origins and structural characteristics of circRNAs. Because individual circRNA callers vary considerably in sensitivity and specificity, a combined usage of tools in circRNA detection has become the preferred strategy for generating high-confidence datasets. Beyond their non-coding functions, increasing evidence suggests that some circRNAs possess protein-coding potential through open reading frames, cap-independent translation mechanisms, internal ribosome entry sites (IRESs), and N6-methyladenosine modifications. A new generation of bioinformatic tools can now assess the protein-coding potential of circRNAs, integrating the above features, as well as machine learning and deep learning approaches refining these predictions. This review summarises recently developed short-read RNA-seq bioinformatics tools for circRNA detection, consensus calling, annotation, and protein-coding potential prediction, with a particular focus on advances from the past five years that facilitate the identification of translatable circRNAs.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42397457/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 22, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">High-Throughput Olink Proteomics Elucidates the Immuno-Neurological Landscape of Gastric Cancer.</h2>
+<p class="paper-authors">Xueke Li, Qian Wang, +5 authors, Yifang Jiang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Gastric cancer (GC) ranks as the third leading cause of cancer-related mortality globally. A comprehensive and precise proteomic study of GC tissues can yield detailed insights into its pathogenesis. This study employed the highly sensitive Olink technology to quantify the levels of 1034 selected proteins in tumor tissues, paired adjacent tissues, and normal tissues from Chinese GC patients. Through an examination of expression changing trends and differential expression across these tissue types, it was determined that the protein profile of tumor tissue exhibits distinct characteristics, whereas the protein profiles of adjacent and normal tissues are more similar. The 124 differentially expressed proteins (DEPs) are predominantly associated with inflammation, immunity, and neurology, with major contributions from protein families such as chemokines, interleukins, and CLECs. We also employed machine learning algorithms to identify potential biomarkers, including CCN4, FNDC1, and PGF. Furthermore, validation results obtained through transcriptome data and ELISA demonstrated a concordance with findings from Olink analysis. To the best of our knowledge, this study represents the inaugural proteomic investigation of GC tissue utilizing high-throughput Olink technology. It reveals distinctive proteomic characteristics at the tissue level and offers significant insights for the identification and validation of novel biomarkers.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42329880/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 01, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">In-Depth Plasma Proteomics Identifies SNCA as a Discriminating Biomarker of PDAC.</h2>
+<p class="paper-authors">Jiaqi Yu, Wenhui Luo, +9 authors, Wantao Ying</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Pancreatic ductal adenocarcinoma (PDAC) carries a poor prognosis largely due to lack of efficient diagnostic means. We applied mass spectrometry-based high-coverage plasma proteome analysis accompanying with machine learning to develop a 5-protein diagnostic model: SNCA, GCLC, LBP, ALAD, and SORD. For differentiating PDAC from healthy controls (HCs), this model reached an area under the curve (AUC) of 0.973 with 100% sensitivity and 85% specificity in the discovery cohort, with nested cross-validation confirming robust performance (AUC = 0.958). Further validation centered on SNCA achieved an AUC of 0.835 in an independent validation cohort. SNCA also showed good diagnostic performance in PDAC patients with low CA19-9 level (AUC = 0.868), underscoring its potential value for this subgroup. Overall, these findings indicate SNCA as a promising candidate plasma diagnostic marker for PDAC.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42223356/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
