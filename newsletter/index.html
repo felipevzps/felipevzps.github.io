@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MKMC enables reference-free transcriptomic analysis using k-mer representations</h2>
-<p class="paper-authors">Mboning, L., Dlugosz, M., +7 authors, Pellegrini, M.</p>
+<h2 class="paper-title">SPARC: A Graph-based Optimization Framework for Directional Trajectory Reconstruction Across Ordered Single-Cell Conditions</h2>
+<p class="paper-authors">Wu, S., Walker, W. C., +2 authors, Samee, M. A. H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Traditional RNA-seq analysis depends heavily on genome alignment and gene annotation, limiting its utility in non-model organisms and introducing biases that can obscure regulatory complexity. We present MKMC (Multi-sample Kmer Counter), a scalable, reference-free toolkit for RNA-seq analysis that leverages k-mer-based statistics to detect biological variation without requiring alignment. MKMC integrates fast k-mer counting, abundance matrix generation, normalization, dimensionality reduction, and differential analysis into a unified workflow. Across diverse datasets, MKMC recapitulates key biological signals, including sex differences in killifish liver, and matches alignment-based pipelines in differential expression analysis and transcriptomic age prediction. Notably, MKMC detects isoform-specific events missed by traditional methods, one of which we validated using in situ hybridization. These results reveal previously hidden isoform-level regulatory events that contribute to sex- and age-associated transcriptional programs. MKMC offers a robust, extensible alternative to alignment-based approaches, enabling transcriptomic discovery across both model and non-model systems. While we focus here on RNA-seq as a primary application, MKMC is broadly applicable to any k-mer-based analysis of next-generation sequencing data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736868v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell transcriptomics has enabled systematic profiling of cellular states across ordered biological contexts, including developmental stages, treatment phases, disease progression, and anatomical compartments. A central challenge is to reconstruct trajectories that respect the directionality imposed by biology or experimental design. Existing trajectory inference methods reconstruct cell-state progressions from latent-space geometry but do not enforce external biological ordering during graph construction, yielding biologically inadmissible transitions. An emerging paradigm of optimal-transport (OT) approaches partially addresses this limitation by incorporating experimental ordering into probabilistic state-to-state correspondences, yet their pairwise formulation cannot resolve whether a given state is an intermediate state or a terminal state along a multi-step progression. In multi-timepoint settings, OT typically estimates couplings only betweenadjacent timepoints and then chains these locally solved couplings to approximate long-range trajectories without a global optimization across all conditions simultaneously. Here we present SPARC, a graph-based optimization framework that quantifies similarity in a shared high-dimensional latent space and reconstruct directional trajectories under biological constraints. Global shortest-path optimization over this graph yields progression routes, from which SPARC derives path-based pseudotime identifies bottlenecks clusters, and detects gene temporal behavior. SPARC was evaluated across three complementary settings representing distinct trajectory-inference challenges. Its application to paired primary and lung metastatic osteosarcoma samples allows us to be the first to propose a cross-organ bone-like microenvironment hypothesis, in which osteoclastogenic signaling establishes a bone-like remodeling niche within the pulmonary metastatic lesion that promotes osteoclast differentiation and activity. The findings are independently recoverable in human osteosarcoma Visium HD spatial transcriptomics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736532v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Enhanced proteome relative quantification using refined quantotypic spectral libraries</h2>
-<p class="paper-authors">Barnes, B. A., Alharbi, H., Unwin, R.</p>
+<h2 class="paper-title">Single-cell RNA-seq reveals conserved and divergent cellular states across wound types and species</h2>
+<p class="paper-authors">Choi, D., Bakhtiari, M., +3 authors, Bhasin, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Plasma proteomics is used for a variety of applications including biomarker discovery, disease monitoring, and drug development. Data-independent acquisition (DIA) has vastly improved the breadth of proteins that are identified from samples; however, given challenges in reproducibility and translation, it is critical that the quantitative performance of these methods is reliable. Analysis of global proteomics data typically incorporates information from all detected peptides. However, some peptides do not reflect their parent protein amount, due to irreproducible digestion, modification, analytical interferences or instability. We hypothesise that including these peptides impacts protein relative quantification, and thus, a refined spectral library containing only quantitatively representative peptides provides superior protein quantification. By analysing a defined multi-species spike-in model, we show that refining a plasma spectral library by removing precursors that fail to meet quality control metrics (25.4% of all identified precursors) reduces noise and variability, improving precision, accuracy and differential abundance analysis by up to ~11%, with minimal identification losses and substantial reduction in computational demand. This demonstrates proof-of-concept that refining spectral libraries produces results that prioritize quantification quality over quantity. This approach could enable development of universal tissue-specific refined spectral libraries able to improve quantification quality with easy implementation and minimal processing time.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736793v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Chronic wounds, such as diabetic foot ulcers, fail to progress through the normal healing process and impose a significant burden on healthcare systems. While previous single-cell studies have characterized specific wound conditions, a unified understanding of the shared and distinct cellular landscapes across diverse wound microenvironments has been lacking. Therefore, we integrated over 500,541 cells from patients and mice across multiple wound conditions, including acute wound, diabetic foot ulcer, and venous ulcer as well as their healing outcome. Fibroblast-focused analysis identified a bifurcation in differentiation trajectories and identified STAT3 as a potential regulator of a reparative program in chronic wound. Furthermore, we discovered immune dysfunctions in non-healed chronic wounds, contrasting the quiescent memory-like T cells and TIMP1+ macrophages in healed chronic wounds with the exhausted T cells and foamy SPP1+ macrophage enriched in non-healed chronic wounds. Finally, we translated these results into a clinically applicable three-gene signature (CHI3L1, TIMP1, and SPP1) that accurately predicts chronic wound healing. To support wound biology community, we developed WoundSCAtlas, an interactive web resource for exploring diverse wound pathologies. In conclusion, this work provides a comprehensive and cross-species landscape of chronic wound healing, identifying conversed wound outcome-associated molecular programs, predictive biomarker, and interactive data resource.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737032v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A microbial growth-coupled platform for in vivo interrogation of Rubisco oxygenase activity</h2>
-<p class="paper-authors">Orsi, E., Kabuth, K., +10 authors, Nikel, P. I.</p>
+<h2 class="paper-title">Multiscale harmonization and semantic integration of biomedical data enable biological insights through immersive exploration</h2>
+<p class="paper-authors">Bueckle, A., Zhu, C., +23 authors, Boerner, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Rubisco catalyzes the primary CO2-fixing reaction of the biosphere, yet its competing oxygenation reaction reduces net global carbon fixation and has resisted direct exploration in living cells. Here, we engineer an auxotrophic Escherichia coli strain in which 2-phosphoglycolate, the direct product of Rubisco oxygenation, becomes essential for growth, making bacterial fitness a quantitative proxy for oxygenation flux in vivo. This provides direct access to catalytic selectivity, something previously inaccessible to carboxylation-coupled assays. The platform enables screening of phylogenetically diverse Form II Rubisco and phosphoribulokinase (Prk) variants circumventing protein purification and extensive in vitro characterization. Adaptive laboratory evolution under oxygenation-selective pressure identified two mutations: Rubisco M115I genetically rebalances the in vivo carboxylation/oxygenation trade-off (resulting in 6-fold reduction in kcat,C), while Prk N216T improves overall flux without altering selectivity. This platform makes Rubisco's least-studied catalytic function selectable and evolvable in vivo, opening the carboxylation/oxygenation trade-off to systematic genetic dissection and engineering.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737725v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The Human Reference Atlas (HRA) enables multiscale data exploration and visualization. We present "HRA: Powers of Ten," a virtual reality (VR) application for integrating, harmonizing, and visualizing data within the HRA Organ Gallery. It enables immersive navigation from a whole-body view of 81 organs to datasets across 5 organs, 5 assay types, and 4 spatial scales using a Multiscale Elevator System. The application, data, and code are available open-source.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737090v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CellPilot: an agentic framework that pilots small language models through autonomous single-cell annotation</h2>
-<p class="paper-authors">Jiang, S., Qi, C., +2 authors, Wei, Z.</p>
+<h2 class="paper-title">Locus-Level Transposable Element Profiling Resolves Division-Coupled Transcriptional Dynamics During Human Endoderm Specification</h2>
+<p class="paper-authors">GAIRE, A., Kummerfeld, E., +1 author, Wang, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Large language models can annotate cell types from marker gene lists, but they typically operate after preprocessing and clustering are complete, treating annotation as a terminal labeling step rather than controlling the analytical decisions that produce the evidence for cell identity. We present CellPilot, an agentic framework that guides a locally deployable small language model through the full single-cell analysis workflow, from raw count matrices to cluster-level annotation. CellPilot combines standard single-cell analysis tools with structured workflow control and observation-guided reasoning, allowing the model to plan analyses, execute tools, inspect intermediate results and revise decisions within a traceable session. On GTEx, structured workflow orchestration raised the same 8B model from 0.39 in a prompt-only setting to 0.89, closing most of the gap to GPT-4o (0.92) within the same framework; the framework gain was substantially larger for the smaller backbone across datasets (+0.35 versus +0.19). Across GTEx, Tabula Sapi- ens, and Mouse Cell Atlas, CellPilot achieves cluster-level annotation accuracies of 0.891, 0.750, and 0.773, outperforming representative reference-based, marker-based, and LLM-based methods. CellPilot confidence scores were associated with annotation correctness and supported post hoc filtering, while complete execution traces were retained for each analysis. These results suggest that structured workflow orchestration can be a critical determinant of performance in multi-step single-cell analysis, enabling locally deployable small language models to approach larger proprietary models while preserving transparency and practical usability.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736807v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737093v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Spatial Autocorrelation Aware Resampling Improves Cell-Cell Interaction Inference in Spatial Transcriptomics Data</h2>
-<p class="paper-authors">Khatri, P. H., Newton, M. A., +1 author, Dinh, H. Q.</p>
+<h2 class="paper-title">Structure-guided computational design and mechanistic understanding of the p95HER2-targeting NAZ-mAb antibody and its variants</h2>
+<p class="paper-authors">Rawat, P., Kyte, J. A., +1 author, Dorraji, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics has enabled finer-grained analyses of cell-cell interactions through the co-expression of ligands and their cognate receptors, thereby accounting for the spatial constraints of signaling. However, existing methods employ random permutations or analytic calculations to assess statistical significance, neither of which accounts for spatial autocorrelation, a common property of spatially resolved data. Here, we introduce SOAAR (Spatial Omics Autocorrelation-Aware Resampling), a statistical method for testing gene-gene correlations in spatial data that maintains spatial gene-level autocorrelation in resampled datasets used to generate null distributions. SOAAR uses spatial map patterns to decompose autocorrelation. The associations between gene expression and autocorrelation patterns are then randomized to construct resampled datasets used for evaluating significance testing. We showed that SOAAR maintains gene-level spatial autocorrelation and yields a lower false-positive rate than random permutations across varying degrees of gene-level spatial autocorrelation in simulation studies. In a 10X Visium dataset from 10 HNSCC patients treated with immunotherapy, SOAAR filters out low-confidence interactions that were present in only individual samples or in fewer than 3 samples. That led to the identification of a consistent signature of T-cell recruitment in Responder patients and a resistance signature driven by angiogenesis and tumor cell proliferation in Non-Responders. Similar trends were observed in a larger cohort of 23 patients profiled with single-cell spatial CosMX SMI data, revealing immune cell interactions in response to immunotherapy. Overall, SOAAR provides a more calibrated framework for testing spatial correlation, grounded in spatial statistics. Future developments will seek to link localized correlation patterns to downstream changes in biological pathways, thereby informing biomarker and therapeutic target discovery.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736800v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Human epidermal growth factor receptor 2 (HER2) is an oncogenic receptor tyrosine kinase in breast cancer and other malignancies. A subset of HER2-positive tumours expresses 611-CTF-p95HER2, a tumour-specific, hyperactive truncated isoform associated with metastasis and treatment resistance that lacks most of the extracellular domain targeted by conventional HER2-directed antibodies. We previously developed NAZ-mAb (formerly known as Oslo-2), a monoclonal antibody against 611-CTF-p95HER2. Here, we describe a computational antibody-engineering workflow for designing variants of NAZ-mAb. Starting from the sequence alone, we modeled the NAZ-mAb-611-CTF-p95HER2 complex, generated a combinatorial mutational landscape using FoldX 5.0, and prioritized candidate variants using predicted interaction energy and developability criteria. Two variants representing distinct design strategies were selected for validation: an aromatic double mutant, NAZ-mAb v1 (L:S31W/L:H107W), and a conservative single mutant, NAZ-mAb v2 (L:S31M). Both variants were successfully expressed as recombinant IgGs; NAZ-mAb v2 achieved a five-fold higher recombinant expression yield than parental NAZ-mAb, while both variants retained antigen binding with a higher apparent signal than the parental antibody in indirect ELISA. However, Biacore two-state kinetic analysis revealed weaker affinities than the parental antibody (KD NAZ-mAb v1: 32.6 nM, NAZ-mAb v2: 9.45 nM vs. parental NAZ-mAb: 5.33 nM). These findings show that the computational workflow can generate experimentally tractable, antigen-engaging NAZ-mAb variants, while also highlighting the limitations of fixed-backbone interaction-energy ranking as a predictor of binding affinity and yield. This study provides a practical framework for computationally driven, developability-aware antibody optimization in the absence of experimental structural data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736817v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">pylimma: a faithful, AnnData-native Python port of R limma for differential expression analysis</h2>
-<p class="paper-authors">Mulvey, J.</p>
+<h2 class="paper-title">AGPI: An AI-Powered Genomic Pathogen Intelligence Platform for Integrated Classification, Visualization, and Therapeutic Targeting</h2>
+<p class="paper-authors">Goel, A., Mishra, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> pylimma is a faithful Python port of limma, intended to bring one of the most widely used tools for differential expression analysis to the developing Python ecosystem for transcriptomics and proteomics. We validated pylimma against the existing R implementation through 227 function-level comparisons and across six real world datasets spanning microarray, RNAseq, proteomics and single-cell transcriptomics. pylimma reproduces limma's numerical output to a median agreement of 13 significant figures and calls identical sets of differentially expressed features and gene sets. This supports its use as a drop-in replacement for the R implementation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736732v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Rapid and accurate pathogen detection remains a major challenge in modern bioinformatics, as existing tools are often fragmented and require multiple specialized workflows. We present AGPI (AI-powered Genomic Pathogen Intelligence), an integrated platform that combines genomic sequence classification, biological enrichment, three-dimensional structural visualization, and AI-guided therapeutic prioritization within a single interpretable pipeline. AGPI employs a hybrid convolutional Bidirectional Gated Recurrent Unit (BiGRU) architecture trained on DNA sequences from 40 pathogen classes spanning viruses, bacteria, fungi, and protozoan pathogens. The model achieved 99.61% validation accuracy and 94.90% accuracy on an independent held-out evaluation of 600 pathogen sequences following iterative refinement. As a proof of concept, AGPI correctly classified a Zika virus genome with 96.14% confidence, retrieved curated biological context from 245 peer-reviewed studies, and identified Ribavirin as a leading therapeutic candidate against the Zika NS5 polymerase through AI-guided molecular docking. Multi-metric ligand similarity analysis further differentiated candidate compounds according to their structural and pharmacological properties. These results demonstrate that integrated AI-driven genomic pipelines can accelerate pathogen characterization and therapeutic hypothesis generation while providing an accessible and interpretable framework for infectious disease surveillance and computational drug repurposing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737037v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">BxbI-mediated insertion of a 77kb human RET sensitive haplotype into the mouse genome to generate a humanized model of Hirschsprung disease</h2>
-<p class="paper-authors">Fine, R. D., Low, B. E., +5 authors, Chakravarti, A.</p>
+<h2 class="paper-title">Somatic mutation inference from single-cell transcriptomics: A survey in the esophagus</h2>
+<p class="paper-authors">Mendez-Alejandre, A., Gonzalez-Menendez, D., +6 authors, Piedrafita, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Hirschsprung disease (HSCR) is a complex developmental disorder of the enteric nervous system, primarily driven by regulatory variants within enhancer elements of the RET gene. To investigate how these variants lead to aganglionosis, we developed a humanized mouse model by inserting an intact 77kb human RET genomic locus into the Rosa26 safe-harbor locus. Utilizing "big DNA" synthetic biology and Bxb1-mediated recombination, we integrated the complete human locus including all exons, introns, and upstream regulatory elements which we validated via nanopore and short-read sequencing. Functional analysis confirmed in vivo human RET expression; however, our initial HSCR-associated "sensitive" haplotype expressed at only 21% of wild-type levels. This significant reduction proved insufficient to rescue the viability when endogenous mouse Ret was deleted. We identified that this deficiency is partially driven by five risk SNPs within established enhancers. Specifically, using CRISPR/Cas9 to restore a conserved Sox10 binding site (converting a sensitive SNP to a protective one) increased RET expression by 1.9-fold and restored transcription factor binding. This study provides a robust framework for modeling human-specific regulatory disorders and demonstrates the critical impact of non-coding variation on disease pathogenesis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.05.736620v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Human somatic tissues accumulate mutations during normal aging. Some of these affect cancer-associated driver genes and confer mutant progenitor cells a competitive advantage that leads to clonal expansions. The human esophageal epithelium exemplifies this phenomenon, becoming a dense mosaic of competing mutant clones by adulthood. However, the phenotypic consequence of those mutations and their possible role in carcinogenesis remains unknown. Novel bioinformatic tools for de novo mutant detection from single-cell transcriptomics (scRNA-seq) could potentially leverage on the wealth of publicly available data to help draw mutant cell phenotypes in vivo. In this study we test SComatic algorithm's ability to identify somatic mutations in the normal, polyclonal esophageal epithelium. We analyze a public scRNA-seq dataset from a human cohort with multiple esophageal samples per donor, and an independent study in mice subjected to experimental mutagenesis where samples have been re-sequenced for validation. These unconventional experimental designs allow us to control unspecificity. We observe scRNA-seq variant calling output is heavily affected by undesired technical artifacts and germline variants, which we are able to reduce following a customized series of rational filters that enrich in somatic mutations. Final candidate mutations are then used to reconstitute clonal lineages and map them to differentiation trajectories in the UMAP embeddings. We find low read depth and sparse cellular sampling favor detection of passenger mutations and hinder driver mutant phenotypic inferences. Altogether, we showcase current limitations of scRNA-seq-derived mutation calling, while we offer methodological indications that should be considered for future studies aimed at investigating mutant clone behavior in normal polyclonal tissues from single-cell transcriptomics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737010v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,148 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Extracellular injection system combined with peptides for intracellular Staphylococcus aureus treatment</h2>
-<p class="paper-authors">Feng, L., Qiao, Y., +6 authors, Feng, X.</p>
+<h2 class="paper-title">Metagenomic contextualization of proteins with state space models</h2>
+<p class="paper-authors">Azbijari, N., Wynne, J. H., +1 author, Thurber, A. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The inaccessibility of intracellular bacteria has long rendered the treatment of Staphylococcus aureus infections an challenge. Studies have demonstrated that the extracellular injection system PVC can accurately deliver proteins into cells, which would not need small molecules, and enables effective intracellular delivery of antimicrobial peptides for treatment. Accordingly, we selected antimicrobial peptides including Cecropin, LL37 and Indolicidin that possess potent bactericidal activity, and established the Directed Antimicrobial Assault platform (DAAT) by leveraging the intracellular delivery capacity of PVC. DAAT Cecropin, DAAT LL37 and DAAT Indolicidin inhibited intracellular bacteria in a dose-dependent manner, with DAAT LL37 reaching 86.76% inhibition; after 72 h of treatment, viable-cell numbers reduse to 66--82-fold those of the control. Tail-fibre retargeting enabled direct extracellular S. aureus killing, while combined DAAT therapy promoted wound healing in mice. These findings expand the utility of PVC-derived nanosyringes and establish DAAT as a modular platform for intracellular antimicrobial peptide therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736670v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MozClo: An Expanded MoClo Toolset for Large Multigene Assembly and Plant Transformations</h2>
-<p class="paper-authors">Straub, G., Aldrich, D., Tobin, C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The Modular Cloning (MoClo) and PhytoBrick standards have revolutionized plant synthetic biology by establishing a standardized, hierarchical assembly grammar. However, as the engineering of complex metabolic pathways, multi-trait stacks, and synthetic gene circuits expands, existing toolkits hit practical boundaries in assembly capacity and fixed grammars. To overcome these bottlenecks, we present MozClo, an expansion of the MoClo/PhytoBrick architecture. MozClo expands the standard Level 1 assembly framework to 10 positions using new L1 acceptors, end-linkers and dummy parts. We also identify and resolve a critical, sticky-end collision at L1 position 7 that has caused assembly failures during L2 cloning of large plasmids. To address commercial DNA synthesis length constraints and to lower cloning costs, we designed a universal 5-in-1 gene fragment multiplexing system. This architecture embeds up to five distinct parts flanked by orthogonal pairs of BpiI restriction sites into a single synthesized fragment, allowing them to sort independently into their respective L0 acceptor plasmids while maintaining complete modular flexibility of part types. Finally, we provide Level 2 cloning backbones with built in selection genes for common soybean transformation methods to facilitate downstream plant selection. Together, these advancements reduce DNA synthesis overhead and accelerate the construction of complex multigene payloads for plant biotechnology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737387v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Extended t-cores for the de novo identification of transposable elements and other inexact repeats from short read RNAseq data</h2>
-<p class="paper-authors">Darmon, S., Mary, A., Lacroix, V.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Transcribed repeats represent a major challenge in the de novo assembly of transcriptomes from short RNA-seq reads. Young transposable elements (TEs) and other inexact repeats create dense and ambiguous regions in the assembly graph, preventing the correct assembly of transcripts. In this paper, we introduce a fully de novo method based on the discovery of dense regions in the compacted De Bruijn graph (DBG) to identify such repeats directly from short reads RNA-seq data, without requiring a reference genome or repeat database. Our approach defines the extended t-cores, subgraphs of the DBG that capture the complex topology induced by highly expressed inexact repeats appearing in RNA-seq reads. Independently of its interest for transcriptome assembly, the proposed method appears to be effective for the de novo identification of repeats in transcriptomes. After classifying cores using sequence-based motifs to distinguish simple repeats from potential TEs, we demonstrate its potential for the de novo discovery of transposable elements. We validate the approach on a Mus musculus dataset using expressed TE consensus sequences, showing that extended t-cores correspond to known expressed TE families. We also illustrate its de novo discovery potential on a non-model species, Canis lupus familiaris, where the method was also able to recover known transposable elements.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736737v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Selenium-enriched rapeseed extract synergizes with chemotherapy drug cisplatin in inhibiting proliferation and promoting apoptosis of colorectal cancer cells</h2>
-<p class="paper-authors">Duan, X., Lu, Y., +8 authors, Jiang, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Chemotherapy treatment of colorectal cancers (CRC) using cisplatin (CDDP) encounters problems of drug resistance by the cancer cells and cytotoxicity to normal cells, highlighting the urgent need for joint therapeutical strategies. Selenium-enriched rapeseed extracts exhibit anti-cancer effects but the bioactive components and mechanisms remain unclear. Here, we applied different solvents to fractionate the extracts from Selenium-enriched rapeseed and found that the water extract (WE) fraction significantly enhanced the cytotoxic effect of CDDP on cancer cells but no damage on normal cells. HPLC-ICP-MS analysis revealed that methylselenocysteine (MSC) and selenocystine (SeCys2) were the main selenium speciation in WE. Through cell biology and integrative multi-omics analysis, we found a synergistic anti-CRC cell effect when combining CDDP with MSC, sulforaphane (SFN), celastrol (Cel), Indole-3-carbinol (I3C), -linolenic acid (ALA) or linoleic acid (LA). We propose that the CDDP-WE combination treatment holds the promise for improving curative efficacy for chemo-refractory CRC patients in the future.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736755v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A single chromosome 3p break initiates clear cell renal cell carcinoma evolution</h2>
-<p class="paper-authors">Dahiya, R., van Belzen, I. A. E. M., Liao, C., +18 authors, Ly, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Clear cell renal cell carcinoma (ccRCC) is initiated by chromosome 3p loss, yet chromosome losses impose a profound fitness burden on normal cells. How renal epithelial cells tolerate this deleterious aneuploidy during early tumorigenesis remains unclear. Analysis of 949 ccRCC genomes reveals two major classes of chromosome 3p alterations: simple deletions and complex rearrangements surrounding a terminal breakpoint - a pattern we term breakpoint-confined chromothripsis. We modeled both alterations in non-transformed human renal proximal tubule epithelial cells by introducing a single DNA double-strand break on chromosome 3p. Despite an initial fitness disadvantage, chromosome 3p loss drives adaptive genomic evolution that recapitulates recurrent ccRCC-associated aneuploidies, including 5q gain and 14q loss. These alterations alleviate the fitness constraints of 3p loss and promote metabolic reprogramming, clonal expansion, and malignant transformation, producing tumors with features of ccRCC. Thus, a single chromosome break initiates the evolutionary trajectory of ccRCC by creating a fitness bottleneck that selects for recurrent aneuploidies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737056v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Overcoming Daraxonrasib Resistance: Allele-Specific Mechanisms Guide Salvage Therapy in Pancreatic Cancer</h2>
-<p class="paper-authors">Dorbin, D., Herrera, J., +26 authors, McFall, T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Clinical-grade RAS inhibitors raise an unresolved question: do oncogenic KRAS-alleles impose distinct constraints on adaptive resistance that can be exploited therapeutically? Using daraxonrasib (RMC-6236), a multi-selective RAS(ON) inhibitor, we compared resistance mechanisms between KRASG12D and KRASG12R, alleles with fundamentally different RAS network dynamics. Daraxonrasib inhibited KRASMUT primarily through steric occlusion of effector binding, while engaging RASWT only modestly (~20%) via accelerated GTP hydrolysis. KRASG12R is marked by its inability to transactivate RASWT, and it was observed that daraxonrasib resistant KRASG12R cells utilize EGFR/RASWT-GTP signaling as the dominant adaptive route. In contrast, KRASG12D resistance arose primarily through retained KRASG12D-GTP signaling, associated with decrease of cyclophilin A (CypA), the cellular binding partner required for daraxonrasib activity. The shift from KRASG12R dependence to the EGFR/RASWT axis suppresses MEK phosphorylation, conferring sensitivity to trametinib. We confirmed this divergence clinically: a KRASG12R PDAC patient who progressed after 10 months on daraxonrasib showed tumor EGFR/RASWT activation, and rapid 3D-bioprinted patient-derived toroid modeling predicted trametinib sensitivity. Sixth-line trametinib-based combination therapy achieved ~5 months of disease control despite rapid progression on two prior regimens. This patient ultimately achieved 40 months of overall survival, far exceeding the 8-12 month median for metastatic PDAC. These findings infer allele-specific, CypA- and EGFR-dependent resistance programs to pan-RAS inhibition and demonstrate that rapid patient tumor modeling can translate resistance biology into actionable late-line treatment decisions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.05.735339v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Pan-cancer single-cell analysis identifies a FOXF1/FOXF2-associated transitional CAF-like fibroblast state</h2>
-<p class="paper-authors">Mandzhieva, B., Verma, A., +2 authors, Park, W. Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Fibroblast heterogeneity shapes tumor progression, yet the transitional states linking normal-associated fibroblasts to cancer-associated fibroblasts (CAFs) remain poorly defined. Here, we integrated single-cell transcriptomic profiles of more than 90,000 stromal cells from 281 samples across nine cancer types to construct a pan-cancer atlas of fibroblast diversity. We identified a distinct CAF-like population positioned between normal-activated fibroblasts and established CAF subsets along the inferred fibroblast activation trajectory. Integration with single-nucleus chromatin accessibility data identified FOXF1 and FOXF2 as candidate regulators of this CAF-like state. Functionally, CAF-like fibroblasts were characterized by non-canonical WNT signaling, WNT5A-associated stromal communication, and a candidate GZMA-F2R/PAR immune-stromal signaling axis supported by spatial transcriptomic analysis. Clinically, the CAF-like signature demonstrated context-dependent prognostic relevance, with high expression associated with poorer survival in the tumor compartment of TCGA stomach adenocarcinoma. Together, this study identifies a FOXF1/FOXF2-associated transitional CAF-like fibroblast state and links it to stromal signaling, immune-stromal communication, and cancer type-specific clinical relevance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737397v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Chemotherapy-induced multicellularity drives drug-tolerant persistence state in tumor cells</h2>
-<p class="paper-authors">Li, J., Zhu, Z., +5 authors, Liu, C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Multicellularity is a well-documented microbial response to stress, however its role as an adaptive survival strategy in cancer remains unresolved. Here we reveal that drug stress, such as paclitaxel treatment, enable rapidly (within 24-48 hours) and efficiently (~20-40%) convert single mouse breast 4T1 cancer cells into clonal multicellular spheroids, ultimately generating multicellular masses. Notably, multicellularity is reversible: upon stress removal, most of them restore a unicellular lifestyle that quickly becomes dominant. This transient multicellular state shields cells from hostile niches, functions as a drug-tolerant persistence (DTP) reservoir, and fuels post-therapy relapse, revealing multicellularity as a facultative evolutionary pivot for fitness gain. Importantly, blocking primordial germ cell (PGC) specification suppresses the multicellularity transition. Our findings reveal that certain cancer cells enable adopt unicellular-multicellular life cycle through phenotypic plasticity, dynamically adapting to microenvironmental shifts to maximize fitness. This discovery reframes cancer evolution and the drug-tolerant persistence (DTP) state, highlighting multicellularity as an adaptive, stress-inducible survival strategy against therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737606v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Since the early adoption of metagenomics (the culture-free sequencing of microbial community genomes) in 2011, sequence data has increased over 500-fold across ecosystems. This surge in data has outpaced reliable taxonomic and functional annotation, with over half of sequences lacking confident functional assignment. These unknown sequences limit our understanding of microbial processes central to planetary health and human health. Recent advances in genomic language modeling have made progress in the interpretation of metagenomics datasets. Most state-of-the-art models rely on transformer architectures, which limit the maximum sequence length and therefore capture only a fraction of assembled metagenomic sequences due to the quadratic scaling of attention. This prevents training and inference on sequences with broad context, including multiple coding and non-coding regions. To overcome this limitation, we propose leveraging new model architectures that scale linearly with sequence length, making them more suitable for modeling longer metagenomic sequences. Here, we introduce Nammu, a mixed-modality Mamba-based foundation model with 167M parameters trained on the OpenMetaGenomic (OMG) corpus. Nammu is a bidirectional encoder trained with a 20K context length using a curriculum strategy, first on 64M protein sequences and then on 32M mixed-modality metagenomic contigs. We compared Nammu to gLM2, a mixed-modality transformer also trained on OMG using 37% more tokens, using taxonomy inference on a marine dataset from the Critical Assessment of Metagenome Interpretation (CAMI). Nammu outperforms gLM2 at every taxonomic level. We further assessed function via KEGG Orthology prediction in deep-sea metagenome-assembled genomes, where Nammu outperforms gLM2 (150M). These results demonstrate improved performance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736993v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -317,15 +184,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 10, 2026</span>
+<span class="date">Jul 11, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A scalable deep-learning framework for cancer detection using cell-free DNA shallow whole-genome sequencing.</h2>
-<p class="paper-authors">Haichao Wang, Paulius D Mennea, +21 authors, Nitzan Rosenfeld</p>
+<h2 class="paper-title">Multimodal Integration of Gait, Balance, and Infrared Thermography Enhances Machine-Learning Classification of Knee Osteoarthritis: A Cross-Sectional Study.</h2>
+<p class="paper-authors">Federico Roggio, Martina Sortino, +7 authors, Giuseppe Musumeci</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cell-free DNA (cfDNA) in body fluids enables noninvasive cancer detection. Multifeature artificial intelligence (AI) can improve sensitivity by integrating diverse biomarkers when cancer signals are sparse. Tumor-informed assays that rely on mutations have limited practicality for early cancer detection. Emerging fragmentomic and epigenetic features underpin tumor-naive approaches to screening for individuals with low tumor burden. Here, we designed UNITE-a universal cfDNA feature ensemble framework that provides scalable cancer detection methods based on "genomic bin-fragment length" matrices derived from shallow whole-genome sequencing (sWGS) data at 0.1× depth. Using sWGS data from 2063 plasma samples (631 controls and 1432 cases from 26 cancer types), we systematically evaluated both XGBoost (UNITE-XGB) and convolutional neural networks (UNITE-CNN) across multiple feature spaces and cancer stages. In stage I-II cancer, UNITE-XGB and UNITE-CNN achieved 31 and 21% sensitivity, respectively, at 95% specificity. These findings provide roadmaps for developing multifeature AI beyond plasma biopsies.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42430497/" target="_blank">
+<p><strong>Abstract:</strong> To investigate whether combining gait, balance, and infrared thermography improves discrimination between individuals with knee osteoarthritis (KOA) and healthy controls (HC) compared with single-domain models.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42435928/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -333,18 +200,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
 <span class="date">Jul 10, 2026</span>
-<span class="journal">PubMed</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning integration of tissue-specific metagenomic signatures for colorectal cancer diagnosis.</h2>
-<p class="paper-authors">Anıl Delik, Yakup Ülger, +4 authors, Sadık Dinçer</p>
+<h2 class="paper-title">Improved 3D Radial Phyllotaxis Trajectories for Uniform Density Distribution of Readout Directions and Sequential Binning</h2>
+<p class="paper-authors">Leidi, M., Delitroz, J., +7 authors, Franceschiello, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Colorectal cancer (CRC) represents a significant global health burden. Leveraging machine learning (ML) with metagenomic and tissue-specific data presents new opportunities for improving diagnostic accuracy and understanding the microbiome's role in CRC. This study was conducted to enhance diagnostic efficiency and identify crucial bacterial biomarkers in CRC using various ML models applied to metagenomic data. A total of 33 samples were analyzed, comprising 20 healthy controls and 13 CRC patients. Each sample included demographic data (age, gender) and bacterial information (Bacteroides, Enterococcus, Faecalibacterium, Proteobacteria, Gammaproteobacteria, Firmicutes, Enterobacteriaceae, Clostridia). Six models: Logistic Regression, Naive Bayes, Decision Tree, Support Vector Machine (SVM) with both linear and polynomial kernels and Multilayer Perceptron (MLP) were employed. Performance was evaluated using leave-one-out cross-validation (LOOCV). To address the class imbalance, F1-score was utilized as the primary metric for feature selection. A consensus-based feature elimination strategy, where bacterial features were iteratively removed only if their exclusion improved or maintained the F1-score across the majority of the models was implemented. For the MLP, a grid search was integrated into each iteration to optimize hidden layer architectures and solvers, thereby ensuring that robust performance was achieved for each feature subset. The analysis was conducted using a 10-feature initial set consisting of 2 demographic and 8 microbial features. Model performances were optimized through a consensus-based feature elimination strategy, and it was determined that diagnostic success increased with the exclusion of the Faecalibacterium, Age, and Enterobacteriaceae features during the process. The highest performance was achieved with the SVM model with Linear kernel when Bacteroides was excluded from the 9-feature subset (Table 4), reaching an accuracy of 87.88% and an F1-score of 83.33%. Within the final biomarker set, Enterococcus and Firmicutes were identified as the most critical predictive features due to the sharpest declines in F1-score observed in their absence. This study demonstrates that the systematic elimination of initial clinical and metagenomic features maximizes CRC diagnostic accuracy and model stability. The process, initiated with a 10-feature baseline set was subsequently refined to establish a high-precision diagnostic mechanism with an F1-score of 83.33%. The identified final microbial signatures, consisting of 5-6 taxa, provide a clinically applicable, non-invasive diagnostic foundation with low input requirements.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42429885/" target="_blank">
+<p><strong>Abstract:</strong> Purpose: To develop 3D radial spiral phyllotaxis trajectories that provide a uniform density distribution of readout directions and support retrospec- tive sequential binning, thereby reducing ringing artifacts and improving image quality. Methods: UPhy trajectory redefines the polar angle to achieve uni- form density distribution of readout directions. FlexiPhy further decouples the azimuthal and polar ordering of interleaves through a randomized permutation, improving robustness to sequential binning. The proposed trajectories were evaluated in vivo on 10 healthy volunteers using two gradient-echo sequences on a 3T MRI scanner. Sequential temporal recon- structions were compared with reference reconstructions using structural similarity and relative L2 error metrics. Results: UPhy presents analytically demonstrated uniform density dis- tribution of readout directions. Quantitative analysis shows significantly higher SSIM values and lower relative L2 errors for FlexiPhy compared with both the original phyllotaxis and UPhy trajectories after Bonferroni correction (pcorrected &lt; 0.05). Conclusion: FlexiPhy enables more reliable sequential binning recon- structions by reducing trajectory-induced ringing artifacts and temporal inconsistencies. Moreover, its randomized construction is not tied to a specific binning strategy, making it broadly compatible with retrospective binning approaches used in dynamic and motion-resolved MRI.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736720v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
