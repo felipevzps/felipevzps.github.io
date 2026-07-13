@@ -32,15 +32,148 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 11, 2026</span>
+<span class="date">Jul 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SPARC: A Graph-based Optimization Framework for Directional Trajectory Reconstruction Across Ordered Single-Cell Conditions</h2>
-<p class="paper-authors">Wu, S., Walker, W. C., +2 authors, Samee, M. A. H.</p>
+<h2 class="paper-title">BioMetAll v2.0: Introducing Scores, Metal Discrimination, and Side-Chain Descriptors for Predicting Metal-Binding Sites in Proteins.</h2>
+<p class="paper-authors">Marechal, J. D., Fernandez Diaz, R., +3 authors, Alemany, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell transcriptomics has enabled systematic profiling of cellular states across ordered biological contexts, including developmental stages, treatment phases, disease progression, and anatomical compartments. A central challenge is to reconstruct trajectories that respect the directionality imposed by biology or experimental design. Existing trajectory inference methods reconstruct cell-state progressions from latent-space geometry but do not enforce external biological ordering during graph construction, yielding biologically inadmissible transitions. An emerging paradigm of optimal-transport (OT) approaches partially addresses this limitation by incorporating experimental ordering into probabilistic state-to-state correspondences, yet their pairwise formulation cannot resolve whether a given state is an intermediate state or a terminal state along a multi-step progression. In multi-timepoint settings, OT typically estimates couplings only betweenadjacent timepoints and then chains these locally solved couplings to approximate long-range trajectories without a global optimization across all conditions simultaneously. Here we present SPARC, a graph-based optimization framework that quantifies similarity in a shared high-dimensional latent space and reconstruct directional trajectories under biological constraints. Global shortest-path optimization over this graph yields progression routes, from which SPARC derives path-based pseudotime identifies bottlenecks clusters, and detects gene temporal behavior. SPARC was evaluated across three complementary settings representing distinct trajectory-inference challenges. Its application to paired primary and lung metastatic osteosarcoma samples allows us to be the first to propose a cross-organ bone-like microenvironment hypothesis, in which osteoclastogenic signaling establishes a bone-like remodeling niche within the pulmonary metastatic lesion that promotes osteoclast differentiation and activity. The findings are independently recoverable in human osteosarcoma Visium HD spatial transcriptomics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736532v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Predicting the location of metal-binding sites in proteins is crucial for fundamental biological questions and biotechnological applications. Over the past decade, the rise in metal-bound protein structures in the Protein Data Bank, combined with advanced statistical models such as deep learning, has accelerated the development of metal-binding site prediction tools. Several approaches are now available, offering high-quality benchmarks and predictive performance. Our initial development in this area is BioMetAll, whose first version was based on backbone pre-organization. Here, we introduce its second version, featuring two major updates: 1) metal-specific scoring functions and 2) prediction using backbone geometry alone or in combination with first coordination sphere descriptors. Apart from demonstrating metal sensitivity and yielding better benchmarking results, this new version allows the assessment of the influence of considering the metal first coordination sphere versus backbone pre-organization on how metallic species bind to proteins.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737562v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">The YTHDC1 glutamate-rich domain docks to the ADAR1 Zα Domain, linking the N6-methyladenosine modification of pre-mRNAs to dsRNA editing</h2>
+<p class="paper-authors">Gromak, D., Shaytan, A. K., +1 author, Poptsova, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The p150 isoform of the double-stranded RNA editing enzyme ADAR1 binds Z-DNA and Z-RNA through the conserved winged helix-turn-helix Z domain. Here, we describe an inverse computational design strategy to map protein interactors of Z. We used RFdiffusion and ProteinMPNN to generate around 10,000 synthetic binders optimized for the Z recognition surface, then used their sequences as structural templates for BLASTp searches against the human proteome. Multi-stage screening of around 1,200 candidate regions from 298 proteins via ColabFold pDockQ identified 79 candidates for high-resolution AlphaFold3 modeling, which revealed the m6A reader YTHDC1 as the top-ranked interactor. AlphaFold3 predicts that a glutamate-rich poly-E disordered region of YTHDC1 (residues 199-254) docks into the basic recognition pocket of Z through a charge-complementary mechanism that mimics the phosphate backbone of Z-RNA. Microsecond molecular dynamics simulations confirmed stability of the binary ADAR1p150-YTHDC1 complex, with the Z-poly-E interface maintaining RMSD below 3 Angstrem throughout. Ternary complex simulations showed that dsRNA acts as a co-anchoring scaffold stabilizing simultaneous engagement of both proteins in a catalytically dormant conformation. YTHDC1 localizes to transcription-associated YT bodies where nascent RNAs undergo m6A modification and negative supercoiling promotes Z-DNA formation, suggesting that YTHDC1 recruits ADAR1p150 to promote editing of intron-containing substrates prior to splicing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.08.737312v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">EcoMorph: Universal morphological trait quantification from natural language prompts for ecological research</h2>
+<p class="paper-authors">Amoah, E. I., Bunch, Z., +2 authors, Grozinger, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> 1. Morphological traits such as floral area and body size are fundamental to ecological research, serving as inputs for studies of pollinator-plant interactions, habitat quality, and biodiversity monitoring. However, accurately measuring these traits from images remains challenging, particularly in complex field conditions where existing tools exhibit reduced accuracy and limited generalizability across taxa. 2. We present EcoMorph, a modular morphological measurement system that leverages the Segment Anything Model 3 (SAM3) to quantify traits across diverse ecological contexts. Unlike task-specific segmentation models requiring domain-specific training data, SAM3's prompt-based architecture enables segmentation of arbitrary biological structures from natural-language prompts, using the same underlying model across flowers, insects, and other targets without retraining. From the resulting segmentations, EcoMorph extracts three classes of measurement: area, linear dimensions, and object counts. 3. We validated EcoMorph across two ecological scales. At the intermediate scale, EcoMorph-derived floral area agreed closely with manual ImageJ measurements (R2 = 0.935, n = 74) under simple-background conditions and (R2 = 0.928, n = 58) under complex-background conditions, with valid predictions for 95% of images. At the fine scale, EcoMorph-derived insect body area was strongly correlated with hand-measured intertegular distance (r = 0.810, n = 349), capturing body-size variation across species from the small Bombus impatiens to the large Xylocopa virginica. Object counts matched manual counts almost exactly for well-separated insects in an insect box (R2 = 0.9997, n = 12). 4. By combining prompt-based segmentation with modular measurement, EcoMorph enables high-throughput quantification of area, size, and abundance from heterogeneous image sources without taxon-specific training. This generality supports a broad range of ecological applications, including pollinator and plant trait research, biodiversity and abundance monitoring, and allometric biomass estimation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737871v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">TEscape: Defining the human transposable element transcriptome using multiplatform long-read sequencing</h2>
+<p class="paper-authors">Mercuri, R. L. V., Mombach, D. M., dos Santos, F. R. C., +7 authors, Galante, P. A. F.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Transposable elements (TEs) not only account for half of the human genome sequence but also generate transcripts that contribute to transcriptomic diversity. Yet, their repetitive nature has hindered accurate quantification of the full TE-derived transcriptome, a challenge that long-read sequencing can overcome. Here, we combined multiplexed arrays isoform sequencing (MAS-ISO-seq) with a dedicated computational framework (TEscape) to perform an in-depth annotation of the human TE transcriptome. To capture the breadth of human transcriptome diversity, we profiled six representative cell types spanning three distinct biological contexts, including metabolism with, primary patient-derived adipogenic cells at two differentiation stages, and iPSC derived hepatic progenitor cells; the nervous system with iPSC-derived neurons, neural progenitor cells (NPCs), and pluripotency using induced pluripotent stem cells (iPSCs). Together, these datasets yielded over 235 million full-length long reads. First, to assess data coverage and transcriptome depth, we quantified protein-coding gene expression, detecting 14,312 genes (73.6% of all annotated protein-coding genes), which is a level consistent with deep and comprehensive transcriptome representation. Second, focusing on TE-derived transcripts, we identified &gt;83,000 previously unannotated isoforms, the vast majority (84%) originating from a complex combination of multi-TEs. We also identified solo TEs, which are predominantly from LINE1 (14%). We confirmed that TE-transcripts are able to be exemplified by signatures detected in Liver Hepatocellular Carcinoma (LICH). Together, MAS-ISO-seq and TEscape establish the first long-read-based, high-resolution atlas of transcribed human TEs, providing a foundational resource for integrative transcriptome analyses and for investigating TE expression and regulation in health and disease.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.08.737305v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A geometric atlas of how ESM3 organizes modalities across depth</h2>
+<p class="paper-authors">Steenwyk, J. L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Protein language models learn general-purpose representations from large collections of protein sequences and structures, and have advanced the prediction of protein structure and function. ESM3 is a multimodal protein language model that ingests a protein through several channels at once, including amino-acid sequence, three-dimensional structure, secondary structure (SS8), solvent accessibility (SASA), and discrete functional annotations, summing their embeddings into a single residual stream. Little is known about whether these modalities occupy separate subspaces and the depth at which they fuse. The present analysis examines ESM3 (esm3-sm-open-v1; 1.4 billion parameters; 48 transformer layers) once per modality in isolation and applies representational-similarity analysis across all 48 layers. The four physical modalities (sequence, structure, SS8, SASA) begin in distinct subspaces, remain maximally separated through roughly the first half of layers, and then fuse into a shared low-dimensional subspace between layers 25 and 35. The fusion is ordered. The structure-derived modalities (structure, SS8, SASA) are mutually aligned from the input, whereas sequence joins last, after layer 28. The functional-annotation modality never fuses; instead, it remains representationally orthogonal to the physical modalities at every layer, and this orthogonality holds whether the annotation is supplied as whole-protein or per-residue, suggesting that it is content-driven rather than a tokenization artifact. The fusion is a learned property, absent in a randomly initialized model of the same architecture, holds at the residue level below the mean-pool, and reorganizes variance, converting between-condition variance into within-condition variance while the stream never approaches isotropy. Fusion depth is independent of protein length but is delayed by structural disorder. The phenomenon is universal across diverse organisms. Across 5,555 proteins from 12 organisms spanning eukaryota, bacteria, and archaea, every superkingdom (and every individual organism) reaches peak modality fusion at the same network depth (layer 35).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.08.737319v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Genomic Annotation Infrastructure (GAIn): Pipelines and Resource Repositories for Annotating Variants, Positions, and Regions</h2>
+<p class="paper-authors">Cokol, M., Chorbadjiev, L., +4 authors, Iossifov, I.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Interpretation of genomic variants, positions, and regions depends on reliable annotation - adding evidence such as predicted effect, conservation, population frequency, and gene-level context - yet the underlying resources are numerous, versioned, and assembly-specific. We present the Genomic Annotation Infrastructure (GAIn), a platform that generates transparent, reproducible annotations via declarative pipelines that define annotation tasks as ordered lists of components, called annotators, that produce annotation attributes using genomic resources from Genomic Resource Repositories (GRRs). We provide two public GRRs: a main repository containing more than 250 heterogeneous genomic resources, and a separate GRR-ENCODE repository containing resources derived from thousands of ENCODE (Encyclopedia of DNA Elements) project experiments. Users can use the annotation pipelines we made available, author custom annotation pipelines, and execute annotation tasks with these pipelines via GAIn's web and command-line interfaces. The web interface can be used without any setup, but it relies on shared computational infrastructure and imposes limits on the size of annotation tasks. The command-line interface requires setup but supports arbitrarily large annotation tasks through simple-to-use parallelization and offers a broader set of features. For example, command-line GAIn can be extended by using custom GRRs or creating custom annotators via its plugin architecture. In addition, GAIn's re-annotation feature, which updates annotations as they evolve, substantially simplifies maintaining annotations in a large genomics analysis project. GAIn's resource management, explicit versioning, and pipeline abstraction provide an auditable, maintainable, and efficient foundation for modern genomic annotation across reference assemblies and use cases.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.08.737273v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">OCellus: A Language-Model Framework for Single-Cell, Spatial, and Perturbation Biology with Natural-Language Reasoning</h2>
+<p class="paper-authors">Zhang, C., Sun, J., +7 authors, Wang, G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Computational modeling of cellular behavior - the virtual cell - has emerged as a stated grand challenge at the intersection of artificial intelligence and biology, yet existing foundation models remain specialized: single-cell models process dissociated transcriptomes only, spatial models require dedicated spatial-aware architectures, and perturbation predictors depend on manually curated knowledge bases that cap generalization. Here we introduce OCellus, a single nine-billion-parameter language model (Qwen3.5-9B) fine-tuned on twenty-two biological tasks that simultaneously addresses all three limitations through three coordinated technical contributions on a shared backbone. First, EvenClock encodes two-dimensional spatial coordinates as eighteen clockface sectors of text, enabling spatial reasoning on a vanilla language model without architectural modification; on ten spatial transcriptomics tasks OCellus attains 77 percent spatial-neighborhood accuracy, 96 percent spatial-cellchat accuracy, and 0.70 proportion-cosine similarity on spatial deconvolution, all without any spatial-aware architectural components. Second, per-gene language-model embeddings replace the Gene Ontology annotations that GEARS depends on, achieving Pearson correlation 0.945 on the Replogle 2022 perturbation benchmark versus 0.84 for GEARS across 457 completely unseen knockout genes. Third, OCellus-Agent provides a Planner-Router-Verifier natural-language interface that achieves 75 percent pipeline accuracy on eighty multi-task queries. Removing language-model embeddings collapses perturbation Pearson to 0.06, confirming that learned functional representations - not graph topology - drive the gain. As a cell-type encoder, OCellus ranks first among fourteen foundation models in linear-probe accuracy at 95.1 percent across four benchmark datasets, and reaches 72.6 percent average across twenty-two evaluated biological tasks - a 57-percentage-point absolute gain over the strongest baseline configuration. As a language model, OCellus uniquely generates natural-language explanations of its predictions, a capability absent from all competing methods. Code, pre-trained model weights, the graph-neural-network module, and the agent system will be made available upon publication.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.08.737248v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">ProtBLIP2-SST: Protein Function Prediction via BLIP2 with Sequence, Structure, and Text</h2>
+<p class="paper-authors">Chen, Z., Luo, Q.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Protein function prediction traditionally relies on structured gene ontology (GO) labels or multi-label classifiers. However, these labels or classifiers cannot flexibly describe molecular function, biological process, cellular component, and free-text functional narratives in a single output. In comparison, generation-based approaches offer an intuitive paradigm for flexible free-text protein annotation, with large language models (LLMs) as a representative method for protein-text modeling. Recent efforts on utilizing LLMs for protein semantic understanding and annotation generation have adopted sequence-only encoding or sequence-text contrastive alignment paradigms, yet without explicit consideration of three-dimensional structural information. To address these limitations in current protein function prediction methods, we present ProtBLIP2-SST, a two-stage framework built on the BLIP2 model architecture that bridges protein sequence, structure, and text for open-ended protein functional caption generation. Specifically, we first integrate sequence and structure information through SaProt, a protein language model (PLM) with a structure-aware vocabulary that fuses residue tokens with Foldseek-derived 3Di structural tokens. To empower the LLM to understand protein semantics, we employ a Q-Former (a querying transformer in BLIP2) with learnable query tokens as the cross-modal projector to align protein features from the frozen SaProt encoder and text features from a frozen BiomedBERT via protein--text contrasting, protein--text matching, and protein captioning objectives. After alignment, the protein features are linearly projected and prepended to the prompt embeddings of the LLM for protein captioning fine-tuning with LoRA. Trained on 441k protein--text pairs from Swiss-Prot with corresponding structures from the AlphaFold Database, our ProtBLIP2-SST outperforms sequence-only and sequence-text alignment baselines on protein captioning metrics, with ablation studies demonstrating the effectiveness of integrating structure with sequence information for improved protein understanding. Through a unified two-stage alignment-and-generation pipeline, ProtBLIP2-SST integrates protein sequence and structural information, overcomes the rigidity of traditional GO-centric classification, generating open-ended captions that jointly describe molecular function, subcellular location, and homology context in one single output.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737551v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -55,11 +188,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Single-cell RNA-seq reveals conserved and divergent cellular states across wound types and species</h2>
-<p class="paper-authors">Choi, D., Bakhtiari, M., +3 authors, Bhasin, M.</p>
+<h2 class="paper-title">High resolution Streptococcus pyogenes core genome MLST and LIN coding scheme for outbreak detection</h2>
+<p class="paper-authors">Ryan, Y., Jolley, K. A., +4 authors, Moganeradj, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Chronic wounds, such as diabetic foot ulcers, fail to progress through the normal healing process and impose a significant burden on healthcare systems. While previous single-cell studies have characterized specific wound conditions, a unified understanding of the shared and distinct cellular landscapes across diverse wound microenvironments has been lacking. Therefore, we integrated over 500,541 cells from patients and mice across multiple wound conditions, including acute wound, diabetic foot ulcer, and venous ulcer as well as their healing outcome. Fibroblast-focused analysis identified a bifurcation in differentiation trajectories and identified STAT3 as a potential regulator of a reparative program in chronic wound. Furthermore, we discovered immune dysfunctions in non-healed chronic wounds, contrasting the quiescent memory-like T cells and TIMP1+ macrophages in healed chronic wounds with the exhausted T cells and foamy SPP1+ macrophage enriched in non-healed chronic wounds. Finally, we translated these results into a clinically applicable three-gene signature (CHI3L1, TIMP1, and SPP1) that accurately predicts chronic wound healing. To support wound biology community, we developed WoundSCAtlas, an interactive web resource for exploring diverse wound pathologies. In conclusion, this work provides a comprehensive and cross-species landscape of chronic wound healing, identifying conversed wound outcome-associated molecular programs, predictive biomarker, and interactive data resource.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737032v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Streptococcus pyogenes is a globally important pathogen responsible for at least 500,000 deaths a year, causing significant burden on healthcare systems. It is the causative agent for ailments such as impetigo and strep throat to septicaemia and necrotizing fasciitis. Assessment of genetic relatedness for the detection of outbreaks within communities or healthcare facilities is vital in decreasing the propagation of S. pyogenes within these settings, alongside epidemiological data. As the volume of isolates being sequenced increases year on year, more scalable and sharable methodologies of assessing genetic relatedness are required by reference laboratories and for international collaboration. LIN codes, applied to core genome MLST (cgMLST) represent a method which is extensible to large scale whole genome sequencing (WGS) while still being sufficiently sensitive to detect outbreak clusters. Here we present a novel cgMLST and LIN code scheme, hosted by PubMLST, enabling international collaboration and global tracking of variants, that is highly scalable and usable for all. The schemes are available at https://pubmlst.org/organisms/streptococcus-pyogenes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737715v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -74,144 +207,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Multiscale harmonization and semantic integration of biomedical data enable biological insights through immersive exploration</h2>
-<p class="paper-authors">Bueckle, A., Zhu, C., +23 authors, Boerner, K.</p>
+<h2 class="paper-title">ArthroVerse: mapping protein family diversity across arthropod-associated microbiomes</h2>
+<p class="paper-authors">Chasapi, I. N., Aplakidou, E., +12 authors, Pavlopoulos, G. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The Human Reference Atlas (HRA) enables multiscale data exploration and visualization. We present "HRA: Powers of Ten," a virtual reality (VR) application for integrating, harmonizing, and visualizing data within the HRA Organ Gallery. It enables immersive navigation from a whole-body view of 81 organs to datasets across 5 organs, 5 assay types, and 4 spatial scales using a Multiscale Elevator System. The application, data, and code are available open-source.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737090v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Locus-Level Transposable Element Profiling Resolves Division-Coupled Transcriptional Dynamics During Human Endoderm Specification</h2>
-<p class="paper-authors">GAIRE, A., Kummerfeld, E., +1 author, Wang, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737093v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Structure-guided computational design and mechanistic understanding of the p95HER2-targeting NAZ-mAb antibody and its variants</h2>
-<p class="paper-authors">Rawat, P., Kyte, J. A., +1 author, Dorraji, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Human epidermal growth factor receptor 2 (HER2) is an oncogenic receptor tyrosine kinase in breast cancer and other malignancies. A subset of HER2-positive tumours expresses 611-CTF-p95HER2, a tumour-specific, hyperactive truncated isoform associated with metastasis and treatment resistance that lacks most of the extracellular domain targeted by conventional HER2-directed antibodies. We previously developed NAZ-mAb (formerly known as Oslo-2), a monoclonal antibody against 611-CTF-p95HER2. Here, we describe a computational antibody-engineering workflow for designing variants of NAZ-mAb. Starting from the sequence alone, we modeled the NAZ-mAb-611-CTF-p95HER2 complex, generated a combinatorial mutational landscape using FoldX 5.0, and prioritized candidate variants using predicted interaction energy and developability criteria. Two variants representing distinct design strategies were selected for validation: an aromatic double mutant, NAZ-mAb v1 (L:S31W/L:H107W), and a conservative single mutant, NAZ-mAb v2 (L:S31M). Both variants were successfully expressed as recombinant IgGs; NAZ-mAb v2 achieved a five-fold higher recombinant expression yield than parental NAZ-mAb, while both variants retained antigen binding with a higher apparent signal than the parental antibody in indirect ELISA. However, Biacore two-state kinetic analysis revealed weaker affinities than the parental antibody (KD NAZ-mAb v1: 32.6 nM, NAZ-mAb v2: 9.45 nM vs. parental NAZ-mAb: 5.33 nM). These findings show that the computational workflow can generate experimentally tractable, antigen-engaging NAZ-mAb variants, while also highlighting the limitations of fixed-backbone interaction-energy ranking as a predictor of binding affinity and yield. This study provides a practical framework for computationally driven, developability-aware antibody optimization in the absence of experimental structural data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736817v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">AGPI: An AI-Powered Genomic Pathogen Intelligence Platform for Integrated Classification, Visualization, and Therapeutic Targeting</h2>
-<p class="paper-authors">Goel, A., Mishra, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Rapid and accurate pathogen detection remains a major challenge in modern bioinformatics, as existing tools are often fragmented and require multiple specialized workflows. We present AGPI (AI-powered Genomic Pathogen Intelligence), an integrated platform that combines genomic sequence classification, biological enrichment, three-dimensional structural visualization, and AI-guided therapeutic prioritization within a single interpretable pipeline. AGPI employs a hybrid convolutional Bidirectional Gated Recurrent Unit (BiGRU) architecture trained on DNA sequences from 40 pathogen classes spanning viruses, bacteria, fungi, and protozoan pathogens. The model achieved 99.61% validation accuracy and 94.90% accuracy on an independent held-out evaluation of 600 pathogen sequences following iterative refinement. As a proof of concept, AGPI correctly classified a Zika virus genome with 96.14% confidence, retrieved curated biological context from 245 peer-reviewed studies, and identified Ribavirin as a leading therapeutic candidate against the Zika NS5 polymerase through AI-guided molecular docking. Multi-metric ligand similarity analysis further differentiated candidate compounds according to their structural and pharmacological properties. These results demonstrate that integrated AI-driven genomic pipelines can accelerate pathogen characterization and therapeutic hypothesis generation while providing an accessible and interpretable framework for infectious disease surveillance and computational drug repurposing.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737037v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Somatic mutation inference from single-cell transcriptomics: A survey in the esophagus</h2>
-<p class="paper-authors">Mendez-Alejandre, A., Gonzalez-Menendez, D., +6 authors, Piedrafita, G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Human somatic tissues accumulate mutations during normal aging. Some of these affect cancer-associated driver genes and confer mutant progenitor cells a competitive advantage that leads to clonal expansions. The human esophageal epithelium exemplifies this phenomenon, becoming a dense mosaic of competing mutant clones by adulthood. However, the phenotypic consequence of those mutations and their possible role in carcinogenesis remains unknown. Novel bioinformatic tools for de novo mutant detection from single-cell transcriptomics (scRNA-seq) could potentially leverage on the wealth of publicly available data to help draw mutant cell phenotypes in vivo. In this study we test SComatic algorithm's ability to identify somatic mutations in the normal, polyclonal esophageal epithelium. We analyze a public scRNA-seq dataset from a human cohort with multiple esophageal samples per donor, and an independent study in mice subjected to experimental mutagenesis where samples have been re-sequenced for validation. These unconventional experimental designs allow us to control unspecificity. We observe scRNA-seq variant calling output is heavily affected by undesired technical artifacts and germline variants, which we are able to reduce following a customized series of rational filters that enrich in somatic mutations. Final candidate mutations are then used to reconstitute clonal lineages and map them to differentiation trajectories in the UMAP embeddings. We find low read depth and sparse cellular sampling favor detection of passenger mutations and hinder driver mutant phenotypic inferences. Altogether, we showcase current limitations of scRNA-seq-derived mutation calling, while we offer methodological indications that should be considered for future studies aimed at investigating mutant clone behavior in normal polyclonal tissues from single-cell transcriptomics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.737010v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Metagenomic contextualization of proteins with state space models</h2>
-<p class="paper-authors">Azbijari, N., Wynne, J. H., +1 author, Thurber, A. R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Since the early adoption of metagenomics (the culture-free sequencing of microbial community genomes) in 2011, sequence data has increased over 500-fold across ecosystems. This surge in data has outpaced reliable taxonomic and functional annotation, with over half of sequences lacking confident functional assignment. These unknown sequences limit our understanding of microbial processes central to planetary health and human health. Recent advances in genomic language modeling have made progress in the interpretation of metagenomics datasets. Most state-of-the-art models rely on transformer architectures, which limit the maximum sequence length and therefore capture only a fraction of assembled metagenomic sequences due to the quadratic scaling of attention. This prevents training and inference on sequences with broad context, including multiple coding and non-coding regions. To overcome this limitation, we propose leveraging new model architectures that scale linearly with sequence length, making them more suitable for modeling longer metagenomic sequences. Here, we introduce Nammu, a mixed-modality Mamba-based foundation model with 167M parameters trained on the OpenMetaGenomic (OMG) corpus. Nammu is a bidirectional encoder trained with a 20K context length using a curriculum strategy, first on 64M protein sequences and then on 32M mixed-modality metagenomic contigs. We compared Nammu to gLM2, a mixed-modality transformer also trained on OMG using 37% more tokens, using taxonomy inference on a marine dataset from the Critical Assessment of Metagenome Interpretation (CAMI). Nammu outperforms gLM2 at every taxonomic level. We further assessed function via KEGG Orthology prediction in deep-sea metagenome-assembled genomes, where Nammu outperforms gLM2 (150M). These results demonstrate improved performance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736993v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 11, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Multimodal Integration of Gait, Balance, and Infrared Thermography Enhances Machine-Learning Classification of Knee Osteoarthritis: A Cross-Sectional Study.</h2>
-<p class="paper-authors">Federico Roggio, Martina Sortino, +7 authors, Giuseppe Musumeci</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> To investigate whether combining gait, balance, and infrared thermography improves discrimination between individuals with knee osteoarthritis (KOA) and healthy controls (HC) compared with single-domain models.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42435928/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 10, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Improved 3D Radial Phyllotaxis Trajectories for Uniform Density Distribution of Readout Directions and Sequential Binning</h2>
-<p class="paper-authors">Leidi, M., Delitroz, J., +7 authors, Franceschiello, B.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Purpose: To develop 3D radial spiral phyllotaxis trajectories that provide a uniform density distribution of readout directions and support retrospec- tive sequential binning, thereby reducing ringing artifacts and improving image quality. Methods: UPhy trajectory redefines the polar angle to achieve uni- form density distribution of readout directions. FlexiPhy further decouples the azimuthal and polar ordering of interleaves through a randomized permutation, improving robustness to sequential binning. The proposed trajectories were evaluated in vivo on 10 healthy volunteers using two gradient-echo sequences on a 3T MRI scanner. Sequential temporal recon- structions were compared with reference reconstructions using structural similarity and relative L2 error metrics. Results: UPhy presents analytically demonstrated uniform density dis- tribution of readout directions. Quantitative analysis shows significantly higher SSIM values and lower relative L2 errors for FlexiPhy compared with both the original phyllotaxis and UPhy trajectories after Bonferroni correction (pcorrected &lt; 0.05). Conclusion: FlexiPhy enables more reliable sequential binning recon- structions by reducing trajectory-induced ringing artifacts and temporal inconsistencies. Moreover, its randomized construction is not tied to a specific binning strategy, making it broadly compatible with retrospective binning approaches used in dynamic and motion-resolved MRI.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.06.736720v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Metagenomic studies of arthropod-associated microbiomes have generated vast amounts of sequence data, yet the functional and structural organization of these proteins remains largely unexplored. Here, we present ArthroVerse, the first comprehensive database of protein families derived from arthropod-associated metagenomes. Non-redundant protein families were generated after rigorous filtering, deduplication, and clustering. The protein families were further annotated with microbial taxonomy, host associations, protein structural information, and Carbohydrate-active enzymes (CAZyme) predictions. The resulting dataset integrates both metagenomic and reference genome-derived proteins, enabling systematic exploration of functional diversity, evolutionary relationships, and host-microbe interactions in insect microbiomes. ArthroVerse provides a valuable resource for the study of microbial ecology and arthropod physiology, offering unprecedented insight into the protein landscape of insect-associated microbial communities.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.11.737898v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
