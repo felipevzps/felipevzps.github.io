@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Spatial Topology Reveals Biologically Distinct Recurrent Motifs in Colorectal Cancer</h2>
-<p class="paper-authors">Yao, J., Yang, Y., +10 authors, Xie, Y.</p>
+<h2 class="paper-title">Shifu: an integrated framework for deep learning of RNA secondary structure</h2>
+<p class="paper-authors">Galvez, G. C., Vicens, Q.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Most spatial transcriptomic analyses of solid tumors focus on individual cell states or single-sample spatial domains rather than on recurrent multicellular tissue architectures shared across patients, and typically depend on predefined cell-type annotations or compartment definitions. We developed STORM (Spatial Topology analysis of Recurrent Motifs), an unsupervised graph-attention variational autoencoder that learns recurrent spatial motifs directly from cell-level graph structure and molecular profiles without cell-type labels, manual annotation, or predefined compartments. We applied to 32 Xenium sections from 16 patients with paired early-onset (EOCRC) and average-onset (AOCRC) colorectal cancer, STORM identified 10 recurrent motifs that self-organized into tumor-parenchymal, stromal, and immune macro-compartments. Among these, the Desmoplastic Fibrotic Barrier (DFB) motif, a CAF- and ECM-rich boundary architecture, was associated with restricted CD8 T-cell geodesic access to tumor cores independently of CD8 abundance, as demonstrated by abundance-normalized neighborhood enrichment statistics and within-sample mixed-effects models. EOCRC selectively amplified this barrier-exclusion architecture, exhibiting tighter tumor parenchyma, denser DFB shells, and a DFB-specific ECM activation program that yielded an age-specific prognostic signature in TCGA-COAD. Translation of motif macro-classes to H&amp;E images via a Vision Transformer classifier produced an image-derived DFB-barrier composite that predicted overall survival in advanced-stage TCGA colorectal cancer. STORM provides an annotation-free framework for discovering recurrent spatial motifs and identifies a fibroblast barrier architecture whose topological association with immune exclusion is independent of effector abundance, amplified in early-onset disease, and translatable to a deployable pathology-based prognostic biomarker.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737584v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Deep learning has advanced RNA secondary-structure prediction by bypassing explicit energy rules to capture long-range dependencies, yet progress is limited less by model scale than by how structures are measured: single scores hide where and why models fail, and benchmark scores can reflect memorization of one dataset rather than genuine generalization. We address this with Shifu, a framework of three coupled parts. Shifu-Corpus is a leakage-audited dataset of 254123 sequences from six databases, with family-aware splits certified free of exact and near-duplicate leaks. The Shifu Trifecta scores a model on three axes (correctness, breadth across diverse RNAs, and whether its confidence can be trusted) rather than one number. Shifu-LMR, a family of compact RNA language models, serves as controlled experiments: changing the training corpus shifts accuracy by 0.13, and a 65- million-parameter model, Shifu-LMR-Nano, leads on correctness while running on a laptop. We release the dataset, code, and model backbones.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.15.738762v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A robust, sensitive phylogenetic method enables gene-level metagenomic analyses</h2>
-<p class="paper-authors">Tran, N., Kananen, K., Bradley, P. H.</p>
+<h2 class="paper-title">CasanovoGUI: a cross-platform desktop application for deep learning-based de novo peptide sequencing with Casanovo</h2>
+<p class="paper-authors">Wen, B., Li, K., +3 authors, Noble, W. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> A key goal in the microbiome field is to move from taxonomic associations towards mechanistic hypotheses about microbial gene function. However, most methods for linking microbiome changes to specific genes are biased towards finding marker genes, with weak evidence for functional relevance. Phylogenetic regression can address this issue and has been previously applied to changes in microbial prevalence, but many environments (such as the gut in health vs. disease) are characterized more by changes in abundance, which presents unique statistical challenges. We show that when applied to real differential abundances from metagenomes, phylogenetic regression has an anti-conservative bias, indicating inflated false positives. We develop an alternative non-parametric method called "robust permutration," designed specifically for differential abundance data, and evaluate its performance against phylogenetic regression as well as several other phylogenetic comparative methods in realistic simulations of metagenomic data. These results show that robust permutration is the most powerful method that appropriately controls the false positive rate. We further apply robust permutration to a human case-control study of liver cirrhosis, revealing that Lachnospiraceae abundance in disease is linked to a previously uncharacterized iron-sulfur transcription factor encoded near homologs of the butyryl-CoA oxygen oxidoreductase system, a recently discovered system for oxygen detoxification. This illustrates how robust, sensitive phylogenetic methods can enable the generation of new molecular hypotheses directly from metagenomic case-control data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.15.738679v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> De novo peptide sequencing detects peptides directly from tandem mass spectra without a protein sequence database, and deep learning has substantially advanced its performance. Casanovo, one such widely used model, is distributed as a Python command-line program. Consequently, installation, GPU and dependency configuration, and manual parameterization can be challenging for many bench scientists and are a recurring source of errors. Interpreting and validating the resulting predictions poses a further challenge. We present CasanovoGUI, an open-source Java-based desktop application that makes all of Casanovo's main analysis functions available through a point-and-click interface on Windows, macOS, and Linux. On first use, CasanovoGUI automatically installs a private Python environment and Casanovo with a GPU-matched build, requiring no prior software setup. The GUI provides access to Casanovo's analysis functions and configuration parameters, streams live progress, and integrates results interpretation: annotated spectra with per-residue confidence scores in the PDV viewer, and mismatch-tolerant mapping of de novo peptides back to a reference proteome. CasanovoGUI is available at https://github.com/Noble-Lab/CasanovoGUI.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.11.737889v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Single-cell gene networks nominate IKZF1 as an Alzheimer's microglial regulator</h2>
-<p class="paper-authors">Ozkurt, C.</p>
+<h2 class="paper-title">Synthetic Cannabidiol Attenuates Heart Failure Progression with Concomitant and Post Injury Administration Through Modulation of Immune and Endothelial to Mesenchymal Transition Related Remodeling Programs</h2>
+<p class="paper-authors">Krishnamoorthi, M. K., Mendez-Fernandez, A., +9 authors, Bhimaraj, A.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738463v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737555v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Overcoming protocatechuate and catechol accumulation in muconic acid production via adaptive laboratory evolution and metabolic engineering in Pseudomonas putida</h2>
-<p class="paper-authors">Bleem, A. C., Hodges, T. L., +10 authors, Beckham, G. T.</p>
+<h2 class="paper-title">CAR T cell foundation model predicts immunotherapy response</h2>
+<p class="paper-authors">Li, Y., Fang, D., +2 authors, Luo, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Muconic acid is an industrially valuable molecule that can be biologically produced from diverse biogenic and waste-derived feedstocks, including sugars and lignin- and plastic-derived aromatic compounds. However, accumulation of protocatechuate (PCA) has been observed in multiple microbes engineered for muconate production when the PCA decarboxylase, AroY, is used. This raises the question of whether PCA decarboxylation represents a rate-limiting step and how this bottleneck might be alleviated, especially given the toxicity and reactivity of PCA and catechol intermediates. To address this, we performed adaptive laboratory evolution (ALE) on a strain of Pseudomonas putida originally engineered for muconate production from aromatic compounds, but with catBC restored, to select for improved conversion of PCA and, in separate lineages, 4-hydroxybenzoate. Contrary to our expectations, the predominant beneficial mutations localized to the catA1 cassette encoding catechol 1,2-dioxygenase, rather than aroY or its associated cofactor biosynthesis genes. Transcriptomic analysis revealed elevated catA1 expression in evolved isolates from ALE, and introduction of these mutations improved productivity in strains designed for muconate production from both aromatic and sugar substrates. Quantitative proteomics and biochemical assays demonstrated that the mutations also led to increased CatA1 protein abundance and modest enhancements in catalytic efficiency, respectively, with strain phenotypes largely driven by high CatA1 levels and potentially synergistic kinetic improvements. Additional reverse-engineering studies identified variants with modest effects on muconate accumulation, including those with potential to enhance biosynthesis of the prenylated FMN cofactor of AroY. Collectively, these results indicate that catechol, not PCA, is the principal bottleneck in muconate production via the PCA decarboxylation route originally demonstrated by Draths et al., refining our understanding of pathway limitations and offering new strategies for improving rate, yield, and strain resilience in muconate bioproduction.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738518v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell transcriptomics resolves CAR T-cell states, yet translating heterogeneous cellular signals into patient-level therapeutic response remains challenging. Existing studies primarily identify response-associated genes or cell populations through experimental and statistical analyses, but few predictive frameworks integrate gene-level structure with clinical outcomes. Here, we present gANCHOR, a T-cell foundation model built on a hierarchical hypergraph attention framework combining biologically informed representation learning with patient-level response prediction. By encoding gene-pathway relationships, gANCHOR learns pathway-aware cell embeddings that improve biological conservation and batch robustness. A cell-to-patient attention module then aggregates cellular information to infer therapeutic response. Across benchmark datasets, gANCHOR achieved the strongest overall performance in biological conservation and batch-correction assessments. In response prediction across 161 patients from five CAR T-cell studies, gANCHOR achieved an F1 score of 0.87, outperforming benchmarked single-cell foundation models. gANCHOR also identified reproducible response- and non-response-associated gene programs, providing interpretable biological insights into CAR T-cell efficacy and resistance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.11.737994v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Engineered Pseudomonas putida reconfigures metabolic fluxes to support energy demands during muconate bioproduction from lignin-related aromatics</h2>
-<p class="paper-authors">Wilkes, R. A., Suthers, P. F., +15 authors, Werner, A. Z.</p>
+<h2 class="paper-title">{Sigma}0-EvoCell: An AI-Native Ontology that Unifies Evolutionary and Cell Biology in Latent Space</h2>
+<p class="paper-authors">Pan, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Muconic acid is a versatile platform chemical that can be biologically produced from lignocellulosic substrates, including from lignin-related aromatic compounds. Pseudomonas putida has been previously engineered to convert lignin-related aromatic compounds to muconate at quantitative molar yields. This high atom efficiency requires a supplemental carbon and energy source to support bacterial growth, and central carbon metabolic efficiency and its interaction with aromatic catabolism are underexplored. Here, we applied proteomics, metabolomics, and 13C-fluxomics to quantitatively compare central carbon and energy metabolism in wild-type P. putida KT2440 and a muconate-producing strain, P. putida CJ781. During cultivation on glucose and 4-hydroxybenzoate, CJ781 showed increased glucose uptake, reconfigured central fluxes, and increased extracellular leakage of aliphatic acids relative to wild type. These altered fluxes supported a 3-fold higher ATP pool, in excess of demand. Pyruvate and acetate secretion in CJ781 was mitigated by debottlenecking TCA-cycle entry via citrate synthase overexpression. Furthermore, tuned expression of the catechol dioxygenase and protocatechuate decarboxylase enabled the production of 36.3 g L-1 muconate at 1.1 g L-1 h-1. Overall, this work reveals how P. putida redirects carbon and energy fluxes to support aromatic bioconversion for improved bioproduction from renewable feedstocks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738580v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Foundation models for biology achieve impressive pattern recognition on molecular sequences and single-cell transcriptomics, yet they fail to outperform simple linear baselines for predicting genetic perturbation effects, exposing a gap between statistical correlation and mechanistic understanding. This gap is compounded by an interface problem: biological knowledge lives in human-readable formats (FASTA, SBML, ontology triples) that must be lossily re-encoded before a neural network can reason about them. Here we introduce the Evolutionary Cell Ontology (ECO), an AI-native formal language built on the {Sigma}0 substrate that represents biological knowledge directly as vector-encoded relational graphs. ECO uses 16 structural operators that serve simultaneously as knowledge glyphs, tensor operations, and--critically--carry a dual semantics spanning both evolutionary and cellular timescales, so the same operator that denotes speciation at the phylogenetic scale denotes irreversible APC/C commitment at the cell-cycle scale. We define a Latent Space Communication Protocol (LSCP) that maps ECO graphs into the residual stream of large language models, enabling systematic auditing of the biological knowledge a model actually contains. We illustrate ECO across three domains using controlled simulations: (i) globin protein-family evolution across roughly 1.5 billion years, where ECO epistatic attention recovers long-range coevolutionary couplings and ancestral-state reconstruction reaches 82-91% accuracy graded by conservation class; (ii) mammalian cell-cycle dynamics, where a CDK-cyclin attention graph with GATE checkpoints and FUSE commitment nodes reproduces two full oscillatory cycles with a four-attractor phase portrait emerging without explicit programming; and (iii) latent-space alignment, where ECO embedding distance tracks divergence across 60 protein families (Pearson r = 0.50) and an illustrative LSCP audit projects that relational, multi-scale concepts are encoded far more weakly than sequence-level facts. ECO replaces the human-readability constraint with an AI-processing constraint and, in doing so, turns the opacity of foundation models into a measurable, navigable coverage map.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.15.738795v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Storing &gt;1 byte of information in 16S ribosomal RNA using orthogonal trans-splicing ribozymes</h2>
-<p class="paper-authors">Dysart, M. J., Fang, L., +3 authors, Silberg, J. J.</p>
+<h2 class="paper-title">Genomic foundation model embeddings encode higher-order viral genome architecture beyond sequence composition: a benchmark of Evo 2</h2>
+<p class="paper-authors">Amgarten, D., Schinaid, A., de Mello Malta, F., +1 author, Rebello Pinho, J. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Catalytic-RNA (cat-RNA) expressed from mobile DNA can record cellular events, such as the uptake of plasmids via horizontal gene transfer, by splicing a barcode onto 16S ribosomal RNA (rRNA) - a system termed RNA addressable modification (RAM). However, scaling RAM to record multiple simultaneous biological events requires large numbers of orthogonal cat-RNA whose signals reflect the biological features under investigation rather than variability arising from the barcode sequence. Here, we explore how to design orthogonal cat-RNA to record information about multiple plasmid-encoded traits in parallel. We show that cat-RNA having tRNA-derived barcodes with sequence variation in the anticodon stem-loop present greater signal consistency within Escherichia coli than mRNA-derived barcodes. When orthogonal cat-RNA designs harboring tRNA-derived barcodes were evaluated in Vibrio natriegens and Pseudomonas putida, increased variance was observed compared with Escherichia coli. Nevertheless, the signal consistency was sufficient to use these orthogonal cat-RNAs to report on the relative activities of four promoters and two origins of replication by sequencing barcoded-rRNA derived from the three organisms. These results show how RAM can be multiplexed to report on mobile DNA features in microbial communities and illustrate the importance of accounting for variability in RNA outputs when designing and interpreting multiplexed RNA barcoding data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738544v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Genomic foundation models such as Evo 2 are increasingly applied to microbial genomics, yet how well their representations capture viral genome organisation, and how reliably they generate viral sequence, remain poorly characterised. We present a reproducible benchmark of Evo 2 on viral genomes. Using a pre-registered RefSeq viral corpus (19,429 genomes, organised by Baltimore class and host domain), we evaluated three axes: linear probes decoding Baltimore class, host domain and viral family from mean-pooled embeddings; ridge-regression probes recovering genomic features, including higher-order architectural properties such as gene density, coding fraction and gene overlap; and generative completion of fragmented genomes, scored on a leakage-safe set of eukaryote-infecting viruses (excluded from Evo 2's training corpus by design) against a bacteriophage comparator. All probes used cross-validation with sequence-identity clustered folds, benchmarked against both a GC-and-length control and a 6-mer composition representation. From its optimal intermediate layer, the 20B embedding classified Baltimore class at 0.96 accuracy and host domain at 0.99, exceeding both baselines; for viral family, however, 6-mer composition (0.89) matched the embedding (0.91. Most informatively, the embedding decoded coding fraction, gene density and gene overlap (R = 0.61, 0.77 and 0.64) far beyond 6-mer composition (0.10, 0.38 and 0.27), evidencing genuine encoding of genome architecture rather than nucleotide composition (p &lt; 0.001). Performance scaled with model size. In generation, perplexity was lower for bacteriophages (1.18 bits/nt) than for held-out eukaryotic viruses (1.80). Evo 2 encodes functional viral genome architecture beyond composition, while taxonomic and generative behaviour partly reflect composition and training exposure.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738542v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Pathway selection for arabinose utilization in Pseudomonas putida reveals a rate-yield tradeoff in muconic acid production from lignocellulosic sugars</h2>
-<p class="paper-authors">Kim, D., Lind, T. M., +16 authors, Beckham, G. T.</p>
+<h2 class="paper-title">Site-dependent transcriptomic signatures of endometriosis are conserved across hormonal states</h2>
+<p class="paper-authors">Henze, D. E., Crowley, G., Quake, S. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Engineering heterologous utilization of substrates requires selection of catabolic pathways that balance strain performance and product biosynthesis. Here, we compare the oxidative and isomerase arabinose utilization pathways in Pseudomonas putida strains engineered for cis,cis-muconic acid production from glucose and xylose. Based on the point of entry into central carbon metabolism, we hypothesized that the oxidative arabinose pathway would enable higher productivity while the arabinose isomerase pathway would enable higher muconate yield. In both strains, additional modifications were engineered to improve muconic acid production including sugar transporter tuning, catechol 1,2-dioxygenase overexpression, a feedback-resistant DAHP synthase, and a flux-stabilizing gltA variant. Consistent with our hypothesis, the oxidative arabinose pathway supported faster growth and higher productivity (0.58 g/L/h), whereas the arabinose isomerase pathway improved carbon efficiency, achieving muconate yields of up to 50 C-mol% in fed-batch bioreactors. Process modeling indicates that these performance metrics can reduce the minimum selling price of muconate-derived adipic acid to $2.74/kg and greenhouse gas emissions to 1.31 kg CO2e/kg, approaching cost parity and reducing emissions by 86% relative to fossil carbon-derived adipic acid. Overall, this study presents a systematic comparison of sugar catabolic pathways that enabled development of strains suited for the tradeoffs between rate and yield.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738590v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Endometriosis, a chronic condition in which endometrial tissue grows at other sites in the body, produces lesions whose gene expression profiles vary by anatomical location and menstrual cycle stage. The extent to which these location-dependent transcriptional differences persist across hormonal states has remained unknown. Here, we compile a comprehensive single-cell RNA sequencing atlas of 672,051 cells across 112 donors from publicly available sources spanning the eutopic endometrium, menstrual effluent, ovaries, peritoneum, and ectopic endometrium from peritoneal and ovarian sites. By training machine learning classifiers on reference tissue signatures, we identify a subset of cells within ectopic lesions that retain a uterine transcriptomic identity, which we term 'core' lesion cells, and which are distinguished from surrounding host tissue populations. We show that transcriptomic differences between core lesion cells at both ectopic sites are robust across all phases of the menstrual cycle and in patients receiving exogenous hormonal therapy, and validate these findings in independent datasets. Cell type- and tissue-specific gene signatures derived from these core populations are sufficient to classify disease status and lesion subtype in independent bulk tissue data across 168 patients. These findings establish that although the core lesion cells maintain elements of eutopic endometrium identity, they also contain information about the anatomical site of the lesion. This anatomic-specificity provides a potential framework for cycle-independent endometriosis diagnosis and subtyping.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737856v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Reliability-weighted target prioritization in CD4+ T-cell Perturb-seq: a generalizability-theory decomposition</h2>
-<p class="paper-authors">Cheng, C.</p>
+<h2 class="paper-title">Integrating suboptimal secondary structures, AI-assisted genomic synteny, and evolutionary conservation to identify bacterial ncRNA homologs beyond sequence similarity</h2>
+<p class="paper-authors">Panek, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Genome-scale Perturb-seq screens prioritize candidate targets by the strength of a perturbation's transcriptional effect. Effect strength does not answer a prior measurement question: is the readout dependable? A large effect estimated from a single guide, a single donor, or a pseudobulk of few cells need not survive replication, and for target prioritization each false lead costs a validation experiment. We treat each perturbation effect as a measurement in a crossed Target x Guide x Donor x Condition design and apply generalizability theory (Cronbach et al., 1972; Brennan, 2001) to separate the dependable part of an effect from facet-specific idiosyncrasy. Guides and donors enter as random facets; condition enters as a fixed facet and is analyzed within its levels. For each target we report a dependability profile over the facets and a joint generalizability coefficient over the two random facets, and we re-rank targets by effect magnitude weighted by that coefficient. On the released screen (Zhu et al., 2025), removing the measurement-error floor estimated from the non-targeting controls raises the number of genes with a dependable target-signal share above .10 from 40 to 7,674. Analyzed within activation states, dependability recovers the T-cell-receptor signaling module as reliably measurable only in activated cells, without recourse to gene annotation. A design study indicates that reliability is limited by the number of guides rather than the number of donors, so a future screen should add guides. Every methodological decision was recorded and adversarially reviewed, and all results regenerate from the released summary statistics.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.13.738312v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> A bioinformatic approach for genome-wide identification of homologs of bacterial non-coding RNAs (ncRNAs) integrating structural similarity, genomic synteny, and evolutionary conservation is presented. The structural similarity is detected using an algorithm for genome-wide identification of loci in genomic intergenic regions (IGRs) containing sequences capable of adopting secondary structures similar to that of the query ncRNA. The algorithm scans IGR sequences using a sliding window with a predefined step. For each window, suboptimal secondary structures are predicted and compared with the template structure to compute structural similarity scores. These scores are evaluated statistically on a genome-wide scale to infer homology of the RNAs represented by the predicted structures. Loci encoding statistically significant structures are further filtered using genomic synteny of the query ncRNAs inferred from genomic annotations. ChatGPT was used to assist in identifying literature-supported biological relationships between genes with distinct functional annotations. Syntenic loci with the structures are then examined for homologs in related species, as evolutionary conservation among related species is a common feature of ncRNAs Using this approach, we predicted novel homologs of the spot42 RNA-encoding spf gene in Glaciecola and Pseudoalteromonas genomes, and ms1 RNA genes in Frankia and Bifidobacterium genomes, where previous homology searches had failed.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737749v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Reproducible-by-design: Romics Processor, a FAIR ecosystem for multi-omics and spatial-omics analysis</h2>
-<p class="paper-authors">Gorman, B. L., Bhotika, H., +8 authors, Clair, G. C.</p>
+<h2 class="paper-title">SHINE: Decoding transcriptional-metabolic microenvironments through higher-order spatial integration</h2>
+<p class="paper-authors">Du, B., Wong, J. W. H., Huang, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Multi-omics and spatial-omics technologies are exploding in use, producing increasingly complex datasets. Existing bioinformatics tools are developing rapidly but fail to fully enforce the FAIR principles, leaving the field vulnerable to escalating issues in computational reproducibility. Here, we introduce a reproducible-by-design paradigm represented in an omics data processing package, RomicsProcessor. At its core, the 'Romics_object', which is a self-contained digital artifact that encapsulates the full history of the data from the original data to the fully processed state, capturing the details of the transformative steps and the required dependencies. This architecture ensures that computational workflows are fully portable and reproducible. In this manuscript, we demonstrate RomicProcessor's computational capabilities and scalability on diverse datasets, including bulk proteomics, large-scale multiplexed immunofluorescence, and multi-batch mass spectrometry imaging. Providing a robust framework for truly FAIR Data Principles-based analysis, RomicsProcessor is a blueprint for the next generation of reproducible bioinformatics tools that can dramatically accelerate discovery in multi-omics biology in the era of artificial intelligence.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737600v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Spatial omics technologies are expanding to co-profile transcriptomics and metabolomics on the same tissue slide, providing complementary views of gene expression and biochemical activity to reveal molecular programs within native tissue microenvironments. However, integrating the transcriptome and metabolome remains technically challenging due to spatial misalignment, resolution disparity, and higher-order cross-modality interactions. Here, we present SHINE, a hypergraph-based computational framework for the joint analysis of spatial gene expression and metabolic networks derived from the co-profiling slide, focusing on representation learning and cross-modality interaction. Across multiple datasets, SHINE consistently outperformed existing methods for domain segmentation and biomarker co-localization and provided interpretable insights into metabolic-transcriptional microenvironments. Specifically, in Parkinson's disease mouse models, SHINE accurately delineates dopaminergic neuron-depleted regions and reconstructs coherent dopamine-associated axes. In human lung and breast cancers, SHINE resolves tumor-associated spatial regions and identifies spatially organized gene-metabolite programs associated with the tumor microenvironment. SHINE enables scalable spatial multi-omics integration across diverse biological systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737648v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,15 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrative computational toxicology reveals PFOS and PFHxS associated inflammatory keratinocyte niches in psoriasis through exposure transcriptomics, single-cell spatial mapping and token-aware virtual perturbation</h2>
-<p class="paper-authors">Ma, J., Yu, Q.</p>
+<h2 class="paper-title">CurateMake: an auditable workflow for multi-source ITS reference database harmonisation and phylogenetic validation</h2>
+<p class="paper-authors">Gardette, A., Belda, E., +1 author, Zucker, J.-D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Per- and polyfluoroalkyl substances (PFAS) are persistent toxicants with immunological, metabolic and epithelial effects, but their relevance to inflammatory skin disease remains unclear. We developed a computational toxicology framework to test whether perfluoroalkyl sulfonate programs, especially perfluorooctanesulfonic acid (PFOS) and perfluorohexanesulfonic acid (PFHxS), converge with psoriasis-associated keratinocyte inflammation. Exposure transcriptomes were derived from GSE236956, in which human embryonic stem cell-derived epithelial-lineage models were exposed to 10 M PFAS for 8-16 days. Six PFAS were prioritized using descriptors, Tanimoto similarity, toxicology evidence, adverse outcome pathway (AOP)-like key events, exposure differentially expressed gene burden and read-across support. PFAS signatures were integrated with psoriasis bulk transcriptomes, single-cell RNA sequencing, keratinocyte-state mapping, regulator and communication inference, spatial transcriptomics and token-aware Geneformer-compatible virtual perturbation. PFOS ranked highest in integrated prioritization, followed by PFHxS and perfluorooctanoic acid. PFHxS produced a smaller but directionally informative signature within a PFOS-dominant perfluoroalkyl sulfonate footprint. The shared PFOS and PFHxS program converged with psoriasis through inflammatory keratinocyte, epidermal-stress, cytoskeletal and lipid-related modules. Single-cell and spatial analyses localized the program to activated keratinocytes and inflammatory epidermal niches, with strong spatial co-localization with inflammatory keratinocyte and epidermal stress scores. Virtual perturbation prioritized S100A9, S100A8, KRT16, IL36G, CCL20, CXCL8, FABP5, KRT17, FOS, JUN and NFKBIZ as candidate effectors. These findings support an exposure-informed, experimentally testable hypothesis linking persistent perfluoroalkyl sulfonate programs to keratinocyte inflammatory niches in psoriasis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.09.737426v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> 1. Reference databases shape the taxonomic resolution, uncertainty, and reproducibility of metabarcoding analyses. For ITS barcodes, public references are distributed across repositories with different taxonomic conventions, geographic coverage, and annotation practices, creating conflicts, missing ranks, and misannotations when databases are merged or compared. 2. We introduce CurateMake, a reproducible Snakemake workflow for ITS reference database construction, harmonisation, and validation. It integrates four public sources (UNITE, BOLD, PLANiTS, and CALeDNA) and user-supplied databases, combines Catalogue of Life name harmonisation with ITSx-based region standardisation, MSA/HMM-based alignment grouping, and SATIVA phylogenetic validation. Raw, CoL-harmonised, and SATIVA-validated annotation layers are retained throughout to compare curation effects while preserving flagged records for review. 3. We evaluated CurateMake on 3.58 million ingested sequences and controlled error-injection simulations. ITSx expanded the final harmonised database to 5.19 million barcode-resolved entries by recovering ITS1 and ITS2 sub-regions from full-length ITS records. Across the full dataset, normalised intra-cluster entropy decreased from Raw to CoL-harmonised to SATIVA-validated annotations, consistent with improved taxonomic coherence. In simulations, CurateMake achieved the highest correction rate across 1%-50% corruption and, at 15% corruption, corrected 42% +/- 1% of introduced errors, compared with 28% +/- 1% for CoL alone and 0% for SATIVA without the workflow's alignment infrastructure. 4. These results show that nomenclatural harmonisation and phylogeny-informed validation address complementary error classes, with phylogenetic validation contributing measurably only within taxon-coherent alignments in this benchmark. CurateMake therefore provides a reproducible, provenance-tracked framework for auditable ITS reference database curation in metabarcoding workflows.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.10.737676v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,129 +222,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">An IL-34-IGF-1 inflammatory axis fuels KRAS-mutant lung cancer progression</h2>
-<p class="paper-authors">Zak, J., Chen, H., +19 authors, Varner, J. A.</p>
+<h2 class="paper-title">Single-cell multi-omic analyses resolve the cellular diversity of ALK/ROS1/MET/NTRK-fused gliomas in infants and older children</h2>
+<p class="paper-authors">De Micheli, A. J., de Biagi-Junior, C. O. A., Lo Cascio, C., +20 authors, Guerreiro Stucklin, A. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Macrophages are innate immune cells of embryonic or adult origin with tissue specific roles in homeostasis, disease surveillance, and wound repair that can be co-opted to promote tumor growth and spread (1-11). An understanding of the specific roles of macrophage subsets in lung tumor initiation and progression could promote new therapeutic approaches for this deadly disease. Here, we show that KRASG12D mutations in lung epithelium drive proliferation of resident, embryonically-derived alveolar macrophages, which then promote tumor cell proliferation and protection from ferroptosis, leading to tumor progression. Using genetically engineered mouse models of mutant KRASG12D non-small cell lung cancer (12,13), we found that alveolar macrophages accumulate by proliferation in response to tumor cell-secreted IL-34, recapitulating events observed in late embryonic lung development. Tumor alveolar macrophages in turn drive IGF-1-dependent tumor cell proliferation. Neutralization or deletion of IL-34 suppresses IGF-1 expression, reduces macrophage and tumor cell proliferation and inhibits tumor progression. High IL34 and IGF1 correlate with poor survival in KRASG12D/V lung adenocarcinomas and in other solid tumors, indicating that bi-directional proliferative signaling between resident macrophages and tumor cells can drive human lung tumor progression. These studies identify resident macrophage-tumor cell interactions as key interception points for lung cancer therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738492v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Epithelial Stem Cell Fate Determines Chemoradiotherapy Response in Rectal Cancer</h2>
-<p class="paper-authors">Li, N., Ishaqwala, F., +14 authors, Tape, C. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Rectal cancers are often treated with neoadjuvant chemoradiotherapy (CRT), yet 85% of patients do not achieve a pathological complete response. To identify the molecular determinants of CRT response, we profiled the single-cell signalling, DNA-damage, cell-cycle, apoptotic, and cell-fate responses of 2,769 patient-derived organoid cultures treated with CRT, cancer-associated fibroblasts (CAFs), and signal-rewiring agents. We find that CRT response is determined by stem cell-fate. CRT triggers comparable DNA-damage in isogenic proliferative (proCSC) and revival (revCSC) colonic stem cells, but proCSC retain damage and die whereas revCSC resolve damage and persist. Both CRT and CAFs drive proCSC to a common treatment-resistant revCSC fate and high revCSC predicts worse survival in patients. Pharmacologically constraining stem-cell plasticity increases CRT sensitivity, and Spatial Perturbation of ARrayed Tumour Assembloids (SPARTA) confirms YAP/TEAD inhibition improves chemotherapy responses in human stromal-tumour models. These results suggest that cancer cell-fate, not genotoxic damage itself, ultimately governs response to standard-of-care chemoradiotherapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.15.736775v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Loss of either RASSF1A alone or in combination with Caveolin-1 inhibition is associated with different premalignant histopathological alterations in the mammary glands of transgenic mice</h2>
-<p class="paper-authors">Cotarelo, C. L., Weber, H. T., +4 authors, Thaler, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Analyses of human breast carcinomas (BCs) and premalignant breast lesions show that the loss of RASSF1A is an early event in the development of ER-positive BCs, which correlates linearly with malignant progression. This observation suggests that RASSF1A inhibition is important for the development and progression of ER+ BCs. In addition to RASSF1A, concurrent caveolin-1 (Cav-1) inhibition may further promote ER+ breast carcinogenesis. In the present study, transgenic Rassf1a-/- and Cav-1(-/-) single as well as Rassf1a-/-, Cav-1(-/-) double knockout mice were used to investigate the impact of single or combined Rassf1a and Cav-1 inactivation on BC initiation. Loss of either one or both proteins led to different, pre-malignant histopathological alterations within the mammary glands of the mice, but not to fully developed BC, confirming that Rassf1a and Cav-1 are both important for maintaining the integrity of mammary gland epithelial structure, but suggesting that further intracellular changes or extracellular factors are required for the development of luminal BC when both genes are lost.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738049v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Gut microbiome derived folate metabolite suppresses colorectal cancer progression</h2>
-<p class="paper-authors">Danner, R., Cho, J., +9 authors, Chaudhari, S. N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The gut microbiota influences colorectal cancer (CRC) progression, primarily through the secretion of small molecule metabolites. While numerous microbial products are known to drive CRC, endogenous protective mechanisms remain largely uncharacterized. Utilizing a folate metabolomics platform, we demonstrate that the healthy gut microbiota produces folinic acid (FA), a known chemotherapeutic adjuvant also known as leucovorin. This microbially derived folinic acid is progressively depleted in mouse models of colitis-associated CRC and in human clinical metagenomic cohorts with advancing disease severity. Mechanistically, folinic acid acts as a signaling molecule that directly binds and inhibits the intracellular protease calpain-2. This interaction stabilizes epithelial E-cadherin protein expression and suppresses CRC epithelial-to-mesenchymal transition driving metastasis. Genetically manipulating gut microbial production of FA is sufficient to modulate CRC in vivo, even in the presence of chronic inflammation. This study reframes folinic acid from a chemotherapeutic enhancer to an endogenous microbial metabolite that actively suppresses CRC progression.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738490v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">5β-Dihydrotestosterone reveals a mutant androgen receptor vulnerability in prostate cancer</h2>
-<p class="paper-authors">Adams, S., Phelan, L., +5 authors, Li, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Bipolar androgen therapy (BAT) exploits the paradoxical vulnerability of castration-resistant prostate cancer (CRPC) cells to rapid cycling between castrate and supraphysiologic androgen concentrations, but clinical BAT uses testosterone, which can also activate wild-type androgen receptor (AR) in androgen-responsive tissues, causing systemic side effects. 5{beta}-dihydrotestosterone (5{beta}-DHT) is a naturally occurring testosterone metabolite generally considered androgenically inactive because it binds wild-type AR weakly, yet its activity against clinically relevant AR mutants has not been systematically evaluated. Here, we tested whether 5{beta}-DHT and related 5{beta}-reduced testosterone metabolites activate AR signaling and growth programs in prostate cancer models that carry AR mutations. In C4-2 cells, 5{beta}-DHT and 3{beta}-etiocholanediol (3{beta}-ecdiol) increased canonical AR target genes, including KLK3 and TMPRSS2, with weaker activity than testosterone, whereas other 5{beta} metabolites showed limited activity. In androgen-responsive LNCaP and C4-2 models, 5{beta}-DHT and 3{beta}-ecdiol promoted cell growth under androgen-depleted conditions, and this effect was suppressed by enzalutamide, supporting AR dependence. RNA-seq confirmed that 5{beta}-DHT and 3{beta}-ecdiol induced androgen-response gene sets substantially overlapping with testosterone, albeit at lower transcriptional magnitude. Further, we found that 5{beta}-DHT, but not 3{beta}-ecdiol, suppresses cell proliferation of LNCaP, C4-2, and PC-3 cells stably expressing the clinically relevant AR gain-of-function mutants W742C and H875Y through activating AR-induced senescence-like features after high-dose exposure, consistent with the therapeutic logic of BAT. These findings identify 5{beta}-DHT as an overlooked mutant-AR agonist capable of BAT-like tumor suppression and propose it as a testosterone surrogate in BAT with potentially reduced systemic androgenic side effects.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738538v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Integrated molecular and functional profiling identifies E0771 as a basal-like triple-negative breast cancer model</h2>
-<p class="paper-authors">Baxter, D., Elvira-Lopez, J., +5 authors, Nebreda, A. R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Breast cancer is a heterogeneous disease whose clinical management relies heavily on accurate molecular subtyping. The murine E0771 mammary carcinoma cell line is widely used in preclinical studies, yet its molecular identity remains controversial, with reports variably classifying it as luminal B or triple-negative. In this study, we performed an integrated molecular and functional characterization of two independently sourced E0771 cell line stocks to resolve this discrepancy. Both stocks were genetically authenticated and exhibited concordant phenotypes. Immunohistochemical and molecular analyses demonstrated absence of oestrogen and progesterone receptors, classifying E0771 as triple-negative. Functionally, E0771 cells showed no transcriptional response to oestrogen and displayed resistance to endocrine therapy both in vitro and in vivo. Collectively, our results establish E0771 as an oestrogen-independent, basal-like triple-negative breast cancer model, supporting its appropriate use in studies of hormone-resistant breast cancer biology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738420v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Small-RNA Profiling Links 5'-tRNA Halves to Post-therapeutic Disease Persistence and Poor Patient Survival in Glioblastoma</h2>
-<p class="paper-authors">Anam, M., Schanel, T. L., +4 authors, Su, Z.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Glioblastoma (GBM) is a highly lethal brain cancer with limited therapeutic durability, where the majority of patients develop recurrent or persistent disease after standard chemoradiotherapy. Meanwhile, tRNA-derived fragments (tRFs) have become increasingly relevant to cancer biology; however, their clinical relevance in GBM remains undefined. Here, we report that a specific family of tRFs, 5'-tRNA halves (tiR5s) dominates the small RNA landscape of GBM patient tumors and associates with worse overall survival, post-therapeutic disease persistence, and pro-invasive proteogenomic pathways across two independent GBM patient cohorts. This association between elevated tiR5 levels and therapeutic resistance re-emerges in radiation-resistant GBM xenograft models. Our findings reveal that tiR5s are an underappreciated molecular feature of highly aggressive GBM tumors, supporting further investigation into their biological roles and prognostic utility in GBM.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.14.738483v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Pediatric cancers are thought to arise from dysregulation of developmental programs, otherwise tightly regulated in time and space. Infant-type hemispheric gliomas (IHGs) arise in early childhood, driven by characteristic ALK/ROS1/MET/NTRK receptor tyrosine kinase (RTK) gene fusions. We dissected the cellular hierarchies of 24 fusion-positive gliomas, spanning infants through adolescents, using single-cell and single-nucleus RNA/ATAC-seq, and spatial transcriptomics. We identified five cancer cell states, with radial glia-like cells at the apex of a neoplastic hierarchy resembling neuronal- and glial-like trajectories. Neuronal-like cells were enriched in most IHGs but diminished in ROS1-fused IHGs and older patients. Integration of chromatin profiling revealed FOS/JUN-driven oncogenic programs and high inferred plasticity across all cancer cell populations. Myeloid cells, the most abundant non-neoplastic population, comprised distinct subgroups, suggesting context-dependent functions. Despite lacking high-order structure, spatial transcriptomics revealed discrete cellular niches within IHGs. Collectively, our findings elucidate the cellular states and developmental programs underlying IHGs and RTK-fused gliomas in older patients, opening new avenues for research and therapy innovation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.16.738862v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -355,15 +241,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Cellular hallmarks and aging clock of the human lung parenchyma.</h2>
-<p class="paper-authors">Ke Xu, Grace S Kim, +18 authors, Alexander M Tsankov</p>
+<h2 class="paper-title">Screening of core targets for Di(2-ethylhexyl) Phthalate-related gastric cancer based on machine learning, molecular docking, and SHAP analysis.</h2>
+<p class="paper-authors">Shenghao Li, Qing Peng, +2 authors, Bingjie Huo</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Aging affects lung function, predisposing older adults to respiratory diseases; however, the cellular and molecular mechanisms of lung aging are not fully understood. Leveraging single-cell and spatial transcriptomics data from 184 and 70 lung parenchyma samples, respectively, we present an analytical platform to dissect the cell composition, gene expression modules, and regulatory changes linked to multiple hallmarks of lung aging. Our findings show cell type-specific age-association of senescence markers and a decline in alveolar cell proliferation, autocrine WNT signaling, and stemness indicators with advancing age. Analysis of myeloid cells reveals a global reduction in macrophage subsets and a surge in mitochondrial dysfunction and inflammatory signaling. In contrast, lung parenchyma T cells expand with age and exhibit heightened interferon gamma expression, cytotoxic activity, and exhaustion in older lung and blood samples, indicative of age-related immune dysfunction. Cell interaction and spatial analysis demonstrate aberrant myeloid-T cell cross-talk, leading to an increase in T cell chemotaxis and activation. Lastly, we use machine learning to predict lung biological age and identify putative biomarkers of lung aging and disease risk.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42457688/" target="_blank">
+<p><strong>Abstract:</strong> Given the existing uncertainties regarding the link between Di(2-ethylhexyl) phthalate (DEHP) exposure and gastric cancer (GC) progression, this study aimed to clarify their association, identify the toxic targets of DEHP, and elucidate the underlying molecular mechanisms.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42461936/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -374,53 +260,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
+<span class="date">Jul 16, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Causal association and shared mechanisms between Graves' disease and prostate cancer: insights from Mendelian randomization, machine learning, and comprehensive bioinformatics.</h2>
-<p class="paper-authors">Mingshun Zuo, Yuanjian Liao, +3 authors, Chenghong Zou</p>
+<h2 class="paper-title">A USP15/KRT17-associated 13-gene prognostic cluster and functional validation in EGFR-mutant lung adenocarcinoma.</h2>
+<p class="paper-authors">Jiamin Huang, Yi Huang, +14 authors, Tianyu Tao</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Observational studies link hyperthyroidism to increased prostate cancer (PCa) risk, but causality and mechanisms remain unclear. Graves' disease (GD), the primary cause of hyperthyroidism, involves chronic immune dysregulation that may influence PCa through shared immune pathways.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42454507/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MR habitat radiomics for differentiating indeterminate (Grade 3) nasopharyngeal lesions: lymphoid hyperplasia versus early-stage nasopharyngeal carcinoma.</h2>
-<p class="paper-authors">Zhenhuan Huang, Xuezhao Tu, +3 authors, Yueming Li</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> To investigate the feasibility of MRI-based habitat radiomics to differentiate indeterminate Grade 3 nasopharyngeal lesions into nasopharyngeal lymphoid hyperplasia or early-stage nasopharyngeal carcinoma, and to explore its complementary value for radiologists in diagnostically ambiguous cases.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42449281/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 15, 2026</span>
-<span class="journal">PPR</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A Novel Ferro-Aging-Related Gene Signature for Prognosis and Targeted Drug Prediction in Cervical Cancer</h2>
-<p class="paper-authors">Yan Z, Tang S, +6 authors, Chen J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Objective Cervical cancer (CESC) remains a leading cause of cancer-related mortality in women. Recent studies have identified ferro-aging as a genuine biological pathway in primates, representing an iron-dependent metabolic process. However, cellular ageing and the decline in overall physiological function play a crucial role in tumour progression. Based on this, we have established a prognostic model related to ferro-aging and evaluated its predictive and diagnostic value in cervical cancer. Methods We integrated data from the The Cancer Genomics Atlas (TCGA), the Gene Expression Online Resource (GEO) and single-cell RNA sequencing datasets. Following the identification of ferro-aging-related gene (FARGs) based on the literature, we constructed a prognostic model using machine learning algorithms and analysed model features via Shapley-based interpretability (SHAP) analysis. The Scissor algorithm was employed to evaluate cell populations associated with high- and low-risk groups. Studies on intercellular communication and spatial transcriptomics revealed the process of tumour microenvironment remodelling. Finally, potential therapeutic compounds were identified through AI-assisted virtual screening and molecular docking. Results A total of eight FAR model genes were ultimately identified: DUOX1, E2F1, IL1B, KEAP1, MAP3K14, SLAMF8, TFRC and TNFAIP3 . This study constructed and validated a novel risk profile model comprising these eight ferro-aging-related genes; this model demonstrated moderate prognostic discriminatory power in both internal and external cohorts, with the tumour microenvironment in the high-risk group exhibiting an immunosuppressive state. Using single-cell RNA sequencing to assess cellular heterogeneity, macrophages, epithelial cells and CD8 + T cells were identified as key factors in CESC progression. Pseudotime analysis was performed to visualize the expression levels of FARGs along the pseudotime axis and explore how FARGs participate in the dynamic process of EndMT. Spatial transcriptomics was employed to map the distribution and expression of FARGs within epithelial cells in the tumour microenvironment. Intercellular communication intensity was increased in the low-risk group, with epithelial cells in this group signalling to macrophages via the APP-CD74 pathway. Drug screening indicated that BRD-A56371469 is likely to bind to DUOX1. Conclusions The FARG signature is a robust independent prognostic indicator for CESC. The integrated pipeline offers insights into ferro-aging biology and suggests novel therapeutic candidates.</p>
-<a class="btn dark" href="https://doi.org/10.21203/rs.3.rs-9957206/v1" target="_blank">
+<p><strong>Abstract:</strong> EGFR-mutant lung adenocarcinoma (LUAD) exhibits significant prognostic heterogeneity despite the efficacy of tyrosine kinase inhibitors. To uncover the transcriptomic markers of rapid disease progression, we integrated clinical and transcriptomic data to develop robust prognostic biomarkers for risk stratification.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42458519/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
