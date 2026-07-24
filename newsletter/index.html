@@ -32,15 +32,167 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
+<span class="date">Jul 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Disease-Agnostic Nasal Microbiome Wellness Index for Standardized Assessment of Upper-Airway Respiratory Health</h2>
-<p class="paper-authors">Barrera-Suarez, M. A., Gupta, V. K., +6 authors, Sung, J.</p>
+<h2 class="paper-title">A germline shortcut in protein language model retrieval of adaptive immune receptors</h2>
+<p class="paper-authors">Wang, S., Sengupta, A., +1 author, Standley, D. M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Protein language models (PLMs) are increasingly used to represent adaptive immune receptors; however, their advantages over classical alignment-based methods remain unclear. We benchmarked the ESM2 family, ESM-C, antibody-, and TCR-specific PLMs against sequence-alignment methods across four B-cell and T-cell receptor databases using CDR3, clonotype, paratope, and full variable domain representations. At the CDR3 level, alignments consistently out-performed all PLMs, except SCEPTR, a contrastively pre-trained TCR model that additionally encodes the germline V gene. BLOSUM62 and Levenshtein distance metrics exceeded all ESM2 variants by 7-12 percentage points in top-1 retrieval accuracy, and domain-specific PLMs did not close this gap. At the full variable domain level, the alignments and PLMs converged. Alignment performance peaked at the paratope level, whereas PLMs benefited primarily from the addition of conserved framework information in the full-length sequences. The one exception was heavily-mutated HIV-1 antibodies, where PLMs outperformed alignments. These results, together with germline reversion analyses, indicate that full-length PLM performance takes advantage of a germline shortcut rather than improved extraction of antigen-specific information from CDRs. We further showed that conventional random train-test splits inflate retrieval accuracy by 15-28 percentage points owing to clonal leakage. Together, these findings define the strengths and limitations of frozen zero-shot PLM embeddings for immune receptor retrieval and establish clone-aware benchmarking as a practical standard of comparison.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.21.739963v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">The Metabarcoding Analysis Pipeline (MAP): Simple, accurate, and flexible metabarcoding</h2>
+<p class="paper-authors">Prosser, S. W., Bard, N. W., +5 authors, Hebert, P. D. N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Current metabarcoding pipelines are inflexible with respect to study design and are poorly suited to long-read sequence data. To address these limitations, we developed MAP, the Metabarcoding Analysis Pipeline, which is a sequence-to-answer workflow supporting the analysis of amplicons from highly multiplexed and replicated study designs. Although MAP can analyze amplicons of any length from any genetic marker, it includes several features tailored to long-read COI metabarcoding. MAP installs from a Docker container and requires only sequence data, a parameters file, and a reference library. It produces intuitive reports, enabling users to evaluate their data immediately after analysis. We validate MAP by showing that it generates biodiversity estimates that correspond closely to a ground-truth dataset of single-specimen DNA barcode data and by demonstrating that it outperforms alternative platforms for COI metabarcoding. MAP is free, open-source, and available from: https://github.com/cbg-innov/MAP.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.22.740107v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">PhytoFam: A Nextflow Pipeline for Genome-Wide Analysis of Plant Gene Families</h2>
+<p class="paper-authors">Parajuli, S., Adhikari, B., +1 author, Nepal, M. P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Genome-wide identification of plant gene families is essential for functional and evolutionary studies but often requires the use of multiple independent tools for homolog detection, domain validation, orthology assignment, and phylogenetic analysis. This fragmented approach involves extensive manual scripting, complicates reproducibility and parameter tracking, and may require additional steps to remove redundant protein isoforms. To address these challenges, we developed PhytoFam, a Nextflow-based workflow that automates gene family identification from proteome input through phylogenetic reconstruction. The pipeline integrates HMMER for candidate sequence identification, isoform-aware deduplication, InterProScan for domain confirmation, BLAST reciprocal best hit (RBH) analysis for orthology assignment, MUSCLE for multiple sequence alignment with optional outgroup incorporation, TrimAl for alignment trimming, and IQ-TREE3 for phylogenetic reconstruction. PhytoFam is portable across local workstations and high-performance computing environments and supports deployment through Conda, Docker, and Singularity. We validated the workflow using the Morus alba MADS-box gene family, where the complete analysis finished in 1 h 10 min (9 CPU h). IQ-TREE3 accounted for most of the execution time, whereas InterProScan showed the highest memory requirement with a peak resident set size of 4.5 GB. PhytoFam provides a reproducible, automated, and scalable solution for plant gene family identification and phylogenetic analysis. The pipeline is freely available at https://github.com/sanamparajuli/PhytoFam.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740317v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A transparent multicriteria and fuzzy classification approach for genome-based probiotic candidate prioritisation</h2>
+<p class="paper-authors">Ounissi, N. E., Gomri, M. A., El Hadef El Okki, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The identification of novel probiotic candidates with potential health-promoting properties remains a major challenge in food biotechnology and increasingly relies on in silico screening of genomic information. However, probiogenomic markers are heterogeneous, and safety, survival-colonisation, and functional-benefit traits do not contribute equally to probiotic potential. This study developed the Structured Probiotic Potential Index (SPPI), a fuzzy multicriteria system for genome-based probiotic candidate prioritisation. A hierarchical evaluation structure was established from probiogenomic evidence and organised into three main pillars and fourteen subcriteria. Expert judgements were collected using the Analytic Hierarchy Process, followed by consistency-based curation and weight aggregation. A curated dataset of 48 complete bacterial genomes, distributed into probiotic, potentially probiotic, neutral, and pathogenic groups, was taxonomically validated and analysed using an automated probiogenomic screening pipeline. Genome-wide screening generated 3,218 binary genomic features, from which curated probiogenomic markers were mapped to the scoring hierarchy. The resulting index was formulated as a normalised expert-weighted equation integrating safety, survival-colonisation, and functional-benefit components. SPPI prioritised genomes according to weighted probiogenomic profiles and separated pathogenic genomes from favourable probiotic and potentially probiotic profiles within the analysed dataset. Downstream Fuzzy Comprehensive Evaluation transformed the continuous score into probiotic/potentially probiotic, neutral, and pathogenic classes. Under internal leave-one-out evaluation, all 48 genomes were assigned to their expected reference classes, while confidence analysis distinguished high-confidence from borderline assignments. Post-classification comparison with ProbML showed concordant behaviour for most genomes and discordant predictions for selected cases. These results support SPPI as a transparent genome-based decision-support system for early probiotic candidate prioritisation before experimental validation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.20.739529v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Tailoring Precise Genomic Integration Toward Isolate-to-Industry Strain Development for Scalable High-Titer Production of Polyhydroxyalkanoate</h2>
+<p class="paper-authors">Liu, P., Xie, X.-Y., +12 authors, Ye, J.-W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Halophilic chassis has emerged as a promising biomanufacturing platform for industrial polyhydroxyalkanoate (PHA) production. However, challenges still remain in improving the production capacity, scalability and robustness, thereby lowering cost to meet market demands. Here, a high-performing halophilic strain Halomonas LY03 was isolated with over 38% glucose-to-PHA conversion rate and broad non-grain substrate utilization capability. Multidimensional tools, including algorithm-guided high-expression neutral integration site (HENIS) screening toolkit designated 'SiteSeek', stop codon (TAA)-dependent enhancement of gene expression and recombinase-mediated large-fragment (&gt; 9 kb) genomic integration, were then developed to enable precise, efficient and interference-free genomic integrative expression. Using these tools, various chromosomally engineered strains were rapidly constructed to achieve high-level production of poly-3-hydroxybutyrate (PHB, 151 g L-1) and poly(3-hydroxybutyrate-co-4-hydroxybutyrate) (P34HB, 139 g L-1) under high cell-density fermentation (up to 186 g L-1 cell dry weight) in a 5-L bioreactor. Scalability was demonstrated at 2-m3 and 20-m3 industry-scale fermentations, yielding up to 134 g L-1 PHB and 127 g L-1 P34HB (6.1 mol% 4HB). Building on the proven robustness, a two-stage continuous fermentation (TCF) process was developed using a twin-bioreactor system at 5-L and 20-m3 scales, where stable and sustained PHA production lasted over 260 h and 160 h, respectively. Techno-economic analysis revealed a substantial cost-reduction space of 48% compared with conventional fed-batch process. This study demonstrates a successful paradigm for engineering a newly isolated strain toward robust, high-titer and cost-competitive PHA production across lab-industry scales.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.735987v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">scSAID: A Comprehensive Cross-Species Single-Cell Skin Atlas Reveals Species-Specific Responses to Psoriasis</h2>
+<p class="paper-authors">Ren, Y., Shen, Y., +4 authors, Wang, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Single-cell RNA sequencing has rapidly expanded the scale of skin transcriptomic data, yet these datasets remain fragmented across studies spanning different species, diseases and experimental manipulations. An up-to-date, comprehensive, and queryable single-cell cross-species repository for skin is still lacking. Here, we present scSAID (skin-scsaid.com), a single-cell database with an interactive web portal offering a broad suite of in-depth analyses for human and mouse skin. It integrates more than 1.2 million high-quality cells collected from 252 samples, establishing a unified reference for cell-type annotation, cross-species comparison and pathological studies. Using psoriasis as a case study, we demonstrate how scSAID can be used to evaluate how faithfully mouse models reproduce human pathology. Systematic comparison with the imiquimod-induced mouse model revealed numerous species-specific molecular signatures of psoriasis, including human-specific NFKB1 activation and STAT1 involvement, indicating that the current mouse model captures only limited aspects of the disease. We further introduce psoSpotter, a disease-biomarker-selection algorithm that, coupled with in silico perturbation using scSAID data, uncovers PPIA as a novel psoriasis drug target, illustrating the potential of scSAID for identifying therapeutic approaches. Overall, scSAID delivers a large-scale, cross-species skin single-cell resource and analysis platform, opening new opportunities for the discovery of disease-relevant targets in skin diseases.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.20.739409v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">pHaseMD4AI: Phase-Space Dynamics Dataset with Chemical and pH Perturbations for Physically and Kinetically Consistent Biomolecular AI</h2>
+<p class="paper-authors">Song, T., Guo, Y., +7 authors, Wang, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Protein function emerges from dynamic conformational ensembles and transitions that are challenging to characterize experimentally and computationally. Recent advances in generative AI have created new opportunities for learning molecular thermodynamics, kinetics, and conformational evolution directly from simulation data, but progress is limited by the availability of large-scale datasets that combine rigorous sampling, complete phase-space information, and diverse physicochemical perturbations. Here, we present pHaseMD4AI, a molecular dynamics dataset that combines a globally equilibrated peptide branch with a protein-scale constant-pH molecular dynamics (CpHMD) branch spanning hundreds of soluble proteins. The peptide branch includes a complete set of canonical tripeptide and tetrapeptide systems together with post-translationally modified (PTM) and protonation-state datasets, providing synchronized atomic coordinates (R), velocities (V), forces (F), and Markov state model-based kinetic annotations. An accompanying web portal (https://isb.zju.edu.cn/md4ai/) enables users to browse, visualize, and download trajectories, annotations, and metadata. As an example application, we demonstrate a sequence-based model that can predict residue-level equilibrium dihedral distributions from sequence. pHaseMD4AI provides a resource for developing and benchmarking molecular machine learning methods while supporting broader studies of biomolecular dynamics under sequence, post-translational modification, and protonation-state perturbations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.20.739474v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">An openly licensed benchmark and per-gene calibration map for missense pathogenicity predictors on activating cancer drivers</h2>
+<p class="paper-authors">Lee, S.-G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Missense pathogenicity predictors such as AlphaMissense are increasingly used in clinical variant interpretation, yet they are trained on germline labels dominated by loss-of-function (LOF) variants. Using an openly licensed, reproducible benchmark of 768 Cancer Gene Census genes scored with 49 predictors (labels from CIViC, COSMIC, cancerhotspots, ClinVar and gnomAD), we show that 42 of 49 tools (86%) score oncogene, gain-of-function (GOF) variants worse than tumour-suppressor variants. This under-scoring is mechanistically characterized: missed drivers occupy low-conservation, solvent-exposed, non-destabilizing positions (phyloP 2.51 versus 7.89; relative solvent accessibility 0.671 versus 0.185; gene-clustered p = 4.8x10-20 and 2.3x10-35), and, counter-intuitively, the unsupervised and protein-language models now entering clinical use are the most affected. Per-gene oncogenic thresholds span 0.07-0.99, so a single global cut-off is mis-calibrated for most genes; we provide a per-gene calibration map. A cancer-calibrated stack (OncoCal) modestly improves discrimination over the best single tool (AUROC {approx} 0.93 versus 0.87), rescues drivers such as JAK2 V617F (0.334[-&gt;]0.57), and generalizes to independent deep mutational scanning data. We provide an openly licensed framework to interpret and recalibrate these tools in the somatic setting rather than a replacement predictor.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.16.739080v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Pulsed priming with the FAK inhibitor narmafotinib enhances both gemcitabine/Abraxane and FOLFIRINOX chemotherapy response in pancreatic cancer</h2>
+<p class="paper-authors">Murphy, K. J., Chambers, C. R., +36 authors, Latham, S.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.19.739383v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740234v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -48,170 +200,18 @@
 </a>
 </div>
 </div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jul 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Contamination of widely used databases compromises rRNA based taxonomic assignment of metagenomes and metatranscriptomes</h2>
-<p class="paper-authors">Grant, A., Davies, C. S.</p>
+<h2 class="paper-title">MYC/MIZ1 suppression of lysosomal protein degradation drives immune evasion in pancreatic ductal adenocarcinoma</h2>
+<p class="paper-authors">Krenz, B., Kannan, T., +23 authors, Eilers, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> axonomic annotation of metagenomic and metatranscriptomic datasets frequently relies on aligning small subunit (SSU) rRNA reads to annotated reference databases. However, widely used SSU databases, including SILVA, GTDB, Eukaryome, and those distributed with SortMeRNA, are contaminated with large subunit (LSU) rRNA sequences. Low levels of LSU contamination can lead to large numbers of LSU reads being incorrectly identified as SSU and have serious consequences for downstream taxonomic assignments. The problem can be avoided by rigorously removing LSU sequences from databases used for taxonomic annotation, which we have done for KSGP 4.0. Alternatively, initial SSU read selection can be carried out with a carefully curated small SSU database that is free of LSU contamination. We illustrate these two approaches in combination using a metatranscriptomic dataset from an estuarine sediment. Without database cleaning, LSU-derived reads can make up half of supposed SSU sequences and are assigned to a small number of apparently dominant but artefactual taxa. Database cleaning removes this problem and we provide a script, total_rnaseq, to annotate total RNASeq or metagenomic data using this approach. The KSGP 4.0 database provides substantially improved annotation of Archaea compared to the SILVA database and moderate and small improvements for eukaryotes and bacteria respectively.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.22.739903v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Deep interpretable learning of sample representations for characterizing disease states in single-cell transcriptomics</h2>
-<p class="paper-authors">Wagle, M. M., Wang, Y., +4 authors, Kellis, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell transcriptomics technology offers unprecedented insights into molecular heterogeneity. However, capturing sample-level representations that reflect both systemic and cellular states remains challenging, especially when disease annotations are mostly available as coarse sample-level labels. Here, we introduce Phenoverse, an interpretable deep learning framework that learns sample-level disease state representations through cell type-aware residual encoding, prototype learning, and Perceiver-based aggregation. Applied to independent single-cell transcriptomic cohorts of COVID-19, Alzheimer's disease, and systemic lupus erythematosus, totaling over 5 million cells, we demonstrate that learned sample representations enable disease state prediction and encode a continuous spectrum of disease severity on unseen data that correlate with multiple clinical and pathological measures, despite being trained solely on binary phenotype labels. Further, we demonstrate that trajectory-derived genes reveal cross-cohort molecular programs and show consistently higher reproducibility than traditional case-control comparisons. Finally, prototype learning provides intrinsic model interpretability and enables the characterization of cell type-specific disease states. Taken together, Phenoverse offers an interpretable disease-phenotyping approach to dissecting sample heterogeneity, and our results highlight its utility in translating complex single-cell transcriptomic data into patient-level biological insights.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.21.738207v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">fastCDS: proteome-scale mapping of protein domains to genomic coordinates</h2>
-<p class="paper-authors">Munoz-Esquivel, G., Fuxman Bass, J. I., Soto-Ugaldi, L. F.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Summary: Mapping protein regions to genomic coordinates underpins the study of exon architecture and the interpretation of clinical variants in their exon context. Existing tools resolve individual queries accurately but scale poorly to proteome-wide analyses. We present fastCDS, a C++ toolkit with command line and Python interfaces for rapid protein-to-genome coordinate mapping from GTF annotations. It matches the accuracy of existing methods while running at least two to three orders of magnitude faster. Mapping all human Pfam domains in seconds, we used the resulting atlas to examine how exonic architecture varies with domain function. Availability and Implementation: fastCDS is freely available under the MIT license at {{https://github.com/SotoLF/fastCDS}} and can be installed with pip install fastCDS or mamba install -c bioconda fastCDS. Pre-built GTF genome indices are archived at Zenodo, DOI: https://zenodo.org/records/21436146.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.18.739381v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MagicLamp: a web server and software toolkit for targeted gene annotation of microbial functions</h2>
-<p class="paper-authors">Garber, A., Viney, I. A., +11 authors, Perez-Rodriguez, I.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Genome and metagenome annotation tools designed for large databases are ill-suited to the discovery of specialized, ecologically relevant microbial functions. MagicLamp (https://github.com/Arkadiy-Garber/MagicLamp) is a modular command-line software toolkit that performs targeted functional gene annotation searches using curated collections of hidden Markov models (HMMs), each representing discrete microbial metabolic processes. MagicLamp is also available as a web server: https://midauthorbio.com/#magiclamp. This targeted approach enables sensitive and specific annotation of genes involved in defined microbial processes, allowing MagicLamp to serve as a dedicated repository for the annotation of specialized microbial functions currently overlooked in other databases and software. The server accepts unannotated genome assemblies or GenBank-formatted annotations to perform HMM-based searches against curated model sets with reproducible, model-specific bit-score thresholds. Automated results are returned as tabular summaries and interactive HTML reports containing cross-genome/metagenome comparisons.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.19.739457v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MGM2 as a Unified Foundation Model for Microbiome World Exploration</h2>
-<p class="paper-authors">Zhang, H., Zhang, Y., +3 authors, Ning, K.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Microbiomes are information-rich biological systems, yet most computational analyses still reduce communities to cohort-specific abundance tables. Here we introduce MGM2, a multimodal foundation model pretrained on 1,821,291 MicrobeAtlas samples and 225,067 OTUs clustered at 99% sequence similarity. MGM2 couples NTv3-derived microbial sequence embeddings with abundance conditioning and community-semantic alignment to learn transferable sample- and token-level representations. Frozen MGM2 representations outperformed DeepPhylo by 0.06 to 0.21 macro-AUROC across five temporally held-out MGnify hierarchy levels, with the largest gains for rare and fine-grained labels. In fecal microbiota transplantation, MGM2-XLarge achieved a response ROC AUC of 0.79 and reduced post-transplant Bray-Curtis distance by 15% relative to the recipient baseline. The same representation supported ASV-level trend forecasting across 24 wastewater treatment plants. Sparse autoencoder analysis resolved MGM2-XLarge token states into a 4,096-feature dictionary spanning taxonomic identity, abundance state, ecological context and technical variation. MGM2 therefore provides a sequence-aware and interpretable representation layer for microbiome classification, paired-community prediction, forecasting and feature discovery.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.20.739063v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">FastEBM: Fast, Scalable, and Uncertainty-Aware Event-Based Disease Progression Modeling</h2>
-<p class="paper-authors">Javid, S., Nir, T. M., +3 authors, Jahanshad, N., for the Alzheimer's Disease Neuroimaging Initiative</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Event-based models (EBMs) are used to infer ordering of biomarker alteration patterns with respect to disease progression. However, EBM approaches rely on computationally expensive permutation-based inference, assumptions of feature independence, and likelihood optimization that can limit scalability and stability in high-dimensional settings. Here, we introduce Fast Event-Based Model (FastEBM), a scalable, uncertainty aware, Markov-chain-based framework that reformulates disease progression inference as a subject-ordering problem on a data-driven diffusion manifold. The progression uncertainty, used to derive positional variance diagrams, is quantified using first-passage-time variability derived directly from the inferred Markov process. Using synthetic experiments varying feature dimensionality, cohort size, noise level, and feature-correlation structure, we compared FastEBM with established methods, including Gaussian mixture model EBM (GMM-EBM), kernel density estimation EBM (KDE-EBM), and discriminative EBM (DEBM). FastEBM achieved the best accuracy and runtime. In low-subject/high-dimensional stress tests, FastEBM retained event-order recovery. FastEBM remained robust in simulations containing correlated and redundant features after decorrelation and feature-group handling. We applied FastEBM to real-world data to characterize biomarker progression in Alzheimer's disease. First, we evaluated a low-dimensional multimodal dataset from The Alzheimer's Disease Prediction Of Longitudinal Evolution (TADPOLE) challenge. Second, to demonstrate high-dimensional disease progression mapping, we applied FastEBM to regional cortical tau-PET data from the Alzheimer's Disease Neuroimaging Initiative (ADNI). In both cases, FastEBM recovered progression patterns broadly consistent with the literature, also revealing lateralized progression trends. These results show that diffusion-based Markov geometry provides a scalable and robust alternative to conventional event-based modeling. FastEBM is available at: https://github.com/sjusc07/FastEBM.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.18.739221v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Integrating single-cell and bulk transcriptomic perturbation resources reveals complementary therapeutic spaces for drug repurposing</h2>
-<p class="paper-authors">Niyonkuru, E., Khan, U., +11 authors, Sirota, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Transcriptome-based drug repurposing can accelerate therapeutic discovery, but is limited by fragmented resources, inconsistent quality control, and reliance on single perturbation databases. We developed CDRPipe (Computational Drug Repurposing Pipeline), a unified framework that interrogates disease signatures against drug perturbation signatures generated by distinct experimental technologies. Specifically, CDRPipe harmonizes microarray perturbation profiles from the Connectivity Map (CMap; 1,968 quality-filtered experiments) with pseudo-bulk profiles derived from large-scale single-cell RNA sequencing experiments in the Tahoe-100M database (56,827 experiments). CDRPipe standardizes preprocessing, computes rank-based connectivity scores, and evaluates significance using empirical null models. We applied CDRPipe to 233 curated disease signatures from GEO and CREEDS and evaluated performance using known drug-disease associations from Open Targets. Single-cell-derived pseudo-bulk profiles recovered more annotated therapeutics than microarray profiles (median recall 50.0% vs. 6.2%; Wilcoxon p &lt; 10 ^ -11), though these differences partly reflect differences in drug library composition and clinical annotation coverage. Importantly, the two resources were highly complementary, with only 3.5% overlap in recovered drugs, indicating that integrating predictions across independent perturbation resources expands therapeutic coverage and enables identification of high-confidence consensus candidates. Case studies in autoimmune disease and endometriosis further demonstrate that CDRPipe recovers clinically relevant therapies while revealing technology-dependent patterns of discovery. These results show that integrating heterogeneous transcriptomic perturbation resources improves the robustness and interpretability of transcriptional drug repurposing.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.17.739227v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Learning Minimal Gene Programs for Disease-Aligned Representations</h2>
-<p class="paper-authors">Madduri, A., Patel, C. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Identifying small, interpretable gene sets that robustly capture disease-associated variation in single-cell transcriptomic data remains a central challenge for biological interpretation and experimental follow-up. In practice, commonly used differential expression and sparsity-based approaches often produce large, unstable gene lists that fail to generalize across patients due to strong donor-specific confounding. We study sparse gene selection for reconstructing donor-robust, disease-aligned cellular trajectories in real single-cell RNA-seq datasets. We introduce Sparse Linear Manifold Control (SLMC), a practical workflow that defines a disease-aligned score after removing donor-associated variation and selects minimal gene programs whose expression reconstructs this score. We focus on diagnosing the structure of the resulting reconstruction objective and evaluating selection strategies under realistic health data conditions. Across five human single-cell datasets spanning oncology and neurodegeneration, we find that the reconstruction objective exhibits strong diminishing returns, explaining why simple greedy selection methods perform well in practice. Under strict donor-held-out evaluation, greedy methods consistently outperform LASSO at small gene budgets and achieve accurate reconstruction with as few as 25 genes. Together, these results highlight how careful objective design and empirical evaluation enable robust and interpretable gene selection for disease-aligned representation learning in single-cell health data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.17.739212v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Jul 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">scLEMBAS: Context-Aware Modeling of Signaling Pathway Activity at Single-Cell Resolution</h2>
-<p class="paper-authors">Baghdassarian, H. M., Meimetis, N., +3 authors, Lauffenburger, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cells sense and integrate extracellular cues through intracellular signaling networks that reshape transcription factor activity to dictate cellular responses. Signaling activity is difficult to decipher: it is non-linear, and it contains extensive feedback and crosstalk. Furthermore, the same perturbation can elicit markedly different responses depending on context (e.g., cell type, disease state, and tissue microenvironment) such that identical stimuli produce diverse responses in multicellular populations. Consequently, there is a vast combinatorial space of complex interactions and context-dependent responses that necessitate computational models. Computational models of single-cell perturbation responses are demonstrated to predict cellular responses, but are often limited in mechanistic insight. Prior knowledge networks offer a route to bridge predictive capability and interpretability. Here we present scLEMBAS, a context-aware, gray-box neural network that models signaling pathway activity at single-cell resolution while preserving mechanistic grounding. scLEMBAS encodes a prior-knowledge network of protein-protein interactions as a recurrent neural network whose learnable edge weights correspond to signaling interaction strengths. It also captures context and individual cell variance through compositional bias terms. An adversarial approach allows the model to answer a single-cell counterfactual - what a given cell's TF activity would be under a different perturbation or context - while involving mechanistic rather than simply relational information. Across two scRNA-seq datasets spanning single- and multi-perturbation settings, scLEMBAS accurately predicts out-of-distribution combinations of perturbation and context. Capturing population variance across individual cells enables the model to predict cell subtype specific perturbation responses, despite being agnostic to such labels. Beyond prediction, scLEMBAS learned parameters are biologically interpretable: learned edge weights carry information beyond network topology and "self-prune" spurious interactions, while the categorical bias nominates proteins associated with cell-type-specific perturbation states. Overall, scLEMBAS enables quantitative dissection of how signaling pathway activity is reshaped by perturbation within specific cellular contexts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.20.739670v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The MYC oncoprotein promotes immune evasion of pancreatic ductal adenocarcinoma (PDAC), but the underlying molecular mechanisms are not fully understood. Here we show that MYC protects PDAC tumors from CD4+ T cell-dependent elimination. Single cell sequencing shows that MYC suppression in tumor cells increases amino acid availability and broadly activates amino acid-responsive gene expression programs in immune cell populations. This occurs because MYC-driven uptake depletes free amino acids from tumor interstitial fluid and plasma, while MYC compromises macropinocytosis and autophagy, both of which depend on lysosomal protein degradation. MYC engages the POZ/BTB transcription factor MIZ1 to suppress lysosomal genes regulated by the TFE3/TFEB/MITF network or by free MIZ1, thereby inhibiting lysosomal protein degradation. An orthogonal genetic model enabling transient, selective inhibition of amino acid uptake in tumor cells recapitulates the effects of MYC depletion on amino acid levels in the tumor microenvironment and induces complete, CD4+ T cell-dependent tumor eradication with long-term survival. We propose that MYC mediated, cell autonomous disruption of lysosome function coupled to non cell autonomous protection from immune clearance allows MYC low cells to benefit from MYC high neighbors, such that intratumoral heterogeneity in MYC expression confers a selective advantage to the entire tumor.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740267v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +222,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">May 12, 2026</span>
+<span class="date">Jul 23, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A predictive 14-gene signature and FLI1 inhibition overcome tumor-infiltrating lymphocyte dysfunction in triple-negative breast cancer.</h2>
-<p class="paper-authors">Meng Jia, Longwei Jiang, +10 authors, Junqing Liang</p>
+<h2 class="paper-title">Single-cell and spatial transcriptomics reveal SUV39H1 as a master epigenetic driver of immunosuppressive niche and stemness in bladder cancer.</h2>
+<p class="paper-authors">Yunpeng Li, Ling Wu, +5 authors, Qing Jiang</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Triple-negative breast cancer (TNBC) is an aggressive subtype lacking effective targeted therapies. Although immune checkpoint inhibitors such as pembrolizumab have improved clinical outcomes in a subset of patients, limited response rates and durability highlight the need for alternative strategies. Tumor-infiltrating lymphocyte (TIL)-based adoptive cell therapy represents a promising approach; however, the absence of reliable biomarkers for TIL functionality remains a major obstacle. In this study, we isolated TILs and autologous tumor cells from nine TNBC patients and classified TILs as reactive or non-reactive based on cytotoxic activity. Transcriptomic profiling combined with weighted gene co-expression network analysis and machine learning approaches identified a 14-gene signature that robustly distinguished reactive from non-reactive TILs. Transcription factor analysis revealed that Friend leukemia integration 1 (FLI1) regulates a large proportion of genes upregulated in non-reactive TILs. Notably, pharmacological inhibition of FLI1 using TK216 restored the cytotoxic function of non-reactive TILs and reduced expression of immunosuppressive genes. These findings identify a functional gene signature associated with TIL reactivity and suggest that targeting FLI1 may represent a strategy to enhance TIL-based immunotherapy in TNBC.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42139769/" target="_blank">
+<p><strong>Abstract:</strong> Bladder cancer (BC) exhibits profound molecular heterogeneity and a highly dynamic tumor microenvironment, posing major challenges for effective therapy. In this study, we leveraged single-cell RNA sequencing (scRNA-seq) and spatial transcriptomics, complemented by integrative multi-omics analysis and machine learning, to systematically dissect the cellular and spatial architecture of BC and uncover key regulatory drivers.We identified the histone methyltransferase SUV39H1 as a central epigenetic regulator strongly associated with tumor progression, stemness, and poor prognosis. At single-cell resolution, SUV39H1-high epithelial subpopulations displayed enhanced stemness features and were enriched in transcriptional programs linked to proliferation and immune modulation. Notably, these cells exhibited extensive ligand-receptor interactions with inflammatory fibroblasts, suggesting a critical role in shaping a pro-tumorigenic stromal niche.Spatial transcriptomic analysis further revealed that SUV39H1 expression is preferentially localized at tumor invasion margins, and is associated with activation of PI3K-Akt and TNF signaling pathways, highlighting its spatially resolved role in tumor progression. Moreover, high SUV39H1 expression defined an immunosuppressive tumor microenvironment characterized by increased infiltration of regulatory T cells and M2 macrophages, along with reduced cytotoxic CD8⁺ T cell activity, indicative of a "cold" tumor phenotype.Functional assays demonstrated that silencing SUV39H1 significantly inhibited proliferation, migration, and invasion of BC cells, confirming its causal role in driving aggressive tumor behavior.Collectively, our findings reveal that SUV39H1 orchestrates tumor stemness, immune evasion, and spatially organized tumor progression. These results not only provide mechanistic insights into bladder cancer biology but also highlight SUV39H1 as a promising therapeutic target for remodeling the tumor microenvironment and enhancing immunotherapy efficacy.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42492366/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 23, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrated spatially guided transcriptomics and multiplex imaging identify a high-risk CD163+/CD11c-subgroup in diffuse large B-cell lymphoma.</h2>
+<p class="paper-authors">Angelica Johansson, Daniel Nilsson, +8 authors, Sara Ek</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Emerging data identify infiltrating immune cells in diffuse large B‑cell lymphoma (DLBCL) as prognostic biomarkers with tentative implications for therapeutic stratification. To elucidate the tumor immune microenvironment (TIME) and molecular features governing outcome, we integrated data from multiplex immunofluorescence imaging of CD163⁺ and CD11c⁺ cells with spatially guided transcriptional profiling of infiltrating CD3⁺ and CD163⁺ immune cells alongside CD20⁺ malignant cells across a cohort of 561 DLBCL cases. For quantification of cell densities, a multi‑step workflow was used, incorporating machine‑learning classifiers to improve accuracy, and the underlying biology was explored through cancer and immunefocused gene expression analysis. We identified a subgroup of patients with a CD163low/CD11chigh TIME and favorable prognosis. By contrast, a CD163high/CD11clow TIME exhibited poor outcome independent of established clinicopathological risk factors. To verify the clinical utility, we showed that these subgroups can be identified with a routine pathology dual IHC staining. The high-risk CD163/CD11c subgroup had abundant expression of M2‑like markers (MRC1, SIGLEC1, MARCO) and showed evidence of T-cell exhaustion, with higher levels of LAG3. Of tentative translational value, the low-risk TIME expressed the checkpoint inhibitor CTLA4. Multivariate modelling identified a high-risk gene signature with prognostic value in independent public datasets of CHOP and R‑CHOP-treated DLBCL, underscoring the robust and broad prognostic impact of CD163+ and CD11+ cells across clinical studies. The combined analysis of CD163 and CD11c have the potential for implementation in routine clinical use and provides independent prognostic information with implications for stratification to novel therapeutic regimens, potentially checkpoint inhibitors LAG-3 or CTLA-4 for high and low-risk groups, respectively.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42489074/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
