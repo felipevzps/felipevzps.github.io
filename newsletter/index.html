@@ -29,18 +29,265 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="machine learning, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
 <span class="date">Jul 27, 2026</span>
-<span class="journal">PubMed</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">IDEAL-Age: an interpretable deep learning framework for single-cell resolution profiling of immunological aging.</h2>
-<p class="paper-authors">Yin Xu, Zhengchao Luo, +6 authors, Dali Han</p>
+<h2 class="paper-title">RIPPLE: replicate-aware detection of cell-type-anchored proximity gradients in spatial transcriptomics</h2>
+<p class="paper-authors">Mangana, C., Maier, B. B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Immunosenescence increases susceptibility to infection and reduces vaccine responsiveness, yet bulk transcriptomic clocks obscure the cellular heterogeneity underlying this process. Here, we present IDEAL-Age, an interpretable deep learning framework that operates directly on single-cell PBMC transcriptomes. Benchmarking against 35 methods across independent cohorts demonstrates superior predictive performance. The framework's interpretability uncovers linear and non-linear gene contribution trajectories that reveal phase-specific physiological transitions, and identifies youth-associated or aging-associated cellular roles. Application to systemic lupus erythematosus reveals accelerated immunological aging driven by interferon-associated monocyte shifts. IDEAL-Age establishes a high-resolution computational framework for deciphering systemic immune aging.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42503507/" target="_blank">
+<p><strong>Abstract:</strong> Cell-cell signaling shapes tissue structure and function, yet systematically decoding these circuits with spatial transcriptomics remains an open challenge. We present RIPPLE (Replicate-Aware Inference of Paracrine Profiles via Likelihood Estimation), an R package that takes a query cell type and scans all other cell types for genes whose expression varies with distance to it. On a murine lymph node 10x Xenium dataset, RIPPLE recovers the canonical T cell zone CCL21 response program in T cells and dendritic cell subsets with unanimous sign consistency across all samples. On the public CosMx non-small cell lung cancer cohort, it identifies 515 tumor-proximity gradient genes across 17 cell types, flagging a known cancer-associated fibroblast marker (IGFBP5) as the top fibroblast hit. Overall, RIPPLE delivers ranked, cell-type-resolved paracrine candidates for experimental follow-up.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740288v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">GPSNorm: Gaussian Process Spatial Normalization for Spatial Transcriptomics</h2>
+<p class="paper-authors">Taychameekiatchai, A., Zhan, X., +1 author, Ruan, P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Spatial transcriptomics technologies enable measurement of gene expression while preserving spatial tissue organization, but they remain highly sensitive to technical variability such as library size differences, slide-level effects, and spatial artifacts. Most existing normalization approaches treat normalization as a preprocessing step and perform downstream analyses on normalized values as fixed inputs, ignoring the uncertainty introduced during normalization. We introduce GPSNorm (Gaussian Process Spatial Normalization), a Bayesian spatial normalization framework that jointly models technical variation, spatial structure, and biological signal within a unified hierarchical model. GPSNorm represents gene expression counts using a negative binomial latent Gaussian model whose spatial component is a Gaussian Markov random field approximating a Gaussian process and performs efficient approximate Bayesian inference using the Integrated Nested Laplace Approximation (INLA), producing posterior estimates that propagate normalization uncertainty into downstream differential expression analysis. In simulations anchored to empirical spatial transcriptomics data, GPSNorm accurately recovers spatial technical structure and improves log-fold change estimation compared with existing normalization methods. Applications to three spatial transcriptomics datasets---including human dorsolateral prefrontal cortex Visium data, a GeoMx COVID-19 lung damage study, and the Spatial Organ Atlas kidney dataset---demonstrate improved preservation of biologically expected spatial patterns and marker gene contrasts. These results show that jointly modeling normalization and downstream inference can improve the robustness and interpretability of spatial transcriptomics analyses.An open-source R implementation of GPSNorm is available at https://github.com/Tiny-Quant/GPSNorm.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740319v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Ontology-guided harmonization enables unified discovery of public metabolomics studies within and across repositories</h2>
+<p class="paper-authors">Banerjee, S., Jalan, P., +3 authors, Jadhav, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Public metabolomics repositories contain thousands of studies, but differences in metadata structure, vocabulary, and repository-specific terms still limit reliable search, comparison, and reuse within and across databases. Here we present HARMONY, an ontology-based framework and web platform that harmonizes study-level metadata and metabolite information across Metabolomics Workbench and MetaboLights studies. HARMONY resolves eight biological and analytical metadata nodes, including species, sample source, disease, analytical technique, separation method, ion polarity, ionization source, and mass analyzer type, while preserving the original deposited terms as evidence. A ninth node, metabolite identity, maps metabolite entities to RefMet across both repositories. HARMONY uses a two-step workflow: Multi-source extraction retrieves records missed by single-field lookups, and ontology mapping then converts repository-specific labels into shared query terms, substantially closing the cross-repository retrieval gap relative to raw matching. Across the full corpus, HARMONY increased cross-repository retrievability from 75.5% to 89.6%, yielding thousands of study-node retrievals and reconnecting studies that raw-text search would have left unreachable within their own repositories. Approximately 91% of Metabolomics Workbench and 85% of MetaboLights studies had at least six of the eight nodes harmonized. The resulting platform, available at https://omicsinharmony.in, supports ontology-aware search, metadata filtering, within- and cross-repository study comparison, and metabolite-level querying, with retrieval backed by machine learning encoders that map study metadata into shared representations of biological and analytical context. HARMONY provides the metabolomics community with a shared, traceable search interface for study discovery and comparison within and across public repositories.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740366v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Functional Characterization of Transcriptome-Wide Isoform Switching in Hürthle Cell Carcinoma (HCC)</h2>
+<p class="paper-authors">Butt, R. S., Amir, A., Paracha, R. Z.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Hurthle cell carcinoma (HCC) is an aggressive form of thyroid cancer. While mitochondrial DNA mutations and chromosomal losses have been identified in HCC, isoform switching, and its functional consequences remain uncharacterized. This study reanalyzed NCBI GEO dataset GSE228870 (n = 32), using Salmon and IsoformSwitchAnalyzeR() to identify isoform switching. The analysis resulted in 371 switches across 335 genes showing functional consequences including loss of protein domains, shorter open reading frames (ORFs), loss of signal peptides and novel sub-cellular localizations. Most significant isoform switches (q-value 0.1) were observed in LAMA2, LSP1, MAD2L2, FBLN2 and CXCL12, implicating extracellular matrix dysregulation, DNA damage response, immune signaling and cytoskeleton regulation. These genes are expressed in normal thyroid (median TPM 20.69, 11.66, 14.79, 134.1 &amp; 80.76). However, specific isoforms of LAMA2 and MAD2L2 are not expressed in normal thyroid, explaining tumor-specific expression in HCC. Alternative transcription termination site (ATTS) gain was significant, suggesting altered 3' end in HCC transcripts. TCGA SpliceSeq showed LSP1, FBLN2 and CXCL12 undergo alternative promoter (LSP1 exon1 PSI=94.5%, FBLN2 exon2 PSI=99.0%) and alternative termination (CXCL12 exon3.3 PSI=53.9%) in thyroid cancer, suggesting ATTS and alternative transcription start site (ATSS) as shared splicing dysregulation mechanisms. This is the first systematic characterization of isoform-level dysregulation in HCC.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740299v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">B-SMART-Former: An Explainable Transformer-Based Deep Learning Model for Predicting Drug-Drug Interactions Between Biotech and Small-Molecule Drugs</h2>
+<p class="paper-authors">Nasiri, F., Hooshmand, M., Nouroozi, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Drug-drug interactions between biotech and small-molecule drugs play a critical role in medication safety and therapeutic efficacy. However, most existing computational DDI prediction methods focus primarily on interactions between small-molecule drugs, leaving biotech-small-molecule interactions comparatively underexplored. In this study, we propose B-SMART-Former, an explainable deep learning framework for predicting interaction types between biotech and small-molecule drugs. The proposed framework integrates ChemBERTa embeddings and Morgan molecular fingerprints for small molecules with ProtBERT embeddings for biotech drugs, eliminating the need for similarity-based features while leveraging complementary molecular representations. These multimodal features are processed by a hybrid architecture that combines Transformer-based self-attention, residual convolutional learning, and a multi-layer perceptron classifier to capture both global contextual dependencies and local discriminative patterns. The model is formulated as a multi-class classification task and evaluated using stratified 10-fold cross-validation. To improve model transparency, Integrated Gradients is employed as a post-hoc explainability method to identify the molecular features that contribute most strongly to each prediction. Experimental results demonstrate that B-SMART-Former achieves a micro-averaged AUROC of 0.9978 and an AUPR of 0.9682 while relying solely on intrinsic molecular representations, remaining competitive with similarity-based approaches. The proposed framework offers an effective and explainable solution for biotech-small-molecule DDI prediction and provides a practical foundation for future computational drug interaction studies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740240v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Detecting the Information Flow in Proteins by Hodge Decomposition</h2>
+<p class="paper-authors">Hacisuleyman, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Allosteric communication in proteins is commonly quantified as a directed or undirected coupling between residues, but such descriptors mix distinct modes of signalling into a single pattern. Here we treat the net transfer entropy flux from a dynamic Gaussian network(dGNM) model as an edge flow on the residue contact graph and apply the combinatorial Hodge decomposition, which dissects the flow orthogonally into a gradient (global source--to--sink hierarchy), a curl (local three--clique circulation) and a harmonic (cavity--scale circulation) component. Applied to the wild--type KRAS and ten oncogenic KRAS variants spanning the principal GTPase--cycle mechanism classes, partial--hydrolysis position--12 (G12D, G12C, G12S), GAP--occluding position--12 (G12V, G12R), catalytic switch II (Q61R, Q61H), fast--cycling (G13D, A146T) and a combined steric and catalytic double mutant (G12D/Q61H), on a side--chain--centroid contact network, the decomposition shows that the transfer entropy flux is overwhelmingly hierarchical: the gradient term carries 97.5--98.4% of the flux in every variant (permutation p = 0.002), and the recovered scalar potential is strongly anti--correlated with each residue's net outgoing transfer entropy (Spearman {rho} {approx} -0.92 to -0.95). The hierarchy is conserved in magnitude but relocated by mutations: the dominant information sources move from the C terminal 5/hypervariable region in wild type into the nucleotide--processing core, the switch I/II machinery and the 4/distal lobe in a way that tracks the GTPase--cycle mechanism of the substitution, while the sinks remain fixed. The method provides a parameter--free, residue--level readout of how mutations of different mechanism reposition the source of allosteric signalling in KRAS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740308v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Synthetic Combinatorial Minimisation of Cell Cycle Control in Yeast</h2>
+<p class="paper-authors">Malyshava, A., Ciurkot, K., +4 authors, Ellis, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The eukaryotic cell cycle, with its inherent regulatory redundancy, provides an ideal target for exploring genome modularisation and minimisation through synthetic genomics. Building upon principles established by the Synthetic Yeast Genome (Sc2.0) project, we used CRISPR- mediated genome engineering to relocate nine key cell cycle genes into a synthetic gene cluster in the S. cerevisiae genome, to allow combinatorial study of these genes in yeast. We employed Cre/loxP recombination to rapidly generate hundreds of strains with different gene deletion combinations in the module, with the objective of identifying minimal gene sets that permit robust cell cycle function. Using FACS-sorting and POLAR (Pool of Long Amplified Reads) sequencing, we conducted high-throughput analysis of gene deletion combinations in large cell pools, detecting approximately 80% of theoretically possible gene combinations, including those predicted from prior mathematical modelling studies. Our findings demonstrate that the cell cycle gene set can be minimised while maintaining viability, though only select combinations of gene deletions ensure robust fitness across different conditions. This work establishes a framework for genome minimisation, opening the door to the design of simplified, modular synthetic genomes for diverse applications.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.24.740655v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Explainable Artificial Intelligence for Cross-Dataset Generalizable Biomarker Discovery in Cardiovascular diseases (CVDs)</h2>
+<p class="paper-authors">Abbasi, A. F., Sajjad, M., +2 authors, Asim, M. N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> CVDs are heterogeneous, multifactorial disorders that remain the leading cause of global mor- tality from infancy to old age. It requires an early identification and treatment of risk factors to accelerate disease prevention and morbidity improvement. Advancements in transcriptomics tech- nologies gives large pool of heterogenous gene expression data. The technical heterogeneity of gene expression data reduces ability to compare multiple cross-platform datasets at once. To bridge gap, we systematically evaluate three data harmonization techniques: Shambhala-2, TDM, and UPC to align heterogeneous data into a shared expression space while preserving biological signals. Our pipeline integrates 25 independent datasets comprising 983 samples across 23 distinct CVDs phe- notypes from both RNA-seq and microarray platforms. The framework benchmarks 35 Machine learning (ML) and Deep learning (DL) classifiers, including Transformers and ResNets, across three data modalities such as RNA-seq, microarray hybridization and RNA-seq + microarray and multiple tissue types. To ensure clinical trustworthiness, we apply multiple Explainable artificial intelligence (XAI) methods, such as SHapley additive exPlanations (SHAP) and Integrated gradi- entss (IGs), and assess their reliability using quantitative metrics like Area over the perturbation curve (AOPC), Sensitivity, and Infidelity. Results indicate that Shambhala-2 provides superior harmonization by maximizing the biological signal-to-platform ratio. Evaluation of XAI methods reveals that Shapley-based approaches offer the highest stability for identifying influential genomic features in high-dimensional data. Functional enrichment and pathway analyses further confirmed the involvement of identified biomarkers in key cardiovascular processes, including inflammation, immune regulation, oxidative stress, and vascular remodeling. Collectively, this study provides a scalable and interpretable road-map that integrates XAI with cross-dataset biomarker discovery, supporting the transition toward precision cardiology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740273v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Estimation of biological age using HRV data: comparison of the Klemera-Dubal method with the multiple linear regression method</h2>
+<p class="paper-authors">Pysaruk, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The aim of this study was to compare three methods for estimating biological age (BA) based on heart rate variability (HRV) indices recorded in the supine position: multiple linear regression (MLR), MLR corrected for regression-to-the-mean bias using the Dubina method (1984), and the Klemera-Doubal Method (KDM, 2006). A total of 343 subjects were examined (193 women and 150 men aged 20-90 years); nine time- and frequency-domain HRV indices were analyzed (NN, lnSDNN, lnRMSSD, lnVLF, lnLF, lnHF, VLF%, LF%, HF%). The association between HRV indices and chronological age was substantially in women and men (p&lt;0.01). KDM produced the lowest estimation error (MAE=4.34 years in women, 3.67 years in men), whereas uncorrected MLR produced the largest error (MAE=6.57 and 7.47 years, respectively); the Dubina correction substantially improved MLR accuracy (MAE=4.22 and 4.82 years) but relied directly on actual chronological age, which limits its independent diagnostic value. The strengths and limitations of each method and recommendations for their application are discussed. Keywords: biological age, heart rate variability, Klemera-Doubal method, multiple linear regression.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740028v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Discrete Inverse Rendering: Biological Data Analysis with Integer Programming</h2>
+<p class="paper-authors">Kirkegaard, J. B., Zdyb, F. O.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Biological image analysis is full of discrete decisions: whether an object is present, which of several overlapping detections is real, whether two detections match across time, and whether a cell divides. Standard pipelines resolve them locally with non-max suppression, thresholding, or greedy linking, committing before all image and temporal evidence is in. We recast such problems as discrete inverse rendering: candidate renderings are generated then jointly selected to reconstruct the movie subject to temporal and biological constraints, solved to certified optimality with a modern integer-programming solver. The same formulation covers suppression of overlapping detections, selection of a structure as a path, and event-structured tracking with birth, death, and division. Applied to C. elegans splines, sperm flagella, and dividing cells, the method matches specialised state-of-the-art pipelines across three imaging modalities on a single objective, with the largest gains where per-frame segmentation is unreliable (on a low-signal fluorescence movie of Huh7 hepatoma cells, detection F1 doubles from 0.31 to 0.58).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.23.740284v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">TAS2R10 Suppresses ABCG2 Transporter-Associated Chemoresistance and Enhances Cisplatin Sensitivity in Head and Neck Squamous Cell Carcinoma</h2>
+<p class="paper-authors">Huang, L., Sywanycz, S. M., +6 authors, Carey, R. M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cisplatin resistance remains a major barrier in head and neck squamous cell carcinoma (HNSCC) treatment. ATP-binding cassette (ABC) transporters contribute to chemoresistance by limiting intracellular drug accumulation. Bitter taste receptor 10 (T2R10) has been implicated in ABC transporter regulation, but its role in HNSCC remains undefined. HNSCC cell lines were treated with T2R10-agonist caffeine (100 or 200 M), cisplatin, or a combination, and viability was assessed by crystal violet assay. T2R10 promoter activity and expression following caffeine exposure were evaluated using a promoter-driven mCherry reporter and RT-qPCR. ABC transporter expression was measured after caffeine treatment and T2R10 gene (TAS2R10) knockdown or overexpression. Associations between tumor TAS2R10 expression and survival were assessed using TCGA data through GEPIA2. Caffeine enhanced the cisplatin-associated reduction in viability in a cell line- and concentration-dependent manner, with the strongest effect seen in UM-SCC47. A significant effect was observed in FaDu at 200 M of caffeine, and minimal response in RPMI 2650. RPMI 2650 cells and FaDu cells exhibited lower baseline TAS2R10 expression and RPMI 2650 cells did not demonstrate enhanced cisplatin sensitivity following caffeine treatment. Caffeine treatment increased TAS2R10 promoter activity and expression and was associated with decreased ABCG2 expression. TAS2R10 knockdown increased ABCG2 and ABCF1 expression, whereas TAS2R10 overexpression reduced ABCG2 and ABCC1 expression. High tumor TAS2R10 expression was associated with improved disease-free survival (log-rank p=0.0071; HR=0.61) but not overall survival. Caffeine enhances cisplatin sensitivity in selected HNSCC models. Caffeine exposure is associated with increased TAS2R10 expression and reduced expression of chemoresistance-associated transporters, particularly ABCG2.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.26.740768v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Spatial modulation of RAF by RAF/MEK glue enables full-dose combination with pan-RAF inhibitor and potent RAS-mutant tumor-selective MAPK and growth inhibition</h2>
+<p class="paper-authors">Poulikakos, P., Orive-Ramos, A., +14 authors, Pachter, J. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> The clinical benefit of MAPK-targeted therapies depends on greater pathway inhibition in tumors than normal tissues. Although pan-RAF inhibitors are active in RAS-mutant cancers, combining them with MEK inhibitors requires dose reductions due to toxicity, limiting efficacy. We show the toxicity results from MEK inhibitor-mediated feedback relief, which promotes RAF activation and pan-RAF inhibitor engagement in normal cells, narrowing the therapeutic index. We further demonstrate that MEK is exclusively cytosolic, and RAF/MEK glues overcome this limitation through spatial trapping. By stabilizing cytosolic RAF-MEK complexes, RAF/MEK glues prevent feedback-driven RAF activation in normal cells while maintaining inhibition of oncogenic RAF signaling in RAS-mutant tumors, where RAF is constitutively activated at the plasma membrane. Consequently, this enables full-dose combination with pan-RAF inhibitors, resulting in deeper MAPK suppression and robust tumor regressions in RAS-mutant models. Thus, by spatially controlling wild-type effectors, drug-induced proximity can be harnessed to increase tumor selectivity of pathway-targeted therapies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.24.740654v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Genome-wide CRISPR Screening Reveals Cullin-1 as a Therapeutic Target Enhancing Efficacy of CD19-directed Immunotherapy</h2>
+<p class="paper-authors">Gottumukkala, N. V., Loja, T., Smida, M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cancer immunotherapy targeting B-cell specific CD19 antigen meant a major breakthrough in the treatment of B-cell malignancies. Yet, vast proportion of treated patients experience relapse and failure of the therapy. Although multiple mechanisms of CD19-immunotherapy failure have been described, CD19-negative relapses represent the major hurdle in achieving higher and durable response rates. Our established in vitro co-culture models revealed that suboptimal CAR-T cell performance, inefficient to mediate target cell killing, results in robust downregulation of CD19 target antigen. Using genome-wide CRISPR screening, we addressed the mechanisms responsible for such CD19 downregulation and identified Cullin-1 and CD81 playing instrumental role in negative and positive regulation of CD19 expression, respectively. Inhibiting Cullin-1 activity with pevonedistat prevents the loss of CD19 under immunotherapeutic pressure, results in higher CD19 surface levels and consequently enhances the efficacy of target cell killing by CD19-CAR-T cells, CD19-CAR-NK cells and CD19-targeting antibody treatment. Mechanistically, we show that pevonedistat blocks the degradation of CD19 upon its internalization and allows its recycling back to the plasma membrane. CD81 chaperone protein is critically involved in this process as the absence of CD81 abrogates the effect of pevonedistat. In summary, we identify Cullin-1 as a novel and druggable regulator of CD19 protein stability. Cullin-1 inhibition augments CD19 surface expression, thereby improving the efficiency of CD19-targeting immunotherapies, thus arguing for potential incorporation of pevonedistat into novel combination therapies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.26.740751v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Beyond Immune Evasion: CD47-Driven Pro-Tumorigenic Dysfunction in Diffuse Large B Cell Lymphoma and Triple-Negative Breast Cancer</h2>
+<p class="paper-authors">Lum, T. C. I., Tan, J. Y. M., +3 authors, Hue, S. S. S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> CD47 is a ubiquitously expressed transmembrane protein that functions as a negative immune checkpoint, marking host cells as "self" by delivering an inhibitory "don't-eat-me" signal to phagocytes. Cancer cells co-opt this mechanism, upregulating CD47 to evade immunosurveillance and phagocytosis by innate immune cells, a pattern observed across solid tumours and haematological malignancies. CD47 overexpression correlates with poor prognosis across most cancer types, including therapy-resistant disease. Despite extensive efforts to develop CD47-targeted therapies, the downstream biological consequences of aberrant CD47 expression within tumour cells remain poorly characterised beyond its established anti-phagocytic role. This study investigated non-immunological, pro-tumorigenic functions of CD47 to define the cellular effects, beyond immune evasion, that CD47-targeted therapy might disrupt. We found that CD47 exerts cancer type-specific effects: in DLBCL, CD47 loss impaired mitochondrial metabolism and sensitised cells to R-CHOP standard-of-care chemoimmunotherapy, whereas in triple-negative breast cancer (TNBC), CD47 knockdown delayed cell cycle progression, enhanced migration, and conferred resistance to specific chemotherapeutic agents. These findings indicate that CD47 has multifaceted, context-dependent roles in tumour biology that extend beyond immune checkpoint signalling. Clinically, this suggests CD47-targeted therapies may produce cancer type-specific off-target effects on tumour metabolism, proliferation, and drug sensitivity, which are considerations that should inform their rational combination with existing targeted therapies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.25.740652v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +298,53 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Jul 26, 2026</span>
+<span class="date">Jul 27, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Extracellular Vesicles in Cancer: Biomarkers, Mechanisms, and Emerging Diagnostic Technologies.</h2>
-<p class="paper-authors">Cheng Wang, Juan Peng, +2 authors, Ya-Juan Liu</p>
+<h2 class="paper-title">Trajectory-informed gene feature selection in single-cell analysis with SEEK-VFI.</h2>
+<p class="paper-authors">Rebecca Danning, Zheng Tracy Ke, +1 author, Rong Ma</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Extracellular vesicles (EVs) are nanoscale, membrane-bound particles that transport diverse biomolecules-including proteins, nucleic acids, lipids, and metabolites-between cells, thereby orchestrating key processes in cancer progression. Tumor-derived EVs modulate angiogenesis, epithelial-to-mesenchymal transition, extracellular matrix remodeling, fibroblast activation, and immune evasion, shaping the tumor microenvironment, and driving metastasis as well as therapy resistance. With their stability in biofluids and cargo reflective of cellular origin, EVs have emerged as powerful non-invasive biomarkers for early detection, disease monitoring, and prognosis across multiple cancer types. Recent advances in enrichment, characterization, and molecular profiling technologies-ranging from ultracentrifugation and microfluidics to proteomics, RNA sequencing, and surface-enhanced Raman spectroscopy, have greatly expanded the diagnostic potential of EVs. Integration with machine learning further enhances sensitivity, specificity, and tumor classification, while multiomic and multiplex platforms enable high-throughput and clinically relevant applications. This review highlights the multifaceted roles of EVs in cancer biology, catalogs emerging biomarkers, and compares state-of-the-art detection technologies, offering a comprehensive reference for advancing EV-based diagnostics and precision oncology.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42503304/" target="_blank">
+<p><strong>Abstract:</strong> The prioritization of highly variable genes is an important step in single-cell trajectory inference. However, when variability arises from a continuous latent cell development trajectory, standard methods may fail to differentiate trajectory-relevant genes from uninformative genes. SEEK-VFI (Spectral Ensembling of topic models with Eigenscore for K-agnostic Variable Feature Identification) is an ensemble topic modeling machine learning algorithm for trajectory inference preprocessing that prioritizes trajectory-relevant genes. It outperforms existing methods and identifies key genes that improve trajectory topology reconstruction, enhance visualization, and augment downstream trajectory analyses.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42508407/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jul 27, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Emerging Trends in Artificial Intelligence-Driven Drug Discovery: Balancing Chemical Design and Pharmacological Properties for Cancer Therapy.</h2>
+<p class="paper-authors">Mohsin Ali, Muhammad Ali Tajwar, +3 authors, Hai Xiong</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Traditional cancer drug discovery encounters challenges, including lengthy synthesis durations, high costs, and a 90% failure rate in clinical trials, primarily due to inadequate chemical design and drug properties. Artificial intelligence (AI) provides powerful computational tools to overcome these issues by speeding up target identification, predicting properties, and optimizing leads. This review emphasizes the influence of new AI platforms like AlphaFold3, molecular interactions are structurally optimized (MISATO), and ZairaChem on the discovery of oncology drugs. We specifically examine how AI reconciles chemical design with pharmacological feasibility. In addition to evaluating these advancements, we meticulously evaluate methodological challenges, including dataset bias, overfitting, insufficient external validation, and reproducibility issues. Furthermore, the development of complex and targeted modalities, such as antibody-drug conjugates (ADCs), aptamer-drug conjugates (Ap‑DCs), and proteolysis-targeting chimeras (PROTACs), is being explored for cancer treatment using AI. Following a detailed review of regulatory and clinical translation issues, this review presents practical tips for improving model validation, data sharing, and incorporation into medicinal chemistry workflows. By examining successes and persistent limitations, this review article offers a strategic roadmap for leveraging AI to provide clinically translatable cancer therapies with enhanced chemical and pharmacological balance.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42504405/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Apr 12, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrated genomic profiling identifies predictive biomarkers for neoadjuvant therapy response in Chinese breast cancer patients.</h2>
+<p class="paper-authors">Xiao-Han Ying, Kun-Yu Zhang, +14 authors, Zhong-Hua Wang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Neoadjuvant therapy (NAT) has emerged as a standard treatment strategy for locally advanced breast cancer (BC), yet robust biomarkers for response prediction remain elusive. Here, we established a real-world NAT cohort of 1161 Chinese BC patients, including 1145 cases with matched clinicopathological data and targeted sequencing, to systematically evaluate genomic features associated with NAT outcomes. We identified both cross-subtype and subtype-specific genomic associations with treatment response. PI3K-pathway alterations emerged as a consistent feature of resistance across subtypes, whereas mutations such as ERBB2 in HER2+ disease and MAP3K1 in triple-negative breast cancer were associated with subtype-specific response patterns. Regimen-level analyses further showed that some genomic associations were treatment-context dependent across chemotherapy-, endocrine-, anti-HER2-, and immunotherapy-containing regimens. Among patients with non-pathological complete response (non-pCR), genomic profiling further refined risk stratification for distant recurrence by revealing subtype-specific prognostic alterations, including TOP3B and SETD2. Furthermore, a machine-learning model integrating genomic and clinicopathological features showed favorable performance for NAT response prediction. Overall, our study provides a comprehensive genomic framework for response prediction and recurrence risk assessment, supporting more precise stratification and biomarker-guided treatment optimization in Asian breast cancer patients.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/41974248/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
