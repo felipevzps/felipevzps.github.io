@@ -29,18 +29,18 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="machine learning, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
+<span class="keyword">bioinformatics, synthetic biology</span>
 <span class="date">Aug 05, 2026</span>
-<span class="journal">PubMed</span>
+<span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrative cfDNA profiling from low-pass whole-genome sequencing enables tissue-of-origin prediction in cancer.</h2>
-<p class="paper-authors">Yunjian Zhang, Liang Liu, +17 authors, Dongyuan Zhu</p>
+<h2 class="paper-title">Hoike: A Joint-Embedding Predictive Architecture for Transcriptome Data Generation with Diffusion Models</h2>
+<p class="paper-authors">Souza, P., Ford, C. T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cancer type classification is challenging due to tumor heterogeneity and undefined tissue of origin (TOO), particularly in cancers of unknown primary (CUP) and multiple primary cancers (MPC). Accurate TOO identification is critical for guiding treatment and prognosis. We developed a stacked ensemble machine learning classifier that integrates 11 multidimensional cfDNA features spanning genomic, fragmentomic, methylation/repeat, and microbial signals. Base models were constructed using five algorithms, including Deep Learning, Distributed Random Forest, Gradient Boosting Machine, Generalized Linear Model, and XGBoost, within a five-fold cross-validation framework, and their predictions were aggregated into a final ensemble optimized for top-1 accuracy. The classifier achieved robust performance across 17 cancer types, with top-1 and top-2 accuracies of 78% and 89% in the training cohort (n = 1,814), and 80% and 90% in an independent validation cohort (n = 1,221). Notably, predictive performance was retained in samples with low tumor fraction (71% top-1, 85% top-2). Sensitivity varied across tumor types, with the highest performance observed in head and neck and colorectal cancers. Among CUP cases, 11 of 15 (73.3%) predictions matched clinically inferred primary sites based on multimodal diagnostics. Feature importance analysis identified nucleosome positioning, fragment size distribution, and repeat elements as key contributors to model performance. Collectively, this cfDNA-based classifier provides a robust and non-invasive approach for accurate cancer type identification and has the potential to support clinical decision-making.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42552276/" target="_blank">
+<p><strong>Abstract:</strong> In biomarker discovery, access to sufficient quantities of condition-specific transcriptomic data is often limited by cohort size, privacy concerns, and domain shift between normal and condition populations. Generative modeling can augment scarce cohorts and probe distributional transitions. Furthermore, synthetic transcriptome generation can support differential expression analyses, machine learning, privacy-preserving data sharing, benchmarking, and hypothesis generation in translational bioinformatics workloads in fields such as oncology. Here, we present Hoike, a framework that combines a cross-domain Joint-Embedding Predictive Architecture (JEPA) with a latent diffusion model to generate condition-specific bulk transcriptomes from a normal reference context. In Hoike, normal tissue profiles provide continuous conditioning signals, while the model learns disease-linked shifts in latent space and reconstructs gene-level expression in log2(TPM+1) space. The implementation supports paired normal-condition training, tissue-aligned conditioning, and constrained non-negative decoding for biologically valid outputs. We describe the architecture, objective design, and evaluation protocol used in this work across GTEx-derived normal references and multiple TCGA condition cohorts as a case study. This serves as the technical specification of the Hoike framework and its reproducible analysis workflow.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.741845v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Explainable HGT-based framework for predicting human dark kinase protein-pathway associations by leveraging BERT-based embeddings and WGAN-GP</h2>
-<p class="paper-authors">Dutta, S., Mitra, P.</p>
+<h2 class="paper-title">FAIRyMAGs - a series of FAIR Galaxy workflows for the generation of metagenome assembled genomes</h2>
+<p class="paper-authors">Zierep, P., Hojat Ansari, M., +7 authors, Batut, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Discovery of pathway associations and druggability can leverage underutililized dark kinase genes for treating complex diseases (proven for cancer and neurodegeneration), boosted with computational methods. Herein, we employ BERT-based embeddings of proteins and pathways (refined via two-stage transformer and heterogeneous graph transformer) and protein-protein and protein-pathway associations- both positive (curated from databases) and negative (generated using Wasserstein Generative Adversarial Networks with gradient penalty) to train XGBoost and lightGBM classifiers for predicting pathways associated to human dark kinase proteins, with important features unveiled through SHAP analysis. All pathways are clustered and proteins related to same pathway clusters are grouped together (via predicted and positive protein-pathway associations). Selected PCOS-related human dark kinase proteins (with high predicted and existent associations to PCOS pathways) are docked with known PCOS drugs for druggability analysis. Our model attains accuracy, F1-score, specificity, MCC, AUROC and AUPRC of 0.9816, 0.9816, 0.9852, 0.9632, 0.9978 and 0.9982 respectively, supersedes existing work, correctly classifies 97.48% of test data, predicts 62225 pathway associations to above proteins, infers functional similarity of 96 such proteins to human protein(s) and traces nine important positive features. Our model can be used to determine varied functionalities and disease relevance of proteins via predicted pathway associations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.30.741784v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Advances in whole-genome sequencing (WGS) technologies have enabled large-scale recovery of metagenome-assembled genomes (MAGs), providing unprecedented insights into microbial diversity across diverse environments. However, the reconstruction of MAGs remains computationally demanding and methodologically complex, requiring the integration of multiple tools for quality control, assembly, binning, refinement, and annotation. Existing workflows often rely on scripting-based implementations, constrain user-driven modification and stepwise execution, and require advanced expertise in high-performance computing (HPC) system administration, thereby limiting accessibility, reproducibility, and adaptability. Here, we present FAIRyMAGs, a Findable, Accessible, Interoperable, and Reusable (FAIR)-compliant, modular pipeline implemented within the Galaxy platform for the generation and analysis of MAGs. FAIRyMAGs consists of six interconnected workflows covering all major steps of MAG reconstruction, including read preprocessing, host and contaminant removal, assembly, binning, dereplication, and downstream taxonomic and functional annotation. The workflows are accompanied by extensive training material, including tutorials, a learning pathway, FAQs, test datasets and video walk-throughs by domain experts, supporting community adaptation. By leveraging Galaxy's graphical interface and federated infrastructure, FAIRyMAGs enables users to execute complex analyses on public or private compute resources without requiring local installation or workflow programming expertise. The modular design further supports flexible adaptation, iterative optimization, and seamless integration of new tools contributed by the community. To demonstrate applicability, FAIRyMAGs was applied to four real-world microbiome datasets spanning various host-associated and environmental systems. These analyses revealed substantial variability in MAG recovery, community complexity, and clustering structure, underscoring the importance of flexible workflows adaptable to dataset-specific characteristics. Overall, FAIRyMAGs provides an accessible, extensible, and reproducible framework for genome-resolved metagenomics, reducing technical barriers and enabling methodological innovation through community-driven development within the adaptable Galaxy ecosystem.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.31.741430v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Pervasive Backdoor Vulnerabilities in Genomic Foundation Models</h2>
-<p class="paper-authors">Ni, S., Wang, Q., +7 authors, Yang, M.</p>
+<h2 class="paper-title">PLMView: collaborative protein language model representations for fast and scalable specialized protein function inference</h2>
+<p class="paper-authors">Pho, V.-S., Bianchi, A. N., +2 authors, Carbone, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Genomic foundation models are increasingly used to interpret and design DNA sequences, yet their susceptibility to training-data manipulation remains poorly understood. Here we systematically evaluate backdoor poisoning across three model families, seven parameter scales ranging from 50 million to 7 billion, and 18 genomic classification tasks. We introduce two complementary 48-nucleotide triggers: a composition-matched synthetic sequence and a biologically grounded trigger derived from transposon terminal inverted repeats. Poisoning 5% of the training data induced high attack success rates across all tested models, with model-level median values ranging from 91.4% to 100%. Increasing parameter scale did not consistently improve resistance, whereas poisoning rate and trigger length had stronger effects on attack efficacy. Performance on unmodified sequences was generally preserved, with 79.4% of model-task-trigger configurations changing by no more than two percentage points, although larger task-specific losses occurred. We further developed a two-stage defense that combines single-nucleotide mutation-sensitivity screening with reference-database validation. Across 28 evaluated configurations, the method achieved 100% precision and a median recall of 92.95%, while localizing the trigger in nearly all detected poisoned sequences. These findings establish training-data poisoning as a pervasive and difficult-to-detect vulnerability in genomic foundation models and motivate stronger data-provenance controls, adversarial evaluation and post-training security auditing.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.30.741642v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The functional classification of protein sequences remains a major bottleneck in biology. Although protein language model (PLM)-based approaches have substantially improved broad protein function prediction, most protein sequences still lack precise annotation at the level of specialized functions--the fine-grained molecular roles that define specificity within protein families. We present PLMView, an unsupervised framework for fine-grained protein function classification directly from sequence. PLMView reframes protein function inference as a relational problem: instead of embedding sequences in isolation, it positions them within a collaborative functional space defined by comparisons with PLM embeddings of anchor sequences, thereby capturing subtle sequence-function relationships. Without requiring labeled data, family-specific training, or PLM fine-tuning, PLMView accurately distinguishes specialized functions among homologous proteins and highlights residues likely to determine functional specificity. The method achieves high precision while remaining computationally efficient, classifying approximately 10,000 sequences with 1,000 anchors in under 40 minutes; compared with pooled-embedding approaches and, in challenging cases, Sequence Similarity Networks, PLMView provides finer and more biologically coherent functional resolution, while achieving more than 10-fold speed-up over SSN reconstruction on datasets of this scale. Applications to thioredoxins, visual opsins, and Tara Oceans environmental diatom cold-shock proteins show that PLMView can move from interpretable residue-level determinants in well-studied protein families to large-scale environmental functional discovery, linking molecular specialization to ecological distribution and transcriptional deployment across the global ocean.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.31.742035v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">BWR-finder: BWT-based de novo interspersed repeat detection for gigantic genomes</h2>
-<p class="paper-authors">Takeda, A., Fukunaga, T., Hamada, M.</p>
+<h2 class="paper-title">Defining the ESKAPE pathogen prophage repertoire with PHORAGER</h2>
+<p class="paper-authors">Dyball, X., Ponsero, A. J., +5 authors, Adriaenssens, E. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> We developed BWR-finder (Burrows--Wheeler transform-based Repeat finder), a new software tool for database-free detection of interspersed repeats in large genomes of tens of gigabases. BWR-finder employs a BWT-based seed-and-extend repeat detection algorithm and parallelized extension computation, improving both runtime and memory usage. In benchmarks using the rice and human genomes, BWR-finder reduced runtime compared with RepeatModeler2, HiTE, and REPrise, and reduced memory usage compared with HiTE and REPrise, while maintaining high nucleotide-level repeat detection sensitivity. BWR-finder also enabled whole-genome repeat detection in genomes larger than 10 Gb and identified candidate repeat regions and repeat consensus sequences in the 20.3-Gb textit{Pleurodeles waltl} genome that were not associated with existing repeat annotations or libraries.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.738468v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Prophages are major drivers of bacterial evolution, mediating horizontal gene transfer and lysogenic conversion to alter host phenotypes. Nevertheless, identifying prophages within bacterial genomes remains challenging due to their heterogeneity and similarity to other mobile genetic elements. Here we present PHORAGER (Prophage Hunting, vOtu Retrieval, Annotation and Genomic ExploRation), a scalable Nextflow pipeline for the standardised identification and quality assessment of prophages from bacterial genomes. PHORAGER incorporates bacterial genome pre-processing, consolidation of predictions from multiple mining tools, annotation-based filtering to reduce false positives, and generation of ready-to-analyse summary tables. We validated PHORAGER using 30,824 publicly available ESKAPE pathogen genomes. PHORAGER recovered more high-quality prophages than individual mining tools alone, and through extensive quality assessments removed a substantial number of false-positive predictions. In total 23,132 putative prophages were identified, the majority belonging to the class Caudoviricetes, and exhibiting a high degree of host-specificity. Putative antimicrobial resistance genes were detected in 0.48% of prophages, whereas virulence factors were most abundant in S.aureus prophages. ESKAPE prophages also frequently encoded anti-phage defence systems. PHORAGER is freely available as open-source software and the ESKAPE prophage collection generated in this study provides a reusable resource for further investigations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.05.742953v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MHChron: diversity-balanced dataset design for robust peptide-MHC binding prediction across MHC class I and II</h2>
-<p class="paper-authors">Chronowska, M., Shrimpton-Phoenix, E., Kluonis, T.</p>
+<h2 class="paper-title">CARS: A General Force Field for Carotenoids</h2>
+<p class="paper-authors">Nikolaev, A., Orlov, Y., +1 author, Gushchin, I.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate prediction of peptide-MHC (pMHC) binding is central to immunogenicity assessment, yet many existing predictors are trained and evaluated on narrow allele sets and restricted peptide-lengths. Here, we present MHChron, a unified pMHC binding prediction framework predicated on systematic data curation, meticulous engineering of dataset balance and diversity, and rigorous evaluation through careful splits controlling for data leakage. We assemble one of the most diverse pMHC training dataset reported to date, integrating publicly available binding data across a broad allele coverage (class I n=214, class II n=98) and peptide length range (from 8 to 36 residues). Using a focused and carefully sampled subset of this dataset, we train complementary sequence-based and structure-aware models and test them under increasingly stringent generalisation regimes. Both models achieve consistently strong performance, outperforming the evaluated state-of-the-art predictors despite being trained on numerically fewer data points. Notably, the structure-aware model did not consistently surpass the sequence-based model, except under the most demanding setting of extrapolation to unseen allele clusters, suggesting that performance gains stem primarily from dataset diversity and rigorous evaluation rather than architectural complexity. Sequence-based MHChron is released with reproducible installation and an automated whole-protein screening pipeline, enabling broad and practical use.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.30.741752v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Carotenoids are structurally diverse isoprenoid pigments that play central roles in photosynthesis, photoprotection, membrane organization, and cellular signaling. Despite their biological and technological importance, atomistic simulations of carotenoids remain limited by the lack of a transferable force field spanning the chemical diversity of naturally occurring compounds, including glycosylated and acylated derivatives. Here we present CARS (CARotenoidS), a transferable force field for carotenoids that integrates seamlessly with the AMBER family of biomolecular force fields. Parameters were systematically optimized against 22 957 r2SCAN-3c reference energies for 25 representative molecular fragments, yielding an accurate description of polyene conformational energetics, ring rotations, and molecular geometries. Across diverse validation sets, CARS substantially outperforms GAFF2 and provides improved agreement with quantum-chemical reference data for glycosylated and acylated carotenoids. For zeaxanthin, CARS also surpasses OPLS-AA, CGenFF, and previously published carotenoid-specific parameters set in reproducing conformational energetics and structural properties. Two complementary parameter sets are provided: CARS for glycosylated and non-lipidated carotenoids, and CARS+Lipid21 for carotenoids containing saturated or monounsaturated lipid chains. By providing the first unified and transferable parameterization covering the structural diversity of natural carotenoids while remaining fully compatible with established AMBER force fields, CARS removes the need for molecule-specific reparameterization and enables reliable molecular simulations of carotenoids in proteins, membranes, and other complex biological assemblies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.31.742033v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Semi-automated annotation refinement accelerates cell type identification in brain spatial and single-cell studies</h2>
-<p class="paper-authors">Acri, D. J., Mustaklem, R., +8 authors, Kim, J.</p>
+<h2 class="paper-title">MEGA-ODE: Learning Biologically Structured and Navigable Continuous Perturbation Dynamics from Sparse Omics</h2>
+<p class="paper-authors">Xiang, Y., Li, Y., +5 authors, Zhou, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.30.741795v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Perturbation-omics experiments usually measure only a subset of molecular feature, intervention and time space, leaving many response trajectories, perturbation effects and disease- or differentiation-associated transitions unobserved. Here we present MEGA-ODE, a graph-constrained continuous-time framework for reconstructing sparse dynamic omics landscapes, predicting unmeasured molecular states and prioritizing virtual perturbations toward defined biological endpoints. MEGA-ODE integrates molecular-network priors, graph neural ordinary differential equations and context-adaptive mixture-of-experts routing. In L1000 transcriptomic perturbations and CPPA proteomic drug-response data, MEGA-ODE improved held-out-feature and unseen-perturbation prediction over baseline methods, and in SARS-CoV-2 infection time-series data it remained competitive for future-time-point forecasting. In a COVID-19 patient cohort, predicted intermediate profiles improved retrospective disease-stage stratification relative to observed profiles alone, while expert programs highlighted immune and inflammatory signals associated with severity. Across the MAPK drug-response and stem-cell differentiation case studies, graph- and expert-level attributions prioritized perturbation-associated MAPK edges, developmental regulators and TF-target relationships supported by independent promoter-proximal ChIP-seq overlap. In hESC-to-definitive-endoderm differentiation, MEGA-ODE prioritized candidate transcription-factor perturbations predicted to shift 12-36 h profiles toward 96 h definitive-endoderm marker signatures, framing trajectory navigation as a concrete hypothesis-generation task. Together, these results support biologically structured continuous-time modeling for prediction, interpretation and virtual-perturbation prioritization from sparse temporal omics data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.05.742921v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">OpenAntigens: a structure-aware database for antigen construct design across the human cell-surface and secreted proteome</h2>
-<p class="paper-authors">Teixeira, A. A. R., Zhu, H., +2 authors, Mills, A.</p>
+<h2 class="paper-title">Beyond point estimates: quantifying predictive uncertainty reveals hidden dimensions of biological age acceleration and improves risk interpretation</h2>
+<p class="paper-authors">Wang, C., Wu, H., +5 authors, Ionita-Laza, I.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Choosing which region of a protein to express remains poorly standardized in antibody discovery, recombinant reagent generation, structural biology and computational binder design. For human cell-surface and secreted proteins, this requires reconciling topology, processing, predicted and experimental structure, modifications, interaction partners, orthologs, paralogs and cross-reactivity risk before ordering DNA. OpenAntigens is a free, no-login database of construct-design reports for 5328 human secreted, GPI-anchored, single-pass and multipass proteins. It integrates UniProt topology, AlphaFold pLDDT and PAE, PDB precedent, InterPro and Pfam domains, mouse and cynomolgus orthologs, paralog and family context, Open Targets disease associations, partner and assembly context, and BLAST searches. It provides 55 305 construct suggestions spanning full design regions, PDB-backed boundaries, annotated domains, pLDDT/PAE-derived regions and membrane-expression options, plus 148 722 sequence-similarity hits to help choose constructs and assess cross-reactivity. For targets with compatible AlphaFold models, the interactive designer links sequence, structure, pLDDT and PAE, allowing users to revise boundaries and export species-equivalent sequences with real-time cysteine and modification warnings. OpenAntigens places reproducible construct suggestions, comparative context and browser editing in one workflow, reducing manual reconciliation across resources. OpenAntigens is available at openantigens.org.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.30.741735v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Biological age estimates are increasingly used to study aging, disease risk, and mortality, yet their predictive uncertainty is rarely quantified. Consequently, conventional age-gap measures can treat deviations as equally informative even when the underlying biological age predictions differ substantially in reliability. We developed a framework for uncertainty-aware biological aging that generates calibrated prediction intervals and individualized probabilities of accelerated or decelerated aging alongside point estimates. We applied this framework to the UK Biobank Pharma Proteomics Project, evaluating three composite and eleven organ-specific biological age clocks. Predictive uncertainty varied substantially both within and across clocks, revealing that apparently extreme age gaps can differ markedly in the strength of evidence supporting accelerated or decelerated aging. In particular, low-accuracy clocks, including many organ-specific clocks, provided little evidence for confidently accelerated or decelerated aging. Beyond biological age gaps, prediction-interval width was independently associated with disease risk and mortality, particularly for composite, brain, and immune clocks, suggesting that predictive uncertainty captures an additional dimension of biological aging that may reflect increased molecular heterogeneity and dysregulation associated with aging and disease. We replicated these findings in Biobank Japan and an independent clinical cohort from Stanford. By incorporating individual-specific predictive uncertainty, our framework provides a more informative characterization of biological aging and enables improved individual-level risk stratification for disease prevention and longitudinal monitoring.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.05.742349v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MAXWELL: Calibrating the probabilistic outputs of protein language models to the mutation-induced stability change landscape</h2>
-<p class="paper-authors">Li, M., Cheng, X., +2 authors, Yu, Y.</p>
+<h2 class="paper-title">LightAlign: a lightweight pairwise aligner for memory-constrained HiFi read assembly</h2>
+<p class="paper-authors">Liu, J., Zhang, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Designing mutations that enhance protein stability is a central goal in protein engineering. However, experimentally screening large numbers of candidate mutations is costly and time-consuming, creating a strong need for computational methods that can identify potentially stabilizing mutations. Among these approaches, protein language models are particularly promising because they learn context-dependent amino acid preferences from large-scale sequence and structure datasets. Nevertheless, most existing stability prediction methods use these models primarily as feature extractors and do not fully exploit the amino acid probability distributions they encode. Here, we introduce MAXWELL (Matrix-wise Landscape Learning), a novel post-training method that calibrates the probabilistic outputs learned by protein language models during pretraining to generate mutational landscapes that quantify the effects of individual amino acid substitutions on protein stability. When applied to ProteinMPNN, MAXWELL yields a state-of-the-art predictor of the effects of protein mutations on stability, outperforming ThermoMPNN and other representative methods on a curated benchmark of experimentally measured stability changes. We next applied MAXWELL to the design of ten single-point mutations in the DhaA dehalogenase, seven of which (70%) increased thermal stability. Among them, G171W showed the largest improvement, with a measured {Delta}T of 4.91 . These experimental results establish MAXWELL as a novel post-training strategy for protein language models and a practical framework for designing stabilizing mutations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.29.741631v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Introduction: Current de novo genome assembly tools often demand substantial memory resources, and their execution typically relies on high-performance computing (HPC) clusters. This dependency limits their use in resource-constrained settings. Furthermore, mainstream third-generation sequencing assembly and alignment tools usually require explicit detection of overlap regions between reads, a process that often entails significant computational and storage overhead. Results: To address this issue, we developed LightAlign, a lightweight alignment tool for HiFi data that innovatively uses sequence-derived fuzzy features and reduces the peak memory usage during overlap detection. Conclusions: When combined with miniasm, LightAlign generated bacterial draft assemblies while maintaining peak memory usage below 1 GB and completed overlap generation for the tested eukaryotic datasets within 1.88 GB RAM.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.30.741934v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,53 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Interpreting Protein Language Models: high attention sites predict functional regions</h2>
-<p class="paper-authors">Pribus, S. J., Altman, R. B., Nayar, G.</p>
+<h2 class="paper-title">Integrated Pangenomic and Systems Biology Analyses Reveal the Genomic Basis of Virulence and Adaptation in Bipolaris sorokiniana</h2>
+<p class="paper-authors">Shukla, A. K., Kadoo, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Computational proteomics has revolutionized biomedical research, guiding targeted experimental exploration to accelerate protein-based mechanistic discovery. Protein Language Models (PLMs) enable scalable, resource-efficient study; through large-scale training on only primary protein sequences, PLMs generate vector representations of protein structure that have been shown to capture biochemical, evolutionary, and structural properties. A core component of PLMs is the attention mechanism, which specifically captures long-range interactions across a protein sequence in attention matrices. Using the Evolutionary Scale Modelling 2 (ESM-2) PLM, we previously developed a novel method to identify "High Attention" (HA) sites. HA sites are specific residues that ESM-2 assigns the most attention to early during encoding. Here, we further characterize these HA sites across structural and functional metrics. Using unsupervised clustering, we find HA sites can be categorized as "structural core", "structural pathogenic", "core pathogenic", or "low-confidence". We further use AlphaMissense pathogenicity predictions and the pan-cancer analysis of whole genomes (PCAWG)-labeled pathogenic variant positions to show that HA sites predict protein regions with high pathogenic risk. Finally, we explore the utility of HA sites for suggesting candidate binding sites, identifying multiple cancer protein examples where HA sites identified regions with previously undiscovered high interaction likelihood and thus potential therapeutic utility. Our work demonstrates the biological interpretability of PLM representations and offers a valuable method to prioritize functionally relevant protein residues for targeted biomedical research.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.29.741641v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Cell-free pathway prototyping enables cost-effective biomanufacturing of 1,2,4-butanetriol at the 1-L scale</h2>
-<p class="paper-authors">Rasor, B., Rhea, K., +11 authors, Jewett, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Biomanufacturing offers sustainable alternatives to chemical synthesis under lower temperatures and pressures than traditional catalytic methods. However, the slow pace and iterative engineering bottlenecks of cell strain development restrict the feasible biological design space. Cell-free systems circumvent these constraints, providing a flexible and high-throughput screening approach to accelerate pathway prototyping and enzyme optimization but are not typically used for manufacturing scale-up. To understand the scalability of cell-free biosynthesis, we establish an end-to-end fully cell-free architecture to discover, develop, and scale the biosynthesis of 1,2,4-butanetriol (BT), a high-value industrial platform chemical. First, we systematically screened ~150 enzymes across the 4-step pathway from xylose to BT to identify highly active homologs for each reaction. Next, we applied statistical Design of Experiments to optimize reaction formulations for cost and titer. Finally, the maximum-titer and minimum-cost formulations were scaled up across five orders of magnitude, from 10-L to 1-L reactions. This resulted in peak volumetric productivities of ~1 g/L/h and yields over 13 g of BT in a single 1-L reaction, with raw substrate costs totaling just $3.00 per liter. This work expands the diversity of enzymes tested for BT synthesis and establishes a blueprint for advancing industrial biochemical manufacturing fully in vitro.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.742631v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">ComBatFamQC: Streamlining Interactive Batch-Effect Diagnostics and Harmonization for Neuroimaging Data in R</h2>
-<p class="paper-authors">Ren, Z., Horwath, E., +6 authors, Shou, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> As multisite and multi-study data aggregation becomes increasingly common for improving statistical power and sample diversity, robust harmonization methods are needed to address biases introduced by batch variation, particularly in neuroimaging research. Although a variety of harmonization approaches are available, the lack of systematic guidance for diagnosing batch effects and selecting appropriate methods remains a major challenge. To address this gap, we introduce ComBatFamQC, a comprehensive R package designed to streamline batch-effect diagnosis, harmonization, and post-harmonization analysis. ComBatFamQC integrates a user-friendly Shiny app for interactive batch-effect diagnostics, state-of-the-art harmonization methods from the ComBat family, including ComBat, longitudinal ComBat, ComBat-GAM, and CovBat, and tools for downstream analysis after harmonization. The package provides qualitative visualizations, statistical tests for batch-effect assessment, and a consistent interface that supports both in-sample and out-of-sample harmonization through the Shiny app, the R console, or the command line. In addition, it includes functions for post-harmonization analyses to facilitate downstream modeling. Its modular design also supports the systematic incorporation of future harmonization methods and expanded downstream analysis capabilities.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.29.741509v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Bipolaris sorokiniana is a hemibiotrophic fungal pathogen responsible for foliar and root diseases of cereals, causing annual yield losses of 10-50%. The recurrent breakdown of host resistance and the emergence of fungicide-resistant pathogen populations underscore the urgent need to understand the genomic mechanisms underpinning pathogen adaptation and virulence. Here, we present the first comprehensive species-wide pangenomic and systems-level analyses of B. sorokiniana based on 19 genomes of globally distributed strains. Orthology-based analyses revealed an open pangenome comprising 16,981 orthogroups, partitioned into a conserved core genome (60.8%) and a highly dynamic accessory genome (39.2%), consisting of soft-core (8.5%), shell (19.7%), and cloud (11.0%) compartments. The core genes were predominantly associated with essential cellular and metabolic functions, while the accessory fractions were enriched in regulatory, stress-responsive, and adaptive processes. Secondary metabolite profiling identified 39-54 biosynthetic gene clusters per genome and revealed a largely conserved metabolic repertoire. Gene family evolution analyses revealed an excess of gene loss over expansion, indicating ongoing genome streamlining and lineage-specific adaptation. The core interactome comprised four densely connected functional communities governing genome maintenance, ribosome biogenesis, cellular bioenergetics, and protein translation. Collectively, this study elevates B. sorokiniana research from single-genome analyses to a population-scale analysis, providing vital insights into the evolutionary architecture of pathogenicity, adaptation, and genome diversification. These findings provide a valuable genomic resource for disease surveillance and functional characterization of virulence determinants, as well as the development of durable resistance strategies and next-generation antifungals for sustainable disease management in cereals.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.31.741966v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Evolutionary Design of Membrane-Lytic Antimicrobial Peptides with Mixture of Experts</h2>
-<p class="paper-authors">Dong, R., Song, C.</p>
+<h2 class="paper-title">VRK1 kinase maintains an undifferentiated proliferative state in neuroblastoma tumor cells</h2>
+<p class="paper-authors">Ojeda-Puertas, M., Gomez Munoz, M. d. l. A., +4 authors, Vega, F. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Antimicrobial peptides (AMPs) hold great promise in combating drug-resistant pathogens, yet current design models do not explicitly account for their primary mode of action, membrane disruption. To address this gap, we propose AMPainterV2, a model that designs membrane-lytic AMPs using generative adversarial imitation learning. AMPainterV2 integrates a Mixture-of-Experts (MoE) policy network to support insertion, deletion, and mutation operations, thereby expanding the evolutionary design space. In vitro experiments demonstrate that all ten top-ranked peptides evolved from random sequences are active membrane-lytic AMPs, with the best candidate achieving a mean minimal inhibitory concentration (MIC) of 1.5 M and superior membrane-lytic activity compared to polymyxin B. Particularly, a deletion-only version of AMPainterV2 enables membrane-lytic AMP miniaturization, yielding six miniaturized peptides with comparable or improved activity and an average 36% length reduction. Collectively, AMPainterV2 advances mechanism-driven AMP design and offers a valuable tool for cost-effective AMP development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.07.29.741660v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Neuroblastoma is a neural crest-derived pediatric malignancy characterized by marked cellular heterogeneity and variable differentiation status. Undifferentiated tumors are associated with aggressive clinical behavior, treatment resistance and poor outcome, highlighting the need to identify molecular mechanisms that sustain tumor cell plasticity and prevent differentiation. Vaccinia-related kinase 1 (VRK1) is a serine/threonine kinase involved in cell-cycle progression, DNA-damage responses and transcriptional regulation, and has previously been associated with neuroblastoma progression. However, its role in the control of neuroblastoma differentiation remains unclear. Here, we investigated the relationship between VRK1 expression, tumor differentiation and stem-like properties in human neuroblastoma. Analysis of patient tumor datasets and tissue microarrays showed that VRK1 expression is enriched in undifferentiated neuroblastoma and stage 4 tumors, and inversely correlates with established differentiation markers, including DDC, NCAM1 and S100B. This association was maintained in MYCN-non-amplified tumors, indicating that the relationship between VRK1 and differentiation is not dependent on MYCN status. Single-cell transcriptomic analyses further demonstrated elevated VRK1 expression in developmentally immature neural crest progenitor and Schwann cell precursor-like populations. Induction of neuronal or mesenchymal differentiation consistently reduced VRK1 expression in neuroblastoma cell lines and patient-derived cells. Conversely, VRK1 silencing promoted differentiation-marker expression, reduced nestin and Ki67 expression, and produced sustained differentiation-associated changes in xenograft tumors. VRK1 was also enriched in tumorsphere cultures that select for undifferentiated stem-like neuroblastoma cells. VRK1 depletion impaired tumorsphere growth, reduced intratumoral proliferation and altered the balance between undifferentiated cells and differentiated progeny, supporting a role for VRK1 in self-renewal and maintenance of progenitor-like tumor cells. Mechanistically, VRK1 expression positively correlated with the core stemness transcription factor SOX2 in neuroblastoma tumor cells. VRK1 knockdown reduced nuclear SOX2 abundance, whereas VRK1 overexpression increased SOX2 protein levels. In addition, analysis of the VRK1 locus identified an active chromatin configuration and potential SOX2-binding sites, consistent with a regulatory relationship between these factors. Together, these findings identify VRK1 as a regulator of the undifferentiated, proliferative and stem-like state in neuroblastoma. The VRK1-SOX2 axis may contribute to stabilizing tumor-cell immaturity and represents a potential target for differentiation based therapeutic strategies in high-risk neuroblastoma.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.05.742965v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -260,34 +222,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 04, 2026</span>
+<span class="date">Aug 05, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Bo-Net: Deep learning-based model for automatic bone stromal cell segmentation of fluorescence microscopy images.</h2>
-<p class="paper-authors">Giorgio Allegri, Luca Pavirani, +7 authors, Eleonora Dondossola</p>
+<h2 class="paper-title">Quantitative magnetic resonance imaging radiomics predicts photoreceptorness status in retinoblastoma.</h2>
+<p class="paper-authors">Christiaan de Bloeme, Robin Jansen, +14 authors, Pim de Graaf</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bone is a multicellular organ that is the site of complex pathophysiological events (such as cancer). 3D confocal and multiphoton microscopy, followed by manual analysis and quantification, allow the identification of molecular, cellular, and tissue mechanisms in their original context, enabling the investigation of spatial biology at subcellular level. The automation of these analyses is becoming increasingly important due to their time-consuming nature, lack of standardization, and inter-subject variability.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42550873/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 04, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Prognostic risk modeling based on integrated multi-omics analysis identifies CRY2 as a key regulator in tumor immunity and patient survival in colorectal cancer.</h2>
-<p class="paper-authors">Yu Guo, Yongbo Zou, Min Wang</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Colorectal cancer (CRC) exhibits substantial metabolic heterogeneity. This study developed a robust prognostic signature integrating ferroptosis- and lipid metabolism-related genes to investigate the role of CRY2 in CRC progression.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42550740/" target="_blank">
+<p><strong>Abstract:</strong> Molecular characteristics of retinoblastoma cannot be assessed before treatment because tumor biopsy is contraindicated. Photoreceptorness reflects photoreceptor-related gene expression and tumor differentiation. Non-invasive imaging biomarkers that capture this biology are therefore needed.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42554833/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
