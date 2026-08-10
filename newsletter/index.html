@@ -32,186 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
+<span class="date">Aug 10, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Inferring disruption of directed graphs using LIKA reveals altered protein phosphorylation networks in schizophrenia</h2>
-<p class="paper-authors">Zhang, L., Demarco, A. G., +3 authors, Roeder, K.</p>
+<h2 class="paper-title">nf-cavalier: A Nextflow Pipeline for Rare Disease Variant Prioritization and Reporting</h2>
+<p class="paper-authors">Munro, J. E., Reid, J., +1 author, Bennett, M. F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Kinases regulate a multitude of protein functions, and their dysregulation is pivotal for many human diseases. Direct measurement of kinase activity, however, is often challenging; therefore, inferring activity from the behavior of their substrates is a widely adopted strategy. Nonetheless, traditional methods typically oversimplify the underlying network, ignoring that any particular substrate can be phosphorylated by multiple kinases. Results: We present LIKA, a likelihood-based framework for inferring kinase activity from phosphoproteomic data. By modeling the many-to-many structure of kinase-substrate interactions, LIKA achieves high efficiency, even with limited data, while capturing network complexity. Simulation and cell line analyses confirm the robustness and accuracy of LIKA. Importantly, analysis of a phosphoproteomic dataset from schizophrenia and control subjects reveals novel dysregulated kinases. Availability and Implementation: The implementation code and publicly available data are provided at: https://github.com/lujingz/LIKA.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743374v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">De novo transformer modeling improves recovery of genetic cell types from sparse single-cell RNA sequencing</h2>
-<p class="paper-authors">Craig, J. M., Mowlaei, M. E., +2 authors, Kumar, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA sequencing (scRNA-seq) simultaneously provides gene-expression profiles and genetic variants from individual cells, creating an opportunity to relate cellular phenotypes to their somatic evolutionary histories. However, delineation of genetic type (GTs) from scRNA-seq remains difficult because most variant positions are unobserved in individual cells and the observed base calls contain substantial false-positive and false-negative errors. We evaluated some existing phylogenetic and imputation methods using one simulated dataset and two empirical tumor datasets. We found that extreme sparsity prevented reliable recovery of known or independently inferred GTs when multiple GTs were present. This led us to adapt the STICI transformer architecture to train a separate model de novo on each sparse cell-variant (CV) matrix. These data-specific models predicted millions of missing bases, greatly reducing matrix sparsity. Phylogenetic analyses of the imputed CV matrices showed substantially improved recovery of GTs in both simulated and empirical datasets. In the empirical dataset, transformer-based analysis also suggested finer-scale genetic structure within some previously reported GTs that was not apparent with the existing methods. These results demonstrate that highly sparse scRNA-seq datasets contain substantially more recoverable lineage information than previously appreciated and that de novo transformer modeling provides an effective approach for recovering much of this hidden information. Nevertheless, sequencing errors persisted, limiting reconstruction of cellular lineage structure and leaving significant room for methodological improvement before expression phenotypes can be examined reliably in the context of their cellular evolutionary relationships.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.742620v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Distribution-Constrained Optimization for Reliable ML-Guided 5'UTR Sequence Design</h2>
-<p class="paper-authors">Yamaguchi, R., Mori, C., Inoue, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The 5' untranslated region (5'UTR) shapes translation initiation, so its design is central to mRNA therapeutics and to improving protein-production cell lines. Deep-learning models that predict translation efficiency, measured as mean ribosome load (MRL), from the 5'UTR sequence have been combined with genetic algorithms (GAs) for sequence optimization. However, optimizing against a model trained on offline data risks reward hacking that exploits the model's estimation error outside the training distribution, yielding sequences that score highly in prediction yet fail to perform in the wet lab. Yet for 5'UTR design, few studies have systematically examined which region should be treated as untrustworthy (the definition of out-of-distribution, OOD) or which constraints keep the search away from it. We present a constrained optimization that keeps candidates within a trust region where the predictor's validated accuracy holds; here "reliable" denotes keeping candidates within the training distribution over which prediction has been validated, not a guarantee of measured performance. As the OOD score, we compare the k-nearest-neighbor (KNN) distance in the predictor's embedding space against a pseudo-perplexity (PPPL) from the encoder and LM head, and show that for nucleotide sequences--whose vocabulary is small--PPPL fails to separate in- vs out-of-distribution, whereas the KNN distance is an effective OOD score that can define a trust region even from unlabeled native UTR sequences. Using the KNN distance as a hard GA constraint keeps all candidates inside the trust region while maintaining predicted MRL: under unconstrained optimization most final-generation candidates (72-96% across seeds) left the trust region (self-KNN p95), whereas the hard constraint holds predicted MRL at the unconstrained level and yields about 4.3x more selectable low-risk candidates than post-hoc filtering of the unconstrained output. Comparing an output extrapolation guard, reference-sequence similarity and structural accessibility (RNAplfold), we find that the guard and the similarity constraint also suppress OOD as a side effect, whereas making accessibility a secondary objective broadens the search without suppressing OOD.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.742388v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DigiAra Computationally Designs Plant Mutants for Resistance to Microbial Infection in Arabidopsis</h2>
-<p class="paper-authors">Bai, T., Cui, S., You, Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Plant breeding is a resource-intensive process that requires repeated cultivation and selection across multiple generations to develop varieties with desirable traits, yet computational tools capable of supporting this process remain limited. Here, we present DigiAra, an AI-based framework for designing Arabidopsis thaliana mutants with targeted traits, particularly enhanced microbial resistance. DigiAra implements an S3 pipeline---simulation, scoring, and screening: it simulates the transcriptional effects of genetic perturbations and microbial infections, scores the predicted responses in terms of relevant traits through biological pathway analysis, and screens candidate perturbations at multiple levels. In doing so, DigiAra enables the computational exploration of the genome-wide effects of genetic perturbations and diverse microbial infections in Arabidopsis. To develop DigiAra, we address two fundamental challenges. Methodologically, we introduce a hybrid architecture that integrates local gene-level interaction modeling with global transcriptional-state modeling to predict perturbation-induced changes in the Arabidopsis transcriptional state. From a data perspective, we establish a standardized pipeline for curating, harmonizing, and processing an integrated Arabidopsis--microbe transcriptional dataset comprising 495 samples from 26 projects. As a result, DigiAra accurately predicts gene-expression changes induced by unobserved genetic perturbations and microbial infections, achieving a Pearson correlation of 0.49. Moreover, it recapitulates the general non-self response (GNSR), a 24-gene program reflecting broad transcriptional reprogramming across bacterial perturbations. In an independent study, the predicted pattern-triggered immunity pathway scores further correlate with bacterial load, with a Pearson correlation of 0.57. Lastly, we deploy DigiAra to identify 27 gene knockouts through genome-wide screening that are predicted to enhance resistance to Pseudomonas syringae pv. tomato DC3000 (Pst DC3000) while limiting growth compromise, 9 of which are supported by published studies. Together, these results establish DigiAra as an effective framework for the computational design of Arabidopsis mutants. We have made our implementation openly available at https://github.com/youlab2025/DigiAra.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743468v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A hierarchical orthology framework reveals viral carbohydrate-active genes across the global virosphere</h2>
-<p class="paper-authors">Meng, L., Zhang, R., +3 authors, Ogata, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Carbohydrate-active enzymes (CAZymes) shape virus-host interactions by modifying virion structures, host surfaces and extracellular glycans. However, the diversity and evolutionary origins of viral carbohydrate-active enzymes remain poorly understood, partly due to limited viral protein annotations. To address this, we present VirGenes, a database of viral orthologous groups constructed from the KEGG viral gene dataset. VirGenes uses a hierarchical framework that integrates sequence similarity, remote homology, and structural similarity to support evolutionary and functional analyses of viral proteins. By screening the sequence space of VirGenes, we identified 558 CAZyme-associated gene clusters spanning 102 CAZyme families, revealing particularly enriched repertoires in dsDNA viral lineages. Two bacteriophage families, Kleczkowskaviridae and Pootjesviridae, encoded more than 10 CAZymes per genome, followed by Mimiviridae, a representative family of eukaryotic giant viruses. Phylogenetic analyses systematically revealed divergent evolutionary histories of viral carbohydrate-active genes, including frequent horizontal transfer of endolysin genes from bacteria, which likely represents a viral strategy in the ongoing evolutionary arms race with their cellular hosts. Within the structural space of VirGenes, a large number of viral genes were found to contain CAZyme-like folds despite more than 85% of them lacking detectable sequence similarity to annotated CAZyme sequences. Notably, numerous hypothetical sequences from giant viruses exhibited glycoside hydrolase-like five-bladed propeller folds. Overall, by integrating sequence, structural and functional evidence, we show that viral carbohydrate-active systems exemplify how distributed innovations, constrained by ancient folds, collectively build the functional complexity of the global virosphere. VirGenes is publicly accessible at https://www.genome.jp/vogdb/.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742344v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Phylogeny-aided detection of contamination in nearly 5 million SARS-CoV-2 genomes</h2>
-<p class="paper-authors">Anoufa, O., Ly-Trong, N., +1 author, De Maio, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Contamination can occur during genome sequencing when a contaminant genome is accidentally mixed with the intended genome to be sequenced. Contamination can lead to incorrect consensus genome calling, disrupting analyses of pathogen evolution and transmission. To investigate the extent of this issue, we developed PhyCD, a phylogeny-aided computational approach to investigate contamination in SARS-CoV-2 genome sequencing data. PhyCD masks consensus genome positions associated with suspicious sequencing read coverage drops, then leverages pandemic-scale phylogenetic placement techniques to identify putative contamination events. Applying PhyCD to nearly 5 million SARS-CoV-2 genomes, we identified 10,942 putative contamination events under conservative parameters. Across the flagged genomes, PhyCD flagged --- and so permits masking of --- a total of 64,753 substitutions that could cause errors in downstream genome data analyses.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743473v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">HANSEN: An Integrated Structural and Functional Proteome Resource for Structure-Guided Drug Discovery in Mycobacterium leprae</h2>
-<p class="paper-authors">Vedithi, S. C., Rees, R., +8 authors, Floto, R. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Structural biology has advanced antimicrobial discovery by enabling drug-target identification and validation and supporting structure-guided inhibitor design. However, Mycobacterium leprae (M. leprae), the obligate intracellular bacillus that causes leprosy (Hansen's disease), remains structurally under-characterised. Only 10 Protein Data Bank (PDB) entries represent seven unique proteins within a proteome encoded by 1,603 protein-coding genes. To address this gap, we present HANSEN (https://hansen-leprosy.medschl.cam.ac.uk/home), an integrated structural and functional resource containing computationally predicted three-dimensional models across the M. leprae proteome. Monomeric and oligomeric models were generated using complementary structure-prediction methods, including AlphaFold 3, Boltz-1, Chai-1, and Boltz-2. Models were annotated with predicted Local Distance Difference Test (pLDDT) scores and Predicted Aligned Error (PAE) values. Ligand-binding pockets were predicted using AF2BIND, P2Rank, and fpocket, and ligands from the best-matching PDB templates were modelled within oligomeric complexes. Residue-level B-cell epitope propensity was estimated using DiscoTope-3.0, and ProteomeLM-derived essentiality scores were calculated for each protein. These features were integrated into a relational web database with interactive visualisation through Mol*. We also ranked all 1,603 proteins using a Target Priority Score ranging from 0 to 100. The score combines ProteomeLM-derived essentiality with pocket and AF2BIND predictions, functional annotations, and Boltz-2-associated measures of model quality and tractability. The essentiality model used a logistic-regression head trained on Mycobacterium tuberculosis (M. tuberculosis) Tn-seq labels. It achieved an AUROC of 0.84 in homology-grouped M. tuberculosis cross-validation and a transfer AUROC of 0.78 against the orthologue-aligned M. leprae reference set. Proteins were assigned to four tiers, ranging from high priority to exploratory candidates. Together, HANSEN provides a practical resource for generating and prioritising experimentally testable hypotheses for M. leprae target discovery and structure-guided drug development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.741541v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">AI semantics for biomedical data integration</h2>
-<p class="paper-authors">McLaughlin, J., Puig-Barbe, A., +13 authors, Parkinson, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Researchers increasingly need to explore hypotheses that span multimodal data across different scales, organisms, and domains. In practice, this requires connecting knowledge across fragmented databases with incompatible APIs and heterogeneous annotation practices. Large language model (LLM) agents can automate this data integration process, but grounding LLM agent outputs in scientifically correct sources of truth remains a significant challenge. Here we describe our deployment of a novel AI semantics workflow using LLM agents to enable scalable data integration, grounded in biological knowledge in the form of ontologies. Our workflow comprises (1) a multi-agent system curating scientific knowledge across ontologies using the Ontology Lookup Service (OLS) as grounding; (2) an LLM embedding service to enable interoperability between scientific databases by mapping ontology terms; and (3) GrEBI, a knowledge graph and Model Context Protocol (MCP) server enabling LLM agents to conduct cross-cutting, multi-omic biomedical queries.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.742514v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Resolving the immune response across clonal cancer evolution in situ with whole transcriptome profiling</h2>
-<p class="paper-authors">Wu, S., Mahajan, M., van der Linde, R. M., +2 authors, Matusiak, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell spatial transcriptomics is now central to studying tumors in their native tissue context. Here we present the first comprehensive, independent evaluation of Atera, a new spatial whole transcriptome platform, compared against Xenium on adjacent sections of human ductal carcinoma in situ (DCIS). We show that Atera enables granular cell-state annotation and resolves rare cell populations, which we experimentally validate by multiplex immunofluorescence (IF). We further show that its transcriptome-wide coverage enables inference of copy-number alterations at single-cell resolution, allowing us to reconstruct the clonal evolution of DCIS. We orthogonally confirm the inferred copy-number alterations by whole-genome sequencing of 16 microdissected tumor regions from a consecutive tissue section. Finally, by mapping the immune microenvironment onto this clonal architecture, we demonstrate the feasibility of tracking the changes in immune response along the clonal tumor evolution in situ. Together, our results establish Atera as a validated platform for tracking clonal evolution and immune adaptation in clinical samples.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.741871v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">RiboRep: Replicate-Aware Cross-Modal Transformers for Codon-Resolved Ribosome Density Prediction</h2>
-<p class="paper-authors">Kuo, A., Yue, Z., +1 author, Chen, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Ribosome profiling enables genome-wide measurement of translation at nucleotide resolution and provides a dynamic view of cellular protein synthesis under diverse biological conditions. Existing computational approaches primarily operate on codon-level representations, potentially losing fine-grained translational signals critical for modeling context-dependent cellular responses. Such predictive translational modeling is increasingly important for emerging biological digital twins, where accurate simulation of molecular-state dynamics is required to characterize cellular adaptation, perturbation response, and phenotype progression. We present RiboRep, a replicate-aware cross-modal transformer for codon-resolved ribosome density prediction. RiboRep jointly models nucleotide-resolution RNA sequences and reference ribosome occupancy signals using dual-stream convolutional encoders, RoPE based self-attention, asymmetric cross-attention, and replicate aware conditioning tokens. Byexplicitly modeling replicate-specific variation and integrating sequence context with experimentally observed translational activity, RiboRep provides a framework for reconstructing and simulating translational states across biological conditions. Across bacterial, yeast, and plant ribosome profiling datasets, RiboRep achieves competitive or improved performance compared with existing baselines, with particularly strong gains on replicate-rich plant datasets. Ablation studies further demonstrate the importance of local codon-aware feature extraction, replicate aware conditioning, and gated readout. Beyond predictive performance, the proposed framework establishes a foundation for translation-aware molecular digital twins capable of modeling ribosome occupancy landscapes, perturbation-induced translational responses, and condition-specific regulatory programs at codon resolution.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.03.742524v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> nf-cavalier is a Nextflow pipeline that automates genomic variant annotation, filtering, and reporting for individuals with rare Mendelian diseases. The pipeline takes as input variant callsets for an individual, family, or rare disease cohort, together with a target gene panel or a phenotype of interest. Variants are then filtered using various customisable criteria, including predicted gene consequence, computational pathogenicity predictions, population frequency, and familial segregation. The sequencing data for candidate variants is then visualised for human review. Candidate variant results are returned in user-friendly output formats, including interactive HTML reports and PowerPoint slide decks, with embedded links to external resources that enable rapid review by clinical research teams. nf-cavalier is maintained on GitHub (bahlolab/nf-cavalier) and licensed under the permissive MIT open-source licence.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743410v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +51,186 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Aug 07, 2026</span>
+<span class="date">Aug 10, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">YAP-TEAD-driven CPA4 promotes NF2-deficient meningioma growth</h2>
-<p class="paper-authors">Mineji, K., Petrosky, K., +10 authors, Hashizume, R.</p>
+<h2 class="paper-title">Siglec-15 is a glyco-immune checkpoint in prostate cancer regulating immune evasion and metastasis</h2>
+<p class="paper-authors">Matthews, N., Zeng, F., +13 authors, Munkley, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Neurofibromin 2 (NF2) deficiency is a driver of meningioma and other cancers, yet transcriptional effectors that sustain NF2-deficient tumors remain poorly defined. We identify carboxypeptidase A4 (CPA4) as an effector of YAP-TEAD signaling in NF2-deficient meningioma. Transcriptomic profiling identified CPA4 as a consistently upregulated effector. Across patient cohorts and specimens, CPA4 expression was enriched in NF2-mutant and chromosome 22q-deleted meningiomas and associated with higher tumor grade and chromosome 1p loss. CPA4 depletion impaired proliferation, disrupted cell-cycle, DNA-replication, and DNA-repair programs, suppressed intracranial tumor growth, and prolonged survival. Integrated epigenomic and functional assays identified CPA4 as a direct YAP-TEAD transcriptional target. CPA4-high meningioma models exhibited preferential sensitivity to YAP-TEAD inhibition, while verteporfin and the clinical-stage TEAD inhibitor VT3989 reduced CPA4 expression, suppressed orthotopic tumor growth, and prolonged survival. These findings uncover a targetable YAP-TEAD-CPA4 dependency in NF2-deficient meningioma and identify CPA4 as a potential biomarker for TEAD-directed therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.05.743013v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Prostate cancer is a leading cause of cancer-related mortality in men, and effective treatment options are limited for advanced and metastatic disease. The sialoglycan immune checkpoint Siglec-15 has emerged as a key mediator of tumour-associated immune suppression in several malignancies; however, its expression and functional role in prostate cancer remain poorly defined. Here, using dual immunofluorescence and immunohistochemistry, we demonstrate that Siglec-15 is expressed by prostate tumour epithelial cells, immunosuppressive macrophage phenotypes, and bone-resorbing osteoclasts within the tumour microenvironment. Mechanistically, we show that direct Siglec-15 receptor crosslinking, either by antibodies or tumour cell-derived conditioned medium, promotes monocyte-to-macrophage differentiation, generating macrophages with immunosuppressive and pathogenic phenotypes. Using therapeutic antibodies, we show that Siglec-15 blockade suppresses supernatant-induced monocyte to macrophage differentiation, allowing for the recovery of CD8 T-cell activation. Furthermore, we reveal that macrophage colony-stimulating factor (M-CSF) driven monocyte-derived macrophage differentiation is partially dependent on Siglec-15 signalling, with Siglec-15 blockade enhancing CD8 T-cell responses. In addition, anti-Siglec-15 treatment suppressed osteoclast differentiation, highlighting a dual role for Siglec-15 in prostate cancer immune suppression and bone remodelling. Consistent with these in vitro findings, therapeutic Siglec-15 blockade significantly reduced subcutaneous tumour growth in a CD8 T-cell-dependent manner and prolonged survival in a mouse model of prostate cancer metastasis. Together, these findings identify Siglec-15 as a central regulator of the prostate cancer glyco-immune axis, linking tumour-associated macrophage immune suppression with osteoclast-mediated bone remodelling, providing a compelling rationale for the clinical development of Siglec-15-targeted therapies for patients with advanced disease.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743480v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">PandaMap: A Python Package for Comprehensive Visualization of Protein-Ligand Interaction Networks</h2>
+<p class="paper-authors">Panda, P. K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Protein-ligand interaction diagrams are a routine part of structural and medicinal chemistry, but the tools that produce them tend to force a choice: comprehensive detection with tabular output, publication-quality figures behind a licence, or a scripting environment that assumes expertise. PandaMap Protein AND ligAnd interaction MAPper is an open-source Python package that produces a 2D interaction diagram, an interactive 3D viewer, a text report, a machine-readable CSV, and a four-panel graphical summary from a single command. It reads PDB, mmCIF and PDBQT files, detects 15 interaction classes using crystallographically validated distance thresholds, and depends only on NumPy, Matplotlib, BioPython and Requests; RDKit improves the 2D ligand layout when present but is not required. Hydrogen bonds are filtered on the true D--H-A angle when the structure contains explicit hydrogens, matching PLIP's 100 criterion on the same evidence, and on distance alone otherwise, with the provenance of each measurement recorded. We benchmarked the package on three complexes chosen for different chemistry: enolase with a phosphonate transition-state analogue (PDB 1ELS), the EGFR kinase with erlotinib (1M17), and aldose reductase with IDD594 (1US0). PandaMap recovers the contacts these structures are known for, including the EGFR hinge hydrogen bond to MET769 and the IDD594 bromine THR113 halogen bond, both at distances identical to PLIP's. All detection thresholds, scoring weights and the exact commands used are given in the Supplementary Information, and the release carries a regression suite covering each interaction class. PandaMap 4.3.0 is available on PyPI under the MIT licence.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743421v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">FOCUS: end-to-end preprocessing, alignment and resolution-matched integration of spatial multi-omics data</h2>
+<p class="paper-authors">Venturelli, L., Jacobs, J., Sifrim, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Integrating spatial multi-omics data requires coordinated preprocessing, cross-modality alignment and feature registration across modalities that differ in file format, coordinate system and spatial resolution. No existing tool addresses this pipeline end-to-end from raw experimental files till aligned data object. We present FOCUS, an open-source Python package that takes raw data from spatial transcriptomics, mass spectrometry imaging, Raman spectroscopy imaging and brightfield or fluorescence microscopy through modality-specific preprocessing, interactive spatial alignment and resolution-matching registration to a unified MuData object, driven by a single configuration file. Its modular, registry-based architecture allows straightforward extension to additional modalities. FOCUS is accessible via a command-line interface, a browser-based GUI and a Python API.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742705v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A Framework for Benchmarking Pathway Reconstruction Algorithms</h2>
+<p class="paper-authors">Talluri, N., Figueroa-Reid, T., +19 authors, Gitter, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cells coordinate diverse biological processes through interactions among thousands of molecules, but mapping these interactions comprehensively and systematically remains an open problem. Pathway reconstruction algorithms address this problem by linking molecules of interest, identified from high-throughput omics experiments, using prior knowledge encoded as background interaction networks. This process recovers intermediate molecules and interactions that were not directly measured in the experimental data but plausibly connect the observed molecules. It generates testable hypotheses about interactions that drive cell behavior and informs the choice of follow-up experiments. Many algorithms have been created over decades, each optimizing different computational objectives and relying on different assumptions. The resulting heterogeneity has made benchmarking challenging, limiting systematic comparisons. Therefore, selecting an algorithm for a given biological context remains a non-trivial and poorly informed task. This registered report presents a large-scale benchmark of pathway reconstruction algorithms, evaluating 14 algorithms across 822 datasets from four biological settings. To enable this benchmark, we introduce Signaling Pathway Reconstruction Analysis Streamliner (SPRAS), which standardizes algorithm inputs, outputs, and execution into a formal framework, enabling systematic comparison that was previously infeasible. We will assess each algorithm on reconstruction performance against gold standard pathways, algorithm similarity, and computational performance across different biological contexts. Together, these evaluations will provide quantitative evidence for understanding pathway reconstruction algorithm behavior and guiding algorithm selection.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742550v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Mandatory use of mock communities highlighted by the descriptive comparison of Epi2Me 16S and EMU bioinformatic workflows for full-length 16S rRNA Nanopore sequencing.</h2>
+<p class="paper-authors">Shedleur-Bourguignon, F., Theriault, W. P., Thibodeau, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Abstract Full-length 16S rRNA gene sequencing using Oxford Nanopore Technologies has emerged as a promising approach to improve species-level resolution in microbiota studies. However, the accuracy of taxonomic assignment remains highly dependent on the bioinformatics s used to process Nanopore long-read data. Therefore, the only way to ensure a good level of certainty in obtained results is to use positive controls in the form of mock communities in the experimental designs. In this study, we compared the performance of Epi2Me 16S (using Minimap2 or Kraken2) workflows provided by Oxford Nanopore Technologies and an EMU workflow for full-length 16S rRNA gene analysis. Using a commercial mock community sequenced across multiple Nanopore runs, taxonomic assignment accuracy and reproducibility was evaluated. Epi2Me-Kraken2 exhibited 18 % of incorrect genus-level assignments and failed to identify 3 species present in the mock community. While Epi2Me-Minimap2 achieved an excellent genus-level classification, reporting 9 % of sequences assigned to a genus not in the mock community, species-level assignments were inconsistent for several community members such as Listeria. In contrast, EMU provided accurate and consistent species-level taxonomic profiles, with all species correctly identified while keeping the number of genus absent from the mock community at 1.2%. Importance These results highlight that Epi2Me integrated workflows are not the best option for specie-level taxonomic assignation. More importantly, this paper underscores the importance of routine inclusion of positive controls for microbiota studies, in the form of mock communities, as a critical safeguard for accurate data interpretation. Without the use of a mock community, a paper published would be at risk of reporting wrong observations and inaccurate conclusions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742759v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">PanGBank: a large-scale resource of precomputed microbial pangenomes built with PPanGGOLiN</h2>
+<p class="paper-authors">Mainguy, J., Lemane, T., +5 authors, Vallenet, D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> PanGBank (https://pangbank.genoscope.cns.fr) is a comprehensive open-access database providing precomputed prokaryotic pangenomes at a broad taxonomic scale. Built upon PPanGGOLiN partitioned pangenome graphs, PanGBank addresses the growing need for large-scale comparative genomics through a standardized, regularly updated, and fully accessible resource. The initial release comprises two complementary collections covering more than 4,600 prokaryotic species from the Genome Taxonomy Database (GTDB), encompassing over 393,000 genomes: GTDB_all, maximizing taxonomic and environmental diversity through the inclusion of MAGs and SAGs, and GTDB_refseq, focusing on high-quality, annotation-rich genomes. Each species-level pangenome integrates graph-based statistical partitions into persistent, shell, and cloud gene families, together with regions of genomic plasticity (panRGP) and co-localized functional modules (panModule). PanGBank offers multiple access modes, including a REST API, a command-line interface (PanGBank-cli), and an interactive web interface. By combining large-scale pangenome resources with advanced graph-based analyses, PanGBank provides a scalable framework for exploring microbial diversity, genome evolution, functional variation, and the dissemination of adaptive traits across prokaryotic populations, as illustrated by a use case on Acinetobacter baumannii pangenome investigating the distribution and evolution of antimicrobial resistance determinants.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.05.742796v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A map of human protein-protein interaction embeddings for functional discovery</h2>
+<p class="paper-authors">Cihan, M., Distler, U., Andrade-Navarro, M. A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> A protein's function depends not just on its own structure and localization, but also on the interactions with its partners. Many proteins are therefore better described by a set of partner-dependent roles than by a single annotation. Yet most approaches to the functional interpretation of protein-protein interactions (PPIs) remain protein or set-centric. They rely on pre-existing annotations, and perform worst where knowledge is sparse. Here, we present MAPPIE (Map of Protein-Protein Interaction Embeddings), a method that treats each PPI, rather than each protein, as a unit of representation. From 199,137 human interactions spanning 15,503 proteins, we build a two-dimensional map of the human PPI landscape for functional discovery. Protein language model embeddings for two protein interaction partners are combined and compressed into a latent space, with model selection guided by domain-domain interactions used as a structural proxy for interaction similarity. The resulting geometry separates domain defined interaction classes, organizes disorder associated interactions spatially, and splits interactions involving the same protein by partner. A query PPI's latent neighbourhood recovers its own annotated functions across molecular, complex, pathway, and biological processes. MAPPIE contributes most where existing functional evidence is weakest, outperforming interactome and sequence identity baselines for sparsely connected interactions. MAPPIE neighbours of query PPIs are enriched for partners in independent protein networks, recovering curated complex-level function even when subunits are spread across the map. Applied to a human dark interactome, MAPPIE assigns specific, experimentally supported functions to dark hub proteins.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743440v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A distribution-aware and functionally relevant novel framework for generation and discovery of bioactive peptides</h2>
+<p class="paper-authors">Abhigyan, R., Sood, V., +1 author, Kaur, B.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Recent advances in artificial intelligence have accelerated the discovery of bioactive peptides by enabling computational exploration of the vast peptide sequence space. However, existing peptide generation approaches generally rely on either distribution-learning models, which generate biologically realistic sequences but do not consistently optimize functional activity, or optimization based methods, which maximize prediction confidence while often deviating from the underlying distribution of experimentally validated peptides. To address this limitation, a two-phase generative evolutionary framework is proposed that integrates distribution learning with evolutionary optimization. In the first phase, Variational Autoencoders (VAE), Autoregressive Transformers (ART), and Token Diffusion Transformers (TDT) are used to generate biologically plausible seed peptides. In the second phase, these peptides were used as initial seed for Hill Climbing optimization procedure that iteratively improves fitness function score. The proposed two-phase framework was evaluated using a dataset of experimentally validated IL2 inducing peptides. Evaluation using independent IL2 prediction models showed that Autoregressive Transformer combined with Hill Climbing achieved the best overall performance, achieving the mean IL2 induction confidence score of 0.96 while reducing KL divergence from 2.26 for standalone Hill Climbing to 0.75. A case study on an independent IL13 inducing peptide dataset showed similar trends, with ART initialized Hill Climbing achieving the mean IL13 induction score of 0.99 while reducing KL divergence from 1.76 to 0.59. Overall, the framework provides a generalizable approach for balancing functional optimization and distributional realism and can be applied to peptide discovery and data augmentation in imbalanced biological datasets thereby generating high confidence peptides for wet lab validation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742799v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A generative model for dimensionality reduction with millions of features and few samples</h2>
+<p class="paper-authors">Pancotti, C., Fariselli, P., +1 author, Krogh, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> In this paper, we demonstrate that it is feasible to train a deep generative model for dimensionality reduction with millions of features using relatively few samples, making this type of generative model a more versatile alternative to standard dimensionality reduction methods. Specifically, we hypothesize that, for a decoder-only model, the number of training samples required is almost independent of feature dimensionality across most network architectures. Through an extensive set of experiments on synthetic nonlinear data, we validate this hypothesis. We further train the model on a downsampled version of the 1000 Genomes Project (1KGP) dataset to assess its behavior under controlled reductions in sample size. Finally, we train a Deep Generative Decoder (DGD) on a curated dataset from the International Cancer Genome Consortium (ICGC) containing 4.4 million features, using approximately 4,000 training samples and 1,000 test samples. The resulting latent representation exhibits clear clustering and, when compared at the same latent dimensionality, outperforms PCA and variational autoencoders (VAEs) for tumor type classification. In addition, the DGD is computationally efficient and can be trained on a single 16 GB GPU. The implementation is available at https://github.com/cpancott/ReceptiveDGD.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742788v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Scop3P-Toolkit: executable structure-aware workflows linking PTMs, peptides, and mutations to protein function</h2>
+<p class="paper-authors">Diaz, A., Tichshenko, N., +5 authors, Ramasamy, P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Post-translational modifications (PTMs) and genetic variants regulate protein function, signalling, and disease, but their interpretation requires integration of sequence annotations with structural, interaction, and biophysical context. Although resources such as Scop3P, UniProt, the Protein Data Bank, and AlphaFold provide extensive annotations and structural information, integrating these data into reproducible structure-aware analyses still requires custom scripting and manual coordination between multiple independent tools. To address this challenge, we developed Scop3P-Toolkit, an open-source executable analytical environment for interactive analysis of PTMs, mutations, and proteomics-derived peptides in their structural context. The toolkit integrates protein annotation retrieval with structural mapping, residue interaction network analysis, comparative structural analysis, and residue-level biophysical profiling within a unified framework. Experimentally supported phosphosites, phosphopeptides, and phosphoproteomics evidence are provided for human proteins through Scop3P, with optional integration of curated UniProt PTM annotations. UniProt-derived PTMs, sequence features, and genetic variants are available for proteins from any species, extending the framework beyond the human phosphoproteome. Scop3P-Toolkit supports structure-centric analyses including interpretation of PTMs and disease-associated variants, analysis of residue interaction networks and their rewiring across alternative conformations, structural localisation of peptides, and exploration of protein-protein, protein-ligand, and host-pathogen interfaces. Interactive visualisation links sequence annotations, three-dimensional structures, residue interaction networks, and biophysical profiles, enabling coordinated exploration across multiple molecular representations. The toolkit is distributed as Jupyter notebooks, browser-based Voila applications, and a Galaxy interactive tool, providing transparent, accessible, and reproducible workflows for both computational and experimental researchers. By integrating biological annotation resources into executable, structure-aware workflows, Scop3P-Toolkit enables reproducible interpretation of PTMs, mutations, and proteomics data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.742789v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,91 +241,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 07, 2026</span>
+<span class="date">Aug 09, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Urinary volatilomics using liquid-liquid extraction and gas chromatography-mass spectrometry (GC-MS) combined with machine learning algorithms as a tool for diagnosis and surveillance of urothelial bladder cancer.</h2>
-<p class="paper-authors">Ignacio Deza, Ben de Lacy Costello, +4 authors, Chris Probert</p>
+<h2 class="paper-title">The molecular landscape of chordoma: Current frontiers from multi-omics to artificial intelligence.</h2>
+<p class="paper-authors">Didem Tecimel, Didem Seven, Uğur Türe, Ömer Faruk Bayrak</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Bladder cancer is the 11th most common cancer in the United Kingdom, with approximately 10,500 new cases annually. Diagnosis and surveillance typically involve cystoscopy, an expensive, time-consuming, and uncomfortable procedure which has encouraged efforts to identify biomarkers, particularly in urine, given its direct contact with malignant tissue.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42567887/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Human-AI Interaction With AI-Assisted Tumor Overlays in Pediatric Whole-Body Magnetic Resonance Imaging: Exploratory Reader Study.</h2>
-<p class="paper-authors">Abhishek Moturu, Olurotimi Komolafe, +2 authors, Anna Goldenberg</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> AI tools have the potential to enhance personalized clinical care, particularly in radiology. However, their integration into clinical workflows remains complex, especially in pediatric oncology, where early cancer detection is critical. Children with Li-Fraumeni syndrome (LFS), a rare cancer predisposition disorder, undergo regular surveillance whole-body magnetic resonance imaging (wbMRI), which presents an opportunity for AI-assisted tumor detection.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42567688/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">An Explanatory Deep Learning Pipeline for the Prediction and Visualization of Spatially Resolved Biomarker Expression in Triple-Negative Breast Cancer.</h2>
-<p class="paper-authors">Vibha R Rao, Madhumala K Sadanandappa, +8 authors, Shrey S Sukhadia</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Histopathologic evaluation remains central to cancer diagnosis and treatment planning, yet the molecular programs underlying distinct tissue morphologies aren't routinely accessible in clinical workflows. Spatial transcriptomic/proteomic platforms provide region-specific molecular measurements but are limited by cost, throughput, and scalability. Most computational pathology models rely on either bulk tissue-based gene expression or a focused gene/protein expression-panel prediction, thereby obscuring subregion-specific morpho-molecular relationships and limiting spatial interpretation of a wider gene/protein expression network. This limitation is particularly significant in triple-negative breast cancer (TNBC), which exhibits pronounced spatial heterogeneity across tumor, stroma, and immune compartments. We developed X-SPATIO, a spatially compatible computational pipeline designed to directly link hematoxylin and eosin (H&amp;E) morphology with region-matched mRNA and protein expression. The model was trained on H&amp;E-defined regions of interest paired with spatially-resolved omics data obtained from GeoMx Digital Spatial Profiling. Using a multiple-instance learning approach, X-SPATIO captures morpho-molecular associations, generating spatio-morphologic attention maps that indicate predictive tissue regions. X-SPATIO demonstrated strong performance across biologically relevant spatial biomarkers, achieving area under the curve values ranging from 0.79-0.97. Attention maps revealed spatial patterns consistent with known biology, indicating alignment between learned features and tissue organization. By integrating spatial molecular ground truth with routine histopathology, X-SPATIO enables cost-effective inference of spatial biomarker expression and establishes a foundation for biologically grounded discovery and precision oncology in TNBC.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42567444/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">scXpand: Pan-cancer detection of T cell clonal expansion from single-cell RNA sequencing without paired single-cell TCR sequencing.</h2>
-<p class="paper-authors">Ofir Shorer, Ron Amit, Keren Yizhak</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Advances in single-cell sequencing have enabled detailed characterization of T cell clonal dynamics in cancer. However, analyses aiming to link the transcriptional landscape to T cell clonality remain limited by confounding factors unequally controlled in different studies. To address this challenge, we developed scXpand, a machine-learning framework for pan-cancer detection of T cell clonal expansion directly from single-cell RNA sequencing (scRNA-seq), without paired T cell receptor (TCR) sequencing. Trained and tested using our in-house-constructed human pan-cancer database of paired scRNA/TCR-seq profiles from 2.6 million T cells, scXpand demonstrates robust and accurate detection of clonal expansion across tissues and T cell subtypes. Applied to datasets lacking TCR sequencing, scXpand predictions correspond with known characteristics of the tumor microenvironment. Overall, scXpand provides a framework for detecting T cell clonal expansion across cancers directly from scRNA-seq, enabling broad use on datasets lacking scTCR-seq, while supporting scalable, memory-efficient processing, including pre-trained models with user-friendly documentation for flexible applications.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42567166/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 07, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Artificial Intelligence-Driven Multiomics Integration in Lung Cancer: From Data Convergence to Precision Phenomics.</h2>
-<p class="paper-authors">Sanjukta Dasgupta, Debapriya De</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Lung cancer remains a leading cause of cancer-related mortality worldwide due to its extensive molecular heterogeneity, late-stage diagnosis, and therapeutic resistance. Advances in high-throughput omics technologies have enabled comprehensive characterization of tumors across multiple biological layers, including genomics, epigenomics, transcriptomics, proteomics, and metabolomics. However, single-omics analyses provide only fragmented insights into tumor biology, highlighting the need for integrative multiomics approaches. Artificial intelligence (AI), particularly machine learning and deep learning, has emerged as a powerful tool for integrating heterogeneous datasets and uncovering biologically and clinically relevant patterns. This review summarizes recent advances in AI-driven multiomics integration for lung cancer, highlighting its applications in molecular subtyping, biomarker discovery, prognosis prediction, therapeutic response modeling, and precision oncology. We also discuss current challenges, including data heterogeneity, model interpretability, reproducibility, and clinical translation, together with emerging strategies for integrating multimodal data such as radiomics and digital pathology. Finally, we introduce precision phenomics as a unifying framework that links molecular, spatial, functional, and clinical characteristics of tumors to support personalized cancer management. Collectively, AI-driven multiomics integration has the potential to transform lung cancer research and improve patient outcomes.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42566262/" target="_blank">
+<p><strong>Abstract:</strong> Chordoma is a rare and aggressive malignant bone tumor of the axial skeleton that has historically challenged clinicians due to its complex anatomical locations and a high recurrence rate of up to 85%. This review synthesizes the most recent advances in chordoma research and offers an overview of how multi-omics, advanced immunology, and artificial intelligence are reshaping the treatment paradigm. Central to its pathogenesis is the T-box transcription factor Brachyury, which this review highlights as both the pathognomonic diagnostic marker and the primary therapeutic vulnerability. Cutting-edge innovations targeting this driver include covalent small-molecule binders, targeted protein degradation, and peptide-centric CAR-T cells designed to attack the intracellular oncoprotein. The tumor immune microenvironment is functionally dynamic, and new dimensions in cellular therapy, such as dual-specific CAR constructs and NK-cell platforms, are being engineered to neutralize immunosuppressive factors. Beyond biological insights, the review emphasizes the role of computational biology, specifically how deep-learning and machine-learning models achieve expert-level precision in tumor segmentation and personalized survival forecasting. By integrating genomic, transcriptomic, epigenomic, and proteomic data, multiomics approaches can fully elucidate chordoma subtypes and underlying resistance mechanisms, ultimately paving the way for more precise and personalized therapeutic strategies.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42571860/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
