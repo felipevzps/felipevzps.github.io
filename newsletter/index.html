@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Guided AI Framework for Customizable and Efficient Harmonisation to the OMOP Common Data Model</h2>
-<p class="paper-authors">Nehra, N., Swami, R., +6 authors, Jha, A. K.</p>
+<h2 class="paper-title">Peptide-HLA II interaction prediction for post-translationally modified peptides</h2>
+<p class="paper-authors">Dumitrescu, A., Korpela, D., +8 authors, Xavier, R. J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Getting clinical data from different sources to "talk" to each other within the OMOP Common Data Model (CDM) is arguably the most tedious part of multi-center research. While this integration is essential, the transformation process is frequently a manual grind, requiring a rare overlap of deep clinical knowledge and technical expertise. In this paper, we present a framework designed to alleviate some of the burden on the researcher by automating data harmonization through two distinct steps: structural schema mapping and terminological standardization. For the structural piece, we moved away from "black box" logic in favor of a stateful workflow managed by large language models (LLMs) and directed acyclic graphs. By profiling EHR data at the source, our system generates context-aware dictionaries that offer ranked mapping suggestionsalongside confidence scores. While our benchmarking showed a 97.5% agreement rate at the schema level and an 84% agreement rate at the value level when compared with human experts, the system appears most effective when treated as a "co-pilot" rather than a total replacement for human oversight. To handle value-level standardization, we implemented a hybrid search strategy that pairs the semantic depth of SapBERT embeddings with the literal precision of fuzzy string matching. By using FAISS for rapid similarity retrieval, the engine attempts to resolve messy or "noisy" clinical descriptionsto standard OMOP concepts. This approach seems particularly promising for handling the non- standardized labels that often plague smaller, local datasets. Ultimately, our results suggest that this guided approach can shift the timeline for OHDSI-compliant warehousing from weeks of manual curation to a more manageable and scalable pipeline, potentially lowering the barrier to entry for smaller research teams.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.742453v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> CD4+ T cells recognize peptides presented by human leukocyte antigen (HLA) II, implementing a fundamental mediation mechanism of the adaptive immune system. Although post-translational modifications (PTMs) alter immune responses, PTM-peptide-HLA interaction prediction remains challenging due to data scarcity resulting from substoichiometric levels of PTMs. To overcome this, we developed PepChem, a deep learning model utilizing novel, molecular-level peptide representations that enable predictions for sidechain modifications. Using monoallelic datasets that we reanalyze for PTMs of interest, we show accurate predictions on PTMs that were unseen during training. Furthermore, we introduce a novel training protocol that improves PTM-peptide generalization compared to conventional methods. We predict and experimentally validate citrullination-induced binding increase of rheumatoid arthritis (RA)-linked peptides to HLA II risk allele DRB1*04:01. This framework bridges the critical gap in PTM-aware immune recognition prediction, with immediate applications in autoimmunity, cancer, and infectious disease.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743493v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A comprehensive benchmark of transcriptome-wide fusion detection using long-read RNA sequencing</h2>
-<p class="paper-authors">Dorney, R., Wu, S., +2 authors, Schmitz, U.</p>
+<h2 class="paper-title">Extracting deep learning based morphology segmentation footprint for boar sperm cells</h2>
+<p class="paper-authors">Park, J., Ratka, M., +3 authors, Sarkar, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Fusion transcripts contribute to cancer, inherited diseases, developmental disorders, and evolution. Long-read RNA sequencing enables direct sequencing of full-length transcripts, creating new opportunities to detect complex fusion architectures, including previously inaccessible multi-segmented fusion transcripts. However, accurate transcriptome-wide fusion detection remains challenging because existing methods struggle to distinguish genuine fusion events from technical artefacts. Here, we present a comprehensive benchmark of transcriptome-wide fusion detection using simulated datasets and transcriptomes from three cancer cell lines across Oxford Nanopore Technologies (ONT) cDNA, PCR-cDNA, and direct RNA sequencing, Pacific Biosciences (PacBio) Kinnex sequencing, Illumina short-read RNA sequencing, six long-read fusion callers, and multiple analysis strategies. False-positive fusion calls remained the dominant limitation across sequencing platforms and algorithms. Increasing sequencing depth improved recall but also amplified spurious fusion calls, whereas higher read-support thresholds improved precision at the expense of sensitivity. ONT PCR-cDNA sequencing combined with CTAT-LR-Fusion achieved the best overall balance between precision and recall, whereas JAFFAL was the only caller to reliably identify simulated tri-gene fusions. Consensus calling reduced false positives but markedly reduced sensitivity, with only one of 400 simulated fusions detected by all six callers. Breakpoint localisation emerged as a major limitation across all methods. Long-read sequencing consistently recovered more validated fusion transcripts than short-read sequencing, enabled detection of complex tri-gene fusions, and produced more biologically plausible fusion landscapes with fewer promiscuous gene partners. Collectively, our results establish the first comprehensive benchmarking framework for transcriptome-wide fusion detection, using long-read RNA sequencing, and provide practical guidance for selecting sequencing workflows and computational strategies, while identifying key priorities for future algorithm development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743439v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Reliable delineation of the head and tail of swine spermatozoa supports automated assessment of boar semen quality, from morphometric measurement to the quality control of insemination doses. In practice this relies on fluorescent staining, which adds chemistry, cost, and delay to every acquisition and labels only the nucleus. Recent work coupling imaging flow cytometry with machine learning has advanced rapidly, yet the segmentation stage still depends on a stained channel at inference and resolves the head alone. We present a supervised encoder decoder network that segments boar spermatozoa from brightfield images acquired on an Amnis ImageStream Mark II with no stain at inference. Training labels derive from the Hoechst 33342 nuclear channel (Ch7), recorded in registration with brightfield (Ch1); the dye serves only as an annotation source, and the network sees Ch1 alone. The best semantic segmentation model reaches a Dice coefficient of 0.940 on held-out cells. For comparison we evaluate a classical morphological pipeline, four further semantic segmentation models spanning three decoder families and two ImageNet-pretrained backbones, and two zero-shot pipelines built on the Segment Anything Model 2 (SAM 2), prompted either by a dilated box around the predicted head mask or by head and tail boxes emitted by a Gemma 4 Vision Language Model (VLM). The zero-shot route scores 0.637 against Ch7 but labels the tail, which the fluorescence protocol cannot. Cells scoring worst under the supervised model proved to be mostly registration failures rather than segmentation failures, as Ch7 is displaced relative to Ch1. Manual screening for this drift is infeasible at dataset scale, so we propose a flagging system that marks any Dice below 0.792, two standard deviations below the mean, and pairs it with a zero-shot pipeline in which a VLM l and SAM 2 cross-check the flagged cell before human review.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743571v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Engineering growth-coupled metabolic biosensors for disease prognosis and diagnosis using full growth trajectories</h2>
-<p class="paper-authors">Ahavi, P., Hoang, T.-N.-A., +3 authors, Faulon, J.-L.</p>
+<h2 class="paper-title">Programmable genetic control of tumor-colonizing Bifidobacterium longum for intratumoral therapeutic delivery and biocontainment</h2>
+<p class="paper-authors">Lee, J., Glazier, J., +1 author, Mimee, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Although metabolomics has shown considerable promise for biomarker discovery, and the development of diagnostic and prognostic applications, its translation into routine clinical practice remains limited by analytical complexity, cost, throughput, and standardization challenges. These limitations underscore the need for complementary tools, particularly in resource-limited settings. In this study, we developed a workflow for the engineering and characterization of growth-coupled metabolic sensors capable of disease detection (healthy vs. infected) and outcome prediction (mild vs. severe), which we illustrated using COVID-19 as a proof-of-concept application. We first generated a biomarker-guided library of 34 candidate sensors leveraging both auxotrophic phenotypes and less stringent metabolic dependencies. We then screened the library against patient plasma pools, identifying 19 sensor candidates with diagnostic and/or prognostic potential, including 14 with prognostic potential. Lastly, a selected subset of candidates was further evaluated on a patient cohort using two newly developed analytical frameworks designed to extract additional information from bacterial growth curves. The best-performing sensors achieved a balanced accuracy of 0.88 {+/-} 0.06 for prognostic prediction (outer-test AUC = 0.89, 5-fold cross-validation, n = 37) and 1.00 for diagnostic classification (outer-test AUC = 1.00, 5-fold cross-validation, n = 56). Collectively, these findings establish a proof of concept for translating disease-associated plasmatic metabolic signatures into low-cost, growth-coupled biosensors with diagnostic and prognostic capabilities.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740108v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Engineered bacteria offer a distinct modality for cancer therapy by exploiting the ability of certain species to colonize tumors and deliver therapeutic payloads. Improving their efficacy and safety requires control over bacterial activity after tumor colonization, yet few microbial chassis permit it. Bifidobacterium longum, a probiotic with intrinsic tumor-targeting and antitumor activity, is a promising chassis but lacks such control. Here, we develop a genetic control system that regulates B. longum activity within tumors, from gene expression to bacterial abundance. A human-isolate-derived replicon supports plasmid maintenance without antibiotic selection, and promoter and ribosome-binding-site libraries provide ~150-fold and ~48-fold expression ranges, respectively. Signal peptides enable secretion of structurally diverse therapeutic payloads and B. longum secreting CCL21 or an anti-PD-L1 nanobody reduces tumor growth relative to PBS controls. Anhydrotetracycline delivered in drinking water induces transgene expression in tumor-resident bacteria and reduces intratumoral bacterial load through CRISPRi targeting essential genes. Together, these results establish a tumor-homing probiotic as an externally controllable therapeutic chassis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.744520v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Qombucha: Reconstructing unobserved progenitor methylation profiles reveals distinct developmental programs in glioblastoma</h2>
-<p class="paper-authors">Li, X. C., Lalchungnunga, H., +9 authors, Sahinalp, S. C.</p>
+<h2 class="paper-title">Active Learning Enables Efficient Directed Evolution of a Far-Red Fluorescent Protein with Minimal Experimental Data</h2>
+<p class="paper-authors">Brown, D. V., Cross, R. S., +5 authors, Bowden, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Glioblastoma (GBM) is a highly aggressive brain cancer characterized by substantial intratumoral heterogeneity. Previous research demonstrates that GBM may have complex cell origins. To elucidate the interplay between brain development and GBM progression, we developed Qombucha (Quadratic prOgraMming Based tUmor deConvolution with cell HierArchy), a computational framework that uses DNA methylation data to infer tumor cell-type composition and profiles of unobserved progenitor cells. Unprecedentedly, Qombucha incorporates a developmental cell hierarchy that models mature brain cell types and their progenitors. Applied to a large TCGA GBM dataset spanning the RTK I, RTK II, and MES TYP subtypes, Qombucha identifies a distinct cell type composition profile for each subtype and recapitulates known biological patterns, including elevated microglia infiltration in MES TYP tumors. It also identifies subtype-specific developmental programs and shows that higher progenitor-cell abundance is associated with poorer survival. Qombucha-imputed cell fractions map methylation profiles of tumor samples to a compact, 11-dimensional latent space; in an independent NCI GBM cohort, this compact representation improves subtype clustering and enables accurate subtype classification, achieving performance comparable to state-of-the-art models based on full methylation profiles with much higher dimensionality. These results suggest that tumor cellular composition captures the core biological axes along which GBM subtypes diverge.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743400v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Fluorescent proteins are fundamental tools for cellular imaging. Most fluorescent proteins in routine use, including GFP, are derived from the jellyfish Aequorea victoria and emit blue-green light, which is strongly absorbed and scattered by tissue, limiting imaging depth. Far-red and near-infrared fluorescent proteins, engineered from bacteriophytochromes, address this limitation because far-red light penetrates tissue considerably further. However, these proteins are typically much dimmer than their A. victoria-derived counterparts. Improving brightness by conventional directed evolution requires screening large random mutant libraries, a process that is slow, labor-intensive, and often impractical outside specialized laboratories. We utilized an active-learning-guided directed evolution workflow that identified improved variants from substantially less data than conventional screening. Each round coupled automated, miniaturized cell-free protein expression directly from a DNA template without cloning or cell culture, with a machine-learning model retrained on cumulative sequence--function data to nominate the most informative variants for the next round. Applied to miRFP670nano3, this workflow screened 120 variants across successive rounds and identified twelve with improved brightness, the best four-fold brighter in bacterial systems. However, these gains did not translate when the variants were evaluated in mammalian cells, indicating that performance can be strongly dependent on cellular context. Retrospective simulation across benchmark datasets from ProteinGym showed that performing more experimental batches with fewer samples per batch consistently accelerated convergence to high-fitness sequences. Incorporating protein-language-model derived zero-shot fitness priors also accelerated convergence, but only in proportion to how well each prior score correlated with the true fitness landscape. Together, these findings established generalizable design rules, favoring smaller acquisition batches and confidence-weighted priors, for engineering proteins from minimal experimental data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.744534v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Reliable single-cell perturbations explain and improve model performance</h2>
-<p class="paper-authors">Wang, X., Kuipers, J., +2 authors, Beerenwinkel, N.</p>
+<h2 class="paper-title">ZEISS arivis Cloud: a cloud-based platform for deep learning model training and scalable bioimage analysis</h2>
+<p class="paper-authors">Bhattiprolu, S., Toor, M., Soyer, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting single-cell transcriptional responses to perturbations is central to building the virtual cell, yet recent benchmarks show that simple baseline methods often outperform complex models, and model comparisons depend on the evaluation metric. Most studies assume that preprocessed RNA sequencing data are reliable ground truth for both training and evaluation. Here, we test this assumption by measuring the reliability of perturbations and their alignment with shared perturbation responses, classifying each perturbation as specific, shared, or unreliable. Among 7,170 perturbations from 29 datasets, 65% are unreliable, 11% shared, and 24% specific. Applying these quality labels to published benchmarks shows that model comparisons depend on perturbation quality. Training with reliable perturbations alone matches or outperforms full-data performance while using 55% of all training perturbations. Our framework also enables prospective experimental design: for most perturbations, a 28-cell pilot experiment accurately predicts how many cells a full screen needs to be reliable.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.11.744177v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Modern biological imaging generates large, complex datasets that require scalable and reproducible image analysis methods. Deep learning has demonstrated strong performance on bioimage segmentation tasks, but training custom models has remained inaccessible to many researchers due to requirements for GPU infrastructure, programming expertise, and large annotated training datasets. ZEISS arivis Cloud is a browser-based platform for deep learning model training that addresses these barriers through partial annotation support, AI-assisted labeling with SAM (Segment Anything Model), pretrained model initialization, and automatically configured training pipelines requiring no machine learning expertise. The platform supports two segmentation tasks: semantic segmentation using a U-Net-style architecture with an EfficientNet encoder and PixelShuffle decoder, and instance segmentation based on Mask2Former with a Swin-Tiny backbone. Both pipelines incorporate microscopy-specific adaptations including smooth tiling, multi-channel input support, dataset-specific normalization, and partial-annotation-aware loss functions protected by patents US-20240078681-A1 and US-20250111519-A1. Trained models integrate directly with ZEISS arivis Pro for pipeline-based image analysis, ZEISS arivis Hub for parallel execution across large datasets, and ZEISS ZEN for content-aware guided acquisition. We describe the platform architecture, training methodology, segmentation architectures, reproducibility and versioning mechanisms, and FAIR compliance, and illustrate the complete workflow through two intestinal organoid imaging examples. arivis Cloud is freely accessible to student users; other users access the platform via subscription at https://www.arivis.cloud/.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743540v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PerturbLDM: conditional latent diffusion for modelling single-cell perturbation responses</h2>
-<p class="paper-authors">Yu, L., Hsieh, K.-L., +10 authors, Dai, Y.</p>
+<h2 class="paper-title">Longitudinal whole transcriptomic profiling of live cells through domain adaptation</h2>
+<p class="paper-authors">Dong, Z. F., Mishra, S., +3 authors, Schwartz, G. W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell perturbation profiling maps intervention-induced phenotypes, yet experiments measure only a fraction of the perturbation-context space. Learning context-dependent perturbation effects could enable response prediction beyond measured conditions. Here we introduce PerturbLDM, a latent-diffusion framework for conditional generation of single-cell transcriptional responses. Following Tahoe-100M pretraining, it outperformed leading methods across 13,942 held-out combinations of observed drugs, doses and cell lines, with higher matched-control effect correlation than an additive marginal baseline in 95.2% of conditions. The Tahoe-100M-pretrained model was further used to rank PANACEA compounds by pathway similarity, placing shared-mechanism pairs among nearest neighbours. In smaller datasets, PerturbLDM generated a mid-gestational fetal-colon state with 67% lower gene-wise error than Squidiff, retaining the balance between absorptive and BEST4/OTOP2-like epithelial programmes. In PBMCs, it captured six of seven interferon and antiviral programmes and the interferon-associated FAO-OXPHOS programme more accurately than scGen. Together, these results support conditional response generation across data scales and biological settings.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743610v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Tracking transcriptomic profiles of cells over time in response to developmental cues and environmental stimuli can reveal critical insights into the fundamental mechanisms of development and disease. However, longitudinal molecular profiling at the global transcriptome level remains a major challenge, as RNA sequencing fundamentally alters or destroys cells. To overcome these limitations, we developed PENNE, a deep-learning framework that infers whole-transcriptomic profiles directly from live-cell images. Using gated attention mechanisms, PENNE trains on spatial transcriptomic datasets to align morphological features with gene expression. To enable inferences from images, our model performs domain adaptation to eliminate discrepancies between stained and unstained tissue images, effectively transferring molecular information from tissue sections to live-cell imaging. PENNE accurately identifies cell-type-specific and radiation-response markers via imputed expression. Furthermore, using only live-cell images stained with a G2/M cell cycle marker, our model captures temporal gene dynamics, evidenced by strong correlations between predicted expression and both ground-truth cellular confluency and cell-cycle progression. By bridging the gap between data-rich spatial transcriptomics and the practicality of live-cell imaging, PENNE provides a powerful new framework for monitoring molecular temporal dynamics directly through morphological information. This approach enables a paradigm-shifting workflow, fusing transcriptome-wide data with live-cell microscopy to fuel the discovery of novel gene programs via scalable, non-invasive, real-time interrogation of cellular states.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743564v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PIANO: Probabilistic Inference Autoencoder Networks for multi-Omics enables robust generative modeling of gene expression and scales single-cell integration to 100 million cells</h2>
-<p class="paper-authors">Wang, N., Cardenas, C., +12 authors, Krienen, F. M.</p>
+<h2 class="paper-title">scDIVA: semi-supervised integration and fine-grained annotation of tumor-immune single-cell atlases</h2>
+<p class="paper-authors">Leslie, C. S., Rapolu, V., +2 authors, Karbalayghareh, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA technologies enable the routine acquisition of transcriptomic atlases. However, these molecular profiles are influenced by overlapping sources of variation. Since these covariates confound comparisons, data integration is the first step in most analyses. Three challenges remain: correcting strong batch effects, scaling to millions of cells, and modeling how covariates influence gene expression. To address these challenges, we developed PIANO: Probabilistic Inference Autoencoder Networks for multi-Omics, a deep learning framework whose central feature is a generative model of gene expression data. Additionally, PIANO achieves robust integrations and trains 10x faster than previous methods. PIANO accurately integrates single-cell data across species and across single-cell and spatial transcriptomics modalities. As practical applications, PIANO models spatially-resolved gene expression during Alzheimer's disease progression in human brains and integrates over 100 million cancer cells to model drug perturbations. In summary, PIANO's integration and generative modeling capabilities will empower novel insights for countless future studies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743394v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell atlases of the tumor-immune microenvironment have defined numerous fine-grained immune cell states, but each study uses its own nomenclature and procedure for annotating cell types. Transferring annotations from a reference atlas to a query dataset is complicated by both batch effects and by the presence of query populations that the reference does not contain. Here we present scDIVA, a semi-supervised deep generative model that adapts the Domain Invariant Variational Autoencoder to scRNA-seq for fine-grained tumor-immune label transfer. Three encoders disentangle each cell's expression profile into separate latent subspaces for cell type, batch, and residual variation; a single decoder reconstructs the cell's expression profile from all three latent embeddings, and auxiliary classifiers on the cell type and batch embeddings encourage each encoder to capture the respective source of variation; scDIVA's cell type embeddings are batch-invariant by construction rather than through explicit or adversarial correction. Benchmarked against four established reference-mapping approaches -- Harmony/Symphony, scANVI with scArches, scPoli with scArches, and Seurat with label transfer -- across six tumor-immune atlases spanning five cancer types, scDIVA achieved the highest mean macro-F1 in five of six atlases and the highest biological conservation scores. To detect query-enriched populations, we adapted the Milo differential abundance (DA) framework, added a directional test, corrected spatialFDR weighting, and parallelized neighborhood distances for atlas-scale data, and applied it to scDIVA's cell type embeddings with reference-versus-query membership as the condition. This design correctly identified cell types held out from the reference as OOR and flagged exhausted CD8 T cells from a tumor-immune atlas as OOR relative to a healthy pan-tissue immune reference; conversely, this procedure confirmed a conserved immune landscape between two independent colorectal cancer cohorts. scDIVA thus couples fine-grained annotation and integration with an FDR-controlled test for states the reference lacks, solving both tasks required for accurate label transfer in tumor-immune scRNA-seq atlases.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743520v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">megaMine: a scalable, rule-based framework for mining gene-cancer-drug evidence from biomedical literature</h2>
-<p class="paper-authors">JUNAID, M., Prazanowska, K. H., +4 authors, Lim, S. B.</p>
+<h2 class="paper-title">Constrained Generative Design Frameworks For Computational Discovery of Target-Specific DARPin Candidates</h2>
+<p class="paper-authors">Pourbaghi, M., Elemento, O., Bradbury, M. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The rapid expansion of the oncology literature has outpaced manual curation of clinically relevant gene-cancer-drug associations and oncogenic driver evidence. Existing automated approaches often lack transparency or are difficult to scale across heterogeneous data sources. To address this gap, we developed megaMine, a transparent, rule-based, and context-aware literature-mining framework that integrates therapeutic and driver evidence from PubMed, PubTator, and Europe PMC by combining entity recognition, hierarchical heuristics, and contextual labeling. In therapy mode, megaMine was applied to approximately 100,000 oncology articles published between 2015 and 2025, yielding more than 23,000 structured sentence-level evidence records, with standardized annotations for drug response, resistance, and study context. Internal evaluation of context labels showed strong separability between efficacy and non-efficacy evidence using ridge logistic regression (AUROC = 0.915; AUPRC = 0.941). Benchmarking against NCI/OncoKB-supported drug-cancer associations showed that curated clinical associations had higher megaMine composite evidence scores than unlabeled comparison pairs [median (IQR): 25.6 (9.07-72.5) vs. 3.61 (1.69-8.69); Wilcoxon rank-sum test, P &lt; 2.2 x 10^-16]. In driver mode, megaMine retrieved mutation- and biomarker-related evidence from an ERBB-focused gastric cancer query, generating 750 evidence rows from 200 PMIDs. These results demonstrate that deterministic and interpretable approaches can support scalable evidence extraction for downstream applications such as knowledge graph construction and literature-based evidence synthesis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743392v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Applying unconstrained generative protein models to fixed structural scaffolds can produce systematic design artifacts, including a "Glycine Trap" characterized by the enrichment of glycine at structurally incompatible positions. Furthermore, optimizing sequences against artificial rigid-body docking geometries induces reward-hacking and severe geometric hallucinations. In addition, the highly conserved designed ankyrin repeat protein, or DARPin, scaffold can obscure defects at the engineered binding interface, causing AlphaFold2-Multimer (AF2) to predict nonfunctional protein-target interactions with high confidence. To overcome these limitations, we developed DARPinMPNN, a scaffold-constrained computational pipeline for DARPin candidate discovery. Restricting sequence generation to a validated DARPin design space eliminated these failure modes. A stateaware chimeric multiple sequence alignment strategy was engineered and enabled AlphaFold2-Multimer (AF2) to serve as a high-throughput structural sieve, while AlphaFold 3 (AF3) provided independent structural validation of candidate binders. Using this framework, we identified mesothelin-targeting DARPin candidates with predicted structural confidences (champion ipTM = 0.83) approaching those of a structurally validated picomolar-affinity binder (G3 control, ipTM = 0.89). By revealing extensive discordance between AF2 and AF3 predictions, this work establishes a robust framework for identifying and prioritizing high-confidence DARPin candidates for experimental validation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743551v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DuplexFM: Transferable small-RNA target representations link miRNA interactions to siRNA efficacy prediction</h2>
-<p class="paper-authors">Chen, B., Yin, J., +1 author, Yang, M.</p>
+<h2 class="paper-title">DNA-GUARD: molecular access control as a physical security layer forDNA data storage</h2>
+<p class="paper-authors">Bögels, B. W. A., Vermathen, R. T., +2 authors, Markvoort, A. J., de Greef, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> MicroRNAs (miRNAs) and small interfering RNAs (siRNAs) share Argonaute-mediated guide-target recognition, yet quantitative siRNA efficacy measurements are substantially scarcer and more costly to generate than miRNA-target interaction data. We therefore asked whether miRNA interaction data could provide transferable supervision for siRNA efficacy prediction. Here we present DuplexFM, a biologically grounded framework that uses sample-specific gates to integrate five evidence sources: pairing and sequence-context priors, duplex energetics, experimentally supervised mRNA accessibility, target-to-guide cross-attention, and contextual token-pair compatibility. The accessibility expert, trained on nucleotide-resolution icSHAPE measurements, achieved a held-out nucleotide-level Pearson correlation of 0.627 and evaluated accessibility at seed match and energy-supported candidate sites. On miRBench v7, three independently trained DuplexFM models achieved a macro APS of 0.873 (SD = 0.002), soft-voting increased this to 0.876 and yielded the highest APS on all four test sets. We then froze the miRNA-trained representation and trained only a lightweight residual head with 24 siRNA-specific descriptors. Transfer improved Pearson and Spearman correlations, AUPRC, and F1 over the descriptor-only baseline in all six evaluation settings. The ensemble achieved the highest Pearson and Spearman correlations in four settings, whereas OligoFormer remained stronger on Huesken and Takayuki. These findings show that experimentally grounded accessibility and miRNA-derived interaction representations provide complementary, transferable information, supporting a parameter-efficient route towards unified modeling of Argonaute-guided RNA regulation. Code and data are available at https://github.com/cbaiming/DuplexFM.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743413v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> DNA data storage offers exceptional density and millennial-scale stability, with advances in encoding schemes and reduced synthesis costs making large-scale archiving increasingly viable. However, while efforts have focused on reliable data retrieval, securing DNA-encoded information against unauthorized access remains largely unexplored. Here, we introduce DNA-GUARD (DNA Gated Unlocking and Access Restriction of Data), a molecular-level access control system that physically restricts data retrieval rather than relying on computational encryption. DNA-GUARD integrates with PCR-based random access by selectively blocking amplification of protected sequences. Chemically modified "locker strands" outcompete PCR primers and block polymerase extension through 3' inverted dT modifications, preventing amplification of key sequences required for file decoding. To restore access, complementary "password strands" tethered to magnetic particles sequester locker strands, enabling their removal and restoring data access. We demonstrate DNA-GUARD's scalability from 550-byte to 1-MB files without performance loss, orthogonal control of multiple files within mixed libraries, and reliable repeated locking-unlocking cycles. This approach enables physical access control compatible with established DNA storage workflows, providing a foundation for secure archival storage with implications for molecular information security that complements cryptographic data protection methods.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.744375v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,15 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">STR-PG: A Topology-decoupled Pangenome Framework for Scalable Short-read Genotyping of Short Tandem Repeats</h2>
-<p class="paper-authors">YUAN, J., XUE, Z., +2 authors, WANG, J.</p>
+<h2 class="paper-title">Principal Genes: A PCA-based approach to highly variable genes selection for scRNA-Seq analysis</h2>
+<p class="paper-authors">Kakwambi, E. D., Nguyen, T., +1 author, Moussa, M. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Short tandem repeats (STRs) are a rich and highly polymorphic source of human genetic variation, but representing and genotyping them in pangenome graphs remains challenging. Explicitly encoding each STR allele as a separate graph path results in increasingly complex local structures as cohort diversity increases, leading to larger index sizes and requiring significant resources for graph reconstruction when new alleles are introduced. Here, we propose STR-PGa topologically decoupled genome-wide framework that separates stable locus representation from scalable STR allele content. STR-PG uses topologically fixed pointer nodes to represent each target locus, while allele sequences, repeat counts, motif annotations, and population frequency metadata are stored in an external registry. Short reads are mapped to STR loci via syncmer-based flanking anchors, and genotyping is performed within a locus-specific candidate space using allele-level alignment likelihood and Bayesian inference. Newly supported alleles can be integrated through registry-level updates without the need to rebuild the graph structure. Evaluations using simulated whole-genome sequencing data, 1000 Genomes Project (1kGP) samples, and r real whole-exome sequencing data from matched whole-blood-cell controls demonstrate that STR-PG maintains accurate genotyping results across various STR classes, reproduces expected population structures, and substantially reduces the computational cost of integrating additional alleles. STR-PG provides a compact and scalable framework for population-scale STR analysis using short-read sequencing.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743532v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single cell RNA-sequencing (scRNA-Seq) data are typically represented as cell-by-gene count matrices, which capture the expression of each gene as detected in the sampled cells; often a heterogeneous population of multiple different cell types or cell states. Almost all scRNA-Seq analysis workflows have a gene selection step prior to applying clustering algorithms which helps remove genes with low variability and hence reduce the high-dimensional gene space. A de-facto method for achieving selection of highly variable genes (HVG) uses dispersion and mean expression scores to evaluate the variability of each individual gene. However, methods based on direct mean-to-variance relationship for gene selection often suffer from susceptibility to variance instability and arbitrary determination of the optimal number of genes to use in downstream analysis tasks, additionally, they often prioritize genes with low abundance but high variance. Here, we propose an innovative method for selecting highly variable genes that is not based on mean to variance ratios: "Principal Genes (PG)" method; it utilizes the rotations (or loadings) from Principal Component Analysis (PCA) to calculate a novel variability score per gene that we name "Gene Principal Score (GPS)". GPS helps evaluate the genes based on their contribution in the PCA rotations and hence ranks the genes according to their variability from highest to lowest variable genes. For efficient implementation we utilize Augmented Implicitly Restarted Lanczos Bidiagonalization methods to efficiently obtain Principal Components (PCs) associated with the largest variance. Genes with the highest GPS score, i.e. Principal Genes, can then be used for downstream analysis tasks, especially the clustering step. To test the performance of our highly variable gene identification method, we use several validation strategies, including clustering of labeled single cell RNA-Seq data (i.e. data with known 'ground truth' cell type labels). Furthermore, we measure the performance of our method against dispersion-based highly variable gene (HVG) selection approaches. We use several validation metrics, including sensitivity and adjusted rand index scores for clustering based on genes selected using our method against genes selected using HVG; and our validation datasets include six real labeled single cell RNA-Seq datasets. Our findings show that our new method, Principal Genes, is comparable and often favorable in performance in selecting highly variable genes and achieves ultra-fast gene selection from PCA results.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.07.743504v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +222,91 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">GenomeProt: User friendly proteogenomics for canonical and non-canonical proteoform characterisation</h2>
-<p class="paper-authors">Kore, H., Gleeson, J., +9 authors, Parker, B.</p>
+<h2 class="paper-title">Targeting Tumor-derived Sphingosine Kinase 2 Unleashes Antitumor Immunity and Improves Survival of Mice with Group 3 Medulloblastoma</h2>
+<p class="paper-authors">Chatterjee, S., Kumar, P., +19 authors, Jain, R. K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Quantifying the diversity of RNAs and proteins produced by cells is fundamental to the biological and clinical sciences. However, many RNAs and proteins remain uncharacterised, especially proteins translated from alternate RNA isoforms; untranslated regions of mRNAs and non-coding RNAs, as well as the effects of DNA variation on protein sequences. Proteogenomics aims to characterise the complete proteome by integrating genomics and/or transcriptomics with proteomics, but current tools have limitations in useability, analysis features and visualisation of resulting data. To address these gaps, we developed GenomeProt, a user-friendly GUI-based tool for integrative proteogenomic analysis. We demonstrate its utility by integrating long-read RNA sequencing with mass-spectrometry-based proteomics to pinpoint proteoform expression generated by alternative splicing; discover novel, unannotated proteins in human brain samples; and quantify variant-containing peptides associated with treatment resistance in a melanoma xenograft model. GenomeProt brings the discovery power of proteogenomics to biologists, illuminating the hidden proteome.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.06.743133v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Group 3 medulloblastomas (G3MB) carry the worst prognosis among medulloblastoma subtypes, yet molecularly targeted therapies remain elusive. Standard treatments cause severe long-term morbidity in survivors. Here, we identify tumor-derived sphingosine kinase 2 (SPHK2) as an essential driver of G3MB initiation and progression. SPHK2 exacerbates local immunosuppression by suppressing cytotoxic T-cell and NK-cell activity while promoting regulatory T-cell infiltration. Genetic or pharmacologic SPHK2 inhibition using Opaganib attenuates pro-survival tumor signaling and restores anti-tumor immunity, significantly improving survival in syngeneic G3MB mouse models. Combining Opaganib with fractionated low-dose radiation (f-LDRT) further enhances antigen presentation and reprograms tumor-associated myeloid cells toward an anti-tumor phenotype. This combination therapy markedly prolongs survival without inducing significant toxicity. Overall, our study establishes SPHK2 as a previously unrecognized therapeutic target and presents a safe, effective, microenvironment-reprogramming regimen for G3MB.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.744521v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Aug 13, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Synchrotron phase contrast micro-CT of prostatetissue</h2>
+<p class="paper-authors">Bourne, R. M., Arhatari, B., +5 authors, Sved, P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Formalin-fixed prostate tissue samples were imaged by propagation-based synchrotron phase contrast micro computed tomography (CT) with a 3D spatial resolution of ca. 3 m. Post-CT, samples were prepared for histology with sections close to coplanar with the transverse CT image planes. Haematoxylin and eosin stained sections were examined by an expert prostate histopathologist and compared qualitatively with corresponding CT-visible microstructure features. There is potential for CT to provide complimentary information to conventional histology and light microscopy without the need for preparation of stained thin sections. For the imaging conditions and spatial resolution of our study, CT may provide tissue architectural features similar to those used in Gleason grading, albeit without clear subcellular microstructure detail. At the spatial resolution of our study CT may provide novel 3D microstructure information for validation of diffusion weighted magnetic resonance imaging (MRI) methods. As an example, we demonstrate a qualitative correlation between CT-derived stromal fibre orientation and preferential water diffusion direction measured by diffusion tensor MRI microscopy of the same sample.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.742892v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Aug 13, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Influence of high fibre diets on the gut microbiota, prostate tumour growth and normal tissue toxicity following ionising radiation</h2>
+<p class="paper-authors">Moomin, A., Sabater, C., van den Haak, M., +5 authors, Kiltie, A. E.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Purpose: High dietary fibre intake has been linked to lower cancer risk, yet its role in prostate cancer treatment responses and radiotherapy tolerance remains unclear. We evaluated the effects of dietary fibres (inulin, pectin, beta glucan) on prostate tumour growth, gut microbiota and intestinal response to ionising radiation (IR) in murine models. Methods: Male FVB and C57BL/6J mice were injected with murine Myc CaP (FVB), RM 1 or DVL3 (C57BL/6J) prostate tumour cells and fed a low fibre (0.2% cellulose) or high fibre diet (10% inulin, pectin or beta glucan). Some mice had tumour irradiation (6 Gy). Tumour volume, caecal weight and faecal microbiota relative abundance (by 16S rRNA gene sequencing) were analysed. Caecal contents fermentation acids were quantified by gas chromatography. The effects of dietary fibre on intestinal acute normal tissue toxicity post irradiation (10 to 14 Gy) were assessed by intestinal crypt assay. Results: Inulin delayed average tumour growth in all models. Inulin and beta glucan prolonged post IR tumour control versus 0.2% cellulose (all p &lt;0.05), in some but not all mice. Inulin, pectin and beta glucan increased faecal acetate concentrations post IR and mice demonstrated responder (R) vs non responder (NR) phenotypes to diet/IR, associated with Bifidobacterium (inulin R), Lactobacillus and Parasutterella (pectin R) and Muribaculacaeae and Muribaculum (beta glucan R). High fibre fed mice had enhanced intestinal crypt regeneration following 12 Gy compared to 0.2% cellulose fed mice. Conclusions: High fibre diets slowed prostate tumour growth both alone and following 6 Gy IR, while protecting small intestines from radiation induced injury. Effects may have been mediated via increased microbiota driven metabolite production and enhanced epithelial regeneration, but more mechanistic work is required to explore causality. The differences in individual responses to various fibres should be investigated further, as this may have relevance to adopting dietary fibre supplementation strategies in human radiotherapy patients, and may reflect the recognised importance of an individuals baseline microbiota on dietary effects.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.13.744579v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Aug 13, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Targeting the TRA-1-60 Glycoepitope Enables Selective ImmunoPET Imaging of Ovarian Cancer</h2>
+<p class="paper-authors">Khatun, S., Fox, A., +2 authors, Viola, N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Targeted radiopharmaceutical development for ovarian cancer (OC) has been limited by the lack of molecular targets that combine broad tumor expression with minimal normal-tissue distribution. TRA-1-60 (TRA) is a cancer-associated glycoepitope carried by podocalyxin. Here, we evaluated TRA as a target for OC and developed a TRA-directed immunoPET imaging platform. Immunohistochemical analysis demonstrated significantly higher TRA expression in ovarian tumors than in normal adjacent ovarian tissue, with expression maintained across epithelial OC histotypes and disease stages. An engineered anti-TRA single-chain variable fragment-Fc (scFv- Fc) demonstrated robust penetration of three-dimensional tumor spheroids and selective accumulation in intraperitoneal tumors in an immunocompetent syngeneic OC model. Radiolabeling with zirconium-89 generated [89Zr]Zr-DFO-anti-TRA scFv-Fc with &gt;98% radiochemical yield. Serial PET/CT imaging demonstrated progressive and sustained radiotracer accumulation at tumor sites through 96 hours, accompanied by declining liver-associated activity and low uptake in most normal tissues. Together, these findings identify TRA as a broadly expressed and accessible tumor-associated glycoepitope and establish TRA-targeted immunoPET as a promising strategy for noninvasive detection of OC. The selective and sustained tumor localization of this platform further provides a foundation for development of TRA-directed radiopharmaceutical therapy, supporting a potential theranostic approach for OC.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.744522v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Aug 13, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Single-cell analyses reveal a simple multi-gene transcriptomic signature with predictive power in prognosis and therapy effectiveness in triple-negative breast cancer</h2>
+<p class="paper-authors">Davidson, G., Debien, V., Sexton, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Triple-negative breast cancer (TNBC) is an aggressive, heterogeneous form of breast cancer with limited specific therapy options, prevalent metastasis and frequent relapse. Re-analysis of single-cell RNA-sequencing data characterizes the diverse cell subtypes within the tumor and microenvironment of TNBC, supporting a luminal progenitor origin for the cancer and providing clues as to the factors involved in progression of the disease. The relative burdens of these subtypes can be deconvolved from bulk RNA-sequencing data, readily identifying the stem-like, mesenchymal and stromal cell subtypes significantly associated with poor survival and enrichment in metastasis. Importantly, these can be simplified to ten-gene signatures with comparable predictive power, notably in response to different therapeutic strategies, which are linked to relative burdens of different subtypes of stromal fibroblasts. The expression level of these signatures could provide a cheap means for selecting therapy strategies in personalized medicine.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.12.744411v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +317,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 12, 2026</span>
+<span class="date">Aug 13, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Removing barriers to advanced imaging and machine learning-based analysis.</h2>
-<p class="paper-authors">Jodie R Malcolm, Stuart Lacy, +19 authors, William J Brackenbury</p>
+<h2 class="paper-title">Modeling microbiome modulation of tumor metabolic networks to predict synergistic therapies.</h2>
+<p class="paper-authors">Annie J Badenoch, Zeyang Pang, +6 authors, Sriram Chandrasekaran</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Global and community-driven initiatives have recently achieved considerable success in overcoming key challenges that hinder the widespread adoption of advanced microscopy and bioimage analysis tools in under-resourced settings. To build upon this progress, we held a workshop in May 2025 at the University of York, UK to address the needs and barriers associated with implementing time-lapse imaging and machine learning-based phenotyping in low-resource research environments. We focussed on identifying the specific challenges faced by the existing networks represented at the meeting, emphasising how integrating combined imaging hardware and machine learning-based approaches can solve these problems. This article summarises the key observations and actionable strategies made at the workshop. These proposed steps aim to significantly increase the dissemination and uptake of these powerful technologies to advance biological research in low-resource settings globally.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42583731/" target="_blank">
+<p><strong>Abstract:</strong> Differences in microbiome composition profoundly influence drug response, yet methods to model the metabolic impact of microbes on host cells and therapeutics remain limited. We present a microbiome-aware computational framework combining machine learning and genome-scale metabolic models to predict combination therapies for colorectal cancer (CRC) in the presence of Fusobacterium nucleatum (Fn) and other pathogenic, probiotic, and commensal microbes. The model learned predictive metabolic flux signatures from 6,514 drug combination profiles in CRC cell lines and predicted synergistic drug combinations across both microbe-free and microbe-associated contexts. Model performance was supported through prospective comparison with newly reported drug combinations, in vitro drug synergy assays, microbiome co-culture experiments, and targeted metabolic perturbations of predicted pathway dependencies. Pharmacological perturbations in asymmetric co-cultures revealed phosphoinositol metabolism and cysteine transport as key determinants of Fn-dependent drug synergy. Together, this work introduces a scalable strategy for discovering microbiome-dependent combination therapies, including chemotherapies, immunotherapy, and probiotics.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42594868/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Aug 13, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Predicting specificity of TCR-pMHC interactions using machine-learning and biophysical models.</h2>
+<p class="paper-authors">Martin Culka, Nicolas W Lounsbury, +6 authors, Mohammed AlQuraishi</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Understanding T cell receptor (TCR) discrimination of MHC-presented epitope peptides (pMHCs) remains challenging. While machine-learning (ML)-based predictions of TCR specificity have gained attention, their capacity to generalize to unseen peptides is often misinterpreted. Using a proprietary cancer patient dataset, we show that ML methods succeed in predicting TCR specificity for known peptides but fail to generalize to novel peptides. Conversely, physics-based methods outperform ML methods on novel peptides but underperform on known peptides. In light of these observations, we develop a new ML method that leverages protein foundation models to achieve better or comparable performance than existing ML and biophysical methods on both in- and out-of-distribution TCR-pMHC specificity prediction. We furthermore characterize method performance as a function of distance of TCR sequence specificity between training and test sets. Our analysis elucidates the current limitations of modeling TCR-pMHC interactions and outlines new avenues for method development and data acquisition.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42594866/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
