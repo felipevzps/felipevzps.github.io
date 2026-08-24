@@ -29,208 +29,170 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">De novo Design of Macrocyclic Molecular Glues</h2>
-<p class="paper-authors">Brunner, A., Wierbilowicz, K., +4 authors, Bryant, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The engineering of induced proximity has transformed drug discovery, yet the development of molecular glues remains largely serendipitous and restricted to the retrospective optimisation of accidental discoveries. Here, we present EvoBind-multimer, a deep learning framework for the de novo design of molecular glues directly from protein sequences. Unlike structure-based docking, our method generates small macrocyclic peptides that bridge user-defined protein pairs without requiring prior interface knowledge or existing ligands. We applied this framework to recruit the E3 ligase VHL to two challenging oncoproteins: KRAS and BRD4. Live-cell NanoBRET demonstrated robust design-induced proximity for both pairs. Mechanistic validation demonstrated that the generated macrocycles form functional VHL-target ternary complexes capable of driving Cullin-RING ligase-dependent proteasomal degradation and downstream signalling shutdown. Finally, evaluation in patient-derived xenograft neuroblastoma tumoroids revealed that ternary complex processing is deeply context-dependent: identical macrocycles acted as potent degraders in one patient model, yet functioned as stabilising "LOCKTACs" in another, driving VHL-dependent target sequestration without turnover. By enabling the de novo design of induced proximity from sequence alone, EvoBind-multimer provides a route towards designing new protein functions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746227v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">On the robustness of scRNA-seq foundation models for plant perturbation response prediction under cross-experiment shift</h2>
-<p class="paper-authors">Fernandez Burda, M., Bonazzola, R., +4 authors, Milone, D. H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Foundation models for single-cell transcriptomics promise to learn generalizable representations of cellular states. However, recent evidence suggests they often fail to outperform simple machine learning baselines. Furthermore, their ability to generalize across unseen experimental conditions remains poorly understood, particularly in plants, where rigorous evaluation beyond cell type annotation and batch integration is lacking. To address this, we introduce an Arabidopsis thaliana foundation model, scAraFM, and benchmark it across several perturbation conditions under three increasingly challenging protocols: random splits from a single experiment, replicate-based splits, and cross-experiment transfer learning. We found that random splits overestimate performance by up to 30 points relative to cross-experiment evaluations. Across representation strategies, preserving gene identity consistently outperforms the standard pooled embeddings. Moreover, simple baselines using raw reads remain competitive in single-experiment settings, challenging current claims of universal advantage of foundation models. In contrast, under cross-experiment transfer, pretrained representations show added value, particularly with few labelled samples, suggesting that the benefits of foundation models emerge precisely in the regimes that matter for practical deployment. Overall, our results demonstrate that conclusions about foundation models depend critically on the evaluation design, and that preserving per-gene structure aids generalization in downstream tasks, supporting robust predictions across unseen experimental contexts.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746324v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A novel benchmark dataset for enzyme function prediction reveals the limitations of state-of-the-art models</h2>
-<p class="paper-authors">Sartori, J., Guimaraes, A. C. R., Machado, L. d. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate computational prediction of enzyme function, standardized by Enzyme Commission (EC) numbers, is essential for large-scale genome annotation and generative enzyme design. However, it remains unclear whether state-of-the-art predictors learn the intrinsic structural determinants of catalytic activity or merely rely on global sequence similarity to annotated homologues. To address this gap, we introduce EnzymARC, a novel benchmark dataset of putative non-functional decoy sequences generated via structure-guided, systematic disruption of active sites (targeting catalytic residues and surrounding 5 A, 10 A, and 15 A radii) from experimentally annotated enzymes. We evaluated three distinct prediction paradigms against this dataset: homology-based annotation (DIAMOND), contrastive learning with protein language models (CLEAN), and a deep learning model incorporating non-enzyme discrimination (DeepEC). Our findings reveal that current models are highly vulnerable to phylogenetic shortcuts. Both DIAMOND and CLEAN exhibited false positive rates exceeding 90% for low-perturbation decoys, confidently assigning the original EC numbers despite the destruction of the catalytic machinery. While DeepEC demonstrated improved sensitivity at higher perturbation levels, highlighting the benefit of negative training examples, all models struggled to identify targeted active-site disruptions. We demonstrate that modern EC predictors largely fail to distinguish catalytically incompetent variants from functional enzymes, and we propose that integrating structure-aware negative examples into both training and benchmarking is critical for developing functionally robust models in computational enzymology.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746242v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">BindCORE: Biophysical Ensemble Learning for Predicting Interaction Sites in Intrinsically Disordered Regions</h2>
-<p class="paper-authors">Buton, N., Piochi, L. F., Khakzad, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Intrinsically disordered proteins and regions (IDPs/IDRs) mediate diverse cellular functions through binding segments whose functional properties are encoded in dynamic conformational ensembles rather than a single static state. Existing predictors of linear interacting peptides (LIPs) and molecular recognition features (MoRFs) rely primarily on sequence-derived features, leaving ensemble-level biophysical properties largely unexplored. Here, we introduce BindCORE, an ensemble-aware deep learning framework that integrates global, local, and pairwise biophysical descriptors to predict interaction sites within IDRs. These features are processed through a multi-scale architecture that enables information exchange between sequence- and ensemble-based global, local, and pairwise information. Across established LIP and MoRF benchmarks, BindCORE consistently improves performance over sequence-based baselines, demonstrating the predictive signals of ensemble-derived properties beyond sequence-based representations alone. Feature-attribution analyses reveal that pairwise descriptors are the dominant contributors to prediction, while solvent accessibility, backbone dihedral entropy, and global geometric properties provide complementary information. Feature-importance rankings vary substantially across ensemble flavours, indicating that different conformational generators encode distinct biophysical signatures of interaction-site propensity. Together, our results show that conformational ensembles contain interpretable determinants of LIP and MoRF binding residues and establish BindCORE as a general framework for incorporating biophysical information into the prediction of functional regions in intrinsically disordered proteins. BindCORE is freely available as a ready-to-use Google Colab notebook at https://gitlab.inria.fr/delta/bindcore.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.20.746047v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">KRAKEN: A provenance-tracked knowledge graph for multiomic and wellness research</h2>
-<p class="paper-authors">Glen, A. K., Witherington, D., +8 authors, Rappaport, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Existing general-purpose biomedical knowledge graphs tend to focus on disease mechanisms and drug repurposing, leaving multiomic and wellness-relevant content underrepresented. KRAKEN (Knowledge Research &amp; Analysis Kit for Evidence Networks) addresses this gap by integrating existing graphs (including Translator KG Open, RTX-KG2, and ROBOKOP) with specialized sources such as RefMet, LIPID MAPS, NIH Common Data Elements, Polygenic Score Catalog, and derived wellness measures including biological age and biological BMI. The resulting graph spans ~15M nodes and ~113M edges across 62 entity types. KRAKEN adopts the Biolink Model as its semantic layer, ensuring compatibility with standardized resources emerging from the NIH NCATS Biomedical Data Translator program. A lightweight, modular build system rebuilds the full graph (including entity resolution), with peak memory consumption under 48 GB, and supports flexible inclusion or exclusion of sources, allowing the user to scope the graph to a domain of interest. Built-in analytical tools include multi-hop reasoning, subgraph extraction, text, vector and hybrid entity search, and enrichment analyses, all accessible through an interactive web interface, a REST API, and a Model Context Protocol server, the last enabling direct consumption by agentic and LLM-based systems. KRAKEN is freely available at https://app.krakenkg.com.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745544v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Sequence-Derived Representations versus Pfam-Domain Content for Biosynthetic Gene Cluster Retrieval</h2>
-<p class="paper-authors">Urokov, R., Khan, A., +3 authors, Kushokova, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Retrieving BGCs related to those of a known producer can be regarded as a representation-learning objective. We hypothesize that ESM-2 sequence-derived representations of BGCs can improve retrieval beyond the Pfam-domain content metric. Our toolkit is the following: group-disjoint train, validation, and test assignments, validation-frozen model selection, [fi]ve seeds, and family-level paired inference. Of 6,953 atlas BGCs from 182 deduplicated Streptomyces griseus genome accessions, 5,325 silver-labeled BGCs are split into 98 training, 21 validation, and 21 test reference groups. Of the test reference groups, 16 are eligible for retrieval diagnostics. Pfam Jaccard scored Recall@50 of 0.8788, while Pfam-augmented BGC-SetNet scored 0.8472. The combination of ESM and Pfam-augmented BGC-SetNet scored 0.8769. A weighted Pfam Jaccard obtained a slightly higher score of 0.8789, which has a negligible difference compared to unweighted Pfam accard. Our results do not support the claim that sequence-derived representations can recover alternative biosynthetic pathways on this benchmark. Instead, explicit Pfam remains the major signal for this objective. Our results de[fi]ne the curation and pathway-level validation processes that are necessary for a more robust biological test.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746127v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">An in-depth, updated benchmark for 16S amplicon sequencing</h2>
-<p class="paper-authors">Gueguen, L.-M., Mathieu, A., +1 author, Droit, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Amplicon-based techniques provide a rapid and cost-effective approach for profiling microbial communities. However, the observed microbial diversity is influenced by a wide range of factors, encompassing pre-analytical steps such as the choice of primers and target regions, as well as the bioinformatic pipeline, including the selection of tools, reference databases, and parameter settings. Several benchmarks are already available in the literature, but the updates to important tools and databases, namely LotuS3, the Ribosomal Database Project and GreenGenes2, prompted our investigation. In this study, we conducted a comprehensive benchmark of the main bioinformatic tools and databases. Using seven regions for three publicly available mock communities of increasing complexity, we tested 38 possible combinations of sequence resolution algorithms (DADA2 stand-alone, LotuS3 (DADA2/UPARSE)), taxonomic classifiers and search tools (Kraken2, DECIPHER, RDP, MMseqs2, Lambda, and Metaxa2), and databases (SILVA, GreenGenes2, RDP, RefSeq, and Metaxa2). The region V1-V3, coupled with DADA2+MMseqs2+SILVA, DADA2+Metaxa2, or LotuS3 (DADA2)+RDP yielded the highest-quality estimates of the true diversity according to the metrics. We also demonstrated that even certain dominant genera remain difficult to detect, and that the quantification of all genera can be substantially over- or under-estimated, even when using optimal combinations of tools and reference databases.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745548v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">OncoGenRAG: Evidence-Grounded Retrieval and BioBERT Classification for Precision Oncology Variant Interpretation</h2>
-<p class="paper-authors">Arif, A., Filho, J. V. d. S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The increasing use of tumor sequencing has intensified the need for fast, traceable interpretation of genomic variants. General-purpose large language models can produce fluent answers, but unsupported statements, weak provenance, and stale knowledge limit their suitability for clinical genomics. We developed OncoGenRAG, a research framework that combines a parameter-efficiently fine-tuned BioBERT classifier with an entity-aware retrieval system over a curated, multi-source oncology knowledge base. The reported knowledge base contains 933 harmonized records derived from CIViC, ClinVar/dbSNP, Open Targets, UniProtKB/Swiss-Prot, Ensembl Variation, and linked PubMed literature. The classifier assigns one of five labels: Pathogenic, Likely Pathogenic, Variant of Uncertain Significance, Benign, or Oncogenic; the retrieval component ranks evidence records using subword TF-IDF similarity and explicit gene, variant, and cancer-type matches. A rejection rule suppresses answers when retrieval support is below a prespecified threshold. In the authors held-out evaluation, the classifier achieved 92.40% accuracy, 93.15% weighted precision, 92.40% weighted recall, and 92.65% weighted F1 score. In a separate benchmark of 100 clinical-style queries, OncoGenRAG achieved reported Precision@1 of 94.5%, Precision@3 of 96.8%, and 100% database grounding. No hallucinated answer was observed under the study operational definition, compared with a 41.0% no-hallucination rate for the ungrounded baseline. These results should be interpreted as internal validation rather than proof of universal safety because query construction, annotator agreement, class-specific performance, calibration, and external validation data were not available for independent analysis. OncoGenRAG provides a transparent design for evidence retrieval and abstention, but it is a research prototype and must not be used to select treatment without expert review.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.20.746121v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">AI supported in silico screening of chimeric antigen receptor therapy targets</h2>
-<p class="paper-authors">Moranzoni, G., Jorgensen, L. V., del Cerro, J. H., +4 authors, Olsen, L. R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Chimeric antigen receptor (CAR) cell therapy has achieved transformative clinical success through targeting of CD19 in refractory B cell malignancies, but extension of this strategy to solid tumors, other hematological malignancies, and autoimmune disease has exposed the complexity of target selection. Antigen abundance alone is not sufficient to define a suitable CAR target. Instead, therapeutic efficacy and safety are shaped by a broader set of molecular features, including isoform usage, subcellular localization, secretion, epitope stability, and the structural context in which antibody-derived binding domains engage their target. At the same time, advances in transcriptomics, structural biology, and artificial intelligence (AI)-enabled prediction now make it possible to assess many of these properties systematically. Here, we outline the principal molecular features that characterize effective and safe CAR targets and present a practical framework that integrates public datasets with computational and AI-based tools for their evaluation. Using HER2 as an illustrative case, we show how isoform-resolved expression, single-cell analyses, topology prediction, structure modelling, epitope mapping, and in silico binding analyses can reveal liabilities that are not captured by conventional target-expression screens alone. This framework provides a systematic strategy to prioritize targets and epitopes, guide preclinical investigation, and de-risk clinical translation. We anticipate that such integrative workflows will become increasingly important for moving CAR target discovery from descriptive expression analysis towards informed therapeutic design.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746142v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">AlphaConformers: Structure-guided sampling enables prediction of multiple protein conformations</h2>
-<p class="paper-authors">Daniel, J., Vitoriano De Queiroz Lira, L., Zea, D. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Proteins are dynamic molecules capable of adopting multiple conformations. However, AlphaFold2 predominantly generates models around a single conformation, usually representing a ligand-bound state. To address this limitation, we developed AlphaConformers, a structure-guided pipeline that steers AlphaFold2 toward alternative conformations. It is based on the idea that protein structure databases can capture the structural space accessible to members of a protein family. Given a target protein, AlphaConformers retrieves structures from structurally similar proteins. These structures are organized into structure-based alignments and template sets, which are supplied to AlphaFold2 as conformational hypotheses. The resulting models are clustered and filtered, facilitating their analysis. Evaluated on a curated benchmark of 88 proteins with known ligand-bound and unbound conformations, AlphaConformers expanded AlphaFold2 conformational sampling and recovered alternative states missed by AlphaFold2 and other state-of-the-art methods. AlphaConformers ranked first for modelling subtle conformational changes commonly observed between ligand-bound and unbound states. These results show that structural information from protein databases can be leveraged to steer AlphaFold2 toward alternative conformations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745512v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Aug 22, 2026</span>
+<span class="date">Aug 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Spatial vascular/BTB remodeling and malignant-state plasticity in glioblastoma</h2>
-<p class="paper-authors">Zheng, L., Gan, L.</p>
+<h2 class="paper-title">Spatial immune ecosystems govern therapeutic response in HER2-low breast cancer</h2>
+<p class="paper-authors">Ogunlusi, O., Banerjee, S., +11 authors, Roy Sarkar, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> HER2 low breast cancer represents a clinically important but biologically heterogeneous disease state, and the spatial immune programs underlying therapeutic response remain poorly understood. Here, we used single-cell spatial transcriptomics to characterize HER2 low and HER2 high breast tumors and define microenvironmental features associated with treatment sensitivity and resistance. We identified diverse malignant, stromal, and immune compartments, with dendritic cells emerging as a highly remodeled population in HER2 low tumors. Focused analysis resolved distinct dendritic cell states, including homeostatic cDC2, IFN activated mature cDC, classical functional cDC2, plasmacytoid DC, and ITGAX positive monocyte derived DC populations. Spatial proximity analysis further revealed that resistant HER2 low tumors exhibited increased segregation of tumor epithelial cells from effector immune populations and enrichment of myeloid-rich immune niches, consistent with an immune-restricted spatial architecture. Independent TCGA BRCA validation confirmed the clinical relevance of these dendritic-cell states, with elevated homeostatic cDC2 signatures predicting poor survival, whereas inflammatory dendritic cell signatures were associated with favorable outcomes. Resistant HER2 low tumors were characterized by enrichment of homeostatic and classical cDCs, depletion of IFN-activated cDCs and pDCs, altered tumor myeloid T cell communication, and expansion of spatially organized resistant niches, whereas sensitive tumors retained immune-intermixed niches enriched for antigen presentation and effector immune interactions. Together, these findings demonstrate that therapeutic resistance in HER2 low breast cancer is driven by coordinated spatial remodeling of dendritic-cell states and immune architecture, identifying dendritic cell myeloid niche organization as a potential biomarker and therapeutic vulnerability.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.19.745800v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Implicit Hierarchical Tensor Decomposition of Single-Cell Four-Omics Data Reveals Cell-Type-Associated Enhancer--Promoter Regulatory Programs</h2>
+<p class="paper-authors">Taguchi, Y.-h., Turki, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Single-cell multi-omics provides complementary views of gene regulation, but integrating modalities with natural features comprising enhancers, genes, and three-dimensional (3D) genomic loci remains challenging. This study developed an implicit hierarchical tensor decomposition framework and applied it to the CHARM single-cell four-omics mouse brain data (GSE303006) by jointly analyzing ATAC, H3K27ac, RNA, and reconstructed 3D enhancer--promoter (E--P) distances. After quality control, 730,969 E--P pairs, 42,669 enhancers, 16,239 genes, 391,435 20-kb bin pairs, and 4,258 cells were retained. Each modality was independently reduced to 20 components and mapped to an implicit 730,969x4, 258x20x4 tensor, which was decomposed without materializing the full array. All 12 distinct cell components represented among the 100 largest Tucker core elements showed greater cell-type effects than replicate effects (P=2.44 x 10-4, sign test). A representative core linked the Inh_Ndnf/Lamp5--Ex_L3/4_IT cell axis to contrasting presynaptic-transmission and developmental/morphogenetic E--P programs. Backprojection showed reproducible ATAC, H3K27ac, and 3D effects across three biological replicates, whereas module-level RNA effects were weaker. The framework reveals the regulatory structure that is shared across molecular modalities while remaining distinct from any single molecular modality.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745447v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">sc-pcQTL: hurdle-based co-expression modeling for multi-gene QTL mapping in single-cell RNA-seq data</h2>
+<p class="paper-authors">Zhang, J., Huang, Y., +2 authors, Zhou, W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Motivation: Single-cell expression quantitative trait locus (eQTL) studies can resolve cell-type-specific genetic effects, but conventional gene-by-gene analyses do not directly capture coordinated genetic regulation of neighboring genes. Principal-component QTL (pcQTL) mapping can summarize such multi-gene effects, but existing approaches were developed for bulk expression and are not designed for sparse single-cell counts. Results: We developed sc-pcQTL, a framework that applies two-component hurdle modeling and sliding-window clustering to identify local co-expression clusters, summarizes each cluster using principal components, and maps cis-pcQTLs. In simulations, the individual hurdle components controlled type I error, while the component-union screening rule was substantially more powerful than donor-level pseudobulk correlation tests. Applied to 1.24 million peripheral blood mononuclear cells from 982 OneK1K donors across 10 cell types, sc-pcQTL identified 2,485 local co-expression clusters and conducted QTL mapping for 4,353 cluster-PC phenotypes at single-cell resolution, of which 2,040 had at least one significant cis-pcQTL association. Fine-mapping and colocalization with genome-wide association study loci across 1,163 phenotypes in the FinnGen study identified 394 colocalized QTL-GWAS signal groups. Each group comprised fine-mapped QTL and GWAS signals connected through one or more colocalization links within the same cell type and local gene cluster. Of these groups, 46 were pcQTL-specific and contained no colocalized single-gene eQTL from a constituent gene. Locus-level analyses further revealed cell-type-specific multi-gene regulatory effects. Thus, sc-pcQTL complements conventional single-gene eQTL analysis by identifying trait-relevant regulatory signals shared across neighboring genes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745314v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Mountain Centroid: RNA Ensemble Representation with Mountain Profiles</h2>
+<p class="paper-authors">Otagaki, T., Asai, K., Sato, K.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745357v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.19.745640v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">ResiRuler: A Toolkit for Visualizing Residue-Residue Distances and Structural Changes in Biomolecular Models</h2>
+<p class="paper-authors">Baker, T. H., Ohi, M. D., Salmen, W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Proteins and their associated complexes often adopt multiple conformations, with the transitions between these states playing a critical role in biological function. However, the resulting structural heterogeneity can be challenging to visualize and communicate, often requiring manual inspection and time-consuming annotation of biomolecular structures. To address this, we developed ResiRuler, a local, browser-based tool that uses inter-residue distance measurements to quickly quantify atomic displacements and map changes in internal geometry across ensembles of related protein structures. By converting structural differences into residue-pair distance changes, ResiRuler enables rapid identification of regions undergoing coordinated motion, local rearrangement, or large-scale conformational change. The resulting visualizations can be exported as scripts for PyMOL and ChimeraX, allowing users to explore conformational differences and generate publication-quality molecular figures in their preferred visualization environment. Using atomic models in Macromolecular Crystallographic Information File (mmCIF) file format, ResiRuler aligns multiple structures and measures structural variation across models facilitating visualization and presentation of these differences. This allows for rapid visualization of which regions of proteins change among ensembles of structures. The program is available for download at https://github.com/tbaker67/ResiRuler on macOS and Linux operating systems.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.19.745761v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Characterization of Porcine Antibodies from Sequence Repertoire and Structural Data</h2>
+<p class="paper-authors">Kurumida, Y., Saito, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Antibodies exhibit species-specific sequence and structural features that influence their antigen-recognition properties. Although several studies have investigated porcine antibodies, their repertoire and structural characteristics remain less well characterized than those of several other mammalian species. In this study, we analyzed public porcine heavy-chain repertoire sequencing data together with available antibody structural data to identify characteristic features of porcine antibodies. We found several residues enriched in porcine antibody framework regions, particularly at the base of heavy-chain complementarity-determining region 3 (CDR-H3). In particular, Arg101 and Glu123 were closely positioned in available structures and may influence CDR-H3 conformation at its base, whereas Pro120 may help constrain local backbone conformation. We also observed non-canonical cysteine usage in both framework region 1 and CDR-H3, which may contribute to structural diversity in the porcine repertoire. Finally, we evaluated the humanization potential of a porcine antibody using a human antibody language model and found that human-likeness increased after model-guided substitutions, although the resulting sequences did not exceed the T20 score threshold. Overall, these results indicate that porcine antibodies possess distinct sequence and structural features that may influence CDR-H3 properties and should be considered in future antibody analysis and engineering.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745626v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Proteome-Scale Mining and Multi-Objective Prioritization of Encrypted Antimicrobial Peptides with Experimental Validation</h2>
+<p class="paper-authors">Li, Q., Li, z.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Encrypted antimicrobial peptides (eAMPs) are bioactive fragments embedded within larger proteins and represent an underexplored source of antimicrobial candidates. We developed a multi-layer proteome-mining framework to identify and prioritise eAMPs from 95%-identity-reduced protein sets derived from 265 high-quality bacterial genomes. Three complementary, layer-specific extraction strategies targeting protein termini, internal cleavage sites, and cationic hotspots yielded 29,251,180 unique peptide candidates. Dual AMP prediction with AMP-scanner v2 and Macrel reduced this space to 3,249,772 consensus candidates. Downstream prioritisation followed two complementary routes: a low-haemolysis branch focused on selectivity-oriented candidates and a high-activity branch that retained predicted haemolytic sequences as mechanistic comparators. Structure prediction and review were performed for 185 candidates, and 18 entered Tier-1 developability, novelty, and membrane-activity assessment. Three sequence-matched representatives were selected for experimental evaluation. Molecular-dynamics simulations supported water-phase stability of GEAMP_71c139393ac596b5 and deep anionic-membrane insertion by GEAMP_12ffb5d589c8cb1b. In replicated colony-count assays against Escherichia coli and Staphylococcus aureus, all three peptides showed concentration-dependent activity over 8-128 uM. GEAMP_12ffb5d589c8cb1b was the most active, producing 1.52- and 2.27-log10 reductions, respectively, at 128 uM relative to the matched 8 uM condition. Together, these results establish a sequence-traceable workflow linking proteome-scale eAMP discovery with structural prioritisation and experimental activity assessment.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745516v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">InterPET: A Curated Benchmark of Sequence Embeddings and Graph Architectures with Interpretability and Biological Validation for PETase Activity Prediction</h2>
+<p class="paper-authors">Handrian, C., Prakoso, I.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Motivation: Machine learning has emerged as a powerful accelerator for identifying PET-hydrolyzing enzymes (PETases). Yet, published models are often evaluated on benchmark performance alone, leaving their biological validity unexamined. Here we present InterPET, a curated benchmark and ablation study addressing both issues. Results: We aggregated sequences from four datasets (PlasticDB, PAZy, PlasticEnz, PEZY-miner), removing duplicate sequences, and filter data leakage, yielding a training set of 937 sequences and a benchmark of 139 sequences. Eight model configurations were trained and evaluated, spanning three embeddings (ESM-2, ProtT5, classical AAC/CTD descriptors), two tree-based classifiers (XGBoost, Random Forest), and two GraphSAGE variants differing in sequence-only and sequene plus 3D structure data. ESM-2 + XGBoost achieved the best performance (F1 = 0.91, AUC = 0.99, MCC = 0.90). SHAP-based feature attribution linked top-ranked AAC/CTD features (proline content, solvent accessibility, hydrophobicity) to known determinants of PETase activity, and cross-representation correlation showed that embedding-based models implicitly re-encode much of the same biophysical signal. However, in-silico mutagenesis revealed that the top-ranked M1 recovered only 0.5/3 catalytic-triad residues. These findings demonstrate that representation choice, classifier architecture, and evaluation criteria interact in ways a single leaderboard metric cannot capture. Availability and implementation: InterPET datasets and code are available at https://github.com/indiraprakoso/interpet/.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745360v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Aug 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Time-resolved operator archetypes characterize dynamical sensitivity during cell-state transitions</h2>
+<p class="paper-authors">Redd, D. M., Green, S. G., Terooatea, T. W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> During development, cells traverse gene expression states where their local dynamical sensitivity changes sharply, yet existing computational methods provide limited access to when and where this sensitivity peaks along a trajectory. Here we introduce scJDO (single-cell Jacobian Differential Operators), a framework that characterizes how local dynamical sensitivity evolves during cell fate transitions, together with an explicit account of what that representation can and cannot recover from snapshot data. scJDO treats time-indexed Jacobians as explicit analytical objects, projecting the temporal sequence of operators into a shared subspace and decomposing it into recurrent operator archetypes with interpretable temporal activation profiles. Unlike methods that derive Jacobians from splicing-kinetic vector fields, scJDO learns a neural drift field directly from cell-state geometry via diffusion score matching, enabling Jacobian analysis on trajectory-resolved scRNA-seq datasets regardless of splicing-data availability. Applied to a dense time-course of induced pluripotent stem cell (iPSC) reprogramming, scJDO resolves a quantitative operator-level signature that distinguishes diverted from productive fate: the productive trajectory executes a sequential handoff from an early MEF-exit operator regime to a late pluripotency-associated regime, whereas the diverted trajectory maintains the early regime and instead activates a distinct stress-associated archetype. We validate scJDO across four settings: synthetic benchmarks with analytically known ground truth, branching hematopoiesis, dense real time-course reprogramming, and a perturbational setting using Schrodinger bridges in K562 CRISPRi Perturb-seq. We compare against the two most widely used single-cell Jacobian methods on a dataset where all three are runnable, finding that scJDO shares significantly more gene-level and directional operator structure with Dynamo than expected by chance while providing operator-level analysis on datasets without splicing kinetics. We further characterize the boundary of the representation directly. At a fate-decision saddle, eight mathematically distinct readouts of the same learned drift field are consistent with a single explanation: a drift field fit to snapshot density reproduces density-dominant separation between committed branches rather than the low-variance transverse instability that defines the decision. Together, scJDO provides an operator-level view of single-cell dynamics and an explicit characterization of its own identifiability boundary.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.745996v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,34 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Aug 22, 2026</span>
+<span class="date">Aug 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Melittin intervention induces lncRNA response, mitochondrial dysfunction, and cell proliferation in murine cervical cancer cells</h2>
-<p class="paper-authors">Zhang, R., Zhuo, H., +8 authors, Guo, R.</p>
+<h2 class="paper-title">CRISPR/Cas9-Mediated Knockout of ZFP36L1 Impairs Cell Proliferation, Alters Cell-Cycle Progression, and Enhances DNA Damage Responses in MDA-MB-231 Triple-Negative Breast Cancer Cells</h2>
+<p class="paper-authors">Gandu, H. H. G., Gandu, P. T. Y., +7 authors, Shuaib, U. K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Melittin exhibits antitumor activity in cervical cancer models, yet the long non-coding RNA (lncRNA) response and associated regulatory networks remain poorly understood. Here, strand-specific RNA-seq data from melittin-treated and untreated U14 murine cervical cancer cells were analyzed to characterize melittin-responsive lncRNAs and explore their potential functional associations. A total of 28,162 lncRNAs were identified, including 27,307 known and 855 novel transcripts. Differential expression analysis revealed 404 differentially expressed lncRNAs (DElncRNAs), comprising 191 upregulated and 213 downregulated lncRNAs, w most of which were predicted to localize to the cytoplasm or nucleus. Cis-target analysis identified 52 neighboring mRNAs as putative targets of 46 DElncRNAs. Functional enrichment highlighted mitochondrial electron transfer and redox-related processes, including the mitochondrial electron transfer flavoprotein complex, electron-transferring-flavoprotein dehydrogenase activity, ubiquinone binding, and quinone binding. In parallel, melittin induced mitochondrial membrane depolarization and increased intracellular reactive oxygen species accumulation in U14 cells. Co-expression analysis further identified 138 lncRNAs co-expressed with 161 mRNAs, which were enriched in chromatin remodeling, DNA replication, and DNA repair. EdU incorporation decreased with increasing melittin concentrations, indicating suppression of DNA synthesis and proliferative activity. RT-qPCR analysis confirmed the expression trends of selected DElncRNAs. Collectively, these findings demonstrate extensive remodeling of the lncRNA landscape in melittin-treated U14 cells and suggest that melittin-responsive lncRNA-mRNA networks are associated with mitochondrial redox disruption and impaired DNA synthesis. This study provides a transcriptomic framework for identifying candidate lncRNA-mRNA regulatory axes underlying the antitumor response to melittin.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.18.745438v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 22, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">The private truncating Toll-like receptor 7 p.Glu834* variant associates with juvenile-onset systemic lupus erythematosus and pathological cytokine expression in vitro.</h2>
-<p class="paper-authors">Yves Renaudineau, Jenny Hawkes, +13 authors, Christian M Hedrich</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The X chromosome-linked Toll-like receptor (TLR)7 gene contributes to type I interferon (IFN) expression in systemic lupus erythematosus (SLE). Recently, ultra-rare variants in TLR7 have been linked with Mendelian forms of SLE.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42632785/" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.20.746080v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
