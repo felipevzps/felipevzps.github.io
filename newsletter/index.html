@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A discrete protein subset drives structure prediction discordance in orphan proteins</h2>
-<p class="paper-authors">Eicholt, L. A., Middendorf, L.</p>
+<h2 class="paper-title">Pruning the Search, Not the Signal: Adaptive-Banding Needleman-Wunsch via Protein Language Model Confidence</h2>
+<p class="paper-authors">Shoaib, M., Ali, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Structure and disorder predictors are increasingly used as decision-grade tools in protein engineering and in the analysis of newly emerged proteins, yet how the current state-of-the-art behaves on sequences outside the well-charted evolutionary space remains poorly characterised. We previously reported that AlphaFold2 confidence and the disorder predictor flDPnn produced discordant predictions for naturally evolved de novo Drosophila proteins and for shuffled sequences. Here, we revisit the comparison with AlphaFold3 and the best-performing disorder predictor PUNCH2 on the same sequence sets together with conserved Drosophila proteins and intrinsically disordered proteins. The discordance persists: pLDDT correlates positively with PUNCH2 disorder in random and de novo proteins and negatively with {beta}-strand fraction, opposite to the conserved and disordered baselines. A class-specific, score-defined driver subset jointly captures the unusual high-pLDDT, high-disorder, low-strand combination and contains 24.5% of de novo, 29.4% of random, 5.1% of conserved, and 1.3% of disordered proteins. Removing this subset normalises the correlations. A held-out classifier trained on architectural and compositional features that were not used in the driver definition recovers the subset, with helix and coil fraction, sequence length, entropy and hydropathy as the strongest predictors. The discordance is therefore not a sequence-class artefact but a localised, compositionally identifiable phenotype that current predictors handle in a non-canonical way - a concrete failure mode that protein designers and others working on sequences remote in sequence space should be aware of when relying on predictor outputs.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746756v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Dynamic programming yields exact quadratic-time (O(NM)) pairwise sequence alignments. Static banding heuristics (O(NW)) fail catastrophically on low-identity (below 30 percent), asymmetric insertions/deletions (indels), or extreme length ratios, dropping core-block Sum-of-Pairs (SP) score recovery to 20 to 50 percent. Conversely, recent protein language model (PLM) aligners evaluate all N by M cells without search grid constraints. To bridge this gap, we introduce Adaptive-Banding Needleman-Wunsch (AB-NW), leveraging PLM contextual representations to construct a confidence-adaptive dynamic programming corridor prior to fine-resolution dynamic programming while keeping downstream scoring unmodified. AB-NW downsamples residue embeddings, computes a coarse alignment, and sets per-row corridor bounds via normalized confidence metrics. Evaluated via JIT-compiled buffers, this reduces time complexity to O(NW_mean) and space to O(NW_max), where the average bandwidth is much smaller than sequence length M. Benchmarked across three PLM backbones (ESM2-8M, ESM2-35M, ProtBERT) across nine structural challenge categories, AB-NW recovers over 98.9 percent of exact unconstrained alignment scores and core-block SP accuracy across static banding failure modes (Twilight Zone, Asymmetric Indels, Extreme Aspect Ratios) while eliminating 55.3 to 78.8 percent of active dynamic programming cells. On large protein matrices (N, M greater than or equal to 3,700), AB-NW eliminates 87.6 to 91.7 percent of cells, achieving speedups of 9.79x to 13.30x (pure DP) and 1.73x to 2.94x (end-to-end), reaching up to 18.12x on unbiased controls (p less than 0.05 to p less than 10^-15), making AB-NW practical for large-scale, high-throughput sequence alignment pipelines.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.26.747234v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MolJam: A Multidimensional Framework for Assessing Molecular Dataset Quality and Its Impact on Machine Learning</h2>
-<p class="paper-authors">Wang, P., Shi, Z., +1 author, Zhou, R.</p>
+<h2 class="paper-title">Can SMILES be fragmented into a concatenable ordered sequence of retrosynthetically interesting string block ?</h2>
+<p class="paper-authors">Reboul, E., Prabakaran, H., +2 authors, Taly, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High-quality molecular datasets are essential for reliable machine learning in cheminformatics and bioinformatics, yet dataset quality is rarely assessed systematically and its relationship with downstream model performance remains poorly understood. Here, we present MolJam, an open-source framework for quantitative assessment of molecular dataset quality across five dimensions-structural integrity, data quality, experimental information quality, chemical space coverage, and data distribution-using 12 standardized metrics. Application of MolJam to 11 MoleculeNet and eight ChEMBL-derived datasets revealed widespread and heterogeneous quality issues, including undefined stereochemistry in up to 70.72% of molecules, inconsistent molecular representations, and contradictory labels. We next asked whether improving these quality metrics necessarily improves machine learning performance. Refinement of the ESOL and Lipophilicity datasets increased their MolJam quality scores but produced mixed effects on predictive performance, suggesting a competing influence of reduced dataset size. Controlled ablation experiments further demonstrated that both dataset quality and data quantity contribute to model performance and, notably, that retaining molecules with incomplete stereochemical information can outperform their removal when the resulting gain in data quantity offsets the quality penalty. Thus, molecular dataset curation cannot be reduced to maximizing data cleanliness alone but requires balancing multiple dimensions of data quality against information loss. MolJam provides a standardized framework for diagnosing molecular dataset limitations, comparing benchmark quality, and quantitatively evaluating how data curation decisions influence downstream machine learning.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746384v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Molecules generated by deep learning models are often difficult to synthesize. Their synthetic accessibility can be improved with automated retrosynthetic analysis, which allows for identifying synthons. However, synthons in a SMILES can be scattered throughout the string depending on the path taken through the molecular graph used to generate the SMILES. We tested whether the ensemble of possible SMILES for a molecule can be used to generate a concatenable ordered sequence of string fragments (blocks) from SMILES that match potential synthons obtained through automated retrosynthetic analysis. We found that exhaustively sampling the SMILES space of a molecule improves the coverage of retrosynthetic breaks. We achieved full coverage of retrosynthetic bonds in string form for 85% of the 1.9 million molecules in the MOSES dataset. Doing so allowed us to test our block SMILES in an unconditional de novo drug design test case with MolGPT and Monte Carlo Tree Search (MCTS). We found that using blocks as an LLM's token did degrade MolGPT performance due to the curse of dimensionality. However, using the SMILES selected by our blocking algorithm with the default SMILES tokenizer improved the reproduction of physico-chemical properties of samples and also improved uniqueness, novelty, and validity. The MCTS outperforms our MolGPT models in terms of validity and novelty. However, samples generated by the MCTS had physico-chemical properties that were further away from the MOSES baseline than the samples produced by molGPT, with an improved distribution of quantitative estimation of drug-likeness (QED).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.25.747180v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A multimodal representation learning platform for accurate molecular ADMET prediction</h2>
-<p class="paper-authors">Luo, Z., Huang, D., +2 authors, Li, Y.</p>
+<h2 class="paper-title">Genomic Context as a Predictor of Multidrug Resistance in African Klebsiella pneumoniae: A Feasibility Study with Leave-One-Country-Out Validation</h2>
+<p class="paper-authors">Ahmad, A., Busair, E.-k.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate ADMET prediction is essential for prioritizing compounds before costly experimental validation, yet ADMET tasks are highly heterogeneous. Properties such as solubility, permeability, protein binding, clearance, transporter activity and toxicity are governed by different molecular signals, ranging from local functional groups and physicochemical descriptors to bonded topology and three-dimensional geometry. Consequently, a single molecular representation or backbone is unlikely to be optimal across all ADMET tasks. We present Trimole-Hybrid, a task-wise multimodal framework that addresses ADMET heterogeneity by selecting or combining predictors built from complementary molecular representations. Trimole-Hybrid constructs a candidate pool of SMILES-, graph-, geometry-sensitive EPT/3D- and chemical descriptor-based predictors. For each task, Trimole-Hybrid selects the best-performing predictor to obtain the final prediction. On 22 Therapeutics Data Commons ADMET benchmarks, Trimole-Hybrid exceeded the public TDC top-1 methods on 10 tasks and ranked within the top 10 for 21 tasks. Ablation studies confirmed the contribution of both complementary multimodal molecular representations and task-specific ensemble strategies. In two small-molecule case studies, Trimole-Hybrid shows sensitivity to changes in essential functional motifs, suggesting its ability to capture ADMET-relevant molecular substructures.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746660v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Multidrug-resistant (MDR) Klebsiella pneumoniae is a leading cause of healthcare-associated mortality in Africa, yet genomic prediction of resistance has relied almost exclusively on resistance-gene detection validated under random data splits. Whether genomic context lineage, capsule and O-locus background, and virulence loci, with all resistance determinants excluded can predict aggregate MDR status, and whether such signal survives geographic transport, remains untested. As a feasibility study, we built an explainable machine-learning framework with leave-one-country-out (LOCO) cross-validation. Phenotypic linkage proved extremely scarce: only 231 of 9,505 strict-K. pneumoniae African NCBI records (2.43%) carry submitter-supplied antibiograms, necessitating a rule-based genotypic MDR proxy label. Country-sufficiency analysis showed LOCO is feasible on the current snapshot 8 countries at n &gt;= 200 genomes but not on any previously published cohort. In a stratified pilot (175 species-confirmed genomes, 9 countries), tree ensembles reached pooled AUROC 0.85 under random splitting but only 0.66 - 0.69 under LOCO; this ~0.15 AUROC geographic-generalization gap suggests that pooled accuracy overstates transportability, though at pilot fold sizes (n &lt;= 20 test genomes) confidence intervals are wide and overlapping. SHAP attributions implicated the ybt virulence locus and O-serotype background, indicating models exploit lineage-associated population structure. The substantive contribution is a leakage-controlled, fully reproducible pipeline indicating that geographic validation, not pooled accuracy, is the operative test for genomic AMR surveillance models.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.25.747089v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">TxNova: recovery of recurrent unannotated intergenic splice loci from existing bulk RNA-seq alignments</h2>
-<p class="paper-authors">Li, Z., James, A., Li, S.</p>
+<h2 class="paper-title">ppigFinder: an integrated desktop application for bacterial genome annotation and AlphaFold 3 based protein protein interaction screening</h2>
+<p class="paper-authors">Oka, G. U., Adan, W. C., Calomeno, C. Q., de Souza, R. F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746847v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation. AlphaFold-based structure prediction has transformed structural biology by enabling accurate protein modelling and providing a powerful framework for inferring protein-protein interactions (PPIs). However, discovering candidate PPIs directly from genome sequences remains a fragmented and largely trial-and-error process, typically requiring separate tools for open reading frame (ORF) prediction, functional annotation, candidate selection, iterative testing of potential partners, manual preparation of individual structural-prediction jobs, and downstream interpretation of confidence metrics. Results. We present Protein-Protein Interaction Genomic Finder (ppigFinder), a standalone, cross-platform desktop application that integrates these steps into a project-oriented graphical workflow for genome-based PPI discovery from nucleotide sequence data. ppigFinder combines ORF prediction, functional annotation, genomic-neighbourhood inspection, AlphaFold 3 job generation, remote job submission, and structural-confidence analysis within a single environment. As a proof of concept, we performed a VirD4-centered AlphaFold 3 interactome screen in Xanthomonas citri pv. citri strain 306, modelling VirD4 (ORF2601) against all 4,303 predicted chromosomal ORFs. Ranking by the minimum interchain predicted aligned error (PAE_min) placed all 14 XVIPCD-containing effector candidates within the top 1% of predictions, with the six top-ranked models corresponding to XVIP candidates. The screen also recovered an XVIPCD-containing protein absent from the reference genome annotation and identified high-confidence candidates predicted to bind VirD4 at a surface opposite to the XVIPCD-binding site.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.23.746524v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Prot-LAMBDA: Explicit Distance Learning Enhances Structural Reasoning in Protein Language Models</h2>
-<p class="paper-authors">Ibtehaz, N., Zhang, Z., +3 authors, Kihara, D.</p>
+<h2 class="paper-title">HIDE-Deconv: A hierarchical deconvolution framework for multiscale characterization of cellular remodeling</h2>
+<p class="paper-authors">Goertler, F., Voelkl, D., +11 authors, Zacharias, H. U.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein language models (PLMs) learn evolutionary information from large-scale sequence data, but three-dimensional relationships are encoded only implicitly. Here, we introduce Prot-LAMBDA (Protein LAnguage Model Boosted with Distance Awareness), a PLM that explicitly incorporates spatial relationships by coupling residue embeddings with inter-residue contacts. Prot-LAMBDA improves performance across diverse structure-related tasks, including contact, secondary structure, backbone geometry, solvent accessibility, and protein fold prediction. Notably, it achieves a twofold improvement in long-range contact recall and an 11.7% reduction in {psi}-angle prediction error relative to ESM2-3B. Despite having approximately fivefold fewer parameters, Prot-LAMBDA also improves 3D structure prediction over ESM2-3B by 5-7% in TM-score when coupled to the same structure-prediction module. Building on these representations, we developed LambdaFold, a lightweight distance-guided structure prediction framework that achieves performance comparable to ESMFold on proteins strictly non-redundant to the training data. Finally, retrieval-augmented integration of structural templates increases mean TM-score substantially for targets with high template coverage and rescues several incorrect folds. Together, these results demonstrate that explicit spatial constraints enable efficient and generalizable structural representation learning and protein structure prediction.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.23.746565v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Most deconvolution methods estimate cellular composition at a single level of cellular resolution despite biological processes often manifesting within fine-grained cellular subpopulations. We present HIDE-Deconv, a hierarchical deconvolution framework that jointly optimizes cellular compositions across multiple levels of a cell-type hierarchy while maintaining consistency between resolutions. In benchmark experiments, HIDE-Deconv achieved the highest overall predictive performance among evaluated methods. Analyses of lung adenocarcinoma, sepsis, COVID-19 and systemic lupus erythematosus revealed biologically relevant cellular remodeling that remained concealed at broader levels of cellular resolution. HIDE-Deconv is available as an open-source framework at https://github.com/dvoelkl/HIDE-deconv.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746754v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">ProtEnrich: Residual Multimodal Enrichment of Protein Sequence Embeddings</h2>
-<p class="paper-authors">Bianchin de Oliveira, G., Saeed, F.</p>
+<h2 class="paper-title">Tree-aware conditional language modeling recovers mutational patterns of viral evolution</h2>
+<p class="paper-authors">Polunina, P. V., Maier, W., Rubin, A. F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein language models effectively capture evolutionary and functional signals from sequence data but lack explicit representation of the biophysical properties that govern protein structure and dynamics. Existing multimodal approaches attempt to integrate such physical information through direct fusion, often requiring multimodal inputs at inference time and distorting the geometry of the sequence embedding space, which can disrupt the semantic organization learned from evolutionary information. Consequently, a fundamental challenge of how to incorporate structural and dynamical knowledge into sequence representations without disrupting their semantic organization, enabling sequence-based models to better capture the biophysical properties governing protein structure and function. We introduce ProtEnrich, a representation learning framework based on a residual multimodal enrichment paradigm. ProtEnrich decomposes sequence embeddings into two complementary latent subspaces, an anchor subspace that preserves sequence semantics, and an alignment subspace that encodes biophysical relationships. By converting multimodal information derived from ProstT5 and RocketSHP to a low-energy residual component, our approach injects physical representation while maintaining the original sequence embedding while preserving their original semantic geometry, avoiding the need for multimodal inputs at inference time. Across eight diverse protein foundational models trained on 550,120 SwissProt proteins with AlphaFold structures, enriched embeddings improved zero-shot remote homology retrieval, increasing Precision@10 and MRR by up to 0.13 and 0.11, respectively. Downstream performance also improved on structure-dependent tasks, reducing fluorescence prediction error by up to 16% and increasing metal ion binding AUCROC by up to 2.4 points, while requiring only sequence input at inference. Source code is available at https://github.com/pcdslab/ProtEnrich, pretrained models and datasets are available at https://huggingface.co/collections/SaeedLab/protenrich.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746797v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The evolutionary accessibility of a protein mutation depends on the sequence background in which it arises and its lineage history, yet most protein language models estimate sequence plausibility without explicitly considering the ordered sequence changes through which descendants arise. We developed evoPLM-Tree, a tree-aware conditional autoregressive language model that predicts descendant protein sequences from ancestral sequences together with phylogenetically derived evolutionary features. We demonstrated our approach using SARS-CoV-2 spike protein, pairing sequences from early Omicron lineages according to their positions on a mutation-annotated phylogeny, and evaluating model performance on sequence pairs from later lineages. Prompt-masking experiments showed that incorporating phylogenetic context substantially increased reliance on the supplied input information compared with a sequence-only model. Generated descendant sequences accurately reproduced the positional distribution of mutations observed during viral evolution, with strong correlations between predicted and observed mutation-frequency profiles for both the receptor-binding domain (Spearman's {rho} = 0.823) and the full spike protein ({rho} = 0.736). Although prediction accuracy for individual substitutions decreased with increasing evolutionary distance, the model consistently captured aggregate mutational patterns across the spike protein. Model-assigned mutation probabilities were also enriched among substitutions experimentally tolerated in deep mutational scanning assays of Omicron BA.2 receptor-binding domain expression (1.19-fold enrichment) and ACE2 binding (1.04-fold enrichment), despite the model being trained solely on observed ancestor-descendant sequence pairs and associated phylogenetic context features. These results demonstrate that explicitly providing protein language models with phylogenetic context during sequence generation can recover lineage-specific mutational patterns and yields probabilistic predictions consistent with experimentally measured functional constraints. evoPLM-Tree provides a framework for modeling protein evolution along phylogenetic lineages and prioritizing plausible future mutations from genomic surveillance data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.25.746971v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Foldseek-Interface reveals a protein interface universe far from complete</h2>
-<p class="paper-authors">Strom, J. M., Cha, S., +4 authors, Luck, K.</p>
+<h2 class="paper-title">Context-dependent regulatory networks connect Alzheimer's disease genetics to microglial inflammatory responses</h2>
+<p class="paper-authors">Fu, T.-T., Kurkela, M., +5 authors, Hou, L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein-protein interactions mediate a vast range of cellular functions, requiring diverse modes of binding. While recent years have seen major efforts to chart and classify the protein structure universe, we lack comparable methods to assess and cluster that diversity in interface structure at interactome scale. Here, we present Foldseek-Interface, a method that converts 3D interface structures into searchable sequences to enable fast alignment and clustering of protein interaction interfaces. It matches the accuracy of state-of-the-art tools while running up to 230 times faster. Applying it to all biological assemblies in the PDB, we cluster 3.1 million dimers into 77{,}167 interface clusters and use this resource to characterise interface diversity, evolution, and pathogen mimicry. Application of Foldseek-Interface to resources of predicted protein complex structures rapidly revealed putatively novel interface types worth further experimental interrogation. Foldseek-Interface and the interface cluster resource are freely available as webservers for search https://search.foldseek.com/interface and exploration https://interface.foldseek.com.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746585v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Inflammation is central to Alzheimer's disease (AD) pathogenesis. Microglia, the resident innate immune cells of the brain, exhibit diverse inflammatory states and are enriched for AD-associated genetic variants within active cis-regulatory elements (CREs). However, the interplay among genetic variants, transcription factor (TF)-CRE-gene programs, and microglial responses across inflammatory and disease contexts remain poorly understood. Here, we develop context-dependent epigenomic networks (cEpiNets), integrating bulk and single-nucleus assay for transposase-accessible chromatin using sequencing (ATAC-seq) to reconstruct regulatory programs across inflammatory, genetic perturbation, and disease contexts. Leveraging TF footprinting and graph embedding, cEpiNets identifies shared and context-specific programs and predicts regulatory circuits in unseen biological contexts. In a SORL1-marked inflammatory microglial state that expands during AD progression, cEpiNets annotates AD risk variants at the SORL1 locus and identifies variants associated with cellular state abundance across donors. Cross-context analysis further identifies ZBTB14, whose inflammation-associated program connects AD risk variant-harboring CREs to target genes and widespread TF remodeling in AD. Donor-level ZBTB14 footprint activity is negatively associated with AD pathology, while combined IFN{gamma}/TNF stimulation represses ZBTB14 and activates a subset of inferred targets. Collectively, cEpiNets bridges genetic variation, regulatory programs, and disease-associated cellular phenotypes to facilitate mechanistic interpretation of complex disease genetics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746572v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A statistical framework for disease classification with scRNA-Seq Data</h2>
-<p class="paper-authors">Xiao, Z., Torous, W., +2 authors, Purdom, E.</p>
+<h2 class="paper-title">CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry</h2>
+<p class="paper-authors">Kim, J., Lee, B., +11 authors, Kim, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation Bulk RNA-sequencing based disease classification obscures cell-type specific signals by aggregating gene expression across heterogeneous tissues. Although single-cell RNA-seq tackles this limitation, summarizing and deriving patient-level predictors while retaining biological interpretability remains challenging. Standard sparse methods, such as lasso, often select arbitrary scattered gene sets without leveraging the underlying cell type structures revealed by single-cell data. Results: We introduce a two-stage statistical framework for interpretable patient-level disease classification from single-cell data. We first construct a gene-by-cell-type pseudobulk matrix that summarize single-cell expression for each patient. We then fit a multinomial logistic regression model with sparse group lasso penalty, inducing sparsity at both the cell type and gene levels. Across datasets of systemic lupus erythematosus, COVID-19, and colorectal cancer, our framework either matched or outperformed lasso and random forest baselines. Importantly, our models recovered biologically coherent, cell-type specific gene signatures consistent with known disease mechanisms, demonstrating improved interpretability without sacrificing predictive accuracy. Availability: The scSGL R package implementing the Sparse Group Lasso classification framework described in this paper is available at https://github.com/zhiweixiao/scSGL (version 0.99.1). Code to reproduce the actual cross-validation, model fitting, and prediction analyses on the three datasets reported here is available at https://github.com/zhiweixiao/scSGL-manuscript.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746294v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels. Across six open- and closed-weight backbones, the strongest formulation draws one rectangular gate per candidate and falls within the range of trained, panel-specialized baselines. It degrades less under distribution shift. Walking the hierarchy stepwise outperforms predicting every cell type at once. Ablations trace the signal to the data distribution shape and curated marker priors. However, adding vision or a self-verification loop systematically tightens gates.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746336v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Forecasting high pathogenicity avian influenza with a stochastic mechanistic model: performance and lessons for Australia</h2>
-<p class="paper-authors">Theng, M., Lee, S., +5 authors, Firestone, S. P.</p>
+<h2 class="paper-title">Genomic-Based Prediction of Exopolysaccharide Composition and Structure: Insights from Rhizobium and Sinorhizobium Species</h2>
+<p class="paper-authors">Tulumello, J., Long, J., +3 authors, Heulin, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High pathogenicity avian influenza (HPAI) H5N1 clade 2.3.4.4b has caused a global panzootic with unprecedented impacts on wildlife and livestock, making evidence-based disease mitigation and outbreak response critical. In this paper, we describe a spatiotemporal mechanistic model of infectious disease dynamics developed for the HPAI Modelling Challenge and its implications for forecasting and policy in Australia. To emulate emergency response conditions, we adapted an existing model for rapid deployment rather than developing a bespoke model. We refined the model iteratively across the challenge to better analyse the provided outbreak data. Throughout the challenge, we accurately forecast temporal trends and local outbreak spread, but could not predict rarer, long-distance dispersal events. The challenge ended before HPAI H5N1 was first detected in Australia (June 2026), providing a critical opportunity to test our response modelling readiness for an incursion in wildlife and potential spillover into commercial poultry. Our experience identifies three key considerations for Australia's HPAI H5N1 preparedness: targeted enhancements to our model to improve forecast precision and enable scenario-based policy evaluation; the critical value of pre-existing modelling infrastructure for rapid emergency response; and sustained collaboration between research and policy institutions to align modelling capabilities with outbreak response requirements.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.24.746897v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Bacterial exopolysaccharides (EPS) are key components in biofilm formation, stress protection, and symbiosis in Rhizobiaceae. While EPS structural diversity is extensive, experimental characterization remains limited. In this study, we experimentally determined and compared four distinct EPS structures produced by ten Rhizobium alamii strains. Using genomic data, we bioinformatically identified supra-operonic clusters (SOCs) responsible for these EPS biosynthesis. We introduced a computational framework to predict, score, and compare EPS SOCs across 84 Rhizobium and Sinorhizobium species, linking gene content to structural and functional EPS diversity. A total of 743 EPS SOCs was selected for network analyses, allowing the identification of 36 major groups of orthologous EPS SOCs, successfully recovering all known EPS biosynthetic loci and two novels SOCs potentially encoding uncharacterized EPS (xEPS-I, xEPS-II). Profiles of EPS SOCs correlated with taxonomical groups, with a single EPS SOC conserved through all 84 genomes and distinct additional EPS SOCs depending on the group, but do not strictly explain symbiotic capacity. Genetic comparisons of transporters (Wzx, Wzy) and glycosyltransferase sequences indicated these proteins as key markers of EPS structure. Overall, this computational framework accurately identified and classified EPS SOCs, providing a scalable, genome-based method for predicting EPS biosynthetic potential in Rhizobiaceae and usable in other microbial genera.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746188v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,15 +203,53 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Benchmarking the robustness of segmentation models to corruptions in biological imaging</h2>
-<p class="paper-authors">Kesenci, Y., Le Folgoc, L., Angelini, E.</p>
+<h2 class="paper-title">AI-driven framework modeling perturbation in brain organoids reveals candidate genes for autism</h2>
+<p class="paper-authors">Koh, I. G., Chang, E., +33 authors, An, J.-Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Deep-learning-based segmentation algorithms have gained considerable accuracy for processing biological images. In particular, the introduction of large foundation models, novel architectures, and semantically varied datasets now allows for deployment of state-of-the-art models for clean image cohorts with limited re-training or, in the best of cases, in an out-of-the-box fashion. Biological imaging, however, is liable to corruptions that can hinder their deployment. While some methods document their robustness to the most common corruptions, a systematic robustness analysis of the state of the art to the expansive gamut of corruptions in biological imaging remains to be done. We perform this benchmarking by simulating 36 corruption types with varying degradation severity on images sampled from 30 different datasets. Our benchmark accounts both for the variety in biological images and the nature of corruptions. Among other things, our study reveals that performance on clean images does not correlate with overall robustness to image corruptions. In fact, we find that a decade-old method, StarDist, is more robust than many of its more recent foundation-model-based counterparts. We also show in a dedicated representation analysis that the performance of segmentation models collapses in the early layers of the encoding phase.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.21.746302v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Autism gene discovery is constrained by the rarity and heterogeneity of damaging variants, requiring large cohorts to identify susceptibility genes. Neural organoids and single-cell foundation models enable perturbation modeling in neurodevelopmental contexts. Here, we show that perturbation-informed foundation modeling of neural organoids can provide functional context for prioritizing candidate genes with genomic and clinical support. We constructed a 3.6-million-cell organoid atlas and trained models to predict genome-wide perturbation responses. Benchmarking 17 models identified a telencephalic neuron-specific model best preserving autism-relevant perturbation structure. Genome-wide profiling revealed two clusters associated with mid-fetal synaptic neuronal processes and early radial glia ubiquitin signaling. These clusters were supported by damaging-variant enrichment and clinical phenotypes across 89,916 family-based samples. Logistic-regression prioritization identified 343 candidates, including 167 in the key clusters, with convergence across TADA signals and recurrent evidence for NBEA and KLHDC10. This framework integrates predicted perturbation effects with genomic evidence to support autism candidate prioritization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.22.746387v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Aug 26, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Spatial mapping of pediatric brain tumors across diagnoses and relapses</h2>
+<p class="paper-authors">Escudero Morlanes, J., Lehto, T.-P., +16 authors, Kvastad, L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> We present a spatial transcriptomic atlas of 19 pediatric brain tumor patients spanning nine major and rare diagnoses, including seven relapses, revealing their spatial cellular and molecular organization. Each tumor section resolves into 2 - 4 recurrent spatial archetypes across 11 biological themes, with some mirroring developmental lineage patterns - for example, oligodendrocyte-lineage programs in pilocytic astrocytomas. Spatially inferred copy-number analysis identifies relapse-associated putative clones. In one rare embryonal tumor, spatial niches in the primary tumor harboring putative clones colocalized with an archetype enriched for nervous system development and glioblast-lineage programs. In one ependymoma and one pilocytic astrocytoma, relapse-associated putative clones preferentially localized to the vasculature, suggesting regrowth during relapse may be seeded by clonal selection of residual tumor cells within specialized microenvironmental niches. This resource provides an open-access spatially resolved map via an interactive viewer to inform research on pediatric brain tumor ecosystems, relapse biology, and therapeutic strategies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.25.746606v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Aug 26, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">NELLY enables patient-centric drug prioritization through interpretable drug-conditioned gene weighting</h2>
+<p class="paper-authors">Peralta Viteri, C., Harnischfeger, N., +2 authors, Kretzschmar, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Precision oncology seeks to match each tumor with the most effective anti-cancer therapy. Advances in pharmacogenomics and machine learning enabled drug response prediction models with strong performance in cancer cell lines. Nonetheless, patient-centric evaluation of drug prioritization and systematic assessment of model generalization in patient-derived systems across cancer types remain largely absent. Here we introduce a translational framework combining patient-centric benchmarking with a pan-cancer pharmacogenomic atlas of patient-derived organoids, together with NELLY, a deep learning model integrating transcriptomic and chemical information to predict drug response and prioritize therapies. NELLY outperformed existing methods for patient-specific drug prioritization across cancer cell lines and patient-derived organoids, including under out-of-distribution evaluation. Its dynamic weighting mechanism provided patient-specific gene attributions, offering a route to connect predicted drug response to molecular programs associated with drug resistance. Our results support NELLY as a promising framework for translationally relevant and interpretable drug response prediction in precision oncology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.25.747034v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +260,53 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Aug 25, 2026</span>
+<span class="date">Aug 26, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Scalable High-Density Microwell Assay for Single-Cell Clonal Expansion Profiling.</h2>
-<p class="paper-authors">Stefanius Karoliina, Raut Shiska, +1 author, Dave Digant P</p>
+<h2 class="paper-title">Architectural logic of the 3D genome: mechanisms of dysregulation and emerging cancer therapeutics.</h2>
+<p class="paper-authors">Rebecca G Smith, Hannah M Wilson, +1 author, Yu Liu</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Traditional clonogenic assays remain central to evaluating the self-renewal capacity of tumor cells. However, the assay relies on subjective endpoint measurements, is restricted to two-dimensional monolayer growth, and lacks the single cell resolution required to resolve heterogeneous expansion behaviors. We describe a high-density microwell array-based platform for quantitative assessment of single cell clonogenic growth outcomes, defined by cell count distributions spanning non-dividing, slow-dividing, and fast-dividing three-dimensional colony forming phenotypes. This approach links initial single-cell occupancy to defined growth outcomes across thousands of indexed microwells per well. The platform integrates high-density, low-adhesion microwell arrays within industry standard device plate formats and an automated image analysis pipeline incorporating machine learning, enabling parallel quantification of spatially indexed founder-derived microwells using widely accessible automated imaging systems. The assay was implemented in both 4-well and 96-well plate formats to evaluate reproducibility and scalability across different plate configurations. Using three glioblastoma cell lines as model systems, we demonstrate reproducible single founder occupancy and consistent clonal growth outcome distributions across replicate formats. This integrated microscale assay platform enables systematic quantitative characterization of clonogenic expansion capacity at single cell resolution and is compatible with applications in cancer biology, therapeutic testing, and functional single cell phenotyping. By resolving single-cell persistence, limited expansion and high expansion outcomes within a scalable high-density format, this approach expands the analytical resolution of single cell clonogenic profiling beyond traditional binary colony scoring.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42641793/" target="_blank">
+<p><strong>Abstract:</strong> The three-dimensional (3D) genome provides an essential layer of organization that shapes genome function in space and time. Chromatin compartments and topologically associating domains (TADs) arise from the interplay between intrinsic properties of chromatin and architectural factors, including cohesin and CTCF. Despite substantial progress in defining these structural features, whether 3D genome architecture plays a causal role in regulating processes such as transcription, DNA replication, and DNA repair, or instead reflects underlying regulatory activity, remains unresolved. Here, we use the distinction between chromatin-intrinsic features and architectural factors as a framework to evaluate evidence for causality in genome structure-function relationships. We extend this framework to cancer, where both intrinsic alterations (including noncoding mutations, structural variants, and changes in chromatin state) and architectural factor perturbations (such as mutations in architectural proteins and dysregulation of transcriptional machinery) disrupt genome organization and contribute to disease progression. These findings suggest that alterations in genome structure can, in some contexts, actively reshape oncogenic programs. A major limitation in applying 3D genome insights to cancer biology is the cost and complexity of omics assays. Recent advances in artificial intelligence (AI) and machine learning (ML) enable inference and prediction of 3D genome organization from sequence and epigenomic features, providing insight into the extent to which genome folding is encoded intrinsically versus dynamically regulated in architectural factors. This perspective provides a unified view of how genome structure is established, how it relates to function, and how its disruption contributes to tumorigenesis.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42648878/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Aug 26, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">RNA biosensors in oncology: Mechanisms, Cancer-specific applications, and a Hallmark-aligned clinical roadmap.</h2>
+<p class="paper-authors">A Gamage, H M L P B Herath, K M Nalin de Silva, Rohini M de Silva</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Cancer diagnosis continues to rely on invasive tissue sampling and static molecular assessments that cannot reflect the real time RNA alterations driving tumour progression. RNA biosensors are genetically encoded or synthetic devices that translate specific RNA markers and tumour microenvironment signals into measurable outputs offer a compelling alternative, particularly for liquid biopsy applications where non-invasive, dynamic monitoring is essential. This review systematically examines key RNA biosensor classes developed for oncology, spanning fluorescence based platforms such as aptamers, FRET probes, and molecular beacons, enzymatic and electrochemical architectures including CRISPR Cas systems and field effect transistors, metabolite responsive designs encompassing riboswitches, RNA thermometers, and reactive oxygen species sensors and sequence specific toehold switches alongside exosomal detectors. For each class, we discuss operating principles, cancer relevant applications, reported detection thresholds reaching into the zeptomolar range, and current limitations. These biosensor capabilities are mapped onto Hanahan's hallmarks of cancer, and practical clinical roadmaps are outlined for three priority applications early population screening, longitudinal therapy response and resistance monitoring, and tumour microenvironment prognostication. Convergence with microfluidic integration, AI assisted interpretation, and multiplexed nanotechnology represents the critical next step in translating these platforms from laboratory tools into routine diagnostic practice.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42648526/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Aug 26, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">RIBOTAC-mediated degradation of hsa-microRNA-301a-3p suppresses TNBC bone metastasis.</h2>
+<p class="paper-authors">Wei Zhou, Jinmei Jin, +7 authors, Xin Luan</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Triple-negative breast cancer (TNBC) is an aggressive subtype with a high propensity for bone metastasis and limited treatment options. Although many proteins drive metastasis, most remain inaccessible to conventional small-molecule drugs due to lack of suitable binding sites, prompting interest in upstream RNA regulators. Using integrative bioinformatics and machine learning, we identified hsa-microRNA-301a-3p as a central regulator of TNBC bone metastasis. However, current nucleic acid-based therapies are limited by instability and inefficient delivery. To overcome these challenges, we designed a ribonuclease-targeting chimera (RIBOTAC) that recruits endogenous RNase L to degrade the primary transcript pri-microRNA-301a. The resulting RIBOTAC efficiently reduced hsa-microRNA-301a-3p levels, restored NEDD4L expression, and promoted degradation of the oncogenic protein YAP, thereby suppressing TNBC bone metastasis. These findings identify hsa-microRNA-301a-3p as a key driver and demonstrate RNA-targeted degradation as a therapeutic strategy in TNBC bone metastasis.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42647607/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
