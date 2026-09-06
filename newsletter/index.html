@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
+<span class="date">Sep 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Turning Domain Expertise into Multi-Dimensional Evaluation of Biomedical AI with Karenina</h2>
-<p class="paper-authors">Carli, F., Rusina, P., +8 authors, Saez-Rodriguez, J.</p>
+<h2 class="paper-title">Transcriptome profiling identifies the chromatoid body as a dynamic center for RNA surveillance and transcript sorting during spermatogenesis</h2>
+<p class="paper-authors">Ma, L., Ahmedani, A., +3 authors, Kotaja, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Language models and agents are increasingly used in biomedicine, but current benchmarks reward correct answers even when the underlying reasoning is flawed. Here we introduce Karenina, an open-source framework that turns expert knowledge into multi-dimensional evaluations of questions, conversations and autonomous agents. Illustrated in Question-Answer pairs, multi-turn conversations and autonomous data-analysis, these dimensions together moves evaluation beyond scoring, enabling trustworthy decision-making with AI in biomedicine.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748513v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The chromatoid body (CB) is a hallmark of haploid male germ cells, but how it selects and regulates RNAs has remained unclear. Here we define the RNA landscape of the CB by transcriptome and small RNA profiling of isolated CBs throughout mouse round spermatid differentiation. We find that the CB selectively concentrates pachytene piRNAs, retrotransposon transcripts, specific mRNA isoforms and intron-retaining mRNAs, revealing extensive RNA sorting within this cytoplasmic germline condensate. The enrichment of transposable element transcripts together with PIWI-piRNA complexes identifies the CB as a surveillance center that may safeguard genome integrity in post-meiotic haploid cells. Unexpectedly, mRNA recruitment is not determined by predicted piRNA targeting. Instead, transcript localization is encoded by a combinatorial set of intrinsic sequence and structural features that accurately predict CB enrichment at isoform resolution. These findings establish the CB as a dynamic post-transcriptional regulatory compartment that integrates genome surveillance, RNA quality control and selective transcript sorting, uncovering general principles through which biomolecular condensates shape cell-specific transcriptomes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.744273v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
+<span class="date">Sep 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Interpretable Multiomics Machine Learning Identifies GSDMB-Associated Epigenetic Repression and Reduced Immune Activity in Metastatic Colorectal Cancer</h2>
-<p class="paper-authors">Costa, M. d. S., Marcelo, H. I., +1 author, De Camargo, V.</p>
+<h2 class="paper-title">Evaluating the Robustness of Path-Preservation Benchmarks for Dimensionality Reduction Across Point-Density Thresholds: Linear and Cyclic Single-Cell Trajectories</h2>
+<p class="paper-authors">Bombina, P., Coombes, K. R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748124v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Comparative studies of trajectory inference (TI) methods evaluate complete computational pipelines, making it impossible to isolate how much distortion is introduced specifically by the dimensionality reduction (DR) step. To our knowledge, no study has directly and systematically evaluated how well DR methods alone preserve a known reference path when projecting high-dimensional single-cell data to two dimensions, and no current study has introduced a dedicated set of metrics to quantify the degree of path-preservation quality after dimensionality reduction. This gap matters because DR is a universal preprocessing choice that shapes all downstream trajectory analysis, yet its independent geometric effect on path structure remains uncharacterized, and practitioners have no principled way to quantify it. Methods: We tested a panel of candidate path-preservation metrics on two single-cell datasets with known reference trajectories, one linear and one cyclic, to determine whether the resulting metric values, DR-method rankings, and overall conclusions are sensitive to the number of points used to construct and display the path, and whether they remain stable once that choice is fixed. The primary linear dataset is a CD4+ T-cell surface-protein dataset (3,096 cells, 51 proteins); a ground-truth reference path was constructed from cells lying close to the first principal component (PC1) of a single cluster, providing a known linear trajectory in the high-dimensional space. Sixteen DR methods were applied and twelve geometric path-preservation metrics were computed, spanning log-ratio distortions of length, curvature, and spatial similarity; Spearman rank correlations of pairwise distances and segment lengths; and structural complexity measures including self-intersection frequency and coiling. To test the sensitivity of this evaluation framework to path density, we varied the fraction of cells used to define the reference path from 1% to 10% (31-310 path points) and tracked how method rankings responded. The same analysis was repeated on a topologically distinct reference, a closed B-cell cell-cycle loop detected by persistent homology in a separate CyTOF dataset, to test whether these conclusions about metric and method stability hold for cyclic as well as linear trajectories. Results: The central sensitivity question, whether the number of points used to construct the reference path changes the evaluation's conclusions, was answered negatively on both datasets. On the linear PC1 trajectory, absolute values of all twelve metrics shifted smoothly as the path-density threshold was varied from 1% to 10% (31-310 points), reflecting the broadening of the reference band, but each method's composite rank remained stable across every threshold: no method changed performance tier as the hyperparameter varied. A composite rank aggregating all twelve metrics identified the same consistently high-performing methods (UMAP, MDS, CNPE, TSNE, SPE, LPMIP) and consistently low-performing methods (SPMDS, LPP, DVE, LAPEIG, PHATE) at every density level tested. Considered on its own, `SpatDistSpear`, the single most discriminating metric, separated a high-fidelity group (LPMIP, DM, MDS, SPMDS, DVE, CISOMAP, CNPE; all r &gt; 0.80) from a mid-range group (LAPEIG, SPE, PHATE, UMAP, TSNE, FOSMOD) and a low-fidelity group (PFA, NNP, LPP); global distance preservation and overall composite performance therefore do not always agree on the same "top tier" of methods, but this disagreement in which metric identifies the best methods is itself density-independent rather than an artifact of the specific threshold chosen. The cyclic loop reproduced the same density-independence: absolute metric values drifted with the per-segment band width, yet each method's composite rank again held constant across all eleven density levels. The identity of the best and worst performers was largely, though not entirely, conserved between the two topologies, with CNPE, LPMIP, SPE, and MDS as top performers and LAPEIG, DVE, and SPMDS as poor performers on both the linear path and the closed loop. UMAP and TSNE were exceptions, dropping from top performers on the linear path to the middle of the sixteen-method panel, rather than the worst tier, on the closed loop. This topology-dependence is a property of the reference geometry rather than of path density: it holds consistently regardless of how many points are used to define the path. Significance: This work introduces a direct, pipeline-independent evaluation of how DR methods distort trajectory geometry, a benchmarking dimension absent from existing TI comparisons. The within-dataset rank stability result, demonstrated on both a linear and a cyclic reference trajectory, validates the use of a fixed reference-path threshold as a robust operating point for large-scale DR benchmarking; however, the partial reordering of top performers between topologies shows that a method's DR benchmark ranking is trajectory-shape-dependent and should not be assumed to transfer from a linear to a cyclic reference.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748633v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
+<span class="date">Sep 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">VariantFlow: a selective-execution engine for efficient population genomic computation on large variant datasets</h2>
-<p class="paper-authors">Estaji, E., Mao, J.-F.</p>
+<h2 class="paper-title">Hypoxia Induced Modulation of Cellular and in vivo uptake of DNA nanocage implications in therapeutics</h2>
+<p class="paper-authors">Kosara, S., Prakash, G., +2 authors, Bhatia, D. D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Population-scale sequencing now produces variant call sets with thousands of samples and millions of sites, making post-calling analysis a recurring bottleneck. Because the Variant Call Format stores every field of every record together, a tool answering a field-limited question still parses the unused annotations, FORMAT blocks, and per-sample values, which costs time without changing the result. We present VariantFlow, a command-line engine built on selective execution, decoding only the fields the current filter, statistic, or projection requires and preserving original records where possible. On correctness-matched benchmarks on the 1000 Genomes 3,202-sample high-coverage dataset, VariantFlow computed whole-chromosome missingness 8.0-8.5x faster than VCFtools at a constant 8.6 MB of memory, the chromosome 1 summary taking 128 s against 1031 s. An index-assisted FILTER=PASS predicate ran 123-273x faster than bcftools where block metadata excludes most of the file. Further gains, reported in Table 1, cover FORMAT-rich filtering on record subsets, linkage disequilibrium, and export-once Parquet queries served through DuckDB. Core population-genetic outputs were byte-identical to VCFtools, per-individual missingness and the site-frequency spectrum matched scikit-allel exactly, and the missing-data-aware pi and dxy estimators reproduced pixy's pairwise counts in every window. By decoding only the fields each operation requires, VariantFlow brings large-cohort post-calling analysis within reach of exploratory work on a single workstation. It complements rather than replaces bcftools, HTSlib, GATK, and VCFtools, and should be of value wherever large cohort VCFs are repeatedly summarised, filtered, or exported. VariantFlow is open source (Rust, MIT OR Apache-2.0) at https://github.com/ehsanestaji/VariantFlow; version 1.5.0 is archived at doi:10.5281/zenodo.21198172.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748643v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> DNA tetrahedra (DNA Td) are promising nanocarriers for drug delivery, but how hypoxia affects their cellular internalisation remains poorly understood. We synthesised and characterised Cy5-labelled DNA Td and established chemical hypoxia; in HeLa, MDA-MB-231, and MCF-7 cells. Hypoxia was confirmed by HIF-1; nuclear translocation. Confocal microscopy revealed significantly reduced DNA Td uptake under hypoxia, whereas transferrin and cholera toxin B uptake increased, indicating cargo-selective regulation. Temperature-arrest experiments confirmed reduced energy-dependent internalisation. Pharmacological profiling showed a shift from clathrin-mediated and galectin/glycan-dependent pathways toward lipid raft/cholesterol-dependent uptake. Hypoxia increased plasma membrane electronegativity, suggesting a biophysical barrier to DNA Td uptake. Importantly, DOTMA complexation restored uptake to normoxic levels, identifying electrostatic repulsion as a key determinant. In zebrafish larvae, hypoxia significantly enhanced whole-larva DNA Td accumulation. These findings highlight surface charge engineering as a strategy for improving DNA nanostructure delivery under hypoxic conditions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.748847v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
+<span class="date">Sep 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CryoFlex characterizes structural motion between conformations directly from cryo-EM density maps</h2>
-<p class="paper-authors">Dong, H., Li, F., +7 authors, Wan, X.</p>
+<h2 class="paper-title">Unlocking Sensitive Data with SPHERE in the Age of AI</h2>
+<p class="paper-authors">He, Z., Park, J., +14 authors, Altman, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Heterogeneous cryo-EM reconstruction methods can resolve multiple conformational states, but understanding their functional implications often requires determining which regions move between states and quantifying their displacement magnitudes. Comparing atomic models can quantify motion, but flexible regions are often incompletely modeled. Direct map comparison is limited by variable map quality and ambiguous correspondence between displaced density features. Here, we present CryoFlex, a method that estimates the direction and magnitude of structural motion directly from reconstructed density maps of selected states. The resulting motion analysis supports functional interpretation and guides downstream structure processing. CryoFlex localized and quantified structural motion across diverse map pairs, including those with incomplete atomic-model coverage or weak local density. Against C; displacements, CryoFlex achieved an endpoint error of about 1 angstrom. In separate benchmarks, it outperformed registration baselines on clean and noisy inputs. Thus, CryoFlex complements heterogeneous reconstruction workflows with direct quantification of structural motion between reconstructed states.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748519v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Sensitive human data underpin discoveries across medicine, biology and the social sciences, yet privacy regulation often prevents sharing them with collaborators or artificial intelligence (AI) systems. We introduce SPHERE, a model-free method that makes sensitive datasets directly usable by AI and shareable for open science as a synthetic twin, while the original records never leave the local environment. Across 33 datasets spanning five scientific domains, SPHERE protects individual privacy against adversarial re-identification attacks while preserving the data's statistical structure: means, variances and correlations are reproduced exactly, effect size and P value in linear statistical analysis is numerically identical, nonlinear machine-learning utility is retained, and each twin is generated in seconds on a laptop. Frontier AI agents running on the twin reach the same scientific conclusions as on the original records. Analyses of the twin reproduce genome- and proteome-wide results at UK Biobank scale and recover the findings of landmark studies across three independent cohorts and consortia. The approach also extends to deep-learning embeddings across language, vision and time-series, with minimal utility loss. We make the Stanford Alzheimer's Disease Research Center cohort openly available for the first time, as a SPHERE twin spanning nine modalities that any registered researcher can analyze without an approval process. We release SPHERE with certification of each twin's privacy and fidelity, and an AI agent that autonomously executes research tasks on sensitive data without ever accessing it. Sensitive datasets that are currently closed to research could thus become routine inputs to open science and AI to enable key discoveries.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748580v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,110 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
+<span class="date">Sep 05, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Unifying physical and molecular coordinate systems across modalities in spatial biology</h2>
-<p class="paper-authors">Dai, B., Yan, Y., +23 authors, Yuan, Z.</p>
+<h2 class="paper-title">Cooperative Learning with Penalized Linear Mixed-Effects Models for High-Dimensional Clustered Multiview Data</h2>
+<p class="paper-authors">Yoshimura, S., Takagishi, M., Tanioka, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Establishing a unified physical and molecular coordinate system from fragmented multi-modal data is a longstanding challenge in biology. Here, we present MAPS, a modality-agnostic platform for spatial biology comprising (1) MAPS-alignment for ultrafast alignment of any modality, (2) MAPS-integration for both anchored and unanchored integration across orthogonal modalities for 3D multi-modal reconstruction, and (3) MAPS-Explorer for large-scale interactive 3D analysis. MAPS outperformed existing methods across extensive benchmarks on 34 datasets spanning 16 technology platforms and 6 modalities, while delineating fine-grained multi-modal tissue architectures across diverse biological systems in mouse and human. At cross-consortium scale, MAPS integrated 434 slices comprising 21 million cells from 18 atlases and 5 modalities to construct the most comprehensive 3D multi-modal mouse brain atlas. At individual laboratory scale, MAPS empowered routine 2D spatial assays to reconstruct continuous 3D multi-modal landscapes of human hepatocellular carcinoma, revealing the limitations of 2D spatial relationships and uncovering depth-dependent immune-state transitions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748536v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Ensemble tests mask missing dynamics in protein conformational generators</h2>
-<p class="paper-authors">Liu, K., Qian, Q., Chi, Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein generators are increasingly used to produce conformational ensembles and trajectories as faster alternatives to molecular dynamics (MD). Yet whether agreement with an equilibrium ensemble demonstrates that a generator has learned dynamics remains unresolved. Here we show that this evidence survives the destruction of dynamics. Randomly reordering authentic MD frames leaves ensemble fidelity unchanged but reduces the geometrically gated kinetic pass rate from 0.963 to 0.004; an independent MD replicate reaches 0.95 under the same test. Dynbench separates recovery of conformational states, time-dependent behaviour and trajectory admissibility. Public generators that appear similar under ensemble tests separate sharply, and in a prospective 36-protein lockbox the reference and floor remain stable while two models reverse order. Ensemble tests can therefore systematically overstate evidence of learned dynamics, establishing time-resolved validation as a distinct requirement for claims about protein dynamics generators.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.748111v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Discovery of novel enzybiotic candidates targeting human bacterial pathogens through large-scale viral-host profiling</h2>
-<p class="paper-authors">Fiamenghi, M. B., Kyrpides, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The rise of antibiotic-resistant bacteria demands alternative therapeutic strategies, with bacteriophage (phage) therapy and phage-derived enzybiotics emerging as promising approaches. However, identifying candidate phages against specific pathogens has historically been a bottleneck due to the need for cultivation methods to assess host range and lytic activity. Advances in metagenomic sequencing and the emergence of large-scale viral genome databases now provide an opportunity to accelerate this process computationally. Here, we present a large-scale mining of the MetaVR database to identify phages targeting human bacterial pathogens. By integrating direct host associations with CRISPR-spacer evidence, we linked 196,472 high-quality and complete viral genomes, representing 42,360 vOTUs, to 618 species of pathogenic and opportunistic bacteria. Functional enrichment analysis revealed distinct genomic signatures with viral lifestyle and host-range breadth: virulent phages were enriched in replication and structural functions, whereas temperate and broad host-range phages were enriched in anti-defense and regulatory modules. To characterize their lytic potential we annotated lysis-related protein families and their structural diversity, identifying 76 structurally novel lysis-associated proteins, including candidates targeting WHO priority pathogens. Focused analysis of endolysins revealed 592 structural clusters, with extensive sharing of endolysin repertoires among ESKAPE pathogens, suggesting candidates for broad-spectrum enzybiotic development. Selection analysis identified 167 endolysin families with sites under positive selection within functional domains, highlighting evolutionary diversification potentially associated with phage-host interactions. Together, our results establish a large-scale framework for connecting human bacterial pathogens to phages and their lytic machinery, providing a resource for prioritizing phage therapy and enzybiotic development.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748673v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">PredIDR3: A new output-encoding scheme and abundant negative source provide more information for deep learning-based protein intrinsic disorder prediction</h2>
-<p class="paper-authors">Han, K.-S., Hwang, K., O, S.-M., +3 authors, Damiano, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Many computational methods to predict intrinsic disordered regions (IDRs) in proteins have been developed and their performances are blindly evaluated in community-driven assessment, Critical Assessment of protein Intrinsic Disorder (CAID). In this study, we developed PredIDR3 series, an updated version of PredIDR2 tested in CAID3 to accurately predict IDRs from protein sequences. It includes two methods depending on ensemble way. The performances of PredIDR3 series (AUC_ROC=0.953) are remarkably better than our previous PredIDR2 (AUC_ROC=0.936) on Disorder-PDB dataset of CAID3, which is thought to be mainly attributed to the use of more information for intrinsic disorder prediction based on deep convolutional neural network. In details, we introduced a new output-encoding scheme permitting a large sliding window (size=91) for the first time and extracted negative samples of the training set from non-IDRs of both PDB and DisProt databases, allowing to use more information for prediction of intrinsic disorder. PredIDR3 achieved comparable performance to the top-ranking methods of CAID3 in all criteria measured. PredIDR3 series can be freely available through the CAID Prediction Portal at https://caid.idpcentral.org/portal or downloaded as a Singularity container from https://biocomputingup.it/shared/caid-predictors/.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748564v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">BAGEL-CAR: Reflections on the Bits to Binders Competition</h2>
-<p class="paper-authors">Lala, J., Angioletti-Uberti, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The antigen-binding segment of chimeric antigen receptors (CARs) in CAR-T therapy has emerged as a compelling application of de novo AI protein design. In the Bits to Binders competition, our group submitted 414 BAGEL-CAR designs for CD20-directed CAR binding segments, 38.4% of which were statistically enriched in a pooled CAR-T proliferation screen, the highest among all teams and more than double the next-best. Strikingly, after detailing the three design strategies employed, we show that two of them carry the entire success of our campaign, with both of them outcompeting all the other teams' aggregate results. Crucially, during the competition, we did not refold any of the binders after backbone painting. Had we applied this typical validation step with ESMFold, all experimentally enriched designs would have been filtered out. Our findings show that each filtering step should be stress-tested per biomolecular system and intermediate outputs of design pipelines should be assayed regardless of 'common practice'. Additionally, we appear to be the only team that designed against ESMFold's predicted CD20 dimer geometry, which diverges substantially from the experimentally resolved 6Y97 structure, raising, but not resolving, the possibility that this alternative target geometry contributed to our high hit rate. We hope these reflections help inform the future of effective CAR-T and binder design campaigns.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.748856v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 04, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Cross-domain confidence reliability and remappability of frozen single-cell representations</h2>
-<p class="paper-authors">Weng, G., Zhu, D., +5 authors, Won, K. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell foundation models are increasingly adopted for downstream applications such as cell-type prediction. However, these predictions are often utilized without assessing their reliability, or by relying on a simple cutoff applied to the maximum softmax probability (MSP) derived from the classifier. This raises a critical question: can raw MSP be trusted as a reliable measure of confidence on unseen data (target) exhibiting diverse technical and biological variations? To address this, we introduce an audit framework to systematically evaluate the confidence estimates derived from the training set (source) against the realities of the target test set. We demonstrate that raw MSP fundamentally fails to represent true confidence when applied to target datasets. By decomposing the confidence gap between source and target data, we reveal that these discrepancies stem from a combination of rank-ordering errors and systemic probability drift. We further show that the drift can be successfully recalibrated by leveraging a small subset of labeled target data. While this recalibration improves the reliability of automated acceptance, it inherently introduces a trade-off by increasing the volume of cells requiring manual review. Ultimately, our framework establishes that the safe deployment of these models necessitates target-specific confidence adjustment using representative local labels.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.31.748446v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> In biomedical research, multiple types of high-dimensional data, such as genomic, transcriptomic, proteomic, and metabolomic data, are increasingly collected from the same subjects. Integrating these multiple data views can improve prediction by exploiting shared or complementary information across the views. Cooperative learning provides an agreement-based framework for multiview supervised learning by encouraging predictions obtained from individual views to be similar. However, the original framework assumes independent observations and therefore does not account for clustered structures, such as repeated measurements obtained from the same subject. To address this limitation, we propose Cooperative Learning with a penalized Linear Mixed Model (CL-pLMM) for high-dimensional multiview data with a clustered structure. CL-pLMM replaces the ordinary prediction loss in cooperative learning with a covariance-weighted loss that accounts for within-cluster dependence, while retaining the agreement penalty between views and a Lasso penalty for variable selection. We further show that its objective function can be represented as a penalized linear mixed-effects model applied to augmented data, allowing existing estimation procedures to be used. The performance of CL-pLMM is evaluated through simulation studies under various signal and dependence settings and an application to longitudinal proteomic and metabolomic data for predicting the time to spontaneous labor.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.01.748742v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +127,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 04, 2026</span>
-<span class="journal">PPR</span>
+<span class="date">Sep 05, 2026</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Integrative Transcriptomic Analysis Reveals Multicellular Dysregulation and Spatial Heterogeneity in the Colorectal Cancer Microenvironment</h2>
-<p class="paper-authors">Lin Y, Luo W, +5 authors, Huang Y.</p>
+<h2 class="paper-title">A novel framework for the discovery of MAPK-activated protein kinase 2 (MAPKAPK2) inhibitors using a multi-feature deep learning ensemble.</h2>
+<p class="paper-authors">Hayden Chen, Yi-Wen Wu, +7 authors, Kai-Cheng Hsu</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Background Tumor heterogeneity impedes personalized therapy for colorectal cancer (CRC), while the complex cellular interactions within the tumor microenvironment critically influence disease progression through mechanisms not yet fully elucidated. Methods We integrated multi-omics data including bulk RNA-seq, scRNA-seq, and spatial transcriptomics (ST) from CRC and normal tissues. Bulk RNA-seq datas were subjected to differential expression analysis, functional enrichment, and screened prognostic feature genes by machine learning-based prognostic modeling and survival analysis. Consensus high-expression risk genes and low-expression protective genes at the intersection of feature genes and epithelial cell DEGs were designated as important genes. scRNA-seq data were used for cluster analysis, trajectory analysis, cell-cell communication and high-dimensional weighted gene co-expression network analysis. ST data were deconvoluted and analyzed for spatial heterogeneity and copy number variations analysis. Results A total of 5,127 overlapping DEGs were identified, revealing key dysregulated pathways: cell cycle, DNA replication, mismatch repair, base excision repair, and p53 signaling. We explored an eight-gene prognostic signature (ADH5, FOXD1, GDI1, PSMF1, PTP4A2, RFXANK, RNF113A, SSNA1) for patient stratification. scRNA-seq delineated functional subtypes of T cells and cancer-associated fibroblasts (CAFs), revealing extensive interaction networks. And ten co-expression network modules were identified associated with CAFs. ST analysis spatially suggested that malignant epithelial cells may act as signaling hubs, actively remodeling an immunosuppressive, pro-tumor microenvironment. Conclusion This integrative multi-omics analysis characterizes the multicellular dysregulation in the CRC microenvironment, identifies an exploratory prognostic gene signature, and highlights candidate functional modules in CAFs. These findings provide a resource for further investigation of CRC microenvironment biology and potential biomarker development.</p>
-<a class="btn dark" href="https://doi.org/10.21203/rs.3.rs-10693359/v1" target="_blank">
+<p><strong>Abstract:</strong> MAPKAPK2 is a promising therapeutic target in numerous diseases. However, many MAPKAPK2 inhibitors are plagued by low solubility and permeability, and none have advanced through clinical trials. New computational methods utilizing deep learning can speed up inhibitor identification. This study aims to develop and validate a novel framework for MAPKAPK2 inhibitor discovery utilizing an ensemble of ten individual models trained on various feature sets. We trained DNN models using 21 molecular featurizers and 28 layer-size settings, and selected ten high-performing feature-architecture combinations to establish the ensemble. We explored various voting methods in conjunction with the ensemble and used the ensemble to generate a ranking of potential MAPKAPK2 inhibitors from an in-house compound set. Potential inhibitors satisfying Lipinski and Veber Rules not containing PAINS structures were selected for enzyme assay testing, and a molecular docking simulation was performed to investigate interactions. The individual model with the highest evaluation metrics was trained on functional-class fingerprints. Meanwhile, the ten-model voting ensemble reported an accuracy of 0.969 on a testing set. One novel MAPKAPK2 inhibitor, S021-0180, was identified out of seven tested with enzyme assays. The molecular docking simulation revealed critical ligand-residue interactions within the binding site. The novel computational framework was successful in identifying a novel MAPKAPK2 inhibitor as a promising inhibitor for further optimization in future studies. The established ensemble can be used to evaluate more compound sets for novel MAPKAPK2 inhibitors. Moreover, we anticipate that this new framework can be applied to all protein kinases for rapid compound screening.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42700280/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
