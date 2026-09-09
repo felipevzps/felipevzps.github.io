@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">AtlasFold: Protein structure prediction with metagenomic-scale language models</h2>
-<p class="paper-authors">Seo, S., Kim, H., +2 authors, Team KAIST</p>
+<h2 class="paper-title">Agent-driven Model Development for RNA 3D Structure Prediction</h2>
+<p class="paper-authors">Majewski, M., Malo, L., +3 authors, Minoux, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein language models (PLMs) trained on evolutionary sequences learn representations that encode protein structure, enabling direct structure prediction without multiple-sequence alignments (MSAs). Here we present the Atlas model family, an open and trainable system spanning protein language modeling, monomer folding, and protein-complex prediction. AtlasLM-3B is a 3B-scale language model trained with masked language modeling on approximately 1.56 billion sequences, including metagenomic data, and outperforms the similarly sized ESM2-3B in unsupervised contact prediction. Building on these representations, AtlasFold predicts all-atom protein structures and achieves state-of-the-art accuracy among PLM-based folding models. Fine-tuning AtlasFold for protein-complex prediction produces AtlasFold-Multimer (AtlasFold-M), whose antibody-antigen prediction performance is comparable to that of AlphaFold3 and ESMFold2. This protein-specific folding architecture enables fast, memory-efficient inference with AtlasFold and AtlasFold-M. By releasing the training code and data, stage checkpoints, and model weights under the MIT License, we provide a foundation for advancing PLM-based protein structure prediction.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.04.749352v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Large language model (LLM) agents have shown promise in driving scientific discovery, but their effectiveness in complex, real-world biological problems remains underexplored. We ask whether a general-purpose LLM agent can drive semi-autonomous development of a model for a genuinely hard biological problem, RNA 3D structure prediction. We designed a development loop where, under a fixed budget and with human supervision, the agent iteratively proposed, implemented, trained, and evaluated model changes. Over 297 iterations, the model evolved from a randomly-initialised baseline to QuickFold, an 8.9M-parameter folding trunk that matches the strongest open-source baselines (RhoFold+, NuFold) on lDDT and TM-score within noise on a held-out test set at a fraction of their inference cost. We frame this less as a new predictor than as a case study in feedback-driven, agent-led model development.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.08.749228v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">EMAP-SSN: An Embedding- and Multiple-Alignment-Integrated Sequence Similarity Network Platform for Interactive Exploration of Protein Sequence Space</h2>
-<p class="paper-authors">Feng, X., Master, E.</p>
+<h2 class="paper-title">How do Co-Folding Models Organize Structural Information?</h2>
+<p class="paper-authors">Park, M., Kim, S., +3 authors, Kim, W. Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Sequence similarity networks (SSNs) are graphical representations of sequence relationship frequently used for exploring protein sequence space. Conventional SSN workflows typically use BLAST to calculate sequence similarities and rely on external visualization tools to gener-ate the final networks. Consequently, raw sequence data is often detached from the calculat-ed similarities during visualization, complicating SSN analyses that require residue-level in-formation. To bridge this gap, we present EMAP-SSN, an open-source, cross-platform soft-ware suite that integrates SSN computation, visualization, and analyses in streamlined work-flows. The program provides BLAST- and embedding-based alignment pipelines for se-quence-similarity calculation and directly links network nodes to their original sequences and multiple alignments for analyses. Modular architectures for embedding generation, com-mand integration, and browser-based utilities allow additions of research-specific functionalities and facilitate future development. Using a set of fold-type IV pyridoxal 5'-phosphate-dependent enzymes, we demonstrate how EMAP-SSN connects network topology with residue-level variation to identify sequence clusters, map functional motifs, and detect subgroup-specific conservation patterns. These capabilities provide a practical route from large protein sequence sets to experimentally verifiable hypotheses on enzyme function and targets for protein engineering. The EMAP-SSN program can be accessed from https://github.com/Xuebin-Feng/EMAP-SSN.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.748609v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Co-folding models accurately predict biomolecular complexes, but how their internal representations support joint structure prediction remains unclear. We analyze the Boltz-1 trunk by decomposing its pair representation into intra-chain and inter-chain blocks and applying ablation, layer-wise representation geometry, and activation patching. Our results show that structural information is distributed across three streams: the single representation carries token-internal atomic detail, the intra-chain pair representation encodes chain-level geometry, and the inter-chain pair representation controls relative molecular arrangement. Across the trunk depth, representations follow a Mix-Compress-Refine trajectory, while linear probes reveal that intra-chain distance content is largely supplied by MSA preconditioning and inter-chain distance content is constructed progressively across Pairformer layers at each recycle. Apo-holo patching further shows that ligand-induced backbone changes are not fully resolved before diffusion; instead, the diffusion module reconciles partially inconsistent intra- and inter-chain constraints. These findings provide a mechanistic view of how co-folding trunks organize structural information and suggest more partition-aware designs for future biomolecular structure prediction models.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.06.749739v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Inverse FoldDir: Structure-conditioned Protein Sequence Design by Dirichlet Flow Matching</h2>
-<p class="paper-authors">TARTICI, A., Stojkovic, M., +3 authors, Wittmann, B. J.</p>
+<h2 class="paper-title">End-to-end plaque counting and virus titration from laboratory plate images with deep learning</h2>
+<p class="paper-authors">Moris, E., Costable, A., +10 authors, Orlando, J. I.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein engineering has important implications in the bioeconomy, enabling applications in materials, medicine, and energy. A key challenge is designing protein sequences that have a specific form and function. Protein inverse folding seeks to address this challenge by identifying amino acid sequences compatible with a desired protein backbone. This task is central to protein redesign and can provide a sequence design capability for de novo backbones produced by structure-generation methods. Ideally, inverse folding can provide diverse sequence alternatives, fixed residues or motifs, soft biochemical preferences at selected positions, and candidates that remain experimentally useful. We developed Inverse FoldDir, a controllable inverse-folding method that performs iterative denoising on the amino acid probability simplex. Given a backbone structure, the model updates all positions jointly through a learned Dirichlet flow, supporting full sequence generation, fixed-residue inpainting, and user-defined soft residue priors. On the held-out CATH 4.2 test set, Inverse FoldDir achieved a mean TM-score of 84.5 (on a 0-100 scale) and a mean C RMSD of 1.76[A], compared with 83.3 and 1.86[A], respectively, for ESM-IF1, the strongest evaluated baseline on both metrics. Denoising trajectory analyses showed that positions commit at different rates and that some residues change identity late in generation, illustrating whole-sequence refinement rather than one-shot prediction or irreversible sequential decoding. We experimentally tested Inverse FoldDir in an anti-GFP nanobody redesign task, where two of 35 redesigned sequences retained reproducible sfGFP-binding signal across independent assay runs with approximately 43% sequence divergence from the native nanobody. Inverse FoldDir is a structure-conditioned protein redesign method that combines structural recovery, user control, experimental validation, and a natural route toward future property-guided sampling.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.06.749733v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Plaque assays are the gold standard for quantifying infectious virus, yet plaque enumeration is still routinely performed manually, making virus titration labor-intensive, subjective, and difficult to standardize across analysts and laboratories. Existing automated methods primarily address individual tasks, such as plaque segmentation or counting, but do not provide an integrated workflow from plate images to biological quantification. In this paper we present Titra, an end-to-end workflow for automated cytopathic effect (CPE)-based virus titration from standard photographs of plaque assay plates. The workflow combines automatic well detection, plaque segmentation, post-processing for instance separation, plaque counting, and plaque-forming units per millilitre (PFU/mL) estimation within a single web-based platform that also enables experiment management and expert review. The approach was evaluated using images from three viral species (Mayaro virus, Coxsackievirus B3, and vaccinia virus), two plate formats (6- and 12-well), and heterogeneous image acquisition conditions, including both a newly curated dataset and the public VACVPlaque dataset. Automated plaque counts showed strong agreement with manual annotations (Pearson correlation coefficients of 0.98 for MAYV/CVB3 and 0.88 for VACV), while PFU/mL estimates closely matched manual calculations for the MAYV/CVB3 dataset (Pearson r=0.975). Comparative experiments against U-Net, StarDist, HSD-WBR, and PyPlaque demonstrated competitive segmentation and counting performance, with the proposed approach achieving the highest Dice and mAP on the public VACVPlaque dataset.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.04.749375v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Real Science Is Harder Than Benchmarks: Evaluating Advanced AI Frameworks on Published Studies. II. Antibody Properties, Lipid-RNA Interactions</h2>
-<p class="paper-authors">Bhutada, P., Goyal, N., +9 authors, Sinitskiy, A.</p>
+<h2 class="paper-title">bioq: a unified, agent-native command-line interface to a fleet of AI drug-discovery methods</h2>
+<p class="paper-authors">Liu, Z., Wang, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Artificial Intelligence (AI) frameworks for automating scientific research have shown strong performance on benchmarks, but their utility for real-world industrial research remains insufficiently characterized. Extending the analysis presented in the first paper of this series, we evaluated the same five advanced AI research frameworks (Kosmos, K-Dense, ToolUniverse, BioAgents from bio.xyz, and the AI Scientist-v2 from Sakana AI) on two more projects of high practical importance for biopharmaceutical development: predicting antibody developability properties with the use of pretrained protein language model embeddings, and modeling non-covalent lipid-RNA interactions in lipid nanoparticles with all-atom molecular dynamics (MD) simulations. The AI frameworks again showed genuine strengths, including unprompted identification of subtle methodological issues, successful use of pretrained protein embeddings, and consistent reporting of p-values and confidence intervals often absent from the original papers. However, no framework approached the scope of the original studies, and severe failures and hallucinations were observed. Our results confirm and extend the conclusion of the first paper that real published research from pharmaceutical companies that we tried to reproduce proved to be considerably harder for current AI frameworks than standard benchmarks suggest.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749176v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Artificial intelligence methods now span the drug-discovery pipeline --structure prediction, de novo design, docking, affinity estimation, and ADMET -- yet each tool ships with its own, often incompatible, GPU software stack, so chaining several into a workflow requires reproducing conflicting software environments and access to datacenter-class hardware that most labs do not have. bioq is a dependency-light command-line client backed by bioq-services (accontrol-plane gateway plus a growing fleet of 38+ containerized drug-discovery tools spanning 7 discovery stages and 6 molecular modalities). The bioq CLI is self-describing and consistent across the fleet of computational tools, giving researchers and coding agents uniform access to any tool from a laptop, with no local model code, CUDA setup, or cloud configuration, running on serverless GPUs billed per job. The interface-gateway-services architecture makes bioq an execution substrate for automated, agent-driven discovery. bioq and bioq-services are open source under the MIT License and available at https://github.com/wolfsonliu/bioq and https://github.com/wolfsonliu/bioq-services. bioq runs on Python &gt; 3.10 with httpx as its only runtime dependency; services run as Linux containers and are self-hostable via the provided local deployment scripts (alongside scripts for Alibaba Cloud Function Compute). Install, quickstart, test data, and self-hosting instructions are in the repository. The project is actively maintained and will continue to receive updates to both features and services.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749148v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A physics-informed hybrid deep learning model for spatiotemporal rice disease prediction using multi-source data</h2>
-<p class="paper-authors">Jin, Z., Wang, J., +3 authors, Salguero-Gomez, R.</p>
+<h2 class="paper-title">A Unified Structure-Based Deep-Learning Framework for High-Throughput Screening of Protein-Binding RNAs</h2>
+<p class="paper-authors">zhao, y., han, j., wang, j., chu, j., kang, y., hou, t.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Accurate, reliable, large-scale disease predictions are essential to ensure rice production. Existing disease prediction models often face a trade-off between interpretability and predictive capability, necessitating the integration of mechanistic knowledge and data-driven learning within a modelling framework. Accordingly, we propose a physics-informed hybrid gated recurrent unit (PI-HGRU) model for spatiotemporal dynamic prediction of rice sheath blight disease, caused by a fungus. Our model embeds differential equations describing disease transmission dynamics into a hybrid gated recurrent unit (HGRU) framework as mechanistic constraints, thereby enabling collaborative modelling between epidemiological processes and data-driven learning. We conducted model training and evaluation using a long-term, multi-source dataset spanning 17 years (2000-2016) and covering 16 major rice-producing provinces in southern China. These rich data include spatiotemporally aligned field disease observations, remote sensing data, meteorological data, and soil property data. In addition, to address the challenges of irregular sampling intervals and inconsistent sequence lengths in disease survey data, we adopted a sliding time-window-based prediction framework. We further conducted a time-window sensitivity analysis to determine appropriate configurations of the input time window and lag time, enabling the model to represent the cumulative and delayed effects of environmental factors. Our PI-HGRU framework substantially outperforms the purely data-driven HGRU baseline model, improving the squared Pearson correlation coefficient (r2) by 22.8% while reducing the root mean square error (RMSE) and mean absolute error (MAE) by 10.2% and 18.0%, respectively. Furthermore, analysis of the models intermediate variables showed that the transmission rate {beta}(t) exhibited interpretable relationships with environmental conditions within the input time window, providing a process-related link between environmental drivers and modeled disease transmission dynamics. Overall, our work demonstrates that integrating epidemiological mechanisms into deep learning models in a physics-informed manner can improve predictive accuracy and stability while enhancing model interpretability, highlighting its potential for large-scale disease forecasting and precision disease management.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749105v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein-RNA interactions regulate diverse biological processes and are increasingly exploited in therapeutic RNA discovery, but accurate inferences of nucleotide preferences and reliable structure prediction remain challenging. Here, we present PRIS, a unified structure-based deep-learning framework that combines two complementary components: PRISeq for nucleotide probability estimation at each RNA position and PRIScore for residue-nucleotide distance prediction to discriminate native-like from incorrect poses. Both share a feature extractor that integrates an Anti-Symmetric Graph Attention Network (A-GAT) with sparse k-Maximum Inner Product (k-MPI) attention to capture long-range interactions across large graphs. PRIScore improves the selection of native-like protein-RNA predictions generated by AlphaFold3, achieving a top-1 success rate of 81.91% on a docking benchmark, compared to 79.26% for AlphaFold3. The selected structures are then fed into PRISeq, which infers position-specific binding preferences and screens RNA libraries. On a PWM benchmark, PRISeq achieved a mean absolute error (MAE) of 0.75, outperforming FoldX, Rosetta-based scoring functions, and NA-MPNN. In virtual screening against MS2 protein, PRISeq screens 129,248 RNA hairpins within 11.95 seconds, achieving the highest EF0.5% of 14.40, approximately double the best baseline. PRIS also effectively enriches active aptamers against NELF-E and GFP while preserving sequence diversity. By integrating structure selection with binding-preference inference, PRIS provides an efficient framework for large-scale RNA library screening and aptamer design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.07.749737v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">EISCA and EISTA: Full-Spectrum Pipelines for Single-Cell and Spatial Transcriptomics Analysis</h2>
-<p class="paper-authors">Wu, H., Lister, A., +10 authors, Papatheodorou, I.</p>
+<h2 class="paper-title">Integrated in silico identification of fungal-derived dual-target inhibitors for anti-schistosomal drug discovery</h2>
+<p class="paper-authors">Paul, T., Al-Amin, M., +16 authors, Bashar, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell and spatial transcriptomics are transforming our understanding of cellular heterogeneity and tissue organization, yet their analytical complexity remains a major bottleneck. Here, we present EISCA and EISTA, two standardized, end-to-end pipelines for single-cell RNA-seq and imaging-based spatial transcriptomics analysis. Built on the Nextflow nf-core framework, both pipelines implement modular, scalable, and reproducible workflows spanning primary, secondary, and tertiary analyses, from raw data processing to advanced downstream analyses. EISCA supports droplet- and plate-based scRNA-seq technologies, while EISTA is tailored for high-resolution spatial platforms including Vizgen MERFISH and 10x Xenium. Together, they integrate state-of-the-art methods for quality control, normalization, clustering, integration, cell-type annotation, differential expression, and cell-cell communication, with EISTA further enabling spatial statistical analyses. A central design principle is to balance standardization with flexibility: workflows can be executed end-to-end or modularly, enabling iterative, exploratory analyses with minimal overhead. Both pipelines deliver rapid preliminary results alongside an out-of-the-box report, facilitating immediate data assessment and accelerating downstream discovery. Case studies in plant immunity and human sepsis demonstrate that EISTA and EISCA reproducibly can be used to recover biologically meaningful insights. Collectively, these pipelines provide efficient, flexible, and scalable solutions for comprehensive single-cell and spatial transcriptomics analyses.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.748851v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Praziquantel, which has limited efficacy against young parasites and reduces susceptibility, is the principal therapy for schistosomiasis, a neglected tropical illness. This work identified fungal-derived compounds with potential dual inhibitory action against Schistosoma mansoni DHODH and cathepsin B1 using an integrated computational method. From 1,831 fungal metabolites, 120 were selected for molecular docking after structure standardisation, drug-likeness evaluation, ADMET, and toxicity screening. Ganoderlactone B (CID_122184973) and Spiroapplanatumine F (CID_132962217) strongly bound to DHODH and CB1, with docking affinities of -10.6 and -10.0 kcal/mol and -9.0 and -8.9, respectively. Docking validation showed good discrimination between active compounds and decoys with area-under-the-curve values of 0.98 for DHODH and 0.96 for CB1. The protein-ligand interaction study showed hydrogen bonding, hydrophobic interactions, and van der Waals contacts at the binding sites. In 100 ns molecular dynamics simulations, protein complexes exhibited modest backbone deviations and maintained compactness, although CID_132962217 showed sustained binding and a constrained conformation. MM-PBSA analysis identified CID_122184973 as the best common ligand for both targets. At the B3LYP/6-31G level, density functional theory calculations showed that CID_139584993 had the lowest HOMO-LUMO energy gap and hardness values of 3.552 and 1.776 eV, respectively, and the highest softness value of 0.282 eV-1, indicating greater electronic reactivity. Electrostatic potential mapping and QSAR predictions supported their interaction and antiparasitic potential. Overall, CID_122184973 and CID_132962217 are promising fungal scaffolds for dual-target anti-schistosomal drug development. Experimental enzyme inhibition, parasite viability, toxicity, and in vivo research are needed to confirm computational findings.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.04.749322v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Learning from tandem mass spectra at scale with a self-supervised foundation model for proteomics</h2>
-<p class="paper-authors">Nieuwoudt, M., Reverenna, M., +9 authors, Kalogeropoulos, K.</p>
+<h2 class="paper-title">MutCleaner: Cleaning and Standardizing Biological Mutation Datasets for Variant Effect Prediction</h2>
+<p class="paper-authors">Shi, Z., Tang, Y., +3 authors, Xu, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Mass spectrometry-based proteomics increasingly relies on machine learning, yet existing models are trained for defined supervised tasks such as peptide identification, de novo sequencing or fragment intensity prediction, limiting transfer across datasets, instruments and acquisition methods. Here we present InstaNovo-FM, a self-supervised foundation model for bottom-up proteomics trained to reconstruct masked regions of tandem mass spectra. We assemble a diverse training corpus spanning 1.47 billion MS/MS spectra and 184.6 million high-confidence annotations. We train an encoder-only transformer on the annotated tier using a physics-aware masked reconstruction objective. We demonstrate that the InstaNovo-FM embeddings encode fundamental experimental and biological properties, including fragmentation method, sequence properties and post-translational modifications, without requiring peptide labels. Furthermore, this foundation model directly enables diverse downstream applications, including de novo peptide sequencing, database-free identification and analytical run classification. InstaNovo-FM establishes a unified representation space for peptide fragmentation spectra, enabling robust transferability across the proteomics ecosystem.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.747733v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Summary: Protein mutation datasets are widely used in variant effect prediction and protein engineering, but datasets from different sources often lack consistent conventions for mutation representation, sequence representation, data organization, and experimental labels, making these resources difficult to integrate directly and limiting their use in downstream analyses and modeling. MutCleaner is an extensible Python framework that cleans, validates, and standardizes protein- and codon-level mutation datasets through composable cleaning pipelines, unified sequence and mutation data structures, and dataset-specific cleaners. It provides standardized resources covering 16 protein and codon mutation datasets with more than 12.14 million mutation records. Availability and implementation: MutCleaner is an open-source Python package released under the Apache License 2.0. The source code is available on https://github.com/xulab-research/MutCleaner, the package is distributed through https://pypi.org/project/mutcleaner/, and the documentation is available https://xulab-research.github.io/MutCleaner/.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.06.749687v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Predicting Endometriosis Status and Menstrual Cycle Phase Using DNA Methylation</h2>
-<p class="paper-authors">Nagasuri, A., Khan, U., +16 authors, Sirota, M.</p>
+<h2 class="paper-title">Protein Design Viz (PDV): lightweight protein structure visualization studio with validated quantitative analytics and antibody-specific toolkit</h2>
+<p class="paper-authors">Krawczyk, K., Dudzic, P., Kumar, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Endometriosis is a chronic inflammatory disease associated with pelvic pain, infertility, and delayed diagnosis. Growing evidence suggests that altered DNA methylation contributes to disease development and could serve as a biomarker for disease. We developed a leakage-safe machine learning pipeline to classify endometriosis case-control status and menstrual cycle phase using genome-wide DNA methylation data from eutopic endometrial tissue. The dataset consisted of 984 samples profiled using the Illumina Infinium MethylationEPIC array, with measurements across approximately 759,000 CpG sites. Technical variation was corrected using SmartSVA batch correction. Ridge logistic regression models were trained using stratified 80/20 train-test splits, with regularization strength selected via stratified cross-validation. Feature selection approaches included ridge coefficient ranking, per-CpG t-tests, and univariate logistic regression with FDR correction. Model validity was evaluated using label-shuffling analyses. Menstrual cycle phase classification showed strong performance (mean cross-validation AUROC: 0.971, held-out test AUROC: 0.989), reflecting genome-wide hormonally driven methylation. Ridge regression produced lower but meaningful performance for endometriosis classification (mean cross-validation AUROC: 0.854, held-out test AUROC: 0.875). Ridge coefficient-based feature selection identified compact predictive CpG sets, supporting the hypothesis that endometriosis-associated methylation signal is distributed across many loci rather than a few highly predictive CpGs. Pathway enrichment analyses identified substantial enrichment for menstrual cycle phase but limited enrichment for disease status following FDR correction, consistent with a diffuse endometriosis-associated signal. These findings demonstrate that ridge regression can detect methylation patterns associated with both endometriosis and menstrual cycle phase, highlighting the importance of accounting for cycle-related epigenetic variation in endometrial DNA methylation studies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.749016v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Molecular visualization is dominated by two families of software. Desktop programs such as PyMOL, VMD and UCSF ChimeraX are powerful but heavy to install and operate. Web viewers such as Jmol, 3Dmol.js, NGL, Mol* and iCn3D are light and installation-free, but typically stop at rendering, lacking deeper functionality needed for even basic protein sequence, structural analyses and design tasks. Tools building upon these often lack comprehensive sequence/structure manipulation, surface, interface and antibody-specific analytics functionality or require an external backend. There is a need for a tool that is as frictionless as a web viewer yet carries the analytical depth normally reserved for the desktop or the command line software. Results: We present Protein Design Viz (PDV), a self-contained molecular visualization studio delivered as a single offline HTML file that runs entirely in the browser. Built as an extensive modification of 3Dmol.js, PDV combines a full visualization workflow: multi-object scenes, representations, coloring palette, linked sequence track, publication-quality outline rendering and portable sessions. Additionally we re-implemented four commonly used macromolecular analyses measures from scratch in client-side JavaScript: a Shrake-Rupley solvent-accessible surface area (SASA) engine, an antibody numbering and germline-assignment engine, a non-covalent interaction detector, and a developability-liability scanner. Each engine is validated against its established reference. PDV's SASA reproduces FreeSASA at Pearson r {approx} 0.997-0.998 across 2,582 structures spanning proteins, nucleic acids and ligands; its numbering reproduces RIOT for over 99.88% of 1.3 million residue positions across 16,996 sequences and four schemes; its interaction detector reproduces PLIP at macro-F1 0.82, matching Arpeggio as closely as PLIP itself does. PDV brings validated, quantitative structural analysis into a no-install, simple to use tool. Availability and implementation: PDV is a single HTML file, free for noncommercial use under the PolyForm Noncommercial License 1.0.0, available from pdv.naturalantibody.com. It requires only a WebGL-capable browser and runs fully offline.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.08.750039v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,34 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Benchmark validity in graph neural network scoring of metabolic reaction activity on Recon3D: detecting label leakage, memorized noise and input-invariant models</h2>
-<p class="paper-authors">Phongwattana, T., Chan, J. H.</p>
+<h2 class="paper-title">EukaUTR: a foundation model for functional modelling and design of eukaryotic 3' UTRs</h2>
+<p class="paper-authors">lang, M., Fang, X., +6 authors, Li, X.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Context-specific genome-scale metabolic modeling begins with scoring which of the approximately 10,600 human reactions are active in a patient's tumor. Methods in this literature are routinely benchmarked against activity labels obtained by thresholding the same transcriptomic matrix that is supplied to the model as input. We report a self-audit of our own graph attention scorer, MetaGNN, evaluated on TCGA colorectal (n=624), breast (n=1,095) and lung adenocarcinoma (n=517) cohorts, in which two independent failure modes produced a near-ceiling benchmark score and a positive architectural result, neither of which survived inspection. First, under expression-thresholded supervision the framework reaches AUROC 0.9864 +/- 0.0008 on TCGA-BRCA. That figure partitions into 5,925 reactions whose labels are a deterministic threshold of the model's own input, where ranking by the cohort-mean input alone gives AUROC 1.000; and 4,675 reactions whose stored labels we reproduce bit for bit from a seeded pseudo-random number generator, where the model nonetheless reaches 0.9291 +/- 0.0030 by memorizing a patient-invariant label vector that patient-level splitting leaves fully visible during training. Second, on the cohort supervised independently of the input, the archived models never received patient data at all. Their released feature tensors are uniformly zero, and independently trained models show no agreement on which patient deviates where (|r| &lt;= 0.004 on per-patient output residuals, against r = +0.32 between output and input residuals on expression-bearing reactions for a model with verified features). A dispersion ratio comparing between-patient output spread against Monte Carlo Dropout sampling spread sits at 1.02 to 1.03 for all three configurations, against a no-signal null of 1.02 and 2.44 for the verified model. We therefore withdraw a +0.105 AUROC gain attributed to relational edges in an earlier draft of this work. Retraining on rebuilt, verified features gives AUROC 0.5800 +/- 0.0017, below both the raw-expression baseline of 0.6342 +/- 0.0058 that we establish for this cohort and an information-free indicator baseline of 0.6085. Zero-shot transfer of the BRCA model is at or below chance on METABRIC microarray (0.4926 +/- 0.0113, n=200) and on same-platform CPTAC-BRCA RNA-seq (0.4986, n=106). We release the code, the curated colorectal cohort, a script that replays the label vector from its generating seed, and the screening checks we now run before reporting any score. Source code: https://github.com/thiptanawat/MetaGNN-Framework (MIT).</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.02.748315v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Eukaryotic mRNA 3' UTRs encode regulatory signals that shape post-transcriptional regulation, RNA fate and gene expression. However, a foundation model that spans broad eukaryotic 3' UTR sequence space while unifying prediction, interpretation and design within a single framework is still lacking. Here we present EukaUTR, a 3' UTR-specific foundation model trained on a large-scale eukaryotic 3' UTR sequence corpus spanning diverse evolutionary lineages. Across 13 prediction tasks of post-transcriptional regulation, RNA fate and expression output, EukaUTR showed strong transferability, achieving relative improvements of up to 27.45% over the strongest baselines. Extending these capabilities to sequence design, EukaUTR generated novel 3' UTRs that captured natural sequence patterns and regulatory features and EukaUTR-Guide extracted stability signals from small sets of 3' UTRs to guide editing toward enhanced predicted stability. Together, EukaUTR establishes a sequence-to-function-to-design framework that connects broad eukaryotic representation learning with transferable functional prediction and mRNA design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.07.749809v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 08, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">scFLAME: a unified generative model for interpretable clustering, hierarchical structure discovery and marker-gene identification in single-cell RNA-seq data</h2>
+<p class="paper-authors">Rao, J., Jihad, M., +1 author, Kirk, P. D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Identifying cell types from single-cell RNA sequencing (scRNA-seq) data typically requires several separate and often uninterpretable steps: dimensionality reduction, batch-correction, clustering, marker-gene identification and the discovery of finer-grained structure. Here we introduce scFLAME (single-cell Factor Latent Analysis with Mixture Embeddings), a probabilistic generative model that unifies these tasks: a negative binomial factor analysis of the raw counts - which can be adjusted for batch - is coupled to a Gaussian mixture prior over the latent space, learning the embedding and clustering jointly, while a shared linear decoder provides cluster-specific marker genes directly from the fitted model, and a merging procedure recovers a probabilistic hierarchy of finer-grained partitions. On simulated and real data, scFLAME matches or exceeds state-of-the-art clustering accuracy, is robust across sequencing platforms, and scales near-linearly to hundreds of thousands of cells. scFLAME thus replaces a chain of separate tools with a single, interpretable model for single-cell analysis.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.04.749363v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,129 +222,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">The RNA cargo of plasma-derived extracellular vesicles in mCRPC patients captures cancer cells and tumor microenvironment signals</h2>
-<p class="paper-authors">Vannuccini, F., Ciani, Y., +21 authors, Demichelis, F.</p>
+<h2 class="paper-title">Genetic and structural interpretation of NLRP1 FIIND domain variants in glioma in an Indian cohort: a pilot study</h2>
+<p class="paper-authors">Chhipa, S., Sonawane, O. A., +7 authors, Jha, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Circulating analytes in cancer patients capture tumor-related signals. We profiled matched extracellular vesicle (EV) total RNA and cell-free DNA (cfDNA) from the same plasma aliquots of chemo-naive metastatic castration-resistant prostate cancer (mCRPC) patients treated with Enzalutamide (n=54 patients, n=119 longitudinal samples; NCT06981377) at four Italian clinical centers and interrogated data from &gt;10,000 cancer patients' and healthy individuals' samples. Transcript integrity analysis identified coding and non-coding species with fragmentation patterns varying across RNA biotypes. EV-RNA data deconvolution revealed signal from immune populations, including fractions classified as CD4+ T cells, whose abundance increased with disease progression in plasma EVs and mCRPC tissues. By leveraging tissue data-informed mining, we established a novel prostate cancer-related EV-RNA signature that resulted in an independent predictor of poor prognosis and captured tumor microenvironment-derived signals. Integrating EV-RNA and ctDNA information improved patient stratification for progression-free survival. These findings suggest a multifaceted role for plasma EVs as a source of cancer biomarkers.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.747025v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DLL3 expression predicts response and long-term outcome in small cell lung cancer patients treated with tarlatamab</h2>
-<p class="paper-authors">Zhang, B., Hong, L., +20 authors, Byers, L. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749238v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Effects of Polyunsaturated Fatty Acids and Selenoneine on Growth and Lipidomic Profiles in Patient-Derived Prostate Cancer Organoids</h2>
-<p class="paper-authors">Sylla, M. S., Jobin, C., +10 authors, Audet-Walsh, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Prostate cancer (PCa) is the second most frequent cancer in men and represents a major public health issue worldwide. To complement current therapeutic approaches, our work aims to understand the impact of nutritional interventions on PCa evolution. Recent studies showed that supplementation with omega-3 fatty acids reduces tumour growth in PCa mouse models. Several beneficial effects were observed, particularly on the gut microbiome, suggesting indirect effects on tumours, and whether these fatty acids have a direct molecular impact on the prostate remains elusive. Here, we hypothesized that the prostate directly takes up dietary fatty acids to reprogram metabolism, which could contribute to the beneficial effects on cancer treatment. To test this hypothesis, five series of patient-derived organoids (PDOs), with paired lines originating from normal and tumour samples, were treated with omega-3 and omega-6 fatty acids. While heterogeneity was observed in growth capacities of PDO lines, omega-3 supplementation overall decreased PDO growth, with a stronger decrease in PCa lines. This effect was stronger when co-treated with selenoneine, a nutrient enriched in some marine foods with high omega-3 content. Lipidomic experiments were then performed, revealing that PDOs can take up fatty acids, both omega-3 and omega-6. Furthermore, PDOs could metabolize omega-3 fatty acids into downstream metabolites, even if high inter-patient heterogeneity was observed. Altogether, this study, using PDOs as a working model to study the human prostate, provides a better understanding of the molecular impacts of fatty acid supplementation on prostate and PCa biology for the development of future nutritional interventions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.04.749239v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Single genome analysis of normal cells identifies the early steps of kidney cancer.</h2>
-<p class="paper-authors">Margaria, J. P., Pipitone, G. B., +16 authors, Franco, I.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Whole genome analyses have shown that every cell of the body accumulates thousands of genetic changes during a lifetime, with implications for cancer initiation. We have analyzed normal kidney cells from both healthy individuals and patients with the Von Hippel Lindau (VHL) syndrome, which predisposes to kidney cancer. Using a clonal-expansion method that enables the collection of high confidence genetic and gene expression data from the same cell, we define a new mutational signature that marks a specific subset of damage-activated proximal tubule cells, as well as 96% of clear cell renal cell carcinomas. The underlying mutational process is specifically active in highly transcribed DNA and impacts the occurrence of cancer driver variants in the VHL gene. Our data from normal cells, supported by in vitro experiments, point to perturbations of oxygen availability as a causative factor. These findings link hypoxia, a frequent endogenous stress in the normal renal tissue, to excessive mutation and cancer initiation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749153v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Chromosomal mutational signatures of DNA damaging agents at single cell resolution</h2>
-<p class="paper-authors">Andronescu, M., Adrian-Hamazaki, A., +29 authors, Aparicio, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The chromosomal-scale mutational spectrum of small molecules that interact with DNA has been hard to study at scale, as mutational events are distributed in location and occur in parallel in different cells. Here, we present a framework that pairs phylogenetic ancestry reconstruction with mutational signature decomposition to characterise recent, cell-private copy number alteration (CNA) mutational patterns at single-cell resolution. We used this framework to characterise the cell-wise mutational spectrum of contemporaneous CNAs generated by double-strand-break-inducing chemotherapeutic drugs. We demonstrate that platinum salts, G-quadruplex stabilizers and topoisomerase II inhibitors, although mechanistically distinct, converge on a mutational signature dominated by telomere-bounded copy-number gains and losses. This signature is observed in different genetic backgrounds and in vivo in drug-treated patient-derived xenografts. We also observe a high rate of endogenous telomere-bounded mutational foreground in BRCA1 deficient cells. We show that the single cell genome derived signature exposures are drug dose-dependent, and use this to identify the decay of mutational load after drug withdrawal. We observe that both cisplatin and a G4 binder molecule (CX5461) exhibit foreground mutational signature persistence for at least 3 weeks after drug withdrawal, suggesting that residual effects of exposure may last longer than anticipated. Finally, extending the framework to serially drug-treated patient-derived xenograft (PDX) models, we show that telomere-bounded CNA signature exposure is associated with tumoural response to drug, consistent with loss of mutational activity on the genome after acquired resistance emerges. Together, our results show that our framework applied on scWGS identifies contemporaneous chromosomal mutation patterns induced by small molecules in human tissues.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.08.30.748106v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Pannexin 1 inhibition reduces tumorigenic properties of patient-derived glioblastoma cells through the HIPPO and Wnt signalling pathways</h2>
-<p class="paper-authors">Johnston, D., Huver, M., +11 authors, Penuela, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Glioblastoma (GBM) is the most common primary brain tumour, with a median survival of 12-18 months, highlighting a need for new treatment targets. We observed that pannexin 1 (PANX1), a channel-forming glycoprotein important in purinergic signalling, is upregulated in GBM compared to normal tissue and expressed throughout patient tumours. Western blot analysis of patient-derived GBM cell lines revealed significantly increased PANX1 expression in these primary lines compared to brain tissue and control glial cells. Bulk RNA-sequencing compared the gene expression of GBM cells devoid of PANX1 via CRISPR/Cas9 deletion (PANX1-KO) compared to controls. Gene Ontology and KEGG gene set analyses revealed PANX1-KO in GBM cells affects cell surface and cell junction components, processes, and pathways, including the HIPPO pathway, in addition to critically downregulating {beta}-catenin mRNA and other components of the Wnt pathway. The deletion of PANX1 resulted in a disruption of the {beta}-catenin protein and a dramatic reduction in migration and cell growth. Pharmacological inhibition of PANX1 in GBM cells with Probenecid (PBN) and Spironolactone (SPIR) demonstrated a significant reduction in live cell numbers and migration via scratch assay. Both blockers dramatically decreased F-actin filament formation, and the cellular localization of beta-catenin became more intracellular compared to controls. Xenografted GBM tumours showed a reduction in tumour cell viability by bioluminescent imaging and reduced hemorrhaging incidence when treated with PBN. These new insights support further investigation of PANX1 as a potential GBM therapeutic target and its role in multiple cancer signaling pathways that regulate this devastating disease.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749222v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A mammary-specific microfluidic device for studying post-radiotherapy vascular-immune cell interactions</h2>
-<p class="paper-authors">Martello, S. E., Luna, S. N., +5 authors, Rafat, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Radiotherapy (RT) significantly improves outcomes and reduces the risk of recurrence in breast cancer. However, in patients that experience recurrence despite treatment, the irradiated breast tissue may create a pre-metastatic niche that promotes tumor cell infiltration. Because current models of metastasis lack key physiological and microenvironmental cues, we developed a mammary vasculature-on-chip (MVoC) to model how the vasculature responds to RT and impacts immune and tumor cell behavior in mammary tissue. Murine and human MVoCs incorporated endothelial cells (ECs) cultured under physiologic shear stress and mammary-specific fibroblasts to mimic the vascular-fibrous stroma interface. MVoCs exhibited a transient, acute response to RT that led to a persistent phenotypic shift. Neutrophils, which play key roles in pre-metastatic niche formation, adhered more to irradiated ECs and induced persistent damage to the endothelial barrier, preventing recovery. Neutrophils also significantly increased tumor cell adhesion to the endothelium in MVoCs. These findings demonstrate that MVoCs can be used to study RT-induced pre-metastatic niche formation and suggest a positive feedback loop between damaged ECs and immune cell activation that may facilitate tumor cell colonization. MVoCs provide a biologically relevant approach to probe molecular and cellular interactions, improving translation toward developing novel therapies that improve patient outcomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.03.749257v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Gliomas, particularly glioblastoma (GBM), are aggressive primary brain tumors associated with dysregulated NLR signaling, a pathway central to innate immunity and inflammation. NLRP1 triggers proinflammatory cytokine release and pyroptotic cell death via autoproteolytic cleavage. The FIIND missense variant rs11651270 (M1184V) may modulate this cleavage process. While NLRP1 polymorphisms are associated with various diseases and cancers, their specific impact on glioma remains to be investigated. In our study, five FIIND-domain single-nucleotide polymorphisms (SNPs) of NLRP1 rs371579423, rs58604457, rs57636751, rs11651270, and rs2301583, were investigated by Sanger sequencing in a clinical cohort of glioma patients and compared against population-matched controls from the GenomeIndia dataset (Rajasthan cohort) using genetic association models. Molecular dynamics simulations were performed to evaluate the structural effects of the missense variant rs11651270 (M1184V) in NLRP1 during pre- and post-cleavage states. The linked variants rs58604457 (G&gt;A) and rs57636751 (C&gt;T) exhibited complete linkage disequilibrium (r2=1.00) and were significantly associated with lower odds of glioma (odds ratio ~0.5). The missense variant rs11651270 (T&gt;C) showed no association with glioma risk. Notably, the SNP rs2301583 had a higher allelic frequency in glioma cases despite being absent in the GenomeIndia population-based control catalogue. Molecular dynamics simulations revealed that the M1184V substitution stabilizes local FIIND architecture by preserving {beta}-strand organization through persistent interactions with neighboring residues. This study provides the first combined genetic and structural analysis of NLRP1 FIIND-domain variants in an Indian glioma cohort. These findings illustrate the potential value of integrating population-based genetic association with structural modelling to generate hypotheses and uncover potential functional mechanisms of inflammasome-gene variants in neuro-oncology.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.04.749492v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -336,15 +241,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
+<span class="date">Sep 08, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A cfDNA fragmentomics classifier for noninvasive differentiation of benign and malignant renal masses.</h2>
-<p class="paper-authors">Linfei Li, Cong Wang, +10 authors, Yongquan Wang</p>
+<h2 class="paper-title">Integrative transcriptomic identification of potential common biomarkers between non-obstructive azoospermia and papillary thyroid cancer via multi-algorithmic machine learning and network biology approaches.</h2>
+<p class="paper-authors">Arash Safarzadeh, Golfam Sadeghian, Soudeh Ghafouri-Fard</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Noninvasive differentiation of malignant and benign renal masses remains a major clinical challenge, particularly for radiologically indeterminate lesions. Here, we developed and validated a plasma cell-free DNA (cfDNA) fragmentomics-based machine learning classifier for renal mass characterization. The model was trained on 331 participants (171 cancer, 160 benign) and independently validated on 144 participants (73 cancer, 71 benign). Three cfDNA fragmentation features, including copy number variation (CNV), fragmentation-based methylation (FRAGMA), and nucleosome footprint (NF), derived from low-pass whole-genome sequencing, were integrated into an ensemble framework. The model achieved strong discriminative performance, with area under the curve (AUC) values of 0.956 in the training cohort and 0.946 in the validation cohort, outperforming individual feature-based models. At a predefined operating threshold corresponding to 90% sensitivity, specificity reached 0.90 and 0.87, respectively. Notably, most cancer samples exhibited low tumor fraction (TF 4 cm, for which surgical intervention is more commonly considered, and 84.6% of malignant tumors ≤ 4 cm, for which management can be challenging. Collectively, these findings support cfDNA fragmentomics as a promising noninvasive liquid biopsy approach for renal mass evaluation and clinical decision-making.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42704571/" target="_blank">
+<p><strong>Abstract:</strong> Emerging evidence suggests potential mechanistic links between non-obstructive azoospermia (NOA) and papillary thyroid carcinoma (PTC) through shared signaling pathways. However, no integrative transcriptomic study has systematically examined common molecular signatures between these disorders.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42710154/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -355,15 +260,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">PPR</span>
+<span class="date">Sep 08, 2026</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">From Transcriptomics to Game-Theoretic Models of Treatment Resistance in Glioblastoma Organoids</h2>
-<p class="paper-authors">Spekking L, Lohk C, +6 authors, Staňková K.</p>
+<h2 class="paper-title">Topologically distinct intratumoral heterogeneity scores for predicting high-risk pathological grades in invasive lung adenocarcinoma: A multicenter study across four institutions.</h2>
+<p class="paper-authors">Shanyue Lin, Yudian Mao, +4 authors, Zhichao Zuo</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Integrating patient-specific data with mechanistic mathematical models is essential for developing personalized cancer therapies. Here, we present a data-driven systems biology framework that combines transcriptomic analysis, machine learning, and game-theoretical modeling to predict evolutionary responses to irradiation in patient-derived glioblastoma organoids. Supervised and unsupervised learning approaches identify relevant cancer cell populations and quantify temporal changes in their composition from bulk transcriptomic data. These estimates parameterize replicator dynamics to infer transient evolutionary trajectories and evolutionary stable strategy (ESS) compositions. Our analyses reveal that hypoxia is the primary driver of short-term responses to irradiation, while exerting a smaller influence on long-term evolutionary outcomes. Furthermore, supervised approaches provide the most accurate estimates of evolutionary dynamics when therapy resistance is represented as a qualitative trait. This integrative framework demonstrates how transcriptomic data can inform mechanistic models of tumor evolution, supporting patient-specific treatment optimization and advancing data-driven mathematical oncology.</p>
-<a class="btn dark" href="https://doi.org/10.21203/rs.3.rs-10763447/v1" target="_blank">
+<p><strong>Abstract:</strong> High-risk subtypes of invasive lung adenocarcinoma (IAC), particularly micropapillary- or solid-predominant patterns, are closely associated with poor prognosis. This multicenter retrospective study developed and validated a predictive model for the preoperative identification of these high-risk subtypes using topologically distinct intratumoral heterogeneity (ITH) scores derived from CT images. The study included 1,051 patients with IAC. Two complementary ITH scores were developed: a two-dimensional ITH score, which integrated local radiomics features with global pixel distribution patterns on the largest cross-sectional CT slice, and a three-dimensional ITH score, which extended this quantification across the entire tumor volume. Clinicoradiological features and ITH scores were incorporated as model inputs to construct six base machine learning classifiers and a final stacking ensemble classifier. Model interpretability and robustness were evaluated using SHapley Additive exPlanations (SHAP)-based ablation analyses. An independent dataset from The Cancer Imaging Archive (TCIA) was used for external validation to investigate associations between ITH scores and pathological characteristics, genomic features, recurrence-free survival, and overall survival. The stacking ensemble classifier achieved the best predictive performance, with an area under the receiver operating characteristic curve of 0.875, outperforming models based solely on radiomics features (0.834) or clinicoradiological features (0.792). SHAP analysis identified the 3D ITH score as the most influential contributor to model output, and TCIA validation showed that higher 3D ITH scores were associated with more aggressive tumor biology and poorer survival outcomes. The topologically distinct 3D ITH score may provide a clinically meaningful imaging biomarker for preoperative risk stratification in IAC.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42709716/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -374,15 +279,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 07, 2026</span>
-<span class="journal">MED</span>
+<span class="date">Sep 08, 2026</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Survival prediction for clear cell renal cell carcinoma based on deep multimodal synergistic survival network.</h2>
-<p class="paper-authors">Liang L, Xu J, Zhang Y.</p>
+<h2 class="paper-title">Bioimage management and analysis in Galaxy: Tools, workflows, training, and community practices.</h2>
+<p class="paper-authors">Leonid Kostrykin, Riccardo Massei, +23 authors, Beatriz Serrano-Solano</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective.To propose a deep multimodal synergistic survival analysis framework (Deep Multimodal Synergistic Survival Network, DMSSN) to achieve accurate prognostic analysis for clear cell renal cell carcinoma (ccRCC).Methods.This study (DMSSN) utilized matched multimodal data from the Cancer Genome Atlas-KIRC database, including CT imaging data, whole slide images, copy number variation (CNV) features, and clinical data. Deep Canonical Correlation Analysis was employed to map heterogeneous modalities into a shared latent space. Contrastive learning was introduced to enhance semantic consistency across multimodal features, and a gating network was utilized for the adaptive fusion of multimodal information to achieve precise survival risk prediction for patients.Results.Experimental results demonstrated that DMSSN achieved a Concordance Index (C-index) of 0.8153 ± 0.0994, with a Log-rank testp-value of 1.6553×10-11. DMSSN exhibited significant performance advantages over traditional statistical methods like Log-rank-Cox (0.7055 ± 0.0670) and machine learning methods such as Random Survival Forest (RSF) (0.6836 ± 0.1048). Furthermore, in comparison with similar deep learning approaches, DMSSN outperformed late fusion strategies (0.7493 ± 0.1211) and discrete-time survival models such as DeepHit (0.7655 ± 0.1041) and Nnet-surv (0.7694 ± 0.0635). Notably, DMSSN still achieved the best predictive performance when compared to the classic deep survival model DeepSurv (0.7919 ± 0.0978) and advanced state-of-the-art multimodal fusion frameworks like Context-Aware Transformer (0.7735 ± 0.0818) and Multimodal Co-Attention Transformer (0.8102 ± 0.0972). Ablation studies showed that removing any single modality led to a decline in performance, with the largest numerical decrease occurring after removing CT imaging features (C-index decreased to 0.7327), validating the complementarity of multimodal data and the pivotal role of radiomic features in prognostic assessment. Module ablation experiments further confirmed the effectiveness of the core components.Conclusion:By effectively integrating imaging, pathology, genomic, and clinical features, the DMSSN framework demonstrates superior performance and robustness in the survival prediction of ccRCC.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42641655/" target="_blank">
+<p><strong>Abstract:</strong> Image analysis in the life sciences is constrained by fragmented software ecosystems, heterogeneous data formats, and limited reproducibility. These barriers hinder the reuse of image analysis methods and the sustainability of tools. In this article, we describe how the Galaxy platform enables FAIR (Findable, Accessible, Interoperable, and Reusable) image analysis by providing an integrated environment for data access, workflow execution, provenance tracing, and training. We present Galaxy as a computational workbench that supports diverse image formats and integrates with public, institutional, and private repositories. We describe a reference structure for FAIR image analysis workflows and illustrate how this pattern supports reproducibility, interoperability, and reuse. We also describe community-driven training and sustainability practices that embed FAIR principles directly into executable tutorials and shared workflows. Together, these foundations position Galaxy as a reproducible, scalable, and community-maintained platform for FAIR image analysis across the life sciences and beyond.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42709042/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
