@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MAP: a comprehensive pipeline for mobilome annotation and cargo gene characterisation in prokaryotic (meta)genomic assemblies</h2>
-<p class="paper-authors">Escobar-Zepeda, A., Beracochea, M., +2 authors, Finn, R. D.</p>
+<h2 class="paper-title">Towards reconstruction of the human interactome from positive and negative experimental evidence</h2>
+<p class="paper-authors">As, J., Pelz, K., +4 authors, Schaefer, M. H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Mobile genetic elements (MGEs) drive horizontal gene transfer in prokaryotes, disseminating antimicrobial resistance genes (ARGs), virulence factors (VFs) and biosynthetic gene clusters (BGCs). Given their importance, there is a pressing need for a single, open source tool that annotates the MGE repertoire together with its functional cargo. We present MAP (Mobilome Annotation Pipeline), a Nextflow pipeline that predicts plasmids, viral sequences, prophages, integrons, insertion sequences, transposons, integrative and conjugative elements, and non-autonomous compositional outliers, removes redundant predictions, and labels genes within MGE boundaries. MAP outputs a GFF3 formatted file, a FASTA file of MGE sequences, and a combined report placing ARGs, VFs, toxins and BGCs in their mobilome context, enabling the identification of composite elements such as ARG-carrying integrons within plasmids. We demonstrate its use on genomes from the MGnify soil genome catalogue.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.11.750868v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein-protein interactions (PPIs) have been detected and reported in the millions, but while they are used in many different contexts for better understanding cellular processes in health and disease, the knowledge of the human PPI network is far from complete, containing many false positive measurements and being highly biased. Both to chart the extent of those problems and to solve them requires not just a knowledge of high-confidence positive interactions, but also likely non-interacting protein pairs. However, this information is typically not reported in PPI studies. We developed a methodology to reconstruct this knowledge from existing PPI data. We reconstruct the experimental search space in which PPI screens have been performed and then create a model that informs how likely a PPI is real given its testing and observation frequency. We argue that negative protein pairs allow us to estimate the error rates of experimental and computational screens. We show how this knowledge could be incorporated for calibration. Finally, we evaluate a simple machine learning approach to PPI prediction and propose how such negative data can be used for training instead of random protein pairs. Together, our results show that reconstructing the experimental search space recovers a largely overlooked layer of information from existing PPI data that can help guide a more accurate and complete mapping of the human interactome.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.09.750397v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">RAxML-NG 2: Automatic model selection, novel tree search heuristics, and fast branch support metrics</h2>
-<p class="paper-authors">Kozlov, O. M., Togkousidis, A., +3 authors, Stamatakis, A.</p>
+<h2 class="paper-title">SpaCoEx: Sparse Gene Selection for Spatially Varying Co-expression in Spatial Transcriptomics</h2>
+<p class="paper-authors">Jian, M., Pei, S., Alterovitz, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> RAxML-NG is a widely used tool for maximum likelihood based phylogenetic inference. In the seven years since the last RAxML-NG publication, we have continuously improved and extended the code. Here, we describe the next major release, RAxML-NG 2.0. It introduces a plethora of new features: integrated model testing, multiple fast branch support metrics, automatic parallelization tuning, phylogenetic difficulty prediction, genotype evolution models, to name but the most important ones. Furthermore, we introduce two novel search heuristics at production code level: the adaptive difficulty-aware heuristic (default) and the fast mode with early-stopping that prevents over-optimization. We perform extensive benchmarking of RAxML-NG 2.0 with respect to its accuracy and speed, and compare it to other popular maximum likelihood based phylogenetic inference tools (IQTree, VeryFastTree) as well as to preceding RAxML-NG versions. In particular, the new fast search heuristic in conjunction with machine learning based branch support prediction induces a 75x inference time reduction compared to RAxML-NG 1.2, with minor to no accuracy loss. The code is available under GNU GPL at https://codeberg.org/amkozlov/raxml-ng.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.09.750097v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Spatial transcriptomics enables gene expression to be measured while preserving tissue location, but most existing analyses focus on spatial variation in individual genes or expression-defined domains. Here, we introduce SpaCoEx, a sparse spatial representation framework that integrates gene-expression levels with spatially varying gene-gene co-expression. SpaCoEx first estimates local co-expression matrices from neighboring spatial spots, maps them into a log-Euclidean representation, and performs structured gene selection by retaining or removing the full row and column associated with each gene. The selected genes are then used to construct both expression-level features and local co-expression features, which are combined through an -weighted joint representation for downstream spatial analysis. We applied SpaCoEx to human cutaneous squamous cell carcinoma and annotated human breast cancer spatial transcriptomics datasets. In the cutaneous squamous cell carcinoma dataset, SpaCoEx selected 29 of 45 keratinocyte-related genes while preserving 96.74% of the spatial co-expression variation. In the breast cancer dataset, SpaCoEx identified spatially varying co-expression between B2M and HLA-C, a biologically meaningful major histocompatibility complex (MHC) class I antigen-presentation gene pair. Their local correlation was significantly higher in cancer-associated regions than in non-cancer regions (mean difference = 0.30, spatially adjusted SE = 0.045, P&lt;1.0x10^(-10)), whereas B2M and HLA-C expression individually did not differ significantly between cancer and non-cancer. In benchmarking against manual tissue annotations, co-expression-only SpaCoEx achieved the strongest spatial coherence (percentage of abnormal spots [PAS] = 0.076), while the joint expression/co-expression representation achieved the highest annotation agreement, with an adjusted Rand Index (ARI) of 0.584 at = 0.60 and and normalized mutual information (NMI) of 0.663 at = 0.40. By integrating marginal gene-expression information with local gene-gene co-expression structure, SpaCoEx provides a sparse, low-dimensional, and interpretable representation of spatial transcriptomics data that captures complementary aspects of tissue organization beyond expression-based variation alone.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749559v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Chemical Descriptors and Deep Learning Embeddings for Scoring de novo Peptide Designs</h2>
-<p class="paper-authors">Trolliet, Q., Abrudan, A., +4 authors, Saccon, F.</p>
+<h2 class="paper-title">Explainable Machine Learning and Epigenomic Profiling Decipher the Topological Determinants of Lentiviral Integration and Longitudinal Persistence in SCID-X1 Gene Therapy</h2>
+<p class="paper-authors">Saber, H., Mousavipour, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Peptides occupy a valuable niche between small molecules and biologics, but the clinical translation of de novo peptide designs requires rigorous scoring to simultaneously optimise target binding affinity alongside multiple developability traits, including stability, membrane permeability, aggregation propensity, and non-fouling behaviour. Here, we evaluate two distinct approaches for scoring these candidates: classical chemical descriptors and modern deep learning representations derived from protein language and folding models. Assembling nine public datasets spanning five developability traits and four binding-affinity endpoints, we find sequence-derived chemical descriptors alone contain sufficient information to predict developability task labels effectively. Given their drastically lower computational cost and higher interpretability, classical machine learning models trained on these simple descriptors frequently match or approach the performance of complex deep learning architectures, emerging as a highly efficient and interpretable alternative for high-throughput scoring. Finally, for scoring binding affinity, we demonstrate that Boltz-2 pair representations capture the most information among the tested representations; however, the model's predictive power is confounded by a significant bias from the molecular weight of the peptides. Together, these results establish a comprehensive assessment of state-of-the-art methods for predicting both peptide developability and binding affinity, highlighting the enduring value of interpretable chemical descriptors alongside deep learning in the scoring and selection of de novo peptide designs.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.10.750670v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Lentiviral vectors (LVs) are clinically established for SCID-X1 gene therapy, yet the quantitative epigenomic and spatial determinants governing integration targeting and long-term clonal persistence across chromosomes remain incompletely characterized. Using clinical multi-omics datasets from SCID-X1 trials, we curated 274,959 unique clinical integration sites (VIS) across 276,839 clonal records from 10 patients (hg38). Balanced against length-weighted genomic controls (total N = 549,918), five epigenomic and topological features were modeled. We evaluated Logistic Regression, XGBoost, and a Deep Genomic ResNet using inner 5-fold chromosome-grouped cross-validation and evaluation on held-out test chromosomes (chr19-22, chrX). Statistical uncertainty was quantified via 1-Mb block-bootstrap (5,000 replicates) and 1-Mb block permutations (10,000 replicates). On held-out chromosomes, Deep ResNet achieved an ROC-AUC of 0.7857 [95% CI: 0.7672-0.8029] and PR-AUC of 0.8027 [95% CI: 0.7640-0.8337] over the 0.5755 prevalence baseline, outperforming linear baselines. 1-Mb block permutations confirmed significant proximity to scATAC-seq peaks (Cliff's {delta}=-0.3364, P_perm100 kb) from proto-oncogenes without proximal enrichment (OR = 1.05, P = 0.617). Furthermore, longitudinal tracking identified 79,587 persistent clones ([≥]2 time points), which exhibited a significant 31% depletion near proto-oncogenes (OR = 0.69, P = 0.014). Compact topological and epigenomic features robustly predict lentiviral integration without spatial data leakage. The long-term depletion of persistent clones near oncogenes confirms the insertional safety of SIN lentiviral gene therapy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749598v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DNT: Diploid Genomic Foundation Model</h2>
-<p class="paper-authors">Leib, G., Zinger, T., +17 authors, Rechavi, G.</p>
+<h2 class="paper-title">spAlignDE unifies cross-sample and cross-modal spatial alignment with mismatch-aware differential expression</h2>
+<p class="paper-authors">Xu, S., Wang, Y., +3 authors, Song, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Clinical interpretation of genetic variation depends on the diploid genotype, including zygosity, allele dosage and whether multiple variants occur in cis on the same homologue or in trans on different homologues. Most genomic language models process haploid sequences or combine independently encoded haplotypes downstream, so they do not directly represent the paired genotype in a single sequence. We introduce a reference-aligned diploid encoding for single-nucleotide variants (SNVs) and short insertions and deletions (indels), together with unphased and phase-retaining tokenizers that accept phased genotypes and convert them to single-sequence diploid representation. Using Nucleotide Transformer v3 backbones, we continue training 8-million- and 100-million-parameter models and evaluate an auxiliary Contrastive Phase Loss (CPL) designed to retain the phasing information of the variants in contextual representations. We evaluate on a novel compound-heterozygous benchmark containing 9,460 examples. Models whose inputs did not distinguish relative phase remained near chance, whereas our diploidic models improved discrimination with AUROC 0.649, compared to 0.506 for the vocabulary-adapted control. These findings establish a method for making diploid genotype information accessible to genomic language models, rather than a universal improvement in variant prediction; validation in naturally observed, accurately phased clinical cohorts remains necessary.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749576v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Comparative analysis of spatial omics requires aligning data across samples and modalities to a common coordinate system. Existing methods can be computationally intensive for large datasets, and cross-modal alignment is difficult when datasets lack comparable molecular features. In addition, residual alignment errors can cause locations assigned to the same coordinates to represent different biological regions, producing false differential expression signals. Here we propose spAlignDE, a computational method that integrates structure-guided spatial alignment with mismatch-aware local differential expression analysis. spAlignDE represents structures from spatial transcriptomics, spatial ATAC-seq, histology, and anatomical atlases as continuous fields and aligns them by shooting-based diffeomorphic registration without requiring shared molecular features. In cross-sample benchmarks against 12 methods, spAlignDE achieved the highest agreement in gene expression patterns and anatomical annotations. It also scaled to 20 MERFISH brain sections containing 1.45 million cells. For cross-modal tasks, spAlignDE accurately aligned spatial transcriptomics with histology, the Allen Mouse Brain Common Coordinate Framework, and spatial ATAC-seq. After alignment, spAlignDE estimates local expression contrasts on a shared grid and inflates their variances according to mismatch risk estimated from putatively stable genes and local observation density. The analysis can also adjust for cell-type composition. Simulations showed improved false discovery control without systematic loss of power. In real-data applications, spAlignDE localized age-associated changes in gene expression and T-cell distribution in the mouse brain and spatially restricted expression differences between normal and injured kidney sections.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749632v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Real-time accessible phylogenetics for every highly sampled virus</h2>
-<p class="paper-authors">Hinrichs, A. S., Karim, L. M., +2 authors, Corbett-Detig, R.</p>
+<h2 class="paper-title">Interaction Profiles as a Universal Language for Generative Molecular Design with ShEPhERD-2</h2>
+<p class="paper-authors">Abeywardane, K. A., Walker, K., Coley, C. W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The scale of viral genome sequencing has outpaced the phylogenetic tools traditionally used to analyze it, as highlighted by the COVID-19 pandemic. We present viral_usher, a unified framework for scalable viral phylogenetics built on UShER. viral_usher is a containerized command-line tool that constructs mutation-annotated trees directly from public sequence repositories with minimal user input, building phylogenies of tens of thousands of genomes in minutes. Applying it across the International Nucleotide Sequence Database Collaboration, we assembled viral_usher_trees, a repository of 446 phylogenies spanning 163 well-sequenced viral species, rebuilt automatically monthly as new genomes are deposited. We extended Taxonium from a tree viewer into a web platform supporting in-browser phylogenetic placement and de novo tree construction, so that users can upload sequences and contextualize them within global phylogenies without local computational infrastructure. Because every tree is built by the same procedure, the repository enables comparative analyses across the breadth of viral diversity. We demonstrate the utility of this resource by asking what factors shape viral mutation spectra. We found that replication machinery, captured as Baltimore class, explains 46% of the variance across 162 viral genomes, while host taxon and envelope status together explain under 5%. These resources provide an extensible platform for real-time genomic epidemiology and for comparative evolutionary analysis across viral pathogens. Resources and code are freely available at https://taxonium.org/, https://github.com/lilymaryam/spectrum_analysis, https://github.com/AngieHinrichs/viral_usher_trees, and https://github.com/AngieHinrichs/viral_usher.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.10.750728v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Three-dimensional intermolecular interactions govern molecular recognition and are fundamental to the pharmacological activity of small-molecule drugs. We propose that an interaction profile, comprising shape, electrostatics, and directional pharmacophores, is a sufficient and transferable design specification for molecular design. We introduce ShEPhERD-2, a 3D generative model that generates molecular structures conditioned on explicit interaction profiles. ShEPhERD-2 generates low-strain, drug-like molecules more efficiently and with greater fidelity to target interaction profiles than its predecessor while enabling precise control over molecular design through pharmacophore prioritization, substructure constraints, and composition of multiple interaction profiles. We demonstrate the application of a single model to bioisosteric fragment merging, dual-target design, selectivity engineering, and modality hopping without task-specific retraining. These results establish interaction profiles as a chemotype-agnostic interface between structure hypotheses and molecular design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.10.750648v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SpectroVQ: Noise-Aware Compression of Proteomics Data via Vector-Quantized Deep Learning improves MS/MS data storage and Peptide Identification</h2>
-<p class="paper-authors">Lam, H., Li, J. H. W., Hoque, A.</p>
+<h2 class="paper-title">Markov models of SHAPE data improve secondary structure prediction</h2>
+<p class="paper-authors">Yang, Y., Mathews, D. H., Aviran, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The amount of proteomics data generated has dramatically grown for the past decade due to the wider accessibility to mass spectrometers and technological advances. Current data storage and compression techniques largely treat mass spectra as meaningless series of numbers, wasting storage on useless noise and limiting the compression ratio. Here, we present SpectroVQ, a noise-aware vector-quantized autoencoder to compress and denoise peptide tandem mass spectra without any prior annotation by exploiting peptide fragmentation pattern using deep-learning Evaluation results showed that SpectroVQ can preferentially retain useful signals in spectra from diverse peptide ions, including those in unseen datasets. SpectroVQ achieved over 3-fold increase in compression ratio over mzMLb while maintaining over 0.9 in average cosine similarity and 90% agreement in peptide identifications. In addition, we develop a novel strategy to increase peptide identifications by ~15% via ordinary library searching, by leveraging the tuneable denoising capability of SpectroVQ.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749393v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> RNA structure is a key determinant of RNA function and regulation. The coupling of chemical probing technologies, such as SHAPE, with deep sequencing has enabled large-scale experimental characterization of RNA structures in complex samples and under diverse conditions. Furthermore, probing data are often used to guide thermodynamics-based secondary structure prediction algorithms and have been shown to improve their accuracy. However, current algorithms treat these single-nucleotide measurements as statistically independent signals, inherently overlooking short-range dependencies in the data. Here, we show that discretized SHAPE data display context dependence within loop regions and within stem regions and we use Markov models to formally capture such dependencies. We then leverage Markov modeling in the classification of small structure motifs from their discretized SHAPE data signatures and subsequently integrate the classifying feature into the dynamic programming recursions that underlie computational RNA folding. Compared to state-of-the-art SHAPE-guided structure prediction methods, our Markov-informed framework improves prediction performance. Furthermore, we identify SHAPE signatures characteristic of highly stable hairpins, such as GAAA, GCAA, and UUCG tetraloops, and integrate these insights into the folding recursions to further improve predictions. Overall, the proposed framework provides a foundation for context-aware statistical modeling of SHAPE data, particularly in loop regions, where signal characterization has proven challenging due to high variance. This work further demonstrates that finer modeling of SHAPE data has the potential to push the limits of data-guided secondary structure prediction.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.10.750790v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,110 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
+<span class="date">Sep 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Geomosaic: a flexible bioinformatics platform integrating complementary metagenomic analyses from sequencing reads to genomes</h2>
-<p class="paper-authors">Corso, D., Taccaliti, E., +1 author, Giovannelli, D.</p>
+<h2 class="paper-title">VARION: A Network Propagation Framework for Individual Patient Somatic Mutation Interpretation in Cancer Molecular Subtyping</h2>
+<p class="paper-authors">Kwon, T., Park, Y.-G., Choi, J.-G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metagenomic analyses can be performed at multiple analytical levels, including read-based, assembly-based, and genome-resolved approaches, each capturing complementary biological information while introducing distinct analytical biases and trade-offs. However, existing workflows are commonly optimized for a single analytical strategy, making it difficult to integrate these complementary representations within a unified, reproducible framework. Here we present Geomosaic, a modular framework that integrates complementary analytical representations of metagenomic data, from reads to genomes, within a single scalable, customizable, and reproducible workflow. Built on a graph-based architecture implemented in Snakemake, Geomosaic enables users to construct complete end-to-end workflows or execute individual analytical modules while selecting among interchangeable software packages. The framework supports read preprocessing, quality control, taxonomic and functional profiling, assembly, genome reconstruction, genome-resolved annotation, custom HMM-based analyses, and automated downstream result aggregation. Automatic generation of execution scripts, modular workflows, and multiple analysis entry points make Geomosaic accessible to researchers approaching metagenomic analyses for the first time, while providing the flexibility and control required by expert users. Native support for HPC environments enables efficient analysis of datasets ranging from individual projects to large-scale metagenomic surveys. Rather than treating read-, assembly-, and genome-resolved metagenomics as alternative analytical strategies, Geomosaic integrates them as complementary representations of the same biological system, allowing users to move seamlessly between community-wide patterns and organism-resolved functional interpretation. By combining workflow flexibility, computational reproducibility, standardized analysis-ready outputs, and extensive documentation, Geomosaic provides a unified platform for environmental metagenomic analyses and facilitates reproducible downstream ecological and evolutionary investigations.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749574v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">scOLAR: Ontology-Anchored Open-Set Annotation of Single-Cell RNA-seq Data</h2>
-<p class="paper-authors">Liu, Y., Yi, S., +1 author, Ju, W.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell RNA sequencing profiles cellular heterogeneity at atlas scale, making automated annotation essential. However, target datasets often contain novel cell types missing from incomplete references. We present scOLAR, an ontology-guided open-set framework that learns prototypes over the Cell Ontology and uses both reference and target expression to annotate known classes while detecting unfamiliar populations. Guided by ontology hierarchies and decision-boundary regularization, scOLAR penalizes coarse-lineage misclassification and groups novel cells without requiring predefined cluster counts. Across benchmarks, scOLAR achieves a novelty-detection AUROC of 0.9726 and an average precision of 0.9871, enabling structured post-hoc lineage-level interpretation of populations absent from the reference.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.05.749179v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">CIDER: detecting changes in gene regulatory networks that are associated with changes in phenotype</h2>
-<p class="paper-authors">Jung, W. J., Ding, M., +2 authors, Brent, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Changes in gene regulatory networks may drive quantitative traits, or may transmit the effects of one trait, such as blood lipid level, on another, such as cardiovascular health. Yet the standard tools, differential correlation and differential network analysis, compare two discrete groups, while the contexts of interest - circulating lipids, inflammation, and blood glucose - vary continuously; applying them forces dichotomization, discarding within-trait variation. We introduce Continuous Interaction-based Differential Edge Regulation (CIDER), which tests whether a gene regulatory network edge, the relationship between a transcription factor and its target gene, varies with a continuous trait: the target gene's expression is modeled as a function of the TF's expression level, the trait, and their interaction, with the interaction coefficient measuring the trait dependence. To limit multiple testing, CIDER tests only the edges of a reference regulatory network. A generalized additive extension detects interactions that change the shape of the relationship, not only its slope, including forms that cannot be expressed as a difference between two correlations. In simulations it outperformed four two-group methods across sample sizes, effect sizes, and noise levels, with most of its advantage from keeping the trait continuous. In whole-blood transcriptomes from four independent human cohorts across ten quantitative health traits, CIDER identified 63 replicated cases in which a TF's regulation of its target varies with the trait, including coupling of the glucocorticoid-receptor (NR3C1) to the granulocyte colony-stimulating-factor receptor (CSF3R) that strengthens as triglycerides rise, and a pair whose regulation reverses direction across the observed range of C-reactive protein.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.08.750185v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Biocatalytic Production of Galantamine in Yeast through Cytochrome P450 Optimization</h2>
-<p class="paper-authors">Holtz, M., de Haan, S., Castellvi Domingo, C., +6 authors, Acevedo-Rocha, C. G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Galantamine is a pharmaceutically relevant Amaryllidaceae alkaloid used for the treatment of Alzheimer's disease. Its structural complexity and low abundance in plants motivate the development of alternative manufacturing routes. Here, we established the first engineered yeast platform for the biocatalytic production of galantamine from 4OMe-norbelladine. Heterologous expression of the downstream pathway enzymes NtCYP96T6, NtNMT1, and NtAKR1 from Narcissus cv. Tete-a-Tete in Saccharomyces cerevisiae was complemented by optimization of cultivation temperature, carbon source, and medium pH enabling the first demonstration of galantamine production in yeast. Systematic screening of cytochrome P450 reductase and cytochrome b partners to boost NtCYP96T6 activity led to the identification of a novel reductase mined from the Narcissus pseudonarcissus transcriptome, NpCPR, which supported the highest pathway flux and yielded 7.0 {+/-} 0.6 mg/L galantamine, corresponding to a 7.6 % molar yield from 250 M 4OMe-norbelladine and an approximately 173-fold improvement over the parental strain. We further exploited this yeast cell factory for the precursor-directed biosynthesis of 7F-galantamine, highlighting the potential of pathway enzyme promiscuity to access new-to-nature GAL analogues that may be challenging to produce through conventional chemical synthesis. Together, this work establishes a foundation for microbial galantamine production and biosynthetic diversification of its pharmaceutically relevant scaffold.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.09.750345v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 11, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Neoadjuvant chemotherapy induces transient, regimen-specific immune stromal reprogramming in pancreatic ductal adenocarcinoma</h2>
-<p class="paper-authors">Minaei, E., Cox, D., +13 authors, Vine-Perrow, K. L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.07.749769v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 11, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DNA methylation biomarkers for early detection of ovarian cancer.</h2>
-<p class="paper-authors">Jeremy Yuan-Sheng Leow, Nancy Choon-Si Ng, +3 authors, Bey Hing Goh</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Ovarian cancer (OC) remains difficult to detect at an early stage, and current screening approaches using CA125 and transvaginal ultrasonography have not demonstrated sufficient benefit for population screening. DNA methylation is a promising biomarker class because epigenetic alterations may arise early in tumourigenesis, can be detected in circulating cell-free DNA (cfDNA), and may provide tissue-of-origin information. This review critically evaluates recent evidence on DNA methylation biomarkers for early OC detection. PubMed/MEDLINE, Web of Science, and Scopus were searched for studies published between January 2020 and September 2025, supplemented by selected earlier studies of biological or methodological relevance. Evidence was synthesised across single-gene biomarkers, multi-locus panels, genome-wide signatures, assay platforms, and machine-learning classifiers, with emphasis on early-stage performance, histological representation, comparator populations, analytical methodology, and validation design. Single-gene markers such as BRCA1, RASSF1A, OPCML, HOXA9, and HIC1 show variable performance, while multi-gene and classifier-based approaches generally provide stronger discrimination. However, many studies remain limited by retrospective case-control designs, small FIGO stage I-II subsets, predominance of serous disease, and insufficient prospective validation. Integration with CA125 may improve sensitivity but can reduce specificity, which is critical in low-prevalence screening. Clinical translation will therefore require minimal and reproducible methylation signatures, standardised low-input cfDNA workflows, rigorous external validation, and prospective longitudinal evaluation in intended-use populations.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42726150/" target="_blank">
+<p><strong>Abstract:</strong> Accurate molecular subtyping of individual cancer patients from somatic mutation data remains a challenge in precision oncology research. Existing network-based stratification (NBS) methods treat all mutations equivalently, require full-cohort batch processing, and do not demonstrate generalization to independent datasets without retraining. To address this, we present variant interpretation via the adaptive network pRopagatION (VARION), which integrates population-level variant constraint scoring with protein-protein interaction (PPI) network topology. The Adaptive Topology-aware Random Walk with Restart (ATR-RWR) algorithm weights each mutated gene by {varphi}g = {surd}(GIS(g) x {rho}topo(g)), where GIS (Gene Intolerance Score) reflects population-level functional constraint, propagated across a shared PPI network; subtype assignment then uses cosine similarity to TCGA-derived reference centroids, enabling real-time single-patient classification. Across ten TCGA cancer cohorts (n = 2,417), VARION achieved 77.7% accuracy for ovarian cancer (OV), 69.5% for glioblastoma (GBM), 90.2% for cholangiocarcinoma (CHOL), and 75.4% for gastric cancer (STAD). A controlled benchmark applying two alternative clustering methods (PyNBS; a dense autoencoder) to identical ATR-RWR propagation matrices recovered no significant driver enrichment (OR = 1.79 and 1.52, n.s.), versus OR = 144.29 (p = 1.77x10^-12) for VARION, confirming that the GIS-weighted centroid architecture, not propagation alone, drives performance; generalization without retraining was further confirmed in two independent cohorts (ICGC CCA, n = 396; PCAWG, n = 110; OR = {infty}, p &lt; 5x10^-9). Together, these results indicate that VARION's GIS-weighted centroid architecture enables individual-patient molecular subtyping that outperforms existing NBS and graph-learning clustering approaches, with high sensitivity for clinically actionable rare subtypes and robust cross-platform generalization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.11.751075v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
