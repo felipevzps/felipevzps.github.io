@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
+<span class="date">Sep 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Time-Series Foundation Models for Cognitive Workload Classification using Eye-Tracking Data</h2>
-<p class="paper-authors">Haag, J., Gonzalez Nunez, J. G., +2 authors, Brattain, L.</p>
+<h2 class="paper-title">Scaling Functional Annotation Across Proteomes, Pangenomes and Metagenomes with Sma3s v3</h2>
+<p class="paper-authors">Rubio, A., Garcia-Junco, J. L., +4 authors, Casimiro-Soriguer, C. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Cognitive workload (CWL) assessment is relevant to a range of applications, such as monitoring driver fatigue and pilot attention, surgeon workload during complex procedures, and astronaut cognitive fatigue during long-duration missions. Eye-tracking datasets are generally small, which hinders the generalizability of the AI models. Time-series foundation models (TSFMs) have shown promise in mitigating this limitation as they are pretrained on large corpora and can be effectively fine-tuned with limited task-specific data. Although cognitive workload measurement has been explored in controlled settings, the ability of TSFMs to generalize to unseen individuals for CWL classification from eye-tracking data has not been studied. In this paper, two TSFMs, MOMENT and Moirai, were evaluated for CWL classification and compared against CNN, FFN, and LSTM baselines on two publicly available eye-tracking datasets. We used subject-level five-fold cross-validation in which data from each test subject were held out during training. We report accuracy, AUC, and F1-score with 95% confidence intervals. On the class-balanced EM-COGLOAD dataset, the pretrained TSFMs generalized markedly better to unseen subjects, with Moirai reaching 0.918 AUC and MOMENT 0.882 AUC, while the task-specific baselines remained near 0.70 AUC. On the class-imbalanced COLET dataset, even though the performance of all the models decreased, MOMENT was the most robust (0.670 AUC). Both TSFMs were also the most stable across held-out subjects, indicating that pretrained representations generalize more consistently across individuals than task-specific models in data-scarce eye-tracking settings.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.13.751282v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> High-throughput sequencing has generated protein datasets whose scale increasingly exceeds the practical limits of conventional functional annotation workflows. We present Sma3s v3, a scalable reimplementation of the Sma3s three-step annotation strategy, which combines transfer from highly similar homologs, orthology-based inference, and functional enrichment among homologous proteins. Sma3s v3 replaces BLAST-based searches with MMseqs2 and introduces parallel processing, reusable SQLite caches, taxonomic filtering, and traceable outputs that retain the evidence underlying each assignment. We evaluated the method on a Vibrio cholerae pangenome comprising 50,415 gene clusters from 11,295 quality-filtered genomes and on a metagenomic catalogue containing 843,935 proteins. After excluding non-informative assignments, Sma3s v3 annotated 30,662 pangenome clusters (60.8%), comparable to InterProScan (60.2%) and exceeding eggNOG-mapper (41.4%), while providing 5,747 annotations not recovered by either comparator. Gene Ontology comparisons showed broad semantic agreement between methods, with Sma3s v3 frequently contributing more non-redundant information in Molecular Function and Biological Process. Within the pangenome, annotation coverage reached 97.1% for core clusters and approximately 59% for accessory and unique clusters. Exact protein matches to non-Vibrio genera identified 1,838 candidate horizontally transferred clusters enriched in genetic mobility, antimicrobial resistance, and metal tolerance functions. In the metagenomic catalogue, Sma3s v3 annotated 728,014 proteins (86.3%), compared with 616,895 (73.1%) using InterProScan 2026, and recovered approximately 20,000 unique functional terms. These results establish Sma3s v3 as a scalable and interpretable tool for functional annotation and re-annotation of proteomes, pangenomes, and metagenomic protein catalogues.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.14.748778v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
+<span class="date">Sep 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">BGC Atlas v2: biosynthetic gene clusters with taxonomic and environmental context at scale</h2>
-<p class="paper-authors">Bagci, C., Talamas-Tanner, A., Ziemert, N.</p>
+<h2 class="paper-title">Somatic haplotype reconstruction and variant recalibration from tumor-only long-read sequencing</h2>
+<p class="paper-authors">Chen, Z.-Y., Zheng, Z., +3 authors, Huang, Y.-T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Genomic and metagenomic studies have revealed that microbes have the capacity to produce an enormous diversity of secondary metabolites. These compounds play important roles in microbial interactions and are also a major source of medicines and other useful natural products, yet only a small fraction of this biosynthetic potential has been experimentally characterized. BGC Atlas was developed to explore this largely uncharacterized diversity by placing biosynthetic gene clusters (BGCs) into genomic and environmental context. Here, we present BGC Atlas v2, which expands the collection nearly ninefold to more than 16 million predicted BGCs and extends it from metagenomic assemblies to MAGs, single-amplified genomes and isolate genomes. The new release provides taxonomic assignments for nearly all BGCs, harmonized environmental metadata, nested searches across biosynthetic, taxonomic, environmental and geographic properties, and protein-sequence searches against BGC-encoded genes. Despite its scale, the collection reveals how much microbial biosynthetic diversity remains unexplored. By connecting pathways to related families, organisms and environments, BGC Atlas v2 supports natural-product discovery and investigations of microbial biosynthetic diversity across taxa and ecosystems. BGC Atlas v2 is freely available at https://bgc-atlas.cs.uni-tuebingen.de.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.14.751540v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Separating somatic from germline variants and reconstructing somatic haplotypes are the two central problems of tumor-only cancer genome analysis. Long reads carry the linkage needed to solve both, but chromosome-scale loss of heterozygosity (LOH) and an unknown degree of normal-cell admixture blur the distinction between somatic and germline haplotypes. Here we present LongPhase-TO, the first method to reconstruct somatic haplotypes from a tumor sample alone. Rather than mapping somatic variants onto germline haplotypes, LongPhase-TO co-phases germline and somatic alleles in a unified graph, in which LOH and tumor DNA fraction are resolved internally from heterozygosity depletion and haplotype imbalance rather than a copy-number and ploidy model. Across eight datasets from six cancer cell lines, LongPhase-TO increased haplotype block N50 by a median of 2.9-fold relative to germline phasers. It also consistently improved somatic single-nucleotide variant (SNV) and indel calls from ClairS-TO and DeepSomatic-TO, raising mean F1 from 0.55 to 0.62 and 0.65 for SNVs and from 0.19 to 0.23 for indels, with the largest gains at low tumor DNA fraction. Across breast, melanoma and lung cancer cell lines, LongPhase-TO improves the accuracy of existing somatic callers and reconstructs megabase-scale somatic haplotypes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.14.751225v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,148 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
+<span class="date">Sep 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DeepVir: A reproducible workflow for large-scale viral dark matter discovery</h2>
-<p class="paper-authors">Cosentino, M., FERNANDEZ NUNEZ, N., +2 authors, Santos, A., D'arc, M.</p>
+<h2 class="paper-title">Multi-model biological and sequence information fusion for gene regulatory network inference from single-cell transcriptomics</h2>
+<p class="paper-authors">zhong, l., Yan, B., Wang, J., xie, m.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> High-throughput sequencing (HTS) has revolutionized virosphere exploration. However, characterizing highly divergent viral sequences remains a bottleneck known as Viral Dark Matter (VDM). Numerous tools were developed to unravel such diversity, but they usually require complex prior HTS data analysis processes. Consequently, a common bottleneck to VDM exploration is the manual, chained execution of complex command-line applications. To address the need for automated and scalable viral discovery, we developed DeepVir, a reproducible Snakemake pipeline that integrates classical homology-based alignments with profile Hidden Markov Model (HMM) mining of the RNA-dependent RNA polymerase (RdRp). To validate the pipelines efficacy, we analyzed 385.23 GB of publicly available transcriptomic data (203 Sequence Read Archive libraries) from 49 American bat species. DeepVir successfully identified 179 distinct viral groups. This included 903 contigs spanning nine known viral families, enabling the characterization of novel genomes within Orthomyxoviridae (Influenza A H7N9), Picornaviridae, Alphaflexiviridae, Retroviridae (Spumaretrovirinae), Papillomaviridae, Herpesviridae, and Adenoviridae. Furthermore, the pipeline uncovered 170 putative novel VDM lineages. By employing deep homology searches and Sequence Similarity Network (SSN) visualization, we contextualized these highly divergent VDM sequences, revealing significant evolutionary relationships with the orders Mononegavirales and Bunyavirales. Notably, human-driven curation of the pipelines outputs allowed for the cross-library assembly of the first putative exogenous Spumavirus in the Americas. Ultimately, by automating complex bioinformatic processing steps, scalable pipelines like DeepVir empower researchers to prioritize the biological and epidemiological interpretation of their findings, accelerating the characterization of wildlife virospheres and enhancing pathogen genomic surveillance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.15.751837v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">The proteome as a whole: from a passive reflection of the transcriptome to an active cellular organizer</h2>
-<p class="paper-authors">Lazareva, A. A., Matyushkina, D. S., +3 authors, Govorun, V. M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Despite advances in proteomics, the proteome is still often viewed as a passive reflection of the transcriptome. Using Mycoplasma gallisepticum as a minimal cell model, we analyzed large-scale datasets across multiple stress conditions to investigate whether the proteome functions as an integrated regulatory system. The proteome remained quantitatively stable under stress, yet the bacteria adapted successfully. We identified a minimal core of 17 major proteins constituting 35% of cellular protein mass. These proteins exhibit distinct physicochemical properties--higher positive charge, lower hydrophilicity, and enrichment in intrinsically disordered regions--suggesting they shape cytoplasmic organization and may drive liquid-liquid phase separation. Minor proteins form tightly correlated clusters, while stress conditions trigger rearrangement of protein complexes without abundance changes, representing an energy-efficient adaptation strategy. Cross linking mass spectrometry revealed condition specific interactome remodeling, which may underlie mycoplasma adaptation to diverse stresses. Our findings suggest that the proteome operates as an active cellular organizer, where physicochemical properties and dynamic complex rearrangements enable adaptation independently of transcriptional control. This framework may inform synthetic biology efforts to engineer minimal cells.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.15.751782v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">QBayMic: Quantum-coupled variational Bayes for clustering and feature selection in low-signal microbiome data</h2>
-<p class="paper-authors">Dang, T., Lysenko, A., Tsunoda, T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Clustering microbiome samples into community types is central to cohort stratification and biomarker discovery, yet the resulting inference becomes unstable when the between group signal is small compared with sampling noise: variational Bayes yields different partitions across initialisations, and common fixes do not solve the problem. Simple restarts are ineffective because the variational free energy is anti-correlated with clustering accuracy; deterministic annealing collapses to the same solution as greedy ascent, with the operator staying diagonal at every temperature; and parallel tempering replicas remain too similar to permit configuration exchanges. We propose QBayMic, which replaces the assignment step of a Dirichlet-multinomial mixture with sparse variable selection via a quantum Gibbs state under an annealed Hamiltonian, coupling competing assignments through a transverse-field term that cannot be reproduced by temperature scaling alone. We present two gate-based circuit designs for this step, evaluating on noiseless qubit-register simulations, and we derive a signal fraction, computable prior to clustering, that predicts the expected strength of quantum coupling. With matched compute in the predicted regime, the three classical methods recovered the reference partition (ARI &gt; 0.4) in 0/100 seeds, while QBayMic recovered it in 47-64/100; when the number of clusters exceeded three, only QBayMic recovered the correct cluster count. For a soil pH dataset, the diagnostic indicates a narrow separation margin; for a human-derived dataset tuned into the predicted band via controlled dilution, classical methods recovered the cluster count in 0/100 seeds, compared with 61-76% for QBayMic. The implementation is publicly available at https://github.com/tungtokyo1108/QBayMic.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.14.751634v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Interrogating contrastive learning embeddings for structure-based virtual screening: a case study on DrugCLIP</h2>
-<p class="paper-authors">Sanchez Utges, J., Jones, D. T., Orengo, C.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Virtual screening has become central to early-stage drug discovery, and structure-based approaches have recently been reframed as a retrieval problem through contrastive learning methods such as DrugCLIP, which project protein pockets and ligands into a shared embedding space. However, what these abstract representations exactly encode, and how they relate to conventional notions of structural and chemical similarity, remains unclear. Here we present a systematic dissection of DrugCLIP's latent space. We show that its pocket embeddings, despite not being explicitly trained for the task, set a new state of the art in pocket similarity search while running over 100 times faster than existing structural descriptors, and that this embedding space is structurally coherent and robust to conformational variation. Ligand embeddings, by contrast, encode a pocket-aware notion of chemical similarity that only partially mirrors fingerprint-based measures. Using a rigorous de-leakage benchmark, we further show that DrugCLIP generalises to unseen proteins and chemistries rather than memorising training data, recovering the correct bound ligand within the top 1% of 50,000 candidates for 55-75% of novel targets. Performance nonetheless declines under increasingly realistic screening conditions, a drop attributable to sidechain reorientation across apo, holo and AlphaFold-derived structures, and to residue mismatch when using predicted pockets. These findings clarify the practical boundaries of DrugCLIP's applicability, identify pocket prediction accuracy as a key factor for improving performance, and offer a transferable framework for interpreting the latent spaces of related contrastive pocket-ligand encoders. Together, these results support the improvement of existing methods and the development of a new generation of contrastive screening approaches.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752029v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">EM3DFold: accurate de novo protein and nucleic acid model building for cryo-EM maps using language model-powered deep learning</h2>
-<p class="paper-authors">Li, T., Cao, H., Huang, S.-Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cryo-electron microscopy (cryo-EM) has become one of the most powerful techniques for macromolecular structure determination. However, accurate model building from cryo-EM maps remains challenging, particularly for nucleic acids. Here, we present EM3DFold, a unified de novo model-building framework for accurate structure determination of proteins, nucleic acids, and protein-nucleic acid complexes from cryo-EM maps using a density-aware, large language model-powered three-track attention (TTA) network. The TTA network effectively integrates sequence, density, and structural information to enable accurate all-atom model building. EM3DFold was extensively evaluated on independent benchmarks of 298 experimental cryo-EM maps at &lt; 4.0 [A] resolutions, and achieves an unprecedentedly high median accuracy of 75% completeness (88% coverage and 94% sequence accuracy) for 178 nucleic acid maps, 90% completeness (95% coverage and 96% sequence accuracy) for 124 protein-nucleic acid complexes, and 95% completeness (97% coverage and 98% sequence accuracy) for 120 protein-only targets, substantially outperforming state-of-the-art methods including ModelAngelo, EM2NA, CryoREAD, and EMProt. In addition, EM3DFold also produces models with superior model-to-map fit and stereochemical quality, providing a robust and reliable solution for automated cryo-EM model building. The EM3DFold package is freely available at https://github.com/huang-laboratory/EM3DFold.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752067v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">BFVD v3-UniProt-complete, improved viral protein structure predictions</h2>
-<p class="paper-authors">Kim, R. S., Pimenova, O., +2 authors, Steinegger, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The Big Fantastic Virus Database (BFVD) v3 is the most comprehensive resource for ColabFold-AlphaFold2-predicted viral protein structures. It holds 5,776,417 structures of nearly all viral sequences in UniProt 2025_03, a 16.4-fold increase compared to the representative-only catalogs of BFVD v1 and v2. Structure prediction quality has also improved, with high-confidence predictions accounting for 75.3% of BFVD v3 entries. This is due to Logan's enormous sequence assembly, now mined for the entire BFVD v3 instead of only for shallow alignments, alongside continued prediction quality improvements. BFVD v3 covers 72.7% of ICTV's virus species, 1.54-fold more than BFVD v2. With this version, the fraction of fully covered viral reference proteomes increases from 1.5% to 72.6%. BFVD v3 thus brings us closer to a structural catalog of the known virosphere and is freely available at bfvd.steineggerlab.workers.dev and bfvd.foldseek.com.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752260v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A diffusion model of viral evolution predicts mutation fitness and evolutionary trajectories</h2>
-<p class="paper-authors">Wu, J., Ding, X., Wu, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Viral evolution arises from random mutations and natural selection, yet computational approaches rarely model these two forces in a unified way. We present Viral Evolution Simulator (VES), a diffusion model-based framework that mirrors this duality by design: forward noise injection simulates stochastic mutation, and reverse denoising recapitulates selective filtering. Trained solely on viral protein sequences, VES predicts mutational fitness without functional data, measuring fitness as the reconstruction difficulty of a mutated sequence relative to its wild-type counterpart. Across immune escape, receptor binding, and deep mutational scanning datasets, VES outperforms state-of-the-art generative models, achieving a 31.78% error reduction over the best baseline in immune escape mutation fitting evaluation. When trained on sequences collected before June 2024 and evaluated against H1N1 strains that later emerged, VES assigned high scores to 16 of 20 mutations that subsequently showed the sharpest frequency shifts. Extending to avian influenza H5, the framework reveals a dynamic interplay between antigenic escape and human-type receptor binding. Both functions dropped sharply in 2021, followed by a sustained rise in receptor affinity that could connect to recent epidemiological trends. VES offers a generalizable, sequence-only foundation for tracing evolutionary trajectories and prioritizing mutations for surveillance and experimental validation, pointing toward where functional efforts might matter most.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752245v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 18, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Post-selection inference in testing for phenotypic differences with scRNA-Seq</h2>
-<p class="paper-authors">Sanchez, N., Etourneau, L., Purdom, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> For the purpose of differential expression (DE) analysis in single-cell RNA-sequencing (scRNA-Seq), phenotype differences between samples are often tested within specific cell types. Cell types are regularly imputed by clustering the same gene expression data which is later used for phenotype testing. This creates the potential for a "double-dipping" or post-selection inference problem resulting in inflated rates of false discoveries. While this selection bias is known to inflate significance in cell-type marker identification, its effect on sample-level phenotype testing, e.g. in patient cohorts, has never been explored despite the growing preponderance of this type of analysis. To address this, we perform an extensive simulation study and demonstrate that naive clustering on uncorrected embeddings can severely inflate the False Discovery Rate (FDR) in the presence of strong phenotypic differences. However, we further show that applying batch-correction methods to remove phenotypic effects prior to clustering resolves the FDR inflation with no obvious loss of power. Finally, we provide measures of phenotypic imbalance that can be applied to real datasets which closely track the false discovery proportion and thus can be used to as part of data exploration to gauge the risk of post-selection inflation of p-values in a particular dataset.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752411v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Identification of transcription factor target gene interactions and construction of the gene regulatory networks (GRNs) are essential for understanding the molecular mechanisms underlying transcriptional gene regulation. Large scale single cell transcriptomics across different tissues offers unprecedented resolution of cellular diversity and regulatory dynamics by capturing gene expression heterogeneity. However, existing methods often lack effective multimodal integration and fail to fully exploit the hierarchical structure in Gene Ontology (GO) and gene sequence level representations, which limits their ability for predictive performance and biological interpretability. We present scMGFGRN, a multi-model deep learning framework that integrates single-cell transcriptomic profiles with GO hierarchical relationships, gene sequences by leveraging denoising auto encoders, graph attention feature extraction and pertained DNA language model to capture multi-source dependencies within multi-model biological knowledge, while its gated multi head attention module effectively identifies informative regulatory signatures and integrate complementary features from different sources to predict accurate gene regulatory networks. Benchmarking on the seven datasets of human and mouse demonstrates that scMGFGRN outperforms state of the art methods in identifying GRNs. Further analyses reveal that scMGFGRN effectively identifies novel TF gene interactions (TGIs) and reconstructs cell type specific GRNs. Interpretability analysis reveals the contribution patterns of heterogeneous biological sources, demonstrating the ability of scMGFGRN to integrate transcriptomic profiles with multi model structure information.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.13.751326v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 18, 2026</span>
+<span class="date">Sep 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">An Artificial Intelligence Model for Longitudinal Assessment of TCR Repertoires in SARS-CoV-2 Vaccine Recipients</h2>
-<p class="paper-authors">Wang, Z., Zhao, Y., +10 authors, Yao, J.</p>
+<h2 class="paper-title">Cross-species spatial profiling links progranulin to an immune suppressive niche in brain metastasis</h2>
+<p class="paper-authors">Eskow, N. M., Prutisto-Chang, K., +17 authors, Hernando, E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> T cells play a crucial role in reducing disease severity during SARS-CoV-2 infection and in shaping long-term immune memory. However, the precise molecular immune responses, particularly involving T-cell receptor (TCR) repertoire changes after full vaccination, and the use of TCR analysis to evaluate vaccine efficacy, remain incompletely understood. In this study, we developed the DeepAir-Cov19 model (AUC=0.94), a large language model tailored to identify SARS-CoV-2-specific TCRs, and observed significant differences in the TCR profiles between antibody-negative and antibody-positive populations before and after vaccination, indicating that the immune status of pre-vaccine recipients can directly assess the efficacy of vaccination. Notably, SARS-CoV-2-specific TCRs expanded to peak levels after the second dose and remained detectable in most subjects up to 10 months post-vaccination. Meanwhile, we also identified three specific V genes, 20 V-J combinations, and 3 epitopes associated with these responses. Finally, by leveraging vaccine-specific TCRs as novel biomarkers, we developed a vaccine efficacy model that predicts antibody levels with a mean AUC of 0.96. These findings underscore the accuracy of the large model in predicting SARS-CoV-2-specific TCRs and reveal a strong correlation between SARS-CoV-2-specific TCR responses and antibody levels. This highlights the complementary and synergistic roles of T cells and antibodies in providing vaccine-mediated protection. Our results offer valuable insights into the longitudinal dynamics of SARS-CoV-2-specific TCRs and illustrate the potential for developing potency evaluation models based on these TCR insights.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752071v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Immune checkpoint inhibitors (ICI) have revolutionized the treatment of brain metastasis (BM), demonstrating intracranial response rates and durability not previously seen with other therapies. However, approximately 50% of patients do not respond to ICI, and the brain-specific interactions that shape anti-tumor immunity remain poorly understood. We profiled five syngeneic BM models using spatial transcriptomics, identifying myeloid-rich niches enriched for interferon-responsive and disease-associated microglia (DAM)-like programs. Ligand-receptor colocalization analyses identified progranulin (PGRN) as a candidate mediator of these niches. Host- or tumor-cell Grn loss reduced BM burden, and Grn-deficient macrophages exhibited altered metabolic programs and tumor-cell engulfment in vitro. Across independent human BM datasets, GRN expression was associated with conserved lysosomal and DAM-like myeloid programs, and GRN-high myeloid regions colocalized with immunosuppressive signatures and dysfunctional CD8+ T cell states. These cross-species findings identify PGRN as a candidate mediator of the BM immune niche and support further investigation of its therapeutic relevance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.13.751277v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
