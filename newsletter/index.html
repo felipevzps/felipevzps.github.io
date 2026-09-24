@@ -36,11 +36,182 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Lineage-informed factor analysis reveals heritable programs of single-cell gene expression</h2>
-<p class="paper-authors">Staklinski, S. J., Siepel, A.</p>
+<h2 class="paper-title">Improving Metagenomics Classification with Kmask: Entropy-Based Masking of Low-Complexity Regions</h2>
+<p class="paper-authors">Ge, Y., Li, E., +2 authors, Salzberg, S. L.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Single-cell transcriptomics has transformed our ability to characterize cellular identity, but present-day gene expression profiles capture only a snapshot of a process that unfolds across cell division history. Recent single-cell lineage-tracing technologies make it possible to reconstruct cell division histories for thousands of cells, opening a window into how gene expression evolves. Yet observed gene expression is often redundant, with correlations among genes reflecting underlying latent biological programs and regulatory networks. To capture this structure, we introduce scPFA, a single-cell phylogenetic factor analysis framework that represents gene expression through a small set of latent factors that evolve along lineages under a phylogenetic prior, capturing correlated structure hidden in present-day observations alone. Simulations demonstrate accurate recovery of latent factors and covariance structure across conditions. Applied to developmental and cancer lineage-tracing datasets, the model uncovers biologically interpretable, lineage-associated expression programs. Together, these results demonstrate how lineage-informed factor analysis can reveal temporal biological structure hidden within high-dimensional single-cell data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753290v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Abstract Accurate taxonomic classification in metagenomics is often compromised by low-complexity sequences, which lead to chance matches that in turn cause sequences to be misclassified. Here we present Kmask, an entropy-based masking tool implemented for use either standalone or as part of Kraken [1,2] database construction, which replaces low-entropy regions with Ns. Using a sliding window size aligned with Kraken's default k-mer length and parameters optimized across 12 control bacterial genomes spanning a broad range of GC content, Kmask efficiently removes low-complexity sequences while retaining high-complexity regions. To benchmark performance, we applied Kmask to a newly constructed database, Microbial2025, that contains over 71,000 bacterial, archaeal, viral, and fungal genomes, and we then classified human reads against both masked and unmasked versions of the database using KrakenUniq [2]. We found that Kmask substantially reduced misclassifications, driving down the false positive rate to 5.78% from 7.52%. Notably, Kmask performed comparably to an SDUST-masked [3] database, achieving a similar false positive rate (5.78% vs. 5.17%) while masking out fewer bases (1.33% vs. 1.85%). We also tested Kmask on a database of human cancer sequences, where we found that it eliminated many false positives caused by low-complexity matches between bacterial genomes and human DNA. These results demonstrate that Kmask is an effective method for masking low-complexity sequences in large microbial databases, thus improving the accuracy of metagenomic classification.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753623v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Leakage-controlled benchmarking reveals generalization limits of deep learning for protein-ligand binding affinity prediction</h2>
+<p class="paper-authors">Wang, L., Cheng, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> To address widespread data leakage and inconsistent evaluation in protein-ligand affinity prediction, we introduce PLABench, a leakage-controlled and target-centric benchmarking framework that enables standardized comparison across sequence- and structure-based models. We benchmark nine deep learning methods across blind CASP16 targets, leakage-controlled ChEMBL35 sets, and established Davis and KIBA datasets under rigorous data split settings, standardizing structural input via AlphaFold3 to ensure fair comparison. Although pretrained structure-based models achieve the highest overall accuracy, they show severe target-dependent variability, and increasing structural fidelity from predicted to experimental conformations yields no consistent gains. Meanwhile, sequence-based approaches surpass some structure-based methods on select targets, and protein family-level evaluations reveal uneven performance across families and substantial inter-model complementarity obscured by aggregate metrics. These findings demonstrate that training scale and structural input alone cannot guarantee cross-target generalization, highlighting the need for context-aware interaction modeling. PLABench provides an extensible open-source platform to facilitate these developments.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752433v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Open-world fungal ITS embeddings improve higher-rank placement and cross-view retrieval, but percent identity is stronger on a matched ITS2 novelty benchmark</h2>
+<p class="paper-authors">O'Brien, A., Gardette, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> 1. Background. Fungal internal transcribed spacer (ITS) analyses usually infer taxonomy and novelty from similarity to homologous reference sequences. Percent identity is a strong signal in that setting, but it cannot directly compare non-homologous barcode views and does not explicitly optimize the higher-rank placement of genera absent from the reference collection. We asked whether a compact sequence encoder could learn that open-world structure and whether maximum embedding cosine similarity could improve novelty detection. 2. Design. From the UNITE dynamic release of 19 February 2025 we built ITS-core, ITS1 and ITS2 views and a genus-separated development, calibration and test design. A convolutional encoder mapped sequences to 256-dimensional L2-normalized embeddings. A controlled ladder compared genus-proxy supervision (M0), cross-view invariance (M1), hierarchical taxonomic geometry (M2), leave-one-genus family episodes (M3), and the combined objective (M4). M4 was frozen before CAL_KNOWN and TEST were opened. A secondary historical ITS2 benchmark was audited for leakage and scored only after a fixed-recipe, benchmark-safe retraining that excluded all held-out benchmark taxa. 3. Results. Cross-view supervision raised controlled ITS2 development AUROC from 0.688 to 0.717 and novel-family placement from 22.1% to 33.0%. Episodic training increased novel-family placement to 41.0% but reduced novelty discrimination at some views. The combined M4 model recovered both behaviours, reaching development AUROCs of 0.778, 0.755 and 0.751 for ITS-core, ITS1 and ITS2, with novel-family placement of 57.5%, 48.7% and 41.3%. On untouched TEST data, ITS2 reached AUROC 0.763 (95% CI 0.748-0.779) and placed unseen genera correctly at family, order and class for 52.0%, 81.1% and 92.9% of queries; development AUROCs lay above the TEST intervals at ITS-core and ITS1, indicating selection optimism of roughly 0.02-0.04 AUROC at those two views. At alpha = 0.05, conformal calibration gave a 4.7% observed false-novelty rate and detected 11.2% of novel-genus ITS2 queries. On the paired leakage-safe historical benchmark, percent identity remained stronger than M4 cosine: AUROC 0.770 versus 0.702 and 27.8% versus 8.6% novel-query detection at approximately a 5% false-novelty rate. 4. Interpretation. Structured fungal ITS embeddings add higher-rank placement and cross-view retrieval that are not available from a same-locus identity score alone. Maximum embedding cosine does not replace direct sequence identity as the novelty statistic when homologous ITS2 references are available; whether a different score read from the same embedding would narrow that gap remains untested.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752437v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Generative Access to Make-on-Demand Chemical Space Enables Ultra-Large Virtual Screening</h2>
+<p class="paper-authors">Zhang, K., Sun, Y., +5 authors, Huang, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Ultra-large-scale virtual screening (ULVS) increasingly relies on make-on-demand chemical spaces, but efficient access to these spaces remains challenging because their scale far exceeds what can be exhaustively enumerated and docked. Here, we present REAL-SWIT, a generative ULVS framework that learns Enamine REAL Space as a synthesizable molecular distribution and couples this generator with a target-specific scoring model to enable docking-guided exploration of REAL Space at the level of complete molecule. The generative model learned transferable features of the REAL Space distribution: approximately 96% of generated molecules were found in REAL Space, and a subset of generated molecules absent from the training release appeared in later expanded releases. In computational benchmarks, REAL-SWIT identified more molecules with favorable docking scores than representative fragment-based search strategies, including cooperative building-block combinations that fragment-level prioritization tended to miss. Experimental validation for ROCK1 yielded six biochemical inhibitors among 23 synthesized compounds, including RX-3 with an IC50 of 0.17 M. These results establish generative access to make-on-demand chemical space as a practical strategy for ULVS.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752345v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">NoroScope: Exploring the Mutational Landscape of the Human Norovirus Capsid Protein with Context-Aware Machine Learning</h2>
+<p class="paper-authors">Bowyer, S., Allen, D., Furnham, N.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Anticipating the effects of mutations in viral proteins is important for the development of therapeutics and control strategies but remains challenging as mutation phenotypes are shaped by complex overlapping sequence, structural and evolutionary constraints. Machine-learning approaches to mutation-effect prediction have shown considerable success for viruses with exceptionally rich training datasets, but their application to the majority of viruses with comparatively limited data remains underexplored. Here we introduce NoroScope, an interpretable machine-learning framework designed to prioritise plausible amino-acid substitutions in the human norovirus GII.4 capsid protein VP1 through integration of complementary biological evidence. Using VP1 protein sequences and experimentally resolved structures as a foundation, we generated datasets comprising zero-shot mutation scores from the Evolutionary Scale Modeling 2 protein large language model, in silico deep-mutational-scanning estimates of mutation-associated effects on protein stability and histo-blood group antigen binding, and descriptors of the evolutionary history of VP1. NoroScope integrated these evidence sources to prioritise historically observed alternative amino acids according to whether they subsequently received recurrent support in natural virus populations. Across retrospective 2011 and 2016 prediction tasks, the complete model achieved average precision values of 0.805 and 0.834 and recovered 87.9% and 92.9% of future-supported candidates within the top five alternatives at their respective positions. Feature ablation showed that evolutionary, sequence-model and structural information provided distinct and complementary predictive signals, with their integration supporting accurate amino acid prioritisation and revealing biologically informative disagreements between evidence sources. Experimental analysis at VP1 position 297 further supported molecular predictions for selected substitutions in a virus-like particle assembly system. Together, these results establish NoroScope as a framework for integrating pretrained protein representations with target-specific molecular and evolutionary context to explore viral mutation landscapes where available data are comparatively limited.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752373v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">MIRCID: Inferred Hub-miRNAs Drive Cross-Task Improvements in Drug Mechanistic Modeling</h2>
+<p class="paper-authors">Cao, X., Chen, Y., +11 authors, Huang, H.-D.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Drug mechanism-of-action (MoA) modeling commonly relies on perturbational transcriptomes, but matched microRNA (miRNA) measurements are often unavailable. Inferred regulatory features offer a scalable way to reuse these data. Here, we present MIRCID, a framework comparing gene expression with inferred transcription factor (TF) activity and miRNA expression across pathway classification and similarity-based MoA retrieval. HubmiRNet infers 414 pan-cancer hub miRNAs (HubmiRs) from 977 L1000 landmark genes, achieving a Pearson correlation coefficient of 87.72%; its 1,298-output variant also outperformed SiCmiR on the full-miRNA task (71.21% versus 67.30%). In the evaluated comparisons, miRNA augmentation provided more consistent gains than TF activity. Generic embedding controls showed model-dependent utility, while complementarity analyses identified a distinct, partially linearly recoverable representation that retained gene-derived structure. Illustrative rescue cases linked improved classification to biologically plausible miRNA patterns in samples with weak transcriptional signatures. These findings support inferred HubmiRs as a biologically informed recoding of transcriptomic data for perturbational drug modeling, while leaving recovery of measured perturbational miRNA responses to further validation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752312v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Comparative analysis of 15 chromosome-scale near T2T assemblies of Brazilian Fusarium graminearum isolates</h2>
+<p class="paper-authors">Kroll, E., Wood, A. M., +4 authors, Hammond-Kosack, K. E.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Fusarium graminearum is the causative agent of Fusarium head blight of wheat, yet genomic resources for Brazilian populations, where it is the dominant species, remain limited to a single reference genome. We report fifteen near telomere-to-telomere (T2T) assemblies of Brazilian F. graminearum isolates generated with Oxford Nanopore sequencing. Each genome was assembled into four nuclear chromosomes, with 118 of 120 telomeres resolved, BUSCO completeness of 99.199.3%, and 14,80214,894 predicted genes per isolate. The genomes are structurally conserved, showing no chromosome-scale rearrangements and uniform transposable element content. Orthology assignment placed 90.4% of genes in the core genome. This suggests that the large phenotypic variance in aggressiveness observed between isolates likely resides in regulatory differences and/or within the small and largely uncharacterised accessory fraction. Ultimately, these assemblies provide a high-resolution resource for the global FHB community and a foundation for comparative analysis of a previously underrepresented population.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752100v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A general route to volumetric segmentation under annotation scarcity</h2>
+<p class="paper-authors">radhakrishnan, s., mathur, s., aleksandrov, a., schweke, h., silvano, g., levy, e. d.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Volumetric cell segmentation is limited by the scarcity of labelled data, because manual curation of three-dimensional datasets is prohibitively laborious. We find that this gap can be bridged with volumes in which synthetic 3D objects mirror the properties of real cells and of image formation, notably the axial spread of the point-spread function. Such volumes provide unlimited labelled training data, and we show that a model trained on them produces accurate segmentations of real biological data.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752170v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Constructing Virtual Viruses in A Spatial Minimal Cell</h2>
+<p class="paper-authors">Sun, W., Tang, Y., +3 authors, Dou, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Viral development links gene expression and genome replication to particle formation within a cell. Here we construct virtual viruses in a JCVI-syn3A-based spatial minimal cell. For mycoplasma virus P1, molecular events connect expression and replication to coarse-grained packaging, followed by a spatial reconstruction of membrane opening and particle release. Individual finite-size particles coexist, move across the boundary and undergo partial crossings and returns before complete exit. In contrast, Acholeplasma phage MV-L1 (L1) expresses its genes and accumulates genomes as the host continues to grow and develops a constricted shape. The coexistence of viral activity and continued host growth is qualitatively consistent with the non-lytic biology of group 1 acholeplasmaviruses. These reconstructions extend the virtual cell to the viruses that develop within it, linking molecular activity, particle behavior and host growth.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753465v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Sep 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Coevolutionary mining of prokaryotic non-coding elements with a genome language model</h2>
+<p class="paper-authors">Li, D. B., Brixi, G., +9 authors, Hie, B.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Microbial genomes encode compact molecular machines and diverse non-coding RNAs (ncRNAs) essential to gene regulation, pathogenesis, and many foundational biotechnologies. However, annotation remains largely protein-centric and homology-driven. Here, we introduce Minerva, a framework for coevolutionary mining that uses genome language models to predict local interactions directly from sequence as two-dimensional maps. Introducing two complementary techniques, categorical Jacobian fingerprinting and interaction heads, we demonstrate fast, accurate, alignment-free prediction of ncRNA base-pairing, monomeric protein contacts, and repetitive sequence motifs. Applied to 150 bacterial genomes, Minerva recovers known systems and predicts that 84.3% of predicted intergenic base-pairing falls outside of known annotations. In Pseudomonas, we find that the widespread TwoAYGGAY ncRNA family carries large secondary-structure extensions and is often flanked by short upstream repetitive motifs and larger downstream genomic repeats. Interpreting the coevolution maps, we find that Minerva emergently detects open-reading-frame (ORF) signatures at the DNA level despite never being trained to do so. In prophages within these genomes, we discover that Unknown Group 27 (UG27) reverse transcriptase systems encode arrays of structurally conserved yet sequence-diverse ncRNAs that template complementary DNA (cDNA) hairpin products. Together, these results establish coevolutionary mining as a scalable route to genome annotation and biological discovery across the rapidly expanding microbial universe.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753630v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -55,163 +226,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Stromal innervation is prognostic in non-muscle-invasive bladder cancer and predicted by a distinct microenvironmental transcriptomic signature</h2>
-<p class="paper-authors">Deiter, C. S., de Jong, C., Olislagers, M., +2 authors, Costello, J. C.</p>
+<h2 class="paper-title">Single-Cell Analysis of Non-Functioning Gonadotroph Tumors Identifies Lineage Infidelity and Tumor Growth Programs</h2>
+<p class="paper-authors">Dennis, E., Kim, G. D., +12 authors, Petti, A. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Peripheral nerves are increasingly recognized as active components of the tumor microenvironment (TME). Yet, their role in non-muscle-invasive bladder cancer (NMIBC) and response to Bacillus Calmette-Guerin (BCG) remains poorly defined. Using multispectral imaging, we characterized autonomic and sensory nerve populations within the tumor-adjacent stroma of 241 treatment-naive high-risk NMIBC tumor regions from 141 patients. Stromal tumor-associated nerve (STaN) abundance varied substantially across patients and was associated with aggressive clinicopathological features, BCG failure, and disease progression. Unsupervised clustering resolved distinct STaN phenotypic groups with differential clinical and spatial associations. Noradrenergic and a neurochemically heterogeneous STaN populations showed the strongest associations with adverse outcomes. In contrast, a mixed population of nerves with high expression of the synaptic vesicle protein synaptophysin exhibited prominent spatial remodeling associated with BCG failure, despite limited prognostic value by abundance alone. Integration with an independent single-cell atlas nominated cancer-associated fibroblasts and mast cells as candidate cellular intermediaries of neural communication within the TME. Matched transcriptomic profiling revealed coordinated neuronal, extracellular matrix, lipid metabolism, and immune programs in STaN-high tumors, whereas STaN-low tumors preferentially enriched proliferative and hypoxic stress-response pathways. Leveraging these transcriptional features, we developed a transcriptomic classifier that distinguished STaN-high from STaN-low tumors in an independent test cohort (AUC = 0.87) and stratified clinical outcomes in additional patient cohorts. Together, these findings establish tumor innervation as a heterogeneous and clinically relevant feature of the NMIBC microenvironment, with neural abundance, phenotype, and spatial organization capturing distinct aspects of tumor behavior and clinical outcome.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.751588v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">baltic: the Backronymed Adaptable Lightweight Tree vIsualisation Code</h2>
-<p class="paper-authors">Potter, B. I., Gangavarapu, K., +2 authors, Dudas, G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> For ten years, baltic (Backronymed Adaptable Lightweight Tree vIsualization Code) has been used to make annotated phylogeny figures in molecular epidemiology, including during the West African Ebola epidemic, the Zika epidemic in the Americas, and the SARS-CoV-2 pandemic, as well as other fields. At its core, baltic is a Python library used for the efficient parsing, traversal, manipulation, and visualisation of phylogenetic trees. It is a small library with few dependencies that reads tree formats common in phylodynamic analyses and gives the user leverage to interact with a lightweight tree data structure to produce publication-ready figures with matplotlib. We present baltic v1.0, its first formally released and documented version. baltic reads and writes BEAST Nexus, Newick, and Nextstrain/Auspice JSON, and can process large BEAST posterior tree files in parallel to extract user-defined posterior statistics. The same objects are used for tree manipulation and for plotting in a single script. New to this release: a set of rooting methods (midpoint rooting, rerooting on any branch, and root-to-tip regression); support for reticulate evolution, with reassortment and recombination edges; and composite figures that combine a tree with other data, such as Muller plots, skygrid plots, tanglegrams, and plots connecting trees to maps. The release includes a documentation site with an API reference, tutorials, and a matplotlib-style gallery of worked examples.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.20.752947v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Genetically inducible coordinators of cytokine signaling pathways for interrogating T cell motility</h2>
-<p class="paper-authors">Schreiber, Y. R., Keller, M. R., +5 authors, Leonard, J. N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Chimeric antigen receptor (CAR) T cell therapy is promising for treating hematologic malignancies, but extending this success to treat solid tumors is challenging. Improving T cell phenotype to address this need is desirable, and one such property is increasing T cell infiltration into tumors. A promising potential approach comprises rewiring cytokine signaling using engineered receptors to change how the T cell responds to environmental cues. However, we currently lack the tools and mechanistic understanding to iterate and improve upon such strategies. Notably, receptors that rewire signaling make it challenging to decouple paracrine effects from those conferred by the signaling inducer. To address this gap, we developed a genetically inducible toolkit of proteins termed Constitutive Activators of Motility-associated Pathways (CAMPs). Building on prior knowledge, CAMPs incorporate domains from IL5R (interleukin-5 receptor) and TNFR (tumor necrosis factor receptor) to place cytokine-associated signaling under direct genetic control, such that expression of a CAMP using a small molecule cue or a condition-responsive promoter induces CAMP signaling. We first identified receptor configurations driving constitutive signaling through targeted pathways. TNFR-based signaling modules drove NF-{kappa}B activation across diverse receptor designs, while IL5R-based signaling modules exhibited stringent requirements for membrane-proximity and organization of subunits. We engineered primary human T cells with inducible CAMP circuits, enabling us to probe pathway-specific effects on motility and transcriptomic responses. Pharmacological induction of motility-associated programs downstream of PKC (protein kinase C) was shown to be feasible and dependent on T cell activation state. CAMP induction drove an inflammatory program, particularly when signaling through both NF-{kappa}B and STAT5, but none of the conditions tested enhanced 3D motility in our assay. Altogether, our findings are consistent with a model in which migratory behavior may be coupled and regulated by multiple stimuli. These findings and new CAMP tools provide a foundation for interrogating and ultimately harnessing motility for improved T cell therapy performance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753259v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">StackHPpred: A Stacking-based ensemble learning framework for the identification of peptide hormones using multi-view feature representations</h2>
-<p class="paper-authors">Kirthipati, J., Chemarthi Ravi, M. K., Kirthipati, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Peptide hormones are important signaling molecules that regulate diverse physiological processes and have substantial therapeutic relevance. However, their experimental identification can be challenging because of low abundance, limited stability, and complex post-translational processing, highlighting the need for reliable computational approaches. Here, we present StackHPpred, a stacking-based ensemble framework for accurate identification of hormone peptides (HPs) from amino acid sequences. We systematically evaluated 56 feature representations, comprising 35 conventional sequence descriptors and 21 PLM/NLP-based embeddings, across 10 machine-learning classifiers, generating 560 baseline models. Prediction-level correlation analysis was subsequently employed to identify 14 complementary, non-redundant feature representations, which were integrated through feature- and classifier-level stacking strategies using out-of-fold predicted probabilities. The final StackHPpred model, based on the top three feature representations CTDD, KSCTriad, and PTAB, achieved an AUC of 0.9965, MCC of 0.9506, ACC of 0.9752, and F1-score of 0.9749 on the independent dataset. StackHPpred was further evaluated under increasingly imbalanced independent datasets with positive-to-negative ratios ranging from 1:10 to 1:50, demonstrating robust predictive performance under challenging screening conditions. t-SNE visualization and SHAP analysis further showed improved class separation and highlighted the contributions of multiple classifier-feature combinations to the final prediction. Overall, StackHPpred provides a robust and interpretable framework for distinguishing HPs from non-HPs and is freely available as a web server at https://jayasreekirthipati.org/StackHPpred/, with a standalone implementation available at https://github.com/JayasreeKirthipati04/StackHPpred.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.751134v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MINT infers the latent single-cell spatial transcriptome from paired histology</h2>
-<p class="paper-authors">Chen, L., Zhang, Z., +10 authors, Tian, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Sequencing-based spatial transcriptomics captures transcriptome-wide molecular information, yet the corresponding cell-resolved tissue map remains incomplete. Histology records dense cellular morphology, tissue architecture and local context. Here, we present MINT (Morphological Integrative Network for Transcriptomics), which combines this latent cellular organisation with sample-specific spatial measurements to infer tissue-wide, cell-resolved transcriptomes without an external single-cell reference. MINT reconstructs expression from sparse Slide-tags profiles across unmatched adjacent sections; its shared nucleus-centred representation also resolves pooled Visium measurements into cell-level profiles. MINT improved Slide-tags alignment and expression recovery under controlled nuclear loss and cross-section perturbation. It also outperformed reference-free Visium disaggregation methods against Xenium ground truth and was validated with Visium HD sequencing. In human lung adenocarcinoma, MINT reconstructed the tumour immune microenvironment cell by cell and resolved tertiary lymphoid structures and their maturity. These results establish paired histology as a quantitative, sample-intrinsic complement to molecularly rich but cellularly incomplete spatial-transcriptomic assays.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.751717v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Benchmarking Uncertainty and Improving Risk Ranking in Multi-task Bioactivity Prediction</h2>
-<p class="paper-authors">Wang, Z., Tian, L., Che, C.-M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Multi-task bioactivity prediction transfers information across assays, but experimental prioritization also requires uncertainty estimates that identify unreliable predictions. We benchmarked prediction accuracy and uncertainty calibration for five multi-task predictors on 100 ChEMBL27 test assays and 100 CHEMBL37 assays under the random split and the clustering split. Calibration used native, Deep Ensemble and MC Dropout uncertainty; risk ranking was compared for two Gaussian process (GP) backbones. Adaptive deep kernel fitting (ADKF) achieved the best mean calibration results, while deep kernel transfer (DKT) ranked errors more effectively than ADKF with native uncertainty. We also introduce Influence Calibrated Support Reconstruction (ICSR), a risk score for kernel-based predictors. ICSR combines measured support reconstruction errors with query-specific influence and stabilizes their weighted average toward the full-support mean to adjust Gaussian process uncertainty while preserving predicted activities. With DKT and ADKF, ICSR improved all three mean risk-ranking metrics over native uncertainty and an adapted neighborhood comparator in every panel and split. ICSR achieved a mean half-query MAE reduction (R50) of 14.2-19.6%, where R50 measures the percentage decrease in mean absolute error (MAE) after retaining the lowest-risk half of the queries. A retrospectively selected SARS-CoV-2 main protease case further illustrated its use for selecting more reliable predictions. The benchmark supports joint assessment of calibration and error ranking, while ICSR improves selective use of kernel-based bioactivity predictions.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.15.751772v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A dependency-free, streamable format and cross-language toolkit for scalable LC-MS feature detection: reading only what you need</h2>
-<p class="paper-authors">Osorio Mosquera, J., Lawler, N. G., +8 authors, Wist, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Mass spectrometry generates data faster than it can be read, and the exchange standard, mzML, is text-based and must be parsed in full before any spectrum is accessible. Binary alternatives are smaller but depend on storage engines such as HDF5, so access is dictated by the engine, not the file. We present Ionic (.ion), an open-source, compact, streamable binary format, and Quant{middle dot}ion, a processing toolkit built on the former. Ionic stores spectra, chromatograms and metadata as independently compressed, indexed blocks, so a reader retrieves only the bytes it needs, even inside a web browser, and converts losslessly to and from mzML. Ionic was smaller than compressed mzMLb on every acquisition type tested, and extracting one compound took under 40 ms, 35 to 90 times faster than an mzML reader. Quant{middle dot}ion exposes one core to R, Python, and JavaScript with identical results, and recovered 97% of true features on a ground-truth benchmark.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.15.751169v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A Dynamically Regulated Designed IL-2 for Tumor-localized Signaling</h2>
-<p class="paper-authors">Moffett, H. F., Weitzner, B. D., +21 authors, Lajoie, M. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cytokines mediate cell-cell communication to coordinate immune responses and hold clinical promise as immunotherapies. While natural cytokines are exquisitely regulated by immune cells, engineered cytokines have not yet matched this sophisticated regulation, limiting clinical efficacy and safety. IL-2 is an important cytokine involved in antitumor response, but its production is disrupted in the immune-suppressive tumor microenvironment. Here we designed a regulated IL-2 module, OUTSMART designed IL-2 (dIL-2), that functions robustly in solid tumors and reduces systemic activity that could trigger toxicity: we computationally redesigned IL-2 to have a novel topology that increases stability, preserves native IL-2R{beta}{gamma} interfaces, ablates IL-2R binding, and delivers IL-2 signaling to CD8+ immune-effector cells. This designed cytokine is genetically regulated by a T cell activation-responsive promoter, allowing dynamic production from chimeric antigen receptor (CAR) T cells. Like wild type IL-2, OUTSMART dIL-2 drives T cell proliferation and enhances effector function. Unlike wild type IL-2, it preferentially stimulates CD8+ T cells and Natural Killer (NK) cells, avoids T regulatory cells, and stimulates CAR-T proliferation while preserving stemness, achieving durable tumor elimination in two solid tumor animal models. These design principles can be applied to create other dynamically-regulated cytokine systems that address mechanisms of complex disease.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.18.752703v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Spatial transcriptomics reveals selective vulnerability of cardiac neural crest-derived glial cells in human myocardial infarction</h2>
-<p class="paper-authors">Xia, X., Ding, Y., +5 authors, Pan, D.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cardiac neural crest-derived glial cells (CNGs) are recently identified glial cells that support cardiac autonomic innervation and maintain sympathetic-parasympathetic balance. Their fate in myocardial infarction (MI) is unknown. Here, we analyzed 16 human cardiac spatial transcriptomes spanning normal myocardium (n=4), infarct zone (n=5), border zone (inner, n=1; outer, n=3), and remote zone (n=3). CNGs (S100B+/GFAP+, CD68- spots) were selectively lost along a spatial gradient from healthy tissue to the infarct core (Spearman rho = -0.92, p = 4.5 x 10-7). Tissue-area-corrected analysis confirmed that CNG loss (26% retained in infarct zone vs. normal; p = 0.016) vastly exceeded overall tissue loss, indicating selective vulnerability rather than bulk tissue destruction. Mechanistically, oxidative phosphorylation (OXPHOS) activity in CNG-positive spots correlated positively with CNG survival (partial rho = 0.65, p = 0.009 after controlling for spot composition), consistent with a high metabolic demand underlying their ischemic sensitivity. Pyroptosis - but not ferroptosis or apoptosis - signatures correlated with CNG loss (partial rho = -0.67, p = 0.006). These findings identify CNGs as selectively vulnerable cellular components of the cardiac autonomic system in MI and nominate metabolic failure and pyroptosis as candidate mechanisms, providing a spatially resolved foundation for future mechanistic and interventional studies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.14.751638v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Non-functioning gonadotroph (NFG) tumors are the most common type of non-functioning pituitary adenomas and can cause significant symptoms due to mass effect. However, the molecular programs underlying NFG tumor growth and their relationship to the normal anterior pituitary gland (APG) are poorly understood. To gain a deeper understanding of NFG tumor biology in the context of the normal APG, we performed single-cell/nucleus RNA-sequencing on 21 NFG tumors and 8 APG samples in human, generating the largest transcriptomic dataset of its kind. Single-cell/nucleus sequencing yielded 77,342, cells from APG samples and 152,649 cells from NFG tumor samples. Differential expression analysis within the APG identified novel marker genes of each neuroendocrine cell type and defined distinct transcriptional signatures of anterior and posterior pituitary stem cell populations. Comparison with tumor transcriptomes revealed that NFG tumor cells most closely resemble gonadotrophs, while also showing significant enrichment of thyrotroph and somatotroph markers. Notably, there was no significant overlap with stem cell markers, suggesting that NFG tumors most likely originate from differentiated gonadotrophs but can take on transcriptional characteristics of other neuroendocrine cell types. Pseudobulk profiling of NFG tumor cells demonstrated that tumor volume is significantly positively correlated with 83 genes including known oncogenes CAD, BRF2, and SOX12, along with 16 zinc finger transcription factors. Lastly, analysis of the tumor microenvironment revealed proportional increases in myeloid, endothelial, and mural cell populations in tumor samples compared to APG samples and highlighted cross talk between tumor and endothelial, mesenchymal, and immune populations via VEGF, PDGF, and MIF signaling pathways respectively. This study identifies novel transcriptomic signatures determining cell type identity in both APG neuroendocrine and NFG tumor cells. Our findings elucidate molecular programs driving NFG lineage infidelity and tumor growth, highlighting candidate predictors of patient outcomes and potential targets for therapeutic intervention.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752250v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +241,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 22, 2026</span>
+<span class="date">Sep 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DNMT1-Mediated Epigenetic Reprogramming Drives KMT2A Amplifications and Rearrangements</h2>
-<p class="paper-authors">Lineberger, M. A., Gray, Z. H., +27 authors, Whetstine, J. R.</p>
+<h2 class="paper-title">A platform for deep topographic multiomic mapping of the bone marrow environment in multiple myeloma</h2>
+<p class="paper-authors">Lu, J., Wang, C.-Y., +22 authors, Rao, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> MLL/KMT2A amplifications and rearrangements are prevalent in infant, adult, and therapy-induced leukemia; however, the molecular contributors controlling these alterations remain elusive. Here, we reveal that rapid CTCF degradation generates local genome structure alterations at KMT2A and copy gains and rearrangements. We then established a conserved, coordinated interplay between DNA and histone methylation pathways that control CTCF occupancy, and in turn, KMT2A locus stability. For example, DNMT1 overexpression promotes increased H3K9 methylation, reduced CTCF occupancy, and causes KMT2A alterations. However, DNMT1 inhibition suppresses these events and KMT2A alterations caused by topoisomerase II inhibition. Locus-specific epigenome targeting demonstrated that DNA or H3K9 methylation promotes KMT2A copy gains and rearrangement, whereas targeted TET activity suppresses these events upon methylation perturbation or doxorubicin treatment. These findings identify a conserved, coordinated DNA-histone methylation axis governing KMT2A amplifications and rearrangement susceptibility, revealing biomarkers and therapeutic targets to predict and intercept these events in cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753283v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Multiple myeloma is a genetically complex plasma cell malignancy in which profound intratumoral heterogeneity shapes disease progression and therapeutic resistance. Genomic subclones dynamically emerge and evolve under treatment pressure, yet their spatial organization within intact bone marrow remains poorly defined. We hypothesized that genetically distinct myeloma subclones occupy spatially discrete ecological niches associated with unique molecular and microenvironmental states. To test this, we here demonstrate a proof-of-concept spatial tri-omics workflow combining laser capture microdissection-based genomics and deep LC-MS/MS proteomics with single-cell spatial transcriptomics, integrated by digital co-registration of adjacent tissue sections. Applied to a myeloma bone marrow trephine, this approach enabled coordinated profiling of matched anatomical regions demonstrating that genomic, transcriptomic and proteomic profiles converged to define clone-specific microenvironmental programmes. We show that genetically distinct myeloma subclones occupy mutually exclusive regions of the same bone marrow biopsy. Remarkably, an aggressive del(17p) clone and a gain(12q) clone occupied defined anatomical territories within the same trephine-biopsied section, each clone exhibiting distinct genomic, transcriptomic, proteomic and cellular ecosystems. The del(17p) clone localized to a fibrotic, osteolytic and angiogenic niche enriched for activated stromal cells, osteoblasts, osteoclasts and immunoregulatory myeloid populations, whereas the gain(12q) clone occupied a comparatively quiescent marrow niche with limited stromal remodelling. Together, these findings demonstrate that genetically distinct myeloma subclones establish spatially and biologically discrete ecological niches through coordinated remodelling of stromal, immune and bone compartments, providing a framework for understanding clonal evolution within the bone marrow microenvironment.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753531v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,72 +260,15 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 22, 2026</span>
+<span class="date">Sep 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Glucosylceramide synthase is required for C6-ceramide nanoliposome-induced organelle stress and cell death</h2>
-<p class="paper-authors">Vass, L. R., Smith, E. W., +6 authors, Fox, T. E.</p>
+<h2 class="paper-title">Cancer-associated nucleolar morphological changes coincide with altered subcompartment organization and accelerated nascent rRNA trafficking in breast cancer cells</h2>
+<p class="paper-authors">Fan, K., Wang, W., +3 authors, Takahashi, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Sphingolipids are bioactive lipids that regulate key signaling pathways both directly as ligands and through membrane re-organization. Ceramide sits at the center of this network and is considered pro-death in many contexts, making ceramide accumulation an attractive therapeutic strategy. Given the wide-ranging regulation of cellular responses this network exerts, better understanding ceramide metabolism may promote therapeutic efficacy of sphingolipid-based therapeutics. Ceramide glycosylation, catalyzed by glucosylceramide synthase (GCS; UGCG), is in turn widely regarded as a detoxification route thus limiting efficacy of ceramide- based therapeutics. Here we show the opposite. Delivery of short-chain C6-ceramide via a ceramide nanoliposome (CNL) induced organelle stress and cell death in chronic lymphocytic leukemia (CLL) via the accumulation of glycosphingolipids (GSLs), rather than through ceramide itself. Pharmacologic and genetic blockade of GCS protected B-cell leukemia, breast carcinoma, glioblastoma, lung adenocarcinoma, and non- malignant embryonic kidney cells from CNL-induced death. Conversely, exogenous C8-glucosylceramide was sufficient to kill cells that cannot degrade it. We show that GSL accumulation drives an ordered organelle response beginning with lysosomal deacidification, endoplasmic reticulum stress, followed by mitochondrial respiratory capacity decline, each attenuated by inhibition of GSL synthesis. These effects were accompanied by MLKL phosphorylation, increased activity of the stress sensor JNK and CHOP induction, with JNK inhibition partially protecting from death. These findings invert the prevailing view of ceramide glycosylation as a resistance mechanism and identify glycosphingolipid flux as a required effector arm of ceramide-directed therapy.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753214v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">FFPE-CUTAC: A Single Assay, Multiple Layers</h2>
-<p class="paper-authors">Niu, Y., Xu, Q., +9 authors, Zheng, Y.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753320v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Catalytically inactive PARP1 protein drives PARP inhibitor induced hematological toxicity</h2>
-<p class="paper-authors">Lin, X., Shao, Z., +9 authors, Zha, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Dual PARP1/2 inhibitors (PARPi) selectively eliminate BRCA1/2-deficient cancers and represent the first targeted therapy for homologous recombination (HR)-deficient cancers. However, their use in maintenance therapy is limited by severe anemia and an increased risk for therapy-related leukemia. These toxicities are unexpected because PARP1 loss, which eliminates most DNA-damage-induced PARylation, does not cause anemia in mice. In contrast, PARP2 loss or catalytic inactivation causes anemia, motivating the development of PARP1-selective inhibitors. Using wild-type (WT), Parp1-/- and Parp2-/- mice, we show that hematopoietic toxicity of FDA-approved PARPi is driven primarily by inactive PARP1 rather than PARP2 inhibition. Accordingly, PARP1-selective inhibitors also cause PARP1-dependent anemia. Somatic expression of catalytically inactive Parp1 (Parp1E988A) causes lethal bone marrow failure, not found with somatic deletion of both Parp1&amp;2. Mechanistically, inactive PARP1 obstructs the repair of diverse DNA lesions, including gaps, nicks, and Top1-cc, in contrast to the nick-selectivity of Parp2. In cells, inactive PARP1 compromises PARP2 recruitment to DNA lesions and causes severe genomic instability and mitotic bridges absent in Parp1&amp;2-null cells. Thus, PARPi-induced hematopoietic toxicity is driven primarily by PARP1 inactivation, informing the design and use of next-generation PARP inhibitors.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753312v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 22, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">MAPK signaling links BRD2 chromatin occupancy to PI3K/AKT inhibitor sensitivity</h2>
-<p class="paper-authors">Mendez, J., Bruno, S., +12 authors, Toker, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Bromodomain and extra-terminal (BET) proteins, BRD2, BRD3, BRD4, and BRDT, couple histone acetylation to transcription by recruiting elongation and transcription factor complexes to chromatin. Although BET proteins are promising therapeutic targets, the functions of individual family members remain incompletely understood. We identify BRD2 as a co-targetable vulnerability with PI3K/AKT inhibition in breast cancer. Pan-BET inhibition and BRD2 knockout synergized with PI3K pathway inhibitors in breast cancer cell lines, patient-derived organoids, and in vivo models. BRD2 knockout impaired proliferation of triple-negative breast cancer cells and upregulated signaling and stress-response pathways, including the DNA damage response. Mechanistically, BRD2 is phosphorylated at Ser37 by the mitogen- and stress-activated kinases MSK and RSK, and Ser37 phosphorylation is required for chromatin binding and reader function. Finally, mechanistic digital twin modeling identified BETi-PI3Ki regimens that maintained efficacy while reducing drug exposure. Together, these findings identify BRD2 as a phosphorylation-dependent, co-targetable vulnerability in PI3K-inhibited breast cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.21.753236v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Nucleolar alterations are characteristic features of cancer cells; however, how changes in the overall morphology relate to internal subcompartment organization and ribosomal RNA (rRNA) dynamics remains unclear. In this study, the nucleolar organization of non-transformed MCF-10A mammary epithelial cells and MDA-MB-231 breast cancer cells was quantitatively compared. MDA-MB-231 cells exhibited differences in nucleolar morphology, accompanied by altered spatial organization of the dense fibrillar component and granular component, and accelerated intranucleolar trafficking of nascent rRNA. Pharmacological perturbation with SU056 shifted multiple structural and dynamic parameters toward an MCF-10A-like profile. Conversely, transient physicochemical perturbation with 1,6-hexanediol induced several MDA-MB-231-like nucleolar features in MCF-10A cells, which returned to their untreated profile after washout. These findings support the view that cancer-associated nucleolar alterations are an integrated reorganization across morphological, spatial, and dynamic dimensions. The observed reversibility further indicates that cancer-associated nucleolar organization can be remodeled in response to perturbations. By linking the morphology, subcompartment organization, and nascent rRNA dynamics within a common framework, this study provides a basis for exploring the establishment, maintenance, and remodeling of distinct nucleolar profiles in cancer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753621v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -317,15 +279,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 22, 2026</span>
+<span class="date">Sep 23, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Bridging Gaps in Standards for the Secondary Use of Health Data: Exploratory Standard, Tool Assessment, and Feasibility Study.</h2>
-<p class="paper-authors">Jaleh Shoshtarian Malak, Leonie von Berlin, +14 authors, Venkata P Satagopam</p>
+<h2 class="paper-title">Advances in Machine Learning for Drug Repurposing: From Methodologies to Precision Medicine with Case Studies in COVID-19, Parkinson's Disease, and Cancer.</h2>
+<p class="paper-authors">Betel Gurara, Saron Gebremichael, +5 authors, Gayathri Sadanala</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Standards for the secondary use of health data remain under development and do not comprehensively address specific categories of health data. Existing health data and interoperability standards are primarily designed for the primary use of health care, leaving gaps in their applicability for research, regulatory and decision-making. This research is part of the Integration of Heterogeneous Data and Evidence Towards Regulatory and Health Technology Assessment Acceptance (IDERHA) project, which creates a federated processing environment for secondary health care use cases.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42772747/" target="_blank">
+<p><strong>Abstract:</strong> This review investigates recent advances in machine learning (ML) for drug repurposing, with applications spanning COVID-19, Parkinson's disease, and cancer. We provide a methodological taxonomy of ML techniques including supervised learning (e.g., random forests, SVMs), unsupervised clustering and dimensionality reduction, deep neural networks, reinforcement learning, and graph-based models such as MLGANN and DTD-GNN highlighting their roles in scalable drug-target interaction prediction and phenotype mapping. Case studies demonstrate how integrated models leveraging heterogeneous data (e.g., gene expression, chemical structure, EHRs) facilitated the identification of repurposable candidates like baricitinib, raloxifene, and rapamycin. Across the reviewed case studies, top-performing models achieved AUROC values ranging from 0.88 to 0.99 on their respective benchmarks, though significant performance degradation (AUROC drops of 0.05-0.15) was observed under cross dataset generalization, underscoring the translational gap between benchmark and real-world performance. We analyze computational challenges, including data sparsity, model overfitting, limited generalizability across datasets, and the interpretability gap in deep learning and GNNs. We discuss integration of explainable AI (e.g., SHAP, LIME), interpretable models (e.g., rule lists, causal graphs), network biology, and federated learning as avenues to improve robustness and translational relevance. Unlike prior reviews focused on single diseases or ML paradigms, this work provides a cross disease analysis exposing shared bottlenecks and identifying disease-agnostic best practices. We examine the role of foundation models and large language models (LLMs) in drug repurposing, including zero-shot molecular property prediction and literature-informed mining. This work outlines an ML-driven framework that balances computational scalability with biological validity, enabling actionable predictions in precision medicine.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42776876/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
