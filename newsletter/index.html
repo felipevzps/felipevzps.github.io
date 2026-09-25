@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Improving Metagenomics Classification with Kmask: Entropy-Based Masking of Low-Complexity Regions</h2>
-<p class="paper-authors">Ge, Y., Li, E., +2 authors, Salzberg, S. L.</p>
+<h2 class="paper-title">sRNAMap: a lightweight, browser-based web application for small RNA mapping, analysis and visualisation</h2>
+<p class="paper-authors">Reuter, M., De Hayr, L., +5 authors, Parry, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Abstract Accurate taxonomic classification in metagenomics is often compromised by low-complexity sequences, which lead to chance matches that in turn cause sequences to be misclassified. Here we present Kmask, an entropy-based masking tool implemented for use either standalone or as part of Kraken [1,2] database construction, which replaces low-entropy regions with Ns. Using a sliding window size aligned with Kraken's default k-mer length and parameters optimized across 12 control bacterial genomes spanning a broad range of GC content, Kmask efficiently removes low-complexity sequences while retaining high-complexity regions. To benchmark performance, we applied Kmask to a newly constructed database, Microbial2025, that contains over 71,000 bacterial, archaeal, viral, and fungal genomes, and we then classified human reads against both masked and unmasked versions of the database using KrakenUniq [2]. We found that Kmask substantially reduced misclassifications, driving down the false positive rate to 5.78% from 7.52%. Notably, Kmask performed comparably to an SDUST-masked [3] database, achieving a similar false positive rate (5.78% vs. 5.17%) while masking out fewer bases (1.33% vs. 1.85%). We also tested Kmask on a database of human cancer sequences, where we found that it eliminated many false positives caused by low-complexity matches between bacterial genomes and human DNA. These results demonstrate that Kmask is an effective method for masking low-complexity sequences in large microbial databases, thus improving the accuracy of metagenomic classification.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753623v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Small RNA (sRNA) sequencing is widely used to study siRNA, miRNA and piRNA pathways and to profile sRNAs derived from viruses, transposons and host transcripts. However, many sRNA workflows rely on command-line mapping and separate software for downstream analysis and visualisation. We present sRNAMap, an HTML5/JavaScript application for mapping and analysing sRNA sequencing data. sRNAMap accepts either raw FASTA/FASTQ reads or pre-aligned BAM files. For raw reads, sRNAMap uses a k-mer-seeded alignment algorithm that runs directly in the browser using parallel Web Workers where supported. It generates strand-specific per-base coverage, 5'- and 3';-end profiles, read-length distributions and nucleotide-bias summaries, with optional library-size normalisation. It also quantifies characteristic read-overlap signatures, including 5';-to-5'; overlaps associated with ping-pong-like processing. Additional modules quantify phased sRNA production, non-templated 3'- and 5'-additions, and sequence diversity. Analyses can be saved and restored as JSON or exported as self-contained HTML reports containing figures and analysis metadata. Benchmarking against Bowtie 2 under approximately matched alignment settings using a representative virus-infected arthropod small-RNA dataset showed highly concordant mapping profiles. Per-position depth showed an R^2 of approximately 0.998, while 5';- and 3';-end counts showed R^2 values of approximately 0.97. sRNAMap is available at https://github.com/rhparry/sRNAMap under the MIT licence.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753470v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Leakage-controlled benchmarking reveals generalization limits of deep learning for protein-ligand binding affinity prediction</h2>
-<p class="paper-authors">Wang, L., Cheng, J.</p>
+<h2 class="paper-title">Cell-Lens: Advancing LLM Reasoning at Single-Cell Resolution</h2>
+<p class="paper-authors">li, y., Gao, B., +6 authors, Li, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> To address widespread data leakage and inconsistent evaluation in protein-ligand affinity prediction, we introduce PLABench, a leakage-controlled and target-centric benchmarking framework that enables standardized comparison across sequence- and structure-based models. We benchmark nine deep learning methods across blind CASP16 targets, leakage-controlled ChEMBL35 sets, and established Davis and KIBA datasets under rigorous data split settings, standardizing structural input via AlphaFold3 to ensure fair comparison. Although pretrained structure-based models achieve the highest overall accuracy, they show severe target-dependent variability, and increasing structural fidelity from predicted to experimental conformations yields no consistent gains. Meanwhile, sequence-based approaches surpass some structure-based methods on select targets, and protein family-level evaluations reveal uneven performance across families and substantial inter-model complementarity obscured by aggregate metrics. These findings demonstrate that training scale and structural input alone cannot guarantee cross-target generalization, highlighting the need for context-aware interaction modeling. PLABench provides an extensible open-source platform to facilitate these developments.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752433v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Recent work applies large language models (LLMs) to single-cell data, but the cell usually reaches the model as a short ranked list of genes. This list drops much of what defines a cell, so the model reasons from a partial view. Yet the information is not lost in the measurement, only in the text. Here, we introduce Cell-Lens, a training-free structured representation of the measured cell. It writes the cell as typed blocks, from paired measurements to marker-supported programs. On CellVerse, SOAR, CellPuzzles, and SC-Arena, across five model families, Cell-Lens improves performance by up to 27.1 points. It also narrows the model gap and reduces API-reported reasoning-token usage. The largest gains occur when a defining RNA marker falls out of the ranked list. In these cases, the paired protein data still capture the corresponding signal. Shuffling the added blocks removes the gain. The gain persists after selected label-associated proteins are removed. These controls link the improvement to cell-matched biological content. We also build and release CellSpectrum, a broader benchmark spanning eight sources and seven tasks with paired modalities. The gains hold there across tasks, tissues, and modalities. These results show that a better cell representation can improve single-cell reasoning without retraining the model. Code and CellSpectrum are publicly available at https://github.com/LiZaiyuan0619/Cell-Lens.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.19.752842v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Open-world fungal ITS embeddings improve higher-rank placement and cross-view retrieval, but percent identity is stronger on a matched ITS2 novelty benchmark</h2>
-<p class="paper-authors">O'Brien, A., Gardette, A.</p>
+<h2 class="paper-title">Surrogate Gradients for Gradient-Based Parameter Estimation in Simplified Neuron Models</h2>
+<p class="paper-authors">Mayer, P., Kozlov, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> 1. Background. Fungal internal transcribed spacer (ITS) analyses usually infer taxonomy and novelty from similarity to homologous reference sequences. Percent identity is a strong signal in that setting, but it cannot directly compare non-homologous barcode views and does not explicitly optimize the higher-rank placement of genera absent from the reference collection. We asked whether a compact sequence encoder could learn that open-world structure and whether maximum embedding cosine similarity could improve novelty detection. 2. Design. From the UNITE dynamic release of 19 February 2025 we built ITS-core, ITS1 and ITS2 views and a genus-separated development, calibration and test design. A convolutional encoder mapped sequences to 256-dimensional L2-normalized embeddings. A controlled ladder compared genus-proxy supervision (M0), cross-view invariance (M1), hierarchical taxonomic geometry (M2), leave-one-genus family episodes (M3), and the combined objective (M4). M4 was frozen before CAL_KNOWN and TEST were opened. A secondary historical ITS2 benchmark was audited for leakage and scored only after a fixed-recipe, benchmark-safe retraining that excluded all held-out benchmark taxa. 3. Results. Cross-view supervision raised controlled ITS2 development AUROC from 0.688 to 0.717 and novel-family placement from 22.1% to 33.0%. Episodic training increased novel-family placement to 41.0% but reduced novelty discrimination at some views. The combined M4 model recovered both behaviours, reaching development AUROCs of 0.778, 0.755 and 0.751 for ITS-core, ITS1 and ITS2, with novel-family placement of 57.5%, 48.7% and 41.3%. On untouched TEST data, ITS2 reached AUROC 0.763 (95% CI 0.748-0.779) and placed unseen genera correctly at family, order and class for 52.0%, 81.1% and 92.9% of queries; development AUROCs lay above the TEST intervals at ITS-core and ITS1, indicating selection optimism of roughly 0.02-0.04 AUROC at those two views. At alpha = 0.05, conformal calibration gave a 4.7% observed false-novelty rate and detected 11.2% of novel-genus ITS2 queries. On the paired leakage-safe historical benchmark, percent identity remained stronger than M4 cosine: AUROC 0.770 versus 0.702 and 27.8% versus 8.6% novel-query detection at approximately a 5% false-novelty rate. 4. Interpretation. Structured fungal ITS embeddings add higher-rank placement and cross-view retrieval that are not available from a same-locus identity score alone. Maximum embedding cosine does not replace direct sequence identity as the novelty statistic when homologous ITS2 references are available; whether a different score read from the same embedding would narrow that gap remains untested.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752437v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Simplified spiking neuron models such as the Adaptive Exponential Integrate-and-Fire (AdEx) model reproduce the firing behaviour of diverse neuron types at a fraction of the cost of biophysically detailed models, making them attractive for large-scale brain simulation. Fitting their parameters to recordings, however, still relies on derivative-free search such as grid search or evolutionary algorithms, because the discrete spike-and-reset mechanism renders these models non-differentiable. Surrogate gradients, used in deep spiking networks, replace the spike derivative with a smooth approximation on the backward pass. Whether they also enable efficient gradient-based parameter estimation for single simplified neurons is untested. We implement a differentiable AdEx model with a surrogate-gradient variant in the Jaxley framework. The implementation is on par with target-compiled C++ Brian2 code while remaining end-to-end differentiable, vmap-batchable and GPU/TPU-portable. It is 200 times faster than Brian2's default runtime mode. Across a recovery-radius benchmark of 2,700 paired runs, gradient-based fitting never matched a gradient-free Nelder-Mead baseline. At sub- threshold levels, gradient descent instead beats Nelder-Mead. The obstacle is therefore the spike mechanism and the loss geometry it induces, not gradient descent itself.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.19.752831v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Generative Access to Make-on-Demand Chemical Space Enables Ultra-Large Virtual Screening</h2>
-<p class="paper-authors">Zhang, K., Sun, Y., +5 authors, Huang, J.</p>
+<h2 class="paper-title">nf-rare-var-assoc: a comprehensive genetic association pipeline with rich QC</h2>
+<p class="paper-authors">Suszynski, P. M., Gambin, T.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Ultra-large-scale virtual screening (ULVS) increasingly relies on make-on-demand chemical spaces, but efficient access to these spaces remains challenging because their scale far exceeds what can be exhaustively enumerated and docked. Here, we present REAL-SWIT, a generative ULVS framework that learns Enamine REAL Space as a synthesizable molecular distribution and couples this generator with a target-specific scoring model to enable docking-guided exploration of REAL Space at the level of complete molecule. The generative model learned transferable features of the REAL Space distribution: approximately 96% of generated molecules were found in REAL Space, and a subset of generated molecules absent from the training release appeared in later expanded releases. In computational benchmarks, REAL-SWIT identified more molecules with favorable docking scores than representative fragment-based search strategies, including cooperative building-block combinations that fragment-level prioritization tended to miss. Experimental validation for ROCK1 yielded six biochemical inhibitors among 23 synthesized compounds, including RX-3 with an IC50 of 0.17 M. These results establish generative access to make-on-demand chemical space as a practical strategy for ULVS.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752345v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Genetic association analyses of exome sequencing data pose distinct methodological challenges in small cohorts, which are common in rare disease research. Data filtering prior to association testing requires particular care, especially when analyzing datasets generated under different study designs. Most of current genetic association tools need to be integrated into complex data processing pipelines, whose implementation requires technical expertise and is prone to error. To alleviate mentioned issues we built a comprehensive, high performance Nextflow workflow for genetic association testing, which includes all commonly performed data filtering and preparation steps, controlled by a rich set of modifiable parameters. We compared our software against existing tools incorporating quality control and aggregated association testing steps and found our solution to offer the most complete suite of data preparation, association testing and reporting modules, making small-cohort association analyses accessible to teams with limited technical expertise.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.19.750380v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">NoroScope: Exploring the Mutational Landscape of the Human Norovirus Capsid Protein with Context-Aware Machine Learning</h2>
-<p class="paper-authors">Bowyer, S., Allen, D., Furnham, N.</p>
+<h2 class="paper-title">Multi-vector retrieval enables residue-resolved prediction of protein partners by ColBERT-PPI</h2>
+<p class="paper-authors">Yang, H., Lei, R., +1 author, Zhang, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Anticipating the effects of mutations in viral proteins is important for the development of therapeutics and control strategies but remains challenging as mutation phenotypes are shaped by complex overlapping sequence, structural and evolutionary constraints. Machine-learning approaches to mutation-effect prediction have shown considerable success for viruses with exceptionally rich training datasets, but their application to the majority of viruses with comparatively limited data remains underexplored. Here we introduce NoroScope, an interpretable machine-learning framework designed to prioritise plausible amino-acid substitutions in the human norovirus GII.4 capsid protein VP1 through integration of complementary biological evidence. Using VP1 protein sequences and experimentally resolved structures as a foundation, we generated datasets comprising zero-shot mutation scores from the Evolutionary Scale Modeling 2 protein large language model, in silico deep-mutational-scanning estimates of mutation-associated effects on protein stability and histo-blood group antigen binding, and descriptors of the evolutionary history of VP1. NoroScope integrated these evidence sources to prioritise historically observed alternative amino acids according to whether they subsequently received recurrent support in natural virus populations. Across retrospective 2011 and 2016 prediction tasks, the complete model achieved average precision values of 0.805 and 0.834 and recovered 87.9% and 92.9% of future-supported candidates within the top five alternatives at their respective positions. Feature ablation showed that evolutionary, sequence-model and structural information provided distinct and complementary predictive signals, with their integration supporting accurate amino acid prioritisation and revealing biologically informative disagreements between evidence sources. Experimental analysis at VP1 position 297 further supported molecular predictions for selected substitutions in a virus-like particle assembly system. Together, these results establish NoroScope as a framework for integrating pretrained protein representations with target-specific molecular and evolutionary context to explore viral mutation landscapes where available data are comparatively limited.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752373v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein-protein interactions (PPIs) are central to biological processes, making the identification of both interacting partners and their binding sites important for understanding molecular function and guiding therapeutic discovery. However, connecting large-scale partner prediction to residue-level interaction evidence remains challenging. Here we present ColBERT-PPI, a structure-aware multi-vector framework that links protein partner retrieval to interaction-site localisation. The model retains reusable residue-level representations and compares them in a partner-dependent manner, producing raw residue compatibility maps for localisation and calibrated smooth MaxSim scores for retrieval. On PINDER, ColBERT-PPI achieved an area under the precision-recall curve of 0.482, compared with 0.151 for the strongest evaluated external comparator. Both complete and sequence-only multi-vector models outperformed the single-vector control on an independent human yeast two-hybrid screen. Residue-level comparisons highlighted experimental interfaces, captured changes in local evidence across partners and achieved a mean contact AUROC of 0.806 versus 0.526 for the single-vector control. After task-specific fine-tuning, PPI-trained representations also improved protein-RNA interaction retrieval, indicating transfer beyond the molecular context in which they were learned. By connecting candidate partners with their supporting residue-level evidence, ColBERT-PPI provides a computational basis for investigating physiological and disease-associated interactions and prioritizing proteins and interaction regions for therapeutic exploration. Code is available at https://github.com/UR-Free/ColBERT-PPI.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.19.752878v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MIRCID: Inferred Hub-miRNAs Drive Cross-Task Improvements in Drug Mechanistic Modeling</h2>
-<p class="paper-authors">Cao, X., Chen, Y., +11 authors, Huang, H.-D.</p>
+<h2 class="paper-title">AI Models Excel at Orchestration but Falter at Biological Judgment: Findings from an Agentic Gene Annotation Study</h2>
+<p class="paper-authors">Sinha, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Drug mechanism-of-action (MoA) modeling commonly relies on perturbational transcriptomes, but matched microRNA (miRNA) measurements are often unavailable. Inferred regulatory features offer a scalable way to reuse these data. Here, we present MIRCID, a framework comparing gene expression with inferred transcription factor (TF) activity and miRNA expression across pathway classification and similarity-based MoA retrieval. HubmiRNet infers 414 pan-cancer hub miRNAs (HubmiRs) from 977 L1000 landmark genes, achieving a Pearson correlation coefficient of 87.72%; its 1,298-output variant also outperformed SiCmiR on the full-miRNA task (71.21% versus 67.30%). In the evaluated comparisons, miRNA augmentation provided more consistent gains than TF activity. Generic embedding controls showed model-dependent utility, while complementarity analyses identified a distinct, partially linearly recoverable representation that retained gene-derived structure. Illustrative rescue cases linked improved classification to biologically plausible miRNA patterns in samples with weak transcriptional signatures. These findings support inferred HubmiRs as a biologically informed recoding of transcriptomic data for perturbational drug modeling, while leaving recovery of measured perturbational miRNA responses to further validation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752312v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Large language model (LLM) agents are increasingly used both to direct biological analyses and to interpret their results. The core functions of agents-workflow control and biological adjudication-are often combined within the same agent and evaluated end-to-end, making it difficult to determine whether a model that is useful in one role is also reliable in the other. In this study, Genome Skeptic, a bacterial gene-annotation framework was developed in which all sequence-level measurements are generated by deterministic bioinformatics tools, while an AI controller can request follow-up analyses only from a predefined registry. In a prospectively locked, blinded cohort of 20 genomes balanced for tet(A)/tet(B) presence and absence, GPT-5.6 Sol acting as the workflow controller achieved the same accuracy as fixed and exhaustive strategies (18/20 correct) while requiring 32% and 47% fewer follow-up analyses, respectively. This was consistent with a 60-case prospective benchmark, in which markedly different evidence-acquisition policies produced different final evidence states but identical endpoint calls in all 60 cases. When the same Sol model was instead given final decision authority over the exact evidence state used by the deterministic adjudicator, accuracy fell from 18/20 to 11/20 (exact McNemar P = 0.016), specificity fell from 1.00 to 0.30, and the model corrected none of the deterministic errors. All nine endpoint disagreements shifted negative calls to unresolved rather than identifying missed positives. The same model that efficiently decided what to analyse next performed worse when asked to decide what the evidence meant. In this task, LLM performed well in orchestration and not biological adjudication.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.23.753765v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Comparative analysis of 15 chromosome-scale near T2T assemblies of Brazilian Fusarium graminearum isolates</h2>
-<p class="paper-authors">Kroll, E., Wood, A. M., +4 authors, Hammond-Kosack, K. E.</p>
+<h2 class="paper-title">Predicting single mutation effects on binding affinity at protein-protein interfaces based on MMPBSA calculations</h2>
+<p class="paper-authors">Noske, J., Janzen, M., +1 author, Höcker, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Fusarium graminearum is the causative agent of Fusarium head blight of wheat, yet genomic resources for Brazilian populations, where it is the dominant species, remain limited to a single reference genome. We report fifteen near telomere-to-telomere (T2T) assemblies of Brazilian F. graminearum isolates generated with Oxford Nanopore sequencing. Each genome was assembled into four nuclear chromosomes, with 118 of 120 telomeres resolved, BUSCO completeness of 99.199.3%, and 14,80214,894 predicted genes per isolate. The genomes are structurally conserved, showing no chromosome-scale rearrangements and uniform transposable element content. Orthology assignment placed 90.4% of genes in the core genome. This suggests that the large phenotypic variance in aggressiveness observed between isolates likely resides in regulatory differences and/or within the small and largely uncharacterised accessory fraction. Ultimately, these assemblies provide a high-resolution resource for the global FHB community and a foundation for comparative analysis of a previously underrepresented population.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752100v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate prediction of mutation-induced changes in protein-protein affinity remains a central challenge in computational biophysics and protein engineering. Here we present a physics-based scoring method for predicting the effects of single amino acid substitutions on protein-protein and protein-peptide binding affinity. The method is based on MMPBSA energy calculations and implemented in a user-friendly, publicly available workflow (https://github.com/Hoecker-Lab/mmpbsa_scoring). To derive the scoring function, MMPBSA energy terms were fitted using a large and diverse dataset of experimentally measured binding affinity changes upon point mutation. The terms were then evaluated on independent systems. Specifically, we assessed the ability to predict mutational effects at the interface of SARS-CoV-2 spike protein with its cellular receptor, as well as computationally predicted Armadillo-repeat protein-peptide complexes. The approach performs well across diverse targets and shows promising predictive performance on both experimentally determined and computationally predicted structures. It matches or exceeds the accuracy of established physics-based protein design software and state-of-the-art deep learning-based scoring functions when applied to data outside their training domain. The method provides a computationally efficient and interpretable framework for prioritizing interface mutations in protein engineering and binding affinity optimization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753561v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A general route to volumetric segmentation under annotation scarcity</h2>
-<p class="paper-authors">radhakrishnan, s., mathur, s., aleksandrov, a., schweke, h., silvano, g., levy, e. d.</p>
+<h2 class="paper-title">PoLoCo: A reproducible pooled low-coverage workflow for draft genome assembly and allele frequency analysis from ethanol-preserved small non-model invertebrates</h2>
+<p class="paper-authors">Shuvo, M. J., Segelbacher, G., Geue, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Volumetric cell segmentation is limited by the scarcity of labelled data, because manual curation of three-dimensional datasets is prohibitively laborious. We find that this gap can be bridged with volumes in which synthetic 3D objects mirror the properties of real cells and of image formation, notably the axial spread of the point-spread function. Such volumes provide unlimited labelled training data, and we show that a model trained on them produces accurate segmentations of real biological data.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752170v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Abstract Background Many ecologically important small invertebrates are preserved in ethanol, which compromises DNA integrity and severely limits their potential to be utilized in further genomic research. The lack of soil arthropod representation ultimately results in limited availability of reference genomes and population genomic inference from pooled sequencing (Pool-seq). Results We introduce PoLoCo (Pooled Low-Coverage), a reproducible workflow integrating pooled specimen draft genome assembly from ethanol-preserved specimens with population-level allele-frequency analysis. We assembled a 411 Mb draft genome of Entomobrya nivalis from pooled short reads, achieving 97.7% BUSCO completeness despite notable fragmentation. Comparison with the published reference genome showed partial genomic correspondence while also revealing reference-dependent differences in the retained SNP datasets. The application of PoLoCo to 82 retained pooled populations produced a final distance-thinned allele-frequency dataset suitable for population-scale genomic inference. Case-study execution documented the computational requirements of the major workflow components on standard HPC infrastructure, with the workflow, documentation, and software environments openly available in Zenodo. Conclusions PoLoCo demonstrates that draft genome assemblies and reproducible Pool-seq allele-frequency analyses can be performed with long-preserved sample material from the field. PoLoCo integrates reference construction, sync-based allele-frequency analysis, and benchmarking into a free and open workflow. It establishes a reproducibility benchmark for biodiversity genomics and yields a transferable workflow for ecological and evolutionary initiatives where high-quality DNA or long-read sequencing is not feasible.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.19.752856v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Constructing Virtual Viruses in A Spatial Minimal Cell</h2>
-<p class="paper-authors">Sun, W., Tang, Y., +3 authors, Dou, C.</p>
+<h2 class="paper-title">TopoFlow: Evolutionarily Conditioned Flow Matching for Protein Conformational Ensemble Generation</h2>
+<p class="paper-authors">Yang, X., Cui, X., +4 authors, Zhang, G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Viral development links gene expression and genome replication to particle formation within a cell. Here we construct virtual viruses in a JCVI-syn3A-based spatial minimal cell. For mycoplasma virus P1, molecular events connect expression and replication to coarse-grained packaging, followed by a spatial reconstruction of membrane opening and particle release. Individual finite-size particles coexist, move across the boundary and undergo partial crossings and returns before complete exit. In contrast, Acholeplasma phage MV-L1 (L1) expresses its genes and accumulates genomes as the host continues to grow and develops a constricted shape. The coexistence of viral activity and continued host growth is qualitatively consistent with the non-lytic biology of group 1 acholeplasmaviruses. These reconstructions extend the virtual cell to the viruses that develop within it, linking molecular activity, particle behavior and host growth.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753465v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Proteins function through dynamic conformational ensembles rather than a single static structure, yet accurately modeling these ensembles remains challenging. Here, we introduce TopoFlow, an evolutionarily conditioned flow-matching framework for protein conformational ensemble generation. TopoFlow uses evolutionary representations from multiple sequence alignments (MSAs) to encode global conformational heterogeneity. It combines this with structural variables from a variational autoencoder (VAE) to capture local flexibility. These complementary representations are then adaptively fused through a conditional modulation module to construct unified conditioning features that guide protein conformational ensemble generation. On the ATLAS molecular dynamics (MD) benchmark, TopoFlow improved the Jensen Shannon metrics for pairwise distances (JS-PwD), radius of gyration (JS-Rg), and time-lagged independent components (JS-TIC) by 10.73%, 5.78% and 7.75%, respectively, relative to BioEmu. Notably, this performance generalizes to experiment-based evaluation, where TopoFlow exhibits strong agreement with experimental observables, including chemical shifts (CS) and small-angle X-ray scattering (SAXS). Ablation analyses further indicated that the evolutionary representations and structural latent variables contributed complementary information to ensemble generation. Our results suggest that TopoFlow, through its integration of evolutionary and structural latent information, offers a promising strategy for generating structurally plausible and conformationally informative protein ensembles.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753441v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -203,72 +203,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Coevolutionary mining of prokaryotic non-coding elements with a genome language model</h2>
-<p class="paper-authors">Li, D. B., Brixi, G., +9 authors, Hie, B.</p>
+<h2 class="paper-title">Deciphering Mechanistic Signatures in Drug-Drug Interactions with Dual Topology Graphs</h2>
+<p class="paper-authors">Ma, W., Bi, X., +7 authors, Zhang, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Microbial genomes encode compact molecular machines and diverse non-coding RNAs (ncRNAs) essential to gene regulation, pathogenesis, and many foundational biotechnologies. However, annotation remains largely protein-centric and homology-driven. Here, we introduce Minerva, a framework for coevolutionary mining that uses genome language models to predict local interactions directly from sequence as two-dimensional maps. Introducing two complementary techniques, categorical Jacobian fingerprinting and interaction heads, we demonstrate fast, accurate, alignment-free prediction of ncRNA base-pairing, monomeric protein contacts, and repetitive sequence motifs. Applied to 150 bacterial genomes, Minerva recovers known systems and predicts that 84.3% of predicted intergenic base-pairing falls outside of known annotations. In Pseudomonas, we find that the widespread TwoAYGGAY ncRNA family carries large secondary-structure extensions and is often flanked by short upstream repetitive motifs and larger downstream genomic repeats. Interpreting the coevolution maps, we find that Minerva emergently detects open-reading-frame (ORF) signatures at the DNA level despite never being trained to do so. In prophages within these genomes, we discover that Unknown Group 27 (UG27) reverse transcriptase systems encode arrays of structurally conserved yet sequence-diverse ncRNAs that template complementary DNA (cDNA) hairpin products. Together, these results establish coevolutionary mining as a scalable route to genome annotation and biological discovery across the rapidly expanding microbial universe.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753630v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Single-Cell Analysis of Non-Functioning Gonadotroph Tumors Identifies Lineage Infidelity and Tumor Growth Programs</h2>
-<p class="paper-authors">Dennis, E., Kim, G. D., +12 authors, Petti, A. A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Non-functioning gonadotroph (NFG) tumors are the most common type of non-functioning pituitary adenomas and can cause significant symptoms due to mass effect. However, the molecular programs underlying NFG tumor growth and their relationship to the normal anterior pituitary gland (APG) are poorly understood. To gain a deeper understanding of NFG tumor biology in the context of the normal APG, we performed single-cell/nucleus RNA-sequencing on 21 NFG tumors and 8 APG samples in human, generating the largest transcriptomic dataset of its kind. Single-cell/nucleus sequencing yielded 77,342, cells from APG samples and 152,649 cells from NFG tumor samples. Differential expression analysis within the APG identified novel marker genes of each neuroendocrine cell type and defined distinct transcriptional signatures of anterior and posterior pituitary stem cell populations. Comparison with tumor transcriptomes revealed that NFG tumor cells most closely resemble gonadotrophs, while also showing significant enrichment of thyrotroph and somatotroph markers. Notably, there was no significant overlap with stem cell markers, suggesting that NFG tumors most likely originate from differentiated gonadotrophs but can take on transcriptional characteristics of other neuroendocrine cell types. Pseudobulk profiling of NFG tumor cells demonstrated that tumor volume is significantly positively correlated with 83 genes including known oncogenes CAD, BRF2, and SOX12, along with 16 zinc finger transcription factors. Lastly, analysis of the tumor microenvironment revealed proportional increases in myeloid, endothelial, and mural cell populations in tumor samples compared to APG samples and highlighted cross talk between tumor and endothelial, mesenchymal, and immune populations via VEGF, PDGF, and MIF signaling pathways respectively. This study identifies novel transcriptomic signatures determining cell type identity in both APG neuroendocrine and NFG tumor cells. Our findings elucidate molecular programs driving NFG lineage infidelity and tumor growth, highlighting candidate predictors of patient outcomes and potential targets for therapeutic intervention.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.17.752250v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A platform for deep topographic multiomic mapping of the bone marrow environment in multiple myeloma</h2>
-<p class="paper-authors">Lu, J., Wang, C.-Y., +22 authors, Rao, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Multiple myeloma is a genetically complex plasma cell malignancy in which profound intratumoral heterogeneity shapes disease progression and therapeutic resistance. Genomic subclones dynamically emerge and evolve under treatment pressure, yet their spatial organization within intact bone marrow remains poorly defined. We hypothesized that genetically distinct myeloma subclones occupy spatially discrete ecological niches associated with unique molecular and microenvironmental states. To test this, we here demonstrate a proof-of-concept spatial tri-omics workflow combining laser capture microdissection-based genomics and deep LC-MS/MS proteomics with single-cell spatial transcriptomics, integrated by digital co-registration of adjacent tissue sections. Applied to a myeloma bone marrow trephine, this approach enabled coordinated profiling of matched anatomical regions demonstrating that genomic, transcriptomic and proteomic profiles converged to define clone-specific microenvironmental programmes. We show that genetically distinct myeloma subclones occupy mutually exclusive regions of the same bone marrow biopsy. Remarkably, an aggressive del(17p) clone and a gain(12q) clone occupied defined anatomical territories within the same trephine-biopsied section, each clone exhibiting distinct genomic, transcriptomic, proteomic and cellular ecosystems. The del(17p) clone localized to a fibrotic, osteolytic and angiogenic niche enriched for activated stromal cells, osteoblasts, osteoclasts and immunoregulatory myeloid populations, whereas the gain(12q) clone occupied a comparatively quiescent marrow niche with limited stromal remodelling. Together, these findings demonstrate that genetically distinct myeloma subclones establish spatially and biologically discrete ecological niches through coordinated remodelling of stromal, immune and bone compartments, providing a framework for understanding clonal evolution within the bone marrow microenvironment.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753531v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Sep 23, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Cancer-associated nucleolar morphological changes coincide with altered subcompartment organization and accelerated nascent rRNA trafficking in breast cancer cells</h2>
-<p class="paper-authors">Fan, K., Wang, W., +3 authors, Takahashi, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Nucleolar alterations are characteristic features of cancer cells; however, how changes in the overall morphology relate to internal subcompartment organization and ribosomal RNA (rRNA) dynamics remains unclear. In this study, the nucleolar organization of non-transformed MCF-10A mammary epithelial cells and MDA-MB-231 breast cancer cells was quantitatively compared. MDA-MB-231 cells exhibited differences in nucleolar morphology, accompanied by altered spatial organization of the dense fibrillar component and granular component, and accelerated intranucleolar trafficking of nascent rRNA. Pharmacological perturbation with SU056 shifted multiple structural and dynamic parameters toward an MCF-10A-like profile. Conversely, transient physicochemical perturbation with 1,6-hexanediol induced several MDA-MB-231-like nucleolar features in MCF-10A cells, which returned to their untreated profile after washout. These findings support the view that cancer-associated nucleolar alterations are an integrated reorganization across morphological, spatial, and dynamic dimensions. The observed reversibility further indicates that cancer-associated nucleolar organization can be remodeled in response to perturbations. By linking the morphology, subcompartment organization, and nascent rRNA dynamics within a common framework, this study provides a basis for exploring the establishment, maintenance, and remodeling of distinct nucleolar profiles in cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.22.753621v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Drug-drug interactions (DDIs) represent a critical challenge in drug development and clinical practice, as they can lead to severe adverse effects, including toxicity and reduced therapeutic efficacy. Deep learning methods have shown promise in large-scale, rapid DDI prediction; however, current approaches suffer from significant limitations in providing mechanistic insights into these interactions. Here, we propose DualTopoDDI, a dual-topology-enhanced interpretable deep learning model for DDI prediction. We applied DualTopoDDI to predict 9.2 billion potential interactions among approved drugs, achieving 97.99% high-confidence predictions. The model demonstrates molecular-level interpretability, identifying key substructures responsible for drug actions in terms of both atom-centric and bond-centric views. DualTopoDDI also excels in elucidating particular DDI toxicity mechanisms, which is validated by its successful explanation of the controversial cardiac toxicity in two COVID-19 drug combination regimens at the time. Evaluations across 11 benchmark datasets demonstrates that DualTopoDDI not only achieves state-of-the-art performance but also showcases robust generalizability and good interpretability. Overall, DualTopoDDI offers a powerful, interpretable tool for understanding and predicting drug-drug interactions, providing critical insights for drug safety and design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.23.753684v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -279,15 +222,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 23, 2026</span>
+<span class="date">Sep 24, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Advances in Machine Learning for Drug Repurposing: From Methodologies to Precision Medicine with Case Studies in COVID-19, Parkinson's Disease, and Cancer.</h2>
-<p class="paper-authors">Betel Gurara, Saron Gebremichael, +5 authors, Gayathri Sadanala</p>
+<h2 class="paper-title">Multimodality detection of early relapse in radically treated high-risk HPV-negative head and neck squamous cell carcinoma: study protocol for a prospective multicentre UK cohort study (HERD).</h2>
+<p class="paper-authors">Sanjena Mithra, Ahmed Abdullah Ahmed, +27 authors, Martin Forster</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> This review investigates recent advances in machine learning (ML) for drug repurposing, with applications spanning COVID-19, Parkinson's disease, and cancer. We provide a methodological taxonomy of ML techniques including supervised learning (e.g., random forests, SVMs), unsupervised clustering and dimensionality reduction, deep neural networks, reinforcement learning, and graph-based models such as MLGANN and DTD-GNN highlighting their roles in scalable drug-target interaction prediction and phenotype mapping. Case studies demonstrate how integrated models leveraging heterogeneous data (e.g., gene expression, chemical structure, EHRs) facilitated the identification of repurposable candidates like baricitinib, raloxifene, and rapamycin. Across the reviewed case studies, top-performing models achieved AUROC values ranging from 0.88 to 0.99 on their respective benchmarks, though significant performance degradation (AUROC drops of 0.05-0.15) was observed under cross dataset generalization, underscoring the translational gap between benchmark and real-world performance. We analyze computational challenges, including data sparsity, model overfitting, limited generalizability across datasets, and the interpretability gap in deep learning and GNNs. We discuss integration of explainable AI (e.g., SHAP, LIME), interpretable models (e.g., rule lists, causal graphs), network biology, and federated learning as avenues to improve robustness and translational relevance. Unlike prior reviews focused on single diseases or ML paradigms, this work provides a cross disease analysis exposing shared bottlenecks and identifying disease-agnostic best practices. We examine the role of foundation models and large language models (LLMs) in drug repurposing, including zero-shot molecular property prediction and literature-informed mining. This work outlines an ML-driven framework that balances computational scalability with biological validity, enabling actionable predictions in precision medicine.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42776876/" target="_blank">
+<p><strong>Abstract:</strong> Head and neck squamous cell carcinoma (HNSCC) is the seventh most common cancer globally, with over 12 000 new cases annually in the UK. Despite aggressive radical treatment, approximately 50% of patients with locally advanced (stage III/IV), human papilloma virus (HPV)-negative disease relapse within 2 years, often in the first year. Although current post-treatment follow-up schedules are recommended by clinical guidelines, imaging surveillance is led by symptoms after the initial 3 months and reliable biomarkers for early relapse are lacking. Consequently, recurrences are frequently detected too late for surgical salvage, though timely surgery can improve survival by up to 73% in selected cases. Head and Neck Early Relapse Detection Study represents a large-scale, prospective effort to integrate imaging, genomic, immunologic and microbiome datasets for relapse risk stratification and post-treatment surveillance in this high-risk patient group.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42785937/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Jun 09, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Harnessing computational intelligence for synthetic lethality: A roadmap from network biology to interpretable deep learning in precision oncology.</h2>
+<p class="paper-authors">Yumi Noh, Mohamed El-Agamy Farh, +1 author, Woo Dae Jang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Synthetic lethality (SL) is an emerging therapeutic paradigm in precision oncology that enables the selective targeting of cancer cells based on their specific genetic vulnerabilities. Despite its clinical promise, the enormous combinatorial search space of gene-gene interactions poses a major challenge for experimental screening. This review provides a critical survey of computational SL discovery, moving beyond sequential descriptions to offer a comparative synthesis of architectures ranging from traditional network-based models to advanced graph transformers and knowledge graph reasoning. We address a critical gap in the field by providing evidence-based best practices for methodological evaluation, including rigorous data splitting schemes, metric selection under class imbalance, and strategies for robust negative sampling. Furthermore, we discuss the clinical implications of synthetic rescue, a compensatory phenomenon that bypasses SL-induced cell death and acts as a primary mediator of drug resistance. By integrating multi-omics data, interpretable deep learning, and synthetic rescue mechanisms, we provide a practical translational framework for prioritizing candidates that are robust to resistance mechanisms. This roadmap aims to bridge the gap between computational prediction and actionable clinical insights in precision oncology.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42264143/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
