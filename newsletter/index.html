@@ -29,18 +29,18 @@
 </section>
 <!-- Filtro de keywords -->
 <div class="filter-bar" id="filterBar"></div>
-<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="keyword">bioinformatics, cancer biology</span>
 <span class="date">Oct 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Releasing Protein Cargo from Synthetic Cells by Coupling Cell-Free Expression to Osmotic Actuation</h2>
-<p class="paper-authors">Liu, H., Marlhens, J., +1 author, Koeppl, H.</p>
+<h2 class="paper-title">RASTRO: Branching Point Decision-Making in Unitig Graphs</h2>
+<p class="paper-authors">Behtari, S., Hooshmand, M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Macromolecular release from synthetic cells often relies on membrane pores or channels. We explored whether internally generated osmotic stress could increase membrane permeability and promote release. Using double-emulsion microfluidics, we encapsulated an Escherichia coli cell-free expression system in Pluronic L121 polymersomes to co-express the fluorescent protein mScarlet3 and the dextranase PsDex1711 in the presence of dextran. PsDex1711-mediated dextran hydrolysis produced a greater increase in bulk osmolality than reactions without PsDex1711 DNA. Tracking hundreds of individual polymersomes showed that PsDex1711-containing populations expanded, whereas control populations contracted. The distribution of normalized fluorescence revealed a subset with lower residual fluorescence than the main population. In selected expanded polymersomes, integrated internal mScarlet3 fluorescence declined to 18-22% of peak levels, without visible membrane disruption, consistent with protein release. These findings support a proof of concept for using internal gene expression to promote macromolecular release through osmotic actuation without introducing dedicated membrane pores.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.757017v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> MotivationDe novo genome assembly relies on accurate path selection through complex graphs, yet unitig graph branching points remain a major ambiguity source. Multiple extensions may be equally plausible from topology alone, but sequence-level consistency of competing paths remains largely unexplored. ModelWe introduce RASTRO, a reference-free framework for scoring candidate paths at unitig branching points using nucleotide sequence information. RASTRO-S employs a sample-specific n-gram model to estimate extension plausibility via bits-per-base surprisal, while RASTRO-L uses the Evo2 pretrained DNA language model for autoregressive path scoring. Both operate directly on unitig graphs without reference genomes or assembled contigs. To evaluate branch decisions independently, we develop a read-based validation strategy using boundary k-mers spanning the junction between graph context and candidate extensions. ResultsExperiments on HIV-1 and SARS-CoV-2 unitig graphs from Logan show sequence-based models provide meaningful match with read-supported choices. Among 20,000 sampled branching points, unique read-supported choices were identified for 15,319 HIV-1 branches (76.6%) and 19,882 SARS-CoV-2 branches (99.4%). RASTRO-S improved match from 54.1% to 83.5% for HIV-1 and from 58.6% to 76.4% for SARS-CoV-2 as context length rose from n = 5 to n = 10. RASTRO-L also improved with context length, reaching 49.96% and 49.25% match. Both outperformed random selection and the longest-extension greedy baseline. ConclusionRASTRO provides an efficient, interpretable framework for evaluating ambiguous path decisions in unitig graphs using raw-read evidence rather than contig-level alignment. Results demonstrate the potential of lightweight, sample-adaptive sequence models for improving local decision-making in genome assembly workflows.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.28.754897v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -55,11 +55,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Artesunate Exploits Glutathione-Dependent Redox Vulnerability in Metastatic Lung Adenocarcinoma</h2>
-<p class="paper-authors">Munteanu, P., Neuhaus, S., +6 authors, Grüner, B. M.</p>
+<h2 class="paper-title">Recomb-Mix Cloud: a cost-efficient and scalable cloud-friendly pipeline for local ancestry inference</h2>
+<p class="paper-authors">Wei, Y., Zhi, D., Zhang, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metastatic dissemination remains the principal cause of mortality in lung adenocarcinoma. To identify metabolic vulnerabilities associated with metastasis, we used cell lines with distinct metastatic abilities derived from the KrasG12D;p53KO mouse model. Building on evidence of mitochondrial dysfunction in metastasis-derived cells, we performed an in vivo screen of a focused metabolic drug library using a multiplexed DNA-barcoding platform. This approach identified artesunate as a selective inhibitor of metastatic seeding, which was validated in vivo to reduce metastatic burden while leaving primary tumor growth unaffected. Mechanistically, artesunate induced oxidative stress, characterized by reactive oxygen species and lipid peroxidation. Transcriptomic and mechanistic profiling revealed altered redox homeostasis in metastasis-derived cells. Inhibition of glutathione synthesis specifically sensitized these cells to artesunate, resulting in extensive cell death, whereas primary tumor-derived cells remained resistant. These findings identify glutathione-dependent redox homeostasis as a metabolic vulnerability in metastatic cells that can be specifically targeted using artesunate.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.755294v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Local ancestry inference (LAI) reveals population compositions of an individuals chromo-somes, which empowers population genetics and genetic association studies of diverse populations. The recent availability of large genomic datasets from biobanks offers unprecedented opportunities for LAI. However, such datasets are typically only accessible from cloud-based platforms, and the lack of efficient and cost-effective tooling makes LAI prohibitive for resource-constrained researchers. Here, we develop Recomb-Mix Cloud, a cloud-ready pipeline for LAI based on Recomb-Mix, a recently introduced efficient LAI method. Recomb-Mix focuses on individual variants while maintaining a lower computational burden than other LAI methods focusing on genomic windows. Recomb-Mix Cloud offers a cloud-friendly complete pipeline from panel sample selection, marker alignment, compact reference panel construction, Recomb-Mix threading, and generating LAI calls in common data formats. Recomb-Mix Cloud also offers a set of pre-computed compact population reference panels constructed based on data from the Human Genome Diversity Project and the 1000 Genomes Project. Our results showed Recomb-Mix is about one and two orders of magnitude cheaper and faster than FLARE and RFMix, two popular LAI methods, while offering largely consistent LAI calls on the All of Us Researcher Workbench. The estimated overall compute cost per All of Us sample for whole-genome LAI analysis using Recomb-Mix Cloud with a pre-computed reference panel is just $0.01, compared with $0.43 for FLARE and $4.58 for RFMix. Therefore, Recomb-Mix Cloud is well-positioned to democratize local ancestry-based genetics research on modern biobank-sized data. The Recomb-Mix Cloud pipeline and the compact reference panels are available at https://github.com/ucfcbb/Recomb-Mix.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.28.755192v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -74,11 +74,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Loss of the Y chromosome drives basal identity and metastatic potential via epigenetic reprogramming in pancreatic cancer</h2>
-<p class="paper-authors">Dorsch, M., Beaudry, F. E. G., +31 authors, Grüner, B. M.</p>
+<h2 class="paper-title">AntiCapt: Fine-Tuned Nucleotide Language Models for Predicting and Designing Anticancer Aptamers</h2>
+<p class="paper-authors">Bajiya, N., Mehta, N. K., Raghava, G. P. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Loss of the Y chromosome (LOY) has been largely unexplored in pancreatic ductal adenocarcinoma (PDAC), and no mechanistic framework previously explained its role in tumor biology. We identify LOY as a recurrent, functionally consequential alteration affecting ~50% of male PDAC patients across two independent cohorts, with strong enrichment in advanced disease and, critically, in the basal subtype, establishing LOY as a clinically actionable biomarker. Comprehensive genomic profiling positions LOY as a distinct genetic event associated with TP53 mutations, implicating it in aggressive tumor evolution. Integrative analyses across bulk tumors, single-cell datasets and CRISPR-engineered PDAC models converge on epithelial-to-mesenchymal transition (EMT) as the dominant LOY-driven program. Y-chromosome deletion alone induces EMT transcriptional states, mesenchymal morphology and enhanced metastatic ability. Mechanistically, LOY disrupts epigenetic regulation through loss of Y-linked chromatin modifiers, reshaping DNA methylation at EMT- and basal-defining loci and reducing chemotherapy sensitivity. These findings establish LOY as a causal genetic driver of PDAC progression and a clinically accessible biomarker with direct therapeutic relevance.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.756936v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Over the past decade, aptamers have emerged as promising therapeutics, with cancer therapeutics as a major research area. Existing computational methods, however, either predict aptamer-target pairs or design aptamers against a specific target. In this study, we present AntiCapt, a computational method for identifying single-stranded DNA (ssDNA) anticancer aptamers (ACAs) using sequence descriptors and fine-tuned nucleotide language models. The main dataset comprises 1,021 experimentally validated ACAs and an equal number of non-aptamer sequences. Comparative analysis revealed distinct patterns in the nucleotide, dinucleotide, and trinucleotide compositions associated with ACAs. We developed machine learning (ML) models using composition, autocorrelation, binary profiles and structural features. Among these, the best-performing composition-based model achieved an AUC of 0.93 on an independent dataset, while chemical descriptor-and structural feature-based models achieved a maximum AUC of 0.89. ML models using pretrained and fine-tuned NLM embeddings were also developed, with fine-tuned HyenaDNA embeddings achieving the highest performance, with an independent AUC of 0.94. Furthermore, we developed a model for discriminating anticancer aptamers from general aptamers. The best-performing models were integrated into AntiCapt, a web server and a standalone tool for predicting, designing, and genome-scale scanning anticancer aptamers (https://webs.iiitd.edu.in/raghava/anticapt/).</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.28.754914v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -93,11 +93,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A Ribosomal RNA modification regulates translation of PI3K/AKT activators in high-grade serous ovarian carcinoma</h2>
-<p class="paper-authors">Rivera Pizana, A., Faucher-Giguere, L., +1 author, Abou Elela, S.</p>
+<h2 class="paper-title">RORγ Inverse Agonism Redirects Tumour-Conditioned Emergency Myelopoiesis and Attenuates Established Tumour Progression</h2>
+<p class="paper-authors">Dhoparee-Doomah, I., Ma, K., +15 authors, Cools-Lartigue, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> PI3K/AKT signalling is a key driver of ovarian cancer progression and an important therapeutic target. Its deregulation is usually explained by genetic changes and altered signalling at the cell surface. Here, we identify an additional layer of pathway control, in which a change in the level of a cancer-associated ribosomal RNA modification alters the translation of proteins that regulate PI3K/AKT activity. SNORA81 is a high-grade serous ovarian carcinoma-associated H/ACA small nucleolar RNA that directs pseudouridylation of 28S ribosomal RNA at position U4636. Integration of tumour transcriptomes with independent SNORA81-depletion datasets identified 22 SNORA81-linked transcripts with reversed disease-associated expression, 19 of them linked to PI3K/AKT signalling. SNORA81 depletion reduced AKT phosphorylation, impaired cell growth, migration, and altered cell-cycle distribution. Molecularly, polysome profiling following SNORA81 depletion identified 524 mRNAs with altered ribosome association, 485 of which changed independently of RNA abundance and included 29 PI3K/AKT regulators. SNORA81 depletion reduced ribosome association of ITGB4, RASGRP2, IGF1 and FGF18 transcripts, and reduced ITGB4 and RASGRP2 protein abundance. IRAK1 and SPC24 acted as downstream RNA-response genes contributing to selected SNORA81-associated phenotypes. ITGB4 expression partially restored cell growth and restored downstream RNA responses after SNORA81 depletion. These findings identify rRNA modification as a translational regulator of PI3K/AKT signalling in ovarian cancer.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.757003v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Systemic inflammation is associated with poor outcomes in gastroesophageal adenocarcinoma (GEA), but how it contributes to disease progression remains unclear. We investigated retinoic acid receptor-related orphan receptor gamma (ROR{gamma}) as a regulator of tumour-conditioned myeloid responses. In treatment-naive GEA patients, elevated circulating neutrophil-to-lymphocyte ratio (cNLR) tracked with circulating ROR{gamma} positive neutrophils and tumoural spatial organization of ROR{gamma} positive myeloid cells, rather than neutrophil abundance. In syngeneic tumour models, pharmacologic ROR{gamma} inverse agonism altered marrow progenitor composition before tumour-growth divergence and remodeled myeloid organization across bone marrow, tumour and lung despite no endpoint change in circulating neutrophil proportions, which did not capture the earlier marrow response or subsequent tumour trajectory. ROR{gamma} perturbation enhanced longitudinal tumour control with PD-L1 blockade, whereas effects on metastatic establishment depended on tumour conditioning and treatment timing. These findings identify ROR{gamma} associated myeloid programming as a therapeutically tractable, context-dependent regulator linking systemic inflammation, hematopoiesis, tissue immune organization, and cancer progression.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.01.755741v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -112,163 +112,11 @@
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A ribosomal pseudouridine drives an oncogenic translation program</h2>
-<p class="paper-authors">Faucher-Giguere, L., Rivera-Pizana, A., +9 authors, Abou Elela, S.</p>
+<h2 class="paper-title">The neuronal plasticity gene CRTC1 links survival with mitochondrial programs and tumor microenvironment features in Group 3 β medulloblastoma</h2>
+<p class="paper-authors">Vanini, J., Lupatini, M. M., +2 authors, Roesler, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Dynamic ribosome heterogeneity has emerged as a potential layer of translational regulation, but whether variation in ribosomal RNA (rRNA) modification stoichiometry can selectively control the translation of mRNAs with shared encoded features remains unclear. Here we show that SNORA81-guided pseudouridylation at U4636 controls a selective translational program in ovarian cancer cells. U4636 is partially pseudouridylated and lies within 28S rRNA near eL31 and the peptide exit tunnel. Depletion of SNORA81 reduces pseudouridylation at U4636 without broadly perturbing rRNA processing or bulk translation. Instead, it remodels codon-specific and nascent-peptide-associated pausing and the polysome association of SNORA81-dependent translationally altered mRNAs. These mRNAs display characteristic GC content and amino-acid composition, are enriched in cancer-related functions and show corresponding changes in protein levels. Our findings support a model in which a change in the abundance of a single snoRNA propagates from rRNA-modification stoichiometry through ribosome dynamics and selective mRNA translation to protein output and cancer cell proliferation. We term this multilevel amplification cascade the "sno-balling" effect.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.757013v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">"Double-dipping" in testing for phenotypic differences with scRNA-Seq</h2>
-<p class="paper-authors">Sanchez, N., Etourneau, L., Purdom, E.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> For the purpose of differential expression (DE) analysis in single-cell RNA-sequencing (scRNA-Seq), phenotype differences between samples are often tested within specific cell types. Cell types are regularly imputed by clustering the same gene expression data which is later used for phenotype testing. This creates the potential for a "double-dipping" or post-selection inference problem resulting in inflated rates of false discoveries. While this selection bias is known to inflate significance in cell-type marker identification, its effect on sample-level phenotype testing, e.g. in patient cohorts, has never been explored despite the growing preponderance of this type of analysis. To address this, we perform an extensive simulation study and demonstrate that naive clustering on uncorrected embeddings can severely inflate the False Discovery Rate (FDR) in the presence of strong phenotypic differences. However, we further show that applying batch-correction methods to remove phenotypic effects prior to clustering resolves the FDR inflation with no obvious loss of power. Finally, we provide measures of phenotypic imbalance that can be applied to real datasets which closely track the false discovery proportion and thus can be used to as part of data exploration to gauge the risk of post-selection inflation of p-values in a particular dataset.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.02.756269v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Characterization of cross-family conserved fragments</h2>
-<p class="paper-authors">Chen, X., Tian, P.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> In a companion study, we introduced ProDive and used it to identify 318,289 high-confidence cross-family segment correspondences across all 25,545 Pfam families. Here we characterize the pervasiveness and biophysical context of the resulting mapped fragment resource. Graph-based community analysis shows that segment reuse is broadly distributed across the protein family universe, with thousands of mostly small modules rather than concentration in a small number of family pairs. Comparison between Pfam families and de novo designed proteins reveals an approximately 2.1-fold enrichment of cross-family segment correspondences relative to the Pfam-Pfam background. Mapped fragments are strongly enriched in helix-dominant secondary structures with intermediate solvent exposure, occupy a narrowed sequence-context entropy regime, and show a significant shift toward lower fragment-associated contact order relative to random control windows, directly supporting a folding-compatible local structural regime. Matched annotation analyses show depletion from known domain-based interaction interfaces and mild depletion from strict DisProt disorder. Direct Start2Fold/HDX and{varphi} -value comparisons are limited in scale but connect the same fragment class to folding-related protection: stability annotations support local structural stabilization that may facilitate folding, whereas folding annotations and transition-state enrichments provide more specific evidence for folding initiation or pathway involvement. Together, these results support a physical-constraint interpretation of local structural conservation, in which reusable compact fragments contribute prominently to local stability and folding-relevant local structure, with folding initiation supported in specific subsets rather than as an exclusive mechanism.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.28.754887v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Toward a Transferable Representation of Protein Dynamics for Functional Prediction and Mechanistic Discovery</h2>
-<p class="paper-authors">Monowar, N., Habiba, P. L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein function is determined not only by the static structure of molecules, but also by coordinated conformational fluctuations that occur across various spatial and temporal scales. Molecular dynamics simulations, elastic network models, principal component analysis, and related approaches offer useful descriptions of protein motion. However, representing heterogeneous trajectories in a compact, informative manner that is applicable to proteins with different sequences, structures, and historical evolution is not trivial. Here we present the Topology Invariant Dynamic Graph Network (TIDGN), a deep representation learning approach that encodes protein conformational dynamics into a shared latent representation, termed the protein motion signature (Zp). TIDGN encodes each trajectory as a time-dependent residue-level graph and builds structural connectivity, dynamic cross-correlation, low-dimensional motion features, sequence context, and temporal aggregation into the design. Instead of learning a protein-specific collective variable, the approach learns a representation that retains functionally informative patterns of coordinated motion applicable to different proteins. We evaluate the framework using 1,250 molecular-dynamics trajectories representing 1,120 distinct proteins that range in size from 50-600 residues, 142 CATH/SCOP families, 88 structural folds, and six broad functional classes. The set of trajectories spans durations of 100 ns to 10 (mu)s, sampled at 100 ps intervals, representing approximately 12.5 million conformational frames in total. In the context of a sequence-disjoint evaluation using a 30% sequence-identity threshold, the approach achieves a mean AUROC of 0.8838 (margin of error:) 0.0107 compared to 0.8174 for a dynamic graph neural-network baseline, 0.7257 for a dynamic descriptor, 0.7227 for a PCA descriptor, 0.6592 for a sequence baseline, and 0.6587 for a static-structure baseline. As the biological distance between training and evaluation proteins increases, transfer performance decreases, with AUROC values of 0.92 for random splitting, 0.85 for sequence-disjoint evaluation, 0.78 for family-disjoint evaluation, and 0.71 for fold-disjoint evaluation. Component ablations suggest that graph structure, dynamic cross-correlation, low-dimensional motion features, sequence information, and the combination of these factors contribute to predictive performance. Residue-level attribution, when applied to adenylate kinase, highlights regions that are associated with known conformational rearrangements that involve the LID and NMP domains, offering a biologically interpretable hypothesis about the dynamic information that is encoded by the model. Taken together, these results suggest that it is possible to learn transferable representations of protein dynamics that retain functionally informative patterns of coordinated motion beyond considerations of sequence identity and static structure. Moreover, although the learned representation is transferable, it is not universally invariant to the biological distance between training and evaluation proteins. The resulting approach offers a computational basis for connecting molecular motion, functional prediction, and mechanistically informative representation learning.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.02.756378v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">RGI-Toolkit: Differentiable Restraints for Controllable Biomolecular Structure Prediction</h2>
-<p class="paper-authors">Hori, T., Moriwaki, Y., Ishitani, R.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Diffusion-based models have substantially advanced biomolecular structure prediction. Within this framework, restraint-guided inference (RGI) corrects the denoiser output at each reverse-diffusion step using a differentiable restraint loss, allowing available experimental information, stereochemical requirements, or a specified target conformational state to be incorporated into predictions without retraining the model. Here, we present RGI-Toolkit, a general-purpose Python library that makes RGI available for a range of structure predictors. The toolkit consolidates restraint definition, atom selection, loss evaluation, and coordinate optimization into a shared, backend-agnostic engine, limiting predictor-specific code to a thin preprocessing adapter and a single hook in the denoising loop. Restraints on distances, angles, and dihedrals, on deviations from reference structures, and on user-defined reaction coordinates, together with ligand conformer restraints, are all specified in a common configuration format. The toolkit currently supports six predictors, including AlphaFold3. Across all six predictors, conformer restraints eliminated chirality and cis/trans errors in the predicted ligands and improved their local geometry, while geometric and custom restraints systematically shifted the sampled protein conformations toward the specified target states. RGI-Toolkit thus provides a unified framework for integrating experimental information and prior geometric knowledge into structure prediction and for generating biomolecular structures with specified conformational and stereochemical properties.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756905v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Flock: A Negative-Enriched Protein-Protein Interaction Dataset</h2>
-<p class="paper-authors">Kashif-Khan, N., Gregory, H., Potterton, A. G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein-protein interactions (PPIs) govern fundamental biological processes and are central to therapeutic discovery, yet computational prediction methods remain severely limited by a lack of high-quality negative data (non-interacting PPIs). Existing models are trained almost exclusively on positive interactions or random pairs designated as negatives, while legacy negative datasets are limited in scale and contain correctness errors. To address this, we introduce Flock, a negative-enriched PPI dataset of unprecedented scale, containing 26,934 positive and 377,643 negative pairs. Flock integrates biological assemblies from the PDB with highly confident, curated negatives mined from scientific literature using a state-of-the-art agentic LLM workflow. To address the evaluation leakage seen in protein structure modelling, we also present Flock's Leakage-Free Set, a benchmark that strictly controls for sequence and interface similarity, and historical date-based cutoffs used in the training of co-folding models. Our evaluation reveals that the co-folding model ESMFold2 shows performance degradation on the Leakage-Free set, whereas the protein language model ESMC demonstrates stronger generalisation. Flock provides the most comprehensive and challenging PPI benchmark to date, establishing a rigorous new standard for evaluating the generalisability of protein structure and language models on this task.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.30.755672v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">SynBioCrow: provenance-preserving integration of complementary retrosynthesis engines for biosynthetic pathway design</h2>
-<p class="paper-authors">Heiman, T. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Retrobiosynthesis tools use different reaction rules, search strategies and biochemical priors, so each can recover transformations missed by others. Integrating their outputs could broaden pathway coverage, but ensembling can also worsen ranking. Results: SynBioCrow runs independent retrosynthesis engines, normalizes predictions into a provenance-preserving reaction graph, and separates route generation from biochemical evidence, sequence design and bounded learning. On the frozen 65-path Galaxy-SynBioCAD literature benchmark used for SynBioCrow 2.3, connectivity-level partial recovery was 19/65 for the ensemble, 13/65 for RetroBioCat2, 9/65 for RetroPath and 0/65 for DORAnet; the ensemble preserved two exact RetroPath routes but worsened their ranks. SynBioCrow 2.4 subsequently repaired structured-reaction parsing and target-connected Candidate generation and prospectively locked two new external targets, 1,3-propanediol and 1,4-butanediol, before pathway truth was examined. RetroBioCat2 produced 3 and 2 backend-internal SOLVED search outcomes, respectively, whereas DORAnet produced none; however, neither backend recovered any predeclared explicit literature intermediate by exact structure. The negative prospective result was frozen without post-reveal tuning. Production ranking in 2.4 is therefore NONE and the release remains Candidate-stage; validated complete-pathway recovery is not claimed. Availability: SynBioCrow 2.4.0 is archived at DOI 10.5281/zenodo.23173173 with source code and frozen supporting evidence.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.756997v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Autonomic and neurotrophic signaling in alcohol-associated liver disease</h2>
-<p class="paper-authors">Zhang, Y., Liu, J., +10 authors, Wu, X.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Alcohol-associated liver disease (ALD) is a leading cause of liver-related morbidity and mortality, yet its pathogenesis remains incompletely understood. While neural regulation is critical for hepatic homeostasis, how autonomic and neurotrophic signaling is regulated in the liver during ALD progression remains largely unexplored. Here, we performed an integrative analysis of bulk and single-cell transcriptomic datasets of human livers across the spectrum of ALD. We identified stage-dependent remodeling and coordinated expression patterns of autonomic and neurotrophic genes. Autonomic signaling exhibited a consistent decline, with reduced expression of sympathetic (DBH, TH) and the parasympathetic (ChAT) markers. In contrast, pan-neuronal and neuroplasticity-associated genes (UCHL1, TUBB3, STMN2) were upregulated, indicating active neural remodeling. In parallel, factors such as MANF, GDNF, and NRG2, with the receptor NTRK1, were upregulated and positively correlated with clinical indicators of disease severity, inflammation and fibrosis. In contrast, trophic factors including NTF3 and CDNF, and receptors such as GFRA1 and GFRA3, were downregulated and inversely associated with these parameters. Single-cell analyses revealed that neurotrophic factors are predominantly expressed by hepatic stellate cells, supporting their role as resident neuroglia-like cells in the liver. In another independent cohort, we observed a coordinated downregulation of NTF3 and sympathetic nerve markers in alcohol-associated hepatitis (AH), suggesting impaired NTF3-mediated neurotrophic support may contribute to sympathetic dysfunction in AH. Collectively, these findings uncover previously unrecognized neuro-regulatory dimensions in ALD and suggest that dysregulated autonomic and neurotrophic signaling may contribute to disease progression. Conflict of interestThe authors have declared that no conflict of interest exists.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.27.754815v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 06, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">pre-miRBench: a multispecies benchmark and reference model for animal precursor microRNA prediction</h2>
-<p class="paper-authors">Tzimotoudis, D., Chatzitolios, V. K., +1 author, Georgakilas, G.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether the species and miRNA family are represented in training: known species/known family, known species/held-out family, held-out species/known family, and held-out species/held-out family. We retrained six published pre-miRNA predictors (DeepMir, deepMiRGene, dnnPreMiR, mirDNN, miRe2e and MuStARD) under the same benchmark splits and evaluated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, and the joint species-and-family holdout contained 69 positives and 690 negatives. dnnPreMiR had the highest AP on the joint species-and-family holdout (0.9677 versus 0.9659). The AP difference (pre-miRBench minus dnnPreMiR) was -0.0018, with a paired bootstrap 95% confidence interval of -0.0445 to 0.0341. pre-miRBench establishes a common evaluation for species and miRNA-family holdouts and provides a reproducible reference model for future comparisons. Availability and implementation: Reproducible source code is available at https://github.com/dimostzim/pre-miRBench. Datasets, trained model weights, record-level predictions, evaluation metrics and species-panel metadata for pre-miRBench and the six retrained predictors are available at https://zenodo.org/records/22813044.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.30.755660v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> CREB-regulated transcription coactivator 1 (CRTC1) regulates neuronal development, plasticity, and activity-dependent transcription, but its role in medulloblastoma (MB) remains poorly understood. We investigated expression of the CRTC1 gene during human cerebellar development and across pediatric brain tumors and examined its molecular and clinical associations in MB using public transcriptomic datasets. CRTC1 was broadly expressed in the developing cerebellum, with cell-state-specific variation within the granule-cell lineage. Among pediatric brain tumors, MB showed the highest median CRTC1 expression, which differed significantly among MB molecular groups and subtypes, with highest levels in Group 4 MB. High CRTC1 expression was associated with longer overall survival specifically in Group 3 {beta} MB and remained significant after correction across the 12 molecular subtypes. Within Group 3 {beta} tumors, CRTC1 expression was inversely associated with enrichment of mitochondrial and bioenergetic processes, including oxidative phosphorylation, mitochondrial organization, and mitochondrial translation, whereas CRTC1-high and CRTC1-low tumors displayed distinct transcriptional profiles. CRTC1 was also associated with selected cell-type-related transcriptional signatures related to the tumor microenvironment. These findings identify CRTC1 as a marker of biologically and clinically relevant transcriptional heterogeneity in Group 3 {beta} MB and support further investigation of its functional and prognostic significance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.757146v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -279,15 +127,129 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Oct 06, 2026</span>
+<span class="date">Oct 07, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Receptor tyrosine kinase inhibitors trametinib and axitinib effectively target the neoplastic component of giant cell tumor of bone in vitro</h2>
-<p class="paper-authors">Knechtova, V., Mahdal, M., +5 authors, Neradil, J.</p>
+<h2 class="paper-title">Combined HDAC and ATM inhibition with radiation in preclinical glioblastoma models</h2>
+<p class="paper-authors">Qualls-Histed, S., Chung, K., +13 authors, Mehta, S.</p>
 <div class="paper-abstract">
 <p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.756991v1?rss=1" target="_blank">
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.756776v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Dynamic Schlafen 11 (SLFN11) expression revealed by single-cell RNA sequencing of clonal human cancer cells</h2>
+<p class="paper-authors">Taniyama, D., Inoue, Y., +8 authors, Pommier, Y.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Schlafen 11 (SLFN11) is a key determinant of sensitivity to DNA-damaging therapies in multiple cancers including leukemia, Ewing sarcoma, head and neck cancers, mesothelioma and small cell lung cancer (SCLC). Here, utilizing immunofluorescence microscopy and single-cell RNA sequencing we characterized SLFN11 expression across eight different human cancer cell lines and found cell-to-cell heterogenous expression both at the protein and RNA levels. Gene set enrichment and pathway analyses show that SLFN11 is coexpressed with a distinct stress-response state and enhanced genome maintenance programs while being inversely correlated with protein translation pathways. Publicly available single-cell RNA-sequencing datasets of human SCLC tumors confirmed the heterogeneous distribution of SLFN11 expression and confirmed its association with replication-related transcriptional programs. These findings indicate that heterogeneous SLFN11 expression reflects dynamic regulation at the single-cell level. They also underscore the limitations of bulk proteomic and transcriptome profiling and point to a potential reservoir of intrinsic chemotherapy resistance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.01.755884v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">GRASP: Graph Representation Learning with Assay Supervision for Molecular Properties</h2>
+<p class="paper-authors">Srivastava, S. P., Gorantla, R., +3 authors, Singh, R. K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Molecular structures are abundant, while experimental bioactivity is sparse and distributed across assays. We introduce GRASP, a 93.5M-parameter graph Transformer that learns from these sources in sequence. GRASP first learns molecular structure through replaced-token detection on 1.54 billion ZINC20 molecule presentations, then adapts to sparse bioactivity across 642 ChEMBL assays. Across 23 cluster-held-out OpenADMET endpoints, GRASP achieves a mean MAE of 0.374, compared with 0.383 for CheMeleon, 0.408 for ECFP4-LightGBM, and 0.440 for Chemprop. ChEMBL adaptation reduces mean MAE from 0.407 to 0.374 and improves 21 of 23 endpoints, showing the value of intermediate bioactivity supervision. On 22 TDC ADMET tasks, GRASP gives a better point estimate than CheMeleon on 13 tasks. These results support staged molecular representation learning, where abundant molecular structure and sparse experimental measurements provide complementary supervision at different stages of training.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.28.755019v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Temporal organization of shared brain states characterizes heterogeneity in major depressive disorder</h2>
+<p class="paper-authors">Pan, C., Tu, Y., +3 authors, Zhang, W., the REST-meta-MDD Consortium</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Major depressive disorder (MDD) is biologically heterogeneous, but how this variability is expressed in the temporal organization of brain activity remains unclear. Using resting-state functional MRI from 2,225 participants, we applied hidden Markov modeling to identify recurrent brain states and quantify their temporal organization. Five states formed a shared repertoire across individuals with MDD and healthy controls, while MDD-related alterations were distributed across states, functional systems, and temporal properties. Within MDD, unsupervised clustering of state occupancy, persistence, and switching delineated two prototype neurodynamic architectures characterized by preferential deployment of ACS/VSS or MAS/DMS states within a preserved state repertoire and broadly similar transition backbone. The architectures showed different within-group brain-symptom associations and symptom-network patterns. Connectome transcriptome analyses organized architecture-state imaging patterns into three transcriptomic state families shared across architectures, and contrasting group-level deployment patterns were recovered in an independent MDD cohort. These findings suggest that MDD heterogeneity is expressed not only through spatially distributed neural alterations, but also through differences in how a common repertoire of recurrent brain states is organized over time.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.09.28.754910v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 07, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Desktop iDMS: A stand-alone application of intelligent differential mobility spectrometry (iDMS), a neural net-work that predicts optimal separation and compensa-tion voltages for field asymmetric differential ion mobil-ity spectrometry</h2>
+<p class="paper-authors">Nguyen-Tran, T., Hashimoto-Roth, E., +4 authors, Bennett, S. A. L.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Summary: Mass spectrometry resolution of glycosphingolipids requires advanced separation methods. The virtual-ly identical structures of glycolipid epimers cannot be discriminated by routine multiple reaction monitoring-high-performance liquid chromatography-electrospray ionization-tandem mass spectrometry (MRM-LC-ESI-MS/MS). Sep-aration can be achieved using field asymmetric (differential) ion mobility mass spectrometry (FAIMS/DMS). A major bottleneck to MRM-LC-ESI-DMS-MS/MS method development lies in manually optimizing the compound-dependent parameters of separation voltage (SV) and compensation voltage (CoV). To address this challenge, we developed intelligent Differential Mobility Spectrometry (iDMS). iDMS is a supervised deep neural network that evaluates and predicts the optimal ion mobility SV and CoV parameters for any user-requested monoglycosphingolipid from a training set of measured signal intensities composed of 12 lipids (6 stereoisomer pairs). We initially introduced iDMS as a series of python scripts. Here, we share desktop applications of both iDMS and its pre-processing input data assembly modules (DMS Data Extraction Toolkit). Both software assemblies enable users to rapidly deploy a validated machine learning alternative to manual DMS optimization. The applications are user-friendly, operate with-out need for any technical operating environment, make training dataset assembly quick and simple, and return measured, normalized, and predicted ionograms at every user-interrogated SV, evaluation of separability at each SV and CoV combination, and prediction of optimal resolution parameters to accelerate users MRM-LC-ESI-DMS-MS/MS deployment. Availability and implementation: Desktop iDMS and DMS Data Extraction Toolkit are native desktop applications for macOS (Apple Silicon), freely available for download at https://www.neurolipidomics.com/platforms.html under the GNU v3.0 license. The source code is available from GitHub and Zenodo at https://github.com/Neurolipidomics/iDMS, https://zenodo.org/records/22214408, https://github.com/Neurolipidomics/DMSDataExtractionToolkit, and https://zenodo.org/records/22777403. Bench-marking metrics are available at https://www.biorxiv.org/content/10.64898/2026.08.26.747394v1.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.02.756329v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 07, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">EasyQuant: An automated imaging-based tool for quantifying neutrophil extracellular traps (NETs).</h2>
+<p class="paper-authors">Rita Carlota, Sofia Pascoal, +3 authors, Romy T Meier</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Neutrophil extracellular traps (NETs) play a crucial role in host defense, yet their dysregulation is associated with inflammation and tissue damage. Consequently, researching NETs in vitro is essential for understanding their role in both health and disease. However, accurate quantification of NETs in vitro remains a challenge due to limitations in manual methods and semi-automated tools, which often require extensive user input and/or are time-consuming. Moreover, some methods identify neutrophils and NETs based on a single fixed parameter, such as size, which may lead to inaccuracies in recognizing neutrophils due to the cells' biological complexity. In this study, we developed a user-friendly framework for NET quantification using LABKIT, an ImageJ plugin, together with a custom Jython-based script that streamlines image processing and NET classification. By combining fluorescence microscopy with a machine learning tool, this approach enables rapid, scalable analysis of large multi-dimensional datasets with improved flexibility, reliability, and accessibility. Leveraging LABKIT for quantification ensures objective and consistent segmentation of NETs and neutrophils, reducing user bias and processing time while supporting reproducible data curation. Overall, EasyQuant provides a foundation for a freely accessible pipeline that can be integrated into diverse research workflows, herein specifically applied to improve the accuracy and throughput of neutrophil quantification.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42843754/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 07, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrated Diagnostic and Mechanistic Profiling of Moyamoya and Intracranial Atherosclerotic Disease via Serum Metabolic Fingerprinting Based on SCs-ZIF-8@Au Nanomaterials.</h2>
+<p class="paper-authors">Xinmei Wang, Kangmin He, +8 authors, Jiaxi Wang</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Accurate differentiation between moyamoya disease (MMD) and intracranial atherosclerotic disease (ICAD) remains clinically challenging yet crucial for guiding effective therapeutic strategies. Here, we developed a novel nanomaterial platform (SCs-ZIF-8@Au) to perform high-resolution serum metabolic fingerprinting using nanoparticle-assisted laser desorption/ionization mass spectrometry. By integrating machine learning algorithms with metabolic profiling, we established a robust diagnostic model that accurately distinguished MMD from ICAD and healthy controls (HCs). In a cohort comprising 178 MMD patients, 75 ICAD patients, and 103 HCs, our classifier achieved area under the curve (AUC) values of 0.97 (MMD vs HCs), 0.98 (ICAD vs HCs), and 0.88 (MMD vs ICAD). Beyond diagnostics, mechanistic exploration of key metabolic biomarkers revealed that reduced mevalonic acid in MMD impairs endothelial tube formation and migration by disrupting tight junction integrity, attenuating VEGF signaling, and altering calcium homeostasis in human endothelial cells. These findings link dysregulated mevalonate metabolism to pathological angiogenesis in MMD and support its role in endothelial dysfunction. Together, our study provides a clinically applicable, noninvasive diagnostic tool for MMD and ICAD, while uncovering a previously unrecognized pathogenic mechanism that connects systemic metabolic alterations to cerebrovascular remodeling in MMD.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42842715/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
