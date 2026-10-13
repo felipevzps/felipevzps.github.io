@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">PhageHost-GNN: novelty-aware and locally adaptable strain-level Klebsiella-phage prediction</h2>
-<p class="paper-authors">Momanyi, B. M., Qin, K., +1 author, Fan, L.</p>
+<h2 class="paper-title">BioMod: Biological Module Tokenization for Single-Cell Foundation Modeling</h2>
+<p class="paper-authors">Meng, L., Zhu, J., +13 authors, Xu, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Interest in bacteriophages as alternative treatments for bacterial infections has grown amid the ongoing crisis of multidrug resistance. However, their narrow host range makes it labor-intensive to identify matching phages for bacterial isolates using conventional experimental methods. Although existing computational models based on biomolecular features have shown promise for phage-host matching, the performance of alternative model settings, including data embeddings, across datasets with different degrees of novelty remains underexplored. This study introduces PhageHost-GNN, a novelty-aware framework using routed models to predict strain-level Klebsiella-phage interactions, evaluated under three clinical scenarios. Using multiple embedding models to encode sequence, structural, and genomic-context features, the framework achieved AUPRCs reaching 0.784, 0.731, and 0.642 in host-unseen, phage-unseen, and both-unseen in silico evaluations, respectively. Benchmarks on experimentally validated datasets showed the clearest advantage over fixed embeddings when both hosts and phages were new to the trained model. In addition to direct inference and de novo training, the framework further implements a fine-tuning pipeline to adapt existing models to local custom datasets while reducing model-training time. Overall, PhageHost-GNN provides a flexible framework for model selection, evaluation, and local adaptation in practical phage-therapy screening.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.07.757501v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Single-cell foundation models typically represent cells as flat sequences of individual genes, requiring higher-order biological organization to be inferred implicitly from sparse expression profiles. Similar to the evolution from character-level to semantic tokenization in natural language processing,we hypothesize that cellular states can be more efficiently represented using biologically meaningful intermediate units. Here we present BioMod, a 50-million-parameter single-cell foundation model that introduces biological modules as representation units between genes and cells. BioMod constructs an overlapping vocabulary of 660 biological modules derived from curated pathways and data-driven gene programs, replacing thousands of gene-level inputs with compact module representations. Pretrained on approximately 73 million human cells using high-ratio module masking with an asymmetric decoder, BioMod achieves state-of-the-art performance across cell-type annotation, zero-shot batch integration, perturbation-response prediction and drug-response forecasting while maintaining a compact architecture that enables efficient inference on a single GPU. Module-level analyses further demonstrate that BioMod captures biologically meaningful cellular programs and preserves pathway-level organization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.12.758490v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 13, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">An Expert-Curated Benchmark for Frontier and Local LLMs Querying a Biomedical Knowledge Graph</h2>
-<p class="paper-authors">Medagbe, J. F. P., Kilyungi, B. M., +5 authors, Prins, P.</p>
+<h2 class="paper-title">Do LLM Proposers Improve Budgeted Search for Ionizable Lipids?</h2>
+<p class="paper-authors">Singh, H., SINGH, R. K., +2 authors, Gorantla, R.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> We combine GeneNetwork's 1TB structured database with its metadata as an RDF graph and an associated literature corpus. We benchmark frontier and local LLMs querying it through four architectures: document, graph and agentic retrieval-augmented generation (RAG), and a combination of the three. We evaluate them on 40 domain specific expert-curated questions with a new metric: the satisfaction frequency psi (psi, i.e, the share of questions answered with precision and recall of at least 70% or an f1 of at least 60%). psi ranks systems the same way precision, recall and f1 -- a machine learning metric built from the harmonic mean of precision and recall -- but is easier to read and assess for humans. System architecture had a large effect: with full use of Claude Opus 4.8 the plain document RAG of our earlier GNQA system had a psi of 36% against 86% for our new combined tools. Delegating most of the work from Claude Opus 4.8 to a local model halved query costs while still reaching a psi of 59%.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.04.756532v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Efficient lipid design under limited experimental budgets is a central challenge in computational chemistry and drug discovery. We introduce LEAF (Lipid Evolutionary Adaptive Framework), a matched-budget protocol for testing whether language-model proposers improve combinatorial molecular search relative to classical baselines. The study uses a 30,044-candidate ionizable-lipid space, a frozen Gaussian-process oracle fitted to experimental potency labels, and a separate active-learning surrogate. Four language models evaluated over eight seeds and three splits show no significant improvement over genetic-algorithm or random-search baselines. For Llama 8B, 79.1% of acquisition-selected queries repeat previously evaluated archive members. Removing duplicates reduces the performance gap on some splits but increases proposal cost and can prevent budget exhaustion. Larger models reduce duplication without establishing superiority or equivalence. Exploratory scored prompts and stricter novelty controls yield positive median differences against the genetic algorithm, yet wide intervals and shared-seed dependence preclude stronger conclusions. A validated single-assay reanalysis preserves the chemotype-cold deficit at a smaller numerical scale, and exploratory expected hypervolume improvement does not reverse the result. Follow-up checks address whether proposers genuinely use injected evidence. These checks include a zero-shot leakage probe, rank-only and chain-of-thought-rationale prompts, a score-shuffle perturbation, an evidence-conflict probe, and a genuine reasoning-mode proposer. They show measurable engagement with supplied information without a corresponding performance gain. LEAF isolates proposal quality as the experimental variable and documents a concrete failure mode of zero-shot LLM proposers under controlled budgets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.756984v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Understanding when and how knowledge graphs add value to EHR-based clinical prediction across Parkinson's disease, multiple sclerosis, and chronic pain</h2>
-<p class="paper-authors">Pathak, A., Stroganov, O., +1 author, Khasanova, T.</p>
+<h2 class="paper-title">Optimizing copy number profiles for tumor cell phylogeny inference from low-coverage single-cell sequencing data</h2>
+<p class="paper-authors">Ahmed, N., Weiner, S., +1 author, Bansal, M. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Biomedical knowledge graphs (KGs) have emerged as a promising approach for incorporating biological knowledge into machine-learning models trained on electronic health record (EHR) data. However, their large scale and heterogeneous structure impose substantial computational cost, and it remains unclear whether their benefits generalize across diseases or depend on how the graph is constructed. We systematically evaluated KG integration across three diseases spanning distinct biological and clinical characteristics: multiple sclerosis, Parkinson's disease, and chronic pain. For each disease we compared five modelling strategies, spanning EHR-only features and graph diffusion over concept-level, cohort-derived, disease-anchored, and full SPOKE (Scalable Precision Medicine Open Knowledge Engine) subgraphs, asking whether graph construction affects predictive performance and computational cost, whether KG integration improves classification over EHR-only models, and what the graph does to model behavior. Cohort-derived subgraphs, comprising roughly 45% of SPOKE's nodes and one-fifth of its edges, matched or modestly exceeded the full graph's performance while substantially reducing computational cost in all three diseases. The predictive benefit of KG integration, however, was strongly disease-dependent: it improved classification in Parkinson's disease, had no measurable effect in multiple sclerosis, and reduced performance in chronic pain. These differences were not explained by the amount of biological information incorporated: the disease with the largest shift toward molecular features showed no improvement, the sole beneficiary showed only a modest shift, and the disease with no molecular shift was penalized. Mechanistically, graph diffusion redistributed each disease's existing signal across many correlated features rather than adding independent biological signal, so that any gain depended on whether it added information beyond the EHR. These findings show that cohort-derived subgraphs offer a computationally efficient alternative to full-scale knowledge graphs, and that KG integration functions less as a universal accuracy booster than as a data- and disease-dependent transformation of the patient representation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.04.756605v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Accurate reconstruction of tumor cell phylogenies is crucial for understanding cancer evolutionary dynamics, inferring intra-tumor heterogeneity, and designing effective and personalized cancer treatment strategies. One of the most promising and cost-effective approaches for reconstructing tumor phylogenies for large numbers of cells is to use copy number alteration (CNA) data obtained from low-coverage single-cell DNA sequencing of sampled tumor cells. However, error and uncertainty in inferred copy number profiles (CNPs), resulting from low sequence coverage, can have a drastic negative effect on the reconstruction accuracy of tumor cell phylogenies. Results: In this work, we show that careful selection of bin size, a critical tuning parameter for inferring CNPs, is necessary to maximize the accuracy of tumor cell phylogeny inference. Specifically, we (i) use three previously published low-coverage single-cell DNA sequencing datasets from real tumors to demonstrate that even small changes in bin size can have a drastic impact on downstream tumor phylogeny reconstruction, (ii) show that this effect persists even when using simulated low-coverage datasets generated under idealized conditions with minimal noise, and (iii) propose a simple computational approach to select bin sizes that maximize tumor phylogeny accuracy. Our experiments span a wide range of bin sizes and account for the impact of various factors including coverage-level, phylogeny reconstruction method, and CNP inference method, and explicitly account for phylogenetic reconstruction uncertainty. Our evaluation of the proposed computational approach for bin size selection shows that it can significantly improve tumor cell phylogeny reconstruction accuracy compared to baseline methods. Availability: Freely available from https://github.com/Tanveer14/BinSelector.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756871v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Concurrent de novo inference of cell types and gene regulatory networks with NetMap</h2>
-<p class="paper-authors">Hartebrodt, A., Oubounyt, M., de Almeida, G. P., +4 authors, Blumenthal, D. B.</p>
+<h2 class="paper-title">Efficient approximate Bayesian inference for large, heterogeneous biological datasets</h2>
+<p class="paper-authors">Zanussi, J. T., Miles, C. E.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Existing methods for GRN inference based on single-cell RNA-sequencing (scRNA-seq) data typically require prior cell type calling and then infer GRNs at cell type resolution. This risks propagation of errors from cell annotation to GRN inference. Moreover, it makes existing methods blind to regulatory programs that are shared between different cell types, as well as to subtle differences in regulatory activity between cells of the same type. To address these limitations, we present NetMap, a pipeline that jointly infers cell-level GRNs and clusters cells based on shared regulatory programs, combining state-of-the-art single-cell autoencoders and explainable artificial intelligence methods. NetMap outperforms existing methods on synthetic data with a known ground-truth GRN and is able to reliably detect biologically plausible regulons on real data. Moreover, requiring only a small set of user-provided marker genes, NetMap can be used for GRN structure-informed probabilistic cell type assignment. We demonstrate the utility of this approach using PBMC data, where we achieve near perfect clustering and cell type recovery performance compared with manually created cell type labels. Finally, we applied NetMap to a data set with naive, activated and exhausted T-cells, and were able to verify that NetMap retrieves relevant T-cell state signatures from the data, with two approaches. NetMap can be installed as a python package from https://github.com/bionetslab/netmap and is compatible with the scverse system. Scripts to reproduce our results can be found at https://github.com/bionetslab/netmap-evaluation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.04.756614v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Simulation-based inference (SBI) offers a route to connect biological data with mechanistic models. At the frontier of biology, datasets continue to grow in scale and richness, and increasingly record heterogeneity between individual observations that a mechanistic model can take into account. Approximate Bayesian Computation (ABC) remains a popular approach to SBI due to its ease of use, but incorporating this heterogeneity often requires a separate simulation of each observation, which is prohibitively expensive at scale. A previously proposed technique, minibatch Sequential Monte Carlo ABC (SMC ABC), reduces this cost by simulating a fixed-size random subset of observations for each proposal, at the price of sampling noise that limits precision. Here, we present an adaptive minibatch approach that uses small batches during early exploration and increases the batch size as the posterior is refined. The adaptive batch size is set by the target precision and does not grow with the size of the dataset, so the savings over full-data SMC ABC increase for larger datasets. We demonstrate the method on synthetic biological models and on real single-cell gene-expression data that vary in scale and type of heterogeneity, including cell geometry and initial condition. In each case, the adaptive scheme obtains posteriors close to those of full-data SMC ABC at a fraction of the cost. Altogether, adaptive minibatching improves the tradeoff between speed and precision in SMC ABC and opens the door to mechanistic inference on large, heterogeneous biological datasets.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756786v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CHORUS: A proteome-scale atlas of membrane interaction interfaces constructed using cross-protein language model embeddings from sequences alone</h2>
-<p class="paper-authors">Zhao, J., Huang, S., Sun, J.</p>
+<h2 class="paper-title">Surrogate variables and the risk of overfitting in neuropsychiatric gene expression analyses</h2>
+<p class="paper-authors">Hoang, D., Thompson, R., +7 authors, Beckmann, N.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Membrane proteins drive vital cellular signaling and bioenergetics yet resolving their physical interaction interfaces remains hindered by the paucity of experimental complexes and the breakdown of sequence alignments across hydrophobic bilayers. Here, we present CHORUS, a sequence-only deep-learning framework that decodes interaction sites across membrane proteins without requiring 3D structures, multiple sequence alignments (MSAs), or predefined partner identities. By systematically synthesizing complementary latent representations across diverse protein language model (pLM) families and functional layer depths, CHORUS outperforms 18 established sequence- and structure-based methods across 4,655 homology-isolated test contexts (average precision: 0.643), demonstrating amplified predictive capacity within the lipid-embedded core (0.746). We show that CHORUS delineates quaternary contact boundaries across megadalton respiratory supercomplexes directly from sequences alone (0.984). We deliver the CHORUS Atlas (https://chorus.atlas.sunnylab.org), providing precomputed, residue-resolved interaction landscapes for 80,619 reviewed transmembrane proteins spanning 4,918 species and 33.7 million residues to empower interactome-scale discovery and allosteric therapeutic design.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.04.756538v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The reproducibility crisis in biomedical research calls for re-evaluation of how common analytic approaches affect results. One such approach, surrogate variable analysis (SVA), is widely used to adjust for unmeasured drivers of variation in transcriptomic differential expression analyses. We systematically quantified the impact of SVA using synthetic data with known ground truth and fourteen brain RNA-seq and microarray datasets spanning Alzheimer's disease, autism spectrum disorder, bipolar disorder, schizophrenia, and Parkinson's disease. In synthetic data, SVA usage frequently led to high false positive rates. This issue was not revealed by standard diagnostics nor resolved by strategies such as maximizing cross-dataset signal correlation. In real data, using SVA reduced cross-cohort reproducibility of differential expression signatures regardless of the number of surrogate variables included. These findings show that SVA risks inducing overfitting at realistic signal levels, advocating for a cautious, case-by-case application, with a preference for modeling known covariates.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756826v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Benchmarking interface confidence as a selection criterion for computational nanobody design against survivin's BIR-domain groove</h2>
-<p class="paper-authors">Gately, C., Guan, X., Ding, X.</p>
+<h2 class="paper-title">scGSCA: gene-set differential co-expression analysis for single-cell RNA sequencing data</h2>
+<p class="paper-authors">Jin, Z., Irlmeier, R., +3 authors, Ye, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Designed binders are routinely filtered on predicted interface confidence, which reports how self-consistently a model places an interface, not where it lies. We designed 200 nanobody loops against the survivin BIR-domain groove, co-folded 196, and checked epitope contact in every predicted complex. Confidence showed no detectable association with epitope engagement ({rho} = +0.100, 95% CI -0.04 to +0.24, n = 196); its highest and lowest quartiles failed alike (odds ratio 0.97, 95% CI 0.41 to 2.26). It tracked instead the run's other confidence estimates ({rho} = +0.61). Twelve-seed replication separated two candidates the criteria had not: one reached the complete epitope in 10 of 12 runs, the other never. Across 155 predictions the top-ranked model was no better than one drawn at random from its five (P = 0.610), though only 3 of 31 failed on every model. Nothing was assayed; nb_cand_057 is an in silico candidate only.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.04.753929v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Understanding disease-associated pathway coordination requires distinguishing phenotype-related co-expression changes from differences across cellular contexts while accounting for cells sampled from the same subject. Bulk gene-set co-expression methods do not directly address the sparse counts, single-cell distributional noise, subject-level dependence, and cell-type heterogeneity of single-cell RNA sequencing (scRNA-seq) data. We developed single-cell gene-set co-expression analysis (scGSCA), a framework for pathway-level differential co-expression analysis in scRNA-seq data. scGSCA fits gene-wise zero-inflated negative binomial mixed models with subject-level random effects and computes gene-set co-expression statistics from quantile residual correlations. It provides an overall differential gene-set co-expression analysis and an interaction test to assess whether the co-expression pattern between two cell types varies by sample phenotype. We applied scGSCA to tumor-normal gastric, breast-subtype, and lung-skin comparisons with matched bulk and scRNA-seq data. The overall test identified signals not captured in bulk analysis, including Axon guidance in gastric cancer and estrogen-response, IL6-JAK-STAT3, and TNF/NF-{kappa}B pathways in breast cancer. The interaction test further identified co-expression contrasts across cell types. scGSCA extends gene-set co-expression analysis to single-cell data while retaining subject-level structure and cell-type-specific context. scGSCA is freely available as an open-source R package.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756579v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">CRISCross: Integration of Epigenetic Information for Deep-Learning-Based Prediction of CRISPR-Cas9 Off-Targets Across Cell Types</h2>
-<p class="paper-authors">Jobson Pargeter, W., Rabsch, D., +6 authors, Backofen, R.</p>
+<h2 class="paper-title">CLARA: Compound Library Active Learning with Reasoning Agents</h2>
+<p class="paper-authors">Srivastava, S. P., Saxena, V., +2 authors, Singh, R. K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> CRISPR-Cas9 enables precise genome editing but remains limited by off-target effects, raising safety concerns and necessitating accurate prediction. Although epigenetic features influence Cas9 binding and cleavage, their predictive signals are often weak, highlyvariable, and context-dependent, limiting the effectiveness of existing machine learning approaches. Cross-cell-type settings are especially challenging: epigenetic landscapes differ substantially, and models trained on one cell type frequently fail to generalize. Here, we systematically investigate the role of epigenetic context in off-target prediction and demonstrate that its utility depends on modeling interactions with sequence features rather than treating it as an independent signal. Tabular and deep learning experiments demonstrate that epigenetic features provide a consistent but modestly complementary signal, and that late-stage fusion strategies are insufficient to effectively exploit this information. To address this, we introduce CRISCross, a cross-attention-based architecture that captures sequence-epigenetic interactions at the nucleotide level, alongside CRISPRAT, a synthetic pretraining strategy that learns transferable representations from genome-derived sgRNA-off-target pairs without relying on dataset-specific pretraining. CRISCross, incorporating AlphaGenome-derived chromatin accessibility signals, shows better predictive performance than sequence-only baselines across three independent test datasets spanning two cell types, demonstrating improved generalization across guide RNAs, datasets, and cellular contexts. This is particularly relevant for therapeutic applications involving cell types or patient-derived contexts that lack dedicated experimental datasets. In such settings, predicted chromatin accessibility may provide scalable contextual information when direct epigenomic profiling is unavailable or impractical. Together, these results show that accurate CRISPR off-target prediction benefits from interaction-aware integration of epigenetic context alongside generalizable pretraining strategies.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.09.757843v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Batch active learning for ligand discovery requires a recurring decision about whether to exploit high predicted affinity, reduce model uncertainty, or broaden chemical coverage. We test whether a language model can make this strategy-level decision while candidate ranking and label revelation remain controlled by a deterministic Gaussian-process environment. Across four protein targets, ten paired seeds, and a 360-compound assay budget, a GPT-5.6 Sol agent outperformed random sampling in all 40 matched campaigns. Its final top-2% recall was 0.412 on D2R, 0.374 on Mpro, 0.448 on TYK2, and 0.683 on USP7. It was statistically tied with the strongest fixed policy on Mpro and USP7 but underperformed target-specific leaders on D2R and TYK2. The agent shifted from exploration-oriented early batches toward exploitation and produced 686 testable threshold claims with an 86.3% atomic success rate, although 19.8% of forecasts were not numerically scorable. In 200 prespecified information-ablation campaigns, removing uncertainty, diversity, or memory caused only small endpoint changes, while shuffling explanatory evidence reproduced the full allocation path in 39 of 40 paired campaigns. A deterministic 80% availability constraint reduced recall on every target but preserved the target-dependent pattern of wins and losses. These results support language-model strategy control as a feasible and auditable layer.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756921v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,72 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DNA methylation-based prediction of differentiation state at cell-type resolution reveals an age-associated epigenetic mesenchymal drift</h2>
-<p class="paper-authors">Teschendorff, A., Tong, H., Guo, X.</p>
+<h2 class="paper-title">How Bacterial Growth-Phase Reshapes Synthetic Gene Circuit Function</h2>
+<p class="paper-authors">Lu, E. J., Del Vecchio, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Quantifying the differentiation state of cells is an important task in regenerative medicine, cellular reprogramming and in elucidating how differentiation hierarchies are altered in aging and disease. For DNA methylation data (DNAm) there is however an accute shortage of methods for quantifying differentiation state. Here we use machine learning to build EpiDiff, a predictor of differentiation that yields a continuous absolute differentiation index (DI) when applied to a DNAm sample. We extensively validate EpiDiff in single-cells, sorted cells and bulk tissue, as well as in in-vitro differentiation, organoid, reprogramming and cellular rejuvenation experiments. In mixed samples, EpiDiff measures the extent of differentiation across all cellular lineages. In sorted cell populations, we find that DI increases with age and, underpinning this increase, we discover that many cell-types undergo a developmental epigenetic drift that is most prominent towards the mesenchymal lineage. When applied to normal-tissues, EpiDiff is predictive of carcinogenic exposure and cancer risk. In summary, EpiDiff is a unique, general and versatile tool that can accurately quantify the global differentiation state of a DNAm sample with broad applicability to many disciplines.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.10.758162v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> The development of biological engineering tools have improved the ability to embed novel functions into living organisms. Concurrently, our understanding of the interface between synthetic genetic circuits and their host has accelerated in the past decade, enabling the development of context-aware predictive models. However, long-term circuit function remains difficult to predict when designs operate in field-relevant conditions. Specifically, while synthetic genetic circuits are typically characterized during exponential growth, these must operate for extended periods of time in nutrient-limited conditions and where bacteria enter stationary growth phase. In this work, we construct a mathematical model that captures the dynamics of a genetic circuit as cells transition into stationary growth phase. To achieve this, we construct synthetic genetic circuits with fluorescent reporter output and measure plasmid DNA copy number, mRNA level, protein level, and live cell count over the course of one week in stationary growth phase. We find that transcription rates plummet shortly after entering stationary phase but settle at a basal value that depends on both the promoter and ribosome binding site. Translation rates also decline in stationary phase, but protein accumulation due to lack of cell division can increase protein levels well beyond exponential phase. Our model recapitulates these findings and is capable of predicting the output of new genetic circuits. This model can serve as a tool to determine how a genetic circuit design may change on longer time scales where cells enter stationary growth phase.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.09.752898v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Structure-Based Drug Design of Novel Inhibitors Targeting the Thiamine Biosynthesis Pathway in Bacteria</h2>
+<p class="paper-authors">Krishna, N., Ulaganathan, V.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Current generation antibiotics are limited by poor target selectivity and are often mismanaged, leading to widespread antimicrobial resistance. The bacterial thiamine biosynthesis pathway offers compelling alternative since it is highly essential for bacterial survival and yet absent in humans. Genetic perturbations within pathway lead to documented auxotrophy and virulence defects, indicating low mutational tolerance within this pathway. Thiamine phosphate synthase is a key bottleneck enzyme performing the crucial role of coupling thiazole and pyrimidine moieties to form thiamine monophosphate. To develop a suitable inhibitor against it, a structure-based drug design pipeline was implemented. High-throughput virtual screening of nearly 1.5 million molecules provided sufficient exploration of chemical space. Further, R-group substitution was utilized for lead optimization. Structure-Activity Relationship analysis upon molecular mutants reveals patterns among R-group interactions to catalytic residues across various scaffolds. Additionally, ADMET screening and validation using molecular dynamics simulations resulted in a potent orally bioavailable broad-spectrum bactericidal molecule.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756923v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">High-performance xenograft read-sorting for DNA methylation analysis</h2>
+<p class="paper-authors">Altendorfer, S., Zentgraf, J., +3 authors, Rahmann, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Xenograft sorting tools separate sequenced DNA reads by species. We have enhanced the computational method and tool Xengsort to enable efficient epigenetic profiling of patient-derived xenograft models; it now supports cytosine-converted whole genome or reduced-representation data. Benchmarking Xengsort against several established methods (ICRG, bamcmp, XenofilteR) revealed consistently high accuracy across tools, but Xengsort outperformed the other tools in computational efficiency due to its alignment-free design.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.06.756952v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Oct 12, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Probing isn't Causality in Molecular Models</h2>
+<p class="paper-authors">Srivastava, S. P., Krishna, S. C., +1 author, SINGH, R. K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Linear probes establish whether a chemical variable can be recovered from a molecular representation; they do not establish how that variable contributes to subsequent predictions. We replace a concept-associated scalar component at an intermediate block and measure the change through a separately fitted downstream outcome readout. Comparisons with random directions and architecture-matched random encoders distinguish recoverability, intervention selectivity, and a pretraining-associated selectivity advantage. In Uni-Mol, block-12 total-distortion edits predict the observed energy-change sign for 97.6% of held-out pairs, with Spearman $rho=0.787$. Structure-clustered intervals for the primary direction and encoder contrasts exclude zero. A stricter 20-direction sensitivity analysis does not survive correction across six cells. A post-review analysis finds substantial concept--outcome alignment; intervention effects persist after removal of the same-block outcome direction, but this does not establish that subsequent encoder computation is necessary. In MolCLR, pretraining improves dipole recovery by $0.080,R^2$, whereas concept-minus-random sign-accuracy contrasts are $0.029$ and $-0.015$ at the two tested blocks. Their paired uncertainty is unresolved, so they do not establish an absence of selective effects. We propose an operational evidence ladder whose conclusions are conditional on the concept, intervention, control family, and fitted readout.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.05.756781v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +241,53 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Oct 11, 2026</span>
+<span class="date">Oct 12, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Optimizing Therapeutic Protocols: Insights from Neural Network Analysis of Fractional-Order Tumor Models.</h2>
-<p class="paper-authors">Khalid K Ali, Mohamed S Mohamed</p>
+<h2 class="paper-title">Understanding cell fate decisions with temporal attention.</h2>
+<p class="paper-authors">Florian Bürger, Martim Dias Gomes, +2 authors, Katarzyna Bozek</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> This paper describes a mathematical model of tumor growth during chemotherapy, employing a fractional calculus approach to account for the interactions between cancer cells, normal cells, immune cells, and drugs. This method better reflects the role of biological memory, or the state of a system at a given point in time. Using the analysis of neural networks to solve the mathematical equations, it is shown how the treatment regimen impacts the development of these cell levels over time. These simulations test the following biologically relevant parameters: the strength of the immune response, the effectiveness of the drugs, the rates of growth of cancer cells versus other cells, and the spatial geometry of the tumor micro-environment. The results show how cancer cell decline, immune system stimulation, and healthy cell repopulation interact in time. It is shown that by adjusting the parameters of the chemotherapy regimen, it is possible to optimize tumor reduction while maintaining healthy cell levels. This study suggests that complex calculus models of biological systems like cancer development can provide the means for more effective chemotherapy.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42860149/" target="_blank">
+<p><strong>Abstract:</strong> Understanding non-genetic determinants of cell fate is critical for developing and improving cancer therapies, as genetically identical cells can exhibit divergent outcomes under the same treatment conditions. In this work, we present a deep learning approach for cell fate prediction from raw long-term live-cell recordings of cancer cell populations under chemotherapeutic treatment. Our Transformer model is trained to predict cell fate directly from raw image sequences, without relying on predefined morphological or molecular features. Beyond classification, we introduce a comprehensive explainability framework for interpreting the temporal and morphological cues guiding the model's predictions. We demonstrate that prediction of cell outcomes is possible based on the video only, our model achieves balanced accuracy of 0.94 and an F1-score of 0.93. Attention and masking experiments further indicate that the signal predictive of the cell fate is not uniquely located in the final frames of a cell trajectory, as reliable predictions are possible up to 8 h before the event. Our analysis reveals distinct temporal distribution of predictive information in the mitotic and apoptotic sequences, as well as the role of cell morphology and p53 signaling in determining cell outcomes. Together, these findings demonstrate that attention-based temporal models enable accurate cell fate prediction while providing biologically interpretable insights into non-genetic determinants of cellular decision-making.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42862872/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 12, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Leveraging traditional and advanced machine learning for comprehensive oncology data integration and outcome prediction.</h2>
+<p class="paper-authors">Grace Hey, Michael Del Sesto, +6 authors, Ashley P Ghiaseddin</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Outcome prediction in neuro-oncology remains challenging due to heterogeneity in tumor biology, imaging characteristics, treatment response, and patient-specific clinical factors. Although molecular databases have advanced understanding of brain tumor biology, many datasets lack broader data necessary for generalizable predictive modeling. Artificial intelligence (AI) and machine learning (ML) are increasingly being explored to integrate these heterogeneous data sources and support precision neuro-oncology.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42862479/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Sep 10, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Teamwork makes the dream work? Ensemble learning in computational pathology.</h2>
+<p class="paper-authors">Stefan Schulz, Sebastian Foersch</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> In this issue of Cancer Cell, Luo et al. report an ensemble approach that integrates five pretrained pathology foundation models into a slide-level representation to exploit their complementary information, yielding improvements in tumor subtyping, biomarker, and therapy-response prediction. This shows the potential of ensemble and multimodal approaches in computational pathology.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42721960/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
