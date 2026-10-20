@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 20, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Hierarchical distribution matching enables comprehensive characterization of common and condition-specific cell niches in spatial omics data</h2>
-<p class="paper-authors">Liu, Y., Xiao, J., +5 authors, Yang, C.</p>
+<h2 class="paper-title">GOLDEN: Gene expression and allele-informed decomposition for genetic heterogeneity in spatial transcriptomic data</h2>
+<p class="paper-authors">Paik, H.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Deciphering cell niches in complex tissues is essential for understanding tissue structure and disease. Recent advances in spatial omics have enabled subcellular resolution and accurate cell identity mapping. However, robust delineation of cell niches and disease-associated spatial patterns remains difficult. We introduce Harmonics, a novel computational framework that systematically identifies both common and condition-specific cell niches from spatial omics data through hierarchical distribution matching. Harmonics also includes a suite of downstream modules that facilitate comprehensive niche characterization. We demonstrate its scalability, accuracy and generalizability across datasets spanning diverse species, tissues, diseases, spatial modalities, and technological platforms. For condition-agnostic datasets, Harmonics outperforms baseline methods in both accuracy and robustness, and further demonstrates the capability to resolve niche structures at finer granularity. Across diverse diseases including pulmonary fibrosis, triple-negative breast cancer, and colorectal cancer, Harmonics enables precise identification of condition-specific niches and reveals disease-associated dynamics, subtype-specific spatial patterns, and structured immune architectures. We envision Harmonics as a practical and versatile tool for spatial niche analysis that can be applied across a wide range of biological contexts and seamlessly integrated with existing spatial omics workflows.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.12.758505v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation Spatial transcriptomics (ST) enables exploration of cellular interactions, including immune responses. However, current methods rely on pathologists, with limitations in addressing genetic heterogeneity, where niches harboring nonclonal cells, including placental or allograft tissues, are present. Deciphering these interindividual mixtures remains challenging. Results For deciphering interindividual heterogeneity in ST, we developed GOLDEN (Gene expressiOn and aLlele-informed DEcomposition for geNetic heterogeneity), which involves an allele-aware multitask network that encodes spot-level expressions into shared latent representations. Incorporating allele features, dual heads classify spot identity (target, nontarget, or mixed) and estimate target fractions. We utilized synthetic ST data with spot-level ground truth using semiallogeneic single-cell profiles. For these synthetic benchmarks, GOLDEN achieved reliable deconvolution, with high correlation (Pearson's r = 0.977) and low error (mean absolute error (MAE) = 0.045) in fraction estimation and consistent predictions across real-world STs. These predictions were genetically validated. Using GOLDEN, resolving spot-level genetic heterogeneity is feasible. Availability and implementation GOLDEN and the simulation code for ST are available at https://github.com/othertics/GOLDEN.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.18.759920v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">An integrated database of ion channels</h2>
-<p class="paper-authors">Gaikwad, K. B., Parthasarathi, K. T. S., +2 authors, Sharma, J.</p>
+<h2 class="paper-title">CytoRipple: Mapping Tissue Polarization through Subcellular Cytoskeleton Dynamics</h2>
+<p class="paper-authors">Chen, D. G., Yee, T., +6 authors, Campbell, K. M.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Ion channels play critical roles in a wide range of physiological processes, including the propagation of nerve impulses, insulin secretion and regulation of heart rate. Alterations in ion-channels function or expression can contribute to the development of various diseases, including cancers, genetic disorders, and infectious diseases. Ion channels represent the second-largest class of membrane proteins considered potential targets for therapeutic intervention. However, a comprehensive data resource integrating information on human ion channels and their associations with diseases has been limited. Therefore, the Integrated Database of Ion Channels (IDIC) was developed, comprising information on 493 human ion channels. The database contains a broad range of ion-channel annotations, including gene and protein information, structural details, protein signature sequences, protein domains, nuclear localization signals, and signal peptides. It also provides cross-references to several established biological resources, including the Human Genome Organization Gene Nomenclature Committee (HGNC), National Center for Biotechnology Information (NCBI) Gene, Vertebrate Genome Annotation (VEGA), Ensembl, and the Protein Data Bank (PDB). Furthermore, IDIC incorporates genomic variations identified in various tumors and disease associations involving ion channels, which have been systematically curated from published literature. Through concise search methods and user-friendly browsing functionalities, IDIC serves as an integrated resource for exploring human ion channels and investigating their structural, functional, genetic, and disease-related characteristics. Thus, the database can facilitate a better understanding of ion channels and their potential involvement in diverse human diseases.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.12.757514v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Spatial multi-omic technologies entail simultaneous measurement of tens-to-thousands of molecular features (e.g. RNA, protein). While cell type and state profiling is the major focus of spatial multi-omic analyses, cytoskeletal proteins are often solely utilized for cell segmentation and quality control. Here, we introduce a new computational framework, CytoRipple, that leverages these concomitant spatially-resolved single-cell measurements of cytoskeleton proteins to identify tissue-level vector fields. Polarization vectors are known to associate with cell movement and phenotype, inferring their physical orientation. We validate these associations across biological contexts and reveal how polarization vector fields can be harnessed to discover multi-cellular structures (e.g. "streams" of cells with similar polarizations). These multi-cellular cytoskeleton dynamics associate with distinct phenomena, such as vector "divergence" with CD8+ T cell activation and "streams" with spatially segmented stages of the anti-tumor immune response. Together, these data support a role for CytoRipple in revealing a dynamic layer across spatial multi-omic platforms.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.755787v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Distance-AF Multimer: A Multi-Step Approach for Protein Complex Structure Modeling with User-Defined Distance Constraints</h2>
-<p class="paper-authors">Ling, K., Zhang, Y., +2 authors, Kihara, D.</p>
+<h2 class="paper-title">Unsupervised source separation and clustering of soundscape recordings predicts avian richness in hyperdiverse systems</h2>
+<p class="paper-authors">Hopping, W. A., Srinivasan, S., +5 authors, Barlow, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The three-dimensional structure of proteins provides essential insight into the molecular mechanisms underlying their function. Many biological activities are mediated through protein interactions, making accurate structural determination of protein complexes important. Despite significant advances in computational protein structure prediction, there are still many cases where protein complexes are not correctly assembled. In particular, there are cases where experimental data, such as distances between residue pairs in interacting proteins are available, yet existing prediction methods fail to produce models consistent with these data. Here, we present Distance-AF Multimer, a method that guides and refines AlphaFold-Multimer docking predictions using user-provided residue pair distance information. This approach extends our previously successful data-guided single-protein modeling method, Distance-AF. Distance-AF Multimer operates in a two-step process, starting from multiple initial conformations and iteratively refining them to satisfy the provided distance constraints. We evaluated Distance-AF Multimer on protein-complex benchmarks spanning different chain counts and docking errors, demonstrating competitive or superior performance compared to other existing deep-learning-based structure prediction methods. In addition to dimer cases, we also demonstrated the potential of Distance-AF Multimer for large-scale protein assemblies containing multiple chains, including those with more than 5 chains.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.14.759232v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> 1: Passive Acoustic Monitoring (PAM) has emerged as a leading approach for biodiversity research, but analysing the vast quantities of data produced by this method remains challenging. Acoustic indices are often employed to estimate species richness in soundscape recordings, but their generalisability and overall efficacy in speciose regions has increasingly been challenged. An alternative, multi-species classification models, still suffer from performance limitations, particularly in the tropics. 2: We introduce an unsupervised approach that estimates avian species richness using an integrated source separation model trained on birds (BirdMixIT), a leading bird vocalization embedding model (Perch 2.0), and hierarchical agglomerative clustering. We count the clusters of embeddings generated from separated channels to estimate the species richness in recordings at differing timescales. 3: We test the generalisability and predictive performance of our approach, "source-clustering", using a large combined dataset featuring 103 total hours of manually-annotated soundscape recordings from the Amazon rainforest in Peru and Brazil. To compare the performance of source-clustering to existing approaches, we estimated species richness in the same recordings with both traditional acoustic indices and Perch classifications at various confidence thresholds. 4: Our source-clustering method performed consistently well between our separate datasets. Source-clustering performed better for predicting avian species richness than traditional acoustic indices at all levels, and was complementary with Perch, performing similarly overall to its best settings combinations, though it was more robust for short recordings, and should be more resilient in locations with less training data. Source-clustering generally predicted species richness better than the best-performing Perch settings at the 15-second, 1-minute, and 15-minute temporal resolutions, while most settings of Perch performed better at the 1-hour resolution. 5: Source-clustering can complement or exceed the performance of presently established methods for estimating avian species richness from soundscape recordings, namely traditional acoustic indices and the out-of-box versions of leading automated identification modes. This is particularly true at narrow temporal resolutions, in systems where training data is scarce, and where species density is high enough to generate significant overlapping vocalisations, rendering it especially useful in hyperdiverse tropical ecosystems where other methods for interpreting soundscape recordings face persistent challenges.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.758826v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Metalink: Joint taxonomic and functional profiling of metagenomes and metatranscriptomes across resolution scales</h2>
-<p class="paper-authors">Li, L., Wang, Y.</p>
+<h2 class="paper-title">OFC-SV: Interpreting structural variants in African and Asian cohorts with non-syndromic orofacial clefts</h2>
+<p class="paper-authors">Chen, K., Chung, Y., +2 authors, Shin, D.-G.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Metagenomic and metatranscriptomic analyses remain largely fragmented: taxonomic and functional profiling are performed separately, often at a single resolution (reads, contigs, or MAGs) yielding separate species or function lists rather than mechanistic insights. Here, we developed Metalink, a tool that unifies taxonomic and functional profiling into coupled outputs across all three resolution levels. Metalink is built on three innovations. First, we constructed a Last Common Function-based functional Hierarchy (LCFH) from ~424 million proteins, organizing KEGG Orthologs into a tree structure that enables LCA-like functional assignment. Second, a unified framework integrates the taxonomy of Genome Taxonomy Database (GTDB), the International Committee on Taxonomy of Viruses (ICTV), and NCBI for consistent classification across reads, contigs, and MAGs. Third, a multi-level integration strategy with overlap-based deduplication balances accuracy and completeness. At the read level, Metalink exceeds both HUMAnN3 and eggNOG-Mapper in functional assignment accuracy while running ~30-fold faster and 1,000-fold faster, respectively; at the contig level, its functional profiles remain highly consistent with eggNOG-Mapper. Multi-level integration further improves taxonomic resolution over single-level analyses and outperforms leading taxonomic profilers on the CAMI II benchmarks. Metalink's joint outputs move the analysis of metagenomes and metatranscriptomes from cataloging species and functions toward mechanistic inference of species-function-environment triadic associations. By enabling these integrated analyses across resolution scales, Metalink provides a general framework for linking community composition to its functional potential across diverse ecosystems.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.759005v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> OFC-SV is a web-based data portal designed to help interpret structural variants (SVs) in non-syndromic orofacial clefts genomic data published by The Gabriella Miller Kids First Pediatric Research Program. The portal offers a user-friendly way to explore 41 novel SV genes (of these 13 sharing regulatory perturbations already reported in the literature as SNV genes) potentially responsible for non-syndromic OFC (nsOFC) from a cohort of children of African and Asian ancestry. A salient feature of the portal is its unique ability to capture epigenomic disruptions and complex oligogenic interactions in visualized regulatory pathways, thus advancing the frontier of disease etiology through convenient translation of computational signals into biological interpretations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.757087v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">RiboBridge couples RNA backbone generation to sequence design through a learned interaction topology</h2>
-<p class="paper-authors">Ma, Z., Zheng, Y.</p>
+<h2 class="paper-title">LongVerse: verified AI agents for Nanopore and PacBio DNA methylation analysis</h2>
+<p class="paper-authors">Liu, Y., Zhang, Q., Li, S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Designing ribonucleic acid (RNA) molecules with prescribed structures and functions is central to RNA engineering. Backbone-first approaches generate three-dimensional geometry before assigning a nucleotide sequence, yet leave open how that geometry should be represented for downstream sequence design. Here we introduce RiboBridge, which infers a probabilistic residue-pair state from backbone geometry, recycles binary pair probabilities through a second pass and transfers binary and typed signals as soft attention biases for sequence decoding. On 550 generated backbones, pair-type decoding achieved joint refolding validity of 0.451 versus 0.335 for an architecture-matched topology-free decoder. On a matched 110-backbone intervention cohort, replacing aligned pair states with exact-length donors matched on pair-state statistics reduced joint validity from 0.464 to 0.214, showing backbone alignment matters. Pair-confidence ranking enriched the joint-validity rate from 0.451 overall to 0.596 among the top 248 before external refolding, with the same ranking signal transferring to independently generated RFDpoly and RNA-FrameFlow backbones. On 53 experimentally determined backbones, pair-coupled decoding improved secondary-structure agreement relative to residue-wise argmax. These results support a learned relational interface between sequence-free backbone generation and sequence design.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.15.759394v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> AI agents now run sequencing pipelines, but their outputs are checked by proxy, with rubrics or language-model judges. LongVerse turns one English sentence into haplotype-resolved DNA methylation from Nanopore or PacBio reads, through agents that read the data, supply arguments to a pinned pipeline and never write code. On HG002, a healthy reference genome, agent and human expert produced byte-identical calls (r = 1.000) that agreed with bisulfite sequencing (r = 0.943, 0.884), at $0.12 to $0.54 of conversation per run. A consensus agent that admits any per-site caller reduced error 10.7 percent against the best published caller.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.758965v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DeepD enables efficient genome modeling and controllable long-context sequence generation across domains of life</h2>
-<p class="paper-authors">Lai, J., Xin, B., +14 authors, Zhao, H.</p>
+<h2 class="paper-title">CROSS-PLATFORM CONCORDANCE ANALYSIS REVEALS ROBUST AND CLINICALLY RELEVANT GENE SIGNATURES IN BREAST CANCER</h2>
+<p class="paper-authors">Imhanbor, J. O., Fatai, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Genome foundation models hold great potential for advancing biological research, but modeling diverse complex genomes and generating controllable genome-scale sequences remain challenging. We present DeepD, a phylogeny-informed sparse mixture-of-experts model operating at single-nucleotide resolution over a 1-million-token context while reducing active computation. Pretrained on unselected whole-genome sequences across all domains of life, DeepD learns genic and intergenic sequence features and supports broad sequence-to-function prediction across species. DeepD performs well in human protein fitness and disease variants effect prediction, such as BRCA1 and BRCA2, with particular strength in regulatory regions, such as promoter and transcription-factor binding sites. Expert routing captures exon-intron boundaries, transposable elements, and distal cis-regulatory elements. DeepD also generates experimentally validated core promoters with specified transcriptional strengths. Finally, the Context-Anchor-Body strategy enables generation of complete yeast chromosome sequences and megabase-scale Arabidopsis segments, preserving gene structure and order while introducing variations within natural ranges. Together, DeepD is an efficient genome foundation model that unifies accurate sequence-to-function prediction with controllable genome-scale generation, advancing predictive and generative design of complex genomes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.758170v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Abstract Background: Breast cancer is a molecularly heterogeneous disease characterized by diverse transcriptional programs across tumor subtypes. RNA sequencing (RNA-seq) has become a central tool for profiling these alterations; however, variability in data processing pipelines can introduce inconsistencies in downstream analyses, limiting the identification of robust and reproducible gene signatures. Methods: We implemented a three-phase integrative framework to identify high-confidence gene signatures in breast cancer. The framework comprised: (i) a discovery phase involving differential expression analysis across two independent RNA-seq workflows; a STAR-counts pipeline applied to a balanced TCGA-BRCA cohort (30 tumor vs. 30 normal samples) processed via TCGAbiolinks, and a Salmon-based pseudo-alignment pipeline applied to an independent SRA-derived dataset (3 tumor vs. 3 normal samples) processed from raw sequencing reads; (ii) a cross-dataset concordance phase identifying consensus upregulated genes through gene symbol intersection analysis; and (iii) a validation and clinical characterisation phase comprising large-scale validation in the full TCGA-BRCA cohort (n = 1,093 tumors, 112 normal samples), functional enrichment, PAM50 subtype stratification, survival analysis, and cancer cell line expression profiling. A multi-criteria scoring framework was applied to prioritize potential drug targets. Results: A total of 666 genes were consistently upregulated across both discovery datasets, indicating strong cross-platform concordance. Of these, 502 genes (93%) were validated as upregulated in the full TCGA cohort, demonstrating high reproducibility. Functional enrichment analyses revealed dominant involvement in cell cycle regulation, chromosomal segregation, and DNA repair pathways. Subtype analysis showed a marked enrichment of these genes in Basal-like and HER2-enriched tumors, highlighting their association with more aggressive disease phenotypes. Survival analysis identified a subset of genes significantly associated with poor overall survival, while cell line validation confirmed expression in breast cancer models. Integration of these features enabled the prioritization of candidate genes with potential therapeutic relevance. Conclusion: This study demonstrates that integrating two independent RNA-seq analytical workflows (a STAR-counts pipeline applied to a balanced TCGA-BRCA discovery cohort and a Salmon-based pipeline applied to an independent SRA-derived dataset) enables the identification of robust and clinically meaningful gene signatures in breast cancer. The high concordance observed across these independent datasets underscores the reproducibility of the identified signals, while downstream analyses highlight their biological and translational relevance. This framework provides a systematic approach for prioritizing candidate biomarkers and therapeutic targets in cancer transcriptomics.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.758788v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">DIMPLE: A Tree-Guided Divide-and-Conquer Framework for ILS-Aware Phylogenetic Network Inference on Large-Scale Data</h2>
-<p class="paper-authors">Guang, Z., Sapoval, N., +2 authors, Nakhleh, L.</p>
+<h2 class="paper-title">MIEN: a deep-learning model for pocket-conditioned glycan pose and conformation discrimination</h2>
+<p class="paper-authors">Huang, X., Tian, Z.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Inferring evolutionary histories of species provides a foundation for comparative genomics and evolutionary analyses. Extensive evidence of reticulate evolution motivates the inference of phylogenetic networks, which represent relationships that species trees cannot capture. However, accurate reconstruction of large phylogenetic networks remains a major challenge because of the vast space of possible network topologies. Here, we propose DIMPLE, a divide-and-conquer framework for phylogenetic network inference without an explicit restriction on network level. DIMPLE uses a tree-of-blobs (TOB), which represents the tree-like relationships between regions of potential reticulation while leaving relationships within those regions unresolved. Within each unresolved region, DIMPLE partitions the set of taxa into pairwise-disjoint subsets, each containing at most a user-specified number of taxa. Multiple division runs are allowed, and subsets from different runs may overlap. DIMPLE infers a subnetwork on each subset, merges the subnetworks within each region, and uses the TOB to assemble the resulting networks into a network on the full taxon set. Experiments with true inputs demonstrate accurate merging, with improved reticulation recovery over existing methods on higher-level networks. With estimated inputs, DIMPLE achieves competitive topological accuracy and more consistently recovers hybrid ancestry than competing methods across varying levels of network complexity. Its computational requirements support analyses of hundreds of taxa. Applications to fern and gymnosperm datasets recover documented hybridization and previously reported phylogenetic conflict.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.12.758494v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> In protein-carbohydrate interaction, Molecular docking can generate many glycan poses that appear plausible, but the top-ranked pose may differ from the experimentally observed conformation. We introduce Minimal Interface Equivariant Network (MIEN), a structure-based equivariant graph network that scores the compatibility of a glycan pose with a fixed protein pocket. The model operates on a minimal-interface graph that contains only protein atoms forming polar or CH-pai contacts with the glycan; protein and sugar residue names are excluded. MIEN was trained on 5,241 experimental complexes and one unified set of contact-preserving rigid-body negatives grouped into three semantic-contact tiers. On a protein-disjoint benchmark of 260 held-out complexes, MIEN separated experimental poses from non-native poses and ranked experimental poses more highly within matched pockets. We then evaluated MIEN on AutoDock-GPU and GlycanDock candidate pools generated independently for the same complexes. Across three training seeds, MIEN selected lower-RMSD top-1 poses more often than either docking engine and increased the number of best poses below 1, 2 and 4 Angstrom. These results provide a practical route to more realistic protein-carbohydrate complex poses and a stronger basis for structural and mechanistic studies of protein-carbohydrate interactions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.758804v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Relation-Aware Graph-Hypergraph Networks for Antibody Sequence-Structure Co-Design</h2>
-<p class="paper-authors">Wei, J., Zhang, S., +2 authors, GUO, J.</p>
+<h2 class="paper-title">Metabolite-centric Knowledge Graph Unveils Predictive and Mechanistic Insights through Self-supervised Multimodal Learning</h2>
+<p class="paper-authors">Lu, Y., Guan, X., +4 authors, Wang, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Motivation: The design of antibody complementarity-determining regions (CDRs) is pivotal for therapeutic development, yet remains challenged by the complexity of the antibody-antigen interface. Existing methods, which largely rely on pairwise relationships, struggle to capture intrinsic multi-body interactions and global structural constraints. Results: We propose the Relation-Aware Graph-Hypergraph Network (RA-GHN), a framework that unifies graph-based pairwise modeling with biophysical hypergraphs to capture high-order cooperative effects. Its heterogeneous hypergraph uses epitope-paratope interaction patches, spatial structural clusters, and high-degree hub structures. A dual-pathway architecture integrates a Relation-Aware Equivariant Graph Network with an Equivariant Hypergraph Encoder while preserving SE(3)-equivariance. We also introduce the Structure-Sequence Decoupling Index, which balances structural reliability with sequence novelty. Experiments show that RA-GHN outperforms state-of-the-art baselines across standard benchmarks and affinity optimization tasks.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.12.758263v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Metabolomics research is advancing toward a comprehensive view of metabolites and their biological functions, yet conventional, dictionary-like databases fall short of presenting these complexities. To overcome this limitation, we developed MetaKG, a metabolite-centric knowledge graph that integrates diverse chemical, biological, and semantic data, coupled with a global self-supervised multimodal learning framework that generates advanced embeddings (MetaKGE) for both predictive and mechanistic analyses. MetaKG outperforms existing models in standard representation learning metrics and across 12 external datasets. Furthermore, MetaKG refines existing database information by detecting misannotated labels and uncovering previously overlooked biochemical relationships. Its predictive capability naturally yields testable biochemical hypotheses, as demonstrated in studies of G6PD deficiency and colorectal cancer. By transforming passive, database-scale information into extractable knowledge and actionable insights, MetaKG paves the way for hypothesis-driven discovery in metabolomics and holds promise for informing future research in clinical biomarker identification and therapeutic development.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.13.758464v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,15 +184,53 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Oct 18, 2026</span>
+<span class="date">Oct 19, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Determinants of cysteine coverage by chemoproteomics</h2>
-<p class="paper-authors">Riziotis, I. G., Wilders, H., +16 authors, Bush, J. T.</p>
+<h2 class="paper-title">RDEmbed: A Sentence-Embedding Framework for Rare Disease Phenotype Representation and Phenotypic Similarity Analysis</h2>
+<p class="paper-authors">Wang, X., Wang, J., +2 authors, Harmanci, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Covalent chemoproteomics has become a powerful route to expanding the druggable proteome, enabling proteome-wide screening of compounds that covalently modify nucleophilic residues, most commonly cysteine. Yet typical experiments detect only 5-18% of the ~250,000 cysteines encoded by the human proteome, and the determinants of this limited coverage remain poorlydefined. Here we combine cysteine featurisation, explainable machine learning (ML) and robust statistical filtering to establish what governs cysteine detectability in iodoacetamide- desthiobiotin (IA-DTB) chemoproteomics. Using a scalable feature-generation pipeline, we computed physicochemical and structural properties for cysteines and the corresponding tryptic peptides and trained models that predict detectability with high accuracy. Shapley analysis identifies protein abundance and intrinsic peptide properties governing LC-MS behaviour as the dominant determinants, whereas cysteine structural descriptors contribute comparatively little, indicating that detection is constrained downstream of probe reactivity. We further introduce a distance-based statistical filter that improves reproducibility across replicates, and show that cell line selection, subcellular fractionation and alternative electrophiles together expand coverage by &gt;30%. More broadly, this work moves optimisation of chemoproteomics workflows from empirical trial-and-error towards rational, data-driven design.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.12.758458v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Accurate phenotypic characterization of patients with rare diseases is essential for improving diagnosis, patient matchmaking, and gene discovery. Conventional ontology driven approaches based on the Human Phenotype Ontology (HPO) enable structured phenotype comparison but often limited by the incomplete annotations and reduced ability to capture the contextual information contained in free-text clinical narratives. We present RDEmbed, a sentence embedding framework that learns patient phenotype representations directly from rare disease case reports for similarity analysis. RDEmbed encodes narrative case reports into high-dimensional vectors to quantify phenotypic similarity. Unlike ontology-based approaches that rely on manually curated HPO annotations, RDEmbed encodes narrative case reports into dense semantic embeddings that capture complex phenotypic relationships from unstructured text. We further introduced retrieval-augmented embedding refinement (RAER), which enhances embedding representations by incorporating external domain knowledge at inference time without task-specific fine-tuning. RDEmbed was evaluated against HPO-based similarity methods (OWLSim, simGIC) using simulated datasets, published rare disease case reports and a curated case study dataset comprising 156 patient abstracts presenting six rare disease groups. Across the real world datasets and curated cohort. RDEmbed consistently outperformed ontology based approaches, improving AUROC and AUPRC by more than 5%. Embedding-based representations also produced more distinct disease-specific clustering in t-SNE visualizations and identified twice as many true positive rare disease pairs as ontology based methods (8 versus 4). Incorporating RAER further improved precision while maintaining high sensitivity compared with zero-shot embeddings. These results demonstrate that sentence embeddings provide an effective alternative to ontology-based phenotype representations by learning directly from free-text clinical narratives. RDEmbed enables more accurate phenotypic similarity analysis while reducing dependence on manually curated HPO annotations and offers a scalable framework for rare disease diagnosis, patient matchmaking, and gene discovery. RDEmbed is publicly available at https://github.com/xhwang2017/RDEmbed.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.16.759399v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Oct 19, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Proteome scale drug prioritization from AlphaFold 3 interaction confidence</h2>
+<p class="paper-authors">Akabari, R., Mangione, W., +1 author, Samudrala, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> AlphaFold 3 (AF3) predicts protein ligand complexes, but the utility of its confidence scores for drug prioritization remains unclear. We benchmarked AF3 interaction scores against BANDOCK+, an experimentally informed approach, using approved drugs and human protein libraries. AF3 ipTM achieved similar aggregate disease ranking performance to BANDOCK+, with differences among individual indications. These results support the evaluation of AF3 interaction confidence as a source of information for proteome scale drug prioritization.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.19.757941v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 19, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Emerging Role of AI in Single-Cell Sequencing Toward Biomarker Discovery, Therapeutic Target Identification and Precision Medicine in Lung Cancer.</h2>
+<p class="paper-authors">P K Fasna, Reshma Krishnan, Ravindra Kumar</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Lung cancer, the most common malignancy worldwide, exists in numerous histological subtypes, rendering the diagnosis and prognosis of the disease a challenge to clinicians. The recent technological breakthroughs in single-cell sequencing (SCS) and Artificial Intelligence (AI) have expanded the existing knowledge of lung cancer biology and provided new opportunities in the area of precision medicine. SCS has the potential to expose the enormous complexity of tumors, showing heterogeneous cell populations and characterizing the tumor microenvironment, and thereby overcoming the inherent limitations of conventional bulk sequencing in resolving tumor heterogeneity. At the same time, AI's advanced machine learning (ML) and predictive modeling capabilities, when applied to SCS data, can facilitate the identification of subtle cellular states, dynamic cellular interactions, and complex molecular pathways often undetectable by traditional statistical methods. This review examines the emerging applications of SCS and AI in lung cancer, focusing on biomarker discovery, therapeutic target identification, and precision medicine. We outline how their integration may support the identification of new biomarkers and therapeutic targets, with implications for more personalized treatment approaches. Integration of single-cell biology knowledge with AI-based analytics may assist scientists and clinicians in addressing the shortcomings of traditional approaches, which may offer personalized therapies with the potential to improve patient care. The ultimate goal of this review is to address the challenges and future perspectives of this emerging trend by focusing on the potential of these technologies to fulfill the unmet needs in lung cancer diagnosis, prognosis, and treatment selection.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42896640/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
