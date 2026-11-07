@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">European LD proxies lose tagging for 43% of GWAS leads in the African panel: a chromosome 22 analysis with SwiftLD, an 826-fold faster, byte-identical vcftools LD</h2>
-<p class="paper-authors">Christensen, J.</p>
+<h2 class="paper-title">Somatic Structural Variant Discovery from Tumor Specific Strings Computed Against a Draft Composite Germline Reference</h2>
+<p class="paper-authors">Monti, D. C., Ciccolella, S., +4 authors, Hormozdiari, F.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> SwiftLD is a drop-in replacement for the pairwise linkage disequilibrium (LD) modes of vcftools 0.1.17, --hap-r2 and --geno-r2, which population-genetic pipelines use to compute r2, D and D' between nearby variants. On three regions of 1000 Genomes chromosome 22 with 503 to 2,504 samples it wrote the same output as vcftools, byte for byte, and was 826-fold faster (geometric mean at two threads on an AVX-512 CPU). It was also 7.6-fold faster than PLINK 2, the fastest alternative, from VCF input to LD output on all five regions tested; PLINK 2 writes a different file, although its r2 values agree with vcftools' within 10^-6. One megabase with 503 samples took vcftools 29 s and SwiftLD 0.049 s, and on an ordinary AVX2 laptop SwiftLD was 102-fold faster than vcftools at 12 threads. vcftools was slow because it repeatedly re-reads genotypes from a temporary file, counts haplotypes individually and flushes every output row. I built SwiftLD with correctness-gated coding agents (Claude Opus 5.5): every change had to keep the output byte-identical to vcftools. No output byte differed in 167,749 differential tests on three machines. On chromosome 22, the best European LD proxy of a GWAS lead kept r2 &gt;= 0.8 for 57.4% of leads in the African panel and 85.6% to 92.7% in other panels (98.1% in a European split-half control). Code and a two-command reproduction: https://github.com/joe-b-christensen/swiftld.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.760946v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Somatic structural variants (SVs) are among the most clinically relevant genomic alterations in cancer. However, their accurate detection remains challenging due to complex genomic rearrangements, repetitive genomic regions, difficulties in distinguishing somatic variants from germline variation and sequencing artifacts, and limited sequencing support for low-frequency events. Existing mapping-based somatic SV callers are susceptible to alignment ambiguities in repetitive regions and near complex SV breakpoints, while approaches relying on comparisons of independently generated tumor and normal variant callsets may propagate errors from both callsets. Building on the concept of specific strings, previously applied to germline SV discovery, we introduce VESPA-SS, a novel approach for detecting somatic SVs from paired tumor-normal long-read whole-genome sequencing data. VESPA-SS directly extracts somatic SV signals using specific strings computed from tumor reads against a Draft Composite Germline Reference, without requiring initial read mapping or a high-quality germline assembly. These signals are subsequently clustered and refined through consensus sequence generation and alignment-based procedures to identify somatic SVs. Evaluation on real PacBio HiFi datasets demonstrates that VESPA-SS outperforms state-of-the-art somatic SV callers, achieving F1 scores exceeding 0.92 and 0.90 on the well-characterized HG008 and COLO829 cancer cell lines, respectively, compared with the highest F1 scores of 0.86 and 0.85 achieved by the evaluated methods. These results demonstrate the effectiveness of specific string based signal extraction for accurate somatic SV discovery and establish a new computational paradigm for identifying complex genomic alterations in cancer. VESPA-SS is freely available at https://github.com/dcmonti/VESPA.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.06.764802v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Language-guided domain adaptation improves protein sequence rep-resentations for antimicrobial resistance analysis</h2>
-<p class="paper-authors">Ye, R., Li, L., +1 author, Song, S.</p>
+<h2 class="paper-title">LeadWeaver: Topology-Aware Masked-Lead Modeling for Robust 12-Lead ECG Diagnosis</h2>
+<p class="paper-authors">Schneider, F., Collins, N., Weber, L. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Antimicrobial resistance (AMR), particularly antibiotic resistance in bacterial pathogens, complicates infectious disease management. Because bacterial resistance is often mediated by protein functions, including antibiotic inactivation and efflux, protein sequence analysis provides a molecular basis for digital AMR surveillance and therapeutic intervention. We developed BacLLM, a language guided protein representation framework that integrates annotation-derived functional knowledge into protein language model representations for AMR analysis in WHO priority bacterial pathogens. Through sequence enhancement, semantic enrichment of UniProt annotations, and cross modal contrastive learning, BacLLM transfers LLM encoded annotation priors into the sequence encoder. Compared with baselines, BacLLM provided more informative representations for resistance-gene identification and mechanism prediction, captured resistance associated mutational signals at single-residue resolution, and preserved taxonomic relationships not reflected by phenotype based clinical groupings. Moreover, BacLLM recovered resistance associated functional organization within a TolC-centered protein association network, prioritizing proteins with low sequence identity to TolC but predicted structural similarity to TolC. Extending from AMR characterization to therapeutic prioritization, BacLLM also improved strain-level phage host matching for phage therapy candidate prioritization. Together, these findings establish BacLLM as a protein representation framework supporting AMR surveillance, functional characterization, and therapeutic candidate prioritization.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764426v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Clinical electrocardiography is organized as a structured set of correlated leads, yet most neural ECG classifiers assume that all twelve leads are present, correctly ordered, and acquired under the same device conditions at training and deployment. We propose LeadWeaver, a topology-aware ECG representation model designed for diagnosis under missing, corrupted, or device-shifted leads. LeadWeaver represents each lead as a temporal token stream, couples leads through a fixed-plus-learned physiological lead graph, and performs masked-lead latent completion rather than waveform synthesis. A reliability router estimates which observed leads should dominate each diagnostic decision, while a consistency objective aligns complete-lead and incomplete-lead predictions. We evaluate the model on PTB-XL and CPSC-style settings using complete-input diagnosis, arbitrary missing-lead subsets, lead corruption, cross-dataset transfer, calibration, and selective prediction. The central hypothesis is that robust ECG diagnosis requires explicitly modeling both inter-lead topology and uncertainty about unavailable evidence, rather than treating missing channels as zero-valued inputs.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764472v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +70,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Protify: A Benchmarking Platform Revealing Task Dependence and Homology Leakage in Protein Language Model Evaluation</h2>
-<p class="paper-authors">Rafailidis, N., Hallee, L. P., +3 authors, Gleghorn, J. P.</p>
+<h2 class="paper-title">MOCHI enables systematic identification of candidate independent intronic transcriptional signals from short-read RNA-seq data</h2>
+<p class="paper-authors">Gurer-Er, D. C., Karakulah, G., +1 author, Akgul, B.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein Language Models (pLMs) have become essential tools for computational protein analysis, and the rapid proliferation of architectures, training objectives, and pretraining corpora has produced a diverse and expanding model landscape. Evaluation practices, however, remain fragmented: studies use different datasets, preprocessing pipelines, and reporting conventions, so results rarely transfer between publications. Here we introduce Protify, an open-source platform that standardizes pLM benchmarking across zero-shot, supervised, and transferlearning settings through a unified, low-code interface. Protify currently supports 35 pretrained models and 61 curated datasets and it is easy to add custom versions of each. Leveraging Protify's high throughput pipelines, we benchmarked 23 models on ProteinGym, discovering that DPLM3B is currently the top-performing self-supervised encoder. Another large-scale supervised evaluation across 32 diverse tasks, spanning enzyme classification, gene ontology annotation, protein-protein interaction, subcellular localization, and other functional properties, found that no single pLM dominated: 14 different models took the top score on at least one dataset, and the margins between the best and second-best models fell within run-to-run variability. On enzyme optimal pH prediction, a general-purpose probe pipeline matched or exceeded EpHod, a specialized model selected from 11,550 training runs, after 50 hyperparameter trials (R2 = 0.482 versus 0.425). Under a homology-controlled split of the same data, every pooled-embedding probe collapsed to near-zero R2, and only a transformer probe over full residue embeddings recovered appreciable signal (R2 = 0.248). Model rankings therefore depend as much on evaluation design as on the models themselves. Protify makes those design choices explicit, controlled, and replayable, and is freely available at https://github.com/Gleghorn-Lab/Protify.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764373v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Standard short-read RNA-seq analysis pipelines quantify expression over annotated exons and disregard signals mapped to introns, thereby missing independently transcribed intronic RNAs. Existing strategies depend on annotation, biologically crude whole-intron quantification, or subjective, low-throughput manual genome-browser inspection. We present MOCHI (Mapping of Cryptic Hidden Intronic Transcripts), a framework that couples reference-independent, k-mer-based signal discovery with reference-guided genomic interpretation and a custom multi-step filtering module to systematically curate potential independent intronic transcription units from strand-specific short-read RNA-seq data. On two simulated datasets, MOCHI recovered annotated sense-intronic long non-coding RNAs removed from the reference and distinguished them from intronic signal confounders. Across paired ribosomal RNA-depleted and poly(A)-selected libraries from ten cancer cell lines, MOCHI curated candidates whose host introns are strongly enriched for a transcription-initiation signal. Candidate expression is largely uncoupled from host-gene exons, and their genomic features resemble those of annotated long non-coding RNAs. In ten matched cohorts from The Cancer Genome Atlas, candidates were detected in tumor samples, and a subset was associated with overall survival after adjustment for age and host-gene expression. Consequently, MOCHI extends the transcriptomic landscape that can be mined from existing short-read RNA-seq data and provides a curated resource of candidate intronic transcripts for downstream analyses.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764473v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -89,15 +89,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Dated public evidence and known genes for retrospective evaluation of gene prioritization</h2>
-<p class="paper-authors">Huang, C.-H., Wang, Y.</p>
+<h2 class="paper-title">scCircaSim: A Circadian Simulator for Single-Cell and Spatial Transcriptomics</h2>
+<p class="paper-authors">Li, C., Zhang, L., +7 authors, Sun, P.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Retrospective evaluation of gene prioritization needs evidence that was public before the evaluated genes became known. Public resources are open and reproducible, but are distributed as current releases that also contain evidence produced after the genes became known. This Data Descriptor presents per-gene evidence tables for four areas (oncology, inflammatory bowel disease, metabolism and psoriasis) from public resources. Every feature carries a time axis, the date of its release in a calendar of 183 archived releases of 20 sources, and a leakage axis, a provenance class (A to E) with two risk grades that define five feature sets. Nineteen lists of known genes are dated by the first trial, study, release or classification that supports each gene. They cover targets of a kind of drug, targets of drugs tested in a disease, and genes associated with a disease. The oncology lists also carry the first day the trial registry showed the trial.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764446v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Motivation: Simulated single-cell and spatial transcriptomic datasets that capture circadian dynamics while providing known ground truth remain scarce, limiting systematic evaluation of circadian analysis methods. Results: We developed scCircaSim to generate circadian single-cell and spatial transcriptomic data from a single-time-point reference. The framework combines phase progression with reference-derived network propagation of anchor gene rhythms and incorporates neighborhood effects for spatial simulation. Outputs retain reference heterogeneity and provide known cell or spot phases, rhythmicity labels, and gene-level mesor, amplitude, and phase values. Validation showed retention of reference structure and recovery of specified temporal patterns. Benchmarks of four cell phase inference methods and three rhythmic gene analysis methods revealed differences in phase accuracy, rhythmicity detection, and parameter recovery. scCircaSim supports reproducible method evaluation and preliminary experimental planning. Availability and Implementation: scCircaSim is implemented in R and available at https://github.com/Liwei-DynamicsLab/scCircaSim.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764753v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -108,15 +108,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">SPECHTacle: An Efficient Detection and Visualization of Cell Specific Regulation in Single Cell-Based Experiments Using a Novel Combinatorial Computational Tool</h2>
-<p class="paper-authors">Specht, K. M., Schwierling, H. C., Robson, M. J.</p>
+<h2 class="paper-title">Hierarchical Temporal Transformer for Cancer Grade Prediction and Cross-Cancer Transfer Learning from Pathology Reports</h2>
+<p class="paper-authors">Brimo, n., Anand, R., +2 authors, Serdaroglu, D. C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Herein, we describe SPECHTacle, a novel computational tool affording the ability to efficiently visualize and delineate the specific cellular population(s) impacted by an experimental paradigm utilizing heterogeneous cell-based samples. SPECHTacle can be employed to efficiently determine, in a cell specific manner, the populations preferentially impacted by treatments, drugs, injuries, disease states, and/or development within datasets continuously being generated across nearly countless subfields in molecular biology. SPECHTacle accomplishes this task by harnessing the power of Waddington optimal transport analysis and Shannon entropy in a combinatorial fashion to distinguish cell populations preferentially altered due to nearly any experimental paradigm and generates a visual representation of cellular entropy (i.e. change) across entire datasets. Ultimately, this allows for efficient determination of specific populations preferentially impacted by an experimental paradigm and identifies populations to target for downstream analyses employing quantitative measurements. We propose that SPECHTacle represents an immediately useful computational tool with the potential to be integrated into single cell-based workflows and greatly enhance the efficiency of both manual and machine-based learning workflows.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764311v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764680v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -127,15 +127,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Provenance-aware handling of identical dengue genome records alters inferred envelope-protein variation in Bangladesh DENV-3</h2>
-<p class="paper-authors">Begum, K. T., Rafea, K. A. G.</p>
+<h2 class="paper-title">Deducing splicing events from transcript sets with splicelogic</h2>
+<p class="paper-authors">Campillo, B., Love, M. I.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> The reliability of interpreting dengue virus (DENV) envelope (E) protein variations depends on whether identical public sequence records are kept as representatives or eliminated based on provenance reviews. We evaluated three record-handling strategies using a frozen Bangladesh-associated dataset of 426 E sequences: exact-sequence deduplication, a prespecified provenance-sensitive exclusion method, and an independently curated Nextstrain accession list. Within the 2021 DENV3 subset (96 accessions), 18 records dated August 2021 were identical across 10,707 nucleotides to the older Sri Lankan genome AY099336.1. There were 21 variable E positions within the original 96-accession DENV3 cohort. Whole-cohort deduplication (47 retained) and retaining one representative of the 18-record group (79 retained) preserved all 21 positions. Excluding the group (78 retained) resulted in eight variable positions: 13 of 21 (61.9%) were lost due to differences in state at those positions between the excluded group and retained cohort. Nextstrain reference-specific exclusions selected the same 18 records; applying its full saved list produced 77 accessions and the same eight variable positions. E270 and E383, which had pre-2021 antibody-related evidence, did not meet the sequence-variation criteria for follow-up; however, E223 and E224 remained variable. Antibody-position enrichment was not statistically significant. These results indicate that cohort eligibility decisions may impact dengue E-protein variant prioritization despite representative-retaining deduplication. Genome identity does not indicate specimen identity or an antigenic phenotype.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764337v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Long-read RNA sequencing captures a greater proportion of full-length transcripts, enabling more accurate isoform identification, discovery of novel isoforms, and more precise differential transcript usage analysis. However, comparing transcripts, whether between conditions or between sets such as novel and annotated isoforms, yields complex isoform changes that are hard to manipulate, summarize, and visualize. This is compounded by vertical integration of some tools, where downstream analysis depends on the specific output of a particular upstream tool. To address this gap, we have developed splicelogic, an R/Bioconductor package that makes transcript-set comparisons biologically interpretable by turning them into discrete splicing events, such as exon skipping, alternative splice sites, intron retention, and alternative transcription start and end sites. We designed splicelogic to integrate easily with existing RNA-seq workflows and tools. The splicelogic functions are modular, readable, and extensible, making it easy for users to adapt core logic to their own custom scientific questions or novel splicing definitions. By obtaining interpretable splicing events from transcript changes, splicelogic enables downstream analyses, including annotation of RNA-binding protein recognition sites, alongside summary statistics and visualization. The splicelogic package is publicly available and distributed through Bioconductor.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.30.762958v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -146,15 +146,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Classifying tumors from broad category to hierarchical molecular subtype: an interpretable hierarchical framework for precision oncology</h2>
-<p class="paper-authors">Song, Q., Liu, F., Lai, X.</p>
+<h2 class="paper-title">Joint protein-DNA language modeling enables prediction and engineering of DNA recognition specificity</h2>
+<p class="paper-authors">Xiong, Y., Ren, J., +3 authors, Wei, W.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Precise tumor subtype classification is important for guiding personalized treatment, characterizing tumor heterogeneity, and investigating molecular mechanisms. However, most existing multi-label classification models use flat architectures and do not fully exploit the inherent hierarchical relationships and biological constraints among tumor types, which limits their performance and interpretability in complex, fine-grained pan-cancer classification. Here, we present the cancer Hallmark-based Hierarchical Recursive Model (HHRM) for pan-cancer hierarchical multi-label classification. HHRM integrates hierarchical label structures with recursive neural networks, enabling simultaneous modeling of multi-level dependencies from broad cancer categories to specific subtypes. We trained the model on a comprehensive pan-cancer cohort of 11,476 samples spanning 26 primary cancer types and 405 subtypes across up to eight hierarchical levels. HHRM achieved an accuracy of 0.7924 for predicting hierarchical tumor subtypes and was further evaluated on a validation dataset of 887 samples. Compared with other hierarchical modeling frameworks, HHRM achieved higher accuracy in all three output modes. Ablation experiments showed that replacing the hallmark-based graph convolutional network reduced model performance. On an independent dataset of 1,608 breast cancer samples, HHRM also achieved an accuracy greater than 0.86. Finally, we combined SHAP with a network-based method to rank and analyze predictive genes at different levels of the tumor hierarchy, which identified both known and potentially novel biomarkers for cancer diagnosis. In conclusion, to our knowledge, HHRM is the first hierarchical model for multi-level tumor subtype classification. Its competitive performance, combined with post hoc biological interpretation, suggests potential value for precision cancer diagnosis.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.30.761789v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Protein-DNA recognition specificity underlies transcriptional regulation, DNA replication, chromatin remodeling and genome editing. Protein-DNA recognition depends on both interacting sequences, yet language models that learn this cross-molecular dependence explicitly during pretraining remain limited. Here, we developed the Protein-DNA Language Models (PDLMs), interaction-aware language models that jointly represent protein and DNA sequences. PDLMs were built by continued pretraining from ESM2 with masked language modeling on paired protein-DNA sequences. A shared encoder places amino acids and nucleotides in the same molecular context, enabling conditional sequence scoring and transferable pair representations. We further introduced a domain-aware masking strategy that increased masking probability within DNA-binding domains to strengthen learning of interaction-relevant regions. Across downstream tasks, PDLMs improved protein-DNA pair classification relative to independent-encoder baselines and supported prediction of mutation-associated binding changes. Zero-shot scoring recovered known changes in DNA-recognition specificity and prioritized variants with higher editing activity. Learned representations also supported cross-study prediction of base editor activity. After fine-tuning on transcription factor binding data, PDLMs predicted DNA motifs directly from protein sequences. Together, PDLMs provide a framework for interaction-aware biomolecular language modeling, with potential applications in protein engineering and genome editing.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.763984v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -165,15 +165,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">TIGRdisco: a tool for the discovery of TIGR arrays and TIGR-associated Tas proteins from nucleotide sequences</h2>
-<p class="paper-authors">Gu, S., Gong, Z., Mortimer, J.</p>
+<h2 class="paper-title">Development of a Pan-Proteome Multi-Epitope Vaccine Candidate Against Nipah Virus Using Reverse Vaccinology and Immunoinformatics Approaches</h2>
+<p class="paper-authors">Nishan, R. K., Nahian, M., +9 authors, Islam, M. S.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Tandem Interspaced Guide RNA (TIGR)-TIGR-associated protein (Tas) systems mediate DNA targeting through a hypercompact Tas effector, guided by dual spacers within a tigRNA that is processed from TIGR arrays. TIGR-Tas loci are composed of a Tas coding sequence associated with TIGR arrays of short units in either dual-repeat or stem-loop architecture. Unlike CRISPR (Clustered regularly interspaced short palindromic repeats) arrays that comprise units of direct repeats interspersed with unique spacers, units within the two distinct TIGR architectures only conform through extremely short box motifs, complicating detection. Here, we present TIGRdisco, an integrated tool capable of discovering both the Tas protein and its associated TIGR arrays directly from unannotated nucleotide sequences. TIGRdisco implements independent engines to detect the two array architectures through a motif-agnostic approach. We benchmarked TIGRdisco against a reference dataset of TIGR-Tas loci, recovering more than 80% of array units within its search window. Furthermore, TIGRdisco recovered arrays for loci within entire clades of Tas where associated arrays were unannotated in the reference. We found that these arrays largely contain non-canonical box motifs or unit lengths. Lastly, as a case study, we utilized TIGRdisco and successfully uncovered TIGR-Tas loci across metagenomic and genomic datasets.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764119v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Nipah virus (NiV) is a high-consequence zoonotic pathogen for which no licensed human vaccine is currently available. This study applied a consensus-guided pan-proteome immunoinformatics framework to design and prioritize a multi-epitope vaccine candidate using sequence information from all nine NiV proteins. A total of 901 NiV protein sequences were retrieved, of which 842 passed quality filtering and were processed through clustering, multiple-sequence alignment, and protein-specific consensus generation. Consensus-derived fragments were screened for cytotoxic T-lymphocyte, helper T-lymphocyte, and B-cell epitopes, followed by multi-criterion filtering based on antigenicity, allergenicity, toxicity, conservancy, class-specific immune-response properties, and human-proteome similarity. Ten epitope-selection strategies were combined with two adjuvant candidates and three construct architectures to generate 60 vaccine constructs. Shortlisted candidates were subsequently evaluated for physicochemical properties, HLA population coverage, structural characteristics, conformational B-cell epitopes, TLR3 docking, molecular dynamics, immune-response simulation, and expression-oriented optimization. VC033_V6_BD_L03 construct was prioritized as the lead candidate and showed combined predicted population coverage of 99.78% worldwide and 99.96% in South Asia. Docking against human TLR3 structure 1ZIW yielded a ClusPro score of -1624.8. During a 100-ns molecular-dynamics simulation, the complex underwent early conformational reorganization followed by lower late-phase structural variation and persistent interchain hydrogen bonding. MM/GBSA analysis yielded a mean interaction-energy estimate of -20.52, 15.42 kcal/mol. C-ImmSim predicted coordinated humoral and cellular responses, while codon optimization generated a 1,539-bp expression sequence compatible with virtual cloning into pET-28a(+). These analyses prioritize VC033_V6_BD_L03 as a consensus-derived, pan-proteome NiV multi-epitope vaccine candidate for experimental evaluation of expression, immunogenicity, safety, and protective efficacy.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764467v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -184,110 +184,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
+<span class="date">Nov 06, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">A protein language model for domain, functional site, and variant effect prediction</h2>
-<p class="paper-authors">Wang, P., Ahsan, M. U., +1 author, Wang, K.</p>
+<h2 class="paper-title">Bioprocess Modeling Made Easy With Hybrax</h2>
+<p class="paper-authors">Libiseller-Egger, J., Gotsmy, M., +1 author, Zanghellini, J.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein sequence databases are growing far faster than experimentally curated annotations, limiting functional interpretation of newly identified proteins and coding variants. We developed PALM, a protein annotation language model that jointly predicts domain and functional-site occurrence, while preserving overlapping and nested annotations through a soft-target objective. PALM integrates ESM2 with low-rank adaptation (LoRA), learned layer aggregation, and a bidirectional long short-term memory (BiLSTM) encoder. PALM was trained on ~15 million InterPro-annotated UniRef50 sequences spanning 17,951 domain and 1,383 site classes. Across 2.3 million held-out proteins, PALM achieved domain- and site-occurrence F1 scores of 0.941 and 0.877, respectively, and retained substantial performance in proteins with &lt;20% sequence identity to the training and validation data. PALM also substantially outperformed ESM3 annotation baseline. Without training on variant-pathogenicity labels, PALM embedding disruption distinguished 151,823 ClinVar missense variants more accurately than ESM2 embedding disruption (AUROC 0.835 versus 0.710), and combining PALM embedding disruption with the ESM2 likelihood-ratio signal reached an AUROC of 0.877. The same combined zero-shot score outperformed AlphaMissense on a benchmark dataset on 128,161 missense variants, that were derived from literature but not present in ClinVar database. At the protein level, PALM embeddings showed stronger CATH-Gene3D superfamily organization than frozen ESM2 and ESM3 embeddings, and improved prediction of experimental activation and repression effects when combined with ESM2. In a downstream case study, we demonstrated the ability to use PALM-derived embedding as proxy of deep mutational scanning (DMS), showcasing the broad application of PALM. Together, PALM converts curated residue-level knowledge into transferable and mechanistically interpretable representations that connect protein sequence, function, and variant consequence.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.03.764008v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Harnessing catalytic knowledge to guide enzyme discovery and evolution with AlphaEnzyme</h2>
-<p class="paper-authors">Liu, Y., Zheng, S.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Retrieving an enzyme for a target reaction provides a starting point for evolution, but predicting how to improve it remains difficult. This requires connecting evolutionary information with the structural and chemical context of catalysis. Here we present AlphaEnzyme, an enzyme foundation model built on a structure-grounded representation of an enzyme paired with its reaction, from which catalytic compatibility, kinetics and mutational response are read out together. On a time-separated benchmark, AlphaEnzyme achieves a top-1 catalyst retrieval success rate of 30.1%, against 17.2% for the strongest baseline. Michaelis constant predictions achieve the highest rank correlations among the compared methods, reaching 0.64 for enzymes sharing at most 40% identity with the kinetic training set. The model also enriches high-fitness TrpB variants at a budget of 16 candidates without target-specific fitness training. In prospective transaminase engineering, several prioritized variants exceed the parent, with the best design yielding a 30.4-fold increase in product signal in a lysate-based assay while retaining (R)-selectivity. Together, AlphaEnzyme provides a common molecular basis for selecting starting enzymes and prioritizing sequence changes for their improvement.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764416v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">BNCT Triggers Immunogenic Cell Death in B16 Melanoma Without Accompanying T-Cell Infiltration--Implications for Combination Immunotherapy</h2>
-<p class="paper-authors">Quan, R., Huang, H., +7 authors, Gu, L.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective: Boron neutron capture therapy (BNCT) is a targeted radiotherapy with highly selective tumor killing; its potential to induce immunogenic cell death (ICD) and modulate the tumor immune microenvironment has attracted attention. However, whether BNCT-induced immune activation can overcome the T-cell exclusion barrier of immunologically "cold" tumors and translate into intratumoral effector T-cell infiltration remains unclear. Methods: A B16 melanoma model was established in C57BL/6 mice. Mice were assigned to CK, N10/N20 (neutron irradiation alone for 10 or 20 min), BPA, and BNCTN10/BNCTN20 groups (BPA 500 mg/kg plus 10 or 20 min irradiation) to evaluate tumor suppression and survival. In a separate cohort (CK, N20, and BNCTN20), the most efficacious regimen (BNCTN20) was compared with CK on days 3 and 7: H&amp;E staining; immunohistochemistry/immunofluorescence for gamma-H2AX, HMGB1, cleaved caspase-3, PD-L1, CD8+, and granzyme B; ELISA for cytokines and chemokines; and ICP-OES for 10B distribution. Results: BNCT significantly suppressed tumor growth. When CK tumors reached the humane endpoint (~2000 mm3), N20 tumor volume was half that of CK (TGI ~ 49.8%), whereas BNCTN20 reached only one tenth (TGI ~ 88.9%, p &lt; 0.001), with prolonged survival (p &lt; 0.001). BNCT induced gamma-H2AX-associated DNA damage, HMGB1 release, and cleaved caspase-3-mediated apoptosis; upregulated PD-L1; induced a Th1-type response (elevated IFN-gamma/TNF-alpha, reduced IL-10); and enhanced CXCL9/10 signaling. However, intratumoral CD8+ T-cell infiltration and granzyme B expression did not increase, indicating that this activation was not translated into a local effector T-cell response. Conclusions: BNCT inhibited tumor growth and prolonged survival while inducing ICD and a systemic Th1 response; nevertheless, systemic activation failed to translate into local CD8+ T-cell infiltration, while PD-L1 was upregulated, a "strong direct killing but blocked immune translation" profile in the B16 cold tumor. PD-L1-associated adaptive immune resistance may limit this conversion, providing rationale for combining BNCT with immune checkpoint blockade.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764456v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, cancer biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 05, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Targeting NF-κB prevents Schwann cell reprogramming and plexiform neurofibroma initiation in mouse model of Nf1</h2>
-<p class="paper-authors">Ravindran, R., Youn, E.-K., +10 authors, Ratner, N.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Plexiform neurofibromas arise in approximately half of all individuals with Neurofibromatosis Type I (NF1). Genetic lesions apart from NF1 pathogenic variants are not present in NF1 mutant Schwann cells, suggesting that tumorigenesis may instead require cellular rewiring. To identify putatively re-wired tumor cells, we used multiplex imaging and flow cytometry to delineate markers that distinguish tumor Schwann cell from non-tumor Schwann cells. We identified tumor Schwann cells as CD44+;CD49f+ cells that show increased transcription of epithelial to mesenchymal plasticity (EMP)- associated genes. CD44+;CD49f+ expression was induced by treating Nf1-/- Schwann cells with stressors or by direct NF-{kappa}B pathway activation via IKK2; treated Schwann cells increased secretion of NF-{kappa}B targets and immune cell chemoattractants CCL2 and CCL3. In established tumors, MEK inhibition plus NF-{kappa}B blockade diminished tumor cell proliferation, tumor Schwann cells, immune cell populations, tumor cytokines and tumor number. Notably, transient single agent NF-{kappa}B pathway blockade was sufficient to significantly delay tumor formation in mice. Thus, Nf1 loss in Schwann cells is followed by NF-{kappa}B activation and cellular reprogramming that drives tumor initiation and targeting NF-{kappa}B activation can reduce NF1-deficient tumor formation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.04.764357v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Nov 05, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Integrative miRNA-multi-omics analysis of brain-metastasis predisposition in non-small cell lung cancer prioritizes HDAC inhibitors and anti-miR-330-3p as hypothesis-generating therapeutic candidates.</h2>
-<p class="paper-authors">Fahad Hassan Shah, Jung Sig Cho, +6 authors, Hyung-Joo Chung</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Brain metastasis (BM) is the leading cause of death in non-small cell lung cancer (NSCLC), yet its molecular drivers remain poorly targeted. Here we present an integrative in-silico pipeline that moves from miRNA discovery to therapeutic hypothesis generation. Reprocessing the GSE23019 miRNA microarray cohort (7 BM+ versus 5 BM- primary tumors) recovered the published BM-associated miRNAs miR-328 and miR-330-3p and, through validated miRNA-target interactions, yielded a signature of 828 up-regulated and 177 down-regulated genes enriched for extracellular-matrix and vasculature programs. Resampling analyses show this discovery-cohort signal is directionally reproducible but statistically fragile (no probe passes FDR control; permutation P = 0.29), so we carry it forward only as a seed for independent testing. In 519 TCGA lung adenocarcinomas, multi-omics factor analysis linked the signature to a latent stromal factor whose association with worse overall survival persisted after adjustment for stage, age, sex and smoking (adjusted HR 1.26 per SD, 95% CI 1.07-1.48), and miRNA-target anti-correlation nominated miR-330-3p-&gt; VEGFA as the strongest effector axis (Spearman rho = -0.37). Connectivity mapping against ~ 693,000 LINCS L1000 signatures identified histone deacetylase (HDAC) inhibition as the only enriched reversal mechanism (odds ratio 30.7, FDR = 0.0019). Blood-brain-barrier and lipophilicity machine-learning models ranked panobinostat first among 30 candidates, and anti-miR-330-3p is the prioritized miRNA therapeutic. Single-cell analysis of 208,506 lung-cancer transcriptomes and spatial co-localization across 13 NSCLC pucks mapped the program to cancer-associated fibroblasts, indicating the bulk signature tracks stromal composition. Knowledge-graph propagation recovered HDAC1 and HDAC2 among top-ranked genes, though sensitivity analyses show this convergence partly reflects hub structure. All nominations are hypothesis-generating and require experimental validation.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42983116/" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="machine learning, cancer biology">
-<div class="paper-meta">
-<span class="keyword">machine learning, cancer biology</span>
-<span class="date">Sep 26, 2026</span>
-<span class="journal">PubMed</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Integrative transcriptomic analysis identifies miR-642a-5p as a regulator of POFUT1 expression in colon cancer.</h2>
-<p class="paper-authors">Oumaima Mazour, Mouna Ababou, +1 author, Agnès Germot</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Colorectal cancer (CRC) is one of the most common and deadly cancers worldwide, underscoring the urgent need for novel biomarkers and therapeutic targets. Protein O-fucosyltransferase 1 (POFUT1) is increasingly recognized as an oncogenic driver in CRC, but the upstream regulatory mechanisms responsible for its overexpression remain poorly understood. We implemented an integrative, multi-step bioinformatics framework that combined multiple linear regression with stepwise selection, penalized regression models (LASSO and Elastic Net), Random Forest analysis for non-linear feature evaluation and correlation analysis. Five miRNAs (miR-92b, miR-484, miR-574, miR-642a, miR-3940) showing a consistent inverse association with POFUT1 across these complementary methods, were retained as final candidates. Among them, miR-642a exhibited the strongest negative correlation with POFUT1 and was then chosen to test its impact on POFUT1 expression in colon cancer cell lines. Overexpression of miR-642a-5p, through mimic transfection, significantly reduced POFUT1 transcript levels by approximately 46 % in HCT 116, 50 % in SW480, and 22 % in SW620 cells relative to controls. Dual-luciferase reporter assays confirmed direct binding of miR-642a-5p to two predicted sites within the POFUT1 3'UTR, resulting in a decrease of luciferase activity by 40 or 50 % according to the site. Our study combines bioinformatics screening based on multiple linear regression and machine learning models, with experimental validation, to identify a miRNA related to POFUT1 expression. This approach deserves to be extended to the other candidate miRNAs, which, combined with POFUT1, could serve as a basis for future diagnostic or therapeutic strategies in CRC.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42815373/" target="_blank">
+<p><strong>Abstract:</strong> Hybrid models that embed neural networks in ordinary differential equations are increasingly popular in bioprocess modeling, but they are challenging to set up. Much of the effort goes into the code around the model: wet-lab data must be imported and pre-processed, feeds and sampling must be accounted for in the balance equations, and a training loop with cross-validation must be set up. Researchers usually write this code from scratch for each project. In addition, no widely adopted format for bioprocess data exists, and datasets are mostly published in bespoke spreadsheets or not at all. As a result, models and datasets from the literature are difficult to reproduce, reuse, or compare.We present Hybrax, an open-source Python framework that addresses these problems. It combines a flexible format for bioprocess data with a customizable end-to-end training pipeline for mechanistic and hybrid models. Hybrax derives the transport terms in the process dynamics automatically and provides the utilities needed for training, so that researchers can focus on developing the model itself. It also facilitates model sharing and reproducibility: each training checkpoint contains the model parameters, code, configuration, and training data required to run the model or retrain it from scratch. We demonstrate Hybrax by re-implementing two models from the literature, one trained on real-world E. coli data and one on synthetic HEK293 data, with performance comparable to the original models. Hybrax is available at https://github.com/hybrax/hybrax.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764695v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
