@@ -32,15 +32,300 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 08, 2026</span>
+<span class="date">Nov 09, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">StableProt: Structure-Aware Deep Learning for Protein Thermostability (Tm) and Environmental Adaptation (OGT) Prediction</h2>
-<p class="paper-authors">Behera, B. P., Dixit, A.</p>
+<h2 class="paper-title">DIALECT: DNA-Programmable Synthetic Cells Communicate with Mammalian Cells through Synthetic Receptors</h2>
+<p class="paper-authors">Lentjes, J., Makri-Pistikou, A.-M., +6 authors, Mann, S., de Greef, T. F. A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting protein melting temperature (Tm) and organismal optimal growth temperature (OGT) is essential for enzyme engineering, biocatalyst design, and metagenomic bioprospecting, yet computational prediction faces several fundamental bottlenecks: sequence-only representations miss tertiary packing; dual-task coupling induces destructive gradient conflict; natural database skew (&gt;87% mesophiles) drives mesophilic collapse; and existing tools produce uncalibrated point predictions. To address these challenges, we present StableProt, a structure-aware framework that couples amino acid sequences with Foldseek 3Di structural tokens via a frozen SaProt backbone to capture 3D contacts. Disjoint heads condition thermodynamic stability on ecological context without gradient conflict, while targeted 14% mesophilic subsampling expands thermophile representation to eliminate mesophilic collapse. Calibrated ensemble modeling reduces calibration error to 1.92%, providing dependable 95% confidence intervals. Evaluating models across 10{degrees}C temperature intervals reveals severe baseline collapse at thermal extremes, whereas StableProt maintains robust accuracy across regimes. On ProThermDB and zero-shot FireProtDB, StableProt achieves state-of-the-art probabilistic accuracy (CRPS = 4.52{degrees}C and 8.71{degrees}C) while recovering 92.0% of hyperthermophiles ([≥]80{degrees}C), and in prospective validation, its calibrated intervals capture both enzyme stability (75.3% coverage) and host environmental growth temperatures (78.1% coverage). StableProt is freely accessible as an interactive web server at https://stableprot.dixitlab.org/.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.06.764833v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Synthetic cells can regulate mammalian signalling through the controlled release of diffusible protein ligands, but coupling programmable synthetic-cell senders to orthogonal, engineered mammalian receptors remains challenging. Here we present DIALECT (DNA-Instructed Assembly of Ligands for Engineered Cellular Transduction), a platform in which proteinosome-based synthetic cells translate sequence-defined DNA inputs into coiled-coil signalling ligand outputs for engineered mammalian receptors. DNA-ligand conjugates are localized within semipermeable proteinosomes through DNA hybridization and released by toehold-mediated DNA strand displacement (TMSD). The released ligands diffuse to neighbouring mammalian cells and activate cognate CC-GEMS receptors, inducing JAK/STAT3 signalling and reporter activation, with a higher response in cognate than non-cognate receiver cells under activation conditions. We further implement distributed Boolean AND logic using two independently programmed proteinosome populations that respond to distinct DNA inputs and release complementary ligand components. Simultaneous addition of both inputs produces substantially higher reporter activity than the respective single-input conditions, consistent with extracellular assembly of an active receptor agonist. DIALECT thus establishes a modular interface linking DNA-based molecular computation in synthetic cells to orthogonal signalling pathways in mammalian cells, providing a foundation for hybrid artificial-biological communication networks.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.06.764853v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">BioMeme: biological response memory for virtual cells</h2>
+<p class="paper-authors">Bi, J., Zhu, C., +6 authors, Gunn, S. R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Virtual cells predict responses to unmeasured perturbations, but neural models absorb measurements into weights, require retraining and cannot cite supporting experiments. Here we introduce biological response memory, replacing a learned state-to-response layer with a memory of measured experiments. BioMeme predicts next-dose responses in a new cell type from measured lower-dose states, recalling similarly responding compounds in that cell and the same compound in a reference cell line. Each prediction is an exact weighted sum of named measurements, and memory updates with one linear solve. In all nine preregistered comparisons across three screens, memory predicted response direction better than the learners it replaced. In U2OS, BioMeme outperformed input-matched ridge, adapted chemCPA and a neural layer in memory's place, and matched a full-panel network reading reference responses directly (error within 3.4%). Transfer was compound-specific, lowering error by 21.2% against at most 1.8% for wrong compounds, and replicated in reserved MCF7 data. With 20 references, fitting took seconds on one CPU thread, at least 420 times faster than neural tuning and fitting. Adding its prediction to one measured well cut that well's error by 27-31%. Biological response memory establishes a design principle for virtual cells any laboratory can update, inspect and run.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.765043v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Intracellular bio-synthesizing Gold Nanoparticles using bacterial systems and their applications in photothermal therapy (A green approach)</h2>
+<p class="paper-authors">Ashraf, G. N., Palau Gauthier, m., Macia, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.765052v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Targeted Deletions Uncover Previously Uncharacterised C1-fixing Cluster Genes as Essential for Autotrophy in Clostridium autoethanogenum</h2>
+<p class="paper-authors">Nwaokorie, U. J., Vorontsova, M., +2 authors, Valgepea, K.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Recycling carbon oxides from industrial off-gases and gasified organic waste using gas fermentation offers a sustainable route for biomanufacturing of fuels and chemicals. Acetogens are attractive biocatalysts here and fix CO and CO2 via the Wood-Ljungdahl pathway (WLP). However, the incomplete functional annotation of the associated C1-fixing gene cluster limits rational engineering of acetogen cell factories. Here, we investigated five highly conserved but previously uncharacterised C1-fixing cluster genes to quantify their contributions to the growth of the model-acetogen Clostridium autoethanogenum using targeted CRISPR/Cas9-mediated single-gene deletions, physiological characterisation, comparative computational structural analyses, CRISPRi, and functional genomics. Importantly, we identified acsV, lpdA, cooC, and cooC2 as essential for autotrophy but not heterotrophy, whereas deletion of gcvH reduced autotrophic growth and shifted carbon flux from acetate towards 2,3-butanediol. Amino acid supplementation experiments and computational analyses indicate that lpdA and gcvH do not primarily function in glycine or serine biosynthesis but instead fulfil specialised roles in WLP-associated C1 and redox metabolism. Furthermore, genetic and physiological analyses showed that the two CooC-family ATPases, CooC and CooC2, have non-redundant roles in growth, with only cooC2 deletion impairing heterotrophy. Acetate supplementation tests revealed that {Delta}acsV cells retained metabolic activity despite abolished autotrophy, and computational analyses suggest a likely role for acsV in ATP-dependent corrinoid activation. Surprisingly, CRISPRi-mediated repression of acsV was translationally buffered, resulting in altered carbon partitioning without impairing autotrophy. Together, our findings provide insights into the physiological importance of the C1-fixing cluster genes in acetogens and support their metabolic engineering as gas-fermenting cell factories.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.765054v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrated genotyping, annotation and epigenetic characterization of transposable elements with GraffiTE</h2>
+<p class="paper-authors">Goubert, C., Laflamme, R., +5 authors, Groza, C.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Genotyping, annotating and characterizing TE variation leaped forward with long-read sequencing (LRS) and de novo assembly. LRS techniques also reveal CpG methylation, which enables measuring the impact of TEs on epigenomes and sheds light on the role of TEs as regulatory sequences. Yet, TE genotyping tools discard the valuable allele-specific epigenetic information. We introduce GraffiTE v1.1, the first Nextflow pipeline that genotypes SVs, annotates polymorphic mobile elements (MEI), and maps epigenetic data to TEs using pangenome graphs in one command. GraffiTE v1.1 is designed to map any epigenetic information that is based on LRS stencils, including Fiber-seq. We demonstrate the capabilities of GraffiTE v1.1 by analyzing genomes and methylomes obtained from 20 Quebec residents of French-Canadian descent. In these genomes, TE annotation yields 4,908 Alu, 704 LINE1, 112 SVA and 21 HERVK (HML-2) distinct polymorphic mobile elements (MEIs). We also identify 10 fixed HERVK insertions that vary between solo LTR and provirus, or in proviral copy number. We determine that these MEIs contribute 144,748 additional CpGs not present in the reference. From this, we identify 480 Alus, 67 LINE1s, 12 SVAs and 2 HERVKs in hypomethylated states. We note that Alus and SVAs are more methylated than other LINE1 and HERVK. Lastly, MEIs dating reported a mean of age 1.08 Mya (median: 640 kya) and beta regression identified a moderate demethylating effect of age on MEIs (effect: -0.069 log-odds per log10 years, P &lt; 6.08 x 10-19). Our results show that the methylation level of a LINE1 MEI is expected to decrease from 86.4% to 80.8% in the first Mya. In conclusion, GraffiTE v1.1 genotypes SVs, annotates MEI, and characterizes their epigenetic state at the scale of populations by leveraging the full potential of LRS. While we showcase its application in human data, the pipeline can be deployed in any model for which a TE library is available.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.06.764993v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">A Three-View System for CRISPR-Cas12a crRNA Activity Ranking: When to Ensemble, When Context Matters More</h2>
+<p class="paper-authors">Deng, T., Lin, Z., +1 author, Xu, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> CRISPR-Cas12a assays require effective crRNA selection, but experimentally screening all possible candidates is costly. We developed TriCasRank, a ranking model that combines sequence features with EasyDesign reference mapping and activity summaries from related training records. Historical summaries were calculated within each training fold to avoid information leakage. In five-fold target-grouped cross-validation using out-of-fold predictions, TriCasRank improved the Spearman correlation from 0.741 for the sequence-only ensemble to 0.821 (paired difference, 0.080; 95% target-group bootstrap interval, 0.072 to 0.090). However, its performance was comparable to that of a strong sequence-plus-mapping XGBoost model (SCC, 0.822; paired difference, -0.001; 95% interval, -0.007 to 0.005). Separate perturbation analyses supported the predictive value of mapping and historical features, although their effect sizes were not directly comparable because they were evaluated using different model configurations. Prediction errors remained larger at the extremes of the activity distribution. Performance also became less stable when template identities were separated between training and evaluation. TriCasRank may therefore be useful for ranking candidates represented within the EasyDesign-derived domain, but evaluation on an independent experimental cohort is still needed.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.765023v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">PRISM: probabilistic cell-type resolution with integrated spatial modelling for simultaneous ambient RNA decontamination and doublet correction in spatial transcriptomics</h2>
+<p class="paper-authors">Cupaioli, F., Merelli, I.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Spatial transcriptomics count matrices are confounded by ambient RNA contamination and cell-segmentation doublets, two artifacts that co-occur but are rarely modelled jointly. We present PRISM, an Expectation-Maximization framework that simultaneously (i) assigns each cell a probabilistic cell-type identity, (ii) detects doublets via log-likelihood ratio testing of two-component mixtures, and (iii) estimates a per-cell contamination fraction anchored to a spatially resolved ambient profile. In an in silico benchmark of 40,800 simulated cells, PRISM recovers with Pearson r=1.000 across all contamination levels (0.05 to 0.50) and UMI depths (500 to 5,000), with zero doublet false positives and 100% singlet accuracy. Applied to a Visium HD mouse cerebellum dataset (four samples, 125,289 cells, 17 reference types) from a metachromatic leukodystrophy (MLD) model, PRISM identifies a median =0.60, flags 67.4% doublets (driven by the densely packed cerebellar granule layer), eliminates spurious myelin signal from microglia (0.82% to 0.00%), and doubles oligodendrocyte myelin purity (2.8% to 5.6%). PRISM runs on commodity CPUs in under 15 minutes and returns decontaminated integer count matrices for every measured gene.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.765042v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Leave-One-Out-Cross-Validation Based Machine Learning Algorithms for Efficient, Scalable, and Robust Prediction of Artemisinin Resistance in Plasmodium falciparum Kelch13 mutants.</h2>
+<p class="paper-authors">Das, R., Dutta, S., Bhattacharjee, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Emerging Plasmodium falciparum resistance to frontline artemisinin (ART) derivatives threatens global malaria control efforts. Current protocols assigning ART-sensitive (ART-S) or -resistant (ART-R) phenotypes to parasite strains with Kelch13 (K13) mutations remain time-intensive for real-time surveillance. Ring-survival assay (RSA), an ex vivo gold standard mandates laboratory-adaptation under culture conditions and frequently does not replicate clinical ART-responsiveness, thereby limiting its utility for rapidly triaging newly emerging K13 variants. In contrast, advent of artificial intelligence (AI)-derived models hold potential to screen &gt;100 K13 variants within hours, enabling rapid near-real-time prediction of ART-S/R. Here, we engineered a panel of forty representative K13 variants by computing their relative deviations from wild-type K13 across ten physicochemical and structural descriptors, yielding a compact feature set which captures mutation-induced perturbations in folding, stability, and solvent exposure. These can be further utilized to train and validate AI classifier to predict resistance.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.05.764763v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">THiRST: Computer Vision Empowered Three-dimensional High-Resolution Spatial Transcriptomics Analytics</h2>
+<p class="paper-authors">Zhu, J., Wang, Y., +7 authors, Deng, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> High-resolution spatial transcriptomics (ST) preserves gene expression within tissue architecture but remains limited to individual two-dimensional (2D) sections, restricting analysis of continuous three-dimensional (3D) structures and cross-section consistency. We present THiRST, a computational framework for reconstructing multi-resolution 3D spatial transcriptomic representations from serial sections. THiRST combines coarse-to-fine morphology-guided registration, spatial matching of ST units, cross-section association of segmented structures, and integration of Visium V2 and high-definition ST. In serial kidney sections, patch-level refinement increased the same-cluster proportions of matched units at adjacent offsets from 63.8% and 65.6% to 70.7% and 70.0%, respectively, while improving expression concordance. The reconstructed correspondences enabled 3D glomerular and object-level expression analysis, with 54.1% of differential genes detected only in 3D. Cross-platform integration further aligned V2 and high-definition measurements in a shared expression space. THiRST demonstrates the feasibility of object-level 3D ST analysis from serial 2D sections and underscores the importance of accurate local registration.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.29.762926v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">mFrag: Integrating External DNA Methylation References Improves Lung Cancer Early Detection by Fragmentomics</h2>
+<p class="paper-authors">Cui, S., Swarup, N., +5 authors, Sun, W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Fragmentomics analyzes features of circulating cell-free DNA fragments (e.g., fragment length or end motifs) derived from whole-genome sequencing of liquid biopsy samples (blood or other body fluids), enabling non-invasive early cancer detection. Here we present mFrag, a framework that integrates external methylation reference atlases with fragmentomic features for lung cancer detection. mFrag comprises two complementary methods: mFrag-Weight, which uses DNA methylation information to weight fragmentomic features, and mFrag-Net, which integrates fragmentomic features and external DNA methylation data through neural networks. We average the output probabilities of the two methods to obtain a final prediction score. The mFrag model was trained using 287 individuals at risk for lung cancer. In an independent case-control testing set comprising 385 non-cancer controls and 46 cancers (28 stage I, 12 stage II, and 6 stage III or IV), mFrag outperforms a DELFI-style fragmentomic approach, improving PR-AUC from 0.455 to 0.720 and sensitivity at 99% specificity from 0.043 to 0.478, with ROC-AUC from 0.871 to 0.908. For stage I lung cancer, mFrag raises PR-AUC from 0.314 to 0.558 and ROC-AUC from 0.855 to 0.894. Applied to end 4-mer motif features, mFrag likewise improved over an unweighted baseline, with gains contributed by both mFrag-Weight and mFrag-Net. In summary, mFrag improves the accuracy of fragmentomics-based lung cancer detection through integrating external DNA methylation data and the complementarity of its two component models, without incurring any additional data-generating cost.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.10.28.762499v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">ERV-derived dsRNAs induce stress granules that drive neural crest fate to initiate melanoma</h2>
+<p class="paper-authors">Drake, K. D., Formato, E., +12 authors, Zon, L. I.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Melanoma arises when melanocytes are oncogenically reprogrammed into neural crest-like cells, but what initiates this switch is unknown. Here we show that endogenous retrovirus (ERV)-derived double stranded RNAs (dsRNAs) induce stress granules (SGs) that drive this fate change. In zebrafish, melanoma progresses through a stage-specific ERV switch: zferv marks precursor cells before crestin activates in tumor cells. Both elements generate dsRNA that triggers eif2ak2-dependent SGs within precursor lesions and through transformation. SGs are tumorigenic as G3BP1 overexpression accelerates melanoma onset, whereas mosaic, melanocyte-specific g3bp1/2 knockout delays it. Small molecule-mediated inhibition of G3BP1/2 eliminates precursor lesions and reduces tumor burden. Similarly, blocking dsRNA sensing prevents SG formation and lowers melanoma incidence. Human nevi and melanomas show analogous, stage-specific ERV programs and SG assembly. In human melanoma cells, SGs sequester and translationally repress SOX10-regulating mRNAs, including the tumor suppressor KMT2D. Mosaic knockout of kmt2d in vivo enhances SOX10-driven neural crest reactivation. Thus, an ERV-SG axis establishes an oncogenic translatome that enables melanoma fate, with diagnostic and therapeutic potential.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.06.764901v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">EGF and EREG regulate early oncoprotein-mediated tissue transformation in intestinal organoids.</h2>
+<p class="paper-authors">Caracci, M. O., Soetje, B., +4 authors, Bastiaens, P. I. H.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Somatic mutations, coupled with abnormal extracellular signaling cues, promote tumor development. The abundance and affinity of EGF-family ligands for EGFR influence tissue development and play a central role in organoid culture by differentially regulating the balance between crypt proliferation and villus differentiation in mouse small intestinal organoids (mSIOs). To test how medium ligand composition affects early oncogenic transformation, we generated a Ptprg KO organoid line by CRISPR/Cas9 and two previously described organoid lines harboring synthetic bio-orthogonal expression systems for KRASG12V and {beta}-Ctn4A, activated by the membrane-diffusible ligands TMP or TMP-Cl. Measurements of crypt and villus region area showed that acute oncogenic activity did not alter organoid growth in media containing 50 ng/mL EGF; however, organoids grown without EGF consistently showed differential growth of the crypt region. Furthermore, EREG and sub-saturating EGF (0.5-5 ng/mL) treatments differentially affected crypt/villus development in each organoid line. Finally, we measured organoid morphology and found that crypt domain spatial distribution is independent of crypt area and requires EGF or EREG, highlighting the role of both proliferation and crypt organization in oncogenic tissue transformation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.764837v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Realism and resolution: How AI-predicted protein structures differ from experimental structures</h2>
+<p class="paper-authors">van der Kant, R., Delgado Blanco, J., +2 authors, Rousseau, F.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Protein structure predictors can recover protein folds with remarkable accuracy, and their models are increasingly used as if they were experimental structures. Yet even for a confidently predicted fold, it remains difficult to judge how faithfully the model reproduces protein geometry. We introduce WhatRes, which assesses a structure from its coordinates on two complementary axes. Apparent resolution estimates the experimental resolution its local geometry most closely resembles. Realism measures how closely that geometry matches experimental structures at the same apparent resolution. Predicted models can score well on apparent resolution while showing systematically less variation in bond lengths and angles than is observed in high-resolution crystal structures. WhatRes reveals this over-idealisation even in high-confidence models.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.06.764824v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Interpretable machine learning applied to high-dimensional salivary proteomics in pediatric inflammatory bowel diseases.</h2>
+<p class="paper-authors">Brittany T Rupp, Joaquin Reyna, +5 authors, Kevin M Byrd</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Inflammatory bowel diseases (IBDs), including Crohn's disease (CD), ulcerative colitis (UC), and inflammatory bowel disease unclassified (IBD-U), are chronic inflammatory disorders of the gastrointestinal tract. Current methods for classification and longitudinal monitoring are invasive, expensive, and often delayed, limiting timely diagnosis and management. This proof-of-concept study reports the first application of high-dimensional salivary proteomics integrated with interpretable artificial intelligence/machine learning (ML) to define a minimal protein signature for pediatric IBD classification with the ultimate goal of informing therapeutic decision-making.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/43002066/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Nov 09, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Genomic, single-cell, and functional profiling of the CD48-CD244 axis and NK cell dysfunction in multiple myeloma.</h2>
+<p class="paper-authors">Bonell Patiño-Escobar, Torsten Steinbrunn, +12 authors, Arun P Wiita</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Multiple myeloma (MM) orchestrates immune evasion by subverting natural killer (NK) cell function. CD48, one of the most abundant NK ligands on MM cells, paradoxically enhances NK cell activation yet is associated with high-risk cytogenetics and poor patient survival. We integrated multiomics (bulk and single-cell RNA-seq, assay for transposase-accessible chromatin using sequencing [ATAC-seq], chromatin immunoprecipitation sequencing [ChIP-seq]), genome-wide CRISPR knockout/activation screens, and machine learning to dissect CD48 regulation and function. In human MM and Vκ*MYC mouse scRNA-seq datasets, NK cells exhibit stepwise increases in inflammatory and exhaustion signatures and loss of cytotoxic potential as disease progresses. In vitro coculture assays show that CD48 overexpression on MM enhances NK cell cytokine secretion, whereas chronic exposure leads to ex vivo NK dysfunction. In vivo, CD48-overexpressing Vκ*MYC tumors progress more slowly and extend host survival, while NK cell depletion accelerates disease. These findings support a context-dependent role for CD48, potentiating acute NK responses while coexisting with chronic NK exhaustion, and suggest strategies to modulate CD48 for therapeutic benefit.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/43001584/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Oct 22, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multiomic characterization of microsatellite-stable colorectal cancer reveals distinct biology and targetable vulnerabilities.</h2>
+<p class="paper-authors">Anguraj Sadanandam, Alice C O'Farrell, +47 authors, Annette T Byrne</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Microsatellite-stable (MSS) colorectal cancer (CRC) is a molecularly complex and clinically challenging disease subtype, lacking effective targeted therapies. Leveraging multiomic data from ∼2,000 tumor samples (including 316MSS CRCs not previously profiled) representing ∼4,500 molecular profiles and 195,246 single cells/nuclei, we uncover complex biology and therapeutic vulnerabilities. Application of a multiomic-phenomic integrative framework, including iPhenMap (a machine-learning tool), reveals complex molecular programs, including replication stress, right-sided biology, glutaminolysis-driven metabolic reprogramming, and MYC-E2F transcriptional networks governing epigenetic remodeling and perineural invasion. Focusing on RAS-mutant MSS CRC, functional validation in state-of-the-art patient-derived tumoroid and matched xenograft models confirms focal adhesion kinase (FAK), phosphoinositide-dependent kinase (PDK)1/2, and proteasome inhibition as potential therapeutic strategies when combined with mitogen-activated protein kinase (MEK) blockade. This work underscores the power of integrated multiomic profiling and functional modeling to refine potential treatment approaches in MSS CRC patient populations.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42913633/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
