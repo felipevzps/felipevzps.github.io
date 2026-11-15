@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
+<span class="date">Nov 14, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Algorithms for Designing Therapeutic Oligonucleotides on Pangenome Graphs</h2>
-<p class="paper-authors">Gocht, N., Cotumaccio, N., +2 authors, Mäkinen, V.</p>
+<h2 class="paper-title">From Screening to Differential Diagnosis: Benchmarking 3D Facial Representations Across Craniofacial Conditions</h2>
+<p class="paper-authors">Chen, T., Ahsan, M. U., +2 authors, Wang, K.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Designing therapeutic oligonucleotides that act reliably across human genetic diversity requires more than alignment to a single reference genome. Binding affinity of an siRNA or ASO to a usually complementary site in an mRNA target molecule is one main determinant of drug efficacy. Thus, variation in sub-populations can lead to failures in drug development if this variation reduces binding affinity. We provide a first methodological step towards principled, variant-aware design of therapeutic oligonucleotides. The genetic diversity in target genes, or specific regions thereof, is represented as a pangenome graph. We define individual or small sets of suitable therapeutic oligonucleotides by their ability to cover all paths in a directed acyclic graph within a bounded edit distance &lt;= k. Edit distance is used as an accepted proxy to the commonly used binding affinity. We formalize the resulting computational problem and provide complexity results: NP-hardness of identifying such minimal sets even for k =0, and coNP-completeness of verifying the validity of a given set of oligonucleotides. Further, we propose algorithmic approaches operating on a product graph of an automaton (an Aho-Corasick DFA or an Ukkonen DFA) and the pangenome graph, as well as a dynamic programming-based lossless filter. We evaluate the approaches on gene-specific subgraphs of human pangenome graphs and demonstrate favorable performance compared to naive brute-force computation. Our results show that candidate target sites with a threshold of k &lt;= 3 can be identified even for large, complex graphs where the brute-force computation did not complete within 24h. We observe that the dynamic programming-based lossless filter outperforms both product-graph approaches as well as brute-force baselines while maintaining an average approximation ratio &lt; 1.5 across more than a hundred evaluated subgraphs. We also present examples where a small set of oligonucleotides constitutes a feasible solution where no single oligonucleotide with a threshold of k &lt;= 2 covers all paths.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.07.764582v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Rare genetic disorders often present with highly heterogeneous physical features: some have distinctive craniofacial characteristics, whereas others produce subtler or more variable facial differences, making phenotype-based diagnosis challenging. Three-dimensional (3D) facial scanning is a noninvasive approach that captures facial shape and surface geometry, providing quantitative information on craniofacial morphology beyond conventional 2D photographs. Here, we investigated how well 3D facial representations support clinical tasks ranging from broad screening to fine-grained differential diagnosis without landmark registration, dense correspondence, or template fitting. We benchmarked four 3D models, including PointNet, PointNet++, DGCNN, and a geometric baseline, using 26,990 facial scans from 18,785 subjects across four prediction tasks. Across models, performance declined as greater diagnostic specificity was required. Broad affected-versus-unaffected screening achieved high performance (accuracy 0.893; AUC 0.956), although sensitivity analyses revealed substantial influences of cohort composition and demographic differences. Fine-grained syndrome diagnosis remained more challenging, with limited top-1 accuracy despite meaningful class-wise discrimination. Combining repeated scans improved patient-level diagnosis beyond differences in patient weighting. Prototype inference further improved diagnostic prioritization, placing the correct syndrome among the top five candidates for about 65% of held-out patients across 49 diagnoses. Patient-to-patient retrieval identified phenotypically similar confirmed cases, while useful syndrome prototypes could be constructed from relatively few reference patients. Anatomical region-occlusion analysis revealed syndrome-dependent patterns of facial importance broadly consistent with clinically recognized craniofacial features, although overlapping facial phenotypes contributed to diagnostic confusion. Overall, these findings support the potential of 3D facial representations for diagnostic candidate prioritization and retrieval, while emphasizing the influence of cohort composition on screening performance and the challenges of distinguishing phenotypically similar genetic syndromes.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.12.766227v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,167 +51,15 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
+<span class="date">Nov 14, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Chimera: Cross-Species Single-Cell Generative Modeling of Expression Deployment Relative to Protein Conservation</h2>
-<p class="paper-authors">Inecik, K., Sevinc, E. S., +1 author, Theis, F.</p>
+<h2 class="paper-title">Scalable recorders of cellular calcium dynamics and molecular interactions across time</h2>
+<p class="paper-authors">Yan, Y., Linghu, C.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> A protein's sequence says what a gene could do in another species; the cells of that species say what it does there. Comparative genomics measures the first. Chimera measures the second, a gene's deployment, on the same genes and reports the difference. It aligns single-cell atlases across species in one generative model and returns, for every one-to-one ortholog, the evidence in the counts for a shared expression pattern, and {Delta}[a], the position of that evidence above or below what the protein's identity predicts. This difference is not sequence constraint under another name: across eight tissues, protein identity tracks dN/dS, whereas {Delta}[a] tracks neither. A gene therefore has two coordinates, not one, and the second can contradict the first: spermatocyte genes such as ZPBP2 keep their stage pattern on less conserved proteins, in eight held-out species, whereas conserved hepatocyte enzymes such as ALAS1 share their pattern but not their level. More broadly, genes of specialized cells sit above what their proteins predict in 23 of 24 cohorts, and approved drug targets do so more often than matched genes. Even among nearly identical proteins, where sequence can no longer tell genes apart, the count evidence still does. Nor does this rest on the model alone: independent data support the count evidence in liver and testis and, in a pre-specified test, {Delta}[a] in liver. With both coordinates, one can ask whether another species uses a gene as humans do, the premise of every animal model of a disease gene or drug target.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.11.766029v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Evolutionarily Conserved Fragments reveal modular architecture and expand functional coverage in bacteriophage proteins</h2>
-<p class="paper-authors">Smug, B., Szczepaniak, K., +2 authors, Mostowy, R. J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Bacteriophage proteins evolve through extensive modular exchange, yet the sequence units underlying this process remain poorly defined. Classical domains are plausible evolutionary modules, but they incompletely annotate phage proteins and may not always coincide with the regions conserved across protein families. Here, we constructed 13,035 Evolutionarily Conserved Fragments (ECFs), grouped into 3,167 families, through large-scale HMM-HMM comparisons of proteins from 5,396 RefSeq phage genomes, without imposing predefined domain boundaries. ECFs overlapped substantially with ECOD and Pfam annotations but formed a heterogeneous spectrum comprising subdomains, domain-equivalent units, composite regions and fragments with no counterpart in either resource. Their relationships were frequently nested, indicating that conserved modules occur at multiple organisational scales. ECFs annotated 50% of phage representative proteins (at least doubling the coverage of either database), with the largest gains in structural and infection-related functions, a pattern replicated in independent metagenomic data. ECF families also showed function-dependent patterns of diversity and spatial segregation and provided functional associations for 23,925 protein families lacking detectable Pfam or ECOD domains. In receptor-binding proteins, ECFs subdivided established domains, delineated previously unannotated structural elements and recovered homologous regions where structural similarity was ambiguous. These results show that the evolutionary building blocks of phage proteins do not always coincide with classical domains, highlighting that evolutionary processes act across multiple scales. ECFs provide a complementary, sequence-derived framework for investigating how complex viral proteins are assembled, diversified and functionally organised.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.10.765650v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">ECMExplainer: a functional matrisome framework for decoding cellular stress states and aging trajectories</h2>
-<p class="paper-authors">Sheekey, E., Avelar, R. A., Fujiwara, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The extracellular matrix (ECM) is increasingly recognized as both a hallmark of aging and a durable record of the cellular stress states that shape age-related tissue dysfunction. Despite its apparent role in aging and disease, translating matrisome gene expression into interpretable biological meaning remains an unresolved challenge. Here we introduce ECMExplainer, a framework that uses 180 matrisome gene-pair ratios, partitioned into 76 Assembly/Destruction and 104 Signaling/Signaling pairs to position fibroblast transcriptomes within a functional matrisome phenotype space defined by six reference fibroblast states spanning physiological and stress-associated conditions: Proliferating, Quiescence, Senescence, Fibrosis, Inflammation, and Hypoxia. Because each ratio records only which of the two genes is more highly expressed, it is largely insensitive to sequencing depth and batch offsets, allowing ECMExplainer to outperform magnitude-based classifiers on unseen data. Rather than assigning only a single phenotype label, ECMExplainer measures a sample's coordinate distance to each reference state, enabling quantitative mapping of matrisome state trajectories while giving biological meaning even to conditions that fall between or outside the training phenotypes. Across 20 independent fibroblast datasets, ECMExplainer uncovered conserved ECM signatures underlying diverse fibroblast states and showed that they capture multiple aging-related processes. Specifically, it identified FST/ITGA1 as a rapamycin-sensitive senescence-associated ratio, revealed a fibrosis-biased ECM trajectory in Hutchinson-Gilford progeria syndrome distinct from chronological aging, and distinguished successful from failed OSKM reprogramming using an ECM Aging Score without retraining. Together, these findings establish the matrisome as a compact and biologically interpretable carrier of cellular state information, and ECMExplainer as a quantitative foundation for interpreting aging, fibrosis and rejuvenation through the lens of the ECM.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.11.766024v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Unsupervised Deep Learning for Cryo-EM/ET Particle Classification</h2>
-<p class="paper-authors">Uddin, M. R., Min, S., +3 authors, Xu, M.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Cryogenic electron microscopy (cryo-EM) is widely used to determine protein structures from purified samples. With cryogenic electron tomography (cryo-ET), it is possible to image thin sections of cells and directly visualize diverse proteins in their native environment. However, separating the massive mixture of different types of proteins inside cells remains challenging, especially without human intervention. In this work, we present an unsupervised deep learning framework for classifying cryo-EM/ET particle images that jointly optimizes for pose and structure through an autoencoder-based multi-stage pipeline. On single-particle cryo-EM datasets, our framework can capture the continuous variation in particle views and separate images of real particles from contamination. Using in silico mixtures of multiple types of proteins, we demonstrated our method's capability of separating the protein classes without supervision. Finally in a real cryo-ET dataset of algal chloroplast, our deep learning model successfully detected the four main protein complexes of photosynthesis on native thylakoid membranes. Taken together, these results demonstrate that our framework offers a scalable, annotation-free solution for robust structural discovery across diverse cryo-EM and cryo-ET applications.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.12.766036v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">HieraPTM: From PTM Site Recognition to Functional Phosphosite Prediction through Hierarchical Context and Protein Mechanics</h2>
-<p class="paper-authors">Yuan, Y., Wang, D., +10 authors, LU, T.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Protein post-translational modifications (PTMs) regulate cellular signaling and protein function, making accurate site identification essential for understanding protein regulation. However, PTM site recognition and functional phosphosite prediction are largely modeled independently, limiting the transfer of large-scale recognition knowledge to functional prioritization. Here, we introduce HieraPTM-HieraFuncPhos, a cross-task hierarchical framework that separately models and conditionally integrates transferable PTM recognition representations and function-specific mechanical evidence. HieraPTM integrates local sequence patterns, protein language model representations, and three-dimensional structural information to recognize multiple PTM types. HieraFuncPhos transfers these representations through parameter-efficient adaptation and adaptively retrieves local and distal mechanical evidence conditioned on functional representations. At HSP90AA1 T36 and T115, the model reveals distinct mechanical response patterns consistent with published nuclear magnetic resonance (NMR) observations, suggesting that the framework not only prioritizes functional phosphosites but also provides biophysically grounded, testable hypotheses regarding site-specific regulation. HieraPTM achieved macro-averaged AUROC and AUPRC values of 0.9237 and 0.8425 across eight PTM tasks, while maintaining competitive performance on severely imbalanced external benchmarks. HieraFuncPhos achieved an AUROC of 0.8274 and an AUPRC of 0.8188, outperforming existing comparison methods. Together, this framework connects PTM site recognition, functional prioritization, and structure-informed hypotheses regarding potential regulatory processes.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.12.766127v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">A statistical framework for identifying candidate genetic interactions from adaptive laboratory evolution data</h2>
-<p class="paper-authors">Sun, B., Feist, A., +1 author, Santos, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> </p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.12.766281v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Phylospatial optimal transport for single-cell and spatial transcriptomics data integration</h2>
-<p class="paper-authors">Ferreira, P. F., Kviman, O., Lagergren, J.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> The spatial organization of evolving cell populations in tumors influences how they progress and respond to treatment. Spatially resolved transcriptomics data may be used to examine the locations of these diverse cell states in tumor sections. However, these technologies often lack single-cell resolution and instead capture groups of cells in spatial spots, making it difficult to resolve cancer clones. In contrast, dissociated single-cell transcriptomics data are better suited for obtaining cell lineages, but do not capture the locations of the cells in the tissue. Here, we introduce SpOTr, an optimal transport approach that leverages the concordance between the evolutionary tree and the spatial distribution of cancer cells to integrate single-cell and spatial transcriptomics data from tumors. SpOTr combines a spot deconvolution model with Fused Gromov-Wasserstein optimal transport, in which cells that are close in the tree are drawn to nearby spots. In simulations and in real spatial lineage tracing data, SpOTr recovered the spatial locations of clones better than methods that ignore the tree. In a human colorectal liver metastasis, SpOTr mapped copy number clones from dissociated cells to spatial spots, showing that it successfully maps the evolutionary history of tumors in space.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.11.765961v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">DynamicsPLM: A Dynamics-Enriched Small Protein Language Model for Protein Variant Effect Prediction</h2>
-<p class="paper-authors">Dao, T. M., Shehu, A., Kabir, A.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Predicting how mutations impact protein function and stability remains a key challenge in computational biology. Current state-of-the-art protein language models (PLMs) primarily scale parameter size on sequence corpora to capture evolutionary constraints but remain blind to the explicit physical dynamics of folded proteins. Conversely, models trained strictly on physical dynamics neglect critical evolutionary sequence statistics. In this paper, we bridge this gap by introducing DynamicsPLM, a highly parameter-efficient 35-million-parameter model that unifies evolutionary and biophysical representation learning. Utilizing a second-stage, multi-task continual pretraining strategy on over 60,000 proteins, we enrich a foundational sequence encoder with explicit residue-level and pairwise molecular dynamics heads while preserving its original evolutionary knowledge. At inference, DynamicsPLM computes zero-shot mutation effects from sequence alone by balancing an evolutionary plausibility score against a structural dynamics disruption score. Across the massive ProteinGym benchmark and natural variants of the Tsuboyama folding stability dataset, DynamicsPLM achieves state-of-the-art accuracy among all models under 100M parameters, and matches or outperforms several billion-scale sequence-based models of its size. Our findings demonstrate that explicit structural-dynamics supervision provides a parameter-efficient alternative to raw scale. Availability: All codes including data preparation scripts, training and validation recipes, and experimental configurations for LoMuS are available at: https://github.com/kabir-ai2bio-lab/DynamicsPLM.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.11.765945v1?rss=1" target="_blank">
-                Read full paper
-                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-</a>
-</div>
-</div>
-</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
-<div class="paper-meta">
-<span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">bioRxiv</span>
-</div>
-<div class="paper-content">
-<h2 class="paper-title">Spindle: Scalable Indexing of Spatial-Omics Data for Fast Querying</h2>
-<p class="paper-authors">Ghosh, S., Sintos, S., +1 author, Sarkar, H.</p>
-<div class="paper-abstract">
-<p><strong>Abstract:</strong> Spatial transcriptomics (ST) has unlocked new avenues for biological discovery by jointly capturing gene expression and spatial context. ST datasets are typically stored as gene expression matrices paired with spatial coordinates, supporting queries based on expression levels at individual locations. However, characterizing how genes vary together requires representations of relationships between genes, such as covariance matrices computed over spatial neighborhoods. These gene--gene co-expression patterns capture coordinated biological variation and can reveal spatially localized gene programs. As datasets grow to atlas scale, efficiently searching for such patterns becomes a central computational bottleneck due to the combination of high dimensionality, extreme sparsity, and variability in gene expression across large numbers of spatial regions. Such searches require repeated access to second-order statistics, motivating a compact, searchable representation of spatial co-expression. We address this problem with Spindle, a platform-agnostic indexing algorithm for efficiently searching spatial gene co-expression patterns. Spindle exploits the approximate block-diagonal structure of gene--gene covariance matrices over spatial regions, in which covariances between blocks are small in magnitude, to selectively store informative components while compactly representing recurring covariance patterns. This yields a compressed yet searchable index suitable for atlas-scale spatial datasets. Across multiple real-world biological datasets (87,000--817,000 cells), Spindle indexes are 113--197 times smaller than the whole covariance matrices. A complete query, including query preprocessing, takes 2.8--28 ms on one CPU core, 5.1--16 times faster than a scan over the whole covariance matrices, and the tiles it returns recover a median of 81% of the exact near neighbors. In breast cancer, the regions retrieved by covariance search closely match the cell-type composition of the query (median cell-type composition difference 0.15, compared with 0.54 for random regions). Spindle supports both partial covariance queries and queries specified as gene lists, as well as retrieval across measurement platforms.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.12.766059v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Cellular processes are mediated by dynamic biochemical events in their native context, including changes in intracellular ion concentrations and transient interactions between molecules. Studying these processes across large cell populations requires recording their dynamics across time in single cells, simultaneously and at scale. Here, we introduce split-1POK, a split protein tape monomer whose two halves reconstitute when the domains fused to them interact. The reconstituted monomer is incorporated into the protein tape as it elongates across time in live cells, enabling scalable, spatiotemporally resolved endpoint readout under conventional light microscopy. Split-1POK provides a programmable scaffold for new recorders in the CytoSense family, our previously introduced framework (ref. 1) in which the same cytosol-localized monomer senses cellular activity and writes it along protein tape recorders. Unlike transcription-based activity recorders, which encode the signal through new gene expression, CytoSense recorders act on monomers post-synthesis, so the activity signal is sensed and written directly in the cytosol without passing through transcription- or translation-associated cascades. Fusing calmodulin and its binding peptide to split-1POK, we built TCaMP (Tape monomer-CalModulin-Peptide), a genetically encoded calcium recorder (GECR) that measures calcium dynamics on a single, analog intensity scale along a continuous time axis, providing quantitative comparison of calcium levels over time within the same cell. In cultured human cells, TCaMP records transient calcium dynamics from transmembrane entry, receptor activation, and intracellular store release, detecting stimulations as brief as ten minutes. With hour-scale kinetics over days, TCaMP complements fluorescent calcium indicators by trading sub-second temporal resolution for scalable, long-term recording. Fusing conditional dimerization pairs to split-1POK yields recorders of molecular interaction histories in response to external stimuli. Split-1POK thus brings scalable, spatiotemporally resolved recording to intracellular calcium dynamics and molecular interactions across time.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.13.765775v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -222,15 +70,34 @@
 </div><div class="paper" data-keywords="bioinformatics, cancer biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, cancer biology</span>
-<span class="date">Nov 13, 2026</span>
+<span class="date">Nov 14, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">mRNA-LNP vaccination induces microenvironment remodeling and generation of tissue-resident memory T cells in glioblastoma</h2>
-<p class="paper-authors">Snelling, S. M., Manoharan, V. T., +17 authors, Chan, J. A.</p>
+<h2 class="paper-title">An expanded, phenotypically distinct tumor cell subset with low HPV mRNA increases recurrence risk</h2>
+<p class="paper-authors">Raghav, L., Patterson, M. R., +10 authors, Basu, D.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Glioblastoma remains highly refractory to immunotherapy, in part because of a profoundly immunosuppressive tumour microenvironment that limits effective T-cell responses. Although mRNA vaccines can induce anti-tumour immunity, how they reshape the glioblastoma immune ecosystem to support durable tumour control is not well understood. Here we use an immunocompetent EGFRvIII-driven syngeneic glioblastoma model and antigen-specific mRNA lipid nanoparticle (mRNA-LNP) vaccination to define the cellular and spatial mechanisms underlying therapeutic response. In our model, vaccination induced durable EGFRvIII-specific humoral and cellular immunity, resulting in complete tumour eradication and long-term protection against intracranial rechallenge. Integrative analyses incorporating flow cytometry, tumour interstitial fluid profiling, multiplex immunostaining, spatial transcriptomics and ligand-receptor modelling demonstrated extensive remodelling of the tumour microenvironment following vaccination. Early tumour control was associated with expansion of pro-inflammatory and antigen-presenting myeloid populations, increased cytotoxic CD8 T-cell infiltration and activation, enhanced interferon-responsive signalling, and the formation of immune-supportive spatial niches enriched for antigen presentation and chemokine-mediated cellular communication. Vaccination promoted inflammatory chemokine relay networks centred on the CXCL16-CXCR6 axis, a pathway linked to tissue residency programming in the central nervous system. Functional depletion studies identified CD4 and CD8 T cells as essential mediators of therapeutic efficacy, while durable protection was maintained by tumour-specific brain-resident memory CD8 T cells that persisted despite peripheral lymphocyte depletion. Together, these findings identify T-cell-driven microenvironmental remodelling as a critical mechanism linking mRNA vaccination to the establishment of long-term brain-resident anti-tumour immunity in glioblastoma.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.11.762754v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Human papillomavirus-related (HPV+) cancers harbor a subset of tumor cells expressing certain senescence-related transcripts and reduced levels of HPV mRNAs. We aimed to define this HPV-low population's biologic traits and clinical significance via integrated analysis of recurrence-prone human HPV+ oropharyngeal cancers (OPCs) and patient-derived xenografts (PDXs) of variable therapy sensitivity. Single-cell mRNA sequencing of PDXs and human tumors detected gene expression profiles in HPV-low cells indicating lack of senescence or terminal differentiation and intact tumorigenic capacity. HPV-low cells in cisplatin-refractory PDXs and particular human OPCs differentially upregulated multiple pathways linked to aggressive tumor biology, including RAS signaling, IL-6 signaling, and EMT. Predicted loss of cell-cell interactions among HPV-low cells reflected reduced epithelial identity, further supporting their more aggressive biology. Accordingly, the size of the pre-treatment HPV-low fraction had strong, independent association with recurrence risk. Genetic subclones within OPCs varied widely in content of HPV-low cells, which were enriched in particular lineages. Our findings uncover novel pro-tumor functions of HPV-low cells and support a central role for them in therapy resistance as well as potential utility as a clinical biomarker. Further elucidating mechanisms of cooperativity and plasticity between HPV-low and high states holds promise to reveal targets in treatment-refractory HPV+ malignancies.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.10.762907v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 14, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Discovery of molecular glues for modulating MHC presentation of cancer neoantigens</h2>
+<p class="paper-authors">Shen, W., Zhang, Z., +5 authors, Shokat, K. M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Antigen presentation by MHC class I molecules is essential for cancer immunosurveillance, but many cancer-specific antigens fail to form complexes with Class I MHC and are poorly presented on the cell surface. In this study, we present a chemical strategy to overcome this limitation by identifying peptide MHC glues (PMGs) that promote the formation of peptide-MHC complexes with otherwise unpresentable cancer antigens. Crystal structures of these complexes show that our compounds stabilize antigen-MHC binding by making simultaneous interactions with the MHC protein and the antigen peptides. These findings reveal a new approach for chemically rewiring Class I MHC antigen presentation and accessing rare cancer antigens for therapeutic targeting.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.13.762685v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -241,15 +108,15 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Nov 13, 2026</span>
-<span class="journal">MED</span>
+<span class="date">Jul 18, 2026</span>
+<span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Machine learning-based experimental access to photon-by-photon arrival times in scintillation detectors.</h2>
-<p class="paper-authors">Onishi Y, Ota R, +4 authors, Yamaya T.</p>
+<h2 class="paper-title">Label-free detection of glioma radioresistance using exosomal SERS spectra and machine learning.</h2>
+<p class="paper-authors">Qiong Wu, Sufang Qiu, +2 authors, Youliang Weng</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Objective. Scintillation detectors with excellent timing resolution enable more precise localization of radiation sources in positron emission tomography, leading to substantial improvements in diagnostic capability for diseases such as cancer and dementia. At the timing precision required for such applications at the picosecond scale, detector performance is governed by the dynamics of scintillation photons generated within the detector and their subsequent detection processes. However, detector signals have conventionally been treated only as collective responses of many photons due to structural constraints inherent to photodetectors. In this study, we overcome this fundamental limitation using deep learning framework.Approach. The proposed method estimates photon-by-photon arrival times directly from detector waveforms without requiring any modification to the detector structure; the method operates on an event-by-event basis without ground-truth labels by integrating an unsupervised learning framework with a physically informed detector-response model.Main results. Through comprehensive validation combining Monte Carlo simulation and experimental measurements across various detector configurations, we experimentally demonstrate improved timing resolution, visualized depth-of-interaction-dependent photon transport, and classified Cherenkov and scintillation photons based on the estimated photon-level timing information using a unified deep learning-based framework.Significance. These results provide experimental access to photon dynamics, bridging the gap between theoretical modeling and experimental observation, and they open a new data-driven pathway for discovery in detector physics and optimization.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/43021576/" target="_blank">
+<p><strong>Abstract:</strong> Glioma ranks among the most intractable malignancies. Given the intricate anatomy of the brain, complete surgical resection is seldom achievable, making radiotherapy a necessary adjunct. Nevertheless, radioresistance, which is closely linked to recurrence, still represents a critical clinical barrier. Effective tumor biomarkers and novel detection methods are urgently required to predict treatment resistance and monitor therapeutic response. Here, we employed surface-enhanced Raman spectroscopy (SERS) coupled with proteomics to profile, for the first time, the characteristic spectral patterns of exosomes secreted by our established radioresistant glioma cells. We further uncovered specific shifts in protein expression during the development of radioresistance, including glycolysis-related proteins (ALDOA and GAPDH) and ribosomal proteins (RPS5 and RPLP0). These proteins are correlated with glioma prognosis. Moreover, bioinformatic analysis revealed that expression levels of all four genes positively correlate with tumor malignancy grade. Furthermore, we established a machine learning-based diagnostic model, Principal component analysis and convolutional neural network (PCA-CNN), for the accurate identification of exosomes derived from radioresistant glioma cells. These findings validate exosomes as a strong candidate biomarker for predicting radioresistance. This approach enables rapid and reliable assessment of radiotherapy resistance in glioma, paving the way for personalized and precise clinical management.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/42497545/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
