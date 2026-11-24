@@ -32,15 +32,15 @@
 <section class="papers-list" id="papersList"><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2026</span>
+<span class="date">Nov 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">RADSuite: Improving Species-Level Identification in Microbiome Research</h2>
-<p class="paper-authors">Christensen, R. N., Gilliland, M., +5 authors, Johnson, W. E.</p>
+<h2 class="paper-title">LPMOcat: an interactive database for comparative structural analysis of lytic polysaccharide monooxygenases</h2>
+<p class="paper-authors">Szleper-Shendy, K., Sequeiros-Borja, C. E., +1 author, Gora, A.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> In the last twenty years, the microbiome has become a central focus of biomedical research, with amplicon sequencing of the 16S rRNA gene considered the industry standard for taxon identification of prokaryotes due to its cost-effectiveness. However, common target regions in 16S amplicons often do not uniquely distinguish closely related species, restricting many analyses to the genus level. Additionally, curated databases such as NCBI's 16S curated database often do not contain all intragenomic variants of the 16S gene and lack annotation of the 16S genomic composition and gene structure. To address these limitations, our team created RADSuite, a collection of tools which includes a more robust database of 16S gene copies (RADlib), an application that identifies which V regions will allow for species level identification (RADx), and a step-by-step guide for how to integrate RADlib within existing metagenomic profiling software tools. Here we demonstrate the utility of using RADSuite as a guide for designing 16S amplicon sequencing experiments. For example, RADx can be used to recommend 16S components that enable species-level resolution for most microbes of interest, even when industry-standard default amplicon choices (V3/V4) are insufficient. These findings suggest that targeted variable region selection is critical for reliable species identification. As researchers use RADSuite to improve the quality of their experiments, we anticipate improved experimental accuracy in fields of microbiome research from human health to environmental conservation.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.18.767742v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> LPMOcat is a comprehensive resource of 161 characterised lytic polysaccharide monooxygenases (LPMOs) from all eight CAZy families, in which an automated pipeline integrates data from public databases and, based on a structural alignment, annotates common structural features of LPMOs (e.g. histidine brace, second-sphere residues, loop regions), and calculates per-residue properties (e.g. flexibility, hydrophobicity, hole-hopping pathways). The web application summarises all the gathered information in plots integrated with a similarity tree and allows users to filter the catalogue and compare any set of LPMOs to investigate their structure-function relationships.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.12.766080v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -51,15 +51,205 @@
 </div><div class="paper" data-keywords="bioinformatics, synthetic biology">
 <div class="paper-meta">
 <span class="keyword">bioinformatics, synthetic biology</span>
-<span class="date">Nov 21, 2026</span>
+<span class="date">Nov 23, 2026</span>
 <span class="journal">bioRxiv</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">MicroBioAgent: an AI agent for automated microbiome analysis</h2>
-<p class="paper-authors">Li, Z., WANG, J., +2 authors, Zhang, L.</p>
+<h2 class="paper-title">Effects of sequence splitting and negative-set selection on antimicrobial peptide prediction</h2>
+<p class="paper-authors">Chen, C., Zhou, H., +2 authors, Tian, Y.</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Microbiome data analysis demands customized workflows tailored to specific biological questions, sequencing modalities, and data properties. However, constructing and executing these workflows requires navigating heterogeneous software dependencies, reference databases, and multi-step parameter tuning. Here, we present MicroBioAgent, an autonomous, domain-specific agent framework that translates high-level biological queries into executable, study-specific pipelines across 16S rRNA amplicon, reference-based shotgun, and de novo assembly-based metagenomics. Rather than relying on static pipeline templates, MicroBioAgent employs a closed-loop execution architecture: it dynamically selects and runs bioinformatics tools within user-controlled environments while iteratively inspecting intermediate outputs to adapt downstream analytical decisions. Furthermore, to address the long-running nature of metagenomic computation, we introduce an asynchronous background task-management mechanism that reduces LLM token consumption by over 50% while enabling real-time plan adjustment and automated workflow resumption. We systematically evaluated MicroBioAgent across three benchmarks of increasing complexity: (1) paired amplicon and shotgun profiling of tomato rhizosphere microbiomes, (2) taxonomic and functional profiling coupled with machine-learning classification in a colorectal cancer cohort, and (3) de novo metagenomic assembly, metagenome-assembled genome (MAG) binning, and metabolic pathway reconstruction in a polyethylene degradation study. Across all benchmarks, MicroBioAgent faithfully recapitulated the primary biological findings of the original studies, exhibiting high analytical concordance despite expected tool- and database-dependent variations. In systematic robustness evaluations across 27 independent runs spanning three backbone large language models and three prompt-complexity tiers, MicroBioAgent achieved a 98.8% task completion rate and yielded highly reproducible diversity and differential-abundance estimates. MicroBioAgent establishes a scalable, adaptive paradigm for end-to-end computational microbiome research.</p>
-<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.17.767465v1?rss=1" target="_blank">
+<p><strong>Abstract:</strong> Sequence partitioning and negative-set selection determine the prediction problem posed by an antimicrobial peptide (AMP) benchmark. We quantified their effects using a DRAMP 5.0 audit, controlled comparisons with frozen ESM-2 classifiers and additional benchmark configurations. On DRAMP, random splitting increased Matthews correlation coefficient (MCC) from 0.718 under cluster-disjoint splitting to 0.932. This difference of 0.214 exceeded the gains from the architectural additions tested, and 75.6% of randomly assigned test sequences shared a homology cluster with training sequences. Across three additional dataset configurations, random-minus-cluster MCC differences ranged from -0.04634 to +0.05682, showing that the magnitude and direction of the split effect depended on benchmark composition. With the fitted classifiers and APD6 positives held fixed, replacing DRAMP test negatives with external hard negatives reduced the area under the receiver operating characteristic curve from 0.9833 to 0.9018 (paired difference 0.08149, bootstrap 95% CI 0.07196 to 0.09181). These comparisons quantify substantial sensitivity to evaluation design and show why split effects require assessment within each benchmark. AMPBenchAudit provides the audited records, split assignments and evaluation code needed to examine this sensitivity and interpret model comparisons under explicit test conditions.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.20.768089v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Zero-shot virtual knock-out rankings do not recover causal genes from observational single-cell data</h2>
+<p class="paper-authors">Cui, J., Li, M., +4 authors, Zhang, R.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> </p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.21.768293v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Integrating CRISPRi perturbation responses and transcription-factor binding priors for regulatory network inference in triple-negative breast cancer</h2>
+<p class="paper-authors">Faroque, O., Jannaty, M. H., +1 author, Biswas, S.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Triple-Negative Breast Cancer (TNBC) represents an aggressive breast cancer subtype that lacks actionable cell-surface receptors, restricting frontline systemic management to cytotoxic chemotherapy. While recent functional epigenomics shows that TNBC progression is governed by non-coding regulatory remodeling at distal super-enhancers, conventional Gene Regulatory Network (GRN) inference methods rely on observational transcriptomic co-expression, which suffers from technical dropouts and confounding correlations that inflate false discoveries (&gt;30%). Here, we present an interventional network inference framework that integrates large-scale single-cell CRISPR-interference perturbation sequencing (Perturb-seq; GSE224986, 95,678 cells across 11,975 sgRNAs) with ENCODE Factorbook ChIP-seq physical transcription factor binding priors across 819 somatic mutation-associated enhancer loci in human TNBC (MDA-MB-231). Our pipeline reconstructed a tripartite network yielding 5,935 physical TF-enhancer edges, 383,757 functional enhancer-gene edges, and 542,760 unique TF-target gene functional pairs across 372 active enhancers. Topological centrality prioritized master transcriptional drivers governing TNBC oncogenic signaling, including CTCF, POLR2A, EP300, JUND, MYC, and FOS, which regulate Hallmark programs for Epithelial-Mesenchymal Transition (p = 1.2 x 10-9) and cell cycle progression. Explainable machine learning (SHAP TreeExplainer) revealed non-linear, thresholded transactivation dynamics for AP-1 and MYC. Quantitative benchmarking against held-out CRISPRi ground truth demonstrated strong discriminatory accuracy (AUROC = 0.8999, AUPRC = 0.8745, Precision = 90.13%, FDR = 9.87%), substantially outperforming GENIE3 (AUPRC = 0.6323, FDR = 35.73%) and co-expression correlation (AUPRC = 0.6814). In silico-simulated driver feature silencing correlated with experimental responses (R2 = 0.473, p &lt; 10-122), and master driver signatures significantly stratified overall survival in the METABRIC (n = 320) and TCGA-BRCA (n = 160; p [≤] 0.019) cohorts. Finally, in silico perturbation modeling indicated that multi-target epigenetic combinations achieved 93% topological disruption of oncogenic regulatory connectivity, nominating prioritized candidate circuits for experimental validation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.20.768082v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">TrailMix: Mixture Proportion and Placement Estimation of Ancient Hominin mtDNA Samples using a Pangenomic Reference</h2>
+<p class="paper-authors">Boucher, J., Vogel, N. A., +3 authors, Renaud, G.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Hominin mitochondrial DNA extracted from sediments or ancient environments is sometimes a mixture of multiple contributing sources. Researchers must subsequently computationally identify from which mitochondrial lineages the DNA sequences comes (e.g. Denisovan vs. modern human superhaplogroup) and ideally, quantify their abundance. Bioinformatics approaches described in the literature to achieve this involve in-house scripts or heuristics applied to tools designed for other datasets. However, such approaches have neither been fully tested nor do they provide credible intervals on model parameters. To address this, we introduce TrailMix, a C++ program for estimating contributing mixture proportions as well as individual source placements on the hominin mitochondrial tree for ancient environmental DNA. Using a pangenome reference graph to mitigate reference-related bias, TrailMix works well to accurately deconvolve mixtures of multiple mitochondrial lineages and place each contributor within its respective phylogenetic context. Crucially, it allows users to place minor contributing sources on the tree even on ancestral nodes without needing to reach consensus in the presence of multiple sources. TrailMix is part of the vgan suite of tools and is available at https://github.com/grenaud/vgan.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.21.768339v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">deeprok: highly accurate prokaryotic gene prediction through deep learning and overlap-aware decoding</h2>
+<p class="paper-authors">Xu, Q., Li, H., Shaw, J.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Prokaryotic gene prediction is often considered solved, yet widely used tools still disagree on many genes, chiefly short genes and translation starts. We present deeprok, an ab initio prokaryotic gene prediction method that combines a base-level neural network with an overlap-aware decoder, and refines start-site predictions with a self-trained neural ranker. On four curated genomes distant from its training data, deeprok made 10-18% fewer exact-match errors than Prodigal and GeneMarkS-2, and on 2,925 experimentally verified starts it made 21-41% fewer start errors. Furthermore, deeprok's base-level architecture reveals lineage-specific translation initiation signals. These results show that per-base deep learning combined with overlap-aware decoding can improve prokaryotic gene prediction, especially for resolving translation starts.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.21.768321v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Multiscale superinformation reveals structured organization of genomic sequence features</h2>
+<p class="paper-authors">Galgale, S., Sharma, P.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Genomic sequence organization varies across spatial scales, but sequence complexity measures are often evaluated at a single resolution. Superinformation (SI), introduced by Bose and Chouhan, measures heterogeneity in local sequence entropy by taking the entropy of the distribution of block-level Shannon entropy values. We characterize SI across 14 Sequence Ontology-defined genomic feature classes in seven species and seven block sizes from 20 to 200 bp. SI profiles were non-increasing for 72 of 86 evaluable species-feature combinations, although this pattern was not universal. Observed SI generally exceeded both a block-count-controlled random null and a species-level GC-controlled null. Associations with mononucleotide entropy, dinucleotide entropy, and GC content were modest, with no individual descriptor explaining more than 10.4% of the observed variation. For the 13 complete feature-level profiles used in geometric analysis, the first two principal components explained 97.859% of the variance, and hierarchical clustering grouped features with similar SI trajectories. We also summarize the profiles using the Characteristic Information Scale and Information Persistence Score. These analyses extend the original superinformation framework to a comparative, multiscale analysis of genomic feature heterogeneity while keeping the interpretation of SI limited to the sequence properties measured here.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.22.768374v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Genomic foundation models and complementary variant-scoring strategies in LGMD-associated genes: architecture, adaptation, and sequence context</h2>
+<p class="paper-authors">Galgale, S., Vats, I., +1 author, Haldar, A.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Genomic foundation models learn representations from DNA sequence, although their usefulness for variant classification depends on the architecture and downstream evaluation procedure. We compared six genomic foundation models using 6,960 ClinVar single-nucleotide variants from ten limb-girdle muscular dystrophy (LGMD)-associated genes, with 4,866 variants assigned to training and 2,094 to held-out testing. The analyses included frozen alternate-minus-reference embeddings at 101, 201 and 501 bp, supervised adaptation at 101 bp, and gene-held-out downstream classifier training. GPN-Star V100 and AlphaGenome Atlas AVI were evaluated separately using their native scores. At 101 bp, frozen Evo2 achieved the highest discrimination among the six foundation models (MCC 0.644; AUROC 0.879; AUPRC 0.818). Supervised adaptation increased MCC for three architectures and reduced it for the remaining three. Extending sequence context to 501 bp improved all three primary metrics in five of six frozen architectures, with Evo2 reaching an MCC of 0.864, AUROC of 0.964 and AUPRC of 0.952. Evo2 also led the frozen gene-held-out readouts (pooled MCC 0.641; AUROC 0.852; AUPRC 0.789). GPN-Star V100 and AVI achieved MCC values of 0.929 and 0.938, respectively, using distinct biological inputs and scoring procedures. The number of variants misclassified across all evaluated configurations decreased from five under the original 101-bp readouts to one after including longer contexts and native scores. An exploratory HGVS-category control identified substantial annotation-associated structure in the benchmark labels. The findings characterize classification performance against aggregate ClinVar labels within LGMD-associated genes. Disease-specific pathogenicity and clinical diagnostic utility remain untested.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.21.768324v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Deciphering state bridges via a single-cell large language model</h2>
+<p class="paper-authors">Fei, Q., Liang, M., +2 authors, Cui, Q.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Large-scale single-cell transcriptomic data provide a new avenue for precision medicine by uncovering cellular heterogeneity. However, systematic comparison of remodeling patterns across various biological states remains unavailable. Here, we first developed a computational framework based on a foundation model of single cell biology, Universal Cell Embedding (UCE), to harmonize annotations comprising 36 cell types. Based on an integrated dataset of single cell RNA sequencing (scRNA-seq) with 8,789 human samples comprising more than 59 million cells or nuclei across 614 biological states, we then embedded each state with a 36-dimensional vector in a unified space of cell-composition change and further deciphered states bridges by analyzing the relationships among the 614 state vectors. As a result, 22,161 significant bridges (P &lt; 0.05) between the 614 states were revealed. Moreover, we successfully identified a number of well-known bridges such as bridge between Alzheimer's disease and Parkinson's disease (P = 2.21e-15), suggesting the effectiveness of the proposed framework. More importantly, we uncovered a number of new bridges. Furthermore, analyses of the number of changed cell types (NCC) and Shannon entropy revealed heterogeneous and tissue-dependent patterns of cellular composition remodeling. This study provides a new strategy for identifying disease associations and potential therapeutic relationships by deciphering bridges between biological states from scRNA-seq landscape.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.21.768275v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, synthetic biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, synthetic biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">How predictable is an individual's DNA methylation?</h2>
+<p class="paper-authors">Zucker, R., Linial, M., Hope, T.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> DNA methylation is largely shared among individuals of the same cell type, yet at specific genomic sites it differs substantially between individuals. Methods that predict methylation are usually evaluated by their accuracy over all sites. Because methylation at most sites is shared, this accuracy cannot show whether a method predicts an individual's methylation where individuals differ. We present individual-level methylation prediction at sites where individuals differ as a new challenge. Given the reference genome sequence, the methylation of other individuals of the same cell type, and measurements at some sites of a target individual, but not the individual's genotype, the task is to predict the target individual's methylation class (unmethylated, intermediate, or methylated) at the remaining sites. We evaluate predictions separately at sites with low and high variation across individuals. We compare four approaches: the average of other individuals, a sequence model (the DNA language model Nucleotide Transformer) fine-tuned on other individuals' methylation, the same model further fine-tuned on the target individual's measurements, and a local class-average approach using the target individual's nearby training-site class labels. Across 32 individuals from six human cell types, the average of other individuals matched or slightly exceeded both sequence models at sites with low variation among individuals. At the most variable sites, the average of other individuals performed worse than a random predictor that assigns classes at the observed class frequencies, whereas both sequence models performed substantially better than the average. Both sequence models also achieved higher mean weighted F1 than the local class-average approach. Fine-tuning on the target individual's measurements improved predictions more inside regions where other individuals show bimodal methylation (a mix of methylated and unmethylated DNA molecules within one sample) than outside them. Among the most variable sites, it also improved predictions at CpG islands for 25 of the 32 individuals. We conclude that individual-level methylation prediction is a distinct problem that is particularly challenging at sites where individuals differ, and that the benefit of an individual's own measurements is concentrated in genomic contexts identifiable from other individuals' methylation and genomic annotations.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.21.768291v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">APOBEC3 Activation Drives Epitranscriptomic Remodeling and Clonal Hematopoiesis</h2>
+<p class="paper-authors">van der Werf, I., Isquith, J., +11 authors, Jamieson, C. H. M.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Stress and inflammatory cytokine-inducible APOBEC3 (A3) enzymes promote clonal evolution in many malignancies. We identified A3C overexpression in hematopoietic stem and progenitor cells (HSPCs) following spaceflight-associated accelerated aging and in precancer myeloproliferative neoplasms (MPNs). However, the role of A3 in age-associated clonal hematopoiesis (CH) and precancer initiation remains unclear. To investigate the functional hierarchy among A3 enzymes, we performed lentiviral A3B, A3C, A3D, A3F, and A3G overexpression, whole genome, whole transcriptome and single-cell RNA sequencing analyses, and functional HSPC assays. While A3C and A3F induced more C-to-T DNA mutations; A3B, A3C, and A3G deregulated RNA splicing; and all A3 enzymes induced C-to-U RNA edits in HSPCs. In aged HSPCs, A3C overexpression enhanced replating and myeloid lineage skewing in humanized inflammatory niche mouse models typical of CH. Moreover, A3C-induced editing of CH-associated transcripts distinguished MPN from normal HSPCs. Thus, future strategies focused on APOBEC3C inhibition may prevent CH and precancer initiation.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.20.768132v1?rss=1" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="bioinformatics, cancer biology">
+<div class="paper-meta">
+<span class="keyword">bioinformatics, cancer biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">bioRxiv</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Adjuvant myeloperoxidase inhibition promotes B and T cell mediated control of murine melanoma metastasis</h2>
+<p class="paper-authors">Landreth, K. M., Sharp, A. W., +3 authors, Liu, T. W.</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Metastasis is the spread of cancer cells from primary tumors to distant organs and accounts for the majority of melanoma deaths, with a 5-year survival rate of only 30%. Despite strong evidence that myeloid cells promote metastasis, there are limited clinically effective myeloid-directed therapies. Here, we demonstrate that targeting myeloperoxidase (MPO), a myeloid-lineage restricted enzyme, significantly reduced multi-organ metastatic burden using an immunocompetent mouse model of spontaneous melanoma. Adjuvant MPO inhibition remodeled the metastatic microenvironment by a reduction in Ly6G+Ly6C+ myeloid cells and enrichment of B and T cell populations. Importantly, adjuvant MPO inhibitor-mediated metastatic control was dependent upon B, CD8+ T cells and CD4+ T cells, and rapidly reduced circulating and disseminated tumor cells. MPO inhibition markedly decreased NET release, while NET deficiency and inhibition recapitulated the anti-metastatic effects of targeting MPO, implicating NETs as a potential downstream mediator of MPO-driven metastasis. We further validated these findings in a distinct spontaneous breast cancer model where adjuvant MPO inhibition similarly reduced multi-organ metastatic burden with comparable changes within the metastatic immune microenvironment. Collectively, our studies introduce MPO as a druggable regulator of metastasis where MPO inhibition limits metastatic disease by targeting immunosuppressive myeloid cells.</p>
+<a class="btn dark" href="https://www.biorxiv.org/content/10.64898/2026.11.20.768197v1?rss=1" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
@@ -70,15 +260,34 @@
 </div><div class="paper" data-keywords="machine learning, cancer biology">
 <div class="paper-meta">
 <span class="keyword">machine learning, cancer biology</span>
-<span class="date">Nov 21, 2026</span>
+<span class="date">Nov 23, 2026</span>
 <span class="journal">PubMed</span>
 </div>
 <div class="paper-content">
-<h2 class="paper-title">Targeting protein degradation strategies in drug discovery: integrating PROTACs, ubiquitination biology, and AI-driven design.</h2>
-<p class="paper-authors">Sanjeevi Pandiyan, Chandra Sekhar Bhol, +1 author, Gautam Sethi</p>
+<h2 class="paper-title">Spatial tumor-stromal-immune architectures predict immunotherapy outcomes in recurrent/metastatic head and neck squamous cell carcinoma.</h2>
+<p class="paper-authors">Grégoire Marret, Jinsu An, +15 authors, Lillian L Siu</p>
 <div class="paper-abstract">
-<p><strong>Abstract:</strong> Targeted protein degradation (TPD) has emerged as a transformative therapeutic strategy for eliminating disease-associated proteins, including targets that remain challenging to modulate using conventional occupancy-driven inhibitors. Among TPD approaches, proteolysis-targeting chimeras (PROTACs) exploit the ubiquitin-proteasome system (UPS) to induce selective and event-driven degradation of proteins of interest (POIs). Despite rapid advances in PROTAC development, successful translation depends on interconnected determinants, including target degradability, ubiquitin ligase (E3) recruitment, warhead and linker properties, ternary-complex formation, ubiquitination efficiency, intracellular exposure, and pharmacokinetic behavior. This review provides an integrated, mechanism-oriented analysis of these determinants by linking PROTAC design, ubiquitination biology, computational approaches, and clinical development. We examine key principles governing PROTAC-mediated degradation, with emphasis on E3-ligase selection, linker design, ternary-complex geometry and cooperativity, ubiquitin (Ub)-acceptor lysine (Lys) accessibility, ubiquitin-conjugating enzyme (E2)/E3 context, proteasomal engagement, inefficient degradation, and the hook effect. Recent advances in artificial intelligence (AI) and machine learning for degradation-activity prediction, E3-ligase/POI pairing, ligand and linker optimization, ternary-complex modeling, and absorption, distribution, metabolism, excretion, and toxicity (ADMET) assessment are critically evaluated alongside their technical and translational limitations. Preclinical developments, clinical-stage degraders, emerging TPD modalities, and major barriers to translation are also discussed. We propose an integrated framework linking distinct target ubiquitination patterns, degrader design, ternary-complex geometry, AI-enabled prediction, and pharmacokinetic/clinical constraints, providing a mechanism-informed roadmap for the rational development of next-generation protein degraders and identifying mechanistic bottlenecks and translational priorities across therapeutic settings.</p>
-<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/43066850/" target="_blank">
+<p><strong>Abstract:</strong> Immune checkpoint blockade (ICB) benefits fewer than 20% of patients with recurrent/metastatic head and neck squamous cell carcinoma (RM-HNSCC), and the spatial determinants of response remain undefined. Here, using spatial transcriptomics on 28 biopsies from 20 ICB-naive RM-HNSCC patients, we demonstrate that immunotherapy sensitivity is encoded in spatially organized tumor-stroma-immune interactions rather than tumor genetics alone. Transcriptionally distinct malignant clusters share a conserved copy-number backbone, revealing microenvironment-driven plasticity as the basis of intratumoral heterogeneity. Cycling malignant compartments function as dominant signaling hubs directing cancer-associated fibroblast (CAF) engagement and checkpoint signaling; reduced myofibroblastic CAF signaling tracks with clinical response. Spatial contexture, beyond cellular composition alone, stratifies immune-permissive from immune-constrained tumors with differential progression-free survival and ICB response. A spatially informed transcriptional signature retains predictive value across 1,936 ICB-treated patients from 26 cohorts spanning seven cancer types, establishing spatial tumor microenvironment architecture as a pan-cancer determinant of ICB sensitivity. (The clinical trials have been registered at ClinicalTrials.gov [NCT02644369 and NCT04606940]).</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/43072367/" target="_blank">
+                Read full paper
+                <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</svg>
+</a>
+</div>
+</div>
+</div><div class="paper" data-keywords="machine learning, cancer biology">
+<div class="paper-meta">
+<span class="keyword">machine learning, cancer biology</span>
+<span class="date">Nov 23, 2026</span>
+<span class="journal">PubMed</span>
+</div>
+<div class="paper-content">
+<h2 class="paper-title">Machine learning-derived prognostic signature highlights ABCB9 as a key lysosome-associated driver in bladder cancer.</h2>
+<p class="paper-authors">Meirong Xiao, Fuchun Zheng, +4 authors, Zhijun Yao</p>
+<div class="paper-abstract">
+<p><strong>Abstract:</strong> Bladder cancer (BCa) has high recurrence, strong prognostic heterogeneity, and limited reliable biomarkers. The prognostic roles of lysosome-related genes (LRGs) in BCa remain largely unexplored, while the role of ABCB9 in BCa is still unclear.</p>
+<a class="btn dark" href="https://pubmed.ncbi.nlm.nih.gov/43072295/" target="_blank">
                 Read full paper
                 <svg fill="none" style="width: 0.85rem; height: 0.85rem;" viewbox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
